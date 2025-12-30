@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Second Brain</title>
+        <!-- Markdown Parser -->
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <!-- Font Awesome for Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+
+        <style>
+            /* ==================================================================
+           STYLE: Sidey Minimalist Replica
+           ==================================================================
+        */
+
+            :root {
+                /* Palette - Strict Minimalist */
+                --bg-body: #ffffff;
+                --bg-sidebar: #f7f9fb; /* Very light cool gray */
+                --border-color: #e2e8f0;
+
+                --text-primary: #1e293b; /* Slate 800 */
+                --text-secondary: #64748b; /* Slate 500 */
+                --text-accent: #2563eb; /* Blue 600 - The only color pop */
+
+                --font-main:
+                    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+                    Roboto, sans-serif;
+                --radius: 8px;
+            }
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: var(--font-main);
+                color: var(--text-primary);
+                background-color: var(--bg-body);
+                display: flex;
+                height: 100vh;
+                overflow: hidden;
+                line-height: 1.6;
+            }
+
+            /* --- Sidebar (The "Sidey" Look) --- */
+            .sidebar {
+                width: 260px;
+                background-color: var(--bg-sidebar);
+                border-right: 1px solid var(--border-color);
+                display: flex;
+                flex-direction: column;
+                flex-shrink: 0;
+                height: 100%;
+            }
+
+            .sidebar-header {
+                padding: 24px 24px 10px 24px; /* More top padding */
+            }
+
+            .brand {
+                font-weight: 700;
+                font-size: 1.1rem;
+                letter-spacing: -0.02em;
+                color: var(--text-primary);
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+
+            .search-box {
+                position: relative;
+            }
+
+            .search-input {
+                width: 100%;
+                padding: 8px 12px 8px 32px;
+                background: #fff;
+                border: 1px solid var(--border-color);
+                border-radius: var(--radius);
+                font-size: 0.85rem;
+                color: var(--text-primary);
+                outline: none;
+                transition: border-color 0.2s;
+            }
+
+            .search-input:focus {
+                border-color: var(--text-accent);
+            }
+
+            .search-icon {
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: var(--text-secondary);
+                font-size: 0.8rem;
+            }
+
+            .nav-tree {
+                flex: 1;
+                overflow-y: auto;
+                padding: 10px 0 30px 0;
+            }
+
+            .nav-section {
+                margin-bottom: 24px;
+            }
+
+            .nav-section-title {
+                font-size: 0.7rem;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                color: var(--text-secondary);
+                padding: 0 24px 8px;
+                font-weight: 600;
+            }
+
+            .nav-item {
+                padding: 6px 24px;
+                cursor: pointer;
+                font-size: 0.9rem;
+                color: var(--text-secondary);
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                transition: color 0.1s;
+                border-left: 3px solid transparent; /* Side marker */
+            }
+
+            .nav-item:hover {
+                color: var(--text-primary);
+            }
+
+            /* Active State: Minimalist (Bold + Color, no background block) */
+            .nav-item.active {
+                color: var(--text-accent);
+                font-weight: 600;
+                background-color: transparent; /* Removed blocky background */
+                border-left-color: var(--text-accent);
+            }
+
+            .nav-item i {
+                width: 16px;
+                text-align: center;
+                font-size: 0.9em;
+                opacity: 0.8;
+            }
+
+            /* --- Main Content --- */
+            .main-content {
+                flex: 1;
+                overflow-y: auto;
+                padding: 60px 80px; /* Generous whitespace */
+                max-width: 1000px;
+            }
+
+            /* Back Button Style */
+            .back-link {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                color: var(--text-secondary);
+                font-size: 0.9rem;
+                text-decoration: none;
+                margin-bottom: 30px;
+                transition: color 0.2s;
+                cursor: pointer;
+            }
+            .back-link:hover {
+                color: var(--text-accent);
+            }
+
+            /* --- Typography (Marked.js Output) --- */
+            .markdown-body {
+                color: var(--text-primary);
+            }
+
+            .markdown-body h1 {
+                font-size: 2.5rem;
+                font-weight: 800;
+                letter-spacing: -0.03em;
+                margin-bottom: 1rem;
+                border-bottom: none; /* Cleaner look */
+                line-height: 1.2;
+            }
+
+            .markdown-body h2 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                letter-spacing: -0.02em;
+                margin-top: 2.5rem;
+                margin-bottom: 1rem;
+                padding-bottom: 0.5rem;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            .markdown-body p {
+                margin-bottom: 1.5rem;
+                color: #334155; /* Slightly softer than pure black */
+            }
+
+            .markdown-body a {
+                color: var(--text-accent);
+                text-decoration: none;
+                font-weight: 500;
+            }
+            .markdown-body a:hover {
+                text-decoration: underline;
+            }
+
+            .markdown-body blockquote {
+                border-left: 3px solid var(--text-accent);
+                background: #f8fafc;
+                padding: 1rem 1.5rem;
+                color: var(--text-secondary);
+                margin: 2rem 0;
+                font-style: italic;
+            }
+
+            .markdown-body ul {
+                padding-left: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .markdown-body li {
+                margin-bottom: 0.5rem;
+            }
+
+            /* Code Blocks */
+            .markdown-body pre {
+                background: #1e293b;
+                color: #f1f5f9;
+                padding: 20px;
+                border-radius: var(--radius);
+                font-size: 0.9rem;
+                overflow-x: auto;
+                margin: 1.5rem 0;
+            }
+
+            .markdown-body code {
+                background: #f1f5f9;
+                color: #d63384;
+                padding: 2px 6px;
+                border-radius: 4px;
+                font-size: 0.9em;
+                font-family: monospace;
+            }
+
+            .tag-pill {
+                display: inline-block;
+                background: #f1f5f9;
+                padding: 4px 10px;
+                border-radius: 20px;
+                font-size: 0.75rem;
+                color: var(--text-secondary);
+                margin-right: 8px;
+                margin-bottom: 24px;
+                font-weight: 500;
+            }
+
+            /* --- THE SHELF GRID (Updated for Minimal Look) --- */
+            .shelf-header {
+                margin-bottom: 20px;
+            }
+
+            .shelf-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+                margin-top: 20px;
+            }
+
+            .shelf-card {
+                background: #fff;
+                border: 1px solid var(--border-color);
+                border-radius: var(--radius);
+                padding: 24px;
+                transition: all 0.2s ease;
+                cursor: pointer;
+                text-decoration: none;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .shelf-card:hover {
+                border-color: var(--text-accent);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Softer shadow */
+            }
+
+            .shelf-icon {
+                font-size: 1.8rem;
+                color: var(--text-accent);
+                margin-bottom: 16px;
+            }
+
+            .shelf-title {
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: var(--text-primary);
+                margin-bottom: 8px;
+            }
+
+            .shelf-desc {
+                font-size: 0.9rem;
+                color: var(--text-secondary);
+                line-height: 1.5;
+            }
+
+            /* Mobile */
+            .menu-toggle {
+                display: none;
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 100;
+                background: white;
+                border: 1px solid var(--border-color);
+                padding: 10px;
+                border-radius: var(--radius);
+                cursor: pointer;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            @media (max-width: 768px) {
+                .sidebar {
+                    position: fixed;
+                    height: 100%;
+                    z-index: 99;
+                    transform: translateX(-100%);
+                    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1);
+                }
+                .sidebar.open {
+                    transform: translateX(0);
+                }
+                .main-content {
+                    padding: 30px 20px;
+                    width: 100%;
+                }
+                .menu-toggle {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="brand">
+                    <i
+                        class="fas fa-layer-group"
+                        style="color: var(--text-accent)"
+                    ></i>
+                    Wiki
+                </div>
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input
+                        type="text"
+                        class="search-input"
+                        placeholder="Search..."
+                        onkeyup="filterDocs(this.value)"
+                    />
+                </div>
+            </div>
+
+            <div class="nav-tree" id="navTree">
+                <!-- Navigation items injected here -->
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div id="contentDisplay" class="markdown-body">
+                <!-- Content rendered here -->
+            </div>
+        </main>
+
+        <script>
+            // ==========================================
+            // 🧠 THE KNOWLEDGE BASE (DATABASE)
+            // Hierarchy: Section -> Topic/Year (Sidebar) -> Blog/Week (Shelf)
+            // ==========================================
+            const wikiData = {
+                // SECTION 1: OVERVIEW
+                overview: {
+                    title: "Overview",
+                    items: [
+                        {
+                            // TOPIC 1
+                            id: "topic-cyber",
+                            title: "Cybersecurity",
+                            icon: "fas fa-shield-alt",
+                            desc: "Malware, Networks, Protocols",
+                            // BLOGS UNDER THIS TOPIC
+                            children: [
+                                {
+                                    id: "blog-malware",
+                                    title: "Malware Definitions",
+                                    icon: "fas fa-bug",
+                                    desc: "Ransomware, Trojans, and Worms explained.",
+                                    tags: ["security", "malware"],
+                                    content: `
+# Malware Definitions
+
+## Ransomware
+Ransomware is a type of malicious software designed to block access to a computer system until a sum of money is paid.
+
+**Common Variants:**
+1. **LockBit**: Known for its speed of encryption.
+2. **WannaCry**: Utilized the EternalBlue exploit.
+
+## Trojan
+A program that claims to do one thing but actually does damage when you run it.
+                                `,
+                                },
+                                {
+                                    id: "blog-network",
+                                    title: "Network Security",
+                                    icon: "fas fa-network-wired",
+                                    desc: "Firewalls, VPNs, and Zero Trust.",
+                                    content: `# Network Security \n\nContent coming soon...`,
+                                },
+                            ],
+                        },
+                        {
+                            // TOPIC 2
+                            id: "topic-ai",
+                            title: "AI & ML",
+                            icon: "fas fa-brain",
+                            desc: "LLMs, RAG, Agents",
+                            children: [
+                                {
+                                    id: "blog-rag",
+                                    title: "RAG Architecture",
+                                    icon: "fas fa-database",
+                                    desc: "Retrieval Augmented Generation basics.",
+                                    content: `
+# Retrieval Augmented Generation
+
+RAG is a technique for enhancing the accuracy and reliability of generative AI models with facts fetched from external sources.
+
+## Process Flow
+1. **Retrieval**: System searches vector DB.
+2. **Augmentation**: Context attached to prompt.
+3. **Generation**: LLM answers.
+                                `,
+                                },
+                                {
+                                    id: "blog-agents",
+                                    title: "AI Agents",
+                                    icon: "fas fa-robot",
+                                    desc: "Autonomous decision making models.",
+                                    content: `# AI Agents \n\nContent coming soon...`,
+                                },
+                            ],
+                        },
+                        {
+                            // TOPIC 3
+                            id: "topic-tech",
+                            title: "General Tech",
+                            icon: "fas fa-microchip",
+                            desc: "Hardware, OS, News",
+                            children: [
+                                {
+                                    id: "blog-hardware",
+                                    title: "Hardware 2025",
+                                    icon: "fas fa-memory",
+                                    desc: "Latest in GPU and CPU tech.",
+                                    content: `# Hardware \n\nContent coming soon...`,
+                                },
+                            ],
+                        },
+                    ],
+                },
+
+                // SECTION 2: LOGS
+                logs: {
+                    title: "Logs",
+                    items: [
+                        {
+                            // YEAR 1
+                            id: "year-2025",
+                            title: "2025 Updates",
+                            icon: "far fa-calendar-alt",
+                            desc: "Weekly logs for 2025",
+                            children: [
+                                {
+                                    id: "2025-w52",
+                                    title: "Week 52",
+                                    icon: "far fa-file-alt",
+                                    desc: "Dec 22 - Dec 28",
+                                    tags: ["weekly"],
+                                    content: `
+# Week 52, 2025
+*December 22 - December 28*
+
+## 🛡️ Cybersecurity
+1. **Zero-Day in Chrome**
+   - Google released a patch for **CVE-2025-XXXX**.
+
+## 🤖 Artificial Intelligence
+1. **Gemini 2.0 Released**
+   - New multimodal capabilities.
+                                `,
+                                },
+                            ],
+                        },
+                        {
+                            // YEAR 2
+                            id: "year-2026",
+                            title: "2026 Updates",
+                            icon: "far fa-calendar-alt",
+                            desc: "Weekly logs for 2026",
+                            children: [
+                                {
+                                    id: "2026-w01",
+                                    title: "Week 01",
+                                    icon: "far fa-file-alt",
+                                    desc: "Dec 29 - Jan 4",
+                                    tags: ["weekly"],
+                                    content: `
+# Week 01, 2026
+*December 29 - January 4*
+
+## 🛡️ Cybersecurity
+1. **SSH Terrapin Attack v2**
+   - A new variation of the Terrapin attack.
+
+## 🤖 Artificial Intelligence
+1. **OpenAI Safety Report**
+   - Released findings on model autonomy.
+                                `,
+                                },
+                            ],
+                        },
+                    ],
+                },
+            };
+
+            // ==========================================
+            // ⚙️ ENGINE
+            // ==========================================
+
+            const navTree = document.getElementById("navTree");
+            const contentDisplay = document.getElementById("contentDisplay");
+            const sidebar = document.getElementById("sidebar");
+            let currentDocId = null;
+
+            function init() {
+                renderSidebar();
+                // Default to first topic of first section
+                const firstTopic = wikiData.overview.items[0].id;
+                loadContent(firstTopic);
+            }
+
+            // Render Sidebar (Only Top Level Items: Topics & Years)
+            function renderSidebar() {
+                navTree.innerHTML = "";
+
+                Object.keys(wikiData).forEach((sectionKey) => {
+                    const section = wikiData[sectionKey];
+
+                    const sectionTitle = document.createElement("div");
+                    sectionTitle.className = "nav-section-title";
+                    sectionTitle.innerText = section.title;
+                    navTree.appendChild(sectionTitle);
+
+                    section.items.forEach((item) => {
+                        const navItem = document.createElement("div");
+                        navItem.className = "nav-item";
+                        navItem.dataset.id = item.id;
+                        navItem.onclick = () => loadContent(item.id);
+
+                        navItem.innerHTML = `
+                        <i class="${item.icon}"></i>
+                        <span>${item.title}</span>
+                    `;
+
+                        navTree.appendChild(navItem);
+                    });
+
+                    const spacer = document.createElement("div");
+                    spacer.style.height = "24px";
+                    navTree.appendChild(spacer);
+                });
+            }
+
+            // Helper: Find item and its parent recursively
+            function findItemAndParent(id, items, parent = null) {
+                for (let item of items) {
+                    if (item.id === id) return { item, parent };
+                    if (item.children) {
+                        const found = findItemAndParent(
+                            id,
+                            item.children,
+                            item,
+                        );
+                        if (found) return found;
+                    }
+                }
+                return null;
+            }
+
+            // Helper: Find in whole DB
+            function lookup(id) {
+                for (let key of Object.keys(wikiData)) {
+                    const found = findItemAndParent(id, wikiData[key].items);
+                    if (found) return found;
+                }
+                return null;
+            }
+
+            // Render Shelf Grid (For Topics or Years)
+            function renderShelf(item) {
+                let html = `
+                <div class="shelf-header">
+                    <h1 style="margin-bottom:0.5rem">${item.title}</h1>
+                    <p style="color:var(--text-secondary)">${item.desc || "Select an item below."}</p>
+                </div>
+                <div class="shelf-grid">
+            `;
+
+                item.children.forEach((child) => {
+                    html += `
+                    <div class="shelf-card" onclick="loadContent('${child.id}')">
+                        <i class="${child.icon} shelf-icon"></i>
+                        <div class="shelf-title">${child.title}</div>
+                        <div class="shelf-desc">${child.desc || ""}</div>
+                    </div>
+                `;
+                });
+                html += `</div>`;
+                return html;
+            }
+
+            function loadContent(id) {
+                const result = lookup(id);
+                if (!result) return;
+
+                const { item, parent } = result;
+
+                // UI Updates (Sidebar Active State)
+                // If parent exists (we are in leaf), highlight parent. If no parent (we are in root), highlight item.
+                const highlightId = parent ? parent.id : item.id;
+
+                document
+                    .querySelectorAll(".nav-item")
+                    .forEach((el) => el.classList.remove("active"));
+                const activeNav = document.querySelector(
+                    `.nav-item[data-id="${highlightId}"]`,
+                );
+                if (activeNav) activeNav.classList.add("active");
+
+                let htmlContent = "";
+
+                // 1. Back Button (If we are deep)
+                if (parent) {
+                    htmlContent += `
+                    <div class="back-link" onclick="loadContent('${parent.id}')">
+                        <i class="fas fa-arrow-left"></i> Back to ${parent.title}
+                    </div>
+                `;
+                }
+
+                // 2. Render Tags
+                if (item.tags) {
+                    htmlContent += "<div>";
+                    item.tags.forEach((tag) => {
+                        htmlContent += `<span class="tag-pill">#${tag}</span>`;
+                    });
+                    htmlContent += "</div>";
+                }
+
+                // 3. Logic: If it has children, render Shelf. If not, render Content.
+                if (item.children && item.children.length > 0) {
+                    htmlContent += renderShelf(item);
+                } else if (item.content) {
+                    htmlContent += marked.parse(item.content);
+                } else {
+                    htmlContent += `<p>No content available.</p>`;
+                }
+
+                contentDisplay.innerHTML = htmlContent;
+
+                if (window.innerWidth <= 768) {
+                    sidebar.classList.remove("open");
+                }
+
+                currentDocId = id;
+                window.scrollTo(0, 0);
+            }
+
+            function filterDocs(query) {
+                const term = query.toLowerCase();
+                const navItems = document.querySelectorAll(".nav-item");
+
+                navItems.forEach((item) => {
+                    const text = item.innerText.toLowerCase();
+                    if (text.includes(term)) {
+                        item.style.display = "flex";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            }
+
+            function toggleSidebar() {
+                sidebar.classList.toggle("open");
+            }
+
+            init();
+        </script>
+    </body>
+</html>
