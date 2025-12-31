@@ -1,17 +1,18 @@
 ---
-title: Week 1
+title: Week 51
 tags: 
-desc: Summary of 26 December 2025 - 03 January 2026.
-icon: fas fa-newspaper
+desc: Summary of 12 December - 19 December 2025.
 ---
 
-# Week 52
+# Week 51
 
 ### CyberSecurity
 
-WatchGuard Firebox Critical [[zero-day|Zero Trust]] Vulnerability Exploited
+WatchGuard Firebox Critical [[zero-day|Zero Day]] Vulnerability Exploited
 
-- Hackers are actively attacking the critical vulnerability (CVE-2025-14733)
+- Hackers are actively attacking a critical vulnerability (CVE-2025-14733) in WatchGuard Firebox firewalls
+- The flaw allows attackers to take complete control of the device remotely without needing a password.
+- CISA has added this to its "Known Exploited Vulnerabilities" catalog, mandating federal agencies to patch immediately; private companies are urged to do the same.
 
 ### Artificial Intelligence
 

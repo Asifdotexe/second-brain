@@ -1,11 +1,10 @@
 ---
-title: What is Zero Day?
+title: Zero Day
 tags: CyberSecurity, InformationSecurity, VulnerabilityManagement
-desc: A "Zero-Day" refers to a security flaw in software that is unknown to the vendor or developer.
 icon: fas fa-lock
 ---
 
-## Zero-Day (Vulnerability & Exploit)
+# Zero-Day (Vulnerability & Exploit)
 
 ### Formal Definition
 A "Zero-Day" refers to a security flaw in software that is unknown to the vendor or developer. The term implies that the developers have had **zero days** to fix or patch the issue because they were unaware of its existence before it was discovered or exploited by hackers.
