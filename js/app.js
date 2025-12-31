@@ -37,7 +37,7 @@ function init() {
   });
 
   // --- EVENT DELEGATION: MAIN CONTENT ---
-  // Handle clicks for Back Buttons and Shelf Cards
+  // Handle clicks for Back Buttons, Shelf Cards, and Internal Links
   contentDisplay.addEventListener("click", (e) => {
     // 1. Handle Back Button
     const backLink = e.target.closest(".back-link");
@@ -53,6 +53,27 @@ function init() {
       e.preventDefault();
       loadContent(shelfCard.dataset.id);
       return;
+    }
+
+    // 3. Handle Internal Links (e.g. [Link Text](doc-id))
+    const link = e.target.closest("a");
+    if (link) {
+      const href = link.getAttribute("href");
+
+      // If it's an external link (http/https/mailto) or anchor, let browser handle it
+      if (!href || href.match(/^(http|https|mailto:|#)/)) {
+        if (href && href.startsWith("http")) link.target = "_blank"; // Force new tab for external
+        return;
+      }
+
+      // It's likely an internal ID. Try to find it in wikiData.
+      // Decode URI to handle spaces (e.g. "Zero%20Trust" -> "Zero Trust")
+      const targetId = decodeURIComponent(href);
+
+      if (lookup(targetId)) {
+        e.preventDefault();
+        loadContent(targetId);
+      }
     }
   });
 
@@ -185,7 +206,22 @@ function loadContent(id) {
   if (item.children && item.children.length > 0) {
     htmlContent += renderShelf(item);
   } else if (item.content) {
-    htmlContent += marked.parse(item.content);
+    // --- WIKILINK SUPPORT ---
+    // Convert [[id]] to [id](id) and [[id|Label]] to [Label](id)
+    const wikiLinkRegex = /\[\[([^|\]\n]+)(\|([^\]\n]+))?\]\]/g;
+    const processedContent = item.content.replace(
+      wikiLinkRegex,
+      (match, id, _, label) => {
+        const linkText = label || id;
+        return `[${linkText}](${id.trim()})`;
+      },
+    );
+
+    // Security Fix: Disable raw HTML to prevent XSS
+    htmlContent += marked.parse(processedContent, {
+      breaks: true,
+      html: false,
+    });
   } else {
     htmlContent += `<p style="color:var(--text-secondary)">No content available.</p>`;
   }
