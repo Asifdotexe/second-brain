@@ -6,13 +6,42 @@
 const navTree = document.getElementById("navTree");
 const contentDisplay = document.getElementById("contentDisplay");
 const sidebar = document.getElementById("sidebar");
+const themeToggle = document.getElementById("themeToggle");
 let currentDocId = null;
 
 // ==========================================
 // 🚀 INITIALIZATION
 // ==========================================
 
+function setTheme(theme) {
+  document.body.dataset.theme = theme;
+  if (themeToggle) {
+    themeToggle.setAttribute("aria-pressed", theme === "dark");
+  }
+  localStorage.setItem("theme", theme);
+}
+
+function initTheme() {
+  const saved = localStorage.getItem("theme");
+  const prefersDark =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const initialTheme = saved || (prefersDark ? "dark" : "light");
+
+  setTheme(initialTheme);
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const nextTheme =
+        document.body.dataset.theme === "dark" ? "light" : "dark";
+      setTheme(nextTheme);
+    });
+  }
+}
+
 function init() {
+  initTheme();
+
   // Safety Check: Did data.js load?
   if (typeof wikiData === "undefined") {
     contentDisplay.innerHTML = `

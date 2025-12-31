@@ -9,15 +9,42 @@ STYLE: Sidey Minimalist Replica
     --bg-body: #ffffff;
     --bg-sidebar: #f7f9fb; /* Very light cool gray */
     --border-color: #e2e8f0;
+    --bg-input: #ffffff;
+    --bg-card: #ffffff;
+    --bg-quote: #f8fafc;
+    --bg-tag: #f1f5f9;
+    --bg-code-inline: #f1f5f9;
+    --bg-code-block: #1e293b;
 
     --text-primary: #1e293b; /* Slate 800 */
     --text-secondary: #64748b; /* Slate 500 */
     --text-accent: #2563eb; /* Blue 600 - The only color pop */
+    --text-muted: #334155;
+    --code-text: #d63384;
+    --text-code-block: #f1f5f9;
 
     --font-main:
         "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         sans-serif;
     --radius: 8px;
+}
+
+body[data-theme="dark"] {
+    --bg-body: #0f172a;
+    --bg-sidebar: #0b1220;
+    --border-color: #1f2937;
+    --bg-input: #111827;
+    --bg-card: #0b1220;
+    --bg-quote: #111827;
+    --bg-tag: #0f172a;
+    --bg-code-inline: #111827;
+    --bg-code-block: #111827;
+    --text-primary: #e2e8f0;
+    --text-secondary: #94a3b8;
+    --text-accent: #60a5fa;
+    --text-muted: #cbd5e1;
+    --code-text: #f472b6;
+    --text-code-block: #e2e8f0;
 }
 
 * {
@@ -49,6 +76,7 @@ body {
 
 .sidebar-header {
     padding: 24px 24px 10px 24px; /* More top padding */
+    position: relative;
 }
 
 .brand {
@@ -69,7 +97,7 @@ body {
 .search-input {
     width: 100%;
     padding: 8px 12px 8px 32px;
-    background: #fff;
+    background: var(--bg-input);
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     font-size: 0.85rem;
@@ -89,6 +117,40 @@ body {
     transform: translateY(-50%);
     color: var(--text-secondary);
     font-size: 0.8rem;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    border: 1px solid var(--border-color);
+    background: transparent;
+    color: var(--text-secondary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+}
+
+.theme-toggle:hover {
+    color: var(--text-primary);
+    border-color: var(--text-accent);
+}
+
+.theme-toggle .fa-sun {
+    display: none;
+}
+
+body[data-theme="dark"] .theme-toggle .fa-sun {
+    display: inline-block;
+}
+
+body[data-theme="dark"] .theme-toggle .fa-moon {
+    display: none;
 }
 
 .nav-tree {
@@ -191,7 +253,7 @@ body {
 
 .markdown-body p {
     margin-bottom: 1.5rem;
-    color: #334155; /* Slightly softer than pure black */
+    color: var(--text-muted); /* Slightly softer than pure black */
 }
 
 .markdown-body a {
@@ -205,7 +267,7 @@ body {
 
 .markdown-body blockquote {
     border-left: 3px solid var(--text-accent);
-    background: #f8fafc;
+    background: var(--bg-quote);
     padding: 1rem 1.5rem;
     color: var(--text-secondary);
     margin: 2rem 0;
@@ -223,8 +285,8 @@ body {
 
 /* Code Blocks */
 .markdown-body pre {
-    background: #1e293b;
-    color: #f1f5f9;
+    background: var(--bg-code-block);
+    color: var(--text-code-block);
     padding: 20px;
     border-radius: var(--radius);
     font-size: 0.9rem;
@@ -233,8 +295,8 @@ body {
 }
 
 .markdown-body code {
-    background: #f1f5f9;
-    color: #d63384;
+    background: var(--bg-code-inline);
+    color: var(--code-text);
     padding: 2px 6px;
     border-radius: 4px;
     font-size: 0.9em;
@@ -243,7 +305,7 @@ body {
 
 .tag-pill {
     display: inline-block;
-    background: #f1f5f9;
+    background: var(--bg-tag);
     padding: 4px 10px;
     border-radius: 20px;
     font-size: 0.75rem;
@@ -266,7 +328,7 @@ body {
 }
 
 .shelf-card {
-    background: #fff;
+    background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: var(--radius);
     padding: 24px;
@@ -309,7 +371,7 @@ body {
     top: 20px;
     right: 20px;
     z-index: 100;
-    background: white;
+    background: var(--bg-card);
     border: 1px solid var(--border-color);
     padding: 10px;
     border-radius: var(--radius);
