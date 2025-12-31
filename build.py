@@ -69,7 +69,7 @@ def get_folder_meta(folder_path):
             with open(meta_path, "r") as f:
                 custom = json.load(f)
                 defaults.update(custom)
-        except FileNotFoundError:
+        except json.JSONDecodeError:
             pass
 
     return defaults

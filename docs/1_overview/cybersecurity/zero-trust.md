@@ -35,3 +35,4 @@ if user.mfa_verified && device.is_managed:
     allow_access(resource="database_prod")
 else:
     deny_access()
+```

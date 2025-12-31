@@ -26,6 +26,36 @@ function init() {
     return;
   }
 
+  // --- EVENT DELEGATION: SIDEBAR ---
+  // Handle clicks for all .nav-item elements (Sidebar & Search Results)
+  navTree.addEventListener("click", (e) => {
+    const navItem = e.target.closest(".nav-item");
+    if (navItem && navItem.dataset.id) {
+      e.preventDefault();
+      loadContent(navItem.dataset.id);
+    }
+  });
+
+  // --- EVENT DELEGATION: MAIN CONTENT ---
+  // Handle clicks for Back Buttons and Shelf Cards
+  contentDisplay.addEventListener("click", (e) => {
+    // 1. Handle Back Button
+    const backLink = e.target.closest(".back-link");
+    if (backLink && backLink.dataset.id) {
+      e.preventDefault();
+      loadContent(backLink.dataset.id);
+      return;
+    }
+
+    // 2. Handle Shelf Card
+    const shelfCard = e.target.closest(".shelf-card");
+    if (shelfCard && shelfCard.dataset.id) {
+      e.preventDefault();
+      loadContent(shelfCard.dataset.id);
+      return;
+    }
+  });
+
   renderSidebar();
 
   // Auto-load the first available item
@@ -59,8 +89,8 @@ function renderSidebar() {
       section.items.forEach((item) => {
         const navItem = document.createElement("div");
         navItem.className = "nav-item";
+        // Security: Use data attribute instead of onclick
         navItem.dataset.id = item.id;
-        navItem.onclick = () => loadContent(item.id);
 
         navItem.innerHTML = `
                     <i class="${item.icon || "fas fa-folder"}"></i>
@@ -115,9 +145,6 @@ function loadContent(id) {
   const { item, parent } = result;
 
   // --- 1. HIGHLIGHT SIDEBAR ---
-  // If we are looking at a "Child" (Article), highlight the "Parent" (Topic) in sidebar.
-  // If we are looking at a "Parent" (Topic), highlight it directly.
-
   document
     .querySelectorAll(".nav-item")
     .forEach((el) => el.classList.remove("active"));
@@ -137,8 +164,9 @@ function loadContent(id) {
 
   // A. Back Button (Only if deep inside a topic)
   if (parent) {
+    // Security Fix: Removed inline onclick, added data-id
     htmlContent += `
-            <div class="back-link" onclick="loadContent('${parent.id}')">
+            <div class="back-link" data-id="${parent.id}">
                 <i class="fas fa-arrow-left"></i> Back to ${parent.title}
             </div>
         `;
@@ -154,9 +182,6 @@ function loadContent(id) {
   }
 
   // C. Shelf vs Article Logic
-  // If it has children -> Render Grid (Shelf)
-  // If it has content  -> Render Markdown (Article)
-
   if (item.children && item.children.length > 0) {
     htmlContent += renderShelf(item);
   } else if (item.content) {
@@ -187,8 +212,9 @@ function renderShelf(item) {
     `;
 
   item.children.forEach((child) => {
+    // Security Fix: Removed inline onclick, added data-id
     html += `
-            <div class="shelf-card" onclick="loadContent('${child.id}')">
+            <div class="shelf-card" data-id="${child.id}">
                 <i class="${child.icon || "far fa-file-alt"} shelf-icon"></i>
                 <div class="shelf-title">${child.title}</div>
                 <div class="shelf-desc">${child.desc || ""}</div>
@@ -265,7 +291,8 @@ function filterDocs(query) {
   results.forEach((item) => {
     const navItem = document.createElement("div");
     navItem.className = "nav-item";
-    navItem.onclick = () => loadContent(item.id); // Click jumps directly to content
+    // Security: Use data attribute instead of onclick
+    navItem.dataset.id = item.id;
 
     navItem.innerHTML = `
             <i class="${item.icon || "far fa-file"}"></i>
