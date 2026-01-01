@@ -6,8 +6,8 @@ desc: Summary of 20 December - 26 December 2025.
 
 # Week 52
 
-### CyberSecurity
+## CyberSecurity
 
-### Artificial Intelligence
+## Artificial Intelligence
 
-### General Technology
+## General Technology

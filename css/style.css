@@ -35,9 +35,9 @@ body[data-theme="dark"] {
     --border-color: #1f2937;
     --bg-input: #111827;
     --bg-card: #0b1220;
-    --bg-quote: #111827;
-    --bg-tag: #0f172a;
-    --bg-code-inline: #111827;
+    --bg-quote: #1e293b;
+    --bg-tag: #1e293b;
+    --bg-code-inline: #1e293b;
     --bg-code-block: #111827;
     --text-primary: #e2e8f0;
     --text-secondary: #94a3b8;
@@ -133,7 +133,10 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+    transition:
+        color 0.2s,
+        border-color 0.2s,
+        background-color 0.2s;
 }
 
 .theme-toggle:hover {
@@ -281,6 +284,41 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
 
 .markdown-body li {
     margin-bottom: 0.5rem;
+}
+
+/* --- TABLE STYLES --- */
+.markdown-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+    overflow-x: auto;
+    display: block; /* Ensures responsive scrolling on small screens if needed */
+}
+
+/* Restore table display on larger screens */
+@media (min-width: 640px) {
+    .markdown-body table {
+        display: table;
+    }
+}
+
+.markdown-body th,
+.markdown-body td {
+    border: 1px solid var(--border-color);
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.markdown-body th {
+    background-color: var(--bg-quote);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Zebra Striping using existing tag background variable */
+.markdown-body tr:nth-child(even) {
+    background-color: var(--bg-tag);
 }
 
 /* Code Blocks */
