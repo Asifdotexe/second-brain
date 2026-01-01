@@ -19,7 +19,8 @@ Imagine a construction company builds a thousand identical houses with high-secu
 ### Visual Aid
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Vulnerability_timeline.png" alt="Zero-Day Timeline" style="height: 400px; width: 750px;" />
 
-### Further Reading
+## Further Reading
+
 * **Trend Micro:** [What is a Zero-Day Attack?](https://www.trendmicro.com/vinfo/us/security/definition/zero-day-vulnerability)
 * **Symantec (Broadcom):** [Zero-day Vulnerabilities Explained](https://us.norton.com/internet-security-emerging-threats-how-do-zero-day-vulnerabilities-work-30-seconds.html)
 * **MITRE CVE:** [Common Vulnerabilities and Exposures](https://cve.mitre.org/) (The database where vulnerabilities are eventually listed)
