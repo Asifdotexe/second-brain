@@ -21,10 +21,14 @@ const wikiData = {
                     },
                     {
                         "id": "ai-hallucination",
-                        "title": "Ai Hallucination",
-                        "icon": "far fa-file-alt",
+                        "title": "AI Hallucination",
+                        "icon": "fas fa-eye",
                         "desc": "",
-                        "tags": [],
+                        "tags": [
+                            "ArtificialIntelligence",
+                            "LargeLanguageModels",
+                            "AIHallucination"
+                        ],
                         "content": ""
                     },
                     {
