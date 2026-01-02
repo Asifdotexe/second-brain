@@ -17,7 +17,7 @@ desc: Summary of 27 December 2025 - 3 December 2026.
 
 ### Fourth Wave of "GlassWorm" Targets macOS Developers
 
-- The What: A persistent malware campaign known as GlassWorm has launched its fourth wave, specifically targeting macOS developers through malicious extensions for VSCode and OpenVSX.
+- The What: A persistent malware campaign known as [[glassworm|GlassWorm]] has launched its fourth wave, specifically targeting macOS developers through malicious extensions for VSCode and OpenVSX.
 - The Detail: The attackers distribute trojanized versions of cryptocurrency wallet applications and development tools. Once installed, the malware grants persistent access to the victim's machine, aiming to steal sensitive credentials and crypto assets.
 - The Impact: This highlights the growing trend of [[supply-chain-attack|Supply Chain Attack]] targeting developers. By compromising the tools developers use, attackers can potentially inject malicious code into downstream software or steal high-value intellectual property.
 
