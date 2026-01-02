@@ -42,7 +42,7 @@ desc: Summary of 12 December - 19 December 2025.
 
 ## Artificial Intelligence
 
-### NVIDIA Debuts "Nemotron 3" [[Open Model]] Family
+### NVIDIA Debuts "Nemotron 3" [[open-model|Open Model]] Family
 
 - NVIDIA released Nemotron 3, a new family of open AI models (Nano, Super, and Ultra) designed for [[agentic-ai|Agentic AI]].
 - The models are optimized to work together in multi-step workflows (e.g., one AI plans a task, another executes it).
@@ -55,7 +55,7 @@ desc: Summary of 12 December - 19 December 2025.
 
 ## General Technology
 
-### [[LiDAR]] Pioneer Luminar Technologies Files for Bankruptcy
+### [[lidar|LiDAR]] Pioneer Luminar Technologies Files for Bankruptcy
 - Luminar, a leading company in autonomous vehicle sensors (LiDAR), filed for Chapter 11 bankruptcy on December 15.
 - The company is selling its semiconductor division to Quantum Computing Inc. to raise cash.
 - This signals a major shakeup in the self-driving car industry, as automakers face high costs and slower-than-expected adoption of autonomous tech.
