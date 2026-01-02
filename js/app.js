@@ -261,6 +261,8 @@ function loadContent(id) {
   // Mobile: Close sidebar after selection
   if (window.innerWidth <= 768) {
     sidebar.classList.remove("open");
+    const backdrop = document.getElementById("sidebarBackdrop");
+    if (backdrop) backdrop.classList.remove("visible");
   }
 
   currentDocId = id;
@@ -366,10 +368,86 @@ function filterDocs(query) {
 
     navTree.appendChild(navItem);
   });
+
+}
+
+function toggleMobileSearch() {
+  const overlay = document.getElementById("mobileSearchOverlay");
+  overlay.classList.toggle("open");
+  const input = document.getElementById("mobileSearchInput");
+  if (overlay.classList.contains("open")) {
+    input.focus();
+  } else {
+    input.value = "";
+    document.getElementById("mobileSearchResults").innerHTML = "";
+  }
+}
+
+function handleMobileSearch(query) {
+  const term = query.toLowerCase().trim();
+  const resultsContainer = document.getElementById("mobileSearchResults");
+
+  if (term.length < 2) {
+    resultsContainer.innerHTML = "";
+    return;
+  }
+
+  const results = [];
+
+  function searchItems(items) {
+    items.forEach((item) => {
+      const matchTitle = item.title.toLowerCase().includes(term);
+      const matchDesc = item.desc && item.desc.toLowerCase().includes(term);
+      const matchContent =
+        item.content && item.content.toLowerCase().includes(term);
+      const matchTags =
+        item.tags && item.tags.some((tag) => tag.toLowerCase().includes(term));
+
+      if (matchTitle || matchDesc || matchContent || matchTags) {
+        results.push(item);
+      }
+
+      if (item.children) {
+        searchItems(item.children);
+      }
+    });
+  }
+
+  Object.keys(wikiData).forEach((key) => {
+    if (wikiData[key].items) {
+      searchItems(wikiData[key].items);
+    }
+  });
+
+  resultsContainer.innerHTML = "";
+
+  if (results.length === 0) {
+    resultsContainer.innerHTML = `<div style="color:var(--text-secondary); padding:10px;">No matches found.</div>`;
+    return;
+  }
+
+  results.forEach((item) => {
+    const resultItem = document.createElement("div");
+    resultItem.className = "nav-item"; // Reuse existing style
+    resultItem.style.padding = "10px 0";
+    resultItem.style.borderBottom = "1px solid var(--border-color)";
+    resultItem.innerHTML = `
+            <i class="${item.icon || "far fa-file"}"></i>
+            <span>${item.title}</span>
+        `;
+    resultItem.addEventListener("click", () => {
+      loadContent(item.id);
+      toggleMobileSearch(); // Close overlay on selection
+    });
+    resultsContainer.appendChild(resultItem);
+  });
 }
 
 function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  const backdrop = document.getElementById("sidebarBackdrop");
   sidebar.classList.toggle("open");
+  backdrop.classList.toggle("visible");
 }
 
 // Start the Engine
