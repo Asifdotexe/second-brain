@@ -23,3 +23,9 @@ GlassWorm instead looks at public transactions on the **Solana Cryptocurrency Bl
 
 *2. What is the "ZOMBI" Module?*
 Once fully installed, GlassWorm deploys a payload often called the **ZOMBI module**. This turns the developer's high-powered computer into a proxy. Hackers can then route their own internet traffic through the developer's computer to attack *other* targets, making it look like the innocent developer did it.
+
+### Further Reading
+
+* **The Original Discovery:** Search for *["Koi Security GlassWorm Report October 2025"](https://www.koi.ai/blog/glassworm-returns-new-wave-openvsx-malware-expose-attacker-infrastructure)*.
+* **The Technique:** Read about *"[Trojan Source Attacks](https://trojansource.codes/)"* (CVE-2021-42574) to understand how invisible characters work in code.
+* **The Defense:** Look up *"VS Code Restricted Mode"* and how to audit your extensions.
