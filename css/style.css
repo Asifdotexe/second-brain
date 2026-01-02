@@ -7,7 +7,8 @@ STYLE: Sidey Minimalist Replica
 :root {
     /* Palette - Strict Minimalist */
     --bg-body: #ffffff;
-    --bg-sidebar: #f7f9fb; /* Very light cool gray */
+    --bg-sidebar: #f7f9fb;
+    /* Very light cool gray */
     --border-color: #e2e8f0;
     --bg-input: #ffffff;
     --bg-card: #ffffff;
@@ -16,9 +17,12 @@ STYLE: Sidey Minimalist Replica
     --bg-code-inline: #f1f5f9;
     --bg-code-block: #1e293b;
 
-    --text-primary: #1e293b; /* Slate 800 */
-    --text-secondary: #64748b; /* Slate 500 */
-    --text-accent: #2563eb; /* Blue 600 - The only color pop */
+    --text-primary: #1e293b;
+    /* Slate 800 */
+    --text-secondary: #64748b;
+    /* Slate 500 */
+    --text-accent: #2563eb;
+    /* Blue 600 - The only color pop */
     --text-muted: #334155;
     --code-text: #d63384;
     --text-code-block: #f1f5f9;
@@ -75,7 +79,8 @@ body {
 }
 
 .sidebar-header {
-    padding: 24px 24px 10px 24px; /* More top padding */
+    padding: 24px 24px 10px 24px;
+    /* More top padding */
     position: relative;
 }
 
@@ -184,7 +189,8 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
     align-items: center;
     gap: 10px;
     transition: color 0.1s;
-    border-left: 3px solid transparent; /* Side marker */
+    border-left: 3px solid transparent;
+    /* Side marker */
 }
 
 .nav-item:hover {
@@ -195,7 +201,8 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
 .nav-item.active {
     color: var(--text-accent);
     font-weight: 600;
-    background-color: transparent; /* Removed blocky background */
+    background-color: transparent;
+    /* Removed blocky background */
     border-left-color: var(--text-accent);
 }
 
@@ -210,7 +217,8 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
 .main-content {
     flex: 1;
     overflow-y: auto;
-    padding: 60px 80px; /* Generous whitespace */
+    padding: 60px 80px;
+    /* Generous whitespace */
     max-width: 1000px;
 }
 
@@ -226,6 +234,7 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
     transition: color 0.2s;
     cursor: pointer;
 }
+
 .back-link:hover {
     color: var(--text-accent);
 }
@@ -240,7 +249,8 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
     font-weight: 800;
     letter-spacing: -0.03em;
     margin-bottom: 1rem;
-    border-bottom: none; /* Cleaner look */
+    border-bottom: none;
+    /* Cleaner look */
     line-height: 1.2;
 }
 
@@ -256,7 +266,8 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
 
 .markdown-body p {
     margin-bottom: 1.5rem;
-    color: var(--text-muted); /* Slightly softer than pure black */
+    color: var(--text-muted);
+    /* Slightly softer than pure black */
 }
 
 .markdown-body a {
@@ -264,6 +275,7 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
     text-decoration: none;
     font-weight: 500;
 }
+
 .markdown-body a:hover {
     text-decoration: underline;
 }
@@ -293,7 +305,8 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
     margin: 2rem 0;
     font-size: 0.95rem;
     overflow-x: auto;
-    display: block; /* Ensures responsive scrolling on small screens if needed */
+    display: block;
+    /* Ensures responsive scrolling on small screens if needed */
 }
 
 /* Restore table display on larger screens */
@@ -380,7 +393,8 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
 .shelf-card:hover {
     border-color: var(--text-accent);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Softer shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* Softer shadow */
 }
 
 .shelf-icon {
@@ -402,6 +416,33 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
     line-height: 1.5;
 }
 
+/* --- LANDING PAGE --- */
+.landing-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.landing-hero {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.landing-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+    letter-spacing: -0.03em;
+}
+
+.landing-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
 /* --- MOBILE HEADER & LAYOUT --- */
 .mobile-header {
     display: none;
@@ -410,7 +451,8 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
     left: 0;
     width: 100%;
     height: 60px;
-    background: rgba(255, 255, 255, 0.85); /* Fallback */
+    background: rgba(255, 255, 255, 0.85);
+    /* Fallback */
     background: var(--bg-body);
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
@@ -513,6 +555,7 @@ body[data-theme="dark"] .mobile-header {
 
 /* --- RESPONSIVE MEDIA QUERIES --- */
 @media (max-width: 768px) {
+
     /* Show Header */
     .mobile-header {
         display: flex;
@@ -521,20 +564,24 @@ body[data-theme="dark"] .mobile-header {
     /* Adjust Sidebar for Mobile */
     .sidebar {
         position: fixed;
-        top: 0; /* Align to top, header is overlay or sibling? */
+        top: 0;
+        /* Align to top, header is overlay or sibling? */
         bottom: 0;
         left: 0;
-        width: 280px; /* Slightly wider */
-        z-index: 1001; /* Above header */
+        width: 280px;
+        /* Slightly wider */
+        z-index: 1001;
+        /* Above header */
         transform: translateX(-100%);
         transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: none; /* Shadow handled by backdrop? Or add distinct shadow */
+        box-shadow: none;
+        /* Shadow handled by backdrop? Or add distinct shadow */
         border-right: none;
     }
 
     .sidebar.open {
         transform: translateX(0);
-        box-shadow: 4px 0 24px rgba(0,0,0,0.1);
+        box-shadow: 4px 0 24px rgba(0, 0, 0, 0.1);
     }
 
     /* Adjust Main Content */

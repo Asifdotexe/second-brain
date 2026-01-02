@@ -108,15 +108,76 @@ function init() {
 
   renderSidebar();
 
-  // Auto-load the first available item
-  const firstSectionKey = Object.keys(wikiData)[0];
-  if (firstSectionKey) {
-    const firstSection = wikiData[firstSectionKey];
-    if (firstSection.items && firstSection.items.length > 0) {
-      loadContent(firstSection.items[0].id);
-    }
-  }
+  // Handle Brand Clicks (Home)
+  const brands = document.querySelectorAll(".brand, .mobile-brand");
+  brands.forEach((el) => {
+    el.style.cursor = "pointer";
+    el.addEventListener("click", () => {
+      renderLandingPage();
+      if (window.innerWidth <= 768) {
+        // specific for mobile brand click if we want to ensure sidebar state?
+        // Actually sidebar brand is inside sidebar, mobile brand is in header.
+        // If sidebar is open and we click sidebar brand -> close sidebar
+        const sidebar = document.getElementById("sidebar");
+        const backdrop = document.getElementById("sidebarBackdrop");
+        if (sidebar.classList.contains("open")) {
+          sidebar.classList.remove("open");
+          if (backdrop) backdrop.classList.remove("visible");
+        }
+      }
+    });
+  });
+
+  renderSidebar();
+  renderLandingPage();
 }
+
+function renderLandingPage() {
+  document
+    .querySelectorAll(".nav-item")
+    .forEach((el) => el.classList.remove("active"));
+  currentDocId = null;
+
+  let html = `
+        <div class="landing-container">
+            <div class="landing-hero">
+                <h1>Asif's Second Brain</h1>
+                <p class="landing-subtitle">
+                    My personal knowledge base containing self-maintained definitions and 
+                    concepts to prevent duplication of effort.
+                </p>
+            </div>
+            
+            <div class="shelf-grid">
+    `;
+
+  Object.keys(wikiData).forEach((key) => {
+    const section = wikiData[key];
+    // Count items (rough approx)
+    const count = section.items ? section.items.length : 0;
+
+    html += `
+            <div class="shelf-card" onclick="openSection('${key}')">
+                <i class="fas fa-layer-group shelf-icon"></i>
+                <div class="shelf-title">${section.title}</div>
+                <div class="shelf-desc">${count} Topics</div>
+            </div>
+        `;
+  });
+
+  html += `</div></div>`;
+  contentDisplay.innerHTML = html;
+  window.scrollTo(0, 0);
+}
+
+// Open the section in sidebar and load its first item
+// Exposed to global scope for the onclick above
+window.openSection = function (key) {
+  const section = wikiData[key];
+  if (section && section.items && section.items.length > 0) {
+    loadContent(section.items[0].id);
+  }
+};
 
 // ==========================================
 // 🌲 SIDEBAR NAVIGATION
