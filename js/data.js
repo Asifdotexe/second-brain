@@ -1,6 +1,6 @@
 const wikiData = {
     "overview": {
-        "title": "Overview",
+        "title": "Topics",
         "items": [
             {
                 "id": "ai",
@@ -151,7 +151,7 @@ const wikiData = {
         ]
     },
     "logs": {
-        "title": "Logs",
+        "title": "Weekly Updates",
         "items": [
             {
                 "id": "2025",
