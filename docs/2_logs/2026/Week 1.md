@@ -9,9 +9,9 @@ desc: Summary of 27 December 2025 - 3 December 2026.
 ## Cyber Security
 
 ### RondoDox Botnet Exploits Next.js Servers
-- The What: A new botnet campaign dubbed "RondoDox" has been observed actively targeting servers running the Next.js framework by exploiting a critical vulnerability known as "React2Shell" (CVE-2025-55182).
+- The What: A new [[botnet]] campaign dubbed "RondoDox" has been observed actively targeting servers running the Next.js framework by exploiting a critical vulnerability known as "[[react2shell|React2Shell]]" ([[CVE]]-2025-55182).
 - The Detail: Attackers are using this flaw to execute remote code on vulnerable servers, subsequently deploying cryptominers and malware. The botnet specifically hunts for unpatched instances of the popular React framework used for building web applications.
-- The Impact: This poses a severe risk to web infrastructure, as Next.js is widely used by enterprise-grade applications. Successful compromise can lead to server resource theft (cryptojacking) or deeper network infiltration.
+- The Impact: This poses a severe risk to web infrastructure, as Next.js is widely used by enterprise-grade applications. Successful compromise can lead to server resource theft ([[cryptojacking]]) or deeper network infiltration.
 
 *Read more about it: https://www.bleepingcomputer.com/news/security/rondodox-botnet-exploits-react2shell-flaw-to-breach-nextjs-servers/*
 
