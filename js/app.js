@@ -255,7 +255,7 @@ function lookup(id) {
   for (let key of Object.keys(wikiData)) {
     if (wikiData[key].items) {
       const found = findItemAndParent(id, wikiData[key].items);
-      if (found) return found;
+      if (found) return { ...found, rootKey: key };
     }
   }
   return null;
@@ -265,7 +265,7 @@ function loadContent(id) {
   const result = lookup(id);
   if (!result) return;
 
-  const { item, parent } = result;
+  const { item, parent, rootKey } = result;
 
   // --- 1. HIGHLIGHT SIDEBAR ---
   document
@@ -304,9 +304,15 @@ function loadContent(id) {
     htmlContent += "</div>";
   }
 
-  // C. Shelf vs Article Logic
+  // C. Shelf vs List vs Article Logic
   if (item.children && item.children.length > 0) {
-    htmlContent += renderShelf(item);
+    // Check if we are in 'overview' (Topics) -> Use List View
+    // Otherwise (e.g. 'logs') -> Use Shelf View
+    if (rootKey === "overview") {
+      htmlContent += renderList(item);
+    } else {
+      htmlContent += renderShelf(item);
+    }
   } else if (item.content) {
     // --- WIKILINK SUPPORT ---
     // Convert [[id]] to [id](id) and [[id|Label]] to [Label](id)
@@ -360,6 +366,33 @@ function renderShelf(item) {
                 <div class="shelf-desc">${child.desc || ""}</div>
             </div>
         `;
+  });
+  html += `</div>`;
+  return html;
+}
+
+function renderList(item) {
+  let html = `
+          <div class="shelf-header">
+              <h1 style="margin-bottom:0.5rem">${item.title}</h1>
+              <p style="color:var(--text-secondary)">${item.desc || "Select a concept below."}</p>
+          </div>
+          <div class="list-container">
+      `;
+
+  item.children.forEach((child) => {
+    html += `
+              <div class="list-item" data-id="${child.id}" onclick="loadContent('${child.id}')">
+                  <div class="list-icon-container">
+                    <i class="${child.icon || "far fa-file-alt"} list-icon"></i>
+                  </div>
+                  <div class="list-content">
+                    <div class="list-title">${child.title}</div>
+                    <div class="list-desc">${child.desc || ""}</div>
+                  </div>
+                  <i class="fas fa-chevron-right list-arrow"></i>
+              </div>
+          `;
   });
   html += `</div>`;
   return html;
