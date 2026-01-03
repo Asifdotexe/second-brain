@@ -4,7 +4,7 @@ tags: security, network, architecture
 desc: Summary of 27 December 2025 - 3 December 2026.
 ---
 
-# Week 52
+# Week 1
 
 ## Cyber Security
 
@@ -71,7 +71,7 @@ desc: Summary of 27 December 2025 - 3 December 2026.
 
 *Read more about it: https://www.sciencedaily.com/releases/2025/12/251226045341.htm*
 
-### NYC Mayoral Inauguration Bans Flipper Zero
+### NYC Mayoral Inauguration Bans Flipper Zero and Raspberry Pi
 - The What: For the 2026 inauguration of New York City Mayor Zohran Mamdani, officials have explicitly added the Flipper Zero and Raspberry Pi devices to the list of banned items.
 - The Detail: The Flipper Zero is a portable multi-tool for geeks that can interact with radio protocols (RFID, NFC, Sub-GHz). While legal, it has gained a reputation in security circles for its ability to clone badges or disrupt wireless signals.
 - The Impact: This is one of the first high-profile public events to specifically blacklist "hacker tools" by name, acknowledging the physical security risks posed by accessible, pocket-sized cyber-physical devices.
