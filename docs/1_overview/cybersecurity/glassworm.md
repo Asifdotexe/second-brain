@@ -8,7 +8,7 @@ icon: fas fa-lock
 
 An "invisible" computer virus that hides inside the code developers write, spreading automatically by stealing their work passwords.
 
-It is a highly advanced piece of malware discovered in late October 17, 2025 that targets software developers.
+It is a highly advanced piece of malware discovered on October 17, 2025 that targets software developers.
 
 It specifically infects **Visual Studio Code (VS Code) extensions**, the little add-ons programmers use to make coding easier. What makes it terrifying is that the malicious code is written using **invisible characters**. A programmer can look directly at the infected file, and it will look like an empty line or normal whitespace, but the computer reads it as dangerous instructions.
 
@@ -28,4 +28,4 @@ Once fully installed, GlassWorm deploys a payload often called the **ZOMBI modul
 
 * **The Original Discovery:** Search for *["Koi Security GlassWorm Report October 2025"](https://www.koi.ai/blog/glassworm-returns-new-wave-openvsx-malware-expose-attacker-infrastructure)*.
 * **The Technique:** Read about *"[Trojan Source Attacks](https://trojansource.codes/)"* (CVE-2021-42574) to understand how invisible characters work in code.
-* **The Defense:** Look up *"VS Code Restricted Mode"* and how to audit your extensions.
+* **The Defense:** Look up *"[VS Code Restricted Mode](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_extension-recommendations)"* and how to audit your extensions.

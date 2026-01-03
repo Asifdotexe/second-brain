@@ -43,7 +43,7 @@ For example, in the sentence *"The bank was closed because the river flooded,"* 
 
 Parameters are the "brain cells" of the model. They are the adjustable variables inside the model that store the knowledge. 
 * **More parameters** = generally smarter, more nuanced, and capable of handling complex tasks. 
-* GPT-4, for instance, has approximately 1.76 trillion
+* GPT-4, for instance, has approximately 1.76 trillion parameters
 
 *3. Why do LLMs hallucinate?*
 

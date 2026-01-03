@@ -10,7 +10,7 @@ A **Supply Chain Attack** is a cyberattack where a hacker targets a company's *v
 
 Instead of trying to hack your highly secure computer, the attacker secretly infects a piece of software (like an update), hardware (like a microchip), or a service that you trust and use every day. Because you "trust" the supplier, your security systems let the infection in without checking it, giving the hacker a free ride into your network.
 
-### 🧩 How it Works (First Principles)
+## How it Works
 
 To understand this, we must look at **Trust Transitivity**:
 
@@ -23,7 +23,7 @@ To understand this, we must look at **Trust Transitivity**:
 ---
 <br>
 
-### 📂 Types of Breaches (The "Vectors")
+## Types of Breaches (The "Vectors")
 
 Supply chain attacks aren't just one thing; they come in different "flavors" depending on what part of the chain is broken:
 
@@ -36,7 +36,7 @@ Supply chain attacks aren't just one thing; they come in different "flavors" dep
 ---
 <br>
 
-### 📚 Further Reading
+## Further Reading
 
 * **Case Study:** *[The SolarWinds Orion Hack](https://www.techtarget.com/whatis/feature/SolarWinds-hack-explained-Everything-you-need-to-know)* (The most famous example).
 * **Concept:** *[Target Data Breach (2013)](https://redriver.com/security/target-data-breach)* (Happened because of a hacked HVAC/Air Conditioning vendor).
