@@ -295,14 +295,7 @@ function loadContent(id) {
         `;
   }
 
-  // B. Tags (If available)
-  if (item.tags && item.tags.length > 0) {
-    htmlContent += "<div>";
-    item.tags.forEach((tag) => {
-      htmlContent += `<span class="tag-pill">#${tag}</span>`;
-    });
-    htmlContent += "</div>";
-  }
+
 
   // C. Shelf vs List vs Article Logic
   if (item.children && item.children.length > 0) {
@@ -332,6 +325,15 @@ function loadContent(id) {
     });
   } else {
     htmlContent += `<p style="color:var(--text-secondary)">No content available.</p>`;
+  }
+
+  // B. Tags (If available) - Moved to Bottom
+  if (item.tags && item.tags.length > 0) {
+    htmlContent += "<div style='margin-top: 30px; border-top: 1px solid var(--border-color); padding-top: 20px;'>";
+    item.tags.forEach((tag) => {
+      htmlContent += `<span class="tag-pill">#${tag}</span>`;
+    });
+    htmlContent += "</div>";
   }
 
   // --- 3. RENDER ---
