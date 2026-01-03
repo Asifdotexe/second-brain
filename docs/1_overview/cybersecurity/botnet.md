@@ -8,9 +8,9 @@ icon: fas fa-lock
 
 Imagine an army of computers, secretly controlled by one person to attack a specific target.
 
-A **Botnet** (short for "Robot Network") is a collection of internet-connected devices—like laptops, smartphones, or even smart fridges, that have been infected with malicious software.
+A **Botnet** (short for "Robot Network") is a collection of internet-connected devices, like laptops, smartphones, or even smart fridges, that have been infected with malicious software.
 
-This software runs quietly in the background without the owner knowing. It connects the device to a central "Command & Control" server, allowing a hacker to control thousands of these devices at once to perform massive attacks.
+This software runs quietly in the background without tadd he owner knowing. It connects the device to a central "Command & Control" server, allowing a hacker to control thousands of these devices at once to perform massive attacks.
 
 ## FAQs
 
