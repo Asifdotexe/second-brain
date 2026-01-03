@@ -44,7 +44,7 @@ desc: Summary of 27 December 2025 - 3 December 2026.
 ### OpenAI Prioritizes "Sponsored Content" in Answers
 - The What: Reports indicate that OpenAI is shifting its business model to prioritize "sponsored content" within its AI-generated responses, moving away from a purely subscription/API-based revenue stream.
 - The Detail: Despite initial resistance to advertising, the company is testing formats where paid partners' information appears prominently when relevant queries are asked, distinct from organic training data results.
-- The Impact: This fundamentally changes the user trust model for [[LLM|Large Language Models]]. If answers are influenced by sponsorship, the perceived neutrality of AI "reasoning" is compromised, making it more akin to a search engine ad platform than an impartial assistant.
+- The Impact: This fundamentally changes the user trust model for [[llm|Large Language Models]]. If answers are influenced by sponsorship, the perceived neutrality of AI "reasoning" is compromised, making it more akin to a search engine ad platform than an impartial assistant.
 
 *Read more about it: https://www.bleepingcomputer.com/news/artificial-intelligence/openais-chatgpt-ads-will-allegedly-prioritize-sponsored-content-in-answers/*
 
