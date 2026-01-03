@@ -119,7 +119,7 @@ def build_tree(current_path):
 
 
 def main():
-    print(f"🧠 Scanning '{DOCS_DIR}'...")
+    print(f"Scanning '{DOCS_DIR}'...")
 
     if not os.path.exists(DOCS_DIR):
         os.makedirs(DOCS_DIR)
@@ -151,7 +151,7 @@ def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(js_content)
 
-    print(f"✅ Build complete! Data written to {OUTPUT_FILE}")
+    print(f"Build complete! Data written to {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":
