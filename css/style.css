@@ -443,6 +443,19 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
     line-height: 1.6;
 }
 
+.landing-section {
+    margin-bottom: 40px;
+}
+
+.landing-section-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
 /* --- MOBILE HEADER & LAYOUT --- */
 .mobile-header {
     display: none;
