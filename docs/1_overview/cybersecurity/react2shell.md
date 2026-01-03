@@ -8,7 +8,7 @@ icon: fas fa-lock
 
 A critical security flaw in React that lets hackers trick a server into running dangerous shell commands just by sending a fake web request.
 
-**React2Shell** (technically known as *CVE-2025-55182*) is a massive security vulnerability discovered in 3rd December 2025 affecting **React Server Components**.
+**React2Shell** (technically known as *[[CVE]]-2025-55182*) is a massive security vulnerability discovered in 3rd December 2025 affecting **React Server Components**.
 
 It happens because of a mistake in how the server processes (or "deserializes") data sent from a user. If a hacker sends a specially crafted message, the server doesn't just read the message, it mistakenly **executes** it as code. This gives the attacker full control over the server (Remote Code Execution), allowing them to steal data or install malware without even needing a password.
 
