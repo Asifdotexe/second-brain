@@ -5,8 +5,8 @@ const wikiData = {
             {
                 "id": "ai",
                 "title": "AI",
-                "icon": "fas fa-folder",
-                "desc": "",
+                "icon": "fas fa-brain",
+                "desc": "Artificial Intelligence & ML",
                 "children": [
                     {
                         "id": "agentic-ai",
@@ -70,8 +70,8 @@ const wikiData = {
             {
                 "id": "cybersecurity",
                 "title": "Cybersecurity",
-                "icon": "fas fa-folder",
-                "desc": "",
+                "icon": "fas fa-shield-halved",
+                "desc": "Security protocols and notes",
                 "children": [
                     {
                         "id": "botnet",
@@ -174,8 +174,8 @@ const wikiData = {
             {
                 "id": "general",
                 "title": "General",
-                "icon": "fas fa-folder",
-                "desc": "",
+                "icon": "fas fa-server",
+                "desc": "General tech concepts",
                 "children": [
                     {
                         "id": "disksat",
@@ -204,9 +204,9 @@ const wikiData = {
             },
             {
                 "id": "iot",
-                "title": "IOT",
-                "icon": "fas fa-folder",
-                "desc": "",
+                "title": "IoT",
+                "icon": "fas fa-network-wired",
+                "desc": "Internet of Things",
                 "children": [
                     {
                         "id": "lidar",
@@ -228,8 +228,8 @@ const wikiData = {
             {
                 "id": "2025",
                 "title": "2025",
-                "icon": "fas fa-folder",
-                "desc": "",
+                "icon": "fas fa-calendar-alt",
+                "desc": "Weekly updates for 2025",
                 "children": [
                     {
                         "id": "Week 51",
@@ -262,8 +262,8 @@ const wikiData = {
             {
                 "id": "2026",
                 "title": "2026",
-                "icon": "fas fa-folder",
-                "desc": "",
+                "icon": "fas fa-calendar-alt",
+                "desc": "Weekly updates for 2026",
                 "children": [
                     {
                         "id": "Week 1",

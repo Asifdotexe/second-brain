@@ -147,25 +147,37 @@ function renderLandingPage() {
                     concepts to prevent duplication of effort.
                 </p>
             </div>
-            
-            <div class="shelf-grid">
     `;
 
   Object.keys(wikiData).forEach((key) => {
     const section = wikiData[key];
-    // Count items (rough approx)
-    const count = section.items ? section.items.length : 0;
 
-    html += `
-            <div class="shelf-card" onclick="openSection('${key}')">
-                <i class="fas fa-layer-group shelf-icon"></i>
-                <div class="shelf-title">${section.title}</div>
-                <div class="shelf-desc">${count} Topics</div>
+    // Only render if there are items
+    if (section && section.items && section.items.length > 0) {
+      html += `
+            <div class="landing-section">
+                <h2 class="landing-section-title">${section.title}</h2>
+                <div class="shelf-grid">
+        `;
+
+      section.items.forEach(item => {
+        html += `
+                <div class="shelf-card" onclick="loadContent('${item.id}')">
+                    <i class="${item.icon || "far fa-file-alt"} shelf-icon"></i>
+                    <div class="shelf-title">${item.title}</div>
+                    <div class="shelf-desc">${item.desc || ""}</div>
+                </div>
+            `;
+      });
+
+      html += `
+                </div>
             </div>
         `;
+    }
   });
 
-  html += `</div></div>`;
+  html += `</div>`;
   contentDisplay.innerHTML = html;
   window.scrollTo(0, 0);
 }
