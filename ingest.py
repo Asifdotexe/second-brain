@@ -1,74 +1,70 @@
+from typing import Tuple, Dict, List, Any, Optional, Match
 import os
 import shutil
 import re
 from pathlib import Path
 
-# ==========================================
-# ⚙️ CONFIGURATION
-# ==========================================
-
-# 1. Source: Your Obsidian Vault Path
+# CONFIGURATION
 SOURCE_PATH = r"C:\Users\sayye\OneDrive\Documents\SecondBrain\second-brain" 
-
-# 2. Destination: The '1_overview' folder in your Second Brain
 DEST_BASE_PATH = Path("docs", "1_overview")
-
-# 3. Assets: Where local images should be copied
 ASSETS_PATH = Path("assets")
-
-# Optional: Default icon if none provided
 DEFAULT_ICON = "fas fa-file-alt"
 
-# ==========================================
-# 🛠️ HELPERS
-# ==========================================
-
-def parse_frontmatter(content):
+def parse_frontmatter(content: str) -> Tuple[Dict[str, Any], str]:
     """
-    Extracts YAML frontmatter and content.
-    Returns: dict (metadata), string (body)
+    Extracts YAML frontmatter and content from a markdown string.
+
+    :param content: The raw markdown content string.
+    :return: A tuple containing a dictionary of metadata and the remaining body string.
     """
     # Regex to find YAML block at the start of file
     yaml_pattern = r"^---\s*\n(.*?)\n---\s*\n"
     match = re.match(yaml_pattern, content, re.DOTALL)
-    
-    metadata = {}
-    body = content
-    
+
+    metadata: Dict[str, Any] = {}
+    body: str = content
+
     if match:
         yaml_text = match.group(1)
         body = content[match.end():]
-        
+
         # Simple line-by-line YAML parser
         for line in yaml_text.split('\n'):
             if ':' in line:
                 key, value = line.split(':', 1)
                 key = key.strip()
                 value = value.strip()
-                
+
                 # Handle list syntax roughly (e.g., tags: [a, b])
                 if value.startswith('[') and value.endswith(']'):
-                    value = [v.strip() for v in value[1:-1].split(',') if v.strip()]
-                
-                metadata[key] = value
-                
+                    value_list = [v.strip() for v in value[1:-1].split(',') if v.strip()]
+                    metadata[key] = value_list
+                else:
+                    metadata[key] = value
+
     return metadata, body
 
-def find_extra_tags(body):
-    """Finds inline tags like #tag in the body."""
+
+def find_extra_tags(body: str) -> List[str]:
+    """
+    Finds inline tags like #tag in the body content.
+
+    :param body: The markdown body text to search.
+    :return: A list of tag strings found in the text.
+    """
     return re.findall(r'#(\w+)', body)
 
-# ==========================================
-# 🔄 TRANSFORMATION LOGIC
-# ==========================================
-
-def handle_images(body, dest_dir):
+def handle_images(body: str, dest_dir: Path) -> str:
     """
-    Finds ![[image.png]] or ![alt](image.png), copies image to assets, 
+    Finds ``![[image.png]]`` or ``![alt](image.png)``, copies image to assets,
     and updates link to relative path based on destination directory depth.
+
+    :param body: The markdown content body.
+    :param dest_dir: The directory where the markdown file will be saved.
+    :return: The content body with updated image links.
     """
-    
-    def replacer(match):
+
+    def replacer(match: Match[str]) -> str:
         is_markdown_link = match.lastindex == 3 
         
         if is_markdown_link:
@@ -123,9 +119,14 @@ def handle_images(body, dest_dir):
     pattern = r'(!\[\[(.*?)\]\])|(!\[(.*?)\]\((.*?)\))'
     return re.sub(pattern, replacer, body)
 
-def transform_content(file_path, dest_file_path):
+def transform_content(file_path: Path, dest_file_path: Path) -> str:
     """
-    Reads source, adds fm, transforms images, returns new content.
+    Reads source file, parses frontmatter, transforms images, and generates new content
+    with updated YAML frontmatter.
+
+    :param file_path: The path to the source markdown file.
+    :param dest_file_path: The path where the transformed file will be written.
+    :return: The fully transformed markdown content string.
     """
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
@@ -154,11 +155,12 @@ def transform_content(file_path, dest_file_path):
     
     return new_fm + new_body
 
-# ==========================================
-# 🚀 MAIN LOOP
-# ==========================================
-
-def run():
+def run() -> None:
+    """
+    Main function to execute the ingestion process.
+    Mirrors the directory structure from SOURCE_PATH to DEST_BASE_PATH,
+    transforms markdown files, and processes images.
+    """
     print("🚀 Starting Ingest Process (Directory Mirroring)...")
     print(f"Source: {SOURCE_PATH}")
     print(f"Dest: {DEST_BASE_PATH}")

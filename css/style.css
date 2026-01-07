@@ -138,15 +138,13 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition:
-        color 0.2s,
-        border-color 0.2s,
-        background-color 0.2s;
+    transition: all 0.2s ease;
 }
 
 .theme-toggle:hover {
     color: var(--text-primary);
     border-color: var(--text-accent);
+    transform: rotate(15deg);
 }
 
 .theme-toggle .fa-sun {
@@ -188,13 +186,14 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
     display: flex;
     align-items: center;
     gap: 10px;
-    transition: color 0.1s;
+    transition: all 0.2s ease;
     border-left: 3px solid transparent;
     /* Side marker */
 }
 
 .nav-item:hover {
     color: var(--text-primary);
+    transform: translateX(4px);
 }
 
 /* Active State: Minimalist (Bold + Color, no background block) */
@@ -204,6 +203,7 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
     background-color: transparent;
     /* Removed blocky background */
     border-left-color: var(--text-accent);
+    transform: translateX(4px);
 }
 
 .nav-item i {
@@ -464,63 +464,65 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
 .list-container {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    /* Minimal gap */
-    margin-top: 20px;
+    gap: 0;
+    /* Removed gap for stacked border style */
+    margin-top: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    overflow: hidden;
 }
 
 .list-item {
     display: flex;
     align-items: center;
-    padding: 16px 20px;
+    padding: 12px 16px;
     background: var(--bg-card);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    border-radius: 0;
     cursor: pointer;
     transition: all 0.2s ease;
     text-decoration: none;
-    gap: 16px;
+    gap: 12px;
+}
+
+.list-item:last-child {
+    border-bottom: none;
 }
 
 .list-item:hover {
-    border-color: var(--text-accent);
     background-color: var(--bg-sidebar);
-    /* Slight highlight */
+    border-bottom-color: var(--text-accent);
     transform: translateX(4px);
-    /* Subtle feedback */
 }
 
-.list-icon-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background: var(--bg-tag);
-    border-radius: 50%;
-    flex-shrink: 0;
-}
-
-.list-icon {
-    font-size: 1.1rem;
-    color: var(--text-accent);
-}
+/* Removed list-icon-container and list-icon styles */
 
 .list-content {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* Stack title and desc */
+    justify-content: center;
 }
 
 .list-title {
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 0.95rem;
+    font-weight: 500;
     color: var(--text-primary);
-    margin-bottom: 2px;
+    margin-bottom: 0;
 }
 
 .list-desc {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: var(--text-secondary);
     line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
 }
 
 .list-arrow {
