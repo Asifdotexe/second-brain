@@ -8,7 +8,7 @@ from pathlib import Path
 SOURCE_PATH = r"C:\Users\sayye\OneDrive\Documents\SecondBrain\second-brain" 
 DEST_BASE_PATH = Path("docs", "1_overview")
 ASSETS_PATH = Path("assets")
-DEFAULT_ICON = "fas fa-file-alt"
+
 
 def parse_frontmatter(content: str) -> Tuple[Dict[str, Any], str]:
     """
@@ -142,7 +142,7 @@ def transform_content(file_path: Path, dest_file_path: Path) -> str:
     # Construct YAML
     new_fm = "---\n"
     new_fm += f"title: {title}\n"
-    new_fm += f"icon: {metadata.get('icon', DEFAULT_ICON)}\n"
+
     new_fm += "---\n\n"
     
     return new_fm + new_body
