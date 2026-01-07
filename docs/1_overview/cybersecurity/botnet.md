@@ -1,7 +1,6 @@
 ---
 title: Botnet
 tags: CyberAttack, CyberSecurity, Malware
-icon: fas fa-lock
 ---
 
 # Botnet

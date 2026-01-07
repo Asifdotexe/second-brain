@@ -11,7 +11,7 @@ const wikiData = {
                     {
                         "id": "agentic-ai",
                         "title": "Agentic AI",
-                        "icon": "fas fa-robot",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "ArtificialIntelligence",
@@ -22,7 +22,7 @@ const wikiData = {
                     {
                         "id": "ai-hallucination",
                         "title": "AI Hallucination",
-                        "icon": "fas fa-eye",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "ArtificialIntelligence",
@@ -34,7 +34,7 @@ const wikiData = {
                     {
                         "id": "computer-vision",
                         "title": "Computer Vision",
-                        "icon": "fas fa-eye",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "ArtificialIntelligence",
@@ -46,7 +46,7 @@ const wikiData = {
                     {
                         "id": "llm",
                         "title": "Large Language Model (LLM)",
-                        "icon": "fas fa-robot",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "ArtificialIntelligence",
@@ -58,7 +58,7 @@ const wikiData = {
                     {
                         "id": "open-model",
                         "title": "Open Model",
-                        "icon": "fas fa-brain",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             ""
@@ -76,7 +76,7 @@ const wikiData = {
                     {
                         "id": "botnet",
                         "title": "Botnet",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberAttack",
@@ -88,7 +88,7 @@ const wikiData = {
                     {
                         "id": "cryptojacking",
                         "title": "Cryptojacking",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
@@ -100,7 +100,7 @@ const wikiData = {
                     {
                         "id": "cve",
                         "title": "CVE",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
@@ -112,7 +112,7 @@ const wikiData = {
                     {
                         "id": "glassworm",
                         "title": "GlassWorm",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
@@ -122,9 +122,17 @@ const wikiData = {
                         "content": "# GlassWorm\n\nAn \"invisible\" computer virus that hides inside the code developers write, spreading automatically by stealing their work passwords.\n\nIt is a highly advanced piece of malware discovered on October 17, 2025 that targets software developers.\n\nIt specifically infects **Visual Studio Code (VS Code) extensions**, the little add-ons programmers use to make coding easier. What makes it terrifying is that the malicious code is written using **invisible characters**. A programmer can look directly at the infected file, and it will look like an empty line or normal whitespace, but the computer reads it as dangerous instructions.\n\nOnce inside a developer's computer, it steals their credentials (passwords for publishing code) to automatically infect *other* projects, spreading like a worm through the software supply chain.\n\n## FAQs\n\n*1. Why can't we just delete the hacker's server?*\nGlassWorm is unique because it uses **Blockchain Command & Control (C2)**.\nUsually, malware connects to a specific website (e.g., `hacker-site.com`). If the police seize that website, the malware dies.\nGlassWorm instead looks at public transactions on the **Solana Cryptocurrency Blockchain**. The hacker sends a transaction with a \"memo\" containing instructions. Since no one can delete a transaction from a blockchain, the \"server\" can never be taken down.\n\n*2. What is the \"ZOMBI\" Module?*\nOnce fully installed, GlassWorm deploys a payload often called the **ZOMBI module**. This turns the developer's high-powered computer into a proxy. Hackers can then route their own internet traffic through the developer's computer to attack *other* targets, making it look like the innocent developer did it.\n\n### Further Reading\n\n* **The Original Discovery:** Search for *[\"Koi Security GlassWorm Report October 2025\"](https://www.koi.ai/blog/glassworm-returns-new-wave-openvsx-malware-expose-attacker-infrastructure)*.\n* **The Technique:** Read about *\"[Trojan Source Attacks](https://trojansource.codes/)\"* (CVE-2021-42574) to understand how invisible characters work in code.\n* **The Defense:** Look up *\"[VS Code Restricted Mode](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_extension-recommendations)\"* and how to audit your extensions.\n"
                     },
                     {
+                        "id": "malware",
+                        "title": "Malware",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [],
+                        "content": "# Malware\n\nIt is a piece of malicious software, that intends to harm your system and also in cases steal or encrypt data from you.\n\n![malware-image.png](../../../assets/images/malware-image.png)\n\nThere are several different types of malwares:\n- Ransomware\n- Worms\n- Virus\n- Logic bombs\n- Wipers\n- Key loggers\n- Trojan\n- Spywares\n- Adware\n- Botnets\n- Rootkit\n- [[cryptojacking|Cryptojacking]]\n\n### Further resources\n- Watch: [Every Computer Virus Explained in 9 Minutes](https://www.youtube.com/watch?v=cFo5D9mFUJQ)\n\n"
+                    },
+                    {
                         "id": "phishing",
                         "title": "Phishing",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
@@ -136,7 +144,7 @@ const wikiData = {
                     {
                         "id": "react2shell",
                         "title": "React2Shell",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
@@ -148,7 +156,7 @@ const wikiData = {
                     {
                         "id": "supply-chain-attack",
                         "title": "Supply Chain Attack",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
@@ -160,14 +168,14 @@ const wikiData = {
                     {
                         "id": "zero-day",
                         "title": "Zero Day",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
                             "InformationSecurity",
                             "VulnerabilityManagement"
                         ],
-                        "content": "# Zero-Day (Vulnerability & Exploit)\n\n### Formal Definition\nA \"Zero-Day\" refers to a security flaw in software that is unknown to the vendor or developer. The term implies that the developers have had **zero days** to fix or patch the issue because they were unaware of its existence before it was discovered or exploited by hackers.\n\n### The Analogy\n**The Invisible Backdoor**\nImagine a construction company builds a thousand identical houses with high-security steel doors. However, they accidentally leave a small, invisible gap under the back door that no one notices\u2014not even the builders.\n* **Zero-Day Vulnerability:** The invisible gap.\n* **Zero-Day Exploit:** A burglar discovering they can slide a wire under that gap to unlock the door.\n* **The Risk:** Since the builders don't know the gap exists, they haven't invented a door sweep to block it. Until they do, every house is defenseless against burglars who know the trick.\n\n### Visual Aid\n<img src=\"https://upload.wikimedia.org/wikipedia/commons/5/58/Vulnerability_timeline.png\" alt=\"Zero-Day Timeline\" style=\"height: 400px; width: 750px;\" />\n\n## Further Reading\n\n* **Trend Micro:** [What is a Zero-Day Attack?](https://www.trendmicro.com/vinfo/us/security/definition/zero-day-vulnerability)\n* **Symantec (Broadcom):** [Zero-day Vulnerabilities Explained](https://us.norton.com/internet-security-emerging-threats-how-do-zero-day-vulnerabilities-work-30-seconds.html)\n* **MITRE CVE:** [Common Vulnerabilities and Exposures](https://cve.mitre.org/) (The database where vulnerabilities are eventually listed)\n"
+                        "content": "# Zero-Day (Vulnerability & Exploit)\n\n### Formal Definition\nA \"Zero-Day\" refers to a security flaw in software that is unknown to the vendor or developer. The term implies that the developers have had **zero days** to fix or patch the issue because they were unaware of its existence before it was discovered or exploited by hackers.\n\n### The Analogy\n**The Invisible Backdoor**\nImagine a construction company builds a thousand identical houses with high-security steel doors. However, they accidentally leave a small, invisible gap under the back door that no one notices, not even the builders.\n* **Zero-Day Vulnerability:** The invisible gap.\n* **Zero-Day Exploit:** A burglar discovering they can slide a wire under that gap to unlock the door.\n* **The Risk:** Since the builders don't know the gap exists, they haven't invented a door sweep to block it. Until they do, every house is defenseless against burglars who know the trick.\n\n### Visual Aid\n<img src=\"https://upload.wikimedia.org/wikipedia/commons/5/58/Vulnerability_timeline.png\" alt=\"Zero-Day Timeline\" style=\"height: 400px; width: 750px;\" />\n\n## Further Reading\n\n* **Trend Micro:** [What is a Zero-Day Attack?](https://www.trendmicro.com/vinfo/us/security/definition/zero-day-vulnerability)\n* **Symantec (Broadcom):** [Zero-day Vulnerabilities Explained](https://us.norton.com/internet-security-emerging-threats-how-do-zero-day-vulnerabilities-work-30-seconds.html)\n* **MITRE CVE:** [Common Vulnerabilities and Exposures](https://cve.mitre.org/) (The database where vulnerabilities are eventually listed)\n"
                     }
                 ]
             },
@@ -211,12 +219,28 @@ const wikiData = {
                     {
                         "id": "lidar",
                         "title": "LiDAR",
-                        "icon": "fas fa-microchip",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             ""
                         ],
                         "content": "# LiDAR (Light Detection and Ranging)\n"
+                    }
+                ]
+            },
+            {
+                "id": "philosophy",
+                "title": "Philosophy",
+                "icon": "fas fa-brain",
+                "desc": "Philosophy",
+                "children": [
+                    {
+                        "id": "introduction",
+                        "title": "Introduction",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [],
+                        "content": ""
                     }
                 ]
             }

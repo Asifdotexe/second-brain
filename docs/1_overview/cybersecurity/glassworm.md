@@ -1,7 +1,6 @@
 ---
 title: GlassWorm
 tags: CyberSecurity, CyberAttack, VulnerabilityManagement
-icon: fas fa-lock
 ---
 
 # GlassWorm

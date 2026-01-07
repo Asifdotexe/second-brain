@@ -1,0 +1,225 @@
+from typing import Tuple, Dict, List, Any, Optional, Match
+import os
+import shutil
+import re
+import yaml
+from pathlib import Path
+
+# CONFIGURATION
+SOURCE_PATH = r"C:\Users\sayye\OneDrive\Documents\SecondBrain\second-brain" 
+DEST_BASE_PATH = Path("docs", "1_overview")
+ASSETS_PATH = Path("assets", "images")
+
+
+def parse_frontmatter(content: str) -> Tuple[Dict[str, Any], str]:
+    """
+    Extracts YAML frontmatter and content from a markdown string.
+
+    :param content: The raw markdown content string.
+    :return: A tuple containing a dictionary of metadata and the remaining body string.
+    """
+    # Regex to find YAML block at the start of file
+    yaml_pattern = r"^---\s*\n(.*?)\n---\s*\n"
+    match = re.match(yaml_pattern, content, re.DOTALL)
+
+    metadata: Dict[str, Any] = {}
+    body: str = content
+
+    if match:
+        yaml_text = match.group(1)
+        body = content[match.end():]
+
+        try:
+            parsed = yaml.safe_load(yaml_text)
+            if isinstance(parsed, dict):
+                metadata = parsed
+            else:
+                metadata = {}
+        except yaml.YAMLError as e:
+            print(f"Warning: Failed to parse YAML frontmatter: {e}")
+            metadata = {}
+
+    return metadata, body
+
+
+def find_extra_tags(body: str) -> List[str]:
+    """
+    Finds inline tags like #tag in the body content.
+
+    :param body: The markdown body text to search.
+    :return: A list of tag strings found in the text.
+    """
+    return re.findall(r'#(\w+)', body)
+
+def handle_images(body: str, dest_dir: Path) -> str:
+    """
+    Finds ``![[image.png]]`` or ``![alt](image.png)``, copies image to assets,
+    and updates link to relative path based on destination directory depth.
+
+    :param body: The markdown content body.
+    :param dest_dir: The directory where the markdown file will be saved.
+    :return: The content body with updated image links.
+    """
+
+    def replacer(match: Match[str]) -> str:
+        # Check if it's a markdown link (Group 3 is the outer markdown link group)
+        is_markdown_link = match.group(3) is not None
+        
+        if is_markdown_link:
+            alt_text = match.group(4)
+            img_name = match.group(5)
+        else:
+            # WikiLink
+            # Group 2 is the content inside [[...]]
+            content = match.group(2)
+            img_name = content.split('|')[0] 
+            alt_text = content.split('|')[-1] if '|' in content else img_name
+            
+        # Ignore external links
+        if img_name.startswith('http'):
+            return match.group(0)
+            
+        # Locate the image in source (recursive search)
+        # Search in source path and its parent (as requested)
+        img_source_path = None
+        search_roots = [Path(SOURCE_PATH), Path(SOURCE_PATH).parent]
+        
+        for root in search_roots:
+            for path in root.rglob(img_name):
+                img_source_path = path
+                break
+            if img_source_path:
+                break
+            
+        if img_source_path:
+            # Copy to Assets
+            if not ASSETS_PATH.exists():
+                ASSETS_PATH.mkdir(parents=True)
+                
+            dest_img_path = ASSETS_PATH / img_name
+            shutil.copy2(img_source_path, dest_img_path)
+            print(f"   [IMAGE] Copied: {img_name}")
+            
+            # Calculate Relative Path dynamically
+            # We need path from dest_dir to ASSETS_PATH
+            # Example: dest_dir = docs/1_overview/ai, ASSETS_PATH = assets
+            # rel_path = ../../../assets
+            
+            # Convert both to absolute to be safe for relpath math, 
+            # assuming we are running from repo root
+            abs_dest = dest_dir.resolve() if dest_dir.is_absolute() else Path.cwd() / dest_dir
+            abs_assets = ASSETS_PATH.resolve() if ASSETS_PATH.is_absolute() else Path.cwd() / ASSETS_PATH
+            
+            try:
+                rel_path_to_assets = os.path.relpath(abs_assets, abs_dest)
+                # Ensure forward slashes for markdown
+                rel_path_str = Path(rel_path_to_assets).as_posix()
+                return f"![{alt_text}]({rel_path_str}/{img_name})"
+            except ValueError:
+                # Fallback if paths match fails (e.g. cross drive)
+                return f"![{alt_text}](../../../assets/{img_name})"
+        else:
+            print(f"   [WARN] Image not found: {img_name}")
+            return match.group(0) 
+
+    pattern = r'(!\[\[(.*?)\]\])|(!\[(.*?)\]\((.*?)\))'
+    return re.sub(pattern, replacer, body)
+
+def transform_content(file_path: Path, dest_file_path: Path) -> str:
+    """
+    Reads source file, parses frontmatter, transforms images, and generates new content
+    with updated YAML frontmatter.
+
+    :param file_path: The path to the source markdown file.
+    :param dest_file_path: The path where the transformed file will be written.
+    :return: The fully transformed markdown content string.
+    """
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+        
+    metadata, body = parse_frontmatter(content)
+    
+    # Process Images (Need dest folder for relative path)
+    new_body = handle_images(body, dest_file_path.parent)
+
+    # Extract and Merge Tags
+    try:
+        # Get existing tags (could be list or comma-separated string)
+        existing_tags = metadata.get('tags', [])
+        if isinstance(existing_tags, str):
+            existing_tags = [t.strip() for t in existing_tags.split(',') if t.strip()]
+        elif not isinstance(existing_tags, list):
+            existing_tags = []
+            
+        extra_tags = find_extra_tags(body)
+        
+        # Merge and deduplicate, preserving order of existing tags
+        # Using dict.fromkeys to preserve order (Python 3.7+)
+        all_tags = list(dict.fromkeys(existing_tags + extra_tags))
+        
+    except Exception as e:
+         print(f"Warning: Error processing tags for {file_path.name}: {e}")
+         all_tags = []
+    
+    # Generate New Frontmatter
+    title = metadata.get('title', file_path.stem.replace('-', ' ').title())
+    
+    # Construct YAML
+    new_fm = "---\n"
+    new_fm += f"title: {title}\n"
+    if all_tags:
+        new_fm += f"tags: {all_tags}\n"
+    new_fm += "---\n\n"
+    
+    return new_fm + new_body
+
+def run() -> None:
+    """
+    Main function to execute the ingestion process.
+    Mirrors the directory structure from SOURCE_PATH to DEST_BASE_PATH,
+    transforms markdown files, and processes images.
+    """
+    print("Starting Ingest Process (Directory Mirroring)...")
+    print(f"Source: {SOURCE_PATH}")
+    print(f"Dest: {DEST_BASE_PATH}")
+    
+    if not os.path.exists(SOURCE_PATH):
+        print(f"Error: Source path does not exist: {SOURCE_PATH}")
+        return
+
+    count = 0
+    source_root = Path(SOURCE_PATH)
+    
+    # Walk through Source
+    for file_path in source_root.rglob('*.md'):
+        # Skip hidden files/dirs
+        if '.git' in str(file_path) or file_path.name.startswith('.'):
+            continue
+            
+        try:
+            # 1. Calculate Relative Path
+            # e.g., ai/note.md
+            rel_path = file_path.relative_to(source_root)
+            
+            # 2. Construct Destination Path
+            dest_file_path = DEST_BASE_PATH / rel_path
+            
+            # Ensure destination directory exists
+            dest_file_path.parent.mkdir(parents=True, exist_ok=True)
+            
+            count += 1
+            print(f"Processing: {rel_path} -> {dest_file_path}")
+            
+            # 3. Transform & Write
+            final_content = transform_content(file_path, dest_file_path)
+            
+            with open(dest_file_path, 'w', encoding='utf-8') as f:
+                f.write(final_content)
+                
+        except Exception as e:
+            print(f"Failed to process {file_path.name}: {e}")
+
+    print(f"\nCompleted! Processed {count} notes.")
+
+if __name__ == "__main__":
+    run()

@@ -1,7 +1,6 @@
 ---
 title: Supply Chain Attack
 tags: CyberSecurity, CyberAttack, SupplyChainAttack
-icon: fas fa-lock
 ---
 
 # Supply Chain Attack

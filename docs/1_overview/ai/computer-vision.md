@@ -1,7 +1,6 @@
 ---
 title: Computer Vision
 tags: ArtificialIntelligence, ComputerVision, NeuralNetworks
-icon: fas fa-eye
 ---
 
 # Computer Vision
