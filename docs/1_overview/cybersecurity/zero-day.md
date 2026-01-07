@@ -11,7 +11,7 @@ A "Zero-Day" refers to a security flaw in software that is unknown to the vendor
 
 ### The Analogy
 **The Invisible Backdoor**
-Imagine a construction company builds a thousand identical houses with high-security steel doors. However, they accidentally leave a small, invisible gap under the back door that no one notices—not even the builders.
+Imagine a construction company builds a thousand identical houses with high-security steel doors. However, they accidentally leave a small, invisible gap under the back door that no one notices, not even the builders.
 * **Zero-Day Vulnerability:** The invisible gap.
 * **Zero-Day Exploit:** A burglar discovering they can slide a wire under that gap to unlock the door.
 * **The Risk:** Since the builders don't know the gap exists, they haven't invented a door sweep to block it. Until they do, every house is defenseless against burglars who know the trick.
