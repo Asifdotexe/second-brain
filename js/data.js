@@ -124,10 +124,10 @@ const wikiData = {
                     {
                         "id": "malware",
                         "title": "Malware",
-                        "icon": "fas fa-web",
+                        "icon": "fas fa-file-alt",
                         "desc": "",
                         "tags": [
-                            "[]"
+                            ""
                         ],
                         "content": "# Malware\n\nIt is a piece of malicious software, that intends to harm your system and also in cases steal or encrypt data from you.\n\nThere are several different types of malwares:\n- Ransomware\n- Worms\n- Virus\n- Logic bombs\n- Wipers\n- Key loggers\n- Trojan\n- Spywares\n- Adware\n- Botnets\n- Rootkit\n- [[cryptojacking|Cryptojacking]]\n\n### Further resources\n- Watch: [Every Computer Virus Explained in 9 Minutes](https://www.youtube.com/watch?v=cFo5D9mFUJQ)\n\n"
                     },

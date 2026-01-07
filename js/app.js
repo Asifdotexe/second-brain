@@ -394,9 +394,6 @@ function renderList(item) {
   item.children.forEach((child) => {
     html += `
               <div class="list-item" data-id="${child.id}">
-                  <div class="list-icon-container">
-                    <i class="${child.icon || "far fa-file-alt"} list-icon"></i>
-                  </div>
                   <div class="list-content">
                     <div class="list-title">${child.title}</div>
                     <div class="list-desc">${child.desc || ""}</div>
