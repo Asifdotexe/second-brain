@@ -133,13 +133,6 @@ def transform_content(file_path: Path, dest_file_path: Path) -> str:
         
     metadata, body = parse_frontmatter(content)
     
-    # Merge tags
-    yaml_tags = metadata.get('tags', [])
-    if isinstance(yaml_tags, str): 
-        yaml_tags = [t.strip() for t in yaml_tags.split(',')]
-    inline_tags = find_extra_tags(body)
-    all_tags = list(set(yaml_tags + inline_tags))
-    
     # Process Images (Need dest folder for relative path)
     new_body = handle_images(body, dest_file_path.parent)
     
@@ -150,7 +143,6 @@ def transform_content(file_path: Path, dest_file_path: Path) -> str:
     new_fm = "---\n"
     new_fm += f"title: {title}\n"
     new_fm += f"icon: {metadata.get('icon', DEFAULT_ICON)}\n"
-    new_fm += "tags: [" + ", ".join(all_tags) + "]\n"
     new_fm += "---\n\n"
     
     return new_fm + new_body

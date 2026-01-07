@@ -1,7 +1,6 @@
 ---
 title: Zero Day
 tags: CyberSecurity, InformationSecurity, VulnerabilityManagement
-icon: fas fa-lock
 ---
 
 # Zero-Day (Vulnerability & Exploit)

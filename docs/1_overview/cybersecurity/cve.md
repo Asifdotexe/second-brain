@@ -1,7 +1,6 @@
 ---
 title: CVE
 tags: CyberSecurity, InformationSecurity, VulnerabilityManagement
-icon: fas fa-lock
 ---
 
 # CVE: Common Vulnerabilities and Exposures

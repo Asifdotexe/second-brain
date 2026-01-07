@@ -1,7 +1,6 @@
 ---
 title: Agentic AI
-tags: ArtificialIntelligence, AgenticAI
-icon: fas fa-robot
+tags: ArtificialIntelligence, AgenticA
 ---
 
 # Agentic AI

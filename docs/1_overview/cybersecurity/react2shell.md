@@ -1,7 +1,6 @@
 ---
 title: React2Shell
 tags: CyberSecurity, CyberAttack, VulnerabilityManagement
-icon: fas fa-lock
 ---
 
 # React2Shell

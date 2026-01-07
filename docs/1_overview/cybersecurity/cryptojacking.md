@@ -1,7 +1,6 @@
 ---
 title: Cryptojacking
 tags: CyberSecurity, InformationSecurity, VulnerabilityManagement
-icon: fas fa-lock
 ---
 
 # Cyptojacking
