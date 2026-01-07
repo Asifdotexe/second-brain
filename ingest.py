@@ -3,6 +3,11 @@ import shutil
 import re
 from pathlib import Path
 
+# FIXME: Figure out a way to handle images from web in Obsidian and copy them to assets folder 
+# FIXME: Front matter tags with square brackets shouldn't have those brackets
+
+# TODO: Automate the linting of the markdown files?
+
 # Configuration
 SOURCE_PATH = r"C:\Users\sayye\OneDrive\Documents\SecondBrain\second-brain" 
 DEST_BASE_PATH = Path("docs", "1_overview")

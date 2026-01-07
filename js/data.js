@@ -127,11 +127,11 @@ const wikiData = {
                         "icon": "fas fa-lock",
                         "desc": "",
                         "tags": [
-                            "[cyberattack",
+                            "cyberattack",
                             "cybersecurity",
-                            "software]"
+                            "software"
                         ],
-                        "content": "#cybersecurity\n#cyberattack\n#software\n\n# Malware\n\nIt is a piece of malicious software, that intends to harm your system and also in cases steal or encrypt data from you.\n\n[!image](https://imgs.search.brave.com/fKpO57XzWMbqo21AwC4rkmzhsdlQp674qIADIYTscYE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zb3Nh/ZmUtYXdhcmVuZXNz/LmNvbS9zb3NhZmUt/ZmlsZXMvdXBsb2Fk/cy8yMDIzLzA1L01h/bHdhcmVfR2xvc3Nh/cnlfMy5qcGc)\n\nThere are several different types of malwares:\n- Ransomware\n- Worms\n- Virus\n- Logic bombs\n- Wipers\n- Key loggers\n- Trojan\n- Spywares\n- Adware\n- Botnets\n- Rootkit\n- [[cryptojacking|Cryptojacking]]\n\n### Further resources\n- Watch: [Every Computer Virus Explained in 9 Minutes](https://www.youtube.com/watch?v=cFo5D9mFUJQ)\n\n"
+                        "content": "# Malware\n\nIt is a piece of malicious software, that intends to harm your system and also in cases steal or encrypt data from you.\n\nThere are several different types of malwares:\n- Ransomware\n- Worms\n- Virus\n- Logic bombs\n- Wipers\n- Key loggers\n- Trojan\n- Spywares\n- Adware\n- Botnets\n- Rootkit\n- [[cryptojacking|Cryptojacking]]\n\n### Further resources\n- Watch: [Every Computer Virus Explained in 9 Minutes](https://www.youtube.com/watch?v=cFo5D9mFUJQ)\n\n"
                     },
                     {
                         "id": "phishing",
