@@ -1,6 +1,6 @@
 ---
 title: Agentic AI
-tags: ArtificialIntelligence, AgenticA
+tags: ArtificialIntelligence, AgenticAI
 ---
 
 # Agentic AI

@@ -2,6 +2,7 @@ from typing import Tuple, Dict, List, Any, Optional, Match
 import os
 import shutil
 import re
+import yaml
 from pathlib import Path
 
 # CONFIGURATION
@@ -28,19 +29,15 @@ def parse_frontmatter(content: str) -> Tuple[Dict[str, Any], str]:
         yaml_text = match.group(1)
         body = content[match.end():]
 
-        # Simple line-by-line YAML parser
-        for line in yaml_text.split('\n'):
-            if ':' in line:
-                key, value = line.split(':', 1)
-                key = key.strip()
-                value = value.strip()
-
-                # Handle list syntax roughly (e.g., tags: [a, b])
-                if value.startswith('[') and value.endswith(']'):
-                    value_list = [v.strip() for v in value[1:-1].split(',') if v.strip()]
-                    metadata[key] = value_list
-                else:
-                    metadata[key] = value
+        try:
+            parsed = yaml.safe_load(yaml_text)
+            if isinstance(parsed, dict):
+                metadata = parsed
+            else:
+                metadata = {}
+        except yaml.YAMLError as e:
+            print(f"Warning: Failed to parse YAML frontmatter: {e}")
+            metadata = {}
 
     return metadata, body
 
@@ -144,6 +141,25 @@ def transform_content(file_path: Path, dest_file_path: Path) -> str:
     
     # Process Images (Need dest folder for relative path)
     new_body = handle_images(body, dest_file_path.parent)
+
+    # Extract and Merge Tags
+    try:
+        # Get existing tags (could be list or comma-separated string)
+        existing_tags = metadata.get('tags', [])
+        if isinstance(existing_tags, str):
+            existing_tags = [t.strip() for t in existing_tags.split(',') if t.strip()]
+        elif not isinstance(existing_tags, list):
+            existing_tags = []
+            
+        extra_tags = find_extra_tags(body)
+        
+        # Merge and deduplicate, preserving order of existing tags
+        # Using dict.fromkeys to preserve order (Python 3.7+)
+        all_tags = list(dict.fromkeys(existing_tags + extra_tags))
+        
+    except Exception as e:
+         print(f"Warning: Error processing tags for {file_path.name}: {e}")
+         all_tags = []
     
     # Generate New Frontmatter
     title = metadata.get('title', file_path.stem.replace('-', ' ').title())
@@ -151,7 +167,8 @@ def transform_content(file_path: Path, dest_file_path: Path) -> str:
     # Construct YAML
     new_fm = "---\n"
     new_fm += f"title: {title}\n"
-
+    if all_tags:
+        new_fm += f"tags: {all_tags}\n"
     new_fm += "---\n\n"
     
     return new_fm + new_body
