@@ -84,7 +84,16 @@ function init() {
       return;
     }
 
-    // 3. Handle Internal Links (e.g. [Link Text](doc-id))
+
+    // 3. Handle List Item
+    const listItem = e.target.closest(".list-item");
+    if (listItem && listItem.dataset.id) {
+      e.preventDefault();
+      loadContent(listItem.dataset.id);
+      return;
+    }
+
+    // 4. Handle Internal Links (e.g. [Link Text](doc-id))
     const link = e.target.closest("a");
     if (link) {
       const href = link.getAttribute("href");
@@ -384,7 +393,7 @@ function renderList(item) {
 
   item.children.forEach((child) => {
     html += `
-              <div class="list-item" data-id="${child.id}" onclick="loadContent('${child.id}')">
+              <div class="list-item" data-id="${child.id}">
                   <div class="list-icon-container">
                     <i class="${child.icon || "far fa-file-alt"} list-icon"></i>
                   </div>
