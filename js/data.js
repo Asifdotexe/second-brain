@@ -11,18 +11,18 @@ const wikiData = {
                     {
                         "id": "agentic-ai",
                         "title": "Agentic AI",
-                        "icon": "fas fa-robot",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "ArtificialIntelligence",
-                            "AgenticAI"
+                            "AgenticA"
                         ],
                         "content": "# Agentic AI\n\n### In a nutshell\nAgentic AI is an artificial intelligence that doesn't just answer your questions; it actively uses tools and takes steps to complete goals for you.\n\n**Agentic AI** has **Agency**. It is given a broad goal (e.g., \"Plan and book my vacation\"), and it figures out the necessary sub-tasks, executes them one by one, checks its own work, and keeps going until the job is done. It is an AI with \"hands\" (tools) and a \"brain\" (planning capabilities).\n\n### How it Works\n\nTo understand Agentic AI, we break it down into a loop of three core components:\n\n1. **Perception (The Input):** The agent observes the current state of things.\n2. **Reasoning (The Brain):** It decides what to do next based on the goal.\n3. **Action (The Tools):** It executes a command (searching the web, running code, sending an email).\n\n<img src=\"https://d3a7ykdi65m4cy.cloudfront.net/en/s3fs-public/inline-images/805x540_How-Does-Agentic-AI-Work.png\" alt=\"Agentic AI Flow\"/>\n\n### How the Agent thinks\n<details>\n<summary><strong>Click to expand</strong></summary>\n\nOne of the most popular methods for Agentic AI is called **ReAct** (Reasoning + Acting).\n\n1.  **Thought:** \"The user wants to buy a stock. First, I need to check the current price.\"\n2.  **Action:** *Trigger Tool: Stock_Market_API(Symbol='AAPL')*\n3.  **Observation:** \"The API returned $150.00.\"\n4.  **Thought:** \"That is within the user's budget. I should execute the buy order now.\"\n5.  **Action:** *Trigger Tool: Brokerage_Buy(Symbol='AAPL', Qty=1)*\n\n</details>\n\n---\n<br>\n\n\n### The Analogy: Librarian vs. Assistant\n\n| Feature | Standard AI (Generative) | Agentic AI |\n| :--- | :--- | :--- |\n| **The Persona** | Librarian | Assistant |\n| **Interaction** | You ask: *\"How do I bake a cake?\"* <br> They hand you a recipe book. | You ask: *\"I need a cake for Saturday.\"* <br> They find a bakery, order it, and pay for it. |\n| **Capability** | Knowledge Retrieval *(It knows information.)* | Task Execution *(It performs actions.)* |\n| **Autonomy** | Low. Needs a prompt for every output. | High. Can loop multiple times on one prompt. |\n\n---\n<br>\n\n### Further Reading\n\n* **Concept:** *\u201c[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/pdf/2210.03629)\u201d* (The foundational paper).\n* **Frameworks to try:** [LangChain](https://www.langchain.com/) or [AutoGPT](https://news.agpt.co/).\n* **Essay:** *\u201c[The rise of Agentic workflows](https://learn.deeplearning.ai/courses/agentic-ai/information)\u201d* by Andrew Ng.\n"
                     },
                     {
                         "id": "ai-hallucination",
                         "title": "AI Hallucination",
-                        "icon": "fas fa-eye",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "ArtificialIntelligence",
@@ -34,7 +34,7 @@ const wikiData = {
                     {
                         "id": "computer-vision",
                         "title": "Computer Vision",
-                        "icon": "fas fa-eye",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "ArtificialIntelligence",
@@ -46,7 +46,7 @@ const wikiData = {
                     {
                         "id": "llm",
                         "title": "Large Language Model (LLM)",
-                        "icon": "fas fa-robot",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "ArtificialIntelligence",
@@ -58,7 +58,7 @@ const wikiData = {
                     {
                         "id": "open-model",
                         "title": "Open Model",
-                        "icon": "fas fa-brain",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             ""
@@ -76,7 +76,7 @@ const wikiData = {
                     {
                         "id": "botnet",
                         "title": "Botnet",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberAttack",
@@ -88,7 +88,7 @@ const wikiData = {
                     {
                         "id": "cryptojacking",
                         "title": "Cryptojacking",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
@@ -100,7 +100,7 @@ const wikiData = {
                     {
                         "id": "cve",
                         "title": "CVE",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
@@ -112,7 +112,7 @@ const wikiData = {
                     {
                         "id": "glassworm",
                         "title": "GlassWorm",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
@@ -124,17 +124,15 @@ const wikiData = {
                     {
                         "id": "malware",
                         "title": "Malware",
-                        "icon": "fas fa-file-alt",
+                        "icon": "far fa-file-alt",
                         "desc": "",
-                        "tags": [
-                            ""
-                        ],
-                        "content": "# Malware\n\nIt is a piece of malicious software, that intends to harm your system and also in cases steal or encrypt data from you.\n\nThere are several different types of malwares:\n- Ransomware\n- Worms\n- Virus\n- Logic bombs\n- Wipers\n- Key loggers\n- Trojan\n- Spywares\n- Adware\n- Botnets\n- Rootkit\n- [[cryptojacking|Cryptojacking]]\n\n### Further resources\n- Watch: [Every Computer Virus Explained in 9 Minutes](https://www.youtube.com/watch?v=cFo5D9mFUJQ)\n\n"
+                        "tags": [],
+                        "content": "# Malware\n\nIt is a piece of malicious software, that intends to harm your system and also in cases steal or encrypt data from you.\n\n![malware-image.png](../../../assets/images/malware-image.png)\n\nThere are several different types of malwares:\n- Ransomware\n- Worms\n- Virus\n- Logic bombs\n- Wipers\n- Key loggers\n- Trojan\n- Spywares\n- Adware\n- Botnets\n- Rootkit\n- [[cryptojacking|Cryptojacking]]\n\n### Further resources\n- Watch: [Every Computer Virus Explained in 9 Minutes](https://www.youtube.com/watch?v=cFo5D9mFUJQ)\n\n"
                     },
                     {
                         "id": "phishing",
                         "title": "Phishing",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
@@ -146,7 +144,7 @@ const wikiData = {
                     {
                         "id": "react2shell",
                         "title": "React2Shell",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
@@ -158,7 +156,7 @@ const wikiData = {
                     {
                         "id": "supply-chain-attack",
                         "title": "Supply Chain Attack",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
@@ -170,7 +168,7 @@ const wikiData = {
                     {
                         "id": "zero-day",
                         "title": "Zero Day",
-                        "icon": "fas fa-lock",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
@@ -221,7 +219,7 @@ const wikiData = {
                     {
                         "id": "lidar",
                         "title": "LiDAR",
-                        "icon": "fas fa-microchip",
+                        "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
                             ""
@@ -239,11 +237,9 @@ const wikiData = {
                     {
                         "id": "introduction",
                         "title": "Introduction",
-                        "icon": "fas fa-file-alt",
+                        "icon": "far fa-file-alt",
                         "desc": "",
-                        "tags": [
-                            "[]"
-                        ],
+                        "tags": [],
                         "content": ""
                     }
                 ]

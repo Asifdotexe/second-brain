@@ -7,7 +7,7 @@ from pathlib import Path
 # CONFIGURATION
 SOURCE_PATH = r"C:\Users\sayye\OneDrive\Documents\SecondBrain\second-brain" 
 DEST_BASE_PATH = Path("docs", "1_overview")
-ASSETS_PATH = Path("assets")
+ASSETS_PATH = Path("assets", "images")
 
 
 def parse_frontmatter(content: str) -> Tuple[Dict[str, Any], str]:
@@ -65,25 +65,34 @@ def handle_images(body: str, dest_dir: Path) -> str:
     """
 
     def replacer(match: Match[str]) -> str:
-        is_markdown_link = match.lastindex == 3 
+        # Check if it's a markdown link (Group 3 is the outer markdown link group)
+        is_markdown_link = match.group(3) is not None
         
         if is_markdown_link:
-            alt_text = match.group(2)
-            img_name = match.group(3)
+            alt_text = match.group(4)
+            img_name = match.group(5)
         else:
             # WikiLink
-            img_name = match.group(1).split('|')[0] 
-            alt_text = match.group(1).split('|')[-1] if '|' in match.group(1) else img_name
+            # Group 2 is the content inside [[...]]
+            content = match.group(2)
+            img_name = content.split('|')[0] 
+            alt_text = content.split('|')[-1] if '|' in content else img_name
             
         # Ignore external links
         if img_name.startswith('http'):
             return match.group(0)
             
         # Locate the image in source (recursive search)
+        # Search in source path and its parent (as requested)
         img_source_path = None
-        for path in Path(SOURCE_PATH).rglob(img_name):
-            img_source_path = path
-            break
+        search_roots = [Path(SOURCE_PATH), Path(SOURCE_PATH).parent]
+        
+        for root in search_roots:
+            for path in root.rglob(img_name):
+                img_source_path = path
+                break
+            if img_source_path:
+                break
             
         if img_source_path:
             # Copy to Assets
@@ -153,12 +162,12 @@ def run() -> None:
     Mirrors the directory structure from SOURCE_PATH to DEST_BASE_PATH,
     transforms markdown files, and processes images.
     """
-    print("🚀 Starting Ingest Process (Directory Mirroring)...")
+    print("Starting Ingest Process (Directory Mirroring)...")
     print(f"Source: {SOURCE_PATH}")
     print(f"Dest: {DEST_BASE_PATH}")
     
     if not os.path.exists(SOURCE_PATH):
-        print(f"❌ Error: Source path does not exist: {SOURCE_PATH}")
+        print(f"Error: Source path does not exist: {SOURCE_PATH}")
         return
 
     count = 0
@@ -191,9 +200,9 @@ def run() -> None:
                 f.write(final_content)
                 
         except Exception as e:
-            print(f"❌ Failed to process {file_path.name}: {e}")
+            print(f"Failed to process {file_path.name}: {e}")
 
-    print(f"\n✅ Completed! Processed {count} notes.")
+    print(f"\nCompleted! Processed {count} notes.")
 
 if __name__ == "__main__":
     run()
