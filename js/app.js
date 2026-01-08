@@ -147,6 +147,10 @@ function renderLandingPage() {
     .forEach((el) => el.classList.remove("active"));
   currentDocId = null;
 
+  // Clear Breadcrumbs
+  const breadcrumbs = document.getElementById("breadcrumbs");
+  if (breadcrumbs) breadcrumbs.innerHTML = "";
+
   let html = `
         <div class="landing-container">
             <div class="landing-hero">
@@ -270,11 +274,82 @@ function lookup(id) {
   return null;
 }
 
+// ==========================================
+// 🍞 BREADCRUMBS
+// ==========================================
+
+function getBreadcrumbPath(targetId) {
+  for (let key of Object.keys(wikiData)) {
+    const section = wikiData[key];
+    const path = findPathInItems(targetId, section.items);
+    if (path) {
+      // Prepend Section Info
+      return [{ title: section.title, isSection: true, key: key }, ...path];
+    }
+  }
+  return [];
+}
+
+function findPathInItems(targetId, items) {
+  for (let item of items) {
+    if (item.id === targetId) return [item];
+    if (item.children) {
+      const childPath = findPathInItems(targetId, item.children);
+      if (childPath) return [item, ...childPath];
+    }
+  }
+  return null;
+}
+
+function renderBreadcrumbs(path) {
+  const container = document.getElementById("breadcrumbs");
+  if (!container) return;
+
+  // Start with Home
+  let html = `
+        <div class="breadcrumb-item" onclick="renderLandingPage()">
+            <i class="fas fa-home"></i>
+        </div>
+    `;
+
+  path.forEach((step, index) => {
+    // Separator
+    html += `<span class="breadcrumb-separator">/</span>`;
+
+    const isLast = index === path.length - 1;
+    const activeClass = isLast ? "active" : "";
+
+    // Determine click action
+    let onclick = "";
+    if (!isLast) {
+      if (step.isSection) {
+        // If it's a section, we can open it (loads first item)
+        // or just make it text if we prefer. Let's make it actionable.
+        onclick = `onclick="openSection('${step.key}')"`;
+      } else {
+        onclick = `onclick="loadContent('${step.id}')"`;
+      }
+    }
+
+    html += `
+            <div class="breadcrumb-item ${activeClass}" ${onclick}>
+                ${step.title}
+            </div>
+        `;
+  });
+
+  container.innerHTML = html;
+}
+
 function loadContent(id) {
   const result = lookup(id);
   if (!result) return;
 
   const { item, parent, rootKey } = result;
+
+  // --- 0. BREADCRUMBS ---
+  const path = getBreadcrumbPath(id);
+  renderBreadcrumbs(path);
 
   // --- 1. HIGHLIGHT SIDEBAR ---
   document

@@ -213,6 +213,44 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
     opacity: 0.8;
 }
 
+/* --- BREADCRUMBS --- */
+.breadcrumbs {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.breadcrumb-item {
+    color: var(--text-secondary);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.breadcrumb-item:hover {
+    color: var(--text-accent);
+}
+
+.breadcrumb-item.active {
+    color: var(--text-primary);
+    font-weight: 500;
+    cursor: default;
+    pointer-events: none;
+}
+
+.breadcrumb-separator {
+    color: var(--border-color);
+    font-size: 0.8em;
+}
+
 /* --- Main Content --- */
 .main-content {
     flex: 1;
