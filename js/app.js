@@ -384,29 +384,36 @@ function loadContent(id) {
   // C. Shelf vs List vs Article Logic
   if (item.children && item.children.length > 0) {
     // Check if we are in 'overview' (Topics) -> Use List View
-    // Otherwise (e.g. 'logs') -> Use Shelf View
+    // Otherwise -> Use Shelf View
     if (rootKey === "overview") {
       htmlContent += renderList(item);
     } else {
       htmlContent += renderShelf(item);
     }
   } else if (item.content) {
-    // --- WIKILINK SUPPORT ---
-    // Convert [[id]] to [id](id) and [[id|Label]] to [Label](id)
-    const wikiLinkRegex = /\[\[([^|\]\n]+)(\|([^\]\n]+))?\]\]/g;
-    const processedContent = item.content.replace(
-      wikiLinkRegex,
-      (match, id, _, label) => {
-        const linkText = label || id;
-        return `[${linkText}](${id.trim()})`;
-      },
-    );
 
-    // Security Fix: Disable raw HTML to prevent XSS
-    htmlContent += marked.parse(processedContent, {
-      breaks: true,
-      html: false,
-    });
+    // If we are in 'logs', use the custom Interactive Renderer
+    if (rootKey === "logs") {
+      htmlContent += renderLogEntry(item);
+    } else {
+      // --- WIKILINK SUPPORT ---
+      // Convert [[id]] to [id](id) and [[id|Label]] to [Label](id)
+      const wikiLinkRegex = /\[\[([^|\]\n]+)(\|([^\]\n]+))?\]\]/g;
+      const processedContent = item.content.replace(
+        wikiLinkRegex,
+        (match, id, _, label) => {
+          const linkText = label || id;
+          return `[${linkText}](${id.trim()})`;
+        },
+      );
+
+      // Security Fix: Disable raw HTML to prevent XSS
+      htmlContent += marked.parse(processedContent, {
+        breaks: true,
+        html: false,
+      });
+    }
+
   } else {
     htmlContent += `<p style="color:var(--text-secondary)">No content available.</p>`;
   }
@@ -480,6 +487,132 @@ function renderList(item) {
   html += `</div>`;
   return html;
 }
+
+function renderLogEntry(item) {
+  let html = `
+          <div class="shelf-header">
+              <h1 style="margin-bottom:0.5rem">${item.title}</h1>
+              <p style="color:var(--text-secondary)">${item.desc || "Latest updates and logs."}</p>
+          </div>
+          <div class="log-container">
+      `;
+
+  const content = item.content || "";
+
+  // Custom Parser: Split by H1 (#), H2 (##) or H3 (###) headers
+  // We use a regex with capturing group to keep the delimiter and the rest
+  // Regex: start of line, 1, 2 or 3 hashes, space, rest of line
+
+  const chunks = content.split(/(^#{1,3}\s+.*$)/gm);
+
+  for (let i = 0; i < chunks.length; i++) {
+    const chunk = chunks[i].trim();
+    if (!chunk) continue;
+
+    // Check if it's a header line
+    if (chunk.startsWith('#')) {
+      const headerLevel = chunk.startsWith('### ') ? 3 : (chunk.startsWith('## ') ? 2 : 1);
+      const title = chunk.replace(/^#+\s+/, '').trim();
+
+      // Get the immediately following content body (next index)
+      let bodyRaw = "";
+      // Check if the next chunk exists and is not another header
+      if (i + 1 < chunks.length && !chunks[i + 1].trim().startsWith('#')) {
+        bodyRaw = chunks[i + 1].trim();
+        i++; // Skip next iteration as we consumed it
+      }
+
+      if (headerLevel === 1) {
+        // --- H1 (Page Title) ---
+        // IGNORE THE TITLE (it is already rendered by the shelf-header)
+        // But render the body (intro text) if any
+        if (bodyRaw) {
+          html += marked.parse(bodyRaw, { breaks: true });
+        }
+
+      } else if (headerLevel === 2) {
+        // --- RENDER SECTION HEADER ---
+        html += `<h2 class="log-section-title">${title}</h2>`;
+
+        // If body exists after H2 (intro text), render it
+        if (bodyRaw) {
+          html += marked.parse(bodyRaw, { breaks: true });
+        }
+
+      } else {
+        // --- RENDER NEWS CARD (H3) ---
+
+        // 1. Extract Image (first image tag in body)
+        let image = null;
+        let bodyClean = bodyRaw;
+
+        const imgMatch = bodyRaw.match(/!\[(.*?)\]\((.*?)\)/);
+        if (imgMatch) {
+          image = imgMatch[2];
+          // Remove image from body
+          bodyClean = bodyRaw.replace(imgMatch[0], '').trim();
+        }
+
+        // 2. Fix WikiLinks
+        const wikiLinkRegex = /\[\[([^|\]\n]+)(\|([^\]\n]+))?\]\]/g;
+        const processedBody = bodyClean.replace(
+          wikiLinkRegex,
+          (match, id, _, label) => {
+            const linkText = label || id;
+            return `[${linkText}](${id.trim()})`;
+          }
+        );
+
+        const renderedBody = marked.parse(processedBody, { breaks: true });
+        const imageStyle = image ? `background-image: url('${image}')` : '';
+
+        html += `
+                <div class="news-container ${image ? '' : 'no-image'}">
+                    <div class="news-header-box" onclick="toggleNewsBody(this)">
+                        ${image ? `<div class="news-thumb-small" style="${imageStyle}"></div>` : ''}
+                        <div class="news-title-text">${title}</div>
+                        <i class="fas fa-chevron-down news-toggle-icon"></i>
+                    </div>
+                    <div class="news-body-content" style="display:none;">
+                        ${renderedBody}
+                    </div>
+                </div>
+            `;
+      }
+    } else {
+      // Content appearing before any header? Render it normally
+      if (i === 0) {
+        html += marked.parse(chunk, { breaks: true });
+      }
+    }
+  }
+
+  html += `</div>`;
+  // Tags are handled globally in loadContent
+
+  return html;
+}
+
+// Global toggle function
+window.toggleNewsBody = function (header) {
+  const container = header.closest('.news-container');
+  const body = container.querySelector('.news-body-content');
+  const icon = container.querySelector('.news-toggle-icon');
+
+  if (body.style.display === 'none') {
+    body.style.display = 'block';
+    icon.classList.remove('fa-chevron-down');
+    icon.classList.add('fa-chevron-up');
+    container.classList.add('expanded');
+  } else {
+    body.style.display = 'none';
+    icon.classList.remove('fa-chevron-up');
+    icon.classList.add('fa-chevron-down');
+    container.classList.remove('expanded');
+  }
+};
+
+
 
 // ==========================================
 // 🔍 DEEP SEARCH ENGINE
