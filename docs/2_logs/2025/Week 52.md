@@ -9,6 +9,9 @@ desc: Summary of 20 December - 26 December 2025.
 ## Cyber Security
 
 ### The "GrinchBot" Swarms: AI Agents Dominate Holiday Retail
+
+![GrinchBot](https://cdn.prod.website-files.com/626ff4d25aca2edf4325ff97/6746ea61913120185ec60b13_Predictions.avif)
+
 - A new wave of "Autonomous [[agentic-ai|AI Agents]]" (dubbed GrinchBots) decimated online inventories this week, purchasing 40% of high-demand electronics within milliseconds of restock.
 - Unlike older bots, these AI agents use "[[computer-vision|computer vision]]" to solve CAPTCHAs and mimic human mouse movements, making them nearly impossible to filter with standard defenses.
 - Major retailers were forced to implement "lottery systems" for purchases, frustrating legitimate last-minute shoppers.
@@ -16,6 +19,9 @@ desc: Summary of 20 December - 26 December 2025.
 *Read more about it: https://www.darktrace.com/blog/ai-and-cybersecurity-predictions-for-2025*
 
 ### Artemis II Mission Systems Withstand "Red Team" Cyber Drill
+
+![Artemis II](https://images-assets.nasa.gov/image/NHQ202512200036/NHQ202512200036~large.jpg?w=1920&h=1307&fit=crop&crop=faces%2Cfocalpoint)
+
 - Alongside the physical crew tests on December 20, NASA confirmed the successful completion of a classified "Red Team" cyber-defense exercise for the Orion capsule.
 - Ethical hackers attempted to jam the optical communications system (O2O) intended for the upcoming lunar flyby but failed to breach the encryption.
 - Ensuring the integrity of the data link is critical, as this will be the first crewed mission to rely heavily on laser communications from deep space.

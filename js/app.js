@@ -544,6 +544,7 @@ function renderLogEntry(item) {
 
         // 1. Extract Image (first image tag in body)
         let image = null;
+        let date = null;
         let bodyClean = bodyRaw;
 
         const imgMatch = bodyRaw.match(/!\[(.*?)\]\((.*?)\)/);
@@ -553,7 +554,45 @@ function renderLogEntry(item) {
           bodyClean = bodyRaw.replace(imgMatch[0], '').trim();
         }
 
-        // 2. Fix WikiLinks
+        // 2. Extract Date (Date: YYYY-MM-DD)
+        // Case insensitive match for line starting with Date:
+        const dateMatch = bodyClean.match(/^Date:\s*(.*)$/im);
+        if (dateMatch) {
+          const rawDate = dateMatch[1].trim();
+          // Parse and format: YYYY-MM-DD -> Month Dayth, Year
+          // We split manually to avoid timezone issues with new Date(string)
+          const parts = rawDate.split('-');
+          if (parts.length === 3) {
+            const year = parseInt(parts[0]);
+            const monthIndex = parseInt(parts[1]) - 1;
+            const day = parseInt(parts[2]);
+
+            // Get Month Name
+            const dateObj = new Date(year, monthIndex, day);
+            const monthName = dateObj.toLocaleString('default', { month: 'long' });
+
+            // Get Ordinal Suffix
+            const getSuffix = (d) => {
+              if (d > 3 && d < 21) return 'th';
+              switch (d % 10) {
+                case 1: return "st";
+                case 2: return "nd";
+                case 3: return "rd";
+                default: return "th";
+              }
+            };
+
+            date = `${monthName} ${day}${getSuffix(day)}, ${year}`;
+          } else {
+            // Fallback if not standard format
+            date = rawDate;
+          }
+
+          // Remove date line from body
+          bodyClean = bodyClean.replace(dateMatch[0], '').trim();
+        }
+
+        // 3. Fix WikiLinks
         const wikiLinkRegex = /\[\[([^|\]\n]+)(\|([^\]\n]+))?\]\]/g;
         const processedBody = bodyClean.replace(
           wikiLinkRegex,
@@ -570,7 +609,10 @@ function renderLogEntry(item) {
                 <div class="news-container ${image ? '' : 'no-image'}">
                     <div class="news-header-box" onclick="toggleNewsBody(this)">
                         ${image ? `<div class="news-thumb-small" style="${imageStyle}"></div>` : ''}
-                        <div class="news-title-text">${title}</div>
+                        <div class="news-title-wrapper">
+                            <div class="news-title-text">${title}</div>
+                            ${date ? `<div class="news-date-badge">${date}</div>` : ''}
+                        </div>
                         <i class="fas fa-chevron-down news-toggle-icon"></i>
                     </div>
                     <div class="news-body-content" style="display:none;">

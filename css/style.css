@@ -369,11 +369,23 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
     border: 1px solid var(--border-color);
 }
 
-.news-title-text {
+.news-title-wrapper {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.news-title-text {
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--text-primary);
+}
+
+.news-date-badge {
+    font-size: 0.8rem;
+    color: var(--text-accent);
+    font-weight: 500;
 }
 
 .news-toggle-icon {
