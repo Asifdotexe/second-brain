@@ -1,0 +1,6 @@
+{
+    "title": "Hardware",
+    "icon": "fas fa-memory",
+    "desc": "Physical components and sensors",
+    "view": "list"
+}

@@ -1,5 +1,6 @@
 {
     "title": "Cybersecurity",
-    "icon": "fas fa-shield-halved",
-    "desc": "Security protocols and notes"
+    "icon": "fas fa-shield-alt",
+    "desc": "Security concepts, attacks, and defenses",
+    "view": "shelf"
 }

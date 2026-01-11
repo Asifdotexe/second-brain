@@ -1,5 +1,6 @@
 {
-    "title": "General",
-    "icon": "fas fa-server",
-    "desc": "General tech concepts"
+    "title": "General Technology",
+    "icon": "fas fa-microchip",
+    "desc": "Hardware, Software, and Emerging Tech",
+    "view": "shelf"
 }

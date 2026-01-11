@@ -1,0 +1,6 @@
+{
+    "title": "Models",
+    "icon": "fas fa-layer-group",
+    "desc": "Specific model architectures and types",
+    "view": "list"
+}

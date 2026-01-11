@@ -385,7 +385,10 @@ function loadContent(id) {
   if (item.children && item.children.length > 0) {
     // Check if we are in 'overview' (Topics) -> Use List View
     // Otherwise -> Use Shelf View
-    if (rootKey === "overview") {
+    // Priority: Custom View (from _meta.json) -> Root Key Default
+    const viewType = item.view || (rootKey === "overview" ? "list" : "shelf");
+
+    if (viewType === "list") {
       htmlContent += renderList(item);
     } else {
       htmlContent += renderShelf(item);
