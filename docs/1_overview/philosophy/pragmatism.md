@@ -22,7 +22,7 @@ William James (a father of Pragmatism) said we should look for the **"Cash Value
 ## FAQs
 
 *1. Is it just "The ends justify the means"?*
-No. That is Machiavellianism.
+No. That is [[machiavellianism|Machiavellianism]].
 Pragmatism is about testing Truth by its consequences. If a belief makes you miserable and passive, it is a "bad" belief, even if it seems logically sound.
 
 *2. Is it anti-science?*

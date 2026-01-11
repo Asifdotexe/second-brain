@@ -15,7 +15,7 @@ It suggests that if you focus intensely on a goal (visualize it, feel it as if i
 ## Is it Magic or Psychology?
 
 *   **The Mystical View:** Your thoughts send out energy vibrations that magnetically attract similar energy from the Universe.
-*   **The Psychological View (Confirmation Bias):** If you decide to buy a Red Tesla, you suddenly see Red Teslas everywhere. Because you are focused on "Success," your brain subconsciously notices opportunities for success that you would have ignored before.
+*   **The Psychological View (Confirmation-Bias):** If you decide to buy a Red Tesla, you suddenly see Red Teslas everywhere. Because you are focused on "Success," your brain subconsciously notices opportunities for success that you would have ignored before.
 
 ## FAQs
 

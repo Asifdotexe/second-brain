@@ -28,4 +28,4 @@ Philosophy is the study of fundamental questions about existence, knowledge, val
 - **[[stoicism|Stoicism]]**: You cannot control the storm, only the ship.
   - *Concept*: Happiness is found in accepting the moment as it presents itself, not in our desire to control it.
 - **[[utilitarianism|Utilitarianism]]**: The greatest good for the greatest number.
-  - *Concept*: The belief that the best action is the one that maximizes happiness and minimizes suffering. 
+  - *Concept*: The belief that the best action is the one that maximizes happiness and minimizes suffering.
