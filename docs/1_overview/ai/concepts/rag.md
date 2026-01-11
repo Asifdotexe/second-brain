@@ -25,7 +25,7 @@ Standard AI (like ChatGPT) relies on its **Training Memory** (what it learned mo
 *   **Fine-tuning** is expensive and slow. You have to "re-train" the brain every time facts change.
 
 *2. Does it stop hallucinations?*
-Drastically reduces them. Because the AI is grounded in the text you gave it, it is much less likely to make things up intact.
+Drastically reduces them. Because the AI is grounded in the text you gave it, it is much less likely to make things up (Hallucinate).
 
 ### Further Reading
 

@@ -31,4 +31,4 @@ It gives the attacker **Remote Code Execution (RCE)**. This means they can:
 ### Further Reading
 
 *   **Article:** *[OWASP Command Injection Explained](https://owasp.org/www-community/attacks/Command_Injection)*
-*   **Deep Dive:** *[PortSwigger's Guide to OS Command Injection](https://portswigger.net/web-security/os-command-injection)*
+*   **Lab:** *[PortSwigger: OS Command Injection](https://portswigger.net/web-security/os-command-injection/)*

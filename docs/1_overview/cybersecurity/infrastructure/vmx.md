@@ -37,7 +37,7 @@ No.
 *   **.VMDK:** The *Hard Drive* (Data file, huge size).
 
 *3. Is this used by all virtualization software?*
-No. `.vmx` is specific to **VMware** (Fusion, Workstation, Player, ESExi).
+No. `.vmx` is specific to **VMware** (Fusion, Workstation, Player, ESXi).
 *   VirtualBox uses `.vbox`.
 *   Hyper-V uses `.xml` or `.vmcx`.
 

@@ -5,7 +5,7 @@ tags: Malware, Privacy, Annoyance
 
 # Adware
 
-The salesperson that won't leave your house.
+The salesperson who won't leave your house.
 
 **Adware** (Advertising-Supported Software) is software that automatically displays or downloads advertising material (often banners or pop-ups) when a user is online.
 

@@ -1,6 +1,5 @@
----
 title: Generative AI
-tags: ArtificialIntelligence, Creativity, FutureTech
+tags: ArtificialIntelligence, Creativity, LargeLanguageModels
 ---
 
 # Generative AI
@@ -37,4 +36,4 @@ It replaces *tasks*, not necessarily *jobs*. It is a tool. A writer with AI is f
 ### Further Reading
 
 *   **Guide:** *[McKinsey: What is Generative AI?](https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-generative-ai)*
-*   **Video:** *[Generative AI Explained in 2 Minutes](https://www.youtube.com/watch?v=_TvP29iT1A0)*
+*   **Video:** *[Generative AI Explained in 2 Minutes](https://www.youtube.com/watch?v=_TvP29iT1A0)* (archived mirror)
