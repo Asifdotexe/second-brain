@@ -1,0 +1,6 @@
+{
+    "title": "Attacks",
+    "icon": "fas fa-bug",
+    "desc": "Common exploits and malware",
+    "view": "list"
+}

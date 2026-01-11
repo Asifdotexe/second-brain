@@ -1,5 +1,6 @@
 {
     "title": "Philosophy",
-    "icon": "fas fa-brain",
-    "desc": "Philosophy"
+    "icon": "fas fa-book-open",
+    "desc": "Schools of thought and ethical frameworks",
+    "view": "shelf"
 }

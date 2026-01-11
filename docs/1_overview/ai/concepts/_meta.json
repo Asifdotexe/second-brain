@@ -1,0 +1,7 @@
+{
+    "id": "ai-concepts",
+    "title": "Concepts",
+    "icon": "fas fa-lightbulb",
+    "desc": "Core AI definitions and mechanisms",
+    "view": "list"
+}

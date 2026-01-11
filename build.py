@@ -112,6 +112,7 @@ def build_tree(current_path: str) -> List[Dict[str, Any]]:
                         "title": meta["title"],
                         "icon": meta.get("icon", "fas fa-folder"),
                         "desc": meta.get("desc", ""),
+                        "view": meta.get("view"),
                         "children": children,
                     }
                 )

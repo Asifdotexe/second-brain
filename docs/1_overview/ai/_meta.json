@@ -1,5 +1,6 @@
 {
-  "title": "AI",
+  "title": "Artificial Intelligence",
   "icon": "fas fa-brain",
-  "desc": "Artificial Intelligence & ML"
+  "desc": "Notes on AI, LLMs, and Machine Learning",
+  "view": "shelf"
 }

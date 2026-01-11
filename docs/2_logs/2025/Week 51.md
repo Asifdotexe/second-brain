@@ -10,7 +10,7 @@ desc: Summary of 12 December - 19 December 2025.
 
 ### WatchGuard Firebox Critical [[zero-day|Zero Day]] Vulnerability Exploited
 
-- Hackers are actively attacking a critical vulnerability ([[CVE]]-2025-14733) in WatchGuard Firebox firewalls
+- Hackers are actively attacking a critical vulnerability ([[cve|CVE]]-2025-14733) in WatchGuard Firebox [[firewalls]]
 - The flaw allows attackers to take complete control of the device remotely without needing a password.
 - CISA has added this to its "Known Exploited Vulnerabilities" catalog, mandating federal agencies to patch immediately; private companies are urged to do the same.
 
@@ -32,7 +32,7 @@ desc: Summary of 12 December - 19 December 2025.
 
 ### Microsoft Teams Outage & Concurrent [[phishing|Phishing]] Wave
 - Microsoft Teams suffered a significant outage on December 19, leaving thousands of users unable to send messages.
-- Simultaneously, security researchers tracked a new wave of "[[phishing|OAuth Phishing]]" attacks targeting Microsoft 365 accounts.
+- Simultaneously, security researchers tracked a new wave of "[[phishing|OAuth-Phishing]]" attacks targeting Microsoft 365 accounts.
 - Attackers are tricking users into granting malicious apps permission to access their email, rather than stealing passwords directly.
 
 *Read more about it: https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-teams-is-down-and-messages-are-delayed/*
@@ -42,9 +42,9 @@ desc: Summary of 12 December - 19 December 2025.
 
 ## Artificial Intelligence
 
-### NVIDIA Debuts "Nemotron 3" [[open-model|Open Model]] Family
+### NVIDIA Debuts "Nemotron 3" Open Model Family
 
-- NVIDIA released Nemotron 3, a new family of open AI models (Nano, Super, and Ultra) designed for [[agentic-ai|Agentic AI]].
+- NVIDIA released Nemotron 3, a new family of open AI models that under the [[open-model|Open-Model]] Family (Nano, Super, and Ultra) designed for [[agentic-ai|Agentic-AI]].
 - The models are optimized to work together in multi-step workflows (e.g., one AI plans a task, another executes it).
 - This release provides developers with powerful, efficient tools to build complex AI assistants without relying solely on closed models like GPT-4.
 
@@ -56,8 +56,8 @@ desc: Summary of 12 December - 19 December 2025.
 ## General Technology
 
 ### [[lidar|LiDAR]] Pioneer Luminar Technologies Files for Bankruptcy
-- Luminar, a leading company in autonomous vehicle sensors (LiDAR), filed for Chapter 11 bankruptcy on December 15.
-- The company is selling its semiconductor division to Quantum Computing Inc. to raise cash.
+- Luminar, a leading company in autonomous vehicle sensors ([lidar|LiDAR]), filed for Chapter 11 bankruptcy on December 15.
+- The company is selling its semiconductor division to [[quantum-computing|Quantum-Computing]] Inc. to raise cash.
 - This signals a major shakeup in the self-driving car industry, as automakers face high costs and slower-than-expected adoption of autonomous tech.
 
 *Read more about it: https://investors.luminartech.com/news-events/press-releases/detail/110/luminar-technologies-inc-initiates-voluntary-chapter-11*
