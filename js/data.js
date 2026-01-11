@@ -20,6 +20,14 @@ const wikiData = {
                         "content": "# Agentic AI\n\n### In a nutshell\nAgentic AI is an artificial intelligence that doesn't just answer your questions; it actively uses tools and takes steps to complete goals for you.\n\n**Agentic AI** has **Agency**. It is given a broad goal (e.g., \"Plan and book my vacation\"), and it figures out the necessary sub-tasks, executes them one by one, checks its own work, and keeps going until the job is done. It is an AI with \"hands\" (tools) and a \"brain\" (planning capabilities).\n\n### How it Works\n\nTo understand Agentic AI, we break it down into a loop of three core components:\n\n1. **Perception (The Input):** The agent observes the current state of things.\n2. **Reasoning (The Brain):** It decides what to do next based on the goal.\n3. **Action (The Tools):** It executes a command (searching the web, running code, sending an email).\n\n<img src=\"https://d3a7ykdi65m4cy.cloudfront.net/en/s3fs-public/inline-images/805x540_How-Does-Agentic-AI-Work.png\" alt=\"Agentic AI Flow\"/>\n\n### How the Agent thinks\n<details>\n<summary><strong>Click to expand</strong></summary>\n\nOne of the most popular methods for Agentic AI is called **ReAct** (Reasoning + Acting).\n\n1.  **Thought:** \"The user wants to buy a stock. First, I need to check the current price.\"\n2.  **Action:** *Trigger Tool: Stock_Market_API(Symbol='AAPL')*\n3.  **Observation:** \"The API returned $150.00.\"\n4.  **Thought:** \"That is within the user's budget. I should execute the buy order now.\"\n5.  **Action:** *Trigger Tool: Brokerage_Buy(Symbol='AAPL', Qty=1)*\n\n</details>\n\n---\n<br>\n\n\n### The Analogy: Librarian vs. Assistant\n\n| Feature | Standard AI (Generative) | Agentic AI |\n| :--- | :--- | :--- |\n| **The Persona** | Librarian | Assistant |\n| **Interaction** | You ask: *\"How do I bake a cake?\"* <br> They hand you a recipe book. | You ask: *\"I need a cake for Saturday.\"* <br> They find a bakery, order it, and pay for it. |\n| **Capability** | Knowledge Retrieval *(It knows information.)* | Task Execution *(It performs actions.)* |\n| **Autonomy** | Low. Needs a prompt for every output. | High. Can loop multiple times on one prompt. |\n\n---\n<br>\n\n### Further Reading\n\n* **Concept:** *\u201c[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/pdf/2210.03629)\u201d* (The foundational paper).\n* **Frameworks to try:** [LangChain](https://www.langchain.com/) or [AutoGPT](https://news.agpt.co/).\n* **Essay:** *\u201c[The rise of Agentic workflows](https://learn.deeplearning.ai/courses/agentic-ai/information)\u201d* by Andrew Ng.\n"
                     },
                     {
+                        "id": "ai-fine-tuning",
+                        "title": "Ai Fine Tuning",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [],
+                        "content": ""
+                    },
+                    {
                         "id": "ai-hallucination",
                         "title": "AI Hallucination",
                         "icon": "far fa-file-alt",
@@ -27,9 +35,9 @@ const wikiData = {
                         "tags": [
                             "ArtificialIntelligence",
                             "LargeLanguageModels",
-                            "AIHallucination"
+                            "Risks"
                         ],
-                        "content": ""
+                        "content": "# AI Hallucination\n\nWhen a smart robot confidently answers a question with a convincing lie.\n\n**AI Hallucination** is when a Large Language Model ([[llm|LLM]]) perceives patterns that aren't actually there and generates false information as if it were absolute fact. It doesn't *know* it's lying; it just thinks it's completing the pattern.\n\nIt is like seeing a face in the clouds. The face isn't real, but your brain insists on connecting the dots to make it look like one.\n\n## Why does it happen?\n\n[[llm|LLMs]] are not \"Knowledge Databases\" (like Wikipedia); they are \"Prediction Engines\" (like Autocomplete).\n*   **Autocomplete:** It guesses the next mostly likely word.\n*   **The Gap:** If it doesn't know the answer, it guesses the most *plausible-sounding* words to fill the silence, prioritizing \"sounding correct\" over \"being correct.\"\n\n## FAQs\n\n*1. Can we fix it?*\nNot entirely yet. We can reduce it (using techniques like [[rag|RAG]] - Retrieval Augmented Generation), but because [[llm|LLMs]] are probabilistic (based on chance), there is always a tiny chance they will roll the wrong dice.\n\n*2. Is it dangerous?*\nYes, because it is **Confident**.\nIf you ask an AI \"Who is the CEO of Apple?\", it might say \"Tim Cook\" (True).\nIf you ask \"Who is the King of Mars?\", it might invent a name and a backstory instead of saying \"I don't know.\"\n\n### Further Reading\n\n*   **Article:** *[IBM: What are AI Hallucinations?](https://www.ibm.com/topics/ai-hallucinations)*\n*   **Deep Dive:** *[Why LLMs Hallucinate (Zapier)](https://zapier.com/blog/ai-hallucinations/)*\n"
                     },
                     {
                         "id": "computer-vision",
@@ -45,11 +53,15 @@ const wikiData = {
                     },
                     {
                         "id": "generative-ai",
-                        "title": "Generative Ai",
+                        "title": "Generative AI",
                         "icon": "far fa-file-alt",
                         "desc": "",
-                        "tags": [],
-                        "content": ""
+                        "tags": [
+                            "ArtificialIntelligence",
+                            "Creativity",
+                            "FutureTech"
+                        ],
+                        "content": "# Generative AI\n\nA calculator for creativity.\n\nTraditional AI was a **Classifier**: You show it a picture, and it says \"Cat.\"\n**Generative AI** is a **Creator**: You say \"Cat,\" and it *draws* a new picture of a cat that never existed before.\n\nIt is the difference between a **Librarian** (who finds existing books) and an **Author** (who writes new ones).\n\n## How it Works\n\nIt learns by looking at billions of examples.\n1.  **Training:** It looks at millions of pictures of dogs. It learns the \"concept\" of a dog (ears, fur, nose).\n2.  **Generation:** When you ask for a dog, it doesn't copy-paste an old photo. It paints a fresh image pixel-by-pixel based on its understanding of \"Dog-ness.\"\n\n## Common Types\n\n*   **Text-to-Text:** ChatGPT, Claude, Gemini (Writes essays, code, poems).\n*   **Text-to-Image:** Midjourney, DALL-E (Creates art from words).\n*   **Text-to-Audio:** Suno, Udio (Composes music).\n\n## FAQs\n\n*1. Is it stealing art?*\nThis is a hot legal debate.\n*   **The AI Argument:** \"I learned from art just like a human student learns by looking at museums.\"\n*   **The Artist Argument:** \"You trained on my copyrighted work without paying me, and now you compete with me.\"\n\n*2. Can it replace humans?*\nIt replaces *tasks*, not necessarily *jobs*. It is a tool. A writer with AI is faster than a writer without AI. But AI without a human guide often produces generic, soulless work.\n\n### Further Reading\n\n*   **Guide:** *[McKinsey: What is Generative AI?](https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-generative-ai)*\n*   **Video:** *[Generative AI Explained in 2 Minutes](https://www.youtube.com/watch?v=_TvP29iT1A0)*\n"
                     },
                     {
                         "id": "llm",
@@ -69,9 +81,35 @@ const wikiData = {
                         "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [
-                            ""
+                            "ArtificialIntelligence",
+                            "OpenSource",
+                            "Transparency"
                         ],
-                        "content": "# Open Model\n"
+                        "content": "# Open Model\n\nA recipe that is shared with the world, not kept in a restaurant's safe.\n\nIn the AI world, there are two camps:\n1.  **Closed Models (Proprietary):** Like ChatGPT (OpenAI) or Gemini (Google). You can *use* the model through their website, but you cannot see how it works, what it learned from, or run it on your own computer. It is a \"Black Box.\"\n2.  **Open Models ([[open-weights|Open Weights]]):** Like Llama (Meta) or Mistral. The creators publish the \"brain\" (the weights) of the AI. You can download it, inspect it, and run it on your own private server without asking for permission.\n\n## Why does it matter?\n\nIt is the difference between **Rent** vs **Own**.\n*   **Closed:** You rent intelligence. If the company shuts down or bans you, you lose everything.\n*   **Open:** You own the intelligence. It runs on your hardware. No one can take it away.\n\n## FAQs\n\n*1. Is \"[[open-source|Open-Source]]\" the same as \"Open Model\"?*\nTechnically, no (though people use them interchangeably).\n*   **True Open Source:** They share the Training Data, The Code, AND The Weights (Everything).\n*   **Open Weights:** They share the ready-to-use Brain (Weights), but keep the Training Data secret. Most \"Open\" AI today (like Llama) is actually just \"[[open-weights|Open-Weights]].\"\n\n*2. Can I run these at home?*\nYes! If you have a decent computer (especially with a [[gpu|GPU]] like NVIDIA), you can use tools like **Ollama** or **LM Studio** to run powerful AI models completely offline.\n\n### Further Reading\n\n*   **Tool:** *[Ollama](https://ollama.com/)* (The easiest way to run open models locally).\n*   **Library:** *[Hugging Face](https://huggingface.co/)* (The \"GitHub\" of Open Models).\n"
+                    },
+                    {
+                        "id": "open-weights",
+                        "title": "Open Weights",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "ArtificialIntelligence",
+                            "Models",
+                            "Licensing"
+                        ],
+                        "content": "# Open Weights\n\nThe brain without the memory.\n\nWhen an AI company releases **Open Weights**, they are giving you the *result* of their training (the smart brain), but not the *data* (the books it read) or the *recipe* (the code) used to create it.\n\nIt's like a chef giving you a delicious cake. You can eat it, share it, and even put new icing on it, but you don't know exactly what ingredients went into baking it.\n\n## The Difference\n\n*   **Open Source AI:** You get everything. The Code + The Training Data + The Weights. (Rare).\n*   **Open Weights:** You get just the trained model. You can run it, but you can't easily rebuild it from scratch. (Common, e.g., Llama 3, Mistral).\n\n## FAQs\n\n*1. Can I use it for free?*\nUsually, yes. However, \"Open Weights\" often come with specific licenses. For example, some might say \"Free for everyone, unless you have more than 700 million users.\"\n\n*2. Why do companies do this?*\nIt allows the community to improve the model (fixing bugs, making it run faster) without the company giving away their \"secret sauce\" (their proprietary training data).\n\n### Further Reading\n\n*   **Article:** *[The History of Open Weights](https://www.wired.com/story/open-source-generative-ai-llama-2/)*\n*   **Definition:** *[OSI: What is Open Source AI?](https://opensource.org/blog/what-is-open-source-ai)*\n"
+                    },
+                    {
+                        "id": "rag",
+                        "title": "RAG (Retrieval Augmented Generation)",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "ArtificialIntelligence",
+                            "LLM",
+                            "KnowledgeManagement"
+                        ],
+                        "content": "# RAG\n\nGiving the robot a textbook during the exam.\n\nStandard AI (like ChatGPT) relies on its **Training Memory** (what it learned months ago). It's like a student taking a closed-book exam; if they forgot the fact, they might guess ([[ai-hallucination|hallucinate]]).\n\n**RAG** (Retrieval Augmented Generation) connects the AI to your *live* documents. Before answering, it looks up the specific information in your files.\n\n## How it Works\n\n1.  **User Asks:** \"How much vacation time do I have?\"\n2.  **Retrieval (The Lookup):** The system searches your company's HR Handbook PDF.\n3.  **Generation (The Answer):** It sends the question *plus* the relevant page from the PDF to the AI. \"Using this page, answer how much vacation time the user has.\"\n4.  **Result:** \"According to page 12 of the handbook, you have 15 days.\"\n\n## FAQs\n\n*1. Why is this better than [[ai-fine-tuning|fine-tuning]]?*\n*   **RAG** is cheaper and instant. If you update the HR handbook, the AI knows immediately.\n*   **Fine-tuning** is expensive and slow. You have to \"re-train\" the brain every time facts change.\n\n*2. Does it stop hallucinations?*\nDrastically reduces them. Because the AI is grounded in the text you gave it, it is much less likely to make things up intact.\n\n### Further Reading\n\n*   **Guide:** *[Oracle: What is RAG?](https://www.oracle.com/artificial-intelligence/generative-ai/retrieval-augmented-generation-rag/)*\n*   **Tutorial:** *[RAG for Beginners](https://python.langchain.com/docs/use_cases/question_answering/)*\n"
                     }
                 ]
             },
@@ -82,7 +120,7 @@ const wikiData = {
                 "desc": "Security protocols and notes",
                 "children": [
                     {
-                        "id": "botnet",
+                        "id": "botnets",
                         "title": "Botnet",
                         "icon": "far fa-file-alt",
                         "desc": "",
@@ -180,12 +218,8 @@ const wikiData = {
                         "title": "Malware",
                         "icon": "far fa-file-alt",
                         "desc": "",
-                        "tags": [
-                            "CyberSecurity",
-                            "CyberAttack",
-                            "Concepts"
-                        ],
-                        "content": "# Malware\n\nSoftware designed to harm.\n\n**Malware** (short for \"Malicious Software\") is an umbrella term for any program or code that is created to do bad things to a computer, network, or server. It is the general term; \"virus\" is just one specific type.\n\nThink of \"Malware\" as \"Sickness,\" and things like Flu, Cold, and Chickenpox are the specific types.\n\n## Common Types of Malware\n\n*   **Ransomware:** Kidnaps your files and demands payment to release them.\n*   **Worms:** Self-replicating programs that spread across networks without human help.\n*   **Virus:** Attaches itself to legitimate files and spreads when you open them.\n*   **Logic Bombs:** Code hidden in a system that \"detonates\" (executes) only when specific conditions are met (like a specific date).\n*   **Wipers:** Designed purely to delete data and destroy systems forever.\n*   **Keyloggers:** Spies that record every keystroke you type (including passwords).\n*   **Trojan:** Disguises itself as helpful software (like a game or tool) to trick you into installing it.\n*   **Spyware:** Secretly watches what you do and steals your data.\n*   **Adware:** Forces unwanted advertisements onto your screen.\n*   **Botnets:** Enslaves your computer to be part of a hacker's army.\n*   **Rootkit:** Gives a hacker \"God mode\" access to your computer while hiding itself deep in the system.\n*   **[[cryptojacking|Cryptojacking]]:** Steals your computer's power to mine cryptocurrency.\n\n## FAQs\n\n*1. Is a bug the same as malware?*\nNo.\n*   A **Bug** is a mistake made by a programmer (accidental).\n*   **Malware** is code written intentionally to cause harm (on purpose).\n\n*2. How do I get malware?*\n*   Opening suspicious email attachments (Phishing).\n*   Downloading \"cracked\" software or games.\n*   Clicking on fake \"Update your Flash Player\" ads.\n*   Plugging in a found USB drive.\n\n### Further Reading\n\n*   **Video:** *[Every Computer Virus Explained in 9 Minutes](https://www.youtube.com/watch?v=cFo5D9mFUJQ)*\n*   **Article:** *[The difference between a Virus, Worm, and Trojan](https://us.norton.com/internetsecurity-malware-what-is-the-difference-between-a-virus-worm-and-trojan.html)*\n"
+                        "tags": [],
+                        "content": "# Malware\n\nIt is a piece of malicious software, that intends to harm your system and also in cases steal or encrypt data from you.\n\n![malware-image.png](../../../assets/images/malware-image.png)\n\nThere are several different types of malwares:\n- [[ransomeware|Ransomware]]\n- Worms\n- Virus\n- Logic bombs\n- Wipers\n- Key loggers\n- Trojan\n- Spywares\n- Adware\n- [[botnets|Botnets]]\n- Rootkit\n- [[cryptojacking|Cryptojacking]]\n\n### Further resources\n- Watch: [Every Computer Virus Explained in 9 Minutes](https://www.youtube.com/watch?v=cFo5D9mFUJQ)\n\n"
                     },
                     {
                         "id": "phishing",
@@ -337,6 +371,42 @@ const wikiData = {
                             "Electric"
                         ],
                         "content": "# eVTOL (Electric Vertical Take-Off and Landing)\n"
+                    },
+                    {
+                        "id": "gpu",
+                        "title": "GPU (Graphics Processing Unit)",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "Hardware",
+                            "Computing",
+                            "Gaming"
+                        ],
+                        "content": "# GPU\n\nA factory with thousands of workers, instead of one genius.\n\nThe **CPU** (Central Processing Unit) in your computer is like a **Professor**: extremely smart, can do complex math (calculus), but can only do one or two things at a time.\n\nThe **GPU** (Graphics Processing Unit) is like a **Factory** full of thousands of workers: they aren't very smart (basic math only), but they can do 10,000 simple things at the exact same time.\n\n## Why is it used for AI?\n\nAI (and Video Games) require changing millions of pixels or calculating millions of numbers simultaneously.\n*   **CPU:** Solves one complex equation in 0.1 seconds.\n*   **GPU:** Solves 10,000 simple equations in 0.1 seconds.\n\n## FAQs\n\n*1. Can I use a GPU for normal work?*\nYou use it every day! It draws the windows on your screen. But for running Excel or Word, your CPU does the heavy lifting because those tasks are sequential (step-by-step), not parallel.\n\n*2. Why are they so expensive?*\nSupply and Demand. They are the shovels in the AI Gold Rush. Everyone from gamers to Google needs them to run modern software.\n\n### Further Reading\n\n*   **Video:** *[Mythbusters Demo: CPU vs GPU](https://www.youtube.com/watch?v=-P28LKWTzrI)* (The famous paintball illustration).\n*   **Explainer:** *[NVIDIA: What is a GPU?](https://www.nvidia.com/en-us/geforce/technologies/what-is-a-gpu/)*\n"
+                    },
+                    {
+                        "id": "lidar",
+                        "title": "LiDAR (Light Detection and Ranging)",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "Hardware",
+                            "Sensors",
+                            "Robotics"
+                        ],
+                        "content": "# LiDAR\n\nBats using lasers instead of sound.\n\nYou know how bats use **Sonar** (Sound Navigation)? They scream, and listen for the echo to know where the wall is.\n\n**LiDAR** (Light Detection and Ranging) does the exact same thing, but with **Lasers**. It shoots millions of invisible laser beams per second and measures how long they take to bounce back.\n\n## What it sees\n\nIt creates a \"Point Cloud\"\u2014a precise 3D map of the world.\n*   **Cameras** see color (2D).\n*   **LiDAR** sees distance (3D). It knows exactly that the tree is 15.2 meters away, not 15.1.\n\n## FAQs\n\n*1. Where is it used?*\n*   **Self-Driving Cars:** The spinning bucket on top of the car. It tells the car \"There is a pedestrian 20 meters ahead.\"\n*   **iPhones:** New pros have a tiny LiDAR scanner to help with Focus and Augmented Reality (AR).\n*   **Archaeology:** Discovering lost cities hidden under thick jungle canopies by seeing \"through\" the leaves.\n\n*2. Is it safe?*\nYes. The lasers are low power and invisible. They won't hurt your eyes.\n\n### Further Reading\n\n*   **Video:** *[How LiDAR works (Velodyne)](https://www.youtube.com/watch?v=EYbhNSUnIdU)*\n*   **Article:** *[The magic of LiDAR](https://www.neonscience.org/resources/learning-hub/tutorials/lidar-basics)*\n"
+                    },
+                    {
+                        "id": "open-source",
+                        "title": "Open Source",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "Software",
+                            "Licensing",
+                            "Community"
+                        ],
+                        "content": "# Open Source\n\nA recipe that everyone can cook, improve, and share.\n\nMost software (like Windows or Photoshop) is **Closed Source**. You buy the cake, but you can't see the recipe. You can't change the flavor or check if they put poison in it.\n\n**Open Source** software is when the code (the recipe) is public. Anyone can read it, change it, and distribute their own version.\n\n## Why it wins\n\n1.  **Trust:** You don't have to trust the company; you can check the code yourself.\n2.  **Innovation:** Instead of 100 employees at Microsoft working on it, you have 10,000 developers around the world fixing bugs and adding features.\n3.  **Cost:** It is usually free.\n\n## FAQs\n\n*1. How do they make money?*\nThey give the software away for free, but sell:\n*   **Support:** \"We will help you fix it if it breaks.\"\n*   **Hosting:** \"We will run it for you so you don't have to.\" (e.g., WordPress).\n*   **Features:** \"The basic version is free, but the Enterprise version costs money.\"\n\n*2. Examples?*\n*   **Linux:** Runs the entire internet and Android phones.\n*   **VLC Player:** The video player that plays everything.\n*   **Firefox:** The web browser.\n\n### Further Reading\n\n*   **Definition:** *[The Open Source Definition](https://opensource.org/osd)*\n*   **Guide:** *[Why Open Source matters](https://www.redhat.com/en/topics/open-source/what-is-open-source)*\n"
                     }
                 ]
             },
@@ -365,8 +435,127 @@ const wikiData = {
                 "desc": "Philosophy",
                 "children": [
                     {
+                        "id": "absurdism",
+                        "title": "Absurdism",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "Philosophy",
+                            "Meaning",
+                            "Camus"
+                        ],
+                        "content": "# Absurdism\n\nLaughing at the silence of the universe.\n\nHumans have an innate drive to find meaning and order. The Universe is chaotic and silent. **Absurdism** is the conflict between the two. It says: \"Life is meaningless, but we should live it anyway.\"\n\nIt doesn't say \"Give up\" ([[nihilism|Nihilism]]) or \"Create your own meaning\" ([[existentialism|Existentialism]]). It says \"Embrace the absurdity and rebel by being happy.\"\n\n## The Myth of Sisyphus\n\nAlbert Camus used the Greek myth of Sisyphus to explain this.\n*   **The Punishment:** Sisyphus pushes a boulder up a hill, only to watch it roll back down, forever.\n*   **The Absurdity:** It is pointless work.\n*   **The Victory:** If Sisyphus *accepts* his fate and finds joy in the struggle itself, he defeats the punishment. \"One must imagine Sisyphus happy.\"\n\n## FAQs\n\n*1. Is it the same as Nihilism?*\nNo.\n*   **Nihilist:** \"Nothing matters, so why bother?\" (Despair).\n*   **Absurdist:** \"Nothing matters, so let's go get ice cream!\" (Freedom).\n\n*2. How do I practice it?*\nStop looking for a \"Grand Purpose.\" Enjoy your coffee. Laugh at bad luck. Realize that because there is no cosmic scorecard, you are free to just *be*.\n\n### Further Reading\n\n*   **Book:** *[The Stranger](https://www.goodreads.com/book/show/49552.The_Stranger)* by Albert Camus.\n*   **Video:** *[Optimistic Nihilism (Kurzgesagt)](https://www.youtube.com/watch?v=MBRqu0YOH14)* (Very similar to Absurdism).\n"
+                    },
+                    {
+                        "id": "cynicism",
+                        "title": "Cynicism",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "Philosophy",
+                            "AncientGreece",
+                            "Diogenes"
+                        ],
+                        "content": "# Cynicism\n\nLiving like a dog to be truly free.\n\nModern usage suggests a \"Cynic\" is someone who assumes people are selfish.\n**Ancient Cynicism** was a philosophy of rejecting all social conventions (money, fame, power, manners) to live in accordance with nature.\n\nThe word comes from *Kyon*, meaning \"Dog.\" The goal was to be as shameless, happy, and free as a stray dog.\n\n## The Diogenes Story\n\nDiogenes (the most famous Cynic) lived in a ceramic tub on the streets of Athens.\n*   He owned nothing but a wooden bowl (until he saw a boy drink from his hands, then smashed the bowl because it was \"unnecessary baggage\").\n*   When Alexander the Great (the most powerful man in the world) asked if he could do anything for Diogenes, he replied: *\"Yes, move. You are blocking my sunlight.\"*\n\n## FAQs\n\n*1. What is the core lesson?*\nHappiness comes from **Self-Sufficiency**. If you need nothing (no big house, no applause, no fancy clothes), nothing can be taken away from you. You are invincible.\n\n*2. Is it practical today?*\nYou don't have to live in a tub. But you can practice it by:\n*   Not caring what people think of you.\n*   Realizing you don't *need* the new iPhone to be happy.\n*   Living simply.\n\n### Further Reading\n\n*   **Article:** *[The Life of Diogenes](https://www.britannica.com/biography/Diogenes-of-Sinope)*\n*   **Video:** *[Diogenes, the Publicly-Defecating Philosopher](https://youtu.be/-A3IlRATIsI)*\n"
+                    },
+                    {
+                        "id": "existentialism",
+                        "title": "Existentialism",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "Philosophy",
+                            "Freedom",
+                            "Sartre"
+                        ],
+                        "content": "# Existentialism\n\nYou contain the paintbrush, not just the canvas.\n\nFor objects (like a knife), **Essence precedes Existence**. (A blacksmith thinks \"I need something to cut,\" designs a knife, and then makes it). The *purpose* comes first.\n\nFor humans, **Existence precedes Essence**. You are born first (You exist), and you have NO built-in purpose. You are a blank slate. You must *create* your own essence through your choices.\n\n## The Burden of Freedom\n\nJean-Paul Sartre said we are **\"Condemned to be free.\"**\nBecause there is no God/Destiny/Nature telling you what to do, *everything* you do is your fault.\n*   You didn't \"have to\" work that job. You chose it.\n*   You didn't \"have to\" get angry. You chose it.\nThis responsibility creates \"Existential Dread\" (Anxiety).\n\n## FAQs\n\n*1. Isn't this depressing?*\nIt can be scary, but it is also empowering. It means you are not stuck. You can change your \"essence\" at any moment. You are the author of your life, not just an actor reading a script.\n\n*2. Who are the big names?*\n*   **Sartre:** Radical freedom.\n*   **Nietzsche:** Becoming the \"Ubermensch\" (Superman) by creating your own values.\n*   **Kierkegaard:** Taking the \"Leap of Faith.\"\n\n### Further Reading\n\n*   **Book:** *[Existentialism Is a Humanism](https://www.marxists.org/reference/archive/sartre/works/exist/sartre.htm)* by Jean-Paul Sartre.\n*   **Video:** *[Sartre and the Waiter](https://www.youtube.com/watch?v=xxrmEfW4on0)* (Understanding \"Bad Faith\")."
+                    },
+                    {
+                        "id": "hedonism",
+                        "title": "Hedonism",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "Philosophy",
+                            "Pleasure",
+                            "Ethics"
+                        ],
+                        "content": "# Hedonism\n\nPleasure is the only compass.\n\n**Hedonism** is the belief that Pleasure is the supreme Good, and Pain is the supreme Evil. Therefore, the goal of life is to maximize pleasure and minimize pain.\n\nWhile often associated with partying and excess, philosophical Hedonism is often more subtle.\n\n## Types of Hedonism\n\n1.  **Cyrenaic (The Party Animal):** Instant bodily pleasure (food, drink, sex) is the best. \"Eat, drink, and be merry, for tomorrow we die.\"\n2.  **Epicurean (The Connoisseur):** Sustainable pleasure. Avoiding pain (anxiety/fear) is more important than chasing highs. A simple meal with friends is better than a banquet that gives you a hangover.\n\n## FAQs\n\n*1. Is it selfish?*\nNot necessarily. [[utilitarianism|Utilitarianism]] is a form of \"Social Hedonism\", trying to maximize the total happiness for *everyone* in society (The greatest good for the greatest number).\n\n*2. What is the \"Hedonic Treadmill\"?*\nThe problem where humans quickly return to a stable level of happiness. You buy a new car (Pleasure spike), but after a month, it's just \"your car\" (Neutral). Hedonism often fails because you need bigger and bigger doses to feel the same high.\n\n### Further Reading\n\n*   **Article:** *[Epicurus and the deeper meaning of Hedonism](https://www.dailystoic.com/epicureanism/)*\n*   **Video:** *[The Paradox of Hedonism](https://www.youtube.com/watch?v=Hu4YbmPhFKQ)*"
+                    },
+                    {
                         "id": "introduction",
                         "title": "Introduction",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "Philosophy",
+                            "Overview"
+                        ],
+                        "content": "# Introduction\n\nPhilosophy is the study of fundamental questions about existence, knowledge, values, reason, mind, and language. Here is a high-level overview of the major schools of thought covered in this knowledge bank.\n\n## Schools of Thought\n\n- **[[absurdism|Absurdism]]**: Laughing at the silence of the universe.\n  - *Concept*: Seeking meaning in a meaningless world is funny, not sad.\n- **[[cynicism|Cynicism]]**: Living like a dog to be truly free.\n  - *Concept*: Rejecting social norms (wealth, power, fame) to live in virtue with nature.\n- **[[existentialism|Existentialism]]**: You contain the paintbrush, not just the canvas.\n  - *Concept*: Existence precedes essence; you are not born with a purpose, you must create one.\n- **[[hedonism|Hedonism]]**: Pleasure is the only compass.\n  - *Concept*: The pursuit of pleasure and avoidance of pain is the highest good.\n- **[[law-of-attraction|Law of Attraction]]**: Like attracts like.\n  - *Concept*: The belief that positive thoughts bring positive results into a person's life.\n- **[[nihilism|Nihilism]]**: The game has no rules and no winner.\n  - *Concept*: Life is without objective meaning, purpose, or intrinsic value.\n- **[[paradox|Paradox]]**: A truth that sounds like a lie.\n  - *Concept*: A statement that contradicts itself but might still be true.\n- **[[pragmatism|Pragmatism]]**: If it works, it's true.\n  - *Concept*: Assessing theories or beliefs in terms of the success of their practical application.\n- **[[stoicism|Stoicism]]**: You cannot control the storm, only the ship.\n  - *Concept*: Happiness is found in accepting the moment as it presents itself, not in our desire to control it.\n- **[[utilitarianism|Utilitarianism]]**: The greatest good for the greatest number.\n  - *Concept*: The belief that the best action is the one that maximizes happiness and minimizes suffering. "
+                    },
+                    {
+                        "id": "law-of-attraction",
+                        "title": "Law of Attraction",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "Philosophy",
+                            "NewAge",
+                            "Psychology"
+                        ],
+                        "content": "# Law of Attraction\n\nLike attracts like.\n\nThe **Law of Attraction** is the belief that positive or negative thoughts bring positive or negative experiences into a person's life.\n**\"Thoughts become Things.\"**\n\nIt suggests that if you focus intensely on a goal (visualize it, feel it as if it's already true), the Universe will conspire to make it happen.\n\n## Is it Magic or Psychology?\n\n*   **The Mystical View:** Your thoughts send out energy vibrations that magnetically attract similar energy from the Universe.\n*   **The Psychological View (Confirmation Bias):** If you decide to buy a Red Tesla, you suddenly see Red Teslas everywhere. Because you are focused on \"Success,\" your brain subconsciously notices opportunities for success that you would have ignored before.\n\n## FAQs\n\n*1. Does it work?*\n*   **Scientifically:** There is no proof that thoughts change physical reality directly (telekinesis).\n*   **Practically:** Positive thinking and visualization *do* improve confidence and performance, which leads to better results.\n\n*2. What is the danger?*\n**Victim Blaming.** If you believe \"You attract what you think,\" it implies that if someone gets sick or poor, they \"attracted\" it with bad thoughts, which is cruel and untrue.\n\n### Further Reading\n\n*   **Book:** *[The Secret](https://www.thesecret.tv/)* by Rhonda Byrne (The most famous book on this).\n*   **Analysis:** *[The Psychology of the Law of Attraction](https://www.psychologytoday.com/us/blog/the-blame-game/201309/the-truth-about-the-law-attraction)*\n"
+                    },
+                    {
+                        "id": "nihilism",
+                        "title": "Nihilism",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "Philosophy",
+                            "Nietzsche",
+                            "Meaning"
+                        ],
+                        "content": "# Nihilism\n\nThe game has no rules and no winner.\n\n**Nihilism** (from Latin *nihil*, meaning \"nothing\") is the rejection of all religious and moral principles, often in the belief that life is meaningless.\nIt suggests there is no objective Right or Wrong, no God, and no \"Grand Plan.\"\n\n## The Crisis\n\nNietzsche famously said, **\"God is dead.\"**\nHe wasn't celebrating; he was warning us. He meant that the old structure giving us meaning (Religion) was collapsing, and without it, humans would fall into despair (Nihilism).\n\n## Types\n\n*   **Existential Nihilism:** Life has no intrinsic value.\n*   **Moral Nihilism:** Nothing is truly \"Evil\" or \"Good\"; those are just human opinions.\n*   **Epistemological Nihilism:** We cannot truly \"know\" anything for sure.\n\n## FAQs\n\n*1. Is it just for edgy teenagers?*\nIt is often a phase, but it's also a serious philosophical starting point. Once you accept there are no pre-set rules, you are forced to ask: \"Okay, then what do I want to do?\"\n\n*2. How do you beat it?*\n*   **Through Art (Nietzsche):** Create beauty.\n*   **Through Absurdism (Camus):** Rebel and enjoy the ride.\n*   **Through Existentialism (Sartre):** Build your own meaning.\n\n### Further Reading\n\n*   **Video:** *[Nietzsche and Nihilism](https://www.youtube.com/watch?v=wOHH3nS0kYk)*\n*   **Article:** *[Internet Encyclopedia of Philosophy: Nihilism](https://iep.utm.edu/nihilism/)*\n"
+                    },
+                    {
+                        "id": "paradox",
+                        "title": "Paradox",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "Philosophy",
+                            "Logic",
+                            "CriticalThinking"
+                        ],
+                        "content": "# Paradox\n\nA truth that sounds like a lie.\n\nA **Paradox** is a statement that contradicts itself on the surface, but upon deeper reflection, reveals a truth (or exposes a flaw in our logic).\n\nIt breaks your brain's autopilot and forces you to think.\n\n## Famous Examples\n\n### 1. The Ship of Theseus (Identity)\nIf you replace one plank of a wooden ship every year, until every single part has been replaced... is it still the same ship?\n*   *If yes:* But every physical piece is different!\n*   *If no:* At what point did it become a new ship?\n\n### 2. The Liar's Paradox (Truth)\n\"This sentence is false.\"\n*   If it represents the truth -> Then it is false.\n*   If it represents a lie -> Then it is true.\nIt creates an infinite loop.\n\n### 3. The Tolerance Paradox (Society)\n\"Should a tolerant society tolerate intolerance?\"\nIf you tolerate Nazis (intolerance), they will destroy the tolerant society. Therefore, to be tolerant, you must be *intolerant* of intolerance.\n\n## FAQs\n\n*1. Why do philosophers love them?*\nThey act as \"Stress Tests\" for our definitions. We think we know what \"Same\" means, until the Ship of Theseus proves we don't.\n\n### Further Reading\n\n*   **Video:** *[The Ship of Theseus Explained](https://www.youtube.com/watch?v=d73I7aWcEIs)*\n*   **List:** *[Wikipedia: List of Paradoxes](https://en.wikipedia.org/wiki/List_of_paradoxes)*"
+                    },
+                    {
+                        "id": "pragmatism",
+                        "title": "Pragmatism",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "Philosophy",
+                            "Logic",
+                            "Action"
+                        ],
+                        "content": "# Pragmatism\n\nIf it works, it's true.\n\nMost philosophy asks: \"Is this theory inherently true?\"\n**Pragmatism** asks: \"Does believing this theory actually help us?\"\n\nIt treats beliefs like tools. A hammer isn't \"True\" or \"False\"; it is \"Useful\" or \"Useless.\"\n\n## The Cash Value of Truth\n\nWilliam James (a father of Pragmatism) said we should look for the **\"Cash Value\"** of an idea.\n*   *Example:* \"Do we have Free Will?\"\n    *   **Metaphysics:** Let's debate for 2,000 years.\n    *   **Pragmatism:** If I believe I have free will, I act better and improve my life. If I believe I am a robot, I get lazy. Therefore, acting *as if* I have free will is the \"True\" choice.\n\n## FAQs\n\n*1. Is it just \"The ends justify the means\"?*\nNo. That is Machiavellianism.\nPragmatism is about testing Truth by its consequences. If a belief makes you miserable and passive, it is a \"bad\" belief, even if it seems logically sound.\n\n*2. Is it anti-science?*\nNo, Science *is* pragmatic! Scientists don't say \"Gravity is the absolute final truth.\" They say \"Gravity is the best model we have right now that allows us to build bridges that don't fall down.\"\n\n### Further Reading\n\n*   **Article:** *[Pragmatism: The Philosophy of Action](https://plato.stanford.edu/entries/pragmatism/)*\n*   **Video:** *[What is Pragmatism?](https://www.youtube.com/watch?v=RPlfC808EPU)*\n"
+                    },
+                    {
+                        "id": "stoicism",
+                        "title": "Stoicism",
+                        "icon": "far fa-file-alt",
+                        "desc": "",
+                        "tags": [
+                            "Philosophy",
+                            "MarcusAurelius",
+                            "Resilience"
+                        ],
+                        "content": "# Stoicism\n\nYou cannot control the storm, only the ship.\n\n**Stoicism** is a user's manual for the mind, written by Greek slaves and Roman Emperors. Its core goal is **Eudaimonia** (Flourishing) by focusing only on what you can control and accepting what you cannot.\n\n## The Dichotomy of Control\n\nDraw a line in the sand.\n*   **In Your Control (Internal):** Your thoughts, your actions, your character, your reactions.\n*   **Not In Your Control (External):** The weather, traffic, what people think of you, the past, the future.\n\nIf you tie your happiness to things *outside* your control (like \"I hope it doesn't rain\"), you are a slave to fortune. If you tie it to things *inside* your control (like \"I will bring an umbrella\"), you are invincible.\n\n## FAQs\n\n*1. Is it about having no emotions?*\nNo. (That is lowercase \"s\" stoicism).\nCapital \"S\" **Stoicism** is not about suppressing emotion; it's about not being *enslaved* by it. You can feel grief, but you shouldn't let it destroy your reason.\n\n*2. Who are the big three?*\n*   **Marcus Aurelius:** The Emperor. Wrote \"Meditations\" (notes to himself on how to be a good ruler).\n*   **Seneca:** The Statesman. Wrote letters on how to manage time and anger.\n*   **Epictetus:** The Slave. Taught that freedom is a mental state.\n\n### Further Reading\n\n*   **Book:** *[Meditations](https://www.goodreads.com/book/show/30659.Meditations)* by Marcus Aurelius.\n*   **Website:** *[Daily Stoic](https://dailystoic.com/)* (Great modern intro).\n"
+                    },
+                    {
+                        "id": "utilitarianism",
+                        "title": "Utilitarianism",
                         "icon": "far fa-file-alt",
                         "desc": "",
                         "tags": [],
