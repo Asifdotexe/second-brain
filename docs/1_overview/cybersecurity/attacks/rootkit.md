@@ -22,7 +22,7 @@ It lies to the [[os-kernel|OS-kernel]] itself.
 ## FAQs
 
 *1. How do I remove it?*
-It is extremely difficult. Since the [operating-system|OS] can't see it, it can't delete it. Often, the only solution is to wipe the hard drive completely and reinstall Windows from scratch.
+It is extremely difficult. Since the [operating-system|OS] can't see it, it can't delete it. Often, the only solution is to wipe the [[hard-drive]] completely and reinstall Windows from scratch.
 
 ### Further Reading
 
