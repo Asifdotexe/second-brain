@@ -12,8 +12,8 @@ desc: Summary of 27 December 2025 - 3 December 2026.
 
 ![Rondodox](https://www.bleepstatic.com/content/hl-images/2025/11/26/bot.jpg)
 
-- The What: A new [[botnet]] campaign dubbed "RondoDox" has been observed actively targeting servers running the Next.js framework by exploiting a critical vulnerability known as "[[react2shell|React2Shell]]" ([[CVE]]-2025-55182).
-- The Detail: Attackers are using this flaw to execute remote code on vulnerable servers, subsequently deploying cryptominers and malware. The botnet specifically hunts for unpatched instances of the popular React framework used for building web applications.
+- The What: A new [[botnets|botnet]] campaign dubbed "RondoDox" has been observed actively targeting servers running the Next.js framework by exploiting a critical vulnerability known as "[[react2shell|React2Shell]]" ([[CVE]]-2025-55182).
+- The Detail: Attackers are using this flaw to execute [[remote-code-execution|Remote-Code]] on vulnerable servers, subsequently deploying cryptominers and malware. The [[botnets|botnet]] specifically hunts for unpatched instances of the popular React framework used for building web applications.
 - The Impact: This poses a severe risk to web infrastructure, as Next.js is widely used by enterprise-grade applications. Successful compromise can lead to server resource theft ([[cryptojacking]]) or deeper network infiltration.
 
 *Read more about it: https://www.bleepingcomputer.com/news/security/rondodox-botnet-exploits-react2shell-flaw-to-breach-nextjs-servers/*
@@ -23,8 +23,8 @@ desc: Summary of 27 December 2025 - 3 December 2026.
 ![Glassworm](https://www.bleepstatic.com/content/hl-images/2023/10/26/apple-cpu.jpg)
 
 - The What: A persistent malware campaign known as [[glassworm|GlassWorm]] has launched its fourth wave, specifically targeting macOS developers through malicious extensions for VSCode and OpenVSX.
-- The Detail: The attackers distribute trojanized versions of cryptocurrency wallet applications and development tools. Once installed, the malware grants persistent access to the victim's machine, aiming to steal sensitive credentials and crypto assets.
-- The Impact: This highlights the growing trend of [[supply-chain-attack|Supply Chain Attack]] targeting developers. By compromising the tools developers use, attackers can potentially inject malicious code into downstream software or steal high-value intellectual property.
+- The Detail: The attackers distribute trojanized versions of cryptocurrency wallet applications and development tools. Once installed, the [[malware]] grants persistent access to the victim's machine, aiming to steal sensitive credentials and crypto assets.
+- The Impact: This highlights the growing trend of [[supply-chain-attack|Supply-Chain-Attack]] targeting developers. By compromising the tools developers use, attackers can potentially inject malicious code into downstream software or steal high-value intellectual property.
 
 *Read more about it: https://www.bleepingcomputer.com/news/security/new-glassworm-malware-wave-targets-macs-with-trojanized-crypto-wallets/*
 
@@ -57,7 +57,7 @@ desc: Summary of 27 December 2025 - 3 December 2026.
 
 - The What: Reports indicate that OpenAI is shifting its business model to prioritize "sponsored content" within its AI-generated responses, moving away from a purely subscription/API-based revenue stream.
 - The Detail: Despite initial resistance to advertising, the company is testing formats where paid partners' information appears prominently when relevant queries are asked, distinct from organic training data results.
-- The Impact: This fundamentally changes the user trust model for [[llm|Large Language Models]]. If answers are influenced by sponsorship, the perceived neutrality of AI "reasoning" is compromised, making it more akin to a search engine ad platform than an impartial assistant.
+- The Impact: This fundamentally changes the user trust model for [[llm|Large-Language-Models]]. If answers are influenced by sponsorship, the perceived neutrality of AI "reasoning" is compromised, making it more akin to a search engine ad platform than an impartial assistant.
 
 *Read more about it: https://www.bleepingcomputer.com/news/artificial-intelligence/openais-chatgpt-ads-will-allegedly-prioritize-sponsored-content-in-answers/*
 
@@ -75,7 +75,7 @@ desc: Summary of 27 December 2025 - 3 December 2026.
 
 ![Manus](https://techcrunch.com/wp-content/uploads/2025/01/GettyImages-2173579488.jpg?resize=1280,852)
 
-- The What: Meta has agreed to acquire Singapore-based startup Manus, a company specializing in [[Agentic AI|AI Agents]] for small and medium businesses (SMBs).
+- The What: Meta has agreed to acquire Singapore-based startup Manus, a company specializing in [[agentic-ai|AI-Agents]] for small and medium businesses (SMBs).
 - The Detail: Manus's technology focuses on autonomous agents that can execute complex multi-step workflows for businesses. Meta plans to integrate this directly into its enterprise offerings, potentially within the WhatsApp/Messenger business ecosystem.
 - The Impact: This signals a shift from "Chatbots" (which just talk) to "Agents" (which do work). Meta is betting that the future of business messaging involves AI that can autonomously handle customer service, booking, and sales tasks.
 
@@ -87,8 +87,8 @@ desc: Summary of 27 December 2025 - 3 December 2026.
 
 ![Quantum](https://www.sciencedaily.com/images/1920/quantum-computing-optical-fiber-array.webp) 
 
-- The What: Researchers have developed a new microchip-sized device capable of controlling laser frequencies with extreme precision, a critical step for scalable quantum computing.
-- The Detail: Published in ScienceDaily, the research details how this chip uses a fraction of the power required by traditional bulky systems to stabilize the lasers needed to manipulate quantum bits (qubits).
+- The What: Researchers have developed a new microchip-sized device capable of controlling laser frequencies with extreme precision, a critical step for scalable [[quantum-computing]].
+- The Detail: Published in ScienceDaily, the research details how this chip uses a fraction of the power required by traditional bulky systems to stabilize the lasers needed to manipulate quantum bits ([[qubits]]).
 - The Impact: Reducing the size and power consumption of control hardware is one of the biggest hurdles in moving quantum computers from the lab to commercial reality. This chip could accelerate the timeline for practical quantum processors.
 
 *Read more about it: https://www.sciencedaily.com/releases/2025/12/251226045341.htm*
@@ -98,7 +98,7 @@ desc: Summary of 27 December 2025 - 3 December 2026.
 ![Flipper Zero](https://www.bleepstatic.com/content/hl-images/2023/01/03/flipper-zero.jpg)
 
 - The What: For the 2026 inauguration of New York City Mayor Zohran Mamdani, officials have explicitly added the Flipper Zero and Raspberry Pi devices to the list of banned items.
-- The Detail: The Flipper Zero is a portable multi-tool for geeks that can interact with radio protocols (RFID, NFC, Sub-GHz). While legal, it has gained a reputation in security circles for its ability to clone badges or disrupt wireless signals.
+- The Detail: The [[flipper-zero|Flipper-Zero]] is a portable multi-tool for geeks that can interact with radio protocols ([[rfid|RFID]], [[nfc|NFC]], Sub-GHz). While legal, it has gained a reputation in security circles for its ability to clone badges or disrupt wireless signals.
 - The Impact: This is one of the first high-profile public events to specifically blacklist "hacker tools" by name, acknowledging the physical security risks posed by accessible, pocket-sized cyber-physical devices.
 
 *Read more about it: https://www.bleepingcomputer.com/news/security/nyc-mayoral-inauguration-bans-flipper-zero-raspberry-pi-devices/*
@@ -108,7 +108,7 @@ desc: Summary of 27 December 2025 - 3 December 2026.
 ![Samsung & SK Hynix](https://www.reuters.com/resizer/v2/43SUW2D6SZNEVE5W7LJWOZSOQU.jpg?auth=ad93f2f983b5d1fda4c41a88a4ff49b15399dfa287e30ab6f95b35175a5ded94&width=720&quality=80)
 
 - The What: The US government has granted a renewed annual license to South Korean chip giants Samsung and SK Hynix, allowing them to continue shipping advanced chip manufacturing equipment to their facilities in China through 2026.
-- The Detail: This waiver is a critical exception to the strict US export controls designed to limit China's semiconductor capabilities. It allows these companies to maintain their existing massive memory chip fabrication plants in China.
+- The Detail: This waiver is a critical exception to the strict US export controls designed to limit China's [[semiconductor]] capabilities. It allows these companies to maintain their existing massive memory chip fabrication plants in China.
 - The Impact: This decision stabilizes the global memory chip supply chain for the coming year. Without it, global prices for RAM and Flash storage (used in everything from phones to servers) would likely have spiked due to production disruptions.
 
 *Read more about it: https://www.reuters.com/world/china/samsung-wins-us-annual-approval-chipmaking-tool-shipments-china-source-says-2025-12-30/*

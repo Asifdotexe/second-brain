@@ -15,7 +15,7 @@ desc: Summary of 3 January 2026 - 9 January 2026.
 Date: 2026-01-07
 
 - Veeam released urgent patches for its Backup & Replication software to fix a critical vulnerability ([[cve|CVE]]-2025-59470) and two high-severity flaws.
-- The flaw allows low-privileged users, such as backup operators, to execute arbitrary code remotely (RCE) by manipulating backup configuration files or password parameters.
+- The flaw allows low-privileged users, such as backup operators, to execute arbitrary code remotely ([[remote-code-execution|RCE]]) by manipulating backup configuration files or password parameters.
 - Given Veeam's ubiquity in enterprise disaster recovery, unpatched servers act as a prime gateway for attackers to seize control of backup data and demand extortion payments.
 
 *Read more about it: https://www.bleepingcomputer.com/news/security/new-veeam-vulnerabilities-expose-backup-servers-to-rce-attacks/*

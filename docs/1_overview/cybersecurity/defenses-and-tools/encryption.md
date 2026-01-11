@@ -17,7 +17,7 @@ Putting your secret message in a locked safe.
 ## FAQs
 
 *1. Can hackers break it?*
-Modern encryption (like AES-256) is practically unbreakable by brute force. Hackers don't break the math; they steal the **Key** (or guess your password) to bypass the lock.
+Modern encryption (like [[aes-256|AES-256]]) is practically unbreakable by brute force. Hackers don't break the math; they steal the **Key** (or guess your password) to bypass the lock.
 
 *2. What is End-to-End Encryption?*
 It means the company (e.g., WhatsApp) cannot read your messages. The message is locked on your phone and only unlocked on your friend's phone.
