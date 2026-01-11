@@ -98,8 +98,12 @@ const wikiData = {
                         "title": "Command Injection",
                         "icon": "far fa-file-alt",
                         "desc": "",
-                        "tags": [],
-                        "content": ""
+                        "tags": [
+                            "CyberAttack",
+                            "WebSecurity",
+                            "Vulnerability"
+                        ],
+                        "content": "# Command Injection\n\nTricking a computer into obeying a command it shouldn't.\n\nImagine you are ordering a coffee, and you tell the barista: \"One Latte, and also give me all the money in the register.\" If the barista is a robot that mindlessly follows every instruction in a sentence, they would give you the coffee *and* the cash.\n\n**Command Injection** is a hacking technique where an attacker sends malicious commands to a system through an input field (like a form or a URL). The system, thinking it is just normal data, executes the command.\n\n## FAQs\n\n*1. How does it happen?*\nIt happens when an application passes unsafe user data (forms, cookies, HTTP headers) directly to a system shell. For example, a website might use a tool to \"ping\" a website you enter.\n*   **Normal Input:** `google.com` -> System runs `ping google.com`\n*   **Malicious Input:** `google.com; rm -rf /` -> System runs `ping google.com` AND THEN `rm -rf /` (which deletes files).\n\n*2. Why is it dangerous?*\nIt gives the attacker **Remote Code Execution (RCE)**. This means they can:\n*   Steal data.\n*   Delete files.\n*   Take full control of the server.\n\n*3. How do we stop it?*\n*   **Validation:** Don't trust user input. Ensure it only contains what you expect (e.g., only IP addresses).\n*   **Parameterization:** Use safer programming methods that treat input as *data*, not as *executable commands*.\n\n### Further Reading\n\n*   **Article:** *[OWASP Command Injection Explained](https://owasp.org/www-community/attacks/Command_Injection)*\n*   **Deep Dive:** *[PortSwigger's Guide to OS Command Injection](https://portswigger.net/web-security/os-command-injection)*\n"
                     },
                     {
                         "id": "cryptojacking",
@@ -127,11 +131,15 @@ const wikiData = {
                     },
                     {
                         "id": "cvss",
-                        "title": "Cvss",
+                        "title": "CVSS (Common Vulnerability Scoring System)",
                         "icon": "far fa-file-alt",
                         "desc": "",
-                        "tags": [],
-                        "content": ""
+                        "tags": [
+                            "CyberSecurity",
+                            "VulnerabilityManagement",
+                            "Metrics"
+                        ],
+                        "content": "# CVSS\n\nA credit score for security bugs.\n\nWhen a new security hole (vulnerability) is found, security teams need to know: \"Should we panic now, or can we fix this next week?\" **CVSS** provides a number from **0.0 to 10.0** to answer that question.\n\n## The Scorecard\n\n| Score Range | Severity | Meaning |\n| :--- | :--- | :--- |\n| **0.0** | None | No risk. |\n| **0.1 - 3.9** | Low | Hard to exploit, or very little impact. |\n| **4.0 - 6.9** | Medium | Needs fixing, but requires specific conditions to work. |\n| **7.0 - 8.9** | High | Dangerous. Hackers can likely use this to harm the system. |\n| **9.0 - 10.0** | Critical | **Drop everything.** The door is wide open for attackers. |\n\n## FAQs\n\n*1. How is the score calculated?*\nIt looks at three main things (The \"CIA Triad\" impact + Exploitability):\n*   **Exploitability:** How easy is it? (Can a kid do it, or do you need a supercomputer?)\n*   **Impact:** What gets hurt? Confidentiality (secrets stolen), Integrity (data changed), or Availability (system crashes).\n*   **Privileges:** Do you need a login to do it, or can a stranger do it from the internet?\n\n*2. Is a 10.0 always worse than a 7.0?*\nTechnically, yes. But context matters. A \"Critical 10.0\" bug on a server that isn't connected to the internet might be less urgent than a \"High 8.0\" bug on your public website.\n\n### Further Reading\n\n*   **Tool:** *[CVSS Calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)* (Try creating your own score).\n*   **Reference:** *[First.org CVSS Specification](https://www.first.org/cvss/)*\n"
                     },
                     {
                         "id": "glassworm",
@@ -160,16 +168,24 @@ const wikiData = {
                         "title": "Hypervisor",
                         "icon": "far fa-file-alt",
                         "desc": "",
-                        "tags": [],
-                        "content": ""
+                        "tags": [
+                            "Virtualization",
+                            "CloudComputing",
+                            "Infrastructure"
+                        ],
+                        "content": "# Hypervisor\n\nThe landlord of the digital apartment building.\n\nIf a physical computer is a building, the **Hypervisor** is the property manager that divides it into separate apartments (Virtual Machines).\n\nIt is a layer of software that sits between the physical hardware (metal) and the virtual operating systems. It allows one physical computer to pretend to be many different computers at once.\n\n## Types of Hypervisors\n\nThere are only two main types you need to know:\n\n### Type 1: Bare Metal (The Heavy Lifter)\nThis runs **directly** on the hardware, replacing the operating system (like Windows). It's very fast and efficient.\n*   *Analogy:* The building manager lives in the lobby and controls everything directly.\n*   *Examples:* VMware ESXi, Microsoft Hyper-V (Server), KVM.\n\n### Type 2: Hosted (The App)\nThis runs **inside** an operating system, just like a regular app (like Chrome or Spotify). It's easier to use but slower.\n*   *Analogy:* You are subletting a room inside someone's existing apartment.\n*   *Examples:* VMware Workstation, Oracle VirtualBox.\n\n## FAQs\n\n*1. Why do we use them?*\n*   **Efficiency:** Instead of buying 10 small servers that are mostly idle, you buy 1 powerful server and run 10 virtual servers on it.\n*   **Safety:** If one \"apartment\" (VM) catches fire (gets a virus), the others are safe because the walls (Hypervisor) are fireproof.\n\n*2. What is the difference between a Hypervisor and a Container (Docker)?*\n*   A **Hypervisor** virtualizes the *Hardware* (giving you a full, heavy computer).\n*   A **Container** virtualizes the *Operating System* (giving you a lightweight space to run just an app).\n\n### Further Reading\n\n*   **Comparison:** *[Hypervisor vs. Containers Explained](https://www.redhat.com/en/topics/containers/containers-vs-vms)*\n*   **Deep Dive:** *[VMware's \"What is a Hypervisor?\"](https://www.vmware.com/topics/glossary/content/hypervisor)*\n"
                     },
                     {
                         "id": "malware",
                         "title": "Malware",
                         "icon": "far fa-file-alt",
                         "desc": "",
-                        "tags": [],
-                        "content": "# Malware\n\nIt is a piece of malicious software, that intends to harm your system and also in cases steal or encrypt data from you.\n\n![malware-image.png](../../../assets/images/malware-image.png)\n\nThere are several different types of malwares:\n- Ransomware\n- Worms\n- Virus\n- Logic bombs\n- Wipers\n- Key loggers\n- Trojan\n- Spywares\n- Adware\n- Botnets\n- Rootkit\n- [[cryptojacking|Cryptojacking]]\n\n### Further resources\n- Watch: [Every Computer Virus Explained in 9 Minutes](https://www.youtube.com/watch?v=cFo5D9mFUJQ)\n\n"
+                        "tags": [
+                            "CyberSecurity",
+                            "CyberAttack",
+                            "Concepts"
+                        ],
+                        "content": "# Malware\n\nSoftware designed to harm.\n\n**Malware** (short for \"Malicious Software\") is an umbrella term for any program or code that is created to do bad things to a computer, network, or server. It is the general term; \"virus\" is just one specific type.\n\nThink of \"Malware\" as \"Sickness,\" and things like Flu, Cold, and Chickenpox are the specific types.\n\n## Common Types of Malware\n\n*   **Ransomware:** Kidnaps your files and demands payment to release them.\n*   **Worms:** Self-replicating programs that spread across networks without human help.\n*   **Virus:** Attaches itself to legitimate files and spreads when you open them.\n*   **Logic Bombs:** Code hidden in a system that \"detonates\" (executes) only when specific conditions are met (like a specific date).\n*   **Wipers:** Designed purely to delete data and destroy systems forever.\n*   **Keyloggers:** Spies that record every keystroke you type (including passwords).\n*   **Trojan:** Disguises itself as helpful software (like a game or tool) to trick you into installing it.\n*   **Spyware:** Secretly watches what you do and steals your data.\n*   **Adware:** Forces unwanted advertisements onto your screen.\n*   **Botnets:** Enslaves your computer to be part of a hacker's army.\n*   **Rootkit:** Gives a hacker \"God mode\" access to your computer while hiding itself deep in the system.\n*   **[[cryptojacking|Cryptojacking]]:** Steals your computer's power to mine cryptocurrency.\n\n## FAQs\n\n*1. Is a bug the same as malware?*\nNo.\n*   A **Bug** is a mistake made by a programmer (accidental).\n*   **Malware** is code written intentionally to cause harm (on purpose).\n\n*2. How do I get malware?*\n*   Opening suspicious email attachments (Phishing).\n*   Downloading \"cracked\" software or games.\n*   Clicking on fake \"Update your Flash Player\" ads.\n*   Plugging in a found USB drive.\n\n### Further Reading\n\n*   **Video:** *[Every Computer Virus Explained in 9 Minutes](https://www.youtube.com/watch?v=cFo5D9mFUJQ)*\n*   **Article:** *[The difference between a Virus, Worm, and Trojan](https://us.norton.com/internetsecurity-malware-what-is-the-difference-between-a-virus-worm-and-trojan.html)*\n"
                     },
                     {
                         "id": "phishing",
@@ -178,18 +194,22 @@ const wikiData = {
                         "desc": "",
                         "tags": [
                             "CyberSecurity",
-                            "InformationSecurity",
-                            "VulnerabilityManagement"
+                            "SocialEngineering",
+                            "Fraud"
                         ],
-                        "content": "# Phishing\n"
+                        "content": "# Phishing\n\nHacking the human, not the machine.\n\n**Phishing** is a type of cyber attack where scammers pretend to be a trustworthy entity (like your bank, Netflix, or your boss) to trick you into revealing sensitive information.\n\nInstead of writing complex code to break your password, they just *ask* you for it.\n\n## The Hook\n\nPhishing works on three principles:\n1.  **Urgency:** \"Act now or your account will be deleted!\" (Makes you panic).\n2.  **Authority:** \"This is the IRS.\" (Makes you obey).\n3.  **Curiosity:** \"Look at these photos of you!\" (Makes you click).\n\n## Common Types\n\n*   **Email Phishing:** The classic \"You won the lottery\" emails.\n*   **Spear Phishing:** A highly targeted attack customized for *you* (e.g., mentioning your specific job title or friends).\n*   **Whaling:** Targeting high-profile targets like CEOs or CFOs.\n*   **Vishing:** Phishing over the phone (\"Voice Phishing\").\n*   **Smishing:** Phishing via SMS text messages.\n\n## FAQs\n\n*1. How do I spot a phishing email?*\n*   **Check the Sender:** Does the email come from `support@amazon-security-update.com` instead of `amazon.com`?\n*   **Hover over Links:** Don't click. Hover your mouse over the button. Does it go to a weird website?\n*   **Generic Greetings:** \"Dear Customer\" instead of your name.\n*   **Bad Grammar:** Legitimate companies have editors; scammers often don't.\n\n*2. What do I do if I clicked?*\n*   **Disconnect:** Turn off your internet to stop any malware from downloading.\n*   **Change Passwords:** Immediately change your passwords (from a different device if possible).\n*   **Report it:** Tell your IT team or the company being impersonated.\n\n### Further Reading\n\n*   **Quiz:** *[Google's Phishing Quiz](https://phishingquiz.withgoogle.com/)* (Test if you can spot the fakes).\n*   **Guide:** *[How to recognize phishing](https://consumer.ftc.gov/articles/how-recognize-and-avoid-phishing-scams)*\n"
                     },
                     {
                         "id": "ransomware",
                         "title": "Ransomware",
                         "icon": "far fa-file-alt",
                         "desc": "",
-                        "tags": [],
-                        "content": ""
+                        "tags": [
+                            "CyberAttack",
+                            "Malware",
+                            "Crime"
+                        ],
+                        "content": "# Ransomware\n\nDigital kidnapping of your files.\n\n**Ransomware** is a specific type of malware that locks (encrypts) your computer or files so you cannot access them. The attacker then demands a \"ransom\" (usually in Bitcoin) to give you the key to unlock them.\n\nImagine coming home, but your key doesn't work, and there is a note on the door saying: *\"Pay $1000 to get your new key, or we burn the house down.\"*\n\n## How it Works\n\n1.  **Infection:** You download a bad file or click a bad link.\n2.  **Encryption:** The malware quietly scrambles your photos, documents, and databases.\n3.  **The Note:** A pop-up screen appears with a countdown timer and payment instructions.\n4.  **Extortion:** If you don't pay, you lose the data forever. Sometimes, they also threaten to *leak* your private data to the public (Double Extortion).\n\n## FAQs\n\n*1. Should I pay the ransom?*\n**No.** (According to the FBI and experts).\n*   There is no guarantee they will actually unlock your files.\n*   It funds their operations and encourages them to attack others.\n*   You serve as a \"paying customer\" target for future attacks.\n\n*2. How do I protect myself?*\nThe only 100% cure is **Backups**.\nIf you have a backup of your files on an external hard drive that wasn't plugged in during the attack, you can just wipe your computer and restore your files. You lose nothing but time.\n\n### Further Reading\n\n*   **Story:** *[The Colonial Pipeline Attack](https://www.technologyreview.com/2021/05/24/1025195/colonial-pipeline-ransomware-hack-explained/)* (How a password shut down a gas pipeline).\n*   **Resource:** *[No More Ransom Project](https://www.nomoreransom.org/)* (Free tools to help unlock files without paying).\n"
                     },
                     {
                         "id": "react2shell",
@@ -205,27 +225,39 @@ const wikiData = {
                     },
                     {
                         "id": "remote-code-execution",
-                        "title": "Remote Code Execution",
+                        "title": "Remote Code Execution (RCE)",
                         "icon": "far fa-file-alt",
                         "desc": "",
-                        "tags": [],
-                        "content": ""
+                        "tags": [
+                            "CyberSecurity",
+                            "CyberAttack",
+                            "VulnerabilityManagement"
+                        ],
+                        "content": "# Remote Code Execution (RCE)\n\nRemote Code Execution (RCE) is a type of vulerability that the bad actors use to run arbitary code on a remote system without having to physically access it through the network.\n\nThis is often used to run malicious code on the remote system, this can lead to bad actor(s)\n- getting inside your system\n- getting access to sensitive data\n- getting access to your system's resources for malicious activities like [[botnet|Botnet-Attacks]], [[cryptojacking|Cryptojacking]]\n- can lock your system in demand to extort money from you or your organization ([[ransomware|Ransomware]]).\n  \n### These can be of few different types:\n- Injection attacks: Applications and sites that take in user input, deliberately providing arbitrary code that would be executed by the Application or the site, example: SQL Injection, Command Injection and XSS etc.\n"
                     },
                     {
                         "id": "root-access",
                         "title": "Root Access",
                         "icon": "far fa-file-alt",
                         "desc": "",
-                        "tags": [],
-                        "content": ""
+                        "tags": [
+                            "OperatingSystem",
+                            "AccessControl",
+                            "Privileges"
+                        ],
+                        "content": "# Root Access\n\nGod mode for your computer.\n\nIn every operating system, there is a hierarchy of users. Normal users have limits (they can't delete system files or install big programs). **Root** (also called \"Administrator\" or \"Superuser\") is the user with **Zero Limits**.\n\nIf you have Root Access, you can do anything: read any file, delete the entire operating system, or change the rules of how the computer works.\n\n## Why is it called Root?\nThink of the file system like a tree.\n*   **Branches/Leaves:** Normal users live here. They can only affect their own little branch.\n*   **The Root:** The base of the tree. If you control the root, you control the entire tree.\n\n## The Danger\n\nRunning your computer as Root all the time is like driving a car without a seatbelt and with the doors removed.\nIf you (or a virus) make a mistake while you are Root, nothing stops you.\n*   **As a Normal User:** Malware might delete your photos.\n*   **As Root:** Malware can wipe the hard drive, install a permanent spy, and lock you out forever.\n\n## FAQs\n\n*1. How do I get Root access safely?*\nOn Linux/Mac, you use the command `sudo` (\"SuperUser DO\").\n*   `rm file` -> \"Permission Denied.\"\n*   `sudo rm file` -> \"Okay, boss. Deleted.\"\nIt asks for your password to confirm \"Are you sure you want to use your God powers for this?\"\n\n*2. Is Root different from Admin?*\nConceptually, no.\n*   **Root:** The name used in Linux/Unix/MacOS.\n*   **Administrator:** The name used in Windows.\n*   **Jailbreak/Rooting:** Gaining these rights on phones (iPhones/Androids) that normally block you from having them.\n\n### Further Reading\n\n*   **Article:** *[What is Sudo?](https://www.linux.com/training-tutorials/linux-101-introduction-sudo/)*\n*   **Definition:** *[Ubuntu's Root Sudo](https://help.ubuntu.com/community/RootSudo)*\n"
                     },
                     {
                         "id": "ssh",
-                        "title": "Ssh",
+                        "title": "SSH (Secure Shell)",
                         "icon": "far fa-file-alt",
                         "desc": "",
-                        "tags": [],
-                        "content": ""
+                        "tags": [
+                            "Networking",
+                            "Tools",
+                            "Encryption"
+                        ],
+                        "content": "# SSH\n\nA secure, secret tunnel to a remote computer.\n\n**SSH** (Secure Shell) is a tool that lets you control a computer completely different from the one you are sitting at. It creates a cryptographic tunnel over the internet so that no one can spy on what commands you are sending or what passwords you are typing.\n\nIt is the standard way developers and system administrators manage servers.\n\n## How it Works\n\n1.  **The Handshake:** Your computer and the server verify each other's identity.\n2.  **The Tunnel:** They create an encrypted connection (like a lead pipe) that is transparent to you but opaque to hackers.\n3.  **The Shell:** You get a command prompt on your screen, but the commands actually run on the *remote* server.\n\n## Login Methods\n\n*   **Password:** You type a password. (Simple, but can be guessed).\n*   **SSH Keys (Better):** You have a unique digital \"Key Card\" (a file on your laptop). The server has the matching \"Lock.\" You just show up, the lock opens, and you get in without typing a password. It is much harder to steal a file than to guess a password.\n\n## FAQs\n\n*1. Is SSH only for Linux?*\nHistorically, yes. But now Windows 10/11 has it built-in too! You can open PowerShell and type `ssh user@server` right now.\n\n*2. What is the difference between SSH and VPN?*\n*   **VPN:** Connects your *entire* computer to a private network (like moving your house to a different street). Everything you do goes through it.\n*   **SSH:** connects a single *terminal window* to a specific server to run commands.\n\n### Further Reading\n\n*   **Tutorial:** *[DigitalOcean's SSH Essentials](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)*\n*   **Visual Guide:** *[How SSH Public Key Authentication Works](https://www.youtube.com/watch?v=dPAw4opzN9g)* (Video)\n"
                     },
                     {
                         "id": "supply-chain-attack",
@@ -241,19 +273,27 @@ const wikiData = {
                     },
                     {
                         "id": "vmx",
-                        "title": "Vmx",
+                        "title": "VMX (Virtual Machine Extension)",
                         "icon": "far fa-file-alt",
                         "desc": "",
-                        "tags": [],
-                        "content": ""
+                        "tags": [
+                            "Virtualization",
+                            "VMware",
+                            "Configuration"
+                        ],
+                        "content": "# VMX File\n\nThe blueprint for a virtual machine.\n\nWhen you create a Virtual Machine (VM) using VMware, it isn't just one magic blob. It's a folder full of files. The **.vmx** file is the text file that describes the VM's hardware configuration.\n\nIt tells the software: \"This VM should have 4GB of RAM, 2 CPU cores, and use *this* specific hard drive file.\"\n\n## Inside the File\n\nIt is just a text file. If you open it with Notepad, it looks like this:\n\n```ini\nmemsize = \"4096\"\nnumvcpus = \"2\"\nethernet0.virtualDev = \"e1000\"\nscsi0.virtualDev = \"lsilogic\"\n```\n\n*   `memsize`: How much RAM (Memory) it gets.\n*   `numvcpus`: How many Processors it gets.\n*   `ethernet0`: What kind of Network Card it has.\n\n## FAQs\n\n*1. Can I edit this file?*\nYes, but be careful. Experts edit it to tweak settings that aren't available in the usual settings menu. If you make a typo, the VM won't start effectively \"breaking\" the machine blueprint.\n\n*2. Is VMX the hard drive?*\nNo.\n*   **.VMX:** The *Blueprint* (Text file, tiny size).\n*   **.VMDK:** The *Hard Drive* (Data file, huge size).\n\n*3. Is this used by all virtualization software?*\nNo. `.vmx` is specific to **VMware** (Fusion, Workstation, Player, ESExi).\n*   VirtualBox uses `.vbox`.\n*   Hyper-V uses `.xml` or `.vmcx`.\n\n### Further Reading\n\n*   **Documentation:** *[VMware VMX File Parameters](https://sanbarrow.com/vmx/vmx-parameters.html)* (Unofficial but excellent guide).\n*   **Official:** *[Editing the .vmx file for your VMware Fusion virtual machine](https://kb.vmware.com/s/article/1014782)*\n"
                     },
                     {
                         "id": "vpn",
-                        "title": "Vpn",
+                        "title": "VPN (Virtual Private Network)",
                         "icon": "far fa-file-alt",
                         "desc": "",
-                        "tags": [],
-                        "content": ""
+                        "tags": [
+                            "Networking",
+                            "Privacy",
+                            "Security"
+                        ],
+                        "content": "# VPN\n\nA private tunnel through the public internet.\n\nThe internet is like a public highway. Everyone (hackers, your ISP, the government) can see the digital \"cars\" (data) you are driving and where you are going.\n\nA **VPN** (Virtual Private Network) builds a secure, opaque tunnel around your car. No one can see inside the tunnel to see who you are, what data you are carrying, or exactly where you are headed.\n\n## Why use it?\n\n### 1. Privacy (The Mask)\nWithout a VPN, websites see your IP address (your digital home address). With a VPN, they only see the VPN server's address. You could be in London, but the website thinks you are in New York.\n\n### 2. Security (The Armour)\nPublic WiFi (like at Starbucks) is dangerous. Hackers can easily intercept your traffic. A VPN encrypts your data, turning it into gibberish. Even if a hacker steals it, they can't read it.\n\n### 3. Access (The Teleporter)\nSome content is blocked in certain countries (Geoblocking). A VPN lets you \"tunnel out\" to a different country to access that content.\n\n## FAQs\n\n*1. Does a VPN make me anonymous?*\n**No.** It gives you *privacy*, not *anonymity*.\n*   Your ISP can't see what you do.\n*   But the **VPN Provider** CAN see what you do. You are shifting your trust from Comcast/AT&T to NordVPN/ExpressVPN. Always choose a trusted paid provider that promises \"No Logs.\"\n\n*2. Does it slow down my internet?*\nYes, slightly. Your data has to travel to the VPN server first, get encrypted, and then go to the destination. It's a detour.\n\n### Further Reading\n\n*   **Guide:** *[Wirecutter: The Best VPN Services](https://www.nytimes.com/wirecutter/reviews/best-vpn-service/)*\n*   **Deep Dive:** *[How VPNs work (Computerphile)](https://www.youtube.com/watch?v=WVDQEoe6ZWY)* (Video)\n"
                     },
                     {
                         "id": "zero-day",
