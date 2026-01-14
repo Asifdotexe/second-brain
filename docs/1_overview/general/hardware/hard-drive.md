@@ -1,6 +1,6 @@
 ---
 title: Hard Drive (HDD / SSD)
-tags: [Hardware, Storage, Memory]
+tags: Hardware, Storage, Memory
 ---
 
 # Hard Drive (HDD / SSD)

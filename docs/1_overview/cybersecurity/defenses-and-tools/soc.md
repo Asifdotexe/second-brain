@@ -1,6 +1,6 @@
 ---
 title: SOC (Security Operations Center)
-tags: [CyberSecurity, BlueTeam, Operations]
+tags: CyberSecurity, BlueTeam, Operations
 ---
 
 # SOC (Security Operations Center)

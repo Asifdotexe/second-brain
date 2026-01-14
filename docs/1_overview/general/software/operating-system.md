@@ -1,6 +1,6 @@
 ---
 title: Operating System (OS)
-tags: [Software, Basics, Platform]
+tags: Software, Basics, Platform
 ---
 
 # Operating System (OS)

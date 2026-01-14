@@ -1,6 +1,6 @@
 ---
 title: Cyber Warfare
-tags: [CyberSecurity, StateSponsored, Conflict]
+tags: CyberSecurity, StateSponsored, Conflict
 ---
 
 # Cyber Warfare

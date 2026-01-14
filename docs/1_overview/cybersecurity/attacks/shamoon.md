@@ -1,6 +1,6 @@
 ---
 title: Shamoon
-tags: [CyberSecurity, Wiper, SaudiArabia]
+tags: CyberSecurity, Wiper, SaudiArabia
 ---
 
 # Shamoon

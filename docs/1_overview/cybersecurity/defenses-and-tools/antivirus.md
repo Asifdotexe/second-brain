@@ -1,6 +1,6 @@
 ---
 title: Antivirus
-tags: [CyberSecurity, Defense, Tools]
+tags: CyberSecurity, Defense, Tools
 ---
 
 # Antivirus

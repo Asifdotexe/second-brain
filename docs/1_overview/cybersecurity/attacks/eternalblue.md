@@ -1,6 +1,6 @@
 ---
 title: EternalBlue
-tags: [CyberSecurity, Exploit, NSA]
+tags: CyberSecurity, Exploit, NSA
 ---
 
 # EternalBlue

@@ -1,6 +1,6 @@
 ---
 title: Cryptography
-tags: [CyberSecurity, Math, Privacy]
+tags: CyberSecurity, Math, Privacy
 ---
 
 # Cryptography

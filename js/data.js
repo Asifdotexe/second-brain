@@ -200,9 +200,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[CyberSecurity",
+                                    "CyberSecurity",
                                     "StateSponsored",
-                                    "Conflict]"
+                                    "Conflict"
                                 ],
                                 "content": "# Cyber Warfare\n\nWar without soldiers, fought with code instead of bullets.\n\n**Cyber Warfare** is the use of digital attacks by one country (or nation-state) to damage, disrupt, or spy on another country.\n\nIt isn't about stealing credit cards (Cyber Crime) or defacing websites ([[hactivism|Hacktivism]]). It is about **Strategic Destruction**. Just as an air force bombs a bridge to stop enemy tanks, a Cyber Army hacks a power grid to turn off the enemy's lights.\n\n## Key Targets\n\n*   **Critical Infrastructure:** Shutting down power plants, water treatment facilities, or hospitals (to cause panic).\n*   **Financial Systems:** Wiping banking data to destroy an economy.\n*   **Military Systems:** Jamming communications so commanders can't talk to soldiers.\n\n## FAQs\n\n*1. Is it a real war?*\nLegally, it is a gray area. If a hacker turns off the power in a hospital and people die, is that an act of war? Most nations now say **Yes**, and reserve the right to respond with *actual* missiles.\n\n*2. Who are the big players?*\nThe usual superpowers. **US, China, Russia, Israel, Iran, and North Korea** all have dedicated military units for cyber operations.\n\n### Further Reading\n\n*   **Book:** *[Sandworm](https://www.goodreads.com/book/show/41436213-sandworm)* by Andy Greenberg (The true story of Russia's cyber war on Ukraine).\n*   **Concept:** *[Stuxnet](https://spectrum.ieee.org/the-real-story-of-stuxnet)* (The first digital weapon that destroyed physical machines).\n"
                             },
@@ -212,9 +212,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[CyberSecurity",
+                                    "CyberSecurity",
                                     "Exploit",
-                                    "NSA]"
+                                    "NSA"
                                 ],
                                 "content": "# EternalBlue\n\nThe master key stolen from the spy agency.\n\n**EternalBlue** is a sophisticated software exploit created by the **NSA** (US National Security Agency) that allowed them to break into almost any Windows computer in the world undetected.\n\nIt was a cyber-weapon kept secret for years until 2017, when a hacker group called \\\"The Shadow Brokers\\\" stole it and released it to the public. Suddenly, every criminal in the world had a military-grade weapon to attack Windows PCs.\n\n## How it Works\n\nIt attacked the **SMB Protocol** (File Sharing).\n*   **The Flaw:** Windows computers \\\"talk\\\" to each other to share printers and files using SMB.\n*   **The Exploit:** EternalBlue sent a specially crafted packet that confused this listener, allowing the attacker to run *any* code they wanted on the target machine without a password.\n\n## FAQs\n\n*1. Why was it so dangerous?*\nBecause it was **Wormable**. This means if *one* computer in an office got infected, EternalBlue automatically used that computer to attack *every other* computer on the network looking for the same flaw. It spread like a biological virus in a crowded room.\n\n*2. Is it still a threat?*\nMicrosoft fixed (patched) the hole in 2017 (MS17-010). If you update your computer, you are safe. But millions of old, unpatched computers (in hospitals and factories) are still vulnerable today.\n\n### Further Reading\n\n*   **Story:** *[The Shadow Brokers Leak](https://www.wired.com/story/eternalblue-leaked-nsa-spy-tool-hacker-history/)* (How the weapon got out).\n*   **Technical:** *[MS17-010 Security Update](https://learn.microsoft.com/en-us/security-updates/securitybulletins/2017/ms17-010)* (The official fix).\n"
                             },
@@ -276,9 +276,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[CyberSecurity",
+                                    "CyberSecurity",
                                     "Malware",
-                                    "Wiper]"
+                                    "Wiper"
                                 ],
                                 "content": "# NotPetya\n\nA disguised assassin pretending to be a kidnapper.\n\n**NotPetya** (2017) was a devastating cyberattack that looked like [[ransomware|Ransomware]] but was actually a **[[wipers|Wiper]]**.\n\nRansomware locks your files and asks for money to unlock them. NotPetya locked the files, asked for money, but **deleted the key**. Even if you paid, you could never get your data back. Its goal wasn't money; it was pure destruction.\n\n## The Target\n\nIt was a targeted attack against **Ukraine** by Russian military hackers (Sandworm).\n*   They hacked a popular Ukrainian accounting software (**M.E.Doc**) that every business used to pay taxes.\n*   They pushed a malicious \\\"Update\\\" to everyone.\n*   Boom. Banks, airports, and power companies in Ukraine went dark.\n*   *Collateral Damage:* It spread globally (via [[eternalblue|EternalBlue]]), costing companies like Maersk and FedEx over **$10 billion**.\n\n## FAQs\n\n*1. Why call it \\\"NotPetya\\\"?*\nWhen it first appeared, it looked exactly like an older criminal ransomware called \\\"Petya.\\\" Security researchers said, \\\"Oh, it's Petya again.\\\"\nThen they realized the code was different and purely destructive. So they named it \\\"Not-Petya.\\\"\n\n*2. What did we learn?*\nIt showed the danger of **[[supply-chain-attack|Supply Chain Attacks]]**. You can have the best firewall in the world, but if the software you *trust* (like your accounting app) sends you a virus, you let it right in.\n\n### Further Reading\n\n*   **Deep Dive:** *[The Untold Story of NotPetya](https://www.wired.com/story/notpetya-cyberattack-ukraine-russia-code-crashed-the-world/)* (Wired Article - A Must Read).\n*   **Analysis:** *[Difference between Petya and NotPetya](https://www.kaspersky.com/resource-center/definitions/petya-notpetya)*.\n"
                             },
@@ -348,9 +348,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[CyberSecurity",
+                                    "CyberSecurity",
                                     "Wiper",
-                                    "SaudiArabia]"
+                                    "SaudiArabia"
                                 ],
                                 "content": "# Shamoon\n\nThe burning of the oil fields, digital edition.\n\n**Shamoon** (2012) is an aggressive cyber-weapon used by Iranian state hackers to attack the **Saudi Aramco** oil company (the richest company in the world).\n\nIt didn't just spy. It was a \\\"suicide bomber\\\" for computers. It spread through the network, wiped the hard drives, and then replaced all the data with a picture of a **burning American flag**.\n\n## The Impact\n\nIn a matter of hours, it turned **35,000 computers** into useless bricks.\n*   Saudi Aramco had to disconnect from the internet entirely.\n*   The price of hard drives globally spiked because Aramco bought every spare drive in the world to replace their fleet.\n*   Company trucks couldn't even fill up gas because the digital pumps were offline. They had to use paper and pencil for weeks.\n\n## FAQs\n\n*1. How did it get in?*\nSomeone clicked a phishing link (likely malicious email attachment) or used an infected USB stick. The oldest trick in the book.\n\n*2. Why is it significant?*\nIt was the first major instance of cyber warfare targeting the **Energy Sector** destructively. It showed the world that a piece of code could threaten the global oil supply.\n\n### Further Reading\n\n*   **Article:** *[The Code that Crashed the World](https://www.nytimes.com/2012/10/24/business/global/cyberattack-on-saudi-aramco-struck-30000-computers.html)*.\n*   **Analysis:** *[Symantec Report on Shamoon](https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=0973a985-1d4b-48f8-8b83-2079f2766398)*.\n"
                             },
@@ -408,9 +408,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[CyberSecurity",
+                                    "CyberSecurity",
                                     "Ransomware",
-                                    "Worm]"
+                                    "Worm"
                                 ],
                                 "content": "# WannaCry\n\nThe epidemic that held the world hostage.\n\n**WannaCry** (2017) was a global **[[ransomware|Ransomware]]** attack that infected over 200,000 computers in 150 countries within a single weekend.\n\nIt was the first time a criminal ransomware used a military-grade weapon (the **[[eternalblue|EternalBlue]]** exploit) to spread automatically. It didn't wait for you to click an email; if your computer was connected to the internet and unpatched, it just *happened*.\n\n## The Damage\n\n*   **NHS (UK Hospitals):** The biggest tragedy. It shut down X-ray machines, ambulances were diverted, and surgeries were cancelled. Lives were put at risk.\n*   **Telef\u00f3nica (Spain):** The telecom giant was paralyzed.\n*   **FedEx & Renault:** Factories stopped production.\n\n## FAQs\n\n*1. How was it stopped?*\nBy accident. A 22-year-old security researcher named **Marcus Hutchins** found a \\\"Kill Switch\\\" in the code.\nThe virus checked if a specific (gibberish) website existed before attacking. If the website existed, the virus stopped. Marcus bought the domain for $10, and the entire global attack instantly shut down.\n\n*2. Did people pay?*\nSurprisingly, not much. The hackers made only about $140,000 total. The chaos cost the world nearly **$4 billion** in damages, but the criminals failed to cash in efficiently.\n\n### Further Reading\n\n*   **Story:** *[The Confessions of Marcus Hutchins](https://www.wired.com/story/confessions-marcus-hutchins-hacker-who-saved-the-internet/)*.\n*   **Documentary:** *[WannaCry: The Marcus Hutchins Story](https://www.youtube.com/watch?v=Getj6f9y8Gk)*.\n"
                             },
@@ -465,9 +465,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[CyberSecurity",
+                                    "CyberSecurity",
                                     "Encryption",
-                                    "Standard]"
+                                    "Standard"
                                 ],
                                 "content": "# AES-256\n\nThe unbreakable glass box.\n\n**AES-256** (Advanced Encryption Standard, 256-bit) is the gold standard for scrambling data so that no one can read it without the key.\n\nImagine you put a document in a glass box. AES-256 shuffles the atoms of the document 14 times in a row using a password. To reverse it, you need the exact password. If you try to guess it, you would need more energy than all the stars in the universe emitting for billions of years.\n\n## By The Numbers\n\n*   **AES:** The algorithm (the math).\n*   **256:** The Key Size. It means the password is 256 ones and zeros long.\n    *   **AES-128:** Unbreakable.\n    *   **AES-256:** *Paranoid* unbreakable (used for \"Top Secret\" government files).\n\n## FAQs\n\n*1. Can hackers break it?*\nNo. They don't break the *box* (AES); they steal the *key* (Password). If hackers get your password, AES can't help you.\n*   **Brute Force:** Trying every password? Impossible.\n*   **Rubber Hose Cryptanalysis:** Beating the password out of you? Highly effective.\n\n*2. Is it slow?*\nIt used to be. But modern CPUs have a special \"AES-NI\" instruction set, meaning your computer can encrypt terabytes of data instantly without slowing down.\n\n### Further Reading\n\n*   **Video:** *[AES Explained (Computerphile)](https://www.youtube.com/watch?v=O4xNJs315Os)* (Great visual explanation).\n*   **Comic:** *[XKCD: Security](https://xkcd.com/538/)* (Explaining why math isn't the weak link).\n"
                             },
@@ -477,9 +477,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[CyberSecurity",
+                                    "CyberSecurity",
                                     "Defense",
-                                    "Tools]"
+                                    "Tools"
                                 ],
                                 "content": "# Antivirus\n\nThe immune system of your computer.\n\n**Antivirus** (AV) is software that runs in the background, scanning files and programs to detect, block, and remove malicious software ([[malware|Malware]]).\n\nIt works like a bouncer at a club checking IDs against a \"Banned List.\" If a file looks like a known troublemaker, it doesn't get in.\n\n## How it Detects Threats\n\n1.  **Signature Based (The Mugshot):** It compares every file on your PC to a massive database of verified virus \"signatures\" (hashes). If it matches, it's deleted. *Weakness: Can't catch brand new viruses.*\n2.  **Heuristic / Behavioral (The Profiler):** It watches what a program *does*. If a Notepad file suddenly tries to delete your System32 folder, the AV shouts \"Hey! That's suspicious!\" and kills it. *Strength: Catches unknown ([[zero-day|Zero-Day]]) threats.*\n\n## FAQs\n\n*1. Is Windows Defender enough?*\nNowadays? **Yes.**\nTen years ago, it was garbage. Today, Microsoft Defender is one of the top-rated AVs in the world because it sees data from billions of Windows PCs instantly.\n\n*2. Do I need separate AV for Mac?*\nIt is recommended. Macs *can* get viruses, though they are less targeted than Windows.\n\n### Further Reading\n\n*   **Comparison:** *[AV-TEST Rankings](https://www.av-test.org/en/)* (Independent lab that tests all AVs).\n*   **Article:** *[How Antivirus Software Works](https://us.norton.com/internet-security-malware-how-does-antivirus-software-work.html)*.\n"
                             },
@@ -501,9 +501,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[CyberSecurity",
+                                    "CyberSecurity",
                                     "Career",
-                                    "OffensiveSec]"
+                                    "OffensiveSec"
                                 ],
                                 "content": "# Bug Bounty\n\nCrowdsourced security testing.\n\nA **Bug Bounty Program** is a deal where a company (like Google or Facebook) says: *\"If you can hack us and tell us how you did it, we will pay you cash.\"*\n\nIt turns hackers into allies. Instead of selling a security flaw on the black market (for evil), the hacker sells it to the company (for good).\n\n## Principles\n\n*   **Responsible Disclosure:** The hacker agrees NOT to tell the public about the bug until the company fixes it.\n*   **Scope:** The company defines what is \"In Bounds\" (e.g., website.com) and \"Out of Bounds\" (e.g., employees' personal laptops).\n\n## FAQs\n\n*1. How much do they pay?*\nIt depends on the severity ([[cvss|CVSS Score]]).\n*   **Low (Typo):** Swag (T-shirt) or $100.\n*   **Critical (Remote Code Execution):** $10,000 - $1,000,000+.\n*   *Apple pays up to $1 Million for hacking an iPhone.*\n\n*2. Can anyone do it?*\nYes. Platforms like **HackerOne** and **Bugcrowd** allow anyone to sign up and start hunting on public programs legally.\n\n### Further Reading\n\n*   **Platform:** *[HackerOne](https://www.hackerone.com/)* (The biggest marketplace).\n*   **List:** *[Google's Bug Hunting Program Rules](https://bughunters.google.com/about/rules)*.\n"
                             },
@@ -513,9 +513,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[CyberSecurity",
+                                    "CyberSecurity",
                                     "Math",
-                                    "Privacy]"
+                                    "Privacy"
                                 ],
                                 "content": "# Cryptography\n\nThe art of writing secrets.\n\n**Cryptography** is the science of using math to transform a message so that only the intended recipient can read it. It is the foundation of specific tools like [[encryption|Encryption]].\n\nIf you send a letter in a clear plastic bag, anyone can read it. Cryptography puts the letter in a steel safe.\n\n## The Two Main Types\n\n1.  **Symmetric (The Hotel Key):**\n    *   One key locks the door, and the *same* key unlocks it.\n    *   *Problem:* How do you give the key to your friend without a spy stealing it?\n    *   *Example:* [[aes-256|AES]].\n\n2.  **Asymmetric (The Mailbox):**\n    *   **Public Key (Slot):** Anyone can put mail *in*. (Lock it).\n    *   **Private Key (Key):** Only you can take mail *out*. (Unlock it).\n    *   *Solution:* You shout your Public Key to the world. People use it to send you secrets. Only you can read them.\n    *   *Example:* [[rsa|RSA]], ECC (Used for HTTPS/Websites).\n\n## FAQs\n\n*1. Is it just for spies?*\nNo. You use it every time you:\n*   Use a credit card chip.\n*   Unlock your car with a fob.\n*   Visit a website with a \"Padlock\" icon (HTTPS).\n\n*2. What is Steganography?*\nHiding files *inside* other files (like hiding a text document inside a picture of a cat). Cryptography scrambles the message; Steganography hides the existence of the message.\n\n### Further Reading\n\n*   **Book:** *[The Code Book](https://www.simonandschuster.com/books/The-Code-Book/Simon-Singh/9780385495325)* by Simon Singh (A history of codes from Egypt to Quantum).\n*   **Concept:** *[Khan Academy: Cryptography](https://www.khanacademy.org/computing/computer-science/cryptography)*.\n"
                             },
@@ -633,9 +633,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[CyberSecurity",
+                                    "CyberSecurity",
                                     "QuantumComputing",
-                                    "Threats]"
+                                    "Threats"
                                 ],
                                 "content": "# Shor's Algorithm\n\nThe doomsday clock for internet privacy.\n\n**Shor's Algorithm** is a quantum math formula that can break the encryption protecting the entire internet.\n\nCurrently, our security (RSA Encryption) relies on the fact that computers are really bad at factoring massive numbers. It would take a supercomputer millions of years to guess the factors.\n**Peter Shor** proved that a **[[quantum-computing|Quantum Computer]]** running his algorithm could do it in *hours*.\n\n## The Hook\n\nImagine a lock that requires you to guess a number between 1 and Infinity.\n*   **Classic Computer:** Guesses 1, then 2, then 3... (Takes forever).\n*   **Shor's Algorithm:** Guesses *all numbers at once* and finds the pattern that leads to the answer.\n\n## FAQs\n\n*1. Why hasn't the internet crashed yet?*\nBecause we don't have a Quantum Computer big enough to run it. Yet.\nWe are currently in the \"NISQ\" era (Noisy Intermediate-Scale Quantum). We need thousands of perfect Qubits to break RSA. We currently have hundreds of noisy ones.\n\n*2. What are we doing about it?*\nThe world is racing to switch to **Post-Quantum Cryptography (PQC)**. These are new math problems (like Lattice-based cryptography) that even quantum computers can't solve easily. NIST is currently standardizing them.\n\n### Further Reading\n\n*   **Video:** *[How Quantum Computers Break Encryption (Veritasium)](https://www.youtube.com/watch?v=lvTqbM5Dq4Q)*.\n*   **Standard:** *[NIST Post-Quantum Cryptography](https://csrc.nist.gov/projects/post-quantum-cryptography)*.\n"
                             },
@@ -645,9 +645,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[CyberSecurity",
+                                    "CyberSecurity",
                                     "BlueTeam",
-                                    "Operations]"
+                                    "Operations"
                                 ],
                                 "content": "# SOC (Security Operations Center)\n\nMission Control for cyber defense.\n\nA **SOC** (pronounced \"Sock\") is the physical room (or team) responsible for monitoring an organization's security 24/7/365.\n\nImagine a room full of screens like NASA, but instead of watching rockets, they are watching network traffic. Their job is to analyze alerts, hunt for hackers, and respond to incidents before damage occurs.\n\n## The Three Components\n\n1.  **People:** Analysts (Tier 1 triage alerts, Tier 2 investigate deep, Tier 3 hunt threats).\n2.  **Processes:** Runbooks (Instructions on what to do when an alarm rings).\n3.  **Technology:** Tools like **SIEM** (Security Information and Event Management) that collect logs from every computer and put them nicely on dashboard screens.\n\n## FAQs\n\n*1. Is it a boring job?*\nIt can be. Tier 1 analysts suffer from **\"Alert Fatigue\"**\u2014sifting through 10,000 false alarms a day to find the 1 real attack. It is the entry-level rite of passage in Cyber Security.\n\n*2. SOC vs NOC?*\n*   **SOC (Security):** Fixes hacks. \"Are the bad guys in?\"\n*   **NOC (Network):** Fixes outages. \"Is the WiFi working?\"\n\n### Further Reading\n\n*   **Career:** *[What is a SOC Analyst?](https://www.cybrary.it/career-path/soc-analyst/)*\n*   **Tool:** *[Splunk](https://www.splunk.com/)* (The most popular tool used in SOCs).\n"
                             },
@@ -742,9 +742,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[Space",
+                                    "Space",
                                     "Satellite",
-                                    "Innovation]"
+                                    "Innovation"
                                 ],
                                 "content": "# DiskSat\n\nStacking satellites like dinner plates.\n\n**DiskSat** is a new satellite form factor developed by NASA and industry partners. Instead of the traditional \"Box\" shape (CubeSat), it is a flat, circular **Disk** (about 1 meter wide and 2.5cm thick).\n\n## The Problem\nRockets have limited space. Traditional boxy satellites waste volume because they don't pack tightly. You often launch a rocket that is full of empty air between safe-guards.\n\n## The Solution\nDisks can be stacked on top of each other in a launcher.\n*   **Massive Surface Area:** Because it lies flat, once it deploys, it acts as its own solar panel and antenna. You don't need complex, breakable \"unfolding wings.\"\n*   **Maneuverability:** It flies like a frisbee in the thin atmosphere, using air drag to change orbits without fuel.\n\n## FAQs\n\n*1. Who makes it?*\nIt is currently being tested by NASA and Rocket Lab.\n\n*2. Why do we care?*\nIt drastically lowers the cost of launch. A single rocket could deploy a \"stack\" of 50 internet satellites as easily as dispensing PEZ candies.\n\n### Further Reading\n\n*   **NASA Tech:** *[DiskSat: A New Shape for Small Spacecraft](https://www.nasa.gov/smallsat-institute/disksat/)*.\n*   **News:** *[Rocket Lab Launch](https://spacenews.com/rocket-lab-launches-disksat/)*.\n"
                             },
@@ -754,9 +754,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[Aviation",
+                                    "Aviation",
                                     "FutureTech",
-                                    "Transportation]"
+                                    "Transportation"
                                 ],
                                 "content": "# eVTOL (Electric Vertical Take-Off and Landing)\n\nThe flying car, finally realized.\n\n**eVTOL** stands for **Electric Vertical Take-Off and Landing**.\nIt is a new class of aircraft that uses electric power to hover, take off, and land vertically like a helicopter, but flies efficiently forward like an airplane.\n\n## Key Features\n\n1.  **Electric:** Much quieter and cheaper to run than gas helicopters.\n2.  **Distributed Propulsion:** Instead of one big rotor (single point of failure), it usually has 6-12 small rotors. If one breaks, the others compensate so you don't crash.\n3.  **Urban Air Mobility (UAM):** Designed for short hops across a city (e.g., Airport to Downtown in 10 mins instead of 1 hour traffic).\n\n## FAQs\n\n*1. Is it just a drone?*\nBasically, yes. A giant, passenger-carrying drone. Many will eventually be autonomous (no pilot), reducing the cost even further.\n\n*2. When can I ride one?*\nSoon. Companies like **Joby Aviation**, **Archer**, and **Wisk** are already testing them and aiming for commercial FAA certification around 2025-2026. The Paris 2024 Olympics planned to showcase them.\n\n### Further Reading\n\n*   **Company:** *[Joby Aviation](https://www.jobyaviation.com/)* (One of the industry leaders).\n*   **Article:** *[The eVTOL Revolution Explained](https://www.theverge.com/2021/1/29/22256461/lilium-joby-archer-evtols-spac-merger-air-taxi)*.\n"
                             },
@@ -823,9 +823,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[Hardware",
+                                    "Hardware",
                                     "Storage",
-                                    "Memory]"
+                                    "Memory"
                                 ],
                                 "content": "# Hard Drive (HDD / SSD)\n\nThe long-term memory of the computer.\n\nThe **Hard Drive** is where your data lives when the power is turned off.\nIf **RAM** is your tabletop (fast, temporary workspace), the **Hard Drive** is the filing cabinet (slower, permanent storage).\n\n## The Two Titans\n\n### 1. HDD (Hard Disk Drive) - The Record Player\n*   **Technology:** Fast-spinning magnetic platters with a mechanical arm that reads data.\n*   **Pros:** Very cheap for huge amounts of space (8TB, 16TB).\n*   **Cons:** Slow, loud, fragile (if you drop it, the needle scratches the record and data dies).\n\n### 2. SSD (Solid State Drive) - The Flash Card\n*   **Technology:** Lightning-fast electrical chips with no moving parts.\n*   **Pros:** Instant speed, silent, durable.\n*   **Cons:** More expensive per gigabyte (though getting cheaper).\n\n## FAQs\n\n*1. NVMe vs SATA?*\n*   **SATA:** The old cable connection (Max speed ~600 MB/s).\n*   **NVMe (M.2):** The new stick that plugs directly into the motherboard (Max speed ~7,000 MB/s). Always buy NVMe for your main Operating System drive.\n\n*2. How long do they last?*\nUsually 5-10 years. But they *will* fail.\n**Rule of thumb:** Data that doesn't exist in at least two places (Backup) doesn't exist at all.\n\n### Further Reading\n\n*   **Video:** *[How a Hard Drive Works (Slow Mo)](https://www.youtube.com/watch?v=3owqvmmf6m8)*.\n*   **Guide:** *[HDD vs SSD vs NVMe](https://www.crucial.com/articles/about-storage/ssd-vs-hdd)*.\n"
                             },
@@ -883,9 +883,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[Hardware",
+                                    "Hardware",
                                     "Computing",
-                                    "HPC]"
+                                    "HPC"
                                 ],
                                 "content": "# Supercomputer\n\nThe Formula 1 car of computing.\n\nA **Supercomputer** isn't just a \"fast laptop.\" It is an entirely different architecture designed to solve one massive math problem at a time by linking thousands of processors together.\n\nYour laptop is designed to do many things at once (Email, Spotify, Chrome).\nA Supercomputer is designed to simulate **Nuclear Explosions** or **Global Weather Patterns**.\n\n## How it Works\n\n**Parallel Processing.**\nImagine you need to read a library of 10,000 books.\n*   **Fast Computer:** One genius reading 1 book per second. (Total: 2.7 hours).\n*   **Supercomputer:** 10,000 average people reading 1 book each *at the same time*. (Total: 1 second).\n\n## FLOPs\n\nWe measure them in **FLOPS** (Floating Point Operations Per Second).\n*   **Current Champion:** **Frontier** (Oak Ridge National Lab).\n*   **Speed:** Exascale (1.1 ExaFLOPS). That is 1,100,000,000,000,000,000 calculations per second.\n\n## FAQs\n\n*1. Does it run Windows?*\nNo. Almost 100% of the world's supercomputers run **Linux**. It is the only OS flexible and efficient enough to manage that much hardware.\n\n*2. Where are they?*\nUniversities, Government Labs, and Massive tech companies (Meta/Google for AI training).\n\n### Further Reading\n\n*   **List:** *[Top500.org](https://top500.org/lists/top500/)* (The official ranking of the 500 fastest computers on Earth).\n*   **Video:** *[Building the World's Fastest Computer](https://www.youtube.com/watch?v=u3dJt_t-2tE)*.\n"
                             }
@@ -916,9 +916,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[Software",
+                                    "Software",
                                     "Basics",
-                                    "Platform]"
+                                    "Platform"
                                 ],
                                 "content": "# Operating System (OS)\n\nThe conductor of the digital orchestra.\n\nThe **Operating System** is the software that manages the hardware and provides a playground for applications to run.\nWithout an OS, your computer is just a pile of metal and silicon. The OS tells the CPU, RAM, and Screen how to talk to each other.\n\n## The Hierarchy\n\n1.  **Hardware:** The metal (CPU, Disk).\n2.  **Kernel:** The Heart of the OS (Talks to metal).\n3.  **Shell/UI:** The Face of the OS (Start Menu, Desktop).\n4.  **Applications:** The Tools (Chrome, Steam, Excel).\n\n## Major Families\n\n*   **Windows (Microsoft):** The Office & Gaming standard. User-friendly.\n*   **macOS (Apple):** The Creative standard. Based on Unix (very stable).\n*   **Linux (Open Source):** The Server & Hacker standard. Runs the internet.\n\n## FAQs\n\n*1. What is a \"Dual Boot\"?*\nInstalling two OSs on one computer (e.g., Windows for games, Linux for coding). You choose which one to enter when you turn the PC on.\n\n*2. Is Android an OS?*\nYes! It is a mobile OS based on the **Linux Kernel**. iOS is a mobile OS based on **Darwin** (Unix).\n\n### Further Reading\n\n*   **History:** *[The History of Operating Systems](https://www.youtube.com/watch?v=26QPDBe-TQ8)*.\n*   **Concept:** *[OS Concepts: What is an OS?](https://www.geeksforgeeks.org/introduction-of-operating-system-set-1/)*.\n"
                             },
@@ -928,9 +928,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[Software",
+                                    "Software",
                                     "Core",
-                                    "Admin]"
+                                    "Admin"
                                 ],
                                 "content": "# OS Kernel\n\nThe bridge between software and metal.\n\nThe **Kernel** is the absolute core of an [[operating-system|Operating System]]. It is the very first program that loads when you turn on your computer.\n\nThink of the computer as a **Restaurant**:\n*   **Hardware:** The Kitchen (Stoves, Fridges).\n*   **Applications:** The Customers (Ordering food).\n*   **The Kernel:** The **Waiter**.\n\nThe Customer (App) cannot just walk into the kitchen (Hardware) and grab a steak. It must ask the Waiter (Kernel), \"May I have memory?\" The Kernel checks if there is any free, grabs it, and serves it to the App.\n\n## What it Controls\n\n1.  **Memory Management:** Deciding who gets to use the RAM.\n2.  **Process Scheduling:** Deciding which app gets to use the CPU right now.\n3.  **Device Drivers:** Translating signals from your mouse/keyboard so the CPU understands them.\n\n## FAQs\n\n*1. What is a \"Kernel Panic\" (or \"Blue Screen of Death\")?*\nIt means the Waiter dropped a tray or slipped on the floor.\nBecause the Kernel controls *everything*, if the Kernel crashes, the entire computer crashes instantly to prevent hardware damage.\n\n*2. Can I see the Kernel?*\nNot really. It runs in \"Kernel Space\" (a VIP area of memory). Your apps run in \"User Space.\" This strict separation prevents a buggy video game from crashing your entire system.\n\n### Further Reading\n\n*   **Video:** *[How a Kernel Works](https://www.youtube.com/watch?v=mUVmV4H5B6k)*.\n*   **Deep Dive:** *[Linux Kernel Architecture](https://developer.ibm.com/articles/l-linux-kernel/)*.\n"
                             }
@@ -958,9 +958,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[Philosophy",
+                                    "Philosophy",
                                     "Consciousness",
-                                    "AI]"
+                                    "AI"
                                 ],
                                 "content": "# Agency & Free Will\n\nThe ghost in the machine.\n\n**Agency** is the capacity to act. A thermostat has agency (it gets hot -> it turns on fan).\n**Free Will** is the capacity to *choose* how to act, free from external force or internal programming.\n\nThe debate is: Do humans have Free Will, or are we just very complex biological thermostats?\n\n## Determinism vs. Volition\n\n*   **Determinism (The Machine):** The universe is a chain of cause-and-effect. Your brain is made of atoms. Atoms obey physics. Therefore, your \"choice\" to eat pizza was calculated by the Big Bang bits in your brain. You couldn't have chosen otherwise.\n*   **Libertarian Free Will (The Soul):** There is a \"You\" (Consciousness) that sits above the atoms and can veto the programming.\n\n## The AI Mirror\n\nWe are building **Agentic AI** which clearly has Agency (it can book flights, write code).\nBut it strictly lacks Free Will. It is deterministic code.\n*   If we are just biological machines, then AI is exactly like us.\n*   If we have Free Will, then there is a \"Special Sauce\" in biology that silicon might never replicate.\n\n## FAQs\n\n*1. Does Physics allow Free Will?*\nClassically (Newton)? No.\nQuantumly? Maybe. Quantum mechanics introduces randomness. But \"Randomness\" (a dice roll) isn't the same as \"Freedom\" (a choice).\n\n*2. Why does it matter?*\n**Justice.** If you have no free will, you aren't \"guilty\" of a crime; you are just a broken machine. Our entire legal system assumes you *could* have chosen not to commit the crime.\n\n### Further Reading\n\n*   **Book:** *[Free Will](https://www.goodreads.com/book/show/13259270-free-will)* by Sam Harris (The case against it).\n*   **Video:** *[Michio Kaku: Why Physics Ends the Free Will Debate](https://www.youtube.com/watch?v=Jint5kjoy6I)*.\n"
                             },
@@ -1152,9 +1152,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[Philosophy",
+                                    "Philosophy",
                                     "Science",
-                                    "Logic]"
+                                    "Logic"
                                 ],
                                 "content": "# Demarcation Problem\n\nDrawing the line in the sand.\n\nThe **Demarcation Problem** is the philosophical difficulty of distinguishing between **Science** (Astronomy, Chemistry) and **Non-Science/Pseudoscience** (Astrology, Alchemy).\n\nWhere exactly does one end and the other begin? It sounds easy, but there is no single agreed-upon rule that works 100% of the time.\n\n## Key Criteria Attempts\n\n1.  **Falsifiability (Popper):** If you can't test it, it's not science. (The Gold Standard).\n2.  **Consensus:** If most scientists agree, it's science. (Problem: Scientists used to agree on bad ideas).\n3.  **Method:** Does it use the Scientific Method? (Hypothesis -> Experiment -> Result).\n\n## FAQs\n\n*1. Why does it matter?*\nIt decides what gets taught in schools, what gets government funding, and what evidence is allowed in courtrooms. If we can't define science, we can't protect it from nonsense.\n\n*2. Is \"Non-Science\" bad?*\nNot necessarily. **Art**, **Philosophy**, and **Religion** are non-science, but they are valuable. **Pseudoscience** (fake science claiming to be real, like Phrenology) is the danger.\n\n### Further Reading\n\n*   **Article:** *[Stanford Encyclopedia: Science and Pseudo-Science](https://plato.stanford.edu/entries/pseudo-science/)*.\n*   **Video:** *[The Demarcation Problem Explained](https://www.youtube.com/watch?v=Prhi3_nF8rA)*.\n"
                             },
@@ -1164,9 +1164,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[Philosophy",
+                                    "Philosophy",
                                     "Science",
-                                    "KarlPopper]"
+                                    "KarlPopper"
                                 ],
                                 "content": "# Falsifiability\n\nThe ability to be proven wrong.\n\n**Falsifiability** is the defining characteristic of a scientific theory. It means that there must be a way to test the theory where it *could* fail.\nIf a theory explains *everything* no matter what happens, it explains *nothing*. It is not science; it is a belief system.\n\n## The Swan Analogy\n\n*   **Theory:** \"All swans are white.\"\n    *   **Is it Falsifiable?** Yes. All you need to do is find **one** black swan to prove it false.\n*   **Theory:** \"Ghosts exist, but they are invisible when you look for them.\"\n    *   **Is it Falsifiable?** No. There is no test you can run to prove they *don't* exist. Therefore, it is not science.\n\n## FAQs\n\n*1. Who came up with this?*\n**Karl Popper**. He noticed that Einstein's Physics made risky predictions (that could be wrong), while Freud's Psychology could explain any patient's behavior after the fact. He wanted to separate the two.\n\n*2. Does \"Falsifiable\" mean \"False\"?*\nNo! It means **\"Able to be proven false.\"**\n\"The Earth is round\" is falsifiable (we could go to space and check). It just happens to be true.\n\n### Further Reading\n\n*   **Book:** *[The Logic of Scientific Discovery](https://www.routledge.com/The-Logic-of-Scientific-Discovery/Popper/p/book/9780415278447)* by Karl Popper.\n*   **Video:** *[Karl Popper, Science, & Pseudoscience](https://www.youtube.com/watch?v=-X8Xfl0JdTQ)*.\n"
                             },
@@ -1176,9 +1176,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[Philosophy",
+                                    "Philosophy",
                                     "Evolution",
-                                    "Criticism]"
+                                    "Criticism"
                                 ],
                                 "content": "# Just-So Stories\n\nA story that fits perfectly because it was made backwards.\n\nA **Just-So Story** is a criticism (coined by Stephen Jay Gould) of scientific explanations that sound plausible but are untestable and purely speculative.\nThe name comes from Rudyard Kipling's children's book *Just So Stories* (e.g., \"How the Leopard Got His Spots\").\n\n## The Flaw\n\nIt is often used in **Evolutionary Psychology** to explain modern behavior by inventing a prehistoric reason for it.\n\n*   *Observation:* Men like blue.\n*   *Just-So Story:* \"Ah, well, prehistoric men had to look at the sky to predict rain, so they evolved to like blue.\"\n*   *Problem:* It sounds smart, but **how do you test it?** You can't. It's just a creative writing exercise. You could just as easily argue men like blue because berries are blue.\n\n## FAQs\n\n*1. Is all Evolutionary Psychology bad?*\nNo. But good science requires **[[novel-prediction|Novel Predictions]]**.\n*   **Just-So:** Explaining why we *already* act this way.\n*   **Science:** Predicting that if we act this way, we should also find *this specific gene* or *this specific fossil*.\n\n*2. How to spot one?*\nAsk: \"Is there any evidence for this besides the fact that it sounds logical?\" If the answer is No, it's a Just-So Story.\n\n### Further Reading\n\n*   **Book:** *[Just So Stories](https://www.gutenberg.org/ebooks/2876)* by Rudyard Kipling (The origin of the name).\n*   **Article:** *[Gould's Criticism of Sociobiology](https://link.springer.com/article/10.1007/s10739-018-9519-2)*.\n"
                             },
@@ -1188,9 +1188,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[Philosophy",
+                                    "Philosophy",
                                     "Science",
-                                    "Evidence]"
+                                    "Evidence"
                                 ],
                                 "content": "# Novel Prediction\n\nThe fortune teller who actually gets it right.\n\nA **Novel Prediction** is when a scientific theory predicts a phenomenon that **no one has ever seen before**, and it turns out to be true.\n\nIt is the strongest possible evidence for a theory. Explaining old data is easy (hindsight is 20/20). Predicting the unknown is hard.\n\n## The Halley's Comet Example\n\n*   **Old Science:** Comets are random angry gods.\n*   **Edmond Halley (Using Newton's Laws):** \"I predict this comet will return in exactly 76 years, on this specific date.\"\n*   **The Result:** It appeared exactly when he said. This proved Newton's physics wasn't just a good story; it was a map of reality.\n\n## The Einstein Example\n\nEinstein's General Relativity predicted that gravity bends light. No one had ever seen bent light.\nDuring a solar eclipse in 1919, Arthur Eddington looked at the stars behind the sun. They were shifted. Einstein was right. The world changed overnight.\n\n## FAQs\n\n*1. Why is it better than explaining known facts?*\nBecause you can't cheat.\nIf you know the answer ($\\pi$), you can easily invent a math formula to equal $\\pi$. But if you write a formula that predicts a number no one has ever measured, and *then* we measure it and you're right... that's magic.\n\n### Further Reading\n\n*   **Concept:** *[Predictive Power](https://en.wikipedia.org/wiki/Predictive_power)*.\n*   **Story:** *[The Eclipse That Made Einstein Famous](https://www.smithsonianmag.com/science-nature/eclipse-made-einstein-world-famous-180972140/)*.\n"
                             },
@@ -1200,9 +1200,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[Philosophy",
+                                    "Philosophy",
                                     "Logic",
-                                    "Thinking]"
+                                    "Thinking"
                                 ],
                                 "content": "# Reasoning\n\nThe three engines of thought.\n\nThere are three main ways humans (and AI) move from \"what we know\" to \"what we think.\"\n\n## 1. Deduction (The Sniper)\nMoving from **General** to **Specific**.\nIf the premises are true, the conclusion **MUST** be true.\n*   *Rule:* All men are mortal.\n*   *Observation:* Socrates is a man.\n*   *Conclusion:* Therefore, Socrates is mortal. (100% Certainty).\n\n## 2. Induction (The Surveyor)\nMoving from **Specific** to **General**.\nLooking at patterns to form a rule. The conclusion is **Likely**, but not certain.\n*   *Observation:* The sun has risen every morning for history.\n*   *Conclusion:* Therefore, the sun will rise tomorrow. (High Probability, but not guaranteed. The sun could explode tonight).\n\n## 3. Abduction (The Detective)\nInference to the **Best Explanation**.\nLooking at a weird fact and guessing the most likely cause.\n*   *Observation:* The grass is wet.\n*   *Hypotheses:* It rained? The sprinklers turned on? A dog peed?\n*   *Conclusion:* It rained (because the street is also wet).\n\n## FAQs\n\n*1. Which does Science use?*\nAll of them.\n*   **Abduction** to invent a hypothesis.\n*   **Deduction** to predict what should happen if the hypothesis is true.\n*   **Induction** to verify it with data.\n\n*2. Which does AI use?*\nMachine Learning is a massive **Induction** engine. It looks at millions of specific cat photos to learn the general rule of \"What a cat looks like.\"\n\n### Further Reading\n\n*   **Article:** *[Deductive vs Inductive vs Abductive Reasoning](https://uregina.ca/~gingrich/319j1506.htm)*.\n*   **Video:** *[Sherlock Holmes uses Abduction, not Deduction](https://www.youtube.com/watch?v=1bDFZ31q0rE)*.\n"
                             },
@@ -1212,9 +1212,9 @@ const wikiData = {
                                 "icon": "far fa-file-alt",
                                 "desc": "",
                                 "tags": [
-                                    "[Philosophy",
+                                    "Philosophy",
                                     "Science",
-                                    "Definition]"
+                                    "Definition"
                                 ],
                                 "content": "# Scientific Laws\n\nDescriptions, not rules.\n\nA **Scientific Law** is a statement that describes an observable occurrence in nature that appears to always be true.\nIt tells you **What** happens, not **Why** it happens.\n\n*   **The Law:** $F = ma$ (Newton's Second Law).\n    *   It describes exactly how a rock moves when you kick it.\n*   **The Theory:** General Relativity.\n    *   It explains *why* gravity exists (warped spacetime).\n\n## The Misconception\n\nWe often think of Laws like \"Traffic Laws\" (rules imposed by a government).\nNature's Laws are descriptive patterns, not prescriptions. The universe doesn't \"obey\" the law of gravity; the law of gravity is just our best description of what the universe already does.\n\n## FAQs\n\n*1. Is a Theory a \"baby Law\"?*\nNo. This is the biggest myth in science ed.\n*   **Fact:** Observation.\n*   **Law:** Description of the pattern.\n*   **Theory:** Explanation of the mechanism.\nA Theory never becomes a Law. They do different things. Evolution is a Theory (it explains). Gravity is a Law (it describes) AND a Theory (it explains).\n\n*2. Can laws change?*\nYes. Newton's Laws were considered absolute for 200 years. Then Einstein showed they were slightly wrong at high speeds. We didn't throw them away (they still work for cars), but we updated the description.\n\n### Further Reading\n\n*   **Article:** *[Scientific Hypothesis, Theory, Law Definitions](https://www.livescience.com/21491-what-is-a-scientific-theory-definition-of-theory.html)*.\n*   **Video:** *[Fact vs. Theory vs. Hypothesis vs. Law](https://www.youtube.com/watch?v=lqk3TKuGNBA)*.\n"
                             }

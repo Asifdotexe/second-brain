@@ -1,6 +1,6 @@
 ---
 title: DiskSat
-tags: [Space, Satellite, Innovation]
+tags: Space, Satellite, Innovation
 ---
 
 # DiskSat

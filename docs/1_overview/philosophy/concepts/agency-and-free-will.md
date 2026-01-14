@@ -1,6 +1,6 @@
 ---
 title: Agency & Free Will
-tags: [Philosophy, Consciousness, AI]
+tags: Philosophy, Consciousness, AI
 ---
 
 # Agency & Free Will

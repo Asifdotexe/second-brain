@@ -1,6 +1,6 @@
 ---
 title: Demarcation Problem
-tags: [Philosophy, Science, Logic]
+tags: Philosophy, Science, Logic
 ---
 
 # Demarcation Problem

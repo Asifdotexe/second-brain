@@ -1,6 +1,6 @@
 ---
 title: NotPetya
-tags: [CyberSecurity, Malware, Wiper]
+tags: CyberSecurity, Malware, Wiper
 ---
 
 # NotPetya

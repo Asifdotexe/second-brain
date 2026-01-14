@@ -1,6 +1,6 @@
 ---
 title: Shor's Algorithm
-tags: [CyberSecurity, QuantumComputing, Threats]
+tags: CyberSecurity, QuantumComputing, Threats
 ---
 
 # Shor's Algorithm

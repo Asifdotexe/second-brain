@@ -1,6 +1,6 @@
 ---
 title: OS Kernel
-tags: [Software, Core, Admin]
+tags: Software, Core, Admin
 ---
 
 # OS Kernel

@@ -1,6 +1,6 @@
 ---
 title: WannaCry
-tags: [CyberSecurity, Ransomware, Worm]
+tags: CyberSecurity, Ransomware, Worm
 ---
 
 # WannaCry

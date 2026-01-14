@@ -1,6 +1,6 @@
 ---
 title: Bug Bounty
-tags: [CyberSecurity, Career, OffensiveSec]
+tags: CyberSecurity, Career, OffensiveSec
 ---
 
 # Bug Bounty

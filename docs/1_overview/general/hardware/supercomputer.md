@@ -1,6 +1,6 @@
 ---
 title: Supercomputer
-tags: [Hardware, Computing, HPC]
+tags: Hardware, Computing, HPC
 ---
 
 # Supercomputer

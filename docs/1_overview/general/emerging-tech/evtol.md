@@ -1,6 +1,6 @@
 ---
 title: eVTOL
-tags: [Aviation, FutureTech, Transportation]
+tags: Aviation, FutureTech, Transportation
 ---
 
 # eVTOL (Electric Vertical Take-Off and Landing)
