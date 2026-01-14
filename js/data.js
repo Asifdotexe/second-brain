@@ -496,6 +496,14 @@ const wikiData = {
                                 "content": "# Blue Team\n\nThe castle guards.\n\nThe **Blue Team** is the internal security staff responsible for defending the organization. They are the ones watching the monitors, installing the [[firewalls|Firewalls]], patching the software, and responding when an alarm goes off.\n\n## Responsibilities\n\n*   **monitoring:** Watching logs for suspicious activity ([[soc|SOC]]).\n*   **Incident Response:** Kicking the hackers out when a breach happens.\n*   **Hardening:** Making the servers tougher to crack.\n\n## The endless job\n\nThe Red Team only needs to find *one* open window to win. The Blue Team must close *every* window to win.\n\n### Further Reading\n\n*   **Guide:** *[Blue Team Handbook](https://www.amazon.com/Blue-Team-Handbook-condensed-Operations/dp/1500734756)*\n"
                             },
                             {
+                                "id": "bug-bountry",
+                                "title": "Bug Bountry",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [],
+                                "content": ""
+                            },
+                            {
                                 "id": "bug-bounty",
                                 "title": "Bug Bounty",
                                 "icon": "far fa-file-alt",
@@ -503,7 +511,8 @@ const wikiData = {
                                 "tags": [
                                     "CyberSecurity",
                                     "Career",
-                                    "OffensiveSec"
+                                    "OffensiveSec",
+                                    "Crowdsourcing"
                                 ],
                                 "content": "# Bug Bounty\n\nCrowdsourced security testing.\n\nA **Bug Bounty Program** is a deal where a company (like Google or Facebook) says: *\"If you can hack us and tell us how you did it, we will pay you cash.\"*\n\nIt turns hackers into allies. Instead of selling a security flaw on the black market (for evil), the hacker sells it to the company (for good).\n\n## Principles\n\n*   **Responsible Disclosure:** The hacker agrees NOT to tell the public about the bug until the company fixes it.\n*   **Scope:** The company defines what is \"In Bounds\" (e.g., website.com) and \"Out of Bounds\" (e.g., employees' personal laptops).\n\n## FAQs\n\n*1. How much do they pay?*\nIt depends on the severity ([[cvss|CVSS Score]]).\n*   **Low (Typo):** Swag (T-shirt) or $100.\n*   **Critical (Remote Code Execution):** $10,000 - $1,000,000+.\n*   *Apple pays up to $1 Million for hacking an iPhone.*\n\n*2. Can anyone do it?*\nYes. Platforms like **HackerOne** and **Bugcrowd** allow anyone to sign up and start hunting on public programs legally.\n\n### Further Reading\n\n*   **Platform:** *[HackerOne](https://www.hackerone.com/)* (The biggest marketplace).\n*   **List:** *[Google's Bug Hunting Program Rules](https://bughunters.google.com/about/rules)*.\n"
                             },
@@ -830,6 +839,14 @@ const wikiData = {
                                 "content": "# Hard Drive (HDD / SSD)\n\nThe long-term memory of the computer.\n\nThe **Hard Drive** is where your data lives when the power is turned off.\nIf **RAM** is your tabletop (fast, temporary workspace), the **Hard Drive** is the filing cabinet (slower, permanent storage).\n\n## The Two Titans\n\n### 1. HDD (Hard Disk Drive) - The Record Player\n*   **Technology:** Fast-spinning magnetic platters with a mechanical arm that reads data.\n*   **Pros:** Very cheap for huge amounts of space (8TB, 16TB).\n*   **Cons:** Slow, loud, fragile (if you drop it, the needle scratches the record and data dies).\n\n### 2. SSD (Solid State Drive) - The Flash Card\n*   **Technology:** Lightning-fast electrical chips with no moving parts.\n*   **Pros:** Instant speed, silent, durable.\n*   **Cons:** More expensive per gigabyte (though getting cheaper).\n\n## FAQs\n\n*1. NVMe vs SATA?*\n*   **SATA:** The old cable connection (Max speed ~600 MB/s).\n*   **NVMe (M.2):** The new stick that plugs directly into the motherboard (Max speed ~7,000 MB/s). Always buy NVMe for your main Operating System drive.\n\n*2. How long do they last?*\nUsually 5-10 years. But they *will* fail.\n**Rule of thumb:** Data that doesn't exist in at least two places (Backup) doesn't exist at all.\n\n### Further Reading\n\n*   **Video:** *[How a Hard Drive Works (Slow Mo)](https://www.youtube.com/watch?v=3owqvmmf6m8)*.\n*   **Guide:** *[HDD vs SSD vs NVMe](https://www.crucial.com/articles/about-storage/ssd-vs-hdd)*.\n"
                             },
                             {
+                                "id": "hard-driver",
+                                "title": "Hard Driver",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [],
+                                "content": ""
+                            },
+                            {
                                 "id": "lidar",
                                 "title": "LiDAR (Light Detection and Ranging)",
                                 "icon": "far fa-file-alt",
@@ -921,6 +938,14 @@ const wikiData = {
                                     "Platform"
                                 ],
                                 "content": "# Operating System (OS)\n\nThe conductor of the digital orchestra.\n\nThe **Operating System** is the software that manages the hardware and provides a playground for applications to run.\nWithout an OS, your computer is just a pile of metal and silicon. The OS tells the CPU, RAM, and Screen how to talk to each other.\n\n## The Hierarchy\n\n1.  **Hardware:** The metal (CPU, Disk).\n2.  **Kernel:** The Heart of the OS (Talks to metal).\n3.  **Shell/UI:** The Face of the OS (Start Menu, Desktop).\n4.  **Applications:** The Tools (Chrome, Steam, Excel).\n\n## Major Families\n\n*   **Windows (Microsoft):** The Office & Gaming standard. User-friendly.\n*   **macOS (Apple):** The Creative standard. Based on Unix (very stable).\n*   **Linux (Open Source):** The Server & Hacker standard. Runs the internet.\n\n## FAQs\n\n*1. What is a \"Dual Boot\"?*\nInstalling two OSs on one computer (e.g., Windows for games, Linux for coding). You choose which one to enter when you turn the PC on.\n\n*2. Is Android an OS?*\nYes! It is a mobile OS based on the **Linux Kernel**. iOS is a mobile OS based on **Darwin** (Unix).\n\n### Further Reading\n\n*   **History:** *[The History of Operating Systems](https://www.youtube.com/watch?v=26QPDBe-TQ8)*.\n*   **Concept:** *[OS Concepts: What is an OS?](https://www.geeksforgeeks.org/introduction-of-operating-system-set-1/)*.\n"
+                            },
+                            {
+                                "id": "os-kernal",
+                                "title": "Os Kernal",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [],
+                                "content": ""
                             },
                             {
                                 "id": "os-kernel",
@@ -1067,6 +1092,27 @@ const wikiData = {
                                     "JeremyBentham"
                                 ],
                                 "content": "# Utilitarianism\n\nThe greatest good for the greatest number.\n\n**Utilitarianism** is an ethical theory that says: The \"Right\" thing to do is whatever maximizes happiness and minimizes suffering for the most people.\n\nIt treats morality like a math equation. Intentions don't matter; rules don't matter. Only the **Consequences** (the result) matter.\n\n## The Trolley Problem\n\nThis is the classic test for Utilitarianism.\n*   A train is about to kill **5 people**.\n*   You can pull a lever to switch tracks, where it will only kill **1 person**.\n*   **Utilitarian Answer:** Pull the lever. 1 death is better than 5 deaths. (Math).\n*   **Non-Utilitarian ([[deontology|Deontology]]) Answer:** Do not pull. Killing an innocent person is wrong, regardless of the outcome.\n\n## FAQs\n\n*1. Is it perfect?*\nNo. The flaw is the **\"Minority Rights\"** problem.\nIf killing one healthy person and harvesting their organs could save 5 dying patients, strict Utilitarianism might say \"Do it\" (1 death saves 5). But almost everyone agrees that murdering an innocent person for parts is wrong, even if the math works out.\n\n*2. Who started it?*\n*   **Jeremy Bentham:** The founder. \"Nature has placed mankind under the governance of two sovereign masters, pain and pleasure.\"\n*   **John Stuart Mill:** Refined it. He argued that \"Qualitative\" pleasures (poetry, friendship) are better than \"Quantitative\" pleasures (eating, drinking).\n\n### Further Reading\n\n*   **Video:** *[Justice: What's The Right Thing To Do? (Harvard)](https://www.youtube.com/watch?v=kBdfcR-8hEY)*\n*   **Article:** *[Utilitarianism Explained](https://ethics.org.au/ethics-explainer-utilitarianism/)*\n"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "political",
+                        "title": "Political",
+                        "icon": "fas fa-folder",
+                        "desc": "",
+                        "view": null,
+                        "children": [
+                            {
+                                "id": "socialism",
+                                "title": "Socialism",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Philosophy",
+                                    "Politics",
+                                    "Economics"
+                                ],
+                                "content": "# Socialism\n\nThe community owns the factory.\n\n**Socialism** is a political and economic theory where the means of production (factories, farms, offices) are owned and regulated by the community as a whole, rather than by private individuals.\n\nImagine a lemonade stand.\n*   **Capitalism:** One kid pays for the lemons, owns the stand, and keeps the profit. The other kids work for a wage.\n*   **Socialism:** All the kids pool their money for lemons, work together, and vote on how to split the profit.\n\n## Core Principles\n\n1.  **Public Ownership:** Essential services (Healthcare, Energy, Transport) should not be for profit.\n2.  **Redistribution:** Wealth should be spread to ensure everyone has a baseline quality of life (Safety Net).\n3.  **Cooperation > Competition:** Society thrives when we work together, not when we fight for resources.\n\n## FAQs\n\n*1. Is it the same as Communism?*\nNo.\n*   **Socialism:** You can still own personal property (your phone, your house). The *economy* is socialized.\n*   **Communism:** A stateless, classless, moneyless society where *everything* is shared. (Socialism is often seen as the bridge to Communism).\n\n*2. Does it work?*\nIt's a spectrum.\n*   **Democratic Socialism (Nordic Model):** High taxes, free healthcare, strong unions, but still has a capitalist market (IKEA, Volvo). Works very well.\n*   **Authoritarian Socialism (Soviet Union):** Government controls everything. Historically failed due to corruption and inefficiency.\n\n### Further Reading\n\n*   **Book:** *[The Communist Manifesto](https://www.gutenberg.org/ebooks/61)* (The original theory by Marx & Engels).\n*   **Concept:** *[Democratic Socialism vs. Social Democracy](https://www.masterclass.com/articles/democratic-socialism-vs-social-democracy)*.\n"
                             }
                         ]
                     },

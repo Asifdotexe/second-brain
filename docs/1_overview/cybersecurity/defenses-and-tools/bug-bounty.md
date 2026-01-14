@@ -1,7 +1,6 @@
 ---
 title: Bug Bounty
-tags: CyberSecurity, Career, OffensiveSec
-tags: Security, Career, Crowdsourcing
+tags: CyberSecurity, Career, OffensiveSec, Crowdsourcing
 ---
 
 # Bug Bounty
