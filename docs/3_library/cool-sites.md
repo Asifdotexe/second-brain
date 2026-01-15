@@ -26,15 +26,11 @@ Guides and interactive learning tools.
 | :--- | :--- | :--- |
 | **roadmap.sh** | Interactive developer roadmaps for frontend, backend, DevOps, and more. | [roadmap.sh](https://roadmap.sh/) |
 | **KC7 Cyber** | A data-driven cybersecurity game that teaches investigation skills. | [kc7cyber.com](https://kc7cyber.com/) |
-
-## AI Tools & Toys
-
-Interactive visualizations and powerful new tools.
-
-| Site | Description | Link |
-| :--- | :--- | :--- |
+| **React Graph Gallery** | Beautiful examples of charts and data visualizations (e.g. Radar Chart Animation). | [react-graph-gallery.com](http://react-graph-gallery.com/example/radar-chart-animation) |
 | **TensorFlow Playground** | Visualize and play with neural networks in your browser. | [playground.tensorflow.org](https://playground.tensorflow.org/) |
 | **NotebookLM** | Google's AI research tool that acts as a personalized research assistant. | [notebooklm.google.com](https://notebooklm.google.com/) |
+| **MLU-Explain** | Interactive visual articles on machine learning concepts (Bias, Variance, etc.). | [mlu-explain.github.io](https://mlu-explain.github.io/) |
+
 
 ## Reference
 
@@ -43,7 +39,6 @@ Useful lists and wikis.
 | Site | Description | Link |
 | :--- | :--- | :--- |
 | **List of Cognitive Biases** | Wikipedia's massive list of the flaws in human reasoning. | [Wikipedia](https://en.wikipedia.org/wiki/List_of_cognitive_biases) |
-
 
 
 ## Internet Humor
