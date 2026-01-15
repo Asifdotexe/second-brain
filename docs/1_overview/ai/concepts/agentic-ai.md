@@ -54,4 +54,4 @@ One of the most popular methods for Agentic AI is called **ReAct** (Reasoning + 
 
 * **Concept:** *“[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/pdf/2210.03629)”* (The foundational paper).
 * **Frameworks to try:** [LangChain](https://www.langchain.com/) or [AutoGPT](https://news.agpt.co/).
-* **Essay:** *“[The rise of Agentic workflows](https://learn.deeplearning.ai/courses/agentic-ai/information)”* by Andrew Ng.
+

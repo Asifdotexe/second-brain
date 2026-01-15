@@ -29,5 +29,5 @@ Use Fine-Tuning when you want the AI to sound like you (tone, voice, format). Us
 
 ### Further Reading
 
-*   **Article:** *[RAG vs Fine-Tuning (Microsoft)](https://learn.microsoft.com/en-us/azure/ai-studio/concepts/retrieval-augmented-generation)*
+*   **Article:** *[Augment LLMs with RAG or Fine-Tuning](https://learn.microsoft.com/en-us/azure/developer/ai/augment-llm-rag-fine-tuning)* (Microsoft).
 *   **Guide:** *[OpenAI: Fine-Tuning Guide](https://platform.openai.com/docs/guides/fine-tuning)*
