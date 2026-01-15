@@ -9,6 +9,14 @@ icon: fab fa-github
 
 Interesting Pull Requests and Commits from the history of open source.
 
+## Resources & Culture
+
+Guides on how to behave (or not behave) in open source.
+
+| Description | Link |
+| :--- | :--- |
+| **The Art of the Commit** | [The Art of the Commit](https://alistapart.com/article/the-art-of-the-commit/) |
+
 ## Canonical History
 
 Actual milestones in software history.
