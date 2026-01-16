@@ -1,0 +1,143 @@
+---
+title: Week 03
+tags: WeeklyUpdate, CyberSecurity, ArtificialIntelligence, Space, IOT
+desc: Summary of 10 January - 16 January 2026.
+---
+
+# Week 03
+
+## Cyber Security
+
+### Microsoft Patch Tuesday: 3 Zero-Days, 114 Flaws
+
+![Patch Tuesday](https://www.bleepstatic.com/content/hl-images/2024/10/08/patch_tuesday_microsoft.jpg)
+
+Date: January 13, 2026
+
+- **The Event:** Microsoft's January 2026 Patch Tuesday addressed **114 vulnerabilities**, including **three zero-days** that were either exploited in the wild or publicly disclosed.
+- **The Detail:**
+    1.  **CVE-2026-20805** (Exploited): A **Desktop Window Manager (DWM)** information disclosure vulnerability. Attackers can leak sensitive memory data to bypass protections.
+    2.  **CVE-2026-21265** (Publicly Disclosed): A **Secure Boot** security feature bypass caused by expiring certificates. Unpatched systems may fail to trust new bootloaders.
+    3.  **CVE-2023-31096** (Exploited): A **Windows Agere Soft Modem Driver** elevation of privilege flaw. Microsoft removed the deprecated `agrsm64.sys` driver to fix this legacy issue that allowed SYSTEM-level access.
+- **The Impact:** CISA has added the exploited flaws to its Known Exploited Vulnerabilities catalog. Federal agencies are mandated to patch immediately to prevent ransomware groups from leveraging these now-public exploits.
+
+*Read more about it: [Bleeping Computer](https://www.bleepingcomputer.com/news/microsoft/microsoft-january-2026-patch-tuesday-fixes-3-zero-days-114-flaws/)*
+
+---
+<br>
+
+### WEF Report: "Cyber-Fraud" Now Outranks Ransomware
+- **The Report:** The World Economic Forum released its *Global Cybersecurity Outlook 2026* on January 12, revealing a major shift in the threat landscape.
+- **The Detail:** For the first time, CEOs rated "Cyber-enabled Fraud" (deepfakes, manipulated financial transfers) as a higher concern than [[ransomware|Ransomware]], driven by the accessibility of AI cloning tools.
+- **The Impact:** This signals a strategic pivot for defenders: while [[encryption]] attacks (ransomware) are stabilizing, the integrity of *communication* (is this video call real?) is becoming the new battleground.
+
+*Read more about it: [World Economic Forum](https://www.weforum.org/publications/global-cybersecurity-outlook-2026/)*
+
+---
+<br>
+
+### Global Crackdown on DeepSeek Intensifies
+- **The Scrutiny:** Following its rapid rise, Chinese AI firm DeepSeek faced a wave of regulatory actions this week, with Australia and France launching probes into its data handling practices.
+- **The Detail:** Concerns focus on the app's data storage policies and potential ties to state surveillance, leading to bans on government devices in multiple jurisdictions as of mid-January.
+- **The Impact:** This geopolitical friction highlights the fragmentation of the global "AI Stack," potentially forcing multinational companies to choose between Western-sanctioned tools and cost-effective Asian alternatives.
+
+*Read more about it: [Insurance Journal](https://www.insurancejournal.com/news/international/2026/01/07/853376.htm)*
+
+---
+<br>
+
+## Artificial Intelligence
+
+### DeepSeek Publishes "Engram" to Bypass Chip Sanctions
+- **The Breakthrough:** On Jan 14, DeepSeek published a technical paper detailing "[[deepseek-engram|Engram]]," a new training method designed to build massive models using older, less powerful chips.
+- **The Detail:** The technique optimizes memory usage to overcome hardware bottlenecks, effectively allowing them to train GPT-4 class models without needing restricted Nvidia H100/Blackwell GPUs.
+- **The Impact:** This undermines the effectiveness of US semiconductor export controls, suggesting that algorithmic innovation is outpacing hardware restrictions in the global AI arms race.
+
+*Read more about it: [Tech Wire Asia](https://techwireasia.com/2026/01/deepseek-engram-technique-v4-model/)*
+
+---
+<br>
+
+### OpenAI Signs $10B Inference Deal with Cerebras
+- **The Deal:** In a move to diversify away from Nvidia, OpenAI has reportedly secured a multi-year compute agreement valued at over $10 billion with chipmaker Cerebras Systems.
+- **The Detail:** The partnership focuses specifically on "Inference" (running the models) rather than training, utilizing Cerebras' wafer-scale chips to drastically lower the cost and latency of ChatGPT responses.
+- **The Impact:** This is a direct challenge to Nvidia's monopoly, signaling that top AI labs are willing to fund alternative hardware ecosystems to reduce their dependency on a single supplier.
+
+*Read more about it: [The AI Insider](https://theaiinsider.tech/2026/01/16/openai-secures-multi-year-compute-agreement-with-cerebras-valued-at-over-10b/)*
+
+---
+<br>
+
+### Microsoft Report: DeepSeek Dominates 89% of Chinese Market
+- **The Statistic:** A new Microsoft AI Diffusion report (Jan 13) highlights that DeepSeek has captured nearly 89% of the AI user base in China, vastly outperforming local competitors like Baidu.
+- **The Detail:** The report warns of a widening "AI Divide," where the Global South is adopting affordable, open-weight models from China, while the Global North sticks to expensive, closed US models.
+- **The Impact:** This entrenchment creates a "bifurcated internet" for AI, where future software ecosystems in Africa and SE Asia may be built on Chinese standards rather than Western APIs.
+
+*Read more about it: [Capacity Media](https://capacityglobal.com/news/microsoft-report-warns-of-deepseeks-rise-and-a-global-ai-divide/)*
+
+---
+<br>
+
+## General Technology
+
+### TSMC Forecasts 30% Growth Driven by "Insatiable" AI Demand
+- **The Forecast:** On Jan 16, [[semiconductor]] giant TSMC projected a nearly 30% revenue jump for 2026, shattering analyst expectations.
+- **The Detail:** The growth is driven almost entirely by demand for 2nm and 3nm chips used in AI accelerators, prompting TSMC to increase its capital expenditure to expand production capacity.
+- **The Impact:** As the sole manufacturer for both Apple and Nvidia's best chips, TSMC's confidence confirms that the "AI Boom" is not slowing down in 2026; in fact, hardware demand is accelerating.
+
+*Read more about it: [ANI News](https://aninews.in/news/business/tsmc-forecasts-nearly-30-sales-growth-in-2026-plans-capex-expansion-amid-ai-demand20260116121515)*
+
+---
+<br>
+
+---
+title: Week 03
+tags: WeeklyUpdate, Aerospace, BioTech, Engineering, Space
+desc: Summary of 10 January - 16 January 2026.
+---
+
+# Week 03
+
+## General Technology (Aero, Space & BioTech Edition)
+
+### Historic Medical Evacuation from ISS (NASA Crew-11)
+- **The Event:** On Jan 15, NASA’s Crew-11 astronauts returned to Earth a month early aboard a SpaceX Dragon capsule, marking the first time in history that a medical emergency forced an early end to a station mission.
+- **The Detail:** While NASA kept the specific astronaut's condition confidential due to privacy rules, the urgency required an unscheduled "splashdown" off the coast of San Diego to get the crew member to a hospital immediately.
+- **The Impact:** This rare event tests the "Emergency Return" protocols that will be critical for future Mars missions, where a 10-hour flight home is impossible, highlighting the need for advanced autonomous medical tech in deep space.
+
+*Read more about it: [KPBS News](https://www.kpbs.org/news/science-technology/2026/01/15/after-a-medical-evacuation-from-space-nasas-crew-11-returns-to-earth-a-month-early)*
+
+---
+<br>
+
+### Breakthrough "Epigenetic" CRISPR Tool Fixes Genes Without Cutting
+- **The Discovery:** Researchers at UNSW Sydney have validated a new [[crispr|CRISPR]] technique that "switches" genes on or off by removing chemical tags (methylation), rather than cutting the DNA strand itself.
+- **The Detail:** Traditional CRISPR acts like molecular scissors (risking unintended damage); this new method acts like a molecular "eraser," removing the "silencing" markers on genes to treat conditions like Sickle Cell Anemia without altering the genome sequence.
+- **The Impact:** This resolves a decades-long biological debate and offers a significantly safer path for gene therapy, reducing the risk of accidental mutations or cancer associated with DNA-cutting methods.
+
+
+*Read more about it: [ScienceDaily](https://www.sciencedaily.com/releases/2026/01/260104202813.htm)*
+
+---
+<br>
+
+### Airbus Launches "SpaceRAN" to Standardize 5G from Orbit
+- **The Innovation:** Airbus UpNext has launched a demonstrator program called "SpaceRAN" to test a standardized way for satellites to provide direct-to-device 5G connectivity without proprietary lock-ins.
+- **The Detail:** Unlike Starlink’s closed system, SpaceRAN uses a "software-defined" satellite architecture that allows standard commercial 5G devices to connect to satellites as if they were normal cell towers.
+- **The Impact:** If successful, this creates a unified global standard for [[ntn|Non-Terrestrial Networks]], allowing aviation, shipping, and remote industrial sites to switch between satellite providers instantly without changing hardware.
+
+
+*Read more about it: [Airbus Newsroom](https://www.airbus.com/en/newsroom/stories/2026-01-expanding-5g-connectivity-with-the-airbus-upnext-spaceran-demonstrator)*
+
+---
+<br>
+
+### China Launches "Yaogan-50" in First 2026 Orbital Mission
+- **The Launch:** China Aerospace Science and Technology Corp (CASC) successfully conducted its first launch of 2026, sending the Yaogan-50 remote sensing satellite into orbit via a Long March 6 rocket.
+- **The Detail:** The satellite is equipped with high-definition land survey sensors officially designated for "disaster prevention and crop estimation," though western analysts often associate the Yaogan series with electronic surveillance.
+- **The Impact:** This kickstarts China's ambitious 2026 launch calendar, which aims to exceed 100 orbital missions this year, further accelerating the density of the Low Earth Orbit (LEO) environment.
+
+*Read more about it: [Qazinform](https://qazinform.com/news/china-launches-satellite-in-first-orbital-mission-of-2026-31e383)*
+
+---
+<br>
