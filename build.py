@@ -45,7 +45,7 @@ def parse_markdown(file_path: str) -> Dict[str, Any]:
                 value = value.strip()
 
                 if key == "tags":
-                    meta["tags"] = [t.strip() for t in value.split(",")]
+                    meta["tags"] = [t.strip() for t in value.replace("[", "").replace("]", "").split(",")]
                 else:
                     meta[key] = value
 

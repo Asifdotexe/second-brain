@@ -1301,6 +1301,180 @@ const wikiData = {
                 ]
             },
             {
+                "id": "psychology",
+                "title": "Psychology",
+                "icon": "fas fa-brain",
+                "desc": "Cognitive biases and mental models",
+                "view": "shelf",
+                "children": [
+                    {
+                        "id": "cognitive-biases",
+                        "title": "Cognitive Biases",
+                        "icon": "fas fa-glasses",
+                        "desc": "Systematic patterns of deviation from norm or rationality in judgment.",
+                        "view": "list",
+                        "children": [
+                            {
+                                "id": "1-too-much-info",
+                                "title": "Problem 1: Too Much Info",
+                                "icon": "fas fa-filter",
+                                "desc": "We can't see everything, so we filter aggressively.",
+                                "view": "list",
+                                "children": [
+                                    {
+                                        "id": "anchoring-bias",
+                                        "title": "Anchoring Bias",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Psychology",
+                                            "Negotiation",
+                                            "Marketing"
+                                        ],
+                                        "content": "# Anchoring Bias\n\nThe Sticky Price Tag.\n\n**Anchoring Bias** is the cognitive tendency to rely too heavily on the first piece of information offered (the \"anchor\") when making decisions.\n\nImagine walking into a luxury store. You see a bag for $5,000. \"Insane!\" you think. Then you see a smaller bag for $1,200. \"Ooh, that's a steal!\"\nIs $1,200 a good price for a bag? Probably not. But because your brain was \"anchored\" to the $5,000 price, the $1,200 feels cheap by comparison. The first number you see sets the stage for everything that follows.\n\n## Key Examples\n\n*   **Salary Negotiation:** The first number spoken usually dictates the final range. If you ask for $100k, the negotiation happens around $100k. If you ask for $60k, you'll never get to $100k.\n*   **Sales:** \"Was $100, Now $50!\" The $100 is a fake anchor designed to make the $50 feel like a win.\n\n## FAQs\n\n*1. Does it work even if the number is random?*\nYes. Studies show that if you ask people to write down the last two digits of their social security number, and then bid on a bottle of wine, people with higher SSN numbers bid higher. The brain clings to *any* available number when it's unsure.\n\n*2. How do I avoid it?*\nDo your research *before* you enter the room. If you know the car is worth $20k, the dealer's $30k sticker price won't anchor you because you brought your own anchor.\n\n### Further Reading\n\n*   **Concept:** *[Anchoring and Adjustment](https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/anchoring-heuristic/)*.\n*   **Study:** *[The Effect of Anchoring in Negotiation](https://www.pon.harvard.edu/daily/negotiation-skills-daily/what-is-anchoring-in-negotiation/)* (Harvard Law School).\n"
+                                    },
+                                    {
+                                        "id": "availability-heuristic",
+                                        "title": "Availability Heuristic",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Psychology",
+                                            "Media",
+                                            "RiskAssessment"
+                                        ],
+                                        "content": "# Availability Heuristic\n\nThe \"Shark Attack\" Syndrome.\n\n![Availability Heuristic](https://images.prismic.io/thedecisionlab/cce9c879-5faa-46cb-a685-4542362fc572_availability-heuristic-the-decision-lab.png?auto=compress,format)\n\n**The Availability Heuristic** is a mental shortcut where we judge the likelihood of an event based on how easily we can recall similar examples.\n\nIf you ask someone, \"What is more likely to kill you: A shark or a falling coconut?\" most people intuitively scream \"SHARK!\" Why? because you've seen the movie *Jaws*. You recall catchy news headlines about shark attacks. You have *zero* vivid memories of coconut deaths.\nYour brain assumes: **\"If I can remember it easily, it must happen often.\"**\n\n![Availability Heuristic](https://images.prismic.io/thedecisionlab/Z3163JbqstJ99JWC_AvailabilityHeuristic.png?auto=format%2Ccompress&rect=1%2C0%2C510%2C268&w=2000&h=1050)\n\n## How it Works\n\nYour brain uses \"Ease of Recall\" as a proxy for \"Frequency.\"\n*   **Vivid events** (plane crashes, kidnapping, winning the lottery) stick in memory.\n*   **Boring events** (car crashes, heart disease, losing the lottery) fade away.\nResult: We are terrified of planes but text while driving.\n\n## FAQs\n\n*1. Is this why the news feels so scary?*\nYes. The news reports *anomalies* (rare, scary things). If you watch the news every day, your availability heuristic is hacked to believe the world is far more dangerous than it statistically is.\n\n*2. How does it affect business?*\nPerformance reviews. A manager might judge an employee's entire year based on a mistake they made *yesterday*, because that memory is the most \"available.\"\n\n### Further Reading\n\n*   **Article:** *[The Availability Heuristic](https://thedecisionlab.com/biases/availability-heuristic)* (The Decision Lab).\n*   **Book:** *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)* by Daniel Kahneman.\n"
+                                    },
+                                    {
+                                        "id": "confirmation-bias",
+                                        "title": "Confirmation Bias",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Psychology",
+                                            "CriticalThinking",
+                                            "DecisionMaking"
+                                        ],
+                                        "content": "# Confirmation Bias\n\nThe \"Yes Man\" inside your head.\n\n![Confirmation Bias](https://fs.blog/wp-content/uploads/2017/05/Confirmation-Bias.png)\n\n**Confirmation Bias** is the tendency to search for, interpret, favor, and recall information in a way that confirms your pre-existing beliefs or hypotheses.\n\nImagine you are looking for a new car. You decide you want a red Toyota. Suddenly, you see red Toyotas *everywhere*. Did the factory just make more? No. Your brain is filtering out the blue Hondas and white Fords because they don't match your current \"mission.\" Confirmation Bias works the same way with ideas. If you believe \"Left-handed people are creative,\" you will notice every creative lefty and ignore every uncreative one.\n\n## How it Works\n\n1.  **Filtering:** You subconsciously ignore evidence that contradicts your view (Disconfirmation Bias).\n2.  **Interpretation:** You twist ambiguous evidence to support your view. (e.g., \"He didn't text back because he's busy,\" not \"He's not interested,\" because you *want* to believe he likes you).\n3.  **Memory:** You remember the times you were right and forget the times you were wrong.\n\n## FAQs\n\n*1. Is it lying?*\nNo, it's not intentional deception. It's an efficiency mechanism. Your brain wants to save energy. Changing your mind requires re-wiring neural pathways (hard work). Keeping your current opinion requires doing nothing (easy).\n\n*2. How do I beat it?*\nActively look for the **disconfirming evidence**. Ask yourself: \"If I were wrong, what would I expect to see?\" Then look for *that*.\n\n### Further Reading\n\n*   **Book:** *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)* by Daniel Kahneman.\n*   **Article:** *[The Mother of All Biases](https://fs.blog/confirmation-bias/)* (Farnam Street).\n"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "2-not-enough-meaning",
+                                "title": "Problem 2: Not Enough Meaning",
+                                "icon": "fas fa-puzzle-piece",
+                                "desc": "The world is confusing, so we fill in the gaps.",
+                                "view": "list",
+                                "children": [
+                                    {
+                                        "id": "gamblers-fallacy",
+                                        "title": "Gamblers Fallacy",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Psychology",
+                                            "Investing",
+                                            "Probability"
+                                        ],
+                                        "content": "# Gambler's Fallacy\n\nThe Coin Has No Memory.\n\n![Gambler's Fallacy](https://images.prismic.io/thedecisionlab/60997d5f-3a48-4c5a-bd63-a92178e122d0_Untitled_Artwork.jpeg?auto=compress,format)\n\n**The Gambler's Fallacy** is the mistaken belief that if something generally happens more frequently than normal during a given period, it will happen *less* frequently in the future (or vice versa).\n\nYou flip a coin. Heads. Heads. Heads. Heads. Heads.\nWhat's next? You scream \"Tails! It *has* to be Tails! It's due!\"\n**Wrong.** The probability is still 50/50. The coin doesn't know it just landed on Heads 5 times. It has no memory. You are inventing a \"balancing force\" in the universe that doesn't exist.\n\n![Gambler's Fallacy](https://images.prismic.io/thedecisionlab/Z1CGlZbqstJ98CUm_GamblersFallacy_Whyithappens.png?auto=format,compress)\n\n## Why it Happens\n\nHumans are obsessed with patterns. We expect small samples (10 coin flips) to look like the global average (50/50 distribution). When they don't, we assume the universe will \"correct\" itself immediately.\n\n## FAQs\n\n*1. Does this apply to the Stock Market?*\nBig time. Investors often sell a stock because \"it's gone up for 10 days straight, it *must* come down.\" While markets do correct, they don't do it just because they \"owe\" you a drop.\n\n*2. Is \"Regression to the Mean\" the same thing?*\nNo. Regression to the mean is a statistical fact: over time, extreme scores average out. Gambler's Fallacy is the *belief* that the next specific turn will be the correction.\n\n### Further Reading\n\n*   **Story:** *[The Monte Carlo Fallacy](https://www.investopedia.com/terms/g/gamblersfallacy.asp)* (In 1913, a roulette wheel hit black 26 times in a row. Gamblers lost millions betting on red).\n*   **Article:** *[Why We Think We're Due for a Win](https://thedecisionlab.com/biases/gamblers-fallacy)*.\n"
+                                    },
+                                    {
+                                        "id": "halo-effect",
+                                        "title": "Halo Effect",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Psychology",
+                                            "Perception",
+                                            "Leadership"
+                                        ],
+                                        "content": "# Halo Effect\n\nThe \"Angel Script.\"\n\n![Halo Effect](https://images.prismic.io/thedecisionlab/a42484a0-b8c7-461d-b822-39c356338142_HaloEffect.png?auto=compress,format)\n\n**The Halo Effect** is a cognitive bias where the impression of one positive trait influences your opinion of a person's other (unrelated) traits.\n\nIf you meet someone who is tall, good-looking, and well-dressed, your brain instantly assumes they are also smart, funny, and successful. You assume because they have *one* \"good\" quality (beauty), they must have *all* good qualities (a \"halo\"). Just like in a movie script: the Hero is beautiful *and* kind *and* brave.\n\n![Halo Effect](https://images.prismic.io/thedecisionlab/ZkdfWCol0Zci9PnX_Untitled_Artwork39.png?auto=format%2Ccompress&rect=80%2C585%2C598%2C837&w=500&h=700)\n\n## Why it Happens\n\nYour brain acts like a lazy autocomplete function.\n*   **Input:** \"He is attractive.\"\n*   **Autocomplete:** \"...therefore he is a good leader and a nice person.\"\nIt creates a consistent narrative because \"Beautiful but Evil\" is harder for the brain to process quickly than \"Beautiful and Good.\"\n\n## FAQs\n\n*1. Is the reverse true?*\nYes. That is the **Horn Effect**. If someone is messy or unattractive, you subconsciously assume they are also lazy or incompetent, even if they are a genius.\n\n*2. Where is this most dangerous?*\n**Hiring and Politics.** We often vote for or hire the person who \"looks the part\" (tall, deep voice) rather than the person with the best skills. Apple's Steve Jobs famously used his \"Reality Distortion Field\" (charisma) to make people believe impossible deadlines were possible.\n\n### Further Reading\n\n*   **Article:** *[The Halo Effect in Psychology](https://www.verywellmind.com/what-is-the-halo-effect-2795906)*.\n*   **Article:** *[The Halo Effect](https://thedecisionlab.com/biases/halo-effect)*."
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "3-need-to-act-fast",
+                                "title": "Problem 3: Need To Act Fast",
+                                "icon": "fas fa-running",
+                                "desc": "We can't wait for certainty, so we jump to conclusions.",
+                                "view": "list",
+                                "children": [
+                                    {
+                                        "id": "dunning-kruger",
+                                        "title": "Dunning Kruger Effect",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Psychology",
+                                            "Learning",
+                                            "Competence"
+                                        ],
+                                        "content": "# Dunning-Kruger Effect\n\nMount Stupid.\n\n![Dunning-Kruger Effect](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Dunning%E2%80%93Kruger_Effect_01.svg/1280px-Dunning%E2%80%93Kruger_Effect_01.svg.png?20250428155053)\n\n**The Dunning-Kruger Effect** is a cognitive bias where people with low ability at a task overestimate their ability.\n\nBasically: **Incompetent people are too incompetent to realize they are incompetent.**\nTo know you are bad at grammar, you need to know the rules of grammar. If you don't know the rules, you assume your emails are perfect.\n\n## The Curve (The Analogy)\n\n1.  **Mount Stupid:** You learn a little bit and think, \"I'm a genius! This is easy!\" (High Confidence, Low Competence).\n2.  **Valley of Despair:** You learn more and realize, \"Oh god, this is actually incredibly hard.\" (Low Confidence, Med Competence).\n3.  **Slope of Enlightenment:** You actually get good and your confidence slowly returns. (High Confidence, High Competence).\n\n## FAQs\n\n*1. Is it just for \"Stupid\" people?*\nNo! It hits smart people too. A brilliant programmer might think they can easily run a marketing campaign (\"How hard can writing ads be?\"). We are all Dunning-Kruger victims in fields we don't know.\n\n*2. How do I fix it?*\nAssume you know nothing. Seek feedback early. The only cure for the Dunning-Kruger effect is **Metacognition** (thinking about your own thinking).\n\n### Further Reading\n\n*   **Study:** *[Unskilled and Unaware of It](https://www.ncbi.nlm.nih.gov/pubmed/10626367)* (The original 1999 paper).\n*   **Video:** *[Why Incompetent People Think They Are Amazing](https://www.youtube.com/watch?v=pOLmD_WVY-E)* (TED-Ed).\n"
+                                    },
+                                    {
+                                        "id": "fundamental-attribution-error",
+                                        "title": "Fundamental Attribution Error",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Psychology",
+                                            "Relationships",
+                                            "Empathy"
+                                        ],
+                                        "content": "# Fundamental Attribution Error\n\nThe Bad Driver Analogy.\n\n![Fundamental Attribution Error](https://images.prismic.io/thedecisionlab/1d414500-fd4a-401c-a85b-00b6bb86081a_Untitled_Artwork-2.jpeg?auto=compress,format)\n\n**The Fundamental Attribution Error** is the tendency to believe that what people *do* reflects who they keeping *are*, while ignoring the situation they are in.\n\n*   **When someone cuts you off in traffic:** You scream, \"What a jerk!\" (You blame their **Personality**).\n*   **When YOU cut someone off:** You think, \"I'm sorry, I'm just late for a flight!\" (You blame the **Situation**).\nWe judge others by their character, but we judge ourselves by our circumstances.\n\n## The Equation\n\n*   **Their Behavior** = **Their Flaw** (Internal Attribution).\n*   **My Behavior** = **My Environment** (External Attribution).\n\n![Fundamental Attribution Error](https://images.prismic.io/thedecisionlab/Zxv4t4F3NbkBYDEQ_FundamentalAttributionError.png?auto=format,compress)\n\n## FAQs\n\n*1. Why do we do this?*\nBecause we can see *them*, but we can't see the *pressure* they are under. When you watch an actor trip, you see a clumsy person. You don't see the slippery floor because your eyes are focused on the person.\n\n*2. How does this help me?*\nIt is the secret to **Empathy**. Next time a coworker is rude, instead of thinking \"They are mean,\" try thinking \"They might be having a terrible day.\" It stops you from taking things personally and escalating conflicts.\n\n### Further Reading\n\n*   **Video:** *[Fundamental Attribution Error Explained](https://youtu.be/AdrDAik86rc)* (\nMcCombs School of Business).\n*   **Article:** *[Why We Judge Others Severely](https://fs.blog/fundamental-attribution-error/)* (Farnam Street).\n"
+                                    },
+                                    {
+                                        "id": "sunk-cost-fallacy",
+                                        "title": "Sunk Cost Fallacy",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Psychology",
+                                            "Economics",
+                                            "DecisionMaking"
+                                        ],
+                                        "content": "# Sunk Cost Fallacy\n\nThrowing Good Money After Bad.\n\n![Sunk Cost Fallacy](https://images.prismic.io/thedecisionlab/09b9c938-6bee-416b-8d91-f0c22560c5c9_Sunk-Cost-Fallacy-TDL-1024x715.jpeg?auto=compress,format)\n\n**The Sunk Cost Fallacy** is the tendency to continue an endeavor just because we have already invested money, effort, or time into it, even if the current costs outweigh the benefits.\n\n*   **The Movie Theater:** You paid $20 for a ticket. The movie is terrible. 30 minutes in, you are bored.\n    *   *Rational Choice:* Leave. The $20 is gone regardless. Why lose $20 AND 2 hours of time?\n    *   *Sunk Cost Choice:* \"I paid for it, so I have to get my money's worth.\" (So you suffer for 2 more hours).\n\n![Sunk Cost Fallacy](https://images.prismic.io/thedecisionlab/Zjj2wUMTzAJOCkvf_Untitled_Artwork323.jpg?auto=format,compress)\n\n## The Logic\n\nYour brain hates \"Loss.\" Admitting the money is gone feels like a loss. Continuing feels like you are \"saving\" the investment.\n**Rule:** Past costs (Sunk Costs) should *never* factor into future decisions. Only future costs and benefits matter.\n\n## FAQs\n\n*1. Does this apply to relationships?*\nYes. \"We've been together for 5 years, I can't break up now.\" If the relationship is bad, the 5 years are \"sunk.\" Staying another 5 years just means wasting 10 years total.\n\n*2. Why is it hard to quit?*\nBecause quitting looks like failure. Our egos are tied to our past decisions. We want to prove to ourselves (and others) that we made the right choice, even if the ship is sinking.\n\n### Further Reading\n\n*   **Article:** *[The Sunk Cost Fallacy](https://thedecisionlab.com/biases/the-sunk-cost-fallacy)* (The Decision Lab).\n*   **Video:** *[The Sunk Cost Fallacy: What is it and why does it happen?](https://youtu.be/AFPgxIJHxsE)*.\n"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "4-what-should-we-remember",
+                                "title": "Problem 4: What Should We Remember",
+                                "icon": "fas fa-save",
+                                "desc": "We space is limited, so we save only the highlights.",
+                                "view": "list",
+                                "children": [
+                                    {
+                                        "id": "google-effect",
+                                        "title": "Google Effect",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Psychology",
+                                            "Memory",
+                                            "Technology"
+                                        ],
+                                        "content": "# Google Effect\n\nDigital Amnesia.\n\n**The Google Effect** (or Digital Amnesia) is the tendency to forget information that can be found readily online by using Internet search engines.\n\nYour brain is an efficient hard drive manager. If it knows a file is backed up to the Cloud (Google), it deletes the local copy to save space.\n*   **Old Days:** You memorized phone numbers because you had to.\n*   **Now:** You don't know your best friend's number because your phone \"knows\" it for you.\n\n## The Trade-Off\n\nWe are becoming better at knowing **Where** to find information (Index Memory) and worse at knowing **What** the information is (Content Memory).\n*   *Pros:* We can access infinite knowledge.\n*   *Cons:* We are helpless without connection.\n\n## FAQs\n\n*1. Is it making us stupid?*\nDebatable. Some argue it frees up brain power for \"higher-level\" thinking (creativity, analysis) instead of rote memorization. Others argue that you can't think deeply about a subject if you don't have the facts stored in your head.\n\n*2. How do I fight it?*\nIf you want to remember something, **write it down by hand**. The physical act of writing signals to your brain: \"This is important, keep a local copy.\"\n\n### Further Reading\n\n*   **Study:** *[Google Effects on Memory](https://science.sciencemag.org/content/333/6043/776)* (The original Science paper).\n*   **Article:** *[The Google Effect](https://usa.kaspersky.com/blog/digital-amnesia-survival/5897/)* (Kaspersky Lab Report).\n"
+                                    },
+                                    {
+                                        "id": "peak-end-rule",
+                                        "title": "Peak End Rule",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Psychology",
+                                            "Memory",
+                                            "UXDesign"
+                                        ],
+                                        "content": "# Peak-End Rule\n\nThe Highlight Reel.\n\n**The Peak-End Rule** is the psychological heuristic where we judge an experience strictly by how it felt at its most intense point (the \"Peak\") and at its end (the \"End\"), rather than the average of the whole experience.\n\nImagine a 10-day vacation.\n*   **Scenario A:** 9 amazing days, but on Day 10 you lose your luggage.\n*   **Scenario B:** 3 good days, 6 okay days, and on Day 10 you get a free upgrade.\nYou will remember **Scenario B** as the \"better\" trip, even though Scenario A had more total happiness. Your brain ignores the duration; it only saves the snapshots of the Climax and the Finale.\n\n## Why it Happens\n\nMemory is expensive. Your brain doesn't record a video of your life; it keeps a scrapbook. It only has room for the emotional spikes and the most recent moment.\n\n## FAQs\n\n*1. How is this used against me?*\n**Disney World.** You wait in line for 2 hours (pain), spend 5 minutes on the ride (Peak), and buy a souvenir on the way out (End). You forget the 2 hours of sweating and remember it as \"Magical.\"\n\n*2. How can I use this?*\nIf you have a bad meeting or a bad date, try to crack a joke or give a compliment right at the **end**. The other person will remember the whole interaction much more fondly.\n\n### Further Reading\n\n*   **Concept:** *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)* (Kahneman introduced this).\n*   **Article:** *[How the Peak-End Rule rules your life](https://www.nngroup.com/articles/peak-end-rule/)* (Nielsen Norman Group - UX Perspective).\n"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
                 "id": "science-overview",
                 "title": "Science",
                 "icon": "fas fa-dna",
