@@ -27,6 +27,11 @@ Date: January 13, 2026
 <br>
 
 ### WEF Report: "Cyber-Fraud" Now Outranks Ransomware
+
+![WEF Report](https://assets.weforum.org/report/cover_image/responsive_thumbnail_webp_QCV9PYtw81K_YOp7U7Ic_Ht3IoEIEgPRnmWIYonSGZY.webp)
+
+Date: January 12, 2026
+
 - **The Report:** The World Economic Forum released its *Global Cybersecurity Outlook 2026* on January 12, revealing a major shift in the threat landscape.
 - **The Detail:** For the first time, CEOs rated "Cyber-enabled Fraud" (deepfakes, manipulated financial transfers) as a higher concern than [[ransomware|Ransomware]], driven by the accessibility of AI cloning tools.
 - **The Impact:** This signals a strategic pivot for defenders: while [[encryption]] attacks (ransomware) are stabilizing, the integrity of *communication* (is this video call real?) is becoming the new battleground.
@@ -37,6 +42,11 @@ Date: January 13, 2026
 <br>
 
 ### Global Crackdown on DeepSeek Intensifies
+
+![DeepSeek App](https://www.insurancejournal.com/app/uploads/2025/02/deepseek-app-on-smartphone-25028119378678-AP-768x512.jpg)
+
+Date: January 7, 2026
+
 - **The Scrutiny:** Following its rapid rise, Chinese AI firm DeepSeek faced a wave of regulatory actions this week, with Australia and France launching probes into its data handling practices.
 - **The Detail:** Concerns focus on the app's data storage policies and potential ties to state surveillance, leading to bans on government devices in multiple jurisdictions as of mid-January.
 - **The Impact:** This geopolitical friction highlights the fragmentation of the global "AI Stack," potentially forcing multinational companies to choose between Western-sanctioned tools and cost-effective Asian alternatives.
@@ -49,6 +59,11 @@ Date: January 13, 2026
 ## Artificial Intelligence
 
 ### DeepSeek Publishes "Engram" to Bypass Chip Sanctions
+
+![Engram](https://techwireasia.com/wp-content/uploads/2026/01/solen-feyissa-MHgLD0-9VvM-unsplash-2048x1366.jpg)
+
+Date: January 14, 2026
+
 - **The Breakthrough:** On Jan 14, DeepSeek published a technical paper detailing "[[deepseek-engram|Engram]]," a new training method designed to build massive models using older, less powerful chips.
 - **The Detail:** The technique optimizes memory usage to overcome hardware bottlenecks, effectively allowing them to train GPT-4 class models without needing restricted Nvidia H100/Blackwell GPUs.
 - **The Impact:** This undermines the effectiveness of US semiconductor export controls, suggesting that algorithmic innovation is outpacing hardware restrictions in the global AI arms race.
@@ -59,6 +74,11 @@ Date: January 13, 2026
 <br>
 
 ### OpenAI Signs $10B Inference Deal with Cerebras
+
+![Cerebras](https://theaiinsider.tech/wp-content/uploads/2026/01/Screenshot-2025-09-26-at-11.46.06-3.png)
+
+Date: January 16, 2026
+
 - **The Deal:** In a move to diversify away from Nvidia, OpenAI has reportedly secured a multi-year compute agreement valued at over $10 billion with chipmaker Cerebras Systems.
 - **The Detail:** The partnership focuses specifically on "Inference" (running the models) rather than training, utilizing Cerebras' wafer-scale chips to drastically lower the cost and latency of ChatGPT responses.
 - **The Impact:** This is a direct challenge to Nvidia's monopoly, signaling that top AI labs are willing to fund alternative hardware ecosystems to reduce their dependency on a single supplier.
@@ -69,6 +89,11 @@ Date: January 13, 2026
 <br>
 
 ### Microsoft Report: DeepSeek Dominates 89% of Chinese Market
+
+![DeepSeek Market Share](https://capacityglobal.com/wp-content/uploads/2025/09/urlhttp3A2F2Feuromoney-brightspot.s3.amazonaws.com2F862Fa62F1eb8334f407f9c61b28e788f8b862Fcm-microsoft1-12.png)
+
+Date: January 13, 2026
+
 - **The Statistic:** A new Microsoft AI Diffusion report (Jan 13) highlights that DeepSeek has captured nearly 89% of the AI user base in China, vastly outperforming local competitors like Baidu.
 - **The Detail:** The report warns of a widening "AI Divide," where the Global South is adopting affordable, open-weight models from China, while the Global North sticks to expensive, closed US models.
 - **The Impact:** This entrenchment creates a "bifurcated internet" for AI, where future software ecosystems in Africa and SE Asia may be built on Chinese standards rather than Western APIs.
@@ -81,6 +106,11 @@ Date: January 13, 2026
 ## General Technology
 
 ### TSMC Forecasts 30% Growth Driven by "Insatiable" AI Demand
+
+![TSMC Forecast](https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20260116064457.jpg)
+
+Date: January 16, 2026
+
 - **The Forecast:** On Jan 16, [[semiconductor]] giant TSMC projected a nearly 30% revenue jump for 2026, shattering analyst expectations.
 - **The Detail:** The growth is driven almost entirely by demand for 2nm and 3nm chips used in AI accelerators, prompting TSMC to increase its capital expenditure to expand production capacity.
 - **The Impact:** As the sole manufacturer for both Apple and Nvidia's best chips, TSMC's confidence confirms that the "AI Boom" is not slowing down in 2026; in fact, hardware demand is accelerating.
@@ -90,17 +120,12 @@ Date: January 13, 2026
 ---
 <br>
 
----
-title: Week 03
-tags: WeeklyUpdate, Aerospace, BioTech, Engineering, Space
-desc: Summary of 10 January - 16 January 2026.
----
-
-# Week 03
-
-## General Technology (Aero, Space & BioTech Edition)
-
 ### Historic Medical Evacuation from ISS (NASA Crew-11)
+
+![Crew-11](https://cdn.kpbs.org/dims4/default/8cf7169/2147483647/strip/true/crop/1253x772+0+84/resize/1760x1084!/format/webp/quality/90/?url=https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F1253x940%2043%200%2Fresize%2F1253x940%21%2F%3Furl%3Dhttp%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F85%2F06%2F2af7dc874dea8039c7c243a3b4f6%2Fap26014814815837.jpg)
+
+Date: January 15, 2026
+
 - **The Event:** On Jan 15, NASA’s Crew-11 astronauts returned to Earth a month early aboard a SpaceX Dragon capsule, marking the first time in history that a medical emergency forced an early end to a station mission.
 - **The Detail:** While NASA kept the specific astronaut's condition confidential due to privacy rules, the urgency required an unscheduled "splashdown" off the coast of San Diego to get the crew member to a hospital immediately.
 - **The Impact:** This rare event tests the "Emergency Return" protocols that will be critical for future Mars missions, where a 10-hour flight home is impossible, highlighting the need for advanced autonomous medical tech in deep space.
@@ -111,6 +136,11 @@ desc: Summary of 10 January - 16 January 2026.
 <br>
 
 ### Breakthrough "Epigenetic" CRISPR Tool Fixes Genes Without Cutting
+
+![CRISPR](https://www.sciencedaily.com/images/1920/dna-repair-genetic-mutation-damage.webp)
+
+Date: January 5, 2026
+
 - **The Discovery:** Researchers at UNSW Sydney have validated a new [[crispr|CRISPR]] technique that "switches" genes on or off by removing chemical tags (methylation), rather than cutting the DNA strand itself.
 - **The Detail:** Traditional CRISPR acts like molecular scissors (risking unintended damage); this new method acts like a molecular "eraser," removing the "silencing" markers on genes to treat conditions like Sickle Cell Anemia without altering the genome sequence.
 - **The Impact:** This resolves a decades-long biological debate and offers a significantly safer path for gene therapy, reducing the risk of accidental mutations or cancer associated with DNA-cutting methods.
@@ -122,6 +152,11 @@ desc: Summary of 10 January - 16 January 2026.
 <br>
 
 ### Airbus Launches "SpaceRAN" to Standardize 5G from Orbit
+
+![SpaceRAN](https://mediarenditions.airbus.com/YxF8zRxCB6Xwb4_lGaCzXLd243twMw2ao3GX2bqRyf0/resize?src=kpkp%3A%2F%2Fairbus%2F38%2F676%2F676942-ttukbtg06j.jpg&w=2560&h=1200&poiX=50&poiY=50&el=true&t=fill-down)
+
+Date: January 14, 2026
+
 - **The Innovation:** Airbus UpNext has launched a demonstrator program called "SpaceRAN" to test a standardized way for satellites to provide direct-to-device 5G connectivity without proprietary lock-ins.
 - **The Detail:** Unlike Starlink’s closed system, SpaceRAN uses a "software-defined" satellite architecture that allows standard commercial 5G devices to connect to satellites as if they were normal cell towers.
 - **The Impact:** If successful, this creates a unified global standard for [[ntn|Non-Terrestrial Networks]], allowing aviation, shipping, and remote industrial sites to switch between satellite providers instantly without changing hardware.
@@ -133,6 +168,11 @@ desc: Summary of 10 January - 16 January 2026.
 <br>
 
 ### China Launches "Yaogan-50" in First 2026 Orbital Mission
+
+![Yaogan-50](https://img.inform.kz/kazinform-photobank/media/2026-01-13/a26d1af9-17de-4c42-81e0-3adf4f799e79.webp)
+
+Date: January 13, 2026
+
 - **The Launch:** China Aerospace Science and Technology Corp (CASC) successfully conducted its first launch of 2026, sending the Yaogan-50 remote sensing satellite into orbit via a Long March 6 rocket.
 - **The Detail:** The satellite is equipped with high-definition land survey sensors officially designated for "disaster prevention and crop estimation," though western analysts often associate the Yaogan series with electronic surveillance.
 - **The Impact:** This kickstarts China's ambitious 2026 launch calendar, which aims to exceed 100 orbital missions this year, further accelerating the density of the Low Earth Orbit (LEO) environment.
