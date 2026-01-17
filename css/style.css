@@ -166,6 +166,27 @@ body[data-theme="dark"] .theme-toggle .fa-moon {
     padding: 10px 0 30px 0;
 }
 
+/* Custom Scrollbar for Sidebar */
+.nav-tree::-webkit-scrollbar {
+    width: 6px;
+    /* Slightly thinner for sidebar */
+}
+
+.nav-tree::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.nav-tree::-webkit-scrollbar-thumb {
+    background-color: var(--border-color);
+    border-radius: 20px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.nav-tree::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text-secondary);
+}
+
 .nav-section {
     margin-bottom: 24px;
 }

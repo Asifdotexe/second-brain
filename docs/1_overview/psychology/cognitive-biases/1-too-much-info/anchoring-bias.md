@@ -7,6 +7,8 @@ tags: Psychology, Negotiation, Marketing
 
 The Sticky Price Tag.
 
+![Anchoring Bias](https://images.prismic.io/thedecisionlab/ac7d00b4-1c09-4c47-97f3-72d7bf8c922d_anchoring-effect-bias.jpeg?auto=compress,format&rect=0,1,2387,1667&w=2388&h=1668)
+
 **Anchoring Bias** is the cognitive tendency to rely too heavily on the first piece of information offered (the "anchor") when making decisions.
 
 Imagine walking into a luxury store. You see a bag for $5,000. "Insane!" you think. Then you see a smaller bag for $1,200. "Ooh, that's a steal!"

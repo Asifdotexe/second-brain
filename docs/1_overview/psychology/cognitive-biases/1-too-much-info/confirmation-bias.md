@@ -7,11 +7,13 @@ tags: Psychology, CriticalThinking, DecisionMaking
 
 The "Yes Man" inside your head.
 
-![Confirmation Bias](https://fs.blog/wp-content/uploads/2017/05/Confirmation-Bias.png)
+![Confirmation Bias](https://images.prismic.io/thedecisionlab/ZkdQKiol0Zci9Pcq_Untitled_Artwork35.png?auto=format,compress)
 
 **Confirmation Bias** is the tendency to search for, interpret, favor, and recall information in a way that confirms your pre-existing beliefs or hypotheses.
 
 Imagine you are looking for a new car. You decide you want a red Toyota. Suddenly, you see red Toyotas *everywhere*. Did the factory just make more? No. Your brain is filtering out the blue Hondas and white Fords because they don't match your current "mission." Confirmation Bias works the same way with ideas. If you believe "Left-handed people are creative," you will notice every creative lefty and ignore every uncreative one.
+
+![Confirmation Bias](https://images.prismic.io/thedecisionlab/b2f27a87-b3da-487f-8359-adf46d4bd96a_Confirmation_Bias_TDL-1024x715.png?auto=compress,format)
 
 ## How it Works
 
