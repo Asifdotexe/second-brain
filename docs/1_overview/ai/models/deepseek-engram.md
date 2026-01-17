@@ -25,5 +25,5 @@ It was mathematically very hard. Getting thousands of slow, disconnected chips t
 
 ### Further Reading
 
-*   **News:** *[The Great GPU Bypass](https://www.wired.com/story/china-chip-sanctions-deepseek-engram-2026/)* (Wired Article on the geopolitical impact).
-*   **Paper:** *[Distributed Training on High-Latency Interconnects](https://arxiv.org/abs/2601.12345)* (The original technical paper).
+*   **Paper:** [Engram Paper](https://github.com/deepseek-ai/Engram/blob/main/Engram_paper.pdf)
+*   **Github Repository:** [Engram Repo](https://github.com/deepseek-ai/Engram)
