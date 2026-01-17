@@ -115,6 +115,32 @@ function init() {
     }
   });
 
+
+  // --- EVENT DELEGATION: BREADCRUMBS ---
+  const breadcrumbs = document.getElementById("breadcrumbs");
+  if (breadcrumbs) {
+    breadcrumbs.addEventListener("click", (e) => {
+      const item = e.target.closest(".breadcrumb-item");
+      // Use logical AND to ensure item matches and has dataset
+      if (item && item.dataset.action) {
+        e.preventDefault();
+        const action = item.dataset.action;
+
+        switch (action) {
+          case "home":
+            renderLandingPage();
+            break;
+          case "openSection":
+            if (item.dataset.key) openSection(item.dataset.key);
+            break;
+          case "loadContent":
+            if (item.dataset.id) loadContent(item.dataset.id);
+            break;
+        }
+      }
+    });
+  }
+
   renderSidebar();
 
   // Handle Brand Clicks (Home)
@@ -306,8 +332,9 @@ function renderBreadcrumbs(path) {
   if (!container) return;
 
   // Start with Home
+  // Security Fix: Removed onclick, added data-action="home"
   let html = `
-        <div class="breadcrumb-item" onclick="renderLandingPage()">
+        <div class="breadcrumb-item" data-action="home">
             <i class="fas fa-home"></i>
         </div>
     `;
@@ -319,20 +346,20 @@ function renderBreadcrumbs(path) {
     const isLast = index === path.length - 1;
     const activeClass = isLast ? "active" : "";
 
-    // Determine click action
-    let onclick = "";
+    // Determine data attributes
+    let dataAttributes = "";
     if (!isLast) {
       if (step.isSection) {
-        // If it's a section, we can open it (loads first item)
-        // or just make it text if we prefer. Let's make it actionable.
-        onclick = `onclick="openSection('${step.key}')"`;
+        // Section: Action = openSection, Key = step.key
+        dataAttributes = `data-action="openSection" data-key="${step.key}"`;
       } else {
-        onclick = `onclick="loadContent('${step.id}')"`;
+        // Content: Action = loadContent, Id = step.id
+        dataAttributes = `data-action="loadContent" data-id="${step.id}"`;
       }
     }
 
     html += `
-            <div class="breadcrumb-item ${activeClass}" ${onclick}>
+            <div class="breadcrumb-item ${activeClass}" ${dataAttributes}>
                 ${step.title}
             </div>
         `;
