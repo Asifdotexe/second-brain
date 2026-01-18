@@ -1250,6 +1250,170 @@ const wikiData = {
                         ]
                     },
                     {
+                        "id": "logical-fallacies",
+                        "title": "Logical Fallacies",
+                        "icon": "fas fa-shapes",
+                        "desc": "Flaws in reasoning that invalidate arguments",
+                        "view": "list",
+                        "children": [
+                            {
+                                "id": "ad-hominem",
+                                "title": "Ad Hominem",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Latin"
+                                ],
+                                "content": "# Ad Hominem\n\nShooting the Messenger.\n\n**Ad Hominem** (Latin for \"To the Person\") is a fallacy where you attack the *character* or *circumstances* of the person making the argument, rather than the argument itself.\n\nThink of it like **A Broken Clock**.\n*   **The Reality:** Even a broken clock is right twice a day. Even a rude, hypocritical, or unlikable person can make a mathematically correct statement.\n*   **The Fallacy:** \"You can't believe the clock is showing 12:00 because the clock is ugly and rusty.\" The rust has nothing to do with the time.\n\n## How it Works\n\n1.  **Avoidance:** You can't think of a logical counter-argument.\n2.  **Deflection:** You shift focus to the opponent's traits (appearance, past actions, intelligence). \"You're wrong about the tax code because you cheated on your wife.\"\n3.  **Invalidation:** The audience assumes bad person = bad idea.\n\n## FAQs\n\n*1. Is an insult always an Ad Hominem?*\nNo.\n*   **Insult:** \"You are an idiot.\" (Rude, but not a fallacy if it's just an exclamation).\n*   **Ad Hominem:** \"You are wrong *because* you are an idiot.\" (Fallacy: linking the claim's validity to the insult).\n\n*2. When is character relevant?*\nIf the argument *is* about their character. In a trial for fraud, the defendant's honesty *is* the topic. But in a debate about climate change, the scientist's tax returns are usually irrelevant to the data.\n\n### Further Reading\n\n*   **Article:** *[Tu Quoque](https://en.wikipedia.org/wiki/Tu_quoque)* (The \"You too!\" variant).\n"
+                            },
+                            {
+                                "id": "appeal-to-authority",
+                                "title": "Appeal to Authority",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Status"
+                                ],
+                                "content": "# Appeal to Authority\n\nBecause Dad Said So.\n\n**The Appeal to Authority** (*Argumentum ad Verecundiam*) is a fallacy where you claim something is true *solely* because an \"expert\" or famous person said it, without offering any actual evidence.\n\nThink of it like **A White Lab Coat**.\n*   **The Reality:** Wearing a lab coat doesn't make you right. Even Einstein made math errors. Truth comes from data, not costume.\n*   **The Fallacy:** \"This toothpaste is the best because Dr. Oz says so.\" (Is Dr. Oz a dentist? Does he have data? Or is he just famous?)\n\n## How it Works\n\n1.  **Status over Facts:** \"Professor X says the earth is flat.\"\n2.  **Irrelevant Expertise:** \"My mechanic says vaccines are dangerous.\" (Mechanics are experts on cars, not immunology).\n3.  **Blind Trust:** It shortcuts the need for proof.\n\n## FAQs\n\n*1. Is citing experts bad?*\nNo! It is *good* to listen to experts. The fallacy is assuming they are *infallible*.\n*   **Valid:** \"99% of climate scientists agree the earth is warming based on this data.\" (Consensus + Data).\n*   **Fallacy:** \"It's true *because* Newton said it.\" (Newton also believed in Alchemy).\n\n*2. Why do we do it?*\nIt's a cognitive shortcut. We evolved to trust tribal elders (Heuristics). Verifying everything ourselves is exhausting.\n\n### Further Reading\n\n*   **Concept:** *[halo-effect|The Halo Effect]* (Trusting pretty/famous people more than we should).\n"
+                            },
+                            {
+                                "id": "circular-reasoning",
+                                "title": "Circular Reasoning",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Tautology"
+                                ],
+                                "content": "# Circular Reasoning\n\nThe Snake Eating Its Tail.\n\n**Circular Reasoning** (Begging the Question) is a fallacy where the conclusion is hidden in the premise. You aren't actually proving anything; you are just repeating your assumption in different words.\n\nThink of it like **A Dictionary Loop**.\n*   **The Definition:** \"A Law is something that is legal.\"\n*   **The Fallacy:** \"Why is it illegal? Because it's against the Law.\"\n*   **The Problem:** You haven't explained *why*. You've just run in a circle.\n\n## How it Works\n\n1.  **Premise = Conclusion:** \"The Bible is the word of God.\"\n2.  **Proof:** \"Because it says so in the Bible.\"\n3.  **Result:** To believe the proof, you must already believe the conclusion. No new information is added.\n\n## FAQs\n\n*1. Is it obvious?*\nRarely. It's usually hidden in complex language. \"We must cut spending (Conclusion) because fiscal austerity is necessary (Premise).\" Fiscal austerity *means* cutting spending. It sounds smart, but it's a loop.\n\n*2. What is 'Begging the Question'?*\nIt's the formal name for this. It doesn't mean \"Raising the question.\" It means \"Assuming the answer.\"\n\n### Further Reading\n\n*   **Concept:** *[Tautology](https://en.wikipedia.org/wiki/Tautology_(logic))* (Existing just to be true).\n"
+                            },
+                            {
+                                "id": "false-dilemma",
+                                "title": "False Dilemma",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "BlackAndWhite"
+                                ],
+                                "content": "# False Dilemma\n\nBlack and White.\n\n**The False Dilemma** (or False Dichotomy) is a fallacy where a complex situation is presented as having only two options; usually \"My Way\" or \"The Apocalypse\"\u2014when in reality there are many middle grounds.\n\nThink of it like **A Light Switch vs. A Dimmer**.\n*   **The Fallacy:** \"The room is either completely dark or blindingly bright!\" (A Switch).\n*   **The Reality:** Most rooms have dimmer switches. You can have 50% brightness, 20% brightness, or candle light.\n\n## How it Works\n\n1.  **Over-Simplification:** \"You are either with us, or against us.\"\n2.  **Forced Choice:** This trap forces the opponent to defend an extreme position they don't actually hold, or accept your extreme position.\n3.  **Ignoring Nuance:** It erases compromise, context, and third options.\n\n## FAQs\n\n*1. Is it always a fallacy?*\nNo. Sometimes there *are* only two options. \"You are either pregnant or you are not.\" There is no \"kind of\" pregnant. But in politics and ethics, binary choices are rare.\n\n*2. Why is it used?*\nIt creates urgency and fear. Salespeople use it (\"Buy now or lose this deal forever!\") to bypass critical thinking.\n\n### Further Reading\n\n*   **Article:** *[The Middle Ground Fallacy](https://yourlogicalfallacyis.com/middle-ground)* (The opposite error: assuming the truth is *always* in the middle).\n"
+                            },
+                            {
+                                "id": "middle-ground",
+                                "title": "Middle Ground Fallacy",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate"
+                                ],
+                                "content": "# Middle Ground Fallacy\n\nThe Truth is in the Middle.\n\n**The Middle Ground Fallacy** (Argumentum ad Temperantiam) is the massive assumption that because two opposing views exist, the correct or honest position *must* be the compromise between them.\n\nThink of it like **Drinking Poison**.\n*   **Person A:** \"You should drink a gallon of cyanide.\"\n*   **Person B:** \"You should drink zero cyanide.\"\n*   **The Fallacy:** \"We should compromise and drink half a gallon of cyanide.\"\n*   **The Reality:** Sometimes one side is 100% right and the other is 100% wrong.\n\n## How it Works\n\n1.  **Extremes:** Position A (Sky is Blue) vs Position B (Sky is Yellow).\n2.  **Compromise:** Position C (Sky is Green).\n3.  **Error:** The sky is actually Blue. The presence of a \"Yellow\" movement doesn't make the sky Green.\n\n## FAQs\n\n*1. Isn't compromise good?*\nSocially, yes. Stick to your guns on *facts*, but compromise on *actions*. \"We agree the house is on fire (Fact), but we compromise on using a hose vs a bucket (Action).\"\n\n### Further Reading\n\n*   **Opposite:** *[[false-dilemma|False Dilemma]]* (Assuming there is *no* middle ground).\n"
+                            },
+                            {
+                                "id": "post-hoc",
+                                "title": "Post Hoc Fallacy",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Statistics",
+                                    "Latin"
+                                ],
+                                "content": "# Post Hoc Fallacy\n\nThe Rain Dance.\n\n**Post Hoc Ergo Propter Hoc** (Latin for \"After this, therefore because of this\") is the assumption that because Event B followed Event A, Event A *caused* Event B.\n\nThink of it like **The Rain Dance**.\n*   **The Event:** I did a dance. Then it rained.\n*   **The Fallacy:** \"My dance caused the rain.\"\n*   **The Reality:** Correlation is not Causation. The rain was coming anyway.\n\n## How it Works\n\n1.  **Observation:** \"I wore my lucky socks.\" -> \"My team won the game.\"\n2.  **Assumption:** \"My socks made them win.\"\n3.  **Error:** Ignoring coincidence or other factors (the team practiced hard).\n\n## FAQs\n\n*1. Correlation vs. Causation?*\nThis is the core of the fallacy.\n*   **Correlation:** Ice cream sales and murder rates go up at the same time (Summer).\n*   **Causation:** Ice cream does not cause murder. Heat causes both.\n\n*2. Why do we believe it?*\nOur brains are pattern-matching machines. We evolved to survive by finding causes (\"I ate berry -> I got sick\"). We are prone to \"False Positives\" (Superstitions).\n\n### Further Reading\n\n*   **Concept:** *[Spurious Correlations](https://www.tylervigen.com/spurious-correlations)* (Funny graphs showing things like \"Cheese consumption correlates with strangulation by bedsheets\").\n"
+                            },
+                            {
+                                "id": "red-herring",
+                                "title": "Red Herring",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Distraction"
+                                ],
+                                "content": "# Red Herring\n\nLook, a Squirrel!\n\n**A Red Herring** is a fallacy where someone introduces an irrelevant topic to divert attention from the original issue.\n\nThink of it like **Training Dogs**.\n*   **The Origin:** Escaped prisoners would supposedly drag a strong-smelling fish (Red Herring) across their trail to confuse the tracking dogs.\n*   **The Tactic:** \"You asked me about the budget deficit? Let me tell you about how much I love the flag.\" The flag is the fish. It smells strong (emotional), but it leads nowhere.\n\n## How it Works\n\n1.  **Topic A:** \"Did you steal the money?\"\n2.  **Topic B:** \"I have worked at this company for 20 years and I love my coworkers!\" (Irrelevant).\n3.  **Confusion:** The accuser starts arguing about the coworker love instead of the theft.\n\n## FAQs\n\n*1. Is it the same as Straw Man?*\nNo.\n*   **Straw Man:** Twists your *actual* argument.\n*   **Red Herring:** Changes the subject entirely.\n\n### Further Reading\n\n*   **Concept:** *[Whataboutism](https://en.wikipedia.org/wiki/Whataboutism)* (A specific type of Red Herring: \"But what about *them*?\").\n"
+                            },
+                            {
+                                "id": "slippery-slope",
+                                "title": "Slippery Slope",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Fear"
+                                ],
+                                "content": "# Slippery Slope\n\nThe Snowball Effect.\n\n**The Slippery Slope** is a fallacy where you argue that a relatively small first step will inevitably lead to a chain of related events culminating in some significant (usually negative) effect.\n\nThink of it like **A Slide**.\n*   **The Fallacy:** \"If I let you have a cookie today, you'll eat cookies every day, get fat, lose your job, and die alone.\"\n*   **The Reality:** Eating one cookie rarely leads to dying alone. There are many stops on the slide where you can get off.\n\n## How it Works\n\n1.  **Step A:** \"We should ban automatic assault rifles.\"\n2.  **The Leap:** \"If we do that, next they'll ban handguns, then kitchen knives, and soon we'll be living in a tyranny!\"\n3.  **The Fear:** Focuses on the terrifying *End Result* rather than the actual merit of *Step A*.\n\n## FAQs\n\n*1. Are slopes never slippery?*\nSometimes they are. \"If I take heroin once, I might get addicted.\" That is a valid risk.\n*   **Valid Argument:** Proves the causal link between A and B roughly exists.\n*   **Fallacy:** Assumes the link is *inevitable* without evidence, usually to fearmonger.\n\n### Further Reading\n\n*   **Concept:** *[Gateway Drug Theory](https://en.wikipedia.org/wiki/Gateway_drug_effect)* (A classic real-world application of this logic, widely debated).\n"
+                            },
+                            {
+                                "id": "steel-manning",
+                                "title": "Steel-Manning",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Philosophy",
+                                    "MentalModels"
+                                ],
+                                "content": "# Steel-Manning\n\nIroning out the Truth.\n\n**Steel-Manning** is the opposite of the [[straw-man|Straw Man Fallacy]]. It is the practice of addressing the *strongest possible version* of your opponent's argument, even if they didn't articulate it well themselves.\n\nThink of it like **Training with a Heavy Weight**.\n*   **Straw Man:** You fight a weak opponent (a scarecrow) to look strong. You gain nothing.\n*   **Steel Man:** You fight the strongest opponent (a steel robot). If you win, you *know* you are right. If you lose, you learn something.\n\n## How it Works\n\n1.  **Listen:** Hear their argument.\n2.  **Improve:** \"If I understand you correctly, you're saying X. And to make that even stronger, you could also argue Y.\"\n3.  **Engage:** \"Now that we have the best version of this idea, here is why I still disagree.\"\n\n## Why do it?\n\n*   **Truth-Seeking:** It removes ego. You aren't trying to \"win\" a debate; you are trying to find the best answer.\n*   **Persuasion:** People are more likely to listen to you if they feel you truly understand them.\n\n### Further Reading\n\n*   **Contra:** *[[straw-man|Straw Man Fallacy]]* (The common, lazy alternative).\n"
+                            },
+                            {
+                                "id": "straw-man",
+                                "title": "Straw Man Fallacy",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Philosophy"
+                                ],
+                                "content": "# Straw Man Fallacy\n\nFighting a Scarecrow.\n\n**The Straw Man Fallacy** prevents honest debate by replacing your opponent's actual (strong) argument with a distorted, exaggerated, or weak version (the \"Straw Man\") that is easier to defeat.\n\nThink of it like **Fighting a Scarecrow**.\n*   **The Reality:** Your opponent is a skilled knight (their actual argument).\n*   **The Fallacy:** Instead of fighting the knight, you build a scarecrow out of hay, dress it in the knight's armor, and easily knock it over. You claim victory, but you haven't actually touched the knight.\n\n## How it Works\n\n1.  **Distort:** Take \"I think we should fund schools more\" and twist it into \"My opponent wants to bankrupt the country by throwing money at broken systems!\"\n2.  **Attack:** Viciously attack the idea of \"bankrupting the country.\"\n3.  **Claim Victory:** Pretend you have defeated the original argument about funding schools.\n\n## FAQs\n\n*1. Is it lying?*\nNot always intentional. Sometimes people genuinely misunderstand an argument and attack their *misconception* of it. However, in politics, it is usually a deliberate tactic.\n\n*2. How do I counter it?*\n\"[[steel-manning|Steel-Manning]].\" Ignore the scarecrow. Calmly restate your *actual* argument, or correct their distortion explicitly: \"I didn't say we should bankrupt the country; I said we should reallocate 1% of the budget.\"\n\n### Further Reading\n\n*   **Concept:** *[Steel-Manning](https://en.wikipedia.org/wiki/Steel_manning)* (The opposite: attacking the *strongest* version of an argument).\n"
+                            },
+                            {
+                                "id": "tautology",
+                                "title": "Tautology",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Rhetoric"
+                                ],
+                                "content": "# Tautology\n\nThe ATM Machine.\n\n**A Tautology** is a statement that is true by necessity or by virtue of its logical form. In rhetoric, it often appears as a redundant statement that adds no new information, similar to [[circular-reasoning|Circular Reasoning]].\n\nThink of it like **The ATM Machine**.\n*   **The Phrase:** \"ATM Machine\" (Automated Teller Machine Machine). The word \"Machine\" is already in \"ATM\".\n*   **The Logic:** \"It is what it is.\" \"The unwashed are those who generally remain unclean.\"\n\n## How it Works\n\n1.  **The Loop:** A = A.\n2.  **The Filler:** It sounds profound (\"Boys will be boys\") but essentially says \"Boys will be [what boys are].\" It defines a thing by itself.\n3.  **The Trap:** In logic, a tautology is *always true* (A or not A), but in debate, it is *useless* because it proves nothing about the real world.\n\n## FAQs\n\n*1. Is it a fallacy?*\nNot strictu sensu. A tautology is logically *valid* (true). But using it as an *argument* is fallacious because it is empty. \"We will win because we are the winners.\"\n\n### Further Reading\n\n*   **Related:** *[[circular-reasoning|Circular Reasoning]]* (Using the conclusion as the premise).\n"
+                            },
+                            {
+                                "id": "tu-quoque",
+                                "title": "Tu Quoque",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Latin"
+                                ],
+                                "content": "# Tu Quoque\n\nYou Too!\n\n**Tu Quoque** (Latin for \"You also\") is a fallacy where you reject an argument because the person making it is a hypocrite, rather than addressing the argument itself. It is a specific type of [[ad-hominem|Ad Hominem]].\n\nThink of it like **The Smoking Doctor**.\n*   **The Scenario:** A doctor smokes a pack a day. He tells you: \"Smoking is bad for your lungs, here is the data.\"\n*   **The Fallacy:** \"You smoke! So your data must be fake.\"\n*   **The Reality:** The doctor is a hypocrite, but his data is still correct.\n\n## How it Works\n\n1.  **Accusation:** \"You cheated on your taxes!\"\n2.  **Reflection:** \"Well, you cheated on yours last year!\" (Tu Quoque).\n3.  **Result:** Now we are arguing about you, not me. The original accusation is ignored.\n\n## FAQs\n\n*1. Does hypocrisy matter?*\nFor *trust*, yes. For *logic*, no. A thief can correctly say \"Stealing is illegal.\"\n\n### Further Reading\n\n*   **Parent:** *[[ad-hominem|Ad Hominem]]* (Attacking the person).\n*   **Variant:** *[[whataboutism|Whataboutism]]* (Distracting with other people's faults).\n"
+                            },
+                            {
+                                "id": "whataboutism",
+                                "title": "Whataboutism",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Propaganda"
+                                ],
+                                "content": "# Whataboutism\n\nBut What About Them?\n\n**Whataboutism** is a tactic used to deflect criticism by accusing the critic of the same thing (or something worse), without addressing the original criticism. It is a specific, weaponized version of *[[tu-quoque|Tu Quoque]]*.\n\nThink of it like **The Speeding Ticket**.\n*   **The Cop:** \"I pulled you over for speeding.\"\n*   **The Driver:** \"But what about that guy? He was driving faster than me!\"\n*   **The Reality:** That guy's speed doesn't make your speed legal. You still broke the law.\n\n## How it Works\n\n1.  **Attack:** \"Country A violates human rights.\"\n2.  **Deflection:** \"What about Country B? They do it too!\"\n3.  **Effect:** The conversation shifts to Country B. Country A's crimes are forgotten/normalized.\n\n## FAQs\n\n*1. Is it a fallacy?*\nYes, because it is a *Red Herring*. It changes the subject. It doesn't prove innocence; it just proves shared guilt.\n\n*2. Why is it effective?*\nIt appeals to our sense of fairness. We hate hypocrisy. But hypocrisy doesn't change facts.\n\n### Further Reading\n\n*   **Parent:** *[[red-herring|Red Herring]]* (The broad category of distraction).\n"
+                            }
+                        ]
+                    },
+                    {
                         "id": "political",
                         "title": "Political",
                         "icon": "fas fa-folder",
@@ -1731,7 +1895,7 @@ const wikiData = {
                     "Links",
                     "Internet"
                 ],
-                "content": "# Cool Sites\n\nA collection of useful, interesting, or beautiful websites.\n\n## Tech Explainers\n\nSites that explain complex technical concepts simply.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **Linux Ate My Ram** | A classic explanation of why \"free memory\" is wasted memory in Linux (and why `top` confuses you). | [linuxatemyram.com](https://www.linuxatemyram.com/) |\n| **Linux Kernel Word Count** | A visualizer showing how often specific words (and swear words) appear in the Linux source code. | [vidarholen.net](https://www.vidarholen.net/contents/wordcount/) |\n\n## Learning & Roadmaps\n\nGuides and interactive learning tools.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **roadmap.sh** | Interactive developer roadmaps for frontend, backend, DevOps, and more. | [roadmap.sh](https://roadmap.sh/) |\n| **KC7 Cyber** | A data-driven cybersecurity game that teaches investigation skills. | [kc7cyber.com](https://kc7cyber.com/) |\n| **React Graph Gallery** | Beautiful examples of charts and data visualizations (e.g. Radar Chart Animation). | [react-graph-gallery.com](http://react-graph-gallery.com/example/radar-chart-animation) |\n| **TensorFlow Playground** | Visualize and play with neural networks in your browser. | [playground.tensorflow.org](https://playground.tensorflow.org/) |\n| **NotebookLM** | Google's AI research tool that acts as a personalized research assistant. | [notebooklm.google.com](https://notebooklm.google.com/) |\n| **MLU-Explain** | Interactive visual articles on machine learning concepts (Bias, Variance, etc.). | [mlu-explain.github.io](https://mlu-explain.github.io/) |\n\n\n## Reference\n\nUseful lists and wikis.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **List of Cognitive Biases** | Wikipedia's massive list of the flaws in human reasoning. | [Wikipedia](https://en.wikipedia.org/wiki/List_of_cognitive_biases) |\n\n\n## Internet Humor\n\nRecursive jokes and specific tools.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **Down Detector** | The actual site for checking outages. | [downdetector.in](https://downdetector.in/) |\n| **Down Detector's Down Detector** | Is Down Detector down? | [downdetectorsdowndetector.com](https://downdetectorsdowndetector.com/) |\n| **Down Detector's... Down Detector** | Is the site checking Down Detector down? | [downdetectorsdowndetectorsdowndetector.com](https://downdetectorsdowndetectorsdowndetector.com/) |\n| **The Final Boss** | We must go deeper. | [downdetectors...detector.com](https://www.downdetectorsdowndetectorsdowndetectorsdowndetector.com/) |\n"
+                "content": "# Cool Sites\n\nA collection of useful, interesting, or beautiful websites.\n\n## Tech Explainers\n\nSites that explain complex technical concepts simply.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **Linux Ate My Ram** | A classic explanation of why \"free memory\" is wasted memory in Linux (and why `top` confuses you). | [linuxatemyram.com](https://www.linuxatemyram.com/) |\n| **Linux Kernel Word Count** | A visualizer showing how often specific words (and swear words) appear in the Linux source code. | [vidarholen.net](https://www.vidarholen.net/contents/wordcount/) |\n\n## Learning & Roadmaps\n\nGuides and interactive learning tools.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **roadmap.sh** | Interactive developer roadmaps for frontend, backend, DevOps, and more. | [roadmap.sh](https://roadmap.sh/) |\n| **KC7 Cyber** | A data-driven cybersecurity game that teaches investigation skills. | [kc7cyber.com](https://kc7cyber.com/) |\n| **React Graph Gallery** | Beautiful examples of charts and data visualizations (e.g. Radar Chart Animation). | [react-graph-gallery.com](http://react-graph-gallery.com/example/radar-chart-animation) |\n| **TensorFlow Playground** | Visualize and play with neural networks in your browser. | [playground.tensorflow.org](https://playground.tensorflow.org/) |\n| **NotebookLM** | Google's AI research tool that acts as a personalized research assistant. | [notebooklm.google.com](https://notebooklm.google.com/) |\n| **MLU-Explain** | Interactive visual articles on machine learning concepts (Bias, Variance, etc.). | [mlu-explain.github.io](https://mlu-explain.github.io/) |\n\n\n## Reference\n\nUseful lists and wikis.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **List of Cognitive Biases** | Wikipedia's massive list of the flaws in human reasoning. | [Wikipedia](https://en.wikipedia.org/wiki/List_of_cognitive_biases) |\n\n\n## Internet Humor\n\nRecursive jokes and specific tools.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **Down Detector** | The actual site for checking outages. | [downdetector.in](https://downdetector.in/) |\n| **Down Detector's Down Detector** | Is Down Detector down? | [downdetectorsdowndetector.com](https://downdetectorsdowndetector.com/) |\n| **Down Detector's... Down Detector** | Is the site checking Down Detector down? | [downdetectorsdowndetectorsdowndetector.com](https://downdetectorsdowndetectorsdowndetector.com/) |\n| **The Final Boss** | We must go deeper. | [downdetectors...detector.com](https://www.downdetectorsdowndetectorsdowndetectorsdowndetector.com/) |\n| **Spurious Correlations** | Funny graphs showing unrelated things correlating (e.g., \"Cheese consumption correlates with strangulation by bedsheets\"). | [tylervigen.com](https://www.tylervigen.com/spurious-correlations) |\n"
             },
             {
                 "id": "github-prs",

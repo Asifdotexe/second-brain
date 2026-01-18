@@ -51,3 +51,4 @@ Recursive jokes and specific tools.
 | **Down Detector's Down Detector** | Is Down Detector down? | [downdetectorsdowndetector.com](https://downdetectorsdowndetector.com/) |
 | **Down Detector's... Down Detector** | Is the site checking Down Detector down? | [downdetectorsdowndetectorsdowndetector.com](https://downdetectorsdowndetectorsdowndetector.com/) |
 | **The Final Boss** | We must go deeper. | [downdetectors...detector.com](https://www.downdetectorsdowndetectorsdowndetectorsdowndetector.com/) |
+| **Spurious Correlations** | Funny graphs showing unrelated things correlating (e.g., "Cheese consumption correlates with strangulation by bedsheets"). | [tylervigen.com](https://www.tylervigen.com/spurious-correlations) |
