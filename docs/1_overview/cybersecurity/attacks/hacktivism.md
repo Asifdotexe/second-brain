@@ -15,8 +15,8 @@ Think of the internet like a giant, busy city.
 
 ## Key Tactics
 
-*   **[DDoS](ddos.md) (Distributed Denial of Service):** The Digital Sit-In. Thousands of computers flood a website with traffic until it crashes, effectively "blocking the entrance" to a government agency or corporation.
-*   **[Doxing](doxing.md):** The Digital Outing. Finding and publishing private information (documents, emails, names) of public figures to expose corruption or hypocrisy.
+*   **[[ddos|DDoS]] (Distributed Denial of Service):** The Digital Sit-In. Thousands of computers flood a website with traffic until it crashes, effectively "blocking the entrance" to a government agency or corporation.
+*   **[[doxing|Doxing]]:** The Digital Outing. Finding and publishing private information (documents, emails, names) of public figures to expose corruption or hypocrisy.
 *   **Defacement:** The Digital Graffiti. Taking over a website to replace its homepage with a political message or manifesto.
 
 ## FAQs

@@ -7,15 +7,16 @@ tags: Hardware, Computing, Gaming
 
 A factory with thousands of workers, instead of one genius.
 
-The **CPU** (Central Processing Unit) in your computer is like a **Professor**: extremely smart, can do complex math (calculus), but can only do one or two things at a time.
+The **[[cpu|CPU]]** (Central Processing Unit) in your computer is like a **Professor**: extremely smart, can do complex math (calculus), but can only do one or two things at a time.
 
 The **GPU** (Graphics Processing Unit) is like a **Factory** full of thousands of workers: they aren't very smart (basic math only), but they can do 10,000 simple things at the exact same time.
 
 ## Why is it used for AI?
 
 AI (and Video Games) require changing millions of pixels or calculating millions of numbers simultaneously.
-*   **CPU:** Solves one complex equation in 0.1 seconds.
+*   **[[cpu|CPU]]:** Solves one complex equation in 0.1 seconds.
 *   **GPU:** Solves 10,000 simple equations in 0.1 seconds.
+*   *(See also: [[tpu|TPUs]] for specialized AI/Cloud training and [[npu|NPUs]] for mobile AI).*
 
 ## FAQs
 
