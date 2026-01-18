@@ -1302,7 +1302,7 @@ const wikiData = {
                                     "Debate",
                                     "BlackAndWhite"
                                 ],
-                                "content": "# False Dilemma\n\nBlack and White.\n\n**The False Dilemma** (or False Dichotomy) is a fallacy where a complex situation is presented as having only two options; usually \"My Way\" or \"The Apocalypse\"\u2014when in reality there are many middle grounds.\n\nThink of it like **A Light Switch vs. A Dimmer**.\n*   **The Fallacy:** \"The room is either completely dark or blindingly bright!\" (A Switch).\n*   **The Reality:** Most rooms have dimmer switches. You can have 50% brightness, 20% brightness, or candle light.\n\n## How it Works\n\n1.  **Over-Simplification:** \"You are either with us, or against us.\"\n2.  **Forced Choice:** This trap forces the opponent to defend an extreme position they don't actually hold, or accept your extreme position.\n3.  **Ignoring Nuance:** It erases compromise, context, and third options.\n\n## FAQs\n\n*1. Is it always a fallacy?*\nNo. Sometimes there *are* only two options. \"You are either pregnant or you are not.\" There is no \"kind of\" pregnant. But in politics and ethics, binary choices are rare.\n\n*2. Why is it used?*\nIt creates urgency and fear. Salespeople use it (\"Buy now or lose this deal forever!\") to bypass critical thinking.\n\n### Further Reading\n\n*   **Article:** *[The Middle Ground Fallacy](https://yourlogicalfallacyis.com/middle-ground)* (The opposite error: assuming the truth is *always* in the middle).\n"
+                                "content": "# False Dilemma\n\nBlack and White.\n\n**The False Dilemma** (or False Dichotomy) is a fallacy where a complex situation is presented as having only two options; usually \"My Way\" or \"The Apocalypse\"; when in reality there are many middle grounds.\n\nThink of it like **A Light Switch vs. A Dimmer**.\n*   **The Fallacy:** \"The room is either completely dark or blindingly bright!\" (A Switch).\n*   **The Reality:** Most rooms have dimmer switches. You can have 50% brightness, 20% brightness, or candle light.\n\n## How it Works\n\n1.  **Over-Simplification:** \"You are either with us, or against us.\"\n2.  **Forced Choice:** This trap forces the opponent to defend an extreme position they don't actually hold, or accept your extreme position.\n3.  **Ignoring Nuance:** It erases compromise, context, and third options.\n\n## FAQs\n\n*1. Is it always a fallacy?*\nNo. Sometimes there *are* only two options. \"You are either pregnant or you are not.\" There is no \"kind of\" pregnant. But in politics and ethics, binary choices are rare.\n\n*2. Why is it used?*\nIt creates urgency and fear. Salespeople use it (\"Buy now or lose this deal forever!\") to bypass critical thinking.\n\n"
                             },
                             {
                                 "id": "middle-ground",
@@ -1765,31 +1765,175 @@ const wikiData = {
                 "title": "Science",
                 "icon": "fas fa-dna",
                 "desc": "Biology, Physics, and Chemistry",
-                "view": "list",
+                "view": "shelf",
                 "children": [
                     {
-                        "id": "crispr",
-                        "title": "CRISPR",
-                        "icon": "far fa-file-alt",
-                        "desc": "",
-                        "tags": [
-                            "Biology",
-                            "Genetics",
-                            "Biotech"
-                        ],
-                        "content": "# CRISPR\n\n**Think of it like the \"Find and Replace\" function in a word processor, but for DNA.**\n\n**CRISPR** (Clustered Regularly Interspaced Short Palindromic Repeats) is a biological tool that allows scientists to find a specific sequence of DNA code inside a living cell and edit, remove, or replace it.\n\nImagine your DNA is a massive instruction manual for building *You*. Before CRISPR, if there was a typo in that manual (a genetic disease), trying to fix it was like trying to rewrite a single page by throwing a bucket of ink at the book. CRISPR changed the game because it includes a \"search bar\" (a guide molecule) that finds the *exact* sentence with the typo, and a pair of \"scissors\" (the Cas9 protein) that cuts it out so it can be rewritten.\n\n## How it Works\n1.  **The Guide (Search):** Scientists design a piece of RNA that matches the specific DNA sequence they want to target (like typing \"typo\" into the search bar).\n2.  **The Cut (Delete):** An enzyme called Cas9 follows the guide to that location and snips the DNA strand.\n3.  **The Repair (Paste):** The cell notices the damage and tries to repair it. Scientists can provide a new, correct piece of DNA for the cell to use as a template during this repair, effectively pasting in the correct code.\n\n## FAQs\n\n*1. Is this safe for humans?*\nIt is still experimental for most uses. The main risk is \"off-target effects\"; where the scissors accidentally cut a similar-looking sentence on the wrong page, potentially causing unintended mutations or cancer. But new versions (like \"Base Editing\" or methylation editors) are becoming safer.\n\n*2. Can it create \"Designer Babies\"?*\nTheoretically, yes. It could be used to alter traits like height or eye color in embryos. However, the scientific community largely considers this unethical (and illegal in many places) because those changes are \"heritable\"; meaning they would be passed down to all future generations.\n\n### Further Reading\n\n*   **Video:** *[Gene Editing with CRISPR-Cas9](https://www.youtube.com/watch?v=2pp17E4E-O8)* (McGovern Institute explainer).\n*   **Article:** *[What is CRISPR?](https://www.newscientist.com/term/what-is-crispr/)* (New Scientist basic guide).\n"
+                        "id": "biology",
+                        "title": "Biology",
+                        "icon": "fas fa-brain",
+                        "desc": "The science of life",
+                        "view": "list",
+                        "children": [
+                            {
+                                "id": "crispr",
+                                "title": "CRISPR",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Biology",
+                                    "Genetics",
+                                    "Biotech"
+                                ],
+                                "content": "# CRISPR\n\n**Think of it like the \"Find and Replace\" function in a word processor, but for DNA.**\n\n**CRISPR** (Clustered Regularly Interspaced Short Palindromic Repeats) is a biological tool that allows scientists to find a specific sequence of DNA code inside a living cell and edit, remove, or replace it.\n\nImagine your DNA is a massive instruction manual for building *You*. Before CRISPR, if there was a typo in that manual (a genetic disease), trying to fix it was like trying to rewrite a single page by throwing a bucket of ink at the book. CRISPR changed the game because it includes a \"search bar\" (a guide molecule) that finds the *exact* sentence with the typo, and a pair of \"scissors\" (the Cas9 protein) that cuts it out so it can be rewritten.\n\n## How it Works\n1.  **The Guide (Search):** Scientists design a piece of RNA that matches the specific DNA sequence they want to target (like typing \"typo\" into the search bar).\n2.  **The Cut (Delete):** An enzyme called Cas9 follows the guide to that location and snips the DNA strand.\n3.  **The Repair (Paste):** The cell notices the damage and tries to repair it. Scientists can provide a new, correct piece of DNA for the cell to use as a template during this repair, effectively pasting in the correct code.\n\n## FAQs\n\n*1. Is this safe for humans?*\nIt is still experimental for most uses. The main risk is \"off-target effects\"; where the scissors accidentally cut a similar-looking sentence on the wrong page, potentially causing unintended mutations or cancer. But new versions (like \"Base Editing\" or methylation editors) are becoming safer.\n\n*2. Can it create \"Designer Babies\"?*\nTheoretically, yes. It could be used to alter traits like height or eye color in embryos. However, the scientific community largely considers this unethical (and illegal in many places) because those changes are \"heritable\"; meaning they would be passed down to all future generations.\n\n### Further Reading\n\n*   **Video:** *[Gene Editing with CRISPR-Cas9](https://www.youtube.com/watch?v=2pp17E4E-O8)* (McGovern Institute explainer).\n*   **Article:** *[What is CRISPR?](https://www.newscientist.com/term/what-is-crispr/)* (New Scientist basic guide).\n"
+                            },
+                            {
+                                "id": "epigenetics",
+                                "title": "Epigenetics",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Biology",
+                                    "Genetics",
+                                    "Health"
+                                ],
+                                "content": "# Epigenetics\n\n**Think of it like the \"Software\" that runs on your DNA \"Hardware.\"**\n\n**Epigenetics** is the study of biological mechanisms that switch genes on or off without altering the actual DNA sequence itself.\n\nIf your DNA is the rigid hardware (the unchangeable circuit board) of a computer, epigenetics is the operating system that decides which programs (genes) to run and which to ignore. You can't easily change your hardware, but your environment; stress, diet, sleep, chemicals; can change the software settings. This helps explain why identical twins (who have the exact same hardware) can develop completely different health issues as they age; their \"settings\" have drifted apart.\n\n## How it Works\n*   **Methylation (The Off Switch):** The body attaches small chemical tags (methyl groups) to specific parts of DNA. These act like \"Do Not Disturb\" signs, preventing that gene from being read.\n*   **Histone Modification (The Volume Knob):** DNA is wrapped around spools called histones. If the DNA is wrapped too tightly, the cell can't read it (volume down). If it's loose, the gene is active (volume up).\n\n## FAQs\n\n*1. Can I change my epigenetics?*\nYes! Unlike your DNA, which you're stuck with, your epigenetic markers are reversible. Improving your diet, exercising, and reducing stress can physically remove \"bad\" tags and add \"good\" ones, potentially lowering your risk of diseases like cancer or diabetes.\n\n*2. Do I pass this to my kids?*\nSurprisingly, yes. Some epigenetic tags can survive reproduction. This means extreme stress or famine experienced by a parent (or even grandparent) can leave a chemical \"scar\" on their genes that is passed down, potentially affecting the metabolism or stress response of their children.\n\n### Further Reading\n\n*   **Video:** *[The Epigenetics Revolution](https://www.youtube.com/watch?v=kp1bZEUgqVI)* (SciShow).\n*   **Article:** *[Epigenetics: It's not just genes that make us](https://www.bbc.com/news/health-29621689)* (BBC News).\n"
+                            }
+                        ]
                     },
                     {
-                        "id": "epigenetics",
-                        "title": "Epigenetics",
-                        "icon": "far fa-file-alt",
-                        "desc": "",
-                        "tags": [
-                            "Biology",
-                            "Genetics",
-                            "Health"
-                        ],
-                        "content": "# Epigenetics\n\n**Think of it like the \"Software\" that runs on your DNA \"Hardware.\"**\n\n**Epigenetics** is the study of biological mechanisms that switch genes on or off without altering the actual DNA sequence itself.\n\nIf your DNA is the rigid hardware (the unchangeable circuit board) of a computer, epigenetics is the operating system that decides which programs (genes) to run and which to ignore. You can't easily change your hardware, but your environment; stress, diet, sleep, chemicals; can change the software settings. This helps explain why identical twins (who have the exact same hardware) can develop completely different health issues as they age; their \"settings\" have drifted apart.\n\n## How it Works\n*   **Methylation (The Off Switch):** The body attaches small chemical tags (methyl groups) to specific parts of DNA. These act like \"Do Not Disturb\" signs, preventing that gene from being read.\n*   **Histone Modification (The Volume Knob):** DNA is wrapped around spools called histones. If the DNA is wrapped too tightly, the cell can't read it (volume down). If it's loose, the gene is active (volume up).\n\n## FAQs\n\n*1. Can I change my epigenetics?*\nYes! Unlike your DNA, which you're stuck with, your epigenetic markers are reversible. Improving your diet, exercising, and reducing stress can physically remove \"bad\" tags and add \"good\" ones, potentially lowering your risk of diseases like cancer or diabetes.\n\n*2. Do I pass this to my kids?*\nSurprisingly, yes. Some epigenetic tags can survive reproduction. This means extreme stress or famine experienced by a parent (or even grandparent) can leave a chemical \"scar\" on their genes that is passed down, potentially affecting the metabolism or stress response of their children.\n\n### Further Reading\n\n*   **Video:** *[The Epigenetics Revolution](https://www.youtube.com/watch?v=kp1bZEUgqVI)* (SciShow).\n*   **Article:** *[Epigenetics: It's not just genes that make us](https://www.bbc.com/news/health-29621689)* (BBC News).\n"
+                        "id": "statistics",
+                        "title": "Statistics",
+                        "icon": "fas fa-chart-bar",
+                        "desc": "The science of data and probability",
+                        "view": "shelf",
+                        "children": [
+                            {
+                                "id": "concepts",
+                                "title": "Concepts",
+                                "icon": "fas fa-lightbulb",
+                                "desc": "Key specific jargon",
+                                "view": "list",
+                                "children": [
+                                    {
+                                        "id": "black-swan",
+                                        "title": "Black Swan",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Risk",
+                                            "Taleb"
+                                        ],
+                                        "content": "# Black Swan\n\nThe Impossible Event.\n\n**A Black Swan** is an event that is:\n1.  **Rare:** Outside regular expectations.\n2.  **Impactful:** Carries extreme consequences.\n3.  **Retrospectively Predictable:** Creating an explanation *after* the fact (\"We should have seen it coming\").\n\nThink of it like **The Turkey Problem**.\n*   **The Data:** For 1,000 days, the farmer feeds the turkey. The turkey's data says \"Farmer = Friend.\" Confirming evidence increases every day.\n*   **The Event:** Day 1,001 is Thanksgiving.\n*   **The Lesson:** Past data did not predict the future. The most important event in the turkey's life was a Black Swan that no chart could foresee.\n\n## Why it Matters\n\nIn **[[power-law|Power Law]]** environments (finance, pandemics, internet), Black Swans drive history. Standard models (like the Bell Curve) ignore them as \"outliers,\" which is why banks crash.\n"
+                                    },
+                                    {
+                                        "id": "central-limit-theorem",
+                                        "title": "Central Limit Theorem",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Math",
+                                            "Jargon"
+                                        ],
+                                        "content": "# Central Limit Theorem\n\nThe Magnet.\n\n**The Central Limit Theorem (CLT)** states that if you take enough random samples from *any* population (even a weird one), the *averages* of those samples will inherently form a **[[normal-distribution|Normal Distribution]]** (Bell Curve).\n\nThink of it like **Rolling Dice**.\n*   **One Die:** Rolling a 1 is just as likely as a 6. (Flat distribution).\n*   **Ten Dice:** The *average* of 10 dice will almost always be around 3.5. Rolling all 1s (Average 1) is nearly impossible.\n*   **The Magnet:** The more dice you roll, the harder the average is pulled toward the center.\n\n## Why it Matters\n\nThis is why we can use Statistics on almost anything. We don't need to know the shape of the original data; if we survey enough people, their *averages* will behave like a nice, predictable Bell Curve.\n"
+                                    },
+                                    {
+                                        "id": "long-tail",
+                                        "title": "The Long Tail",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Marketing",
+                                            "Anderson"
+                                        ],
+                                        "content": "# The Long Tail\n\nThe Niche.\n\n**The Long Tail** refers to the strategy of selling a large number of unique items with relatively small quantities sold of each, usually in addition to selling fewer popular items in large quantities.\n\nThink of it like **Amazon vs. Bookstore**.\n*   **Bookstore:** Limited shelf space. They only stock the \"Hits\" (top 1,000 books) that guarantee sales.\n*   **Amazon:** Unlimited database space. They stock the \"Long Tail\" (millions of obscure books).\n*   **The Math:** Selling 1 copy of 1 million obscure books = Selling 1 million copies of Harry Potter.\n\n## Why it Matters\n\nIn a **[[power-law|Power Law]]** distribution, the \"Tail\" is infinitely long. The internet makes it profitable to mine the tail, whereas physical stores can only afford the \"Head.\"\n"
+                                    },
+                                    {
+                                        "id": "pareto-principle",
+                                        "title": "Pareto Principle",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Efficiency",
+                                            "80/20"
+                                        ],
+                                        "content": "# Pareto Principle\n\nThe 80/20 Rule.\n\n**The Pareto Principle** states that for many outcomes, roughly 80% of consequences come from 20% of the causes. It is a specific application of the **[[power-law|Power Law]]**.\n\nThink of it like **Your Carpet**.\n*   **The Rule:** 20% of your carpet gets 80% of the foot traffic.\n*   **The Business:** 20% of customers provide 80% of revenue.\n*   **The Code:** 20% of the bugs cause 80% of the crashes.\n\n## Why it Matters\n\nIt is the ultimate tool for **Efficiency**. You don't need to fix *everything*. You just need to find the vital 20% that drives the result and fix that.\n"
+                                    },
+                                    {
+                                        "id": "standard-deviation",
+                                        "title": "Standard Deviation",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Math",
+                                            "Jargon"
+                                        ],
+                                        "content": "# Standard Deviation\n\nThe Spread.\n\n**Standard Deviation (SD)** is a measure of how spread out numbers are.\n*   **Low SD:** Data is bunched up near the average (Reliable).\n*   **High SD:** Data is all over the place (Chaotic).\n\nThink of it like **Pizza Delivery**.\n*   **Pizza A:** Always arrives in exactly 30 mins. (Average = 30, SD = 0).\n*   **Pizza B:** Arrives in 10 mins or 50 mins. (Average = 30, SD = High).\n*   **The Lesson:** Even if the *average* is the same, Pizza B is risky. SD measures that risk.\n\n## Why it Matters\n\nIn a **[[normal-distribution|Normal Distribution]]**, SD is the ruler we use to measure weirdness.\n*   **1 Sigma (SD):** Normal stuff (68% of people).\n*   **3 Sigmas:** Rare stuff (Top 1% genius).\n*   **6 Sigmas:** Miracle/Disaster (Winning the lottery).\n"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "distributions",
+                                "title": "Distributions",
+                                "icon": "fas fa-wave-square",
+                                "desc": "Common shapes of data in the real world",
+                                "view": "list",
+                                "children": [
+                                    {
+                                        "id": "binomial-distribution",
+                                        "title": "Binomial Distribution",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Math",
+                                            "CoinFlip"
+                                        ],
+                                        "content": "# Binomial Distribution\n\nThe Coin Flip.\n\n**The Binomial Distribution** models the number of \"Successes\" in a fixed number of independent \"Trials\", where each trial has the same probability of success.\n\nThink of it like **Free Throws**.\n*   **The Trial:** You shoot the ball.\n*   **The Result:** You make it (Success) or miss it (Failure). No \"half-points\".\n*   **The Question:** If you shoot 10 times, and you are a 50% shooter, what are the odds you make exactly 7?\n\n![Binomial Distribution Chart](https://media.geeksforgeeks.org/wp-content/uploads/20250723182638251176/frame_3051.webp)\n\n## How it Works\n\n1.  **Binary Outcome:** Yes/No, Pass/Fail, Heads/Tails.\n2.  **Fixed N:** You decide beforehand \"I will flip 10 times.\" (If you flip until you stop, that's different).\n3.  **Fixed P:** The probability of success (e.g., 0.5) is the same for every flip.\n\n## Real World Use Cases\n\n*   **Quality Control:** Testing 1000 chips. How many are defective?\n*   **Elections:** Surveying 100 voters. How many vote Yes?\n*   **Medical:** Treating 50 patients. How many recover?\n\n## Analysis\n\nThe Binomial converges into the **Normal Distribution** if you do enough trials. (If you flip 1,000,000 coins, the graph looks like a Bell Curve).\n\n### Further Reading\n\n*   **Sibling:** *[[poisson-distribution|Poisson Distribution]]* (Counting events over time, not trials).\n"
+                                    },
+                                    {
+                                        "id": "normal-distribution",
+                                        "title": "Normal Distribution",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Math",
+                                            "BellCurve"
+                                        ],
+                                        "content": "# Normal Distribution\n\nMediocristan.\n\n**The Normal Distribution** (Bell Curve) is the most common pattern in nature. Most things are average, and extreme deviations are rare and symmetric.\n\nThink of it like **Adult Male Height**.\n*   **The Average:** Most men are around 5'9\".\n*   **The Deviations:** A few are 6'5\", a few are 5'2\".\n*   **The Impossible:** No one is 500 feet tall.\n\n![Normal Distribution Chart](https://www.w3schools.com/statistics/img_normal_distribution.svg)\n\n## How it Works\n\n1.  **[[central-limit-theorem|Central Limit Theorem]]:** When you add up many independent random variables, they tend to form a Bell Curve.\n2.  **Symmetry:** 50% are above average, 50% are below.\n3.  **The 68-95-99.7 Rule:**\n    *   68% of data falls within 1 **[[standard-deviation|Standard Deviation (SD)]]**.\n    *   95% falls within 2 SDs.\n    *   99.7% falls within 3 SDs.\n\n## Real World Use Cases\n\n*   **IQ Tests:** Designed to be a Bell Curve with 100 as the mean.\n*   **Manufacturing:** Checking bolt sizes. If too many are \"outliers\" (outside 3 SDs), the machine is broken.\n*   **height/Weight:** Biology usually follows this.\n\n## Analysis\n\nIn a Normal world, prediction is easy. Historical data (last 100 years of flood data) accurately predicts the future. You are safe from \"Black Swans\" (mostly).\n\n### Further Reading\n\n*   **Contrast:** *[power-law|Power Law]* (Where averages don't exist).\n"
+                                    },
+                                    {
+                                        "id": "poisson-distribution",
+                                        "title": "Poisson Distribution",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Math",
+                                            "Time"
+                                        ],
+                                        "content": "# Poisson Distribution\n\nThe Waiting Game.\n\n**The Poisson Distribution** models the probability of a specific number of events happening in a fixed interval of time or space, assuming these events happen with a known constant mean rate and independently of the time since the last event.\n\nThink of it like **The Call Center**.\n*   **The Average:** We get 5 calls per minute.\n*   **The Question:** What are the odds we get exactly 8 calls in the next minute? Or 0 calls?\n*   **The Shape:** It is skewed. You can't have fewer than 0 calls, but you could theoretically have 100.\n\n## How it Works\n\n1.  **Rare Events:** It works best for things that don't happen often but *could* happen at any moment.\n2.  **Independence:** One call doesn't cause the next call.\n3.  **Lambda ($\\lambda$):** The valid rate (e.g., 5 calls/min). If you know Lambda, you know the whole curve.\n\n## Real World Use Cases\n\n*   **Bus Arrivals:** How many buses arrive in an hour?\n*   **Decay:** Radioactive atoms decaying per second.\n*   **IT:** How many 404 errors will the server log in the next hour?\n\n## Analysis\n\nThis is used for **Capacity Planning**. \"If we average 5 calls, but there's a 10% chance of 12 calls, do we have enough staff for 12?\"\n\n### Further Reading\n\n*   **Contrast:** *[[binomial-distribution|Binomial Distribution]]* (Yes/No trials vs. Counting events).\n"
+                                    },
+                                    {
+                                        "id": "power-law",
+                                        "title": "Power Law",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Math",
+                                            "Pareto"
+                                        ],
+                                        "content": "# Power Law\n\nExtremistan.\n\n**A Power Law** (Pareto Distribution) is a pattern where a small number of items account for the vast majority of the impact. The average is meaningless because one \"Black Swan\" can skew the whole dataset.\n\nThink of it like **Book Sales**.\n*   **The Long Tail:** Millions of authors sell 10 copies.\n*   **The Head:** J.K. Rowling sells 500 million copies.\n*   **The Skew:** If you average J.K. Rowling with me, we are both best-selling authors *on average*. But the average is a lie.\n\n## How it Works\n\n1.  **Preferential Attachment:** \"The rich get richer.\" If you have 1 million followers, gaining the next follower is easier than if you have 0.\n2.  **Scale Invariance:** The pattern looks the same at any scale (fractal).\n3.  **No Tyical Member:** In a Bell Curve, a variance of 10-sigma is impossible. In a Power Law, it's expected.\n\n## Real World Use Cases\n\n*   **Wealth:** The 80/20 Rule (80% of wealth is owned by 20% of people).\n*   **City Sizes:** A few mega-cities, thousands of small towns.\n*   **Web Traffic:** Google gets billions of hits; this page i.e., second brain gets three.\n\n## Analysis\n\n## Analysis\n\nIn a Power Law world, risk management is hard. The past does not predict the future. One single event (an earthquake, a market crash, a viral post) can change everything. See **[[black-swan|Black Swan]]**.\n\n### Further Reading\n\n*   **Concept:** *[[long-tail|The Long Tail]]* (The business strategy).\n*   **Concept:** *[[pareto-principle|Pareto Principle]]* (The 80/20 Rule).\n*   **Book:** *[The Black Swan](https://en.wikipedia.org/wiki/The_Black_Swan_(Taleb_book))* (Nassim Taleb).\n"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
