@@ -7,7 +7,7 @@ tags: Logic, Debate, BlackAndWhite
 
 Black and White.
 
-**The False Dilemma** (or False Dichotomy) is a fallacy where a complex situation is presented as having only two options; usually "My Way" or "The Apocalypse"—when in reality there are many middle grounds.
+**The False Dilemma** (or False Dichotomy) is a fallacy where a complex situation is presented as having only two options; usually "My Way" or "The Apocalypse"; when in reality there are many middle grounds.
 
 Think of it like **A Light Switch vs. A Dimmer**.
 *   **The Fallacy:** "The room is either completely dark or blindingly bright!" (A Switch).
@@ -27,6 +27,3 @@ No. Sometimes there *are* only two options. "You are either pregnant or you are 
 *2. Why is it used?*
 It creates urgency and fear. Salespeople use it ("Buy now or lose this deal forever!") to bypass critical thinking.
 
-### Further Reading
-
-*   **Article:** *[The Middle Ground Fallacy](https://yourlogicalfallacyis.com/middle-ground)* (The opposite error: assuming the truth is *always* in the middle).
