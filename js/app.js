@@ -474,23 +474,19 @@ function loadContent(id) {
 function renderShelf(item) {
   let html = `
         <div class="shelf-header">
-            <h1 class="text-3xl font-bold mb-2 text-primary">${item.title}</h1>
-            <p class="text-secondary">${item.desc || "Select an item below."}</p>
+            <h1 style="margin-bottom:0.5rem">${item.title}</h1>
+            <p style="color:var(--text-secondary)">${item.desc || "Select an item below."}</p>
         </div>
-        <!-- TAILWIND GRID: 1 col mobile, 2 cols tablet, 3 cols desktop -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        <div class="shelf-grid">
     `;
 
   item.children.forEach((child) => {
-    // We keep 'shelf-card' for the visual styling (colors/borders) defined in style.css
-    // But we add 'h-full' to ensure cards are equal height
+    // Security Fix: Removed inline onclick, added data-id
     html += `
-            <div class="shelf-card h-full flex flex-col p-6 rounded-lg border border-border hover:border-accent transition-colors cursor-pointer" data-id="${child.id}">
-                <div class="text-4xl mb-4 text-accent">
-                    <i class="${child.icon || "far fa-file-alt"}"></i>
-                </div>
-                <div class="text-xl font-semibold mb-2 text-primary">${child.title}</div>
-                <div class="text-sm text-secondary flex-grow">${child.desc || ""}</div>
+            <div class="shelf-card" data-id="${child.id}">
+                <i class="${child.icon || "far fa-file-alt"} shelf-icon"></i>
+                <div class="shelf-title">${child.title}</div>
+                <div class="shelf-desc">${child.desc || ""}</div>
             </div>
         `;
   });
