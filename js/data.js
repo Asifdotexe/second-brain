@@ -90,6 +90,28 @@ const wikiData = {
                         ]
                     },
                     {
+                        "id": "ethics",
+                        "title": "Ethics & Safety",
+                        "icon": "fas fa-balance-scale",
+                        "desc": "The Philosophy and Impact of Artificial Intelligence",
+                        "view": "list",
+                        "children": [
+                            {
+                                "id": "water-usage",
+                                "title": "AI Water Usage",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "AI",
+                                    "Ethics",
+                                    "Environment",
+                                    "Debunking"
+                                ],
+                                "content": "# AI Water Usage\n\nThe Drop in the Bucket.\n\n**The \"AI Water Crisis\"** is a counter-intuitive narrative that AI data centers are draining local water supplies. The data suggests this is largely a **Context Error**.\n\nThink of it like **Worrying about a Dripping Faucet during a Flood**.\n*   **The Flood (Agriculture):** 93% of humanity's water footprint goes to growing food and industrial processes.\n*   **The Faucet (Households/Data Centers):** Domestic use is ~1%. Data Centers are a fraction of that (0.13% of US potable water).\nHeadlines claiming \"ChatGPT uses a bottle of water per email\" are factually true but contextually misleading, similar to saying \"Your cat drinks 10,000 drops of water a day.\"\n\n## Key Definitions\n\nTo understand the numbers, we need to separate different *types* of water use.\n\n### 1. Consumptive vs. Non-Consumptive\n*   **Consumptive Use (evaporation):** Taking water and removing it from the local ecosystem (usually by evaporating it).\n    *   *Example:* Boiling a pot of pasta until dry, or growing an almond (the water becomes the almond).\n    *   *Data Centers:* Evaporative cooling towers dissolve water into the air. It\u2019s gone from the local watershed.\n*   **Non-Consumptive Use (borrowing):** Taking water, using it, and putting it back.\n    *   *Example:* A hydroelectric dam or a water wheel. The water flows through and keeps going.\n    *   *Relevance:* Most water \"used\" by power plants is non-consumptive (cooling), yet critics often count this huge number as \"lost\" water.\n\n### 2. Direct vs. Indirect\n*   **Direct Use:** Water used *at* the data center (onsite) to cool the servers.\n*   **Indirect Use:** Water used *at the power plant* to generate the electricity the data center burns.\n    *   *The Trap:* Critics often combine these numbers to make AI look worse. However, 80% of this \"indirect\" water is non-consumptive (just flowing through the power plant).\n\n### 3. Potable vs. Non-Potable\n*   **Potable:** Drinkable, treated water.\n*   **Non-Potable:** Raw freshwater or \"grey water\" (wastewater).\n    *   *Context:* Data centers often use potable water because it's cleaner for the pipes (no sediment). However, in 2023, data centers used only **0.13%** of the US public water supply.\n\n![AI Water Usage](https://substackcdn.com/image/fetch/$s_!08rF!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa6f9ca94-41c4-4951-adbe-6f3b18ead783_1518x708.png)\n\n## The Core Argument\n\n1.  **Scale Mismatch:** Critics often compare AI water usage to \"millions of homes.\" This sounds huge because we assume homes use a lot of water. They don't (compared to farms).\n2.  **Trade-offs:** Data centers use water for *cooling*. The alternative is air conditioning (using massive electricity). Water cooling is often the \"greener\" choice for the planet, even if it uses local water.\n3.  **Potability:** Ideally, data centers shouldn't use drinkable (potable) water. Many are switching to \"grey water\" (recycled wastewater), rendering the argument moot.\n\n## Key Stats\n\n*   **0.13%:** The percentage of US potable water used by data centers in 2023.\n*   **Growth:** Even with 10x AI growth, it would reach ~0.3% of supply.\n*   **Perspective:** An electric car factory often uses as much water as a data center, yet rarely faces the same \"moral\" scrutiny.\n\n![AI Water Usage](https://substackcdn.com/image/fetch/$s_!3XLI!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fda86b8b3-7c28-48c2-83fa-6df503f252f2_2274x850.png)\n[Sources](https://docs.google.com/spreadsheets/d/1VbKtaw9uHPIPoyYxlB06KFesBwxzGC4OwweV5SjvUos/edit?gid=0#gid=0)\n\n### Further  Reading\n\n*   **Article:** *[The AI water issue is fake](https://andymasley.substack.com/p/the-ai-water-issue-is-fake)* (Andy Masley).\n*   **Context:** *[Water Footprint of Food vs Tech](https://ourworldindata.org/water-use-stress)*.\n"
+                            }
+                        ]
+                    },
+                    {
                         "id": "hardware",
                         "title": "Hardware",
                         "icon": "fas fa-microchip",
