@@ -201,7 +201,7 @@ function renderLandingPage() {
 
       section.items.forEach(item => {
         html += `
-                <div class="shelf-card" onclick="loadContent('${item.id}')">
+                <div class="shelf-card" data-id="${item.id}">
                     <i class="${item.icon || "far fa-file-alt"} shelf-icon"></i>
                     <div class="shelf-title">${item.title}</div>
                     <div class="shelf-desc">${item.desc || ""}</div>
