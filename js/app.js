@@ -182,8 +182,7 @@ function renderLandingPage() {
             <div class="landing-hero">
                 <h1>Asif's Second Brain</h1>
                 <p class="landing-subtitle">
-                    My personal knowledge base containing self-maintained definitions and 
-                    concepts to prevent duplication of effort.
+                    A digital garden of thoughts, curated definitions, and evolving ideas.
                 </p>
             </div>
     `;

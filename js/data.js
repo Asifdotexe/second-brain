@@ -90,6 +90,75 @@ const wikiData = {
                         ]
                     },
                     {
+                        "id": "ethics",
+                        "title": "Ethics & Safety",
+                        "icon": "fas fa-balance-scale",
+                        "desc": "The Philosophy and Impact of Artificial Intelligence",
+                        "view": "list",
+                        "children": [
+                            {
+                                "id": "water-usage",
+                                "title": "AI Water Usage",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "AI",
+                                    "Ethics",
+                                    "Environment",
+                                    "Debunking"
+                                ],
+                                "content": "# AI Water Usage\n\nThe Drop in the Bucket.\n\n**The \"AI Water Crisis\"** is a counter-intuitive narrative that AI data centers are draining local water supplies. The data suggests this is largely a **Context Error**.\n\nThink of it like **Worrying about a Dripping Faucet during a Flood**.\n*   **The Flood (Agriculture):** 93% of humanity's water footprint goes to growing food and industrial processes.\n*   **The Faucet (Households/Data Centers):** Domestic use is ~1%. Data Centers are a fraction of that (0.13% of US potable water).\nHeadlines claiming \"ChatGPT uses a bottle of water per email\" are factually true but contextually misleading, similar to saying \"Your cat drinks 10,000 drops of water a day.\"\n\n## Key Definitions\n\nTo understand the numbers, we need to separate different *types* of water use.\n\n### 1. Consumptive vs. Non-Consumptive\n*   **Consumptive Use (evaporation):** Taking water and removing it from the local ecosystem (usually by evaporating it).\n    *   *Example:* Boiling a pot of pasta until dry, or growing an almond (the water becomes the almond).\n    *   *Data Centers:* Evaporative cooling towers dissolve water into the air. It\u2019s gone from the local watershed.\n*   **Non-Consumptive Use (borrowing):** Taking water, using it, and putting it back.\n    *   *Example:* A hydroelectric dam or a water wheel. The water flows through and keeps going.\n    *   *Relevance:* Most water \"used\" by power plants is non-consumptive (cooling), yet critics often count this huge number as \"lost\" water.\n\n### 2. Direct vs. Indirect\n*   **Direct Use:** Water used *at* the data center (onsite) to cool the servers.\n*   **Indirect Use:** Water used *at the power plant* to generate the electricity the data center burns.\n    *   *The Trap:* Critics often combine these numbers to make AI look worse. However, 80% of this \"indirect\" water is non-consumptive (just flowing through the power plant).\n\n### 3. Potable vs. Non-Potable\n*   **Potable:** Drinkable, treated water.\n*   **Non-Potable:** Raw freshwater or \"grey water\" (wastewater).\n    *   *Context:* Data centers often use potable water because it's cleaner for the pipes (no sediment). However, in 2023, data centers used only **0.13%** of the US public water supply.\n\n![AI Water Usage](https://substackcdn.com/image/fetch/$s_!08rF!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa6f9ca94-41c4-4951-adbe-6f3b18ead783_1518x708.png)\n\n## The Core Argument\n\n1.  **Scale Mismatch:** Critics often compare AI water usage to \"millions of homes.\" This sounds huge because we assume homes use a lot of water. They don't (compared to farms).\n2.  **Trade-offs:** Data centers use water for *cooling*. The alternative is air conditioning (using massive electricity). Water cooling is often the \"greener\" choice for the planet, even if it uses local water.\n3.  **Potability:** Ideally, data centers shouldn't use drinkable (potable) water. Many are switching to \"grey water\" (recycled wastewater), rendering the argument moot.\n\n## Key Stats\n\n*   **0.13%:** The percentage of US potable water used by data centers in 2023.\n*   **Growth:** Even with 10x AI growth, it would reach ~0.3% of supply.\n*   **Perspective:** An electric car factory often uses as much water as a data center, yet rarely faces the same \"moral\" scrutiny.\n\n![AI Water Usage](https://substackcdn.com/image/fetch/$s_!3XLI!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fda86b8b3-7c28-48c2-83fa-6df503f252f2_2274x850.png)\n[Sources](https://docs.google.com/spreadsheets/d/1VbKtaw9uHPIPoyYxlB06KFesBwxzGC4OwweV5SjvUos/edit?gid=0#gid=0)\n\n### Further  Reading\n\n*   **Article:** *[The AI water issue is fake](https://andymasley.substack.com/p/the-ai-water-issue-is-fake)* (Andy Masley).\n*   **Context:** *[Water Footprint of Food vs Tech](https://ourworldindata.org/water-use-stress)*.\n"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "hardware",
+                        "title": "Hardware",
+                        "icon": "fas fa-microchip",
+                        "desc": "The Physical Substrate of Intelligence",
+                        "view": "list",
+                        "children": [
+                            {
+                                "id": "extropic",
+                                "title": "Extropic",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "AI",
+                                    "Hardware",
+                                    "Thermodynamics",
+                                    "Physics"
+                                ],
+                                "content": "# Extropic\n\nNature doesn't fight noise; it rides it.\n\n**Extropic** is a computing company building \"Thermodynamic Computers\" that use the natural thermal noise of the universe to power AI, rather than spending energy to suppress it.\n\nThink of it like **A Ball on a Table**.\n*   **Traditional Computing (Digital):** You want the ball to stay perfectly still (0) or move perfectly to the right (1). But the table is constantly vibrating (thermal noise/heat). You have to spend massive amounts of energy (cooling, error correction) to force the table to be flat and the ball to be still.\n*   **Thermodynamic Computing (Extropic):** You *tilt* the vibrating table. You let the natural vibrations (heat) shake the ball around, and you just guide it generally downhill. You use the \"noise\" as the engine that moves the ball.\nInstead of fighting physics to create order, they use the chaos of physics to perform calculations (specifically, probability sampling).\n\n## Key Concepts\n\n*   **Thermodynamic Computing:** A new paradigm where the hardware is designed to relax into a lower energy state, which mathematically corresponds to finding the answer to a problem (like how a ball naturally finds the bottom of a hill).\n*   **p-bits (Probabilistic Bits):** Unlike a bit that is definitely 0 or 1, a p-bit is *probabilistically* 0 or 1. It flickers like a coin flipping in the air. This is perfect for AI, which is all about probability (\"Is this image 80% likely to be a cat?\").\n*   **Jellium:** A state of matter (electron gas) used as an analogy for their chip's substrate. They treat the electrons in their chip like a fluid that can inherently perform complex math just by flowing.\n\n## FAQs\n\n*1. Why do we need this?*\nThe \"Energy Wall.\" We are running out of electricity to power bigger AI Models. Traditional chips ([[gpu|GPUs]]) are becoming heaters that occasionally do math. Extropic claims their chips can be orders of magnitude more efficient because they don't fight heat; they run *on* it.\n\n*2. Is this Quantum Computing?*\nNo, but it's related. [[quantum-computing|Quantum Computers]] use quantum mechanics (entanglement). Extropic uses *Thermodynamics* (statistical mechanics). It fits in the gap between classical chips (too rigid) and quantum chips (too fragile). It works at room temperature.\n\n### Further Reading\n\n*   **Video:** *[Extropic: Thermodynamic Computing](https://www.youtube.com/watch?v=Y28JQzS6TlE)* (The \"Litepaper\" video).\n*   **Concept:** *[Brownian Motion](https://en.wikipedia.org/wiki/Brownian_motion)* (The physics of random fluctuations).\n"
+                            },
+                            {
+                                "id": "npu",
+                                "title": "NPU (Neural Processing Unit)",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "AI",
+                                    "Hardware",
+                                    "Mobile",
+                                    "EdgeComputing"
+                                ],
+                                "content": "# NPU (Neural Processing Unit)\n\nThe Brain in Your Pocket.\n\n**An NPU** is a specialized processor found in smartphones and laptops designed to run AI tasks efficiently locally (\"on the edge\"), rather than sending data to the cloud.\n\nThink of it like **Reflexes vs. Thinking**.\n*   **[[tpu|TPU]] (Cloud):** Like a supercomputer solving a complex math problem. It takes huge power and time.\n*   **NPU (Edge):** Like your hand pulling away from a hot stove. It\u2019s not \"smart\" in a general sense, but it is instant and happens right where the action is.\nWhen your phone unlocks with FaceID or blurs the background in a Zoom call, that's the NPU. It does the heavy AI lifting so your battery doesn't die.\n\n## How it Works\n\n1.  **Inference Only:** Unlike huge GPUs that *train* models (teach them), NPUs mostly *run* models (inference). They take a pre-trained brain and just use it.\n2.  **Low Power:** They are physically designed to sip battery. Doing the same FaceID calculation on your main CPU would drain your phone in an hour.\n\n## FAQs\n\n*1. Do I have one?*\nYes. If you have a modern iPhone (Apple Neural Engine) or Android (Hexagon), you use it every day for photos, voice-to-text, and battery management.\n\n*2. What's the difference from a GPU?*\nEfficiency. A [[gpu|GPU]] *can* do what an NPU does, but it's overkill. It\u2019s like using a flamethrower to light a candle. The NPU is the lighter\u2014purpose-built and safe for your pocket.\n\n### Further Reading\n\n*   **Article:** *[What is an NPU?](https://semiconductor.samsung.com/support/tools-resources/dictionary/the-neural-processing-unit-npu-a-brainy-next-generation-semiconductor/)* (Samsung Explainer).\n*   **Comparison:** *[CPU vs GPU vs TPU vs NPU](https://youtu.be/d3SqH0UBLEY)*.\n"
+                            },
+                            {
+                                "id": "tpu",
+                                "title": "TPU (Tensor Processing Unit)",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "AI",
+                                    "Hardware",
+                                    "Google"
+                                ],
+                                "content": "# TPU (Tensor Processing Unit)\n\nThe Specialist.\n\n**A TPU** is a custom microchip designed by OpenAI/Google specifically to do *one thing* extremely fast: Matrix Multiplication (the math that powers Neural Networks).\n\nThink of it like a **Dragster vs. a Sediment**.\n*   **[[cpu|CPU]] (Sedan):** Can drive anywhere (grocery store, off-road, highway). Versatile, but slow max speed.\n*   **[[gpu|GPU]] (Sports Car):** Faster. Good for racing (gaming) and carrying moderate loads (parallel tasks).\n*   **TPU (Dragster):** Useless for going to the grocery store (can't run Windows). But on a straight line (Tensor math), it is unimaginably fast.\nIt strips away everything a general computer needs (cache, branch prediction) to make room for pure \"number crunching\" muscle.\n\n## How it Works\n\n1.  **Systolic Array:** Instead of moving data in and out of memory for every calculation (like a CPU), a TPU pumps data through a massive grid of calculator units like a heart pumps blood.\n2.  **Low Precision:** It often uses \"fuzzy\" numbers (8-bit or bfloat16) because AI doesn't need perfect accuracy (3.14159...), it just needs to be close enough (3.14). This saves massive energy.\n\n## FAQs\n\n*1. Can I buy one?*\nNot really. TPUs are mostly available only through Google Cloud. You rent them for a few dollars an hour.\n\n*2. Is it better than a GPU?*\nFor specific AI tasks (like training Transformers), yes/faster. For general tasks or smaller models, GPUs are often more flexible and easier to use.\n\n### Further Reading\n\n*   **Article:** *[Cloud TPU](https://cloud.google.com/tpu/docs/intro-to-tpu)* (Official Google Docs).\n*   **Video:** *[How Google's TPU works](https://www.youtube.com/watch?v=MXxN4fv01c8)*.\n"
+                            }
+                        ]
+                    },
+                    {
                         "id": "models",
                         "title": "Models",
                         "icon": "fas fa-layer-group",
@@ -292,7 +361,7 @@ const wikiData = {
                                     "SocialChange",
                                     "Politics"
                                 ],
-                                "content": "# Hacktivism\n\nThe Digital Sit-In.\n\n**Hacktivism** is the non-violent use of illegal or legally ambiguous digital tools to pursue political ends.\n\nThink of the internet like a giant, busy city.\n*   **Cybercriminals** are like pickpockets or bank robbers; they want your money.\n*   **Hacktivists** are like protesters blocking the main highway; they don't want to steal the cars; they want to stop traffic so everyone looks at their sign. They use code as digital graffiti or digital barricades to force a conversation about topics like free speech, human rights, or information freedom.\n\n## Key Tactics\n\n*   **[DDoS](ddos.md) (Distributed Denial of Service):** The Digital Sit-In. Thousands of computers flood a website with traffic until it crashes, effectively \"blocking the entrance\" to a government agency or corporation.\n*   **[Doxing](doxing.md):** The Digital Outing. Finding and publishing private information (documents, emails, names) of public figures to expose corruption or hypocrisy.\n*   **Defacement:** The Digital Graffiti. Taking over a website to replace its homepage with a political message or manifesto.\n\n## FAQs\n\n*1. Is Hacktivism legal?*\nGenerally, no. Techniques like DDoS attacks and unauthorized system access (hacking) are illegal in most countries, regardless of the moral intent.\n\n*2. Are they the \"good guys\"?*\nIt depends on who you ask. To their supporters, they are modern-day freedom fighters and whistleblowers holding the powerful accountable. To governments and targeted corporations, they are cyber-terrorists causing chaos and financial damage.\n\n### Further Reading\n\n*   **Book:** *[Hacker, Hoaxer, Whistleblower, Spy](https://www.amazon.com/Hacker-Hoaxer-Whistleblower-Spy-Anonymous/dp/1781685835)* (The definitive story of Anonymous).\n*   **Article:** *[The History of Hacktivism](https://www.imperva.com/learn/application-security/hacktivism/)*\n"
+                                "content": "# Hacktivism\n\nThe Digital Sit-In.\n\n**Hacktivism** is the non-violent use of illegal or legally ambiguous digital tools to pursue political ends.\n\nThink of the internet like a giant, busy city.\n*   **Cybercriminals** are like pickpockets or bank robbers; they want your money.\n*   **Hacktivists** are like protesters blocking the main highway; they don't want to steal the cars; they want to stop traffic so everyone looks at their sign. They use code as digital graffiti or digital barricades to force a conversation about topics like free speech, human rights, or information freedom.\n\n## Key Tactics\n\n*   **[[ddos|DDoS]] (Distributed Denial of Service):** The Digital Sit-In. Thousands of computers flood a website with traffic until it crashes, effectively \"blocking the entrance\" to a government agency or corporation.\n*   **[[doxing|Doxing]]:** The Digital Outing. Finding and publishing private information (documents, emails, names) of public figures to expose corruption or hypocrisy.\n*   **Defacement:** The Digital Graffiti. Taking over a website to replace its homepage with a political message or manifesto.\n\n## FAQs\n\n*1. Is Hacktivism legal?*\nGenerally, no. Techniques like DDoS attacks and unauthorized system access (hacking) are illegal in most countries, regardless of the moral intent.\n\n*2. Are they the \"good guys\"?*\nIt depends on who you ask. To their supporters, they are modern-day freedom fighters and whistleblowers holding the powerful accountable. To governments and targeted corporations, they are cyber-terrorists causing chaos and financial damage.\n\n### Further Reading\n\n*   **Book:** *[Hacker, Hoaxer, Whistleblower, Spy](https://www.amazon.com/Hacker-Hoaxer-Whistleblower-Spy-Anonymous/dp/1781685835)* (The definitive story of Anonymous).\n*   **Article:** *[The History of Hacktivism](https://www.imperva.com/learn/application-security/hacktivism/)*\n"
                             },
                             {
                                 "id": "key-loggers",
@@ -838,6 +907,19 @@ const wikiData = {
                                 "content": "# Non-Terrestrial Networks (NTN)\n\n**Think of it like putting cell towers in the sky.**\n\n**Non-Terrestrial Networks (NTN)** is a standardized term for any communication network that uses flying components (satellites, drones, or balloons) to connect devices, rather than relying solely on towers built on the ground.\n\nTraditionally, if you walked too far into the desert or ocean, your phone died because it couldn't \"see\" a tower. NTN aims to fix this by integrating satellites directly into the standard 5G network. Instead of needing a special bulky satellite phone, your normal smartphone explicitly switches to talking to a satellite when it loses the ground signal, keeping you connected seamlessly anywhere on Earth.\n\n## Key Types\n*   **LEO Satellites (Low Earth Orbit):** Satellites flying fast and close to Earth (like Starlink). They offer fast speeds and low lag but you need a lot of them to cover the globe.\n*   **Drones / HAPS (High Altitude Platform Stations):** Solar-powered gliders that fly in the stratosphere (above planes but below space) for months, acting like a super-tall cell tower for a specific city or disaster zone.\n\n## FAQs\n\n*1. Will this replace normal 5G?*\nNo. Satellites can't handle the massive amount of data that fiber-optic connected ground towers can. NTN is a \"gap filler\"; it covers the oceans, deserts, and rural areas where building towers is too expensive or impossible.\n\n*2. Do I need a new phone?*\nMostly, yes. While some very basic \"SOS via Satellite\" features work on current phones, true high-speed NTN internet will likely require chips with special antennas. However, the goal of standards (like \"SpaceRAN\") is to make the technology compatible with future mass-market phones, not just specialized heavy-duty gear.\n\n### Further Reading\n\n*   **Article:** *[What is 5G NTN?](https://www.ericsson.com/en/blog/2023/2/what-is-5g-non-terrestrial-networks)* (Ericsson Tech Explanation).\n*   **News:** *[The Race to Connect Everything](https://www.wsj.com/articles/satellite-phone-internet-race-11675204215)* (WSJ coverage of the satellite-to-phone market).\n"
                             },
                             {
+                                "id": "qiskit",
+                                "title": "IBM Qiskit",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Quantum",
+                                    "Python",
+                                    "Coding",
+                                    "IBM"
+                                ],
+                                "content": "# IBM Qiskit\n\nThe Sheet Music for Quantum Orchestras.\n\n**Qiskit** is an open-source Python SDK that allows you to write code for **[[quantum-computing|Quantum Computers]]**.\n\nThink of it like **Composing vs. Playing**.\n*   **The Instrument (Quantum Computer):** A complex machine of lasers and supercooled chips.\n*   **The Sheet Music (Qiskit):** You write a \"score\" (Python code) that tells the instrument what notes to play.\n*   **The Musician (Qiskit Runtime):** The system that takes your score and actually performs it on the real hardware.\n\nYou don't need to know how to build a violin to write a symphony. Qiskit lets you write quantum algorithms without needing to know how to calibrate a microwave pulse generator.\n\n## Key Concepts\n\n1.  **Quantum Circuit:** The \"Canvas\". You draw wires (qubits) and place gates (operations) on them.\n    *   *Analogy:* Like a musical staff where you place notes.\n2.  **Transpilation:** The \"Translation\". Real quantum chips are messy and specific. Qiskit translates your perfect \"C-Major Chord\" into the specific, messy instructions needed for a specific distinct chip (e.g., \"Eagle\" vs. \"Heron\").\n3.  **Primitives:** The \"Performance\". These are the commands to run the job.\n    *   *Sampler:* Returns probabilities (quasi-probabilities). \"What are the odds this lands on Heads?\"\n    *   *Estimator:* Calculates physical properties (energy).\n\n## Why Python?\n\nQuantum computers are **Co-Processors**. You use a classical computer (CPU) to control them. Python is the language of the Controller. You write the logic in Python, Qiskit compiles it, and sends the job to the QPU (Quantum Processing Unit) to execute the hard math.\n\n### Further Reading\n\n*   **Official Guide:** *[Qiskit Quickstart](https://quantum.cloud.ibm.com/docs/en/guides/quick-start)*.\n*   **Concept:** *[[quantum-computing|Quantum Computing]]* (The hardware).\n"
+                            },
+                            {
                                 "id": "quantum-computing",
                                 "title": "Quantum Computing",
                                 "icon": "far fa-file-alt",
@@ -847,7 +929,7 @@ const wikiData = {
                                     "Physics",
                                     "Computing"
                                 ],
-                                "content": "# Quantum Computing\n\nCalculating every path through the maze at once.\n\nClassical computers (like the one you are using) think in **Bits** (0 OR 1).\nQuantum computers think in **Qubits** (0 AND 1, at the same time).\n\nThis allows them to solve specific types of massive problems (like folding proteins for drug discovery or breaking [[encryption]]) exponentially faster than a [[supercomputer]].\n\n## Superposition & Entanglement\n\n*   **Superposition:** A coin spinning on a table is neither Heads nor Tails; it is a blur of both. That is a Qubit.\n*   **Entanglement:** Two spinning coins are linked. If you stop one and it lands Heads, the other one *instantly* becomes Tails, even if it is on Mars.\n\n## FAQs\n\n*1. Will it replace my laptop?*\nNo. They are giant, fragile fridges that need to be kept near Absolute Zero (-273\u00b0C). They are for specific science/math tasks, not scrolling Twitter.\n\n*2. Will it break encryption?*\nEventually, yes. [[shors-algorithm|Shor's-Algorithm]] proves a powerful enough Quantum Computer could crack all modern flexible [[encryption]]. This is why \"Post-Quantum [[cryptography|Cryptography]]\" is being researched now.\n\n### Further Reading\n\n*   **Video:** *[Quantum Computers Explained (Kurzgesagt)](https://www.youtube.com/watch?v=JhHMJCUmq28)*\n*   **Article:** *[IBM Quantum Experience](https://www.ibm.com/quantum)*\n"
+                                "content": "# Quantum Computing\n\nCalculating every path through the maze at once.\n\nClassical computers (like the one you are using) think in **Bits** (0 OR 1).\nQuantum computers think in **Qubits** (0 AND 1, at the same time).\n\nThis allows them to solve specific types of massive problems (like folding proteins for drug discovery or breaking [[encryption]]) exponentially faster than a [[supercomputer]].\n\n## Superposition & Entanglement\n\n*   **Superposition:** A coin spinning on a table is neither Heads nor Tails; it is a blur of both. That is a Qubit.\n*   **Entanglement:** Two spinning coins are linked. If you stop one and it lands Heads, the other one *instantly* becomes Tails, even if it is on Mars.\n\n## FAQs\n\n*1. Will it replace my laptop?*\nNo. They are giant, fragile fridges that need to be kept near Absolute Zero (-273\u00b0C). They are for specific science/math tasks, not scrolling Twitter.\n\n*2. Will it break encryption?*\nEventually, yes. [[shors-algorithm|Shor's-Algorithm]] proves a powerful enough Quantum Computer could crack all modern flexible [[encryption]]. This is why \"Post-Quantum [[cryptography|Cryptography]]\" is being researched now.\n\n## How do we use them?\n\nWe use software like **[[qiskit|IBM Qiskit]]**. It's a Python library that lets you write code (circuits) on your laptop, which is then sent to a real Quantum Computer (via the cloud) to be executed.\n\n\n### Further Reading\n\n*   **Video:** *[Quantum Computers Explained (Kurzgesagt)](https://www.youtube.com/watch?v=JhHMJCUmq28)*\n*   **Article:** *[IBM Quantum Experience](https://www.ibm.com/quantum)*\n"
                             },
                             {
                                 "id": "qubits",
@@ -871,6 +953,18 @@ const wikiData = {
                         "view": "list",
                         "children": [
                             {
+                                "id": "cpu",
+                                "title": "CPU (Central Processing Unit)",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Hardware",
+                                    "Computing",
+                                    "Basics"
+                                ],
+                                "content": "# CPU (Central Processing Unit)\n\nThe Professor.\n\n**The CPU** is the primary brain of a computer. It is designed to interpret and execute generalized commands from software.\n\nThink of it like **A Professor**.\n*   **The Professor (CPU):** Extremely smart and versatile. Can solve complex calculus, write poetry, or organize a schedule. But can only do *one thing at a time*.\n*   **The Factory ([[gpu|GPU]]):** Not smart, but has 1,000 workers who can all stack boxes at once.\n*   **The Specialist ([[tpu|TPU]]):** A savant who can only do matrix multiplication, but does it faster than anyone else.\n\n## How it Works\n\n1.  **Sequential Processing:** The CPU reads instruction 1, does it. Reads instruction 2, does it. It is optimized for \"Latency\" (finishing one task fast) rather than \"Throughput\" (finishing many tasks at once).\n2.  **General Purpose:** It can run *any* code; Operating Systems, Games, Excel, Browsers. It is the conductor that tells the other chips (GPU, Disk, Network) what to do.\n\n## FAQs\n\n*1. Why do I need a GPU if I have a CPU?*\nBecause the Professor is too slow at painting. If you ask a Professor to modify 2 million pixels on a screen 60 times a second (gaming), they will fail. You need the Factory (GPU) for that.\n\n*2. Does AI use the CPU?*\nYes, for logic and data preparation. But for the heavy \"training\" (math), it offloads the work to [[npu|NPUs]] (on phones) or [[tpu|TPUs]] (in the cloud).\n\n### Further Reading\n\n*   **Article:** *[How Microprocessors Work](https://computer.howstuffworks.com/microprocessor.htm)*.\n*   **Comparison:** *[CPU vs GPU vs TPU](https://cloud.google.com/tpu/docs/intro-to-tpu#cpu-vs-gpu-vs-tpu)*.\n"
+                            },
+                            {
                                 "id": "flipper-zero",
                                 "title": "Flipper Zero",
                                 "icon": "far fa-file-alt",
@@ -892,7 +986,7 @@ const wikiData = {
                                     "Computing",
                                     "Gaming"
                                 ],
-                                "content": "# GPU\n\nA factory with thousands of workers, instead of one genius.\n\nThe **CPU** (Central Processing Unit) in your computer is like a **Professor**: extremely smart, can do complex math (calculus), but can only do one or two things at a time.\n\nThe **GPU** (Graphics Processing Unit) is like a **Factory** full of thousands of workers: they aren't very smart (basic math only), but they can do 10,000 simple things at the exact same time.\n\n## Why is it used for AI?\n\nAI (and Video Games) require changing millions of pixels or calculating millions of numbers simultaneously.\n*   **CPU:** Solves one complex equation in 0.1 seconds.\n*   **GPU:** Solves 10,000 simple equations in 0.1 seconds.\n\n## FAQs\n\n*1. Can I use a GPU for normal work?*\nYou use it every day! It draws the windows on your screen. But for running Excel or Word, your CPU does the heavy lifting because those tasks are sequential (step-by-step), not parallel.\n\n*2. Why are they so expensive?*\nSupply and Demand. They are the shovels in the AI Gold Rush. Everyone from gamers to Google needs them to run modern software.\n\n### Further Reading\n\n*   **Video:** *[Mythbusters Demo: CPU vs GPU](https://www.youtube.com/watch?v=-P28LKWTzrI)* (The famous paintball illustration).\n*   **Explainer:** *[NVIDIA: What is a GPU?](https://www.nvidia.com/en-us/geforce/technologies/what-is-a-gpu/)*\n"
+                                "content": "# GPU\n\nA factory with thousands of workers, instead of one genius.\n\nThe **[[cpu|CPU]]** (Central Processing Unit) in your computer is like a **Professor**: extremely smart, can do complex math (calculus), but can only do one or two things at a time.\n\nThe **GPU** (Graphics Processing Unit) is like a **Factory** full of thousands of workers: they aren't very smart (basic math only), but they can do 10,000 simple things at the exact same time.\n\n## Why is it used for AI?\n\nAI (and Video Games) require changing millions of pixels or calculating millions of numbers simultaneously.\n*   **[[cpu|CPU]]:** Solves one complex equation in 0.1 seconds.\n*   **GPU:** Solves 10,000 simple equations in 0.1 seconds.\n*   *(See also: [[tpu|TPUs]] for specialized AI/Cloud training and [[npu|NPUs]] for mobile AI).*\n\n## FAQs\n\n*1. Can I use a GPU for normal work?*\nYou use it every day! It draws the windows on your screen. But for running Excel or Word, your CPU does the heavy lifting because those tasks are sequential (step-by-step), not parallel.\n\n*2. Why are they so expensive?*\nSupply and Demand. They are the shovels in the AI Gold Rush. Everyone from gamers to Google needs them to run modern software.\n\n### Further Reading\n\n*   **Video:** *[Mythbusters Demo: CPU vs GPU](https://www.youtube.com/watch?v=-P28LKWTzrI)* (The famous paintball illustration).\n*   **Explainer:** *[NVIDIA: What is a GPU?](https://www.nvidia.com/en-us/geforce/technologies/what-is-a-gpu/)*\n"
                             },
                             {
                                 "id": "hard-drive",
@@ -1152,6 +1246,170 @@ const wikiData = {
                                     "JeremyBentham"
                                 ],
                                 "content": "# Utilitarianism\n\nThe greatest good for the greatest number.\n\n**Utilitarianism** is an ethical theory that says: The \"Right\" thing to do is whatever maximizes happiness and minimizes suffering for the most people.\n\nIt treats morality like a math equation. Intentions don't matter; rules don't matter. Only the **Consequences** (the result) matter.\n\n## The Trolley Problem\n\nThis is the classic test for Utilitarianism.\n*   A train is about to kill **5 people**.\n*   You can pull a lever to switch tracks, where it will only kill **1 person**.\n*   **Utilitarian Answer:** Pull the lever. 1 death is better than 5 deaths. (Math).\n*   **Non-Utilitarian ([[deontology|Deontology]]) Answer:** Do not pull. Killing an innocent person is wrong, regardless of the outcome.\n\n## FAQs\n\n*1. Is it perfect?*\nNo. The flaw is the **\"Minority Rights\"** problem.\nIf killing one healthy person and harvesting their organs could save 5 dying patients, strict Utilitarianism might say \"Do it\" (1 death saves 5). But almost everyone agrees that murdering an innocent person for parts is wrong, even if the math works out.\n\n*2. Who started it?*\n*   **Jeremy Bentham:** The founder. \"Nature has placed mankind under the governance of two sovereign masters, pain and pleasure.\"\n*   **John Stuart Mill:** Refined it. He argued that \"Qualitative\" pleasures (poetry, friendship) are better than \"Quantitative\" pleasures (eating, drinking).\n\n### Further Reading\n\n*   **Video:** *[Justice: What's The Right Thing To Do? (Harvard)](https://www.youtube.com/watch?v=kBdfcR-8hEY)*\n*   **Article:** *[Utilitarianism Explained](https://ethics.org.au/ethics-explainer-utilitarianism/)*\n"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "logical-fallacies",
+                        "title": "Logical Fallacies",
+                        "icon": "fas fa-shapes",
+                        "desc": "Flaws in reasoning that invalidate arguments",
+                        "view": "list",
+                        "children": [
+                            {
+                                "id": "ad-hominem",
+                                "title": "Ad Hominem",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Latin"
+                                ],
+                                "content": "# Ad Hominem\n\nShooting the Messenger.\n\n**Ad Hominem** (Latin for \"To the Person\") is a fallacy where you attack the *character* or *circumstances* of the person making the argument, rather than the argument itself.\n\nThink of it like **A Broken Clock**.\n*   **The Reality:** Even a broken clock is right twice a day. Even a rude, hypocritical, or unlikable person can make a mathematically correct statement.\n*   **The Fallacy:** \"You can't believe the clock is showing 12:00 because the clock is ugly and rusty.\" The rust has nothing to do with the time.\n\n## How it Works\n\n1.  **Avoidance:** You can't think of a logical counter-argument.\n2.  **Deflection:** You shift focus to the opponent's traits (appearance, past actions, intelligence). \"You're wrong about the tax code because you cheated on your wife.\"\n3.  **Invalidation:** The audience assumes bad person = bad idea.\n\n## FAQs\n\n*1. Is an insult always an Ad Hominem?*\nNo.\n*   **Insult:** \"You are an idiot.\" (Rude, but not a fallacy if it's just an exclamation).\n*   **Ad Hominem:** \"You are wrong *because* you are an idiot.\" (Fallacy: linking the claim's validity to the insult).\n\n*2. When is character relevant?*\nIf the argument *is* about their character. In a trial for fraud, the defendant's honesty *is* the topic. But in a debate about climate change, the scientist's tax returns are usually irrelevant to the data.\n\n### Further Reading\n\n*   **Article:** *[Tu Quoque](https://en.wikipedia.org/wiki/Tu_quoque)* (The \"You too!\" variant).\n"
+                            },
+                            {
+                                "id": "appeal-to-authority",
+                                "title": "Appeal to Authority",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Status"
+                                ],
+                                "content": "# Appeal to Authority\n\nBecause Dad Said So.\n\n**The Appeal to Authority** (*Argumentum ad Verecundiam*) is a fallacy where you claim something is true *solely* because an \"expert\" or famous person said it, without offering any actual evidence.\n\nThink of it like **A White Lab Coat**.\n*   **The Reality:** Wearing a lab coat doesn't make you right. Even Einstein made math errors. Truth comes from data, not costume.\n*   **The Fallacy:** \"This toothpaste is the best because Dr. Oz says so.\" (Is Dr. Oz a dentist? Does he have data? Or is he just famous?)\n\n## How it Works\n\n1.  **Status over Facts:** \"Professor X says the earth is flat.\"\n2.  **Irrelevant Expertise:** \"My mechanic says vaccines are dangerous.\" (Mechanics are experts on cars, not immunology).\n3.  **Blind Trust:** It shortcuts the need for proof.\n\n## FAQs\n\n*1. Is citing experts bad?*\nNo! It is *good* to listen to experts. The fallacy is assuming they are *infallible*.\n*   **Valid:** \"99% of climate scientists agree the earth is warming based on this data.\" (Consensus + Data).\n*   **Fallacy:** \"It's true *because* Newton said it.\" (Newton also believed in Alchemy).\n\n*2. Why do we do it?*\nIt's a cognitive shortcut. We evolved to trust tribal elders (Heuristics). Verifying everything ourselves is exhausting.\n\n### Further Reading\n\n*   **Concept:** *[halo-effect|The Halo Effect]* (Trusting pretty/famous people more than we should).\n"
+                            },
+                            {
+                                "id": "circular-reasoning",
+                                "title": "Circular Reasoning",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Tautology"
+                                ],
+                                "content": "# Circular Reasoning\n\nThe Snake Eating Its Tail.\n\n**Circular Reasoning** (Begging the Question) is a fallacy where the conclusion is hidden in the premise. You aren't actually proving anything; you are just repeating your assumption in different words.\n\nThink of it like **A Dictionary Loop**.\n*   **The Definition:** \"A Law is something that is legal.\"\n*   **The Fallacy:** \"Why is it illegal? Because it's against the Law.\"\n*   **The Problem:** You haven't explained *why*. You've just run in a circle.\n\n## How it Works\n\n1.  **Premise = Conclusion:** \"The Bible is the word of God.\"\n2.  **Proof:** \"Because it says so in the Bible.\"\n3.  **Result:** To believe the proof, you must already believe the conclusion. No new information is added.\n\n## FAQs\n\n*1. Is it obvious?*\nRarely. It's usually hidden in complex language. \"We must cut spending (Conclusion) because fiscal austerity is necessary (Premise).\" Fiscal austerity *means* cutting spending. It sounds smart, but it's a loop.\n\n*2. What is 'Begging the Question'?*\nIt's the formal name for this. It doesn't mean \"Raising the question.\" It means \"Assuming the answer.\"\n\n### Further Reading\n\n*   **Concept:** *[Tautology](https://en.wikipedia.org/wiki/Tautology_(logic))* (Existing just to be true).\n"
+                            },
+                            {
+                                "id": "false-dilemma",
+                                "title": "False Dilemma",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "BlackAndWhite"
+                                ],
+                                "content": "# False Dilemma\n\nBlack and White.\n\n**The False Dilemma** (or False Dichotomy) is a fallacy where a complex situation is presented as having only two options; usually \"My Way\" or \"The Apocalypse\"; when in reality there are many middle grounds.\n\nThink of it like **A Light Switch vs. A Dimmer**.\n*   **The Fallacy:** \"The room is either completely dark or blindingly bright!\" (A Switch).\n*   **The Reality:** Most rooms have dimmer switches. You can have 50% brightness, 20% brightness, or candle light.\n\n## How it Works\n\n1.  **Over-Simplification:** \"You are either with us, or against us.\"\n2.  **Forced Choice:** This trap forces the opponent to defend an extreme position they don't actually hold, or accept your extreme position.\n3.  **Ignoring Nuance:** It erases compromise, context, and third options.\n\n## FAQs\n\n*1. Is it always a fallacy?*\nNo. Sometimes there *are* only two options. \"You are either pregnant or you are not.\" There is no \"kind of\" pregnant. But in politics and ethics, binary choices are rare.\n\n*2. Why is it used?*\nIt creates urgency and fear. Salespeople use it (\"Buy now or lose this deal forever!\") to bypass critical thinking.\n\n"
+                            },
+                            {
+                                "id": "middle-ground",
+                                "title": "Middle Ground Fallacy",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate"
+                                ],
+                                "content": "# Middle Ground Fallacy\n\nThe Truth is in the Middle.\n\n**The Middle Ground Fallacy** (Argumentum ad Temperantiam) is the massive assumption that because two opposing views exist, the correct or honest position *must* be the compromise between them.\n\nThink of it like **Drinking Poison**.\n*   **Person A:** \"You should drink a gallon of cyanide.\"\n*   **Person B:** \"You should drink zero cyanide.\"\n*   **The Fallacy:** \"We should compromise and drink half a gallon of cyanide.\"\n*   **The Reality:** Sometimes one side is 100% right and the other is 100% wrong.\n\n## How it Works\n\n1.  **Extremes:** Position A (Sky is Blue) vs Position B (Sky is Yellow).\n2.  **Compromise:** Position C (Sky is Green).\n3.  **Error:** The sky is actually Blue. The presence of a \"Yellow\" movement doesn't make the sky Green.\n\n## FAQs\n\n*1. Isn't compromise good?*\nSocially, yes. Stick to your guns on *facts*, but compromise on *actions*. \"We agree the house is on fire (Fact), but we compromise on using a hose vs a bucket (Action).\"\n\n### Further Reading\n\n*   **Opposite:** *[[false-dilemma|False Dilemma]]* (Assuming there is *no* middle ground).\n"
+                            },
+                            {
+                                "id": "post-hoc",
+                                "title": "Post Hoc Fallacy",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Statistics",
+                                    "Latin"
+                                ],
+                                "content": "# Post Hoc Fallacy\n\nThe Rain Dance.\n\n**Post Hoc Ergo Propter Hoc** (Latin for \"After this, therefore because of this\") is the assumption that because Event B followed Event A, Event A *caused* Event B.\n\nThink of it like **The Rain Dance**.\n*   **The Event:** I did a dance. Then it rained.\n*   **The Fallacy:** \"My dance caused the rain.\"\n*   **The Reality:** Correlation is not Causation. The rain was coming anyway.\n\n## How it Works\n\n1.  **Observation:** \"I wore my lucky socks.\" -> \"My team won the game.\"\n2.  **Assumption:** \"My socks made them win.\"\n3.  **Error:** Ignoring coincidence or other factors (the team practiced hard).\n\n## FAQs\n\n*1. Correlation vs. Causation?*\nThis is the core of the fallacy.\n*   **Correlation:** Ice cream sales and murder rates go up at the same time (Summer).\n*   **Causation:** Ice cream does not cause murder. Heat causes both.\n\n*2. Why do we believe it?*\nOur brains are pattern-matching machines. We evolved to survive by finding causes (\"I ate berry -> I got sick\"). We are prone to \"False Positives\" (Superstitions).\n\n### Further Reading\n\n*   **Concept:** *[Spurious Correlations](https://www.tylervigen.com/spurious-correlations)* (Funny graphs showing things like \"Cheese consumption correlates with strangulation by bedsheets\").\n"
+                            },
+                            {
+                                "id": "red-herring",
+                                "title": "Red Herring",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Distraction"
+                                ],
+                                "content": "# Red Herring\n\nLook, a Squirrel!\n\n**A Red Herring** is a fallacy where someone introduces an irrelevant topic to divert attention from the original issue.\n\nThink of it like **Training Dogs**.\n*   **The Origin:** Escaped prisoners would supposedly drag a strong-smelling fish (Red Herring) across their trail to confuse the tracking dogs.\n*   **The Tactic:** \"You asked me about the budget deficit? Let me tell you about how much I love the flag.\" The flag is the fish. It smells strong (emotional), but it leads nowhere.\n\n## How it Works\n\n1.  **Topic A:** \"Did you steal the money?\"\n2.  **Topic B:** \"I have worked at this company for 20 years and I love my coworkers!\" (Irrelevant).\n3.  **Confusion:** The accuser starts arguing about the coworker love instead of the theft.\n\n## FAQs\n\n*1. Is it the same as Straw Man?*\nNo.\n*   **Straw Man:** Twists your *actual* argument.\n*   **Red Herring:** Changes the subject entirely.\n\n### Further Reading\n\n*   **Concept:** *[Whataboutism](https://en.wikipedia.org/wiki/Whataboutism)* (A specific type of Red Herring: \"But what about *them*?\").\n"
+                            },
+                            {
+                                "id": "slippery-slope",
+                                "title": "Slippery Slope",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Fear"
+                                ],
+                                "content": "# Slippery Slope\n\nThe Snowball Effect.\n\n**The Slippery Slope** is a fallacy where you argue that a relatively small first step will inevitably lead to a chain of related events culminating in some significant (usually negative) effect.\n\nThink of it like **A Slide**.\n*   **The Fallacy:** \"If I let you have a cookie today, you'll eat cookies every day, get fat, lose your job, and die alone.\"\n*   **The Reality:** Eating one cookie rarely leads to dying alone. There are many stops on the slide where you can get off.\n\n## How it Works\n\n1.  **Step A:** \"We should ban automatic assault rifles.\"\n2.  **The Leap:** \"If we do that, next they'll ban handguns, then kitchen knives, and soon we'll be living in a tyranny!\"\n3.  **The Fear:** Focuses on the terrifying *End Result* rather than the actual merit of *Step A*.\n\n## FAQs\n\n*1. Are slopes never slippery?*\nSometimes they are. \"If I take heroin once, I might get addicted.\" That is a valid risk.\n*   **Valid Argument:** Proves the causal link between A and B roughly exists.\n*   **Fallacy:** Assumes the link is *inevitable* without evidence, usually to fearmonger.\n\n### Further Reading\n\n*   **Concept:** *[Gateway Drug Theory](https://en.wikipedia.org/wiki/Gateway_drug_effect)* (A classic real-world application of this logic, widely debated).\n"
+                            },
+                            {
+                                "id": "steel-manning",
+                                "title": "Steel-Manning",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Philosophy",
+                                    "MentalModels"
+                                ],
+                                "content": "# Steel-Manning\n\nIroning out the Truth.\n\n**Steel-Manning** is the opposite of the [[straw-man|Straw Man Fallacy]]. It is the practice of addressing the *strongest possible version* of your opponent's argument, even if they didn't articulate it well themselves.\n\nThink of it like **Training with a Heavy Weight**.\n*   **Straw Man:** You fight a weak opponent (a scarecrow) to look strong. You gain nothing.\n*   **Steel Man:** You fight the strongest opponent (a steel robot). If you win, you *know* you are right. If you lose, you learn something.\n\n## How it Works\n\n1.  **Listen:** Hear their argument.\n2.  **Improve:** \"If I understand you correctly, you're saying X. And to make that even stronger, you could also argue Y.\"\n3.  **Engage:** \"Now that we have the best version of this idea, here is why I still disagree.\"\n\n## Why do it?\n\n*   **Truth-Seeking:** It removes ego. You aren't trying to \"win\" a debate; you are trying to find the best answer.\n*   **Persuasion:** People are more likely to listen to you if they feel you truly understand them.\n\n### Further Reading\n\n*   **Contra:** *[[straw-man|Straw Man Fallacy]]* (The common, lazy alternative).\n"
+                            },
+                            {
+                                "id": "straw-man",
+                                "title": "Straw Man Fallacy",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Philosophy"
+                                ],
+                                "content": "# Straw Man Fallacy\n\nFighting a Scarecrow.\n\n**The Straw Man Fallacy** prevents honest debate by replacing your opponent's actual (strong) argument with a distorted, exaggerated, or weak version (the \"Straw Man\") that is easier to defeat.\n\nThink of it like **Fighting a Scarecrow**.\n*   **The Reality:** Your opponent is a skilled knight (their actual argument).\n*   **The Fallacy:** Instead of fighting the knight, you build a scarecrow out of hay, dress it in the knight's armor, and easily knock it over. You claim victory, but you haven't actually touched the knight.\n\n## How it Works\n\n1.  **Distort:** Take \"I think we should fund schools more\" and twist it into \"My opponent wants to bankrupt the country by throwing money at broken systems!\"\n2.  **Attack:** Viciously attack the idea of \"bankrupting the country.\"\n3.  **Claim Victory:** Pretend you have defeated the original argument about funding schools.\n\n## FAQs\n\n*1. Is it lying?*\nNot always intentional. Sometimes people genuinely misunderstand an argument and attack their *misconception* of it. However, in politics, it is usually a deliberate tactic.\n\n*2. How do I counter it?*\n\"[[steel-manning|Steel-Manning]].\" Ignore the scarecrow. Calmly restate your *actual* argument, or correct their distortion explicitly: \"I didn't say we should bankrupt the country; I said we should reallocate 1% of the budget.\"\n\n### Further Reading\n\n*   **Concept:** *[Steel-Manning](https://en.wikipedia.org/wiki/Steel_manning)* (The opposite: attacking the *strongest* version of an argument).\n"
+                            },
+                            {
+                                "id": "tautology",
+                                "title": "Tautology",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Rhetoric"
+                                ],
+                                "content": "# Tautology\n\nThe ATM Machine.\n\n**A Tautology** is a statement that is true by necessity or by virtue of its logical form. In rhetoric, it often appears as a redundant statement that adds no new information, similar to [[circular-reasoning|Circular Reasoning]].\n\nThink of it like **The ATM Machine**.\n*   **The Phrase:** \"ATM Machine\" (Automated Teller Machine Machine). The word \"Machine\" is already in \"ATM\".\n*   **The Logic:** \"It is what it is.\" \"The unwashed are those who generally remain unclean.\"\n\n## How it Works\n\n1.  **The Loop:** A = A.\n2.  **The Filler:** It sounds profound (\"Boys will be boys\") but essentially says \"Boys will be [what boys are].\" It defines a thing by itself.\n3.  **The Trap:** In logic, a tautology is *always true* (A or not A), but in debate, it is *useless* because it proves nothing about the real world.\n\n## FAQs\n\n*1. Is it a fallacy?*\nNot strictu sensu. A tautology is logically *valid* (true). But using it as an *argument* is fallacious because it is empty. \"We will win because we are the winners.\"\n\n### Further Reading\n\n*   **Related:** *[[circular-reasoning|Circular Reasoning]]* (Using the conclusion as the premise).\n"
+                            },
+                            {
+                                "id": "tu-quoque",
+                                "title": "Tu Quoque",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Latin"
+                                ],
+                                "content": "# Tu Quoque\n\nYou Too!\n\n**Tu Quoque** (Latin for \"You also\") is a fallacy where you reject an argument because the person making it is a hypocrite, rather than addressing the argument itself. It is a specific type of [[ad-hominem|Ad Hominem]].\n\nThink of it like **The Smoking Doctor**.\n*   **The Scenario:** A doctor smokes a pack a day. He tells you: \"Smoking is bad for your lungs, here is the data.\"\n*   **The Fallacy:** \"You smoke! So your data must be fake.\"\n*   **The Reality:** The doctor is a hypocrite, but his data is still correct.\n\n## How it Works\n\n1.  **Accusation:** \"You cheated on your taxes!\"\n2.  **Reflection:** \"Well, you cheated on yours last year!\" (Tu Quoque).\n3.  **Result:** Now we are arguing about you, not me. The original accusation is ignored.\n\n## FAQs\n\n*1. Does hypocrisy matter?*\nFor *trust*, yes. For *logic*, no. A thief can correctly say \"Stealing is illegal.\"\n\n### Further Reading\n\n*   **Parent:** *[[ad-hominem|Ad Hominem]]* (Attacking the person).\n*   **Variant:** *[[whataboutism|Whataboutism]]* (Distracting with other people's faults).\n"
+                            },
+                            {
+                                "id": "whataboutism",
+                                "title": "Whataboutism",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Logic",
+                                    "Debate",
+                                    "Propaganda"
+                                ],
+                                "content": "# Whataboutism\n\nBut What About Them?\n\n**Whataboutism** is a tactic used to deflect criticism by accusing the critic of the same thing (or something worse), without addressing the original criticism. It is a specific, weaponized version of *[[tu-quoque|Tu Quoque]]*.\n\nThink of it like **The Speeding Ticket**.\n*   **The Cop:** \"I pulled you over for speeding.\"\n*   **The Driver:** \"But what about that guy? He was driving faster than me!\"\n*   **The Reality:** That guy's speed doesn't make your speed legal. You still broke the law.\n\n## How it Works\n\n1.  **Attack:** \"Country A violates human rights.\"\n2.  **Deflection:** \"What about Country B? They do it too!\"\n3.  **Effect:** The conversation shifts to Country B. Country A's crimes are forgotten/normalized.\n\n## FAQs\n\n*1. Is it a fallacy?*\nYes, because it is a *Red Herring*. It changes the subject. It doesn't prove innocence; it just proves shared guilt.\n\n*2. Why is it effective?*\nIt appeals to our sense of fairness. We hate hypocrisy. But hypocrisy doesn't change facts.\n\n### Further Reading\n\n*   **Parent:** *[[red-herring|Red Herring]]* (The broad category of distraction).\n"
                             }
                         ]
                     },
@@ -1507,31 +1765,175 @@ const wikiData = {
                 "title": "Science",
                 "icon": "fas fa-dna",
                 "desc": "Biology, Physics, and Chemistry",
-                "view": "list",
+                "view": "shelf",
                 "children": [
                     {
-                        "id": "crispr",
-                        "title": "CRISPR",
-                        "icon": "far fa-file-alt",
-                        "desc": "",
-                        "tags": [
-                            "Biology",
-                            "Genetics",
-                            "Biotech"
-                        ],
-                        "content": "# CRISPR\n\n**Think of it like the \"Find and Replace\" function in a word processor, but for DNA.**\n\n**CRISPR** (Clustered Regularly Interspaced Short Palindromic Repeats) is a biological tool that allows scientists to find a specific sequence of DNA code inside a living cell and edit, remove, or replace it.\n\nImagine your DNA is a massive instruction manual for building *You*. Before CRISPR, if there was a typo in that manual (a genetic disease), trying to fix it was like trying to rewrite a single page by throwing a bucket of ink at the book. CRISPR changed the game because it includes a \"search bar\" (a guide molecule) that finds the *exact* sentence with the typo, and a pair of \"scissors\" (the Cas9 protein) that cuts it out so it can be rewritten.\n\n## How it Works\n1.  **The Guide (Search):** Scientists design a piece of RNA that matches the specific DNA sequence they want to target (like typing \"typo\" into the search bar).\n2.  **The Cut (Delete):** An enzyme called Cas9 follows the guide to that location and snips the DNA strand.\n3.  **The Repair (Paste):** The cell notices the damage and tries to repair it. Scientists can provide a new, correct piece of DNA for the cell to use as a template during this repair, effectively pasting in the correct code.\n\n## FAQs\n\n*1. Is this safe for humans?*\nIt is still experimental for most uses. The main risk is \"off-target effects\"; where the scissors accidentally cut a similar-looking sentence on the wrong page, potentially causing unintended mutations or cancer. But new versions (like \"Base Editing\" or methylation editors) are becoming safer.\n\n*2. Can it create \"Designer Babies\"?*\nTheoretically, yes. It could be used to alter traits like height or eye color in embryos. However, the scientific community largely considers this unethical (and illegal in many places) because those changes are \"heritable\"; meaning they would be passed down to all future generations.\n\n### Further Reading\n\n*   **Video:** *[Gene Editing with CRISPR-Cas9](https://www.youtube.com/watch?v=2pp17E4E-O8)* (McGovern Institute explainer).\n*   **Article:** *[What is CRISPR?](https://www.newscientist.com/term/what-is-crispr/)* (New Scientist basic guide).\n"
+                        "id": "biology",
+                        "title": "Biology",
+                        "icon": "fas fa-brain",
+                        "desc": "The science of life",
+                        "view": "list",
+                        "children": [
+                            {
+                                "id": "crispr",
+                                "title": "CRISPR",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Biology",
+                                    "Genetics",
+                                    "Biotech"
+                                ],
+                                "content": "# CRISPR\n\n**Think of it like the \"Find and Replace\" function in a word processor, but for DNA.**\n\n**CRISPR** (Clustered Regularly Interspaced Short Palindromic Repeats) is a biological tool that allows scientists to find a specific sequence of DNA code inside a living cell and edit, remove, or replace it.\n\nImagine your DNA is a massive instruction manual for building *You*. Before CRISPR, if there was a typo in that manual (a genetic disease), trying to fix it was like trying to rewrite a single page by throwing a bucket of ink at the book. CRISPR changed the game because it includes a \"search bar\" (a guide molecule) that finds the *exact* sentence with the typo, and a pair of \"scissors\" (the Cas9 protein) that cuts it out so it can be rewritten.\n\n## How it Works\n1.  **The Guide (Search):** Scientists design a piece of RNA that matches the specific DNA sequence they want to target (like typing \"typo\" into the search bar).\n2.  **The Cut (Delete):** An enzyme called Cas9 follows the guide to that location and snips the DNA strand.\n3.  **The Repair (Paste):** The cell notices the damage and tries to repair it. Scientists can provide a new, correct piece of DNA for the cell to use as a template during this repair, effectively pasting in the correct code.\n\n## FAQs\n\n*1. Is this safe for humans?*\nIt is still experimental for most uses. The main risk is \"off-target effects\"; where the scissors accidentally cut a similar-looking sentence on the wrong page, potentially causing unintended mutations or cancer. But new versions (like \"Base Editing\" or methylation editors) are becoming safer.\n\n*2. Can it create \"Designer Babies\"?*\nTheoretically, yes. It could be used to alter traits like height or eye color in embryos. However, the scientific community largely considers this unethical (and illegal in many places) because those changes are \"heritable\"; meaning they would be passed down to all future generations.\n\n### Further Reading\n\n*   **Video:** *[Gene Editing with CRISPR-Cas9](https://www.youtube.com/watch?v=2pp17E4E-O8)* (McGovern Institute explainer).\n*   **Article:** *[What is CRISPR?](https://www.newscientist.com/term/what-is-crispr/)* (New Scientist basic guide).\n"
+                            },
+                            {
+                                "id": "epigenetics",
+                                "title": "Epigenetics",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Biology",
+                                    "Genetics",
+                                    "Health"
+                                ],
+                                "content": "# Epigenetics\n\n**Think of it like the \"Software\" that runs on your DNA \"Hardware.\"**\n\n**Epigenetics** is the study of biological mechanisms that switch genes on or off without altering the actual DNA sequence itself.\n\nIf your DNA is the rigid hardware (the unchangeable circuit board) of a computer, epigenetics is the operating system that decides which programs (genes) to run and which to ignore. You can't easily change your hardware, but your environment; stress, diet, sleep, chemicals; can change the software settings. This helps explain why identical twins (who have the exact same hardware) can develop completely different health issues as they age; their \"settings\" have drifted apart.\n\n## How it Works\n*   **Methylation (The Off Switch):** The body attaches small chemical tags (methyl groups) to specific parts of DNA. These act like \"Do Not Disturb\" signs, preventing that gene from being read.\n*   **Histone Modification (The Volume Knob):** DNA is wrapped around spools called histones. If the DNA is wrapped too tightly, the cell can't read it (volume down). If it's loose, the gene is active (volume up).\n\n## FAQs\n\n*1. Can I change my epigenetics?*\nYes! Unlike your DNA, which you're stuck with, your epigenetic markers are reversible. Improving your diet, exercising, and reducing stress can physically remove \"bad\" tags and add \"good\" ones, potentially lowering your risk of diseases like cancer or diabetes.\n\n*2. Do I pass this to my kids?*\nSurprisingly, yes. Some epigenetic tags can survive reproduction. This means extreme stress or famine experienced by a parent (or even grandparent) can leave a chemical \"scar\" on their genes that is passed down, potentially affecting the metabolism or stress response of their children.\n\n### Further Reading\n\n*   **Video:** *[The Epigenetics Revolution](https://www.youtube.com/watch?v=kp1bZEUgqVI)* (SciShow).\n*   **Article:** *[Epigenetics: It's not just genes that make us](https://www.bbc.com/news/health-29621689)* (BBC News).\n"
+                            }
+                        ]
                     },
                     {
-                        "id": "epigenetics",
-                        "title": "Epigenetics",
-                        "icon": "far fa-file-alt",
-                        "desc": "",
-                        "tags": [
-                            "Biology",
-                            "Genetics",
-                            "Health"
-                        ],
-                        "content": "# Epigenetics\n\n**Think of it like the \"Software\" that runs on your DNA \"Hardware.\"**\n\n**Epigenetics** is the study of biological mechanisms that switch genes on or off without altering the actual DNA sequence itself.\n\nIf your DNA is the rigid hardware (the unchangeable circuit board) of a computer, epigenetics is the operating system that decides which programs (genes) to run and which to ignore. You can't easily change your hardware, but your environment; stress, diet, sleep, chemicals; can change the software settings. This helps explain why identical twins (who have the exact same hardware) can develop completely different health issues as they age; their \"settings\" have drifted apart.\n\n## How it Works\n*   **Methylation (The Off Switch):** The body attaches small chemical tags (methyl groups) to specific parts of DNA. These act like \"Do Not Disturb\" signs, preventing that gene from being read.\n*   **Histone Modification (The Volume Knob):** DNA is wrapped around spools called histones. If the DNA is wrapped too tightly, the cell can't read it (volume down). If it's loose, the gene is active (volume up).\n\n## FAQs\n\n*1. Can I change my epigenetics?*\nYes! Unlike your DNA, which you're stuck with, your epigenetic markers are reversible. Improving your diet, exercising, and reducing stress can physically remove \"bad\" tags and add \"good\" ones, potentially lowering your risk of diseases like cancer or diabetes.\n\n*2. Do I pass this to my kids?*\nSurprisingly, yes. Some epigenetic tags can survive reproduction. This means extreme stress or famine experienced by a parent (or even grandparent) can leave a chemical \"scar\" on their genes that is passed down, potentially affecting the metabolism or stress response of their children.\n\n### Further Reading\n\n*   **Video:** *[The Epigenetics Revolution](https://www.youtube.com/watch?v=kp1bZEUgqVI)* (SciShow).\n*   **Article:** *[Epigenetics: It's not just genes that make us](https://www.bbc.com/news/health-29621689)* (BBC News).\n"
+                        "id": "statistics",
+                        "title": "Statistics",
+                        "icon": "fas fa-chart-bar",
+                        "desc": "The science of data and probability",
+                        "view": "shelf",
+                        "children": [
+                            {
+                                "id": "concepts",
+                                "title": "Concepts",
+                                "icon": "fas fa-lightbulb",
+                                "desc": "Key specific jargon",
+                                "view": "list",
+                                "children": [
+                                    {
+                                        "id": "black-swan",
+                                        "title": "Black Swan",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Risk",
+                                            "Taleb"
+                                        ],
+                                        "content": "# Black Swan\n\nThe Impossible Event.\n\n**A Black Swan** is an event that is:\n1.  **Rare:** Outside regular expectations.\n2.  **Impactful:** Carries extreme consequences.\n3.  **Retrospectively Predictable:** Creating an explanation *after* the fact (\"We should have seen it coming\").\n\nThink of it like **The Turkey Problem**.\n*   **The Data:** For 1,000 days, the farmer feeds the turkey. The turkey's data says \"Farmer = Friend.\" Confirming evidence increases every day.\n*   **The Event:** Day 1,001 is Thanksgiving.\n*   **The Lesson:** Past data did not predict the future. The most important event in the turkey's life was a Black Swan that no chart could foresee.\n\n## Why it Matters\n\nIn **[[power-law|Power Law]]** environments (finance, pandemics, internet), Black Swans drive history. Standard models (like the Bell Curve) ignore them as \"outliers,\" which is why banks crash.\n"
+                                    },
+                                    {
+                                        "id": "central-limit-theorem",
+                                        "title": "Central Limit Theorem",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Math",
+                                            "Jargon"
+                                        ],
+                                        "content": "# Central Limit Theorem\n\nThe Magnet.\n\n**The Central Limit Theorem (CLT)** states that if you take enough random samples from *any* population (even a weird one), the *averages* of those samples will inherently form a **[[normal-distribution|Normal Distribution]]** (Bell Curve).\n\nThink of it like **Rolling Dice**.\n*   **One Die:** Rolling a 1 is just as likely as a 6. (Flat distribution).\n*   **Ten Dice:** The *average* of 10 dice will almost always be around 3.5. Rolling all 1s (Average 1) is nearly impossible.\n*   **The Magnet:** The more dice you roll, the harder the average is pulled toward the center.\n\n## Why it Matters\n\nThis is why we can use Statistics on almost anything. We don't need to know the shape of the original data; if we survey enough people, their *averages* will behave like a nice, predictable Bell Curve.\n"
+                                    },
+                                    {
+                                        "id": "long-tail",
+                                        "title": "The Long Tail",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Marketing",
+                                            "Anderson"
+                                        ],
+                                        "content": "# The Long Tail\n\nThe Niche.\n\n**The Long Tail** refers to the strategy of selling a large number of unique items with relatively small quantities sold of each, usually in addition to selling fewer popular items in large quantities.\n\nThink of it like **Amazon vs. Bookstore**.\n*   **Bookstore:** Limited shelf space. They only stock the \"Hits\" (top 1,000 books) that guarantee sales.\n*   **Amazon:** Unlimited database space. They stock the \"Long Tail\" (millions of obscure books).\n*   **The Math:** Selling 1 copy of 1 million obscure books = Selling 1 million copies of Harry Potter.\n\n## Why it Matters\n\nIn a **[[power-law|Power Law]]** distribution, the \"Tail\" is infinitely long. The internet makes it profitable to mine the tail, whereas physical stores can only afford the \"Head.\"\n"
+                                    },
+                                    {
+                                        "id": "pareto-principle",
+                                        "title": "Pareto Principle",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Efficiency",
+                                            "80/20"
+                                        ],
+                                        "content": "# Pareto Principle\n\nThe 80/20 Rule.\n\n**The Pareto Principle** states that for many outcomes, roughly 80% of consequences come from 20% of the causes. It is a specific application of the **[[power-law|Power Law]]**.\n\nThink of it like **Your Carpet**.\n*   **The Rule:** 20% of your carpet gets 80% of the foot traffic.\n*   **The Business:** 20% of customers provide 80% of revenue.\n*   **The Code:** 20% of the bugs cause 80% of the crashes.\n\n## Why it Matters\n\nIt is the ultimate tool for **Efficiency**. You don't need to fix *everything*. You just need to find the vital 20% that drives the result and fix that.\n"
+                                    },
+                                    {
+                                        "id": "standard-deviation",
+                                        "title": "Standard Deviation",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Math",
+                                            "Jargon"
+                                        ],
+                                        "content": "# Standard Deviation\n\nThe Spread.\n\n**Standard Deviation (SD)** is a measure of how spread out numbers are.\n*   **Low SD:** Data is bunched up near the average (Reliable).\n*   **High SD:** Data is all over the place (Chaotic).\n\nThink of it like **Pizza Delivery**.\n*   **Pizza A:** Always arrives in exactly 30 mins. (Average = 30, SD = 0).\n*   **Pizza B:** Arrives in 10 mins or 50 mins. (Average = 30, SD = High).\n*   **The Lesson:** Even if the *average* is the same, Pizza B is risky. SD measures that risk.\n\n## Why it Matters\n\nIn a **[[normal-distribution|Normal Distribution]]**, SD is the ruler we use to measure weirdness.\n*   **1 Sigma (SD):** Normal stuff (68% of people).\n*   **3 Sigmas:** Rare stuff (Top 1% genius).\n*   **6 Sigmas:** Miracle/Disaster (Winning the lottery).\n"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "distributions",
+                                "title": "Distributions",
+                                "icon": "fas fa-wave-square",
+                                "desc": "Common shapes of data in the real world",
+                                "view": "list",
+                                "children": [
+                                    {
+                                        "id": "binomial-distribution",
+                                        "title": "Binomial Distribution",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Math",
+                                            "CoinFlip"
+                                        ],
+                                        "content": "# Binomial Distribution\n\nThe Coin Flip.\n\n**The Binomial Distribution** models the number of \"Successes\" in a fixed number of independent \"Trials\", where each trial has the same probability of success.\n\nThink of it like **Free Throws**.\n*   **The Trial:** You shoot the ball.\n*   **The Result:** You make it (Success) or miss it (Failure). No \"half-points\".\n*   **The Question:** If you shoot 10 times, and you are a 50% shooter, what are the odds you make exactly 7?\n\n![Binomial Distribution Chart](https://media.geeksforgeeks.org/wp-content/uploads/20250723182638251176/frame_3051.webp)\n\n## How it Works\n\n1.  **Binary Outcome:** Yes/No, Pass/Fail, Heads/Tails.\n2.  **Fixed N:** You decide beforehand \"I will flip 10 times.\" (If you flip until you stop, that's different).\n3.  **Fixed P:** The probability of success (e.g., 0.5) is the same for every flip.\n\n## Real World Use Cases\n\n*   **Quality Control:** Testing 1000 chips. How many are defective?\n*   **Elections:** Surveying 100 voters. How many vote Yes?\n*   **Medical:** Treating 50 patients. How many recover?\n\n## Analysis\n\nThe Binomial converges into the **Normal Distribution** if you do enough trials. (If you flip 1,000,000 coins, the graph looks like a Bell Curve).\n\n### Further Reading\n\n*   **Sibling:** *[[poisson-distribution|Poisson Distribution]]* (Counting events over time, not trials).\n"
+                                    },
+                                    {
+                                        "id": "normal-distribution",
+                                        "title": "Normal Distribution",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Math",
+                                            "BellCurve"
+                                        ],
+                                        "content": "# Normal Distribution\n\nMediocristan.\n\n**The Normal Distribution** (Bell Curve) is the most common pattern in nature. Most things are average, and extreme deviations are rare and symmetric.\n\nThink of it like **Adult Male Height**.\n*   **The Average:** Most men are around 5'9\".\n*   **The Deviations:** A few are 6'5\", a few are 5'2\".\n*   **The Impossible:** No one is 500 feet tall.\n\n![Normal Distribution Chart](https://www.w3schools.com/statistics/img_normal_distribution.svg)\n\n## How it Works\n\n1.  **[[central-limit-theorem|Central Limit Theorem]]:** When you add up many independent random variables, they tend to form a Bell Curve.\n2.  **Symmetry:** 50% are above average, 50% are below.\n3.  **The 68-95-99.7 Rule:**\n    *   68% of data falls within 1 **[[standard-deviation|Standard Deviation (SD)]]**.\n    *   95% falls within 2 SDs.\n    *   99.7% falls within 3 SDs.\n\n## Real World Use Cases\n\n*   **IQ Tests:** Designed to be a Bell Curve with 100 as the mean.\n*   **Manufacturing:** Checking bolt sizes. If too many are \"outliers\" (outside 3 SDs), the machine is broken.\n*   **height/Weight:** Biology usually follows this.\n\n## Analysis\n\nIn a Normal world, prediction is easy. Historical data (last 100 years of flood data) accurately predicts the future. You are safe from \"Black Swans\" (mostly).\n\n### Further Reading\n\n*   **Contrast:** *[power-law|Power Law]* (Where averages don't exist).\n"
+                                    },
+                                    {
+                                        "id": "poisson-distribution",
+                                        "title": "Poisson Distribution",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Math",
+                                            "Time"
+                                        ],
+                                        "content": "# Poisson Distribution\n\nThe Waiting Game.\n\n**The Poisson Distribution** models the probability of a specific number of events happening in a fixed interval of time or space, assuming these events happen with a known constant mean rate and independently of the time since the last event.\n\nThink of it like **The Call Center**.\n*   **The Average:** We get 5 calls per minute.\n*   **The Question:** What are the odds we get exactly 8 calls in the next minute? Or 0 calls?\n*   **The Shape:** It is skewed. You can't have fewer than 0 calls, but you could theoretically have 100.\n\n## How it Works\n\n1.  **Rare Events:** It works best for things that don't happen often but *could* happen at any moment.\n2.  **Independence:** One call doesn't cause the next call.\n3.  **Lambda ($\\lambda$):** The valid rate (e.g., 5 calls/min). If you know Lambda, you know the whole curve.\n\n## Real World Use Cases\n\n*   **Bus Arrivals:** How many buses arrive in an hour?\n*   **Decay:** Radioactive atoms decaying per second.\n*   **IT:** How many 404 errors will the server log in the next hour?\n\n## Analysis\n\nThis is used for **Capacity Planning**. \"If we average 5 calls, but there's a 10% chance of 12 calls, do we have enough staff for 12?\"\n\n### Further Reading\n\n*   **Contrast:** *[[binomial-distribution|Binomial Distribution]]* (Yes/No trials vs. Counting events).\n"
+                                    },
+                                    {
+                                        "id": "power-law",
+                                        "title": "Power Law",
+                                        "icon": "far fa-file-alt",
+                                        "desc": "",
+                                        "tags": [
+                                            "Statistics",
+                                            "Math",
+                                            "Pareto"
+                                        ],
+                                        "content": "# Power Law\n\nExtremistan.\n\n**A Power Law** (Pareto Distribution) is a pattern where a small number of items account for the vast majority of the impact. The average is meaningless because one \"Black Swan\" can skew the whole dataset.\n\nThink of it like **Book Sales**.\n*   **The Long Tail:** Millions of authors sell 10 copies.\n*   **The Head:** J.K. Rowling sells 500 million copies.\n*   **The Skew:** If you average J.K. Rowling with me, we are both best-selling authors *on average*. But the average is a lie.\n\n## How it Works\n\n1.  **Preferential Attachment:** \"The rich get richer.\" If you have 1 million followers, gaining the next follower is easier than if you have 0.\n2.  **Scale Invariance:** The pattern looks the same at any scale (fractal).\n3.  **No Tyical Member:** In a Bell Curve, a variance of 10-sigma is impossible. In a Power Law, it's expected.\n\n## Real World Use Cases\n\n*   **Wealth:** The 80/20 Rule (80% of wealth is owned by 20% of people).\n*   **City Sizes:** A few mega-cities, thousands of small towns.\n*   **Web Traffic:** Google gets billions of hits; this page i.e., second brain gets three.\n\n## Analysis\n\n## Analysis\n\nIn a Power Law world, risk management is hard. The past does not predict the future. One single event (an earthquake, a market crash, a viral post) can change everything. See **[[black-swan|Black Swan]]**.\n\n### Further Reading\n\n*   **Concept:** *[[long-tail|The Long Tail]]* (The business strategy).\n*   **Concept:** *[[pareto-principle|Pareto Principle]]* (The 80/20 Rule).\n*   **Book:** *[The Black Swan](https://en.wikipedia.org/wiki/The_Black_Swan_(Taleb_book))* (Nassim Taleb).\n"
+                                    }
+                                ]
+                            }
+                        ]
                     }
                 ]
             }
@@ -1637,7 +2039,7 @@ const wikiData = {
                     "Links",
                     "Internet"
                 ],
-                "content": "# Cool Sites\n\nA collection of useful, interesting, or beautiful websites.\n\n## Tech Explainers\n\nSites that explain complex technical concepts simply.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **Linux Ate My Ram** | A classic explanation of why \"free memory\" is wasted memory in Linux (and why `top` confuses you). | [linuxatemyram.com](https://www.linuxatemyram.com/) |\n| **Linux Kernel Word Count** | A visualizer showing how often specific words (and swear words) appear in the Linux source code. | [vidarholen.net](https://www.vidarholen.net/contents/wordcount/) |\n\n## Learning & Roadmaps\n\nGuides and interactive learning tools.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **roadmap.sh** | Interactive developer roadmaps for frontend, backend, DevOps, and more. | [roadmap.sh](https://roadmap.sh/) |\n| **KC7 Cyber** | A data-driven cybersecurity game that teaches investigation skills. | [kc7cyber.com](https://kc7cyber.com/) |\n| **React Graph Gallery** | Beautiful examples of charts and data visualizations (e.g. Radar Chart Animation). | [react-graph-gallery.com](http://react-graph-gallery.com/example/radar-chart-animation) |\n| **TensorFlow Playground** | Visualize and play with neural networks in your browser. | [playground.tensorflow.org](https://playground.tensorflow.org/) |\n| **NotebookLM** | Google's AI research tool that acts as a personalized research assistant. | [notebooklm.google.com](https://notebooklm.google.com/) |\n| **MLU-Explain** | Interactive visual articles on machine learning concepts (Bias, Variance, etc.). | [mlu-explain.github.io](https://mlu-explain.github.io/) |\n\n\n## Reference\n\nUseful lists and wikis.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **List of Cognitive Biases** | Wikipedia's massive list of the flaws in human reasoning. | [Wikipedia](https://en.wikipedia.org/wiki/List_of_cognitive_biases) |\n\n\n## Internet Humor\n\nRecursive jokes and specific tools.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **Down Detector** | The actual site for checking outages. | [downdetector.in](https://downdetector.in/) |\n| **Down Detector's Down Detector** | Is Down Detector down? | [downdetectorsdowndetector.com](https://downdetectorsdowndetector.com/) |\n| **Down Detector's... Down Detector** | Is the site checking Down Detector down? | [downdetectorsdowndetectorsdowndetector.com](https://downdetectorsdowndetectorsdowndetector.com/) |\n| **The Final Boss** | We must go deeper. | [downdetectors...detector.com](https://www.downdetectorsdowndetectorsdowndetectorsdowndetector.com/) |\n"
+                "content": "# Cool Sites\n\nA collection of useful, interesting, or beautiful websites.\n\n## Tech Explainers\n\nSites that explain complex technical concepts simply.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **Linux Ate My Ram** | A classic explanation of why \"free memory\" is wasted memory in Linux (and why `top` confuses you). | [linuxatemyram.com](https://www.linuxatemyram.com/) |\n| **Linux Kernel Word Count** | A visualizer showing how often specific words (and swear words) appear in the Linux source code. | [vidarholen.net](https://www.vidarholen.net/contents/wordcount/) |\n\n## Learning & Roadmaps\n\nGuides and interactive learning tools.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **roadmap.sh** | Interactive developer roadmaps for frontend, backend, DevOps, and more. | [roadmap.sh](https://roadmap.sh/) |\n| **KC7 Cyber** | A data-driven cybersecurity game that teaches investigation skills. | [kc7cyber.com](https://kc7cyber.com/) |\n| **React Graph Gallery** | Beautiful examples of charts and data visualizations (e.g. Radar Chart Animation). | [react-graph-gallery.com](http://react-graph-gallery.com/example/radar-chart-animation) |\n| **TensorFlow Playground** | Visualize and play with neural networks in your browser. | [playground.tensorflow.org](https://playground.tensorflow.org/) |\n| **NotebookLM** | Google's AI research tool that acts as a personalized research assistant. | [notebooklm.google.com](https://notebooklm.google.com/) |\n| **MLU-Explain** | Interactive visual articles on machine learning concepts (Bias, Variance, etc.). | [mlu-explain.github.io](https://mlu-explain.github.io/) |\n\n\n## Reference\n\nUseful lists and wikis.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **List of Cognitive Biases** | Wikipedia's massive list of the flaws in human reasoning. | [Wikipedia](https://en.wikipedia.org/wiki/List_of_cognitive_biases) |\n\n\n## Internet Humor\n\nRecursive jokes and specific tools.\n\n| Site | Description | Link |\n| :--- | :--- | :--- |\n| **Down Detector** | The actual site for checking outages. | [downdetector.in](https://downdetector.in/) |\n| **Down Detector's Down Detector** | Is Down Detector down? | [downdetectorsdowndetector.com](https://downdetectorsdowndetector.com/) |\n| **Down Detector's... Down Detector** | Is the site checking Down Detector down? | [downdetectorsdowndetectorsdowndetector.com](https://downdetectorsdowndetectorsdowndetector.com/) |\n| **The Final Boss** | We must go deeper. | [downdetectors...detector.com](https://www.downdetectorsdowndetectorsdowndetectorsdowndetector.com/) |\n| **Spurious Correlations** | Funny graphs showing unrelated things correlating (e.g., \"Cheese consumption correlates with strangulation by bedsheets\"). | [tylervigen.com](https://www.tylervigen.com/spurious-correlations) |\n"
             },
             {
                 "id": "github-prs",

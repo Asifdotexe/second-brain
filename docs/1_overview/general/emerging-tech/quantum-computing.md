@@ -25,6 +25,11 @@ No. They are giant, fragile fridges that need to be kept near Absolute Zero (-27
 *2. Will it break encryption?*
 Eventually, yes. [[shors-algorithm|Shor's-Algorithm]] proves a powerful enough Quantum Computer could crack all modern flexible [[encryption]]. This is why "Post-Quantum [[cryptography|Cryptography]]" is being researched now.
 
+## How do we use them?
+
+We use software like **[[qiskit|IBM Qiskit]]**. It's a Python library that lets you write code (circuits) on your laptop, which is then sent to a real Quantum Computer (via the cloud) to be executed.
+
+
 ### Further Reading
 
 *   **Video:** *[Quantum Computers Explained (Kurzgesagt)](https://www.youtube.com/watch?v=JhHMJCUmq28)*
