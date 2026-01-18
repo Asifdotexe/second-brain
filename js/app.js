@@ -41,6 +41,7 @@ function initTheme() {
 
 function init() {
   initTheme();
+  initFuse();
 
   // Safety Check: Did data.js load?
   if (typeof wikiData === "undefined") {
@@ -693,6 +694,61 @@ window.toggleNewsBody = function (header) {
 // 🔍 DEEP SEARCH ENGINE
 // ==========================================
 
+// ==========================================
+// 🔍 FUSE.JS SEARCH ENGINE
+// ==========================================
+let fuse;
+
+function initFuse() {
+  if (typeof Fuse === "undefined") {
+    console.error("Fuse.js not loaded!");
+    return;
+  }
+
+  // Flatten the wikiData for Fuse indexing
+  const flatData = [];
+
+  function flatten(items) {
+    items.forEach((item) => {
+      // Add item to index
+      flatData.push({
+        id: item.id,
+        title: item.title,
+        desc: item.desc || "",
+        content: item.content || "",
+        tags: item.tags || [],
+        icon: item.icon,
+      });
+
+      // Recurse
+      if (item.children) {
+        flatten(item.children);
+      }
+    });
+  }
+
+  // Start flattening from root categories
+  Object.keys(wikiData).forEach((key) => {
+    if (wikiData[key].items) {
+      flatten(wikiData[key].items);
+    }
+  });
+
+  // Configure Fuse
+  const options = {
+    includeScore: true,
+    threshold: 0.3, // 0.0 = Perfect match, 1.0 = Match anything. 0.3 is good for typos.
+    keys: [
+      { name: "title", weight: 3 }, // Title is most important
+      { name: "tags", weight: 2 },  // Tags are second
+      { name: "desc", weight: 1 },  // Description is third
+      { name: "content", weight: 0.5 }, // Content is least important (noise)
+    ],
+  };
+
+  fuse = new Fuse(flatData, options);
+}
+
 function filterDocs(query) {
   const term = query.toLowerCase().trim();
 
@@ -704,44 +760,17 @@ function filterDocs(query) {
 
   // 2. Clear Sidebar
   navTree.innerHTML = "";
-  const results = [];
 
-  // 3. Recursive Search Function
-  function searchItems(items) {
-    items.forEach((item) => {
-      // Check all fields
-      const matchTitle = item.title.toLowerCase().includes(term);
-      const matchDesc = item.desc && item.desc.toLowerCase().includes(term);
-      const matchContent =
-        item.content && item.content.toLowerCase().includes(term);
-      const matchTags =
-        item.tags && item.tags.some((tag) => tag.toLowerCase().includes(term));
+  // 3. Execute Fuse Search
+  const fuseResults = fuse.search(term);
 
-      if (matchTitle || matchDesc || matchContent || matchTags) {
-        results.push(item);
-      }
-
-      // Recurse
-      if (item.children) {
-        searchItems(item.children);
-      }
-    });
-  }
-
-  // 4. Execute Search
-  Object.keys(wikiData).forEach((key) => {
-    if (wikiData[key].items) {
-      searchItems(wikiData[key].items);
-    }
-  });
-
-  // 5. Render Results Header
+  // 4. Render Results Header
   const header = document.createElement("div");
   header.className = "nav-section-title";
-  header.innerText = `Search Results (${results.length})`;
+  header.innerText = `Search Results (${fuseResults.length})`;
   navTree.appendChild(header);
 
-  if (results.length === 0) {
+  if (fuseResults.length === 0) {
     const noRes = document.createElement("div");
     noRes.style.padding = "0 24px";
     noRes.style.color = "var(--text-secondary)";
@@ -751,12 +780,15 @@ function filterDocs(query) {
     return;
   }
 
-  // 6. Render Results (Flat List)
-  results.forEach((item) => {
+  // 5. Render Results (Flat List)
+  fuseResults.forEach((result) => {
+    const item = result.item; // Fuse returns { item: {...}, score: ... }
     const navItem = document.createElement("div");
     navItem.className = "nav-item";
-    // Security: Use data attribute instead of onclick
     navItem.dataset.id = item.id;
+
+    // Add score for debugging (optional, useful to see how "fuzzy" it is)
+    // const score = Math.round((1 - result.score) * 100); 
 
     navItem.innerHTML = `
             <i class="${item.icon || "far fa-file"}"></i>
@@ -765,7 +797,6 @@ function filterDocs(query) {
 
     navTree.appendChild(navItem);
   });
-
 }
 
 function toggleMobileSearch() {
@@ -789,41 +820,18 @@ function handleMobileSearch(query) {
     return;
   }
 
-  const results = [];
-
-  function searchItems(items) {
-    items.forEach((item) => {
-      const matchTitle = item.title.toLowerCase().includes(term);
-      const matchDesc = item.desc && item.desc.toLowerCase().includes(term);
-      const matchContent =
-        item.content && item.content.toLowerCase().includes(term);
-      const matchTags =
-        item.tags && item.tags.some((tag) => tag.toLowerCase().includes(term));
-
-      if (matchTitle || matchDesc || matchContent || matchTags) {
-        results.push(item);
-      }
-
-      if (item.children) {
-        searchItems(item.children);
-      }
-    });
-  }
-
-  Object.keys(wikiData).forEach((key) => {
-    if (wikiData[key].items) {
-      searchItems(wikiData[key].items);
-    }
-  });
+  // Execute Fuse Search
+  const fuseResults = fuse.search(term);
 
   resultsContainer.innerHTML = "";
 
-  if (results.length === 0) {
+  if (fuseResults.length === 0) {
     resultsContainer.innerHTML = `<div style="color:var(--text-secondary); padding:10px;">No matches found.</div>`;
     return;
   }
 
-  results.forEach((item) => {
+  fuseResults.forEach((result) => {
+    const item = result.item;
     const resultItem = document.createElement("div");
     resultItem.className = "nav-item"; // Reuse existing style
     resultItem.style.padding = "10px 0";
