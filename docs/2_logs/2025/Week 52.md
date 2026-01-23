@@ -29,6 +29,7 @@ desc: Summary of 20 December - 26 December 2025.
 *Read more about it: https://www.nasa.gov/missions/artemis/artemis-2/artemis-ii-flight-crew-teams-conduct-demonstration-ahead-of-launch/*
 
 ### "Deepfake Family" Voice Scams Surge Over Holidays
+
 - Security firms reported a 300% spike in "Grandparent Scams" during Christmas week, powered by high-fidelity AI voice cloning.
 - Attackers used snippets of audio from social media (TikTok/Instagram) to clone voices of younger relatives, calling older family members claiming "emergency travel trouble."
 - The attacks were highly targeted, using location data to know who was actually traveling, adding terrifying credibility to the calls.
@@ -40,6 +41,11 @@ Funfact: The AI just needs an ~3 second of your voice to learn your vocal patter
 ## Artificial Intelligence
 
 ### EU AI Act: Final Compliance Deadline Looms for "High Risk" Models
+
+![EU AI Act](https://artificialintelligenceact.eu/wp-content/uploads/2023/12/EU_AI_Act_logo_main.png)
+
+Date: 20 December 2025
+
 - As the year ends, major US tech firms are rushing to finalize documentation for the EU AI Act's full implementation (effective Jan 2026).
 - "High Risk" systems (including AI used in HR, healthcare, and policing) must now prove they have human oversight and bias mitigation.
 - Several [[open-source]] projects have geo-blocked European users this week to avoid the legal liability of these strict new rules.
