@@ -25,7 +25,7 @@ When your phone unlocks with FaceID or blurs the background in a Zoom call, that
 Yes. If you have a modern iPhone (Apple Neural Engine) or Android (Hexagon), you use it every day for photos, voice-to-text, and battery management.
 
 *2. What's the difference from a GPU?*
-Efficiency. A [[gpu|GPU]] *can* do what an NPU does, but it's overkill. It’s like using a flamethrower to light a candle. The NPU is the lighter—purpose-built and safe for your pocket.
+Efficiency. A [[gpu|GPU]] *can* do what an NPU does, but it's overkill. It’s like using a flamethrower to light a candle. The NPU is the lighter, purpose-built and safe for your pocket.
 
 ### Further Reading
 
