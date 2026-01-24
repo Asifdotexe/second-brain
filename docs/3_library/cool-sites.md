@@ -26,7 +26,7 @@ A collection of useful, interesting, or beautiful websites.
 | :--- | :--- | :--- |
 | **Linux Ate My Ram** | A classic explanation of why "free memory" is wasted memory in Linux (and why `top` confuses you). | [linuxatemyram.com](https://www.linuxatemyram.com/) |
 | **Linux Kernel Word Count** | A visualizer showing how often specific words (and swear words) appear in the Linux source code. | [vidarholen.net](https://www.vidarholen.net/contents/wordcount/) |
-| **React Graph Gallery** | Beautiful examples of charts and data visualizations (e.g. Radar Chart Animation). | [react-graph-gallery.com](http://react-graph-gallery.com/example/radar-chart-animation) |
+| **React Graph Gallery** | Beautiful examples of charts and data visualizations (e.g. Radar Chart Animation). | [react-graph-gallery.com](https://react-graph-gallery.com/example/radar-chart-animation) |
 | **MLU-Explain** | Interactive visual articles on machine learning concepts (Bias, Variance, etc.). | [mlu-explain.github.io](https://mlu-explain.github.io/) |
 | **VisuAlgo** | Visualizing data structures and algorithms through animation. | [visualgo.net](https://visualgo.net/en) |
 
