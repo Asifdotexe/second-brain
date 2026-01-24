@@ -1,0 +1,118 @@
+---
+title: Week 04
+tags: WeeklyUpdate, CyberSecurity, ArtificialIntelligence, Space, IOT
+desc: Summary of 17 January - 23 January 2026.
+---
+
+# Week 04
+
+## Cyber Security
+
+### Zero-Day Payouts Reach $1M at Pwn2Own Automotive 2026
+
+![Pwn2Own](https://www.bleepstatic.com/content/hl-images/2024/01/24/Pwn2Own_Tokyo.jpg)
+
+Date: 23 January 2026
+
+- Security researchers earned a combined total of $1,047,000 for discovering 76 unique [[vulnerability|Vulnerabilities]] over a three-day event.
+- The competition focused on automotive technologies, including electric vehicle (EV) chargers, infotainment systems, and operating systems like Tesla's.
+- These findings allow vendors to patch critical flaws before they can be exploited by malicious actors to hijack vehicle systems or charging infrastructure.
+
+*Read more about it: https://www.bleepingcomputer.com/news/security/hackers-get-1-047-000-for-76-zero-days-at-pwn2own-automotive-2026/*
+
+---
+<br>
+
+### Critical Remote Code Execution Flaw in Cisco Enterprise Tools
+
+![Cisco](https://imgs.search.brave.com/_EJ-NRiq-aaT23gGmbI7Ox8f39NQnPmcIFpYvR7Sc6s/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi8wLzA4L0Np/c2NvX2xvZ29fYmx1/ZV8yMDE2LnN2Zy8y/NTBweC1DaXNjb19s/b2dvX2JsdWVfMjAx/Ni5zdmcucG5n)
+
+Date: 21 January 2026
+
+- Cisco warned of a high-severity code injection flaw ([[cve|CVE]]-2026-20045) affecting its Unified Communications Manager and Unity Connection products.
+- The bug allows unauthenticated attackers to send crafted [[http|HTTP]] requests to gain root-level access to the underlying operating system.
+- CISA has already added this flaw to its Known Exploited Vulnerabilities catalog, signaling that active attacks are occurring in the wild.
+
+*Read more about it: https://www.helpnetsecurity.com/2026/01/21/cisco-enterprise-communications-cve-2026-20045/*
+
+---
+<br>
+
+### ShinyHunters Gang Targets Single Sign-On Accounts via Vishing
+
+![ShinyHunters](https://www.bleepstatic.com/content/hl-images/2023/11/17/Hacker_phones.jpg)
+
+Date: 17 November 2023
+
+- The ShinyHunters extortion group claimed responsibility for a wave of [[vishing|Voice Phishing]] attacks targeting corporate employees.
+- By impersonating IT staff over the phone, the attackers trick victims into handing over credentials for Microsoft, Google, and Okta platforms.
+- This campaign has bypassed standard protections to breach corporate SaaS environments and steal internal data for ransom.
+
+*Read more about it: https://www.bleepingcomputer.com/news/security/shinyhunters-claim-to-be-behind-sso-account-data-theft-attacks/*
+
+---
+<br>
+
+### Under Armour Investigates Massive 72 Million Record Breach
+
+![Under Armour](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png)
+
+Date: 23 January 2026
+
+- A massive 343GB database containing the personal details and email addresses of 72 million individuals was reportedly leaked on a hacking forum.
+- According to Have I Been Pwned, the compromised data includes names, dates of birth, genders, geographic locations, and purchase history, though payment information was reportedly not included.
+- The company is working with external forensic experts to verify the scope of the unauthorized access.
+
+*Read more about it: https://www.infosecurity-magazine.com/news/under-armour-investigates-data/*
+
+---
+<br>
+
+## Artificial Intelligence
+
+### Nvidia Closes $20 Billion Acquisition of Groq IP
+
+![Groq Acquisition](https://etcjournal.com/wp-content/uploads/2026/01/chatgpt-image-jan-18-2026-12_13_42-pm.png)
+
+Date: 18 January 2026
+
+- Nvidia has finalized its massive deal to acquire the intellectual property of Groq, a startup known for its high-speed Language Processing Units (LPUs).
+- The acquisition focuses on Groq's breakthrough "real-time inference" capabilities, which allow LLMs to run significantly faster than on standard GPUs.
+- This move consolidates Nvidia's power in the AI hardware market, transitioning from a focus on training models to dominating the deployment (inference) phase.
+
+*Read more about it: https://etcjournal.com/2026/01/18/three-biggest-ai-stories-in-jan-2026-real-time-ai-inference/*
+
+---
+<br>
+
+### Global Focus Shifts to AI Data Center Power Constraints
+
+![Power Wall](https://yt3.googleusercontent.com/12DXqfZQBwvHFBp31Teww9briF_9d45RTmGp6fiYScdvI4LZ3xPEfmw54EXV4o6tQMuG1I2t4Q=s160-c-k-c0x00ffffff-no-rj)
+
+Date: 23 January 2026
+
+- Reports from Bloomberg Tech: Asia highlighted that power demand for AI data centers is projected to quadruple over the next decade.
+- Tech giants like Microsoft are aggressively investing in energy innovations to prevent the "power wall" from stalling AI model scaling.
+- The shift highlights that the future of AI is now as much about electrical engineering and grid stability as it is about software algorithms.
+
+*Read more about it: https://www.youtube.com/watch?v=7HGp1ZuJqaI*
+
+---
+<br>
+
+## General Technology
+
+### Post-Quantum Cryptography Standards Framework Released
+
+![Post-Quantum Cryptography](https://www.cisa.gov/sites/default/files/images/SVG/header_logo_tagline_update.svg)
+
+Date: 23 January 2026
+
+- CISA and NIST published a new list of product categories that must begin incorporating "Quantum-Resistant" algorithms.
+- The guidelines are designed to protect critical infrastructure against future quantum computers capable of breaking current encryption.
+- This marks the beginning of a mandatory transition for federal agencies and tech vendors to update their security protocols.
+
+*Read more about it: https://www.cisa.gov/resources-tools/resources/product-categories-technologies-use-post-quantum-cryptography-standards*
+
+---
+<br>
