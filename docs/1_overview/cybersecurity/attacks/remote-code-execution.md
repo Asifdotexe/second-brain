@@ -5,7 +5,7 @@ tags: CyberSecurity, CyberAttack, VulnerabilityManagement
 
 # Remote Code Execution (RCE)
 
-**Remote Code Execution (RCE)** is a type of vulnerability that allows an attacker to execute arbitrary code on a victim's machine. system without having to physically access it through the network.
+**Remote Code Execution (RCE)** is a type of vulnerability that allows an attacker to execute arbitrary code on a victim's machine without having to physically access it through the network.
 
 This is often used to run malicious code on the remote system, this can lead to bad actor(s)
 - getting inside your system
