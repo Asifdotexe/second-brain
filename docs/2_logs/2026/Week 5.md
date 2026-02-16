@@ -1,0 +1,45 @@
+---
+title: Week 05
+tags: WeeklyUpdate, CyberSecurity, ArtificialIntelligence, Space, IOT
+desc: Summary of 24th January - 30th January 2026.
+---
+
+# Week 05
+
+## Cyber Security
+
+### Infrastructure Fragility
+- **Polish Energy Grid Target**: A coordinated cyberattack hit approximately 30 energy facilities in Poland, disrupting operational monitoring. [Read more](https://www.bleepingcomputer.com/news/security/cyberattack-on-polish-energy-grid-impacted-around-30-facilities/)
+- **The [[zero-day|Zero-Day]] Surge**: Ivanti and Fortinet issued emergency warnings for actively exploited flaws in EPMM and FortiCloud SSO, while [[cisa|CISA]] added a critical VMware [[remote-code-execution|RCE]] flaw to its "Must Patch" list. [Read more](https://www.bleepingcomputer.com/news/security/ivanti-warns-of-two-epmm-flaws-exploited-in-zero-day-attacks/)
+- **Supply Chain Poisoning**: Security vendor eScan confirmed its update servers were breached to distribute malicious payloads to clients, echoing the Kaseya/SolarWinds methodology. [Read more](https://www.bleepingcomputer.com/news/security/escan-confirms-update-server-breached-to-push-malicious-update/)
+- **The Night Before Christmas**: A new record was set by the Aisuru [[botnets|botnet]] with a massive 31.4 [[tbps|Tbps]] [[ddos|Distributed Denial of Service]] attack, signaling a terrifying scale of botnet mobilization. [Read more](https://www.bleepingcomputer.com/news/security/aisuru-botnet-sets-new-record-with-314-tbps-ddos-attack/)
+- **The Impact**: We are entering an era of [[remote-code-execution|remote code execution]] saturation where the delay between discovery and weaponization is nearly zero. The targeting of [[scada|industrial control systems]] in Poland suggests that state-sponsored actors are testing the resilience of European power grids ahead of wider geopolitical shifts.
+
+---
+
+### The Industrialization of Data Theft
+- **SoundCloud Breach**: A legacy data breach was confirmed to impact 29.8 million accounts, now surfacing on dark web forums. [Read more](https://www.bleepingcomputer.com/news/security/have-i-been-pwned-soundcloud-data-breach-impacts-298-million-accounts/)
+- **Match Group Leak**: User data from Hinge, Tinder, OkCupid, and Match was exposed in a massive breach, highlighting the vulnerability of dating platforms. [Read more](https://www.bleepingcomputer.com/news/security/match-group-breach-exposes-data-from-hinge-tinder-okcupid-and-match/)
+- **Nike Extortion**: Nike is currently investigating a breach after an extortion gang leaked internal files to pressure the company. [Read more](https://www.bleepingcomputer.com/news/security/nike-investigates-data-breach-after-extortion-gang-leaks-files/)
+- **The Impact**: The commodification of [[PII|Personally Identifiable Information]] has moved beyond simple identity theft; it is now fuel for [[social_engineering|targeted social engineering]]. These datasets allow attackers to build high-fidelity profiles for [[credential_stuffing|credential stuffing]] and spear-phishing at an industrial scale.
+
+---
+
+## Artificial Intelligence
+
+### The AI Supply Chain: A New Vector for Malware
+- **Hugging Face Poisoning**: Over 3,000 variants of Android malware were found hosted on Hugging Face, abusing the platform's trust to bypass mobile security. [Read more](https://www.bleepingcomputer.com/news/security/hugging-face-abused-to-spread-thousands-of-android-malware-variants/)
+- **VSCode & AI Extensions**: Malicious AI-themed extensions on the VSCode Marketplace were caught stealing developer data and [[environment_variables|API keys]]. [Read more](https://www.bleepingcomputer.com/news/security/malicious-ai-extensions-on-vscode-marketplace-steal-developer-data/)
+- **Bizarre Bazaar Operation**: Hackers have begun hijacking exposed [[LLM|Large Language Model]] endpoints to perform unauthorized computations and data scraping. [Read more](https://www.bleepingcomputer.com/news/security/hackers-hijack-exposed-llm-endpoints-in-bizarre-bazaar-operation/)
+- **Moltbot Security Risks**: The viral open-source AI assistant Moltbot (formerly Clawdbot) has been flagged for insecure deployments, exposing admin interfaces and sensitive corporate data. [Read more](https://www.bleepingcomputer.com/news/security/viral-moltbot-ai-assistant-raises-concerns-over-data-security/)
+- **The Impact**: Developers are currently the highest-value targets. By compromising the [[supply-chain-attack|AI supply chain]], attackers gain access to the source code and production environments where proprietary [[neural_networks|AI models]] are built, effectively owning the "brain" of the corporation.
+
+---
+
+## General Technology & Infrastructure
+
+### Protocol Failures and Patch Cycles
+- **Cloudflare BGP Route Leak**: A misconfiguration at Cloudflare caused a significant BGP route leak, briefly disrupting global traffic flow. [Read more](https://www.bleepingcomputer.com/news/security/cloudflare-misconfiguration-behind-recent-bgp-route-leak/)
+- **Telnet Zombie Infrastructure**: Nearly 800,000 Telnet servers remain exposed to the public internet, providing a massive, insecure pool of resources for botnet recruitment. [Read more](https://www.bleepingcomputer.com/news/security/nearly-800-000-telnet-servers-exposed-to-remote-attacks/)
+- **Windows 11 Fixes**: Microsoft released KB5074105 to address critical boot, sign-in, and activation issues that had been plaguing enterprise deployments. [Read more](https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5074105-update-fixes-boot-sign-in-and-activation-issues/)
+- **The Impact**: Despite the focus on "Modern Tech," the internet's foundation relies on legacy protocols like [[BGP|Border Gateway Protocol]] and [[Telnet|Telnet]] that lack inherent security. A single misconfiguration can still cascade into a global outage, proving that our [[digital_infrastructure|digital infrastructure]] is only as strong as its oldest, weakest link.
