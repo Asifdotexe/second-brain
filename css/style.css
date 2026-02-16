@@ -959,3 +959,112 @@ body[data-theme="dark"] .mobile-header {
     font-size: 0.9em;
     opacity: 0.8;
 }
+
+/* --- CALENDAR UI --- */
+.calendar-year-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.calendar-month {
+    break-inside: avoid;
+}
+
+.calendar-month-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+}
+
+.calendar-day-header {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    background: var(--bg-card);
+    transition: all 0.2s ease;
+    position: relative;
+    opacity: 0.5;
+    /* Default dim for empty days */
+}
+
+.calendar-day.has-news {
+    opacity: 1;
+    cursor: pointer;
+    background: var(--bg-card);
+    border-color: var(--text-accent);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.calendar-day.has-news:hover {
+    background: var(--text-accent);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.calendar-day.empty {
+    border: none;
+    background: transparent;
+}
+
+/* Marker for news */
+.calendar-marker {
+    width: 6px;
+    height: 6px;
+    background-color: var(--text-accent);
+    border-radius: 50%;
+    margin-top: 4px;
+    display: none;
+}
+
+.calendar-day.has-news .calendar-marker {
+    display: block;
+}
+
+.calendar-day.has-news:hover .calendar-marker {
+    background-color: #ffffff;
+}
+
+/* Responsive: 3 columns of months on large screens, 1 on mobile */
+@media (min-width: 1024px) {
+    .calendar-year-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .calendar-year-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
