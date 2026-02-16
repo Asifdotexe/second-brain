@@ -5,9 +5,23 @@ STYLE: Sidey Minimalist Replica
 */
 
 :root {
-    /* Palette - Strict Minimalist */
+    /* --- PORTFOLIO PALETTE (Imported) --- */
+    --jet: hsl(0, 0%, 22%);
+    --onyx: hsl(240, 1%, 17%);
+    --eerie-black-1: hsl(240, 2%, 13%);
+    --eerie-black-2: hsl(240, 2%, 12%);
+    --smoky-black: hsl(0, 0%, 7%);
+    --white-1: hsl(0, 0%, 100%);
+    --white-2: hsl(0, 0%, 98%);
+    --vibrant-green: hsl(99, 76%, 56%);
+    --forest-glade: hsl(99, 70%, 52%);
+    --light-gray: hsl(0, 0%, 84%);
+    --light-gray-70: hsla(0, 0%, 84%, 0.7);
+    --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+    /* --- FUNCTIONAL VARIABLES (Light Mode Default) --- */
     --bg-body: #ffffff;
-    --bg-sidebar: #f7f9fb;
+    --bg-sidebar: #f8fafc;
     /* Very light cool gray */
     --border-color: #e2e8f0;
     --bg-input: #ffffff;
@@ -21,10 +35,12 @@ STYLE: Sidey Minimalist Replica
     /* Slate 800 */
     --text-secondary: #64748b;
     /* Slate 500 */
-    --text-accent: #2563eb;
-    /* Blue 600 - The only color pop */
+
+    /* Using Forest Glade (Darker Green) for Light Mode Contrast */
+    --text-accent: var(--forest-glade);
+
     --text-muted: #334155;
-    --code-text: #d63384;
+    --code-text: var(--forest-glade);
     --text-code-block: #f1f5f9;
 
     --font-main:
@@ -34,21 +50,26 @@ STYLE: Sidey Minimalist Replica
 }
 
 body[data-theme="dark"] {
-    --bg-body: #0f172a;
-    --bg-sidebar: #0b1220;
-    --border-color: #1f2937;
-    --bg-input: #111827;
-    --bg-card: #0b1220;
-    --bg-quote: #1e293b;
-    --bg-tag: #1e293b;
-    --bg-code-inline: #1e293b;
-    --bg-code-block: #111827;
-    --text-primary: #e2e8f0;
-    --text-secondary: #94a3b8;
-    --text-accent: #60a5fa;
-    --text-muted: #cbd5e1;
-    --code-text: #f472b6;
-    --text-code-block: #e2e8f0;
+    /* Mapping Functional Vars to Portfolio Palette */
+    --bg-body: var(--smoky-black);
+    --bg-sidebar: var(--eerie-black-2);
+    --border-color: var(--jet);
+    --bg-input: var(--eerie-black-1);
+    --bg-card: var(--eerie-black-2);
+    --bg-quote: var(--eerie-black-1);
+    --bg-tag: var(--onyx);
+    --bg-code-inline: var(--onyx);
+    --bg-code-block: var(--eerie-black-1);
+
+    --text-primary: var(--white-2);
+    --text-secondary: var(--light-gray);
+
+    /* Vibrant Green for Dark Mode */
+    --text-accent: var(--vibrant-green);
+
+    --text-muted: var(--light-gray-70);
+    --code-text: var(--vibrant-green);
+    --text-code-block: var(--white-1);
 }
 
 * {
