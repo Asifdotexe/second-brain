@@ -418,7 +418,12 @@ function loadContent(id) {
     if (viewType === "list") {
       htmlContent += renderList(item);
     } else {
-      htmlContent += renderShelf(item);
+      // Check if we are in logs root (Year view) -> Render Calendar
+      if (rootKey === "logs") {
+        htmlContent += renderCalendar(item);
+      } else {
+        htmlContent += renderShelf(item);
+      }
     }
   } else if (item.content) {
 
@@ -469,6 +474,82 @@ function loadContent(id) {
 
   currentDocId = id;
   window.scrollTo(0, 0);
+}
+
+function renderCalendar(item) {
+  const year = parseInt(item.title) || new Date().getFullYear();
+  const months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+
+  // Collect all available log dates (IDs) into a Set for fast lookup
+  const availableDates = new Set();
+  if (item.children) {
+    item.children.forEach(child => {
+      // IDs are expected to be 'YYYY-MM-DD'
+      availableDates.add(child.id);
+    });
+  }
+
+  let html = `
+        <div class="shelf-header">
+            <h1 style="margin-bottom:0.5rem">${item.title} Logs</h1>
+            <p style="color:var(--text-secondary)">Select a date to view entries.</p>
+        </div>
+        <div class="calendar-year-container">
+    `;
+
+  months.forEach((monthName, monthIndex) => {
+    html += `
+            <div class="calendar-month">
+                <div class="calendar-month-title">${monthName}</div>
+                <div class="calendar-grid">
+                    <div class="calendar-day-header">S</div>
+                    <div class="calendar-day-header">M</div>
+                    <div class="calendar-day-header">T</div>
+                    <div class="calendar-day-header">W</div>
+                    <div class="calendar-day-header">T</div>
+                    <div class="calendar-day-header">F</div>
+                    <div class="calendar-day-header">S</div>
+        `;
+
+    const daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
+    const firstDayIndex = new Date(year, monthIndex, 1).getDay(); // 0 = Sunday
+
+    // Empty cells before first day
+    for (let i = 0; i < firstDayIndex; i++) {
+      html += `<div class="calendar-day empty"></div>`;
+    }
+
+    // Days
+    for (let day = 1; day <= daysInMonth; day++) {
+      // Format: YYYY-MM-DD (ensure double digits)
+      const mm = String(monthIndex + 1).padStart(2, '0');
+      const dd = String(day).padStart(2, '0');
+      const dateId = `${year}-${mm}-${dd}`;
+
+      const hasNews = availableDates.has(dateId);
+      const extraClass = hasNews ? 'has-news' : '';
+      const dataAttr = hasNews ? `data-id="${dateId}"` : '';
+
+      // Only add click handler (via data-id) if it has news
+      // If we want empty days to do nothing, we just don't add data-id? 
+      // Our event delegation checks for data-id. YES.
+
+      html += `
+                <div class="calendar-day ${extraClass} shelf-card" ${dataAttr} style="border-radius: var(--radius); padding:0;">
+                    <span>${day}</span>
+                    ${hasNews ? '<div class="calendar-marker"></div>' : ''}
+                </div>
+            `;
+    }
+
+    html += `</div></div>`; // Close grid and month
+  });
+
+  html += `</div>`; // Close container
+  return html;
 }
 
 function renderShelf(item) {
