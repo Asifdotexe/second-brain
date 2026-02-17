@@ -1538,87 +1538,6 @@ const wikiData = {
                                 "content": "# Stoicism\n\nYou cannot control the storm, only the ship.\n\n**Stoicism** is a user's manual for the mind, written by Greek slaves and Roman Emperors. Its core goal is **Eudaimonia** (Flourishing) by focusing only on what you can control and accepting what you cannot.\n\n## The Dichotomy of Control\n\nDraw a line in the sand.\n*   **In Your Control (Internal):** Your thoughts, your actions, your character, your reactions.\n*   **Not In Your Control (External):** The weather, traffic, what people think of you, the past, the future.\n\nIf you tie your happiness to things *outside* your control (like \"I hope it doesn't rain\"), you are a slave to fortune. If you tie it to things *inside* your control (like \"I will bring an umbrella\"), you are invincible.\n\n## FAQs\n\n*1. Is it about having no emotions?*\nNo. (That is lowercase \"s\" stoicism).\nCapital \"S\" **Stoicism** is not about suppressing emotion; it's about not being *enslaved* by it. You can feel grief, but you shouldn't let it destroy your reason.\n\n*2. Who are the big three?*\n*   **Marcus Aurelius:** The Emperor. Wrote \"Meditations\" (notes to himself on how to be a good ruler).\n*   **Seneca:** The Statesman. Wrote letters on how to manage time and anger.\n*   **Epictetus:** The Slave. Taught that freedom is a mental state.\n\n### Further Reading\n\n*   **Book:** *[Meditations](https://www.goodreads.com/book/show/30659.Meditations)* by Marcus Aurelius.\n*   **Website:** *[Daily Stoic](https://dailystoic.com/)* (Great modern intro).\n"
                             }
                         ]
-                    },
-                    {
-                        "id": "science",
-                        "title": "Science",
-                        "icon": "fas fa-folder",
-                        "desc": "",
-                        "view": null,
-                        "children": [
-                            {
-                                "id": "demarcation-problem",
-                                "title": "Demarcation Problem",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Philosophy",
-                                    "Science",
-                                    "Logic"
-                                ],
-                                "content": "# Demarcation Problem\n\nDrawing the line in the sand.\n\nThe **Demarcation Problem** is the philosophical difficulty of distinguishing between **Science** (Astronomy, Chemistry) and **Non-Science/Pseudoscience** (Astrology, Alchemy).\n\nWhere exactly does one end and the other begin? It sounds easy, but there is no single agreed-upon rule that works 100% of the time.\n\n## Key Criteria Attempts\n\n1.  **Falsifiability (Popper):** If you can't test it, it's not science. (The Gold Standard).\n2.  **Consensus:** If most scientists agree, it's science. (Problem: Scientists used to agree on bad ideas).\n3.  **Method:** Does it use the Scientific Method? (Hypothesis -> Experiment -> Result).\n\n## FAQs\n\n*1. Why does it matter?*\nIt decides what gets taught in schools, what gets government funding, and what evidence is allowed in courtrooms. If we can't define science, we can't protect it from nonsense.\n\n*2. Is \"Non-Science\" bad?*\nNot necessarily. **Art**, **Philosophy**, and **Religion** are non-science, but they are valuable. **Pseudoscience** (fake science claiming to be real, like Phrenology) is the danger.\n\n### Further Reading\n\n*   **Article:** *[Stanford Encyclopedia: Science and Pseudo-Science](https://plato.stanford.edu/entries/pseudo-science/)*.\n*   **Video:** *[The Demarcation Problem Explained](https://www.youtube.com/watch?v=Prhi3_nF8rA)*.\n"
-                            },
-                            {
-                                "id": "falsifiability",
-                                "title": "Falsifiability",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Philosophy",
-                                    "Science",
-                                    "KarlPopper"
-                                ],
-                                "content": "# Falsifiability\n\nThe ability to be proven wrong.\n\n**Falsifiability** is the defining characteristic of a scientific theory. It means that there must be a way to test the theory where it *could* fail.\nIf a theory explains *everything* no matter what happens, it explains *nothing*. It is not science; it is a belief system.\n\n## The Swan Analogy\n\n*   **Theory:** \"All swans are white.\"\n    *   **Is it Falsifiable?** Yes. All you need to do is find **one** black swan to prove it false.\n*   **Theory:** \"Ghosts exist, but they are invisible when you look for them.\"\n    *   **Is it Falsifiable?** No. There is no test you can run to prove they *don't* exist. Therefore, it is not science.\n\n## FAQs\n\n*1. Who came up with this?*\n**Karl Popper**. He noticed that Einstein's Physics made risky predictions (that could be wrong), while Freud's Psychology could explain any patient's behavior after the fact. He wanted to separate the two.\n\n*2. Does \"Falsifiable\" mean \"False\"?*\nNo! It means **\"Able to be proven false.\"**\n\"The Earth is round\" is falsifiable (we could go to space and check). It just happens to be true.\n\n### Further Reading\n\n*   **Book:** *[The Logic of Scientific Discovery](https://www.routledge.com/The-Logic-of-Scientific-Discovery/Popper/p/book/9780415278447)* by Karl Popper.\n*   **Video:** *[Karl Popper, Science, & Pseudoscience](https://www.youtube.com/watch?v=-X8Xfl0JdTQ)*.\n"
-                            },
-                            {
-                                "id": "just-so-stories",
-                                "title": "Just-So Stories",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Philosophy",
-                                    "Evolution",
-                                    "Criticism"
-                                ],
-                                "content": "# Just-So Stories\n\nA story that fits perfectly because it was made backwards.\n\nA **Just-So Story** is a criticism (coined by Stephen Jay Gould) of scientific explanations that sound plausible but are untestable and purely speculative.\nThe name comes from Rudyard Kipling's children's book *Just So Stories* (e.g., \"How the Leopard Got His Spots\").\n\n## The Flaw\n\nIt is often used in **Evolutionary Psychology** to explain modern behavior by inventing a prehistoric reason for it.\n\n*   *Observation:* Men like blue.\n*   *Just-So Story:* \"Ah, well, prehistoric men had to look at the sky to predict rain, so they evolved to like blue.\"\n*   *Problem:* It sounds smart, but **how do you test it?** You can't. It's just a creative writing exercise. You could just as easily argue men like blue because berries are blue.\n\n## FAQs\n\n*1. Is all Evolutionary Psychology bad?*\nNo. But good science requires **[[novel-prediction|Novel Predictions]]**.\n*   **Just-So:** Explaining why we *already* act this way.\n*   **Science:** Predicting that if we act this way, we should also find *this specific gene* or *this specific fossil*.\n\n*2. How to spot one?*\nAsk: \"Is there any evidence for this besides the fact that it sounds logical?\" If the answer is No, it's a Just-So Story.\n\n### Further Reading\n\n*   **Book:** *[Just So Stories](https://www.gutenberg.org/ebooks/2876)* by Rudyard Kipling (The origin of the name).\n*   **Article:** *[Gould's Criticism of Sociobiology](https://link.springer.com/article/10.1007/s10739-018-9519-2)*.\n"
-                            },
-                            {
-                                "id": "novel-prediction",
-                                "title": "Novel Prediction",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Philosophy",
-                                    "Science",
-                                    "Evidence"
-                                ],
-                                "content": "# Novel Prediction\n\nThe fortune teller who actually gets it right.\n\nA **Novel Prediction** is when a scientific theory predicts a phenomenon that **no one has ever seen before**, and it turns out to be true.\n\nIt is the strongest possible evidence for a theory. Explaining old data is easy (hindsight is 20/20). Predicting the unknown is hard.\n\n## The Halley's Comet Example\n\n*   **Old Science:** Comets are random angry gods.\n*   **Edmond Halley (Using Newton's Laws):** \"I predict this comet will return in exactly 76 years, on this specific date.\"\n*   **The Result:** It appeared exactly when he said. This proved Newton's physics wasn't just a good story; it was a map of reality.\n\n## The Einstein Example\n\nEinstein's General Relativity predicted that gravity bends light. No one had ever seen bent light.\nDuring a solar eclipse in 1919, Arthur Eddington looked at the stars behind the sun. They were shifted. Einstein was right. The world changed overnight.\n\n## FAQs\n\n*1. Why is it better than explaining known facts?*\nBecause you can't cheat.\nIf you know the answer ($\\pi$), you can easily invent a math formula to equal $\\pi$. But if you write a formula that predicts a number no one has ever measured, and *then* we measure it and you're right... that's magic.\n\n### Further Reading\n\n*   **Concept:** *[Predictive Power](https://en.wikipedia.org/wiki/Predictive_power)*.\n*   **Story:** *[The Eclipse That Made Einstein Famous](https://www.smithsonianmag.com/science-nature/eclipse-made-einstein-world-famous-180972140/)*.\n"
-                            },
-                            {
-                                "id": "reasoning-types",
-                                "title": "Reasoning (Deduction, Induction, Abduction)",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Philosophy",
-                                    "Logic",
-                                    "Thinking"
-                                ],
-                                "content": "# Reasoning\n\nThe three engines of thought.\n\nThere are three main ways humans (and AI) move from \"what we know\" to \"what we think.\"\n\n## 1. Deduction (The Sniper)\nMoving from **General** to **Specific**.\nIf the premises are true, the conclusion **MUST** be true.\n*   *Rule:* All men are mortal.\n*   *Observation:* Socrates is a man.\n*   *Conclusion:* Therefore, Socrates is mortal. (100% Certainty).\n\n## 2. Induction (The Surveyor)\nMoving from **Specific** to **General**.\nLooking at patterns to form a rule. The conclusion is **Likely**, but not certain.\n*   *Observation:* The sun has risen every morning for history.\n*   *Conclusion:* Therefore, the sun will rise tomorrow. (High Probability, but not guaranteed. The sun could explode tonight).\n\n## 3. Abduction (The Detective)\nInference to the **Best Explanation**.\nLooking at a weird fact and guessing the most likely cause.\n*   *Observation:* The grass is wet.\n*   *Hypotheses:* It rained? The sprinklers turned on? A dog peed?\n*   *Conclusion:* It rained (because the street is also wet).\n\n## FAQs\n\n*1. Which does Science use?*\nAll of them.\n*   **Abduction** to invent a hypothesis.\n*   **Deduction** to predict what should happen if the hypothesis is true.\n*   **Induction** to verify it with data.\n\n*2. Which does AI use?*\nMachine Learning is a massive **Induction** engine. It looks at millions of specific cat photos to learn the general rule of \"What a cat looks like.\"\n\n### Further Reading\n\n*   **Article:** *[Deductive vs Inductive vs Abductive Reasoning](https://uregina.ca/~gingrich/319j1506.htm)*.\n*   **Video:** *[Sherlock Holmes uses Abduction, not Deduction](https://www.youtube.com/watch?v=1bDFZ31q0rE)*.\n"
-                            },
-                            {
-                                "id": "scientific-laws",
-                                "title": "Scientific Laws",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Philosophy",
-                                    "Science",
-                                    "Definition"
-                                ],
-                                "content": "# Scientific Laws\n\nDescriptions, not rules.\n\nA **Scientific Law** is a statement that describes an observable occurrence in nature that appears to always be true.\nIt tells you **What** happens, not **Why** it happens.\n\n*   **The Law:** $F = ma$ (Newton's Second Law).\n    *   It describes exactly how a rock moves when you kick it.\n*   **The Theory:** General Relativity.\n    *   It explains *why* gravity exists (warped spacetime).\n\n## The Misconception\n\nWe often think of Laws like \"Traffic Laws\" (rules imposed by a government).\nNature's Laws are descriptive patterns, not prescriptions. The universe doesn't \"obey\" the law of gravity; the law of gravity is just our best description of what the universe already does.\n\n## FAQs\n\n*1. Is a Theory a \"baby Law\"?*\nNo. This is the biggest myth in science ed.\n*   **Fact:** Observation.\n*   **Law:** Description of the pattern.\n*   **Theory:** Explanation of the mechanism.\nA Theory never becomes a Law. They do different things. Evolution is a Theory (it explains). Gravity is a Law (it describes) AND a Theory (it explains).\n\n*2. Can laws change?*\nYes. Newton's Laws were considered absolute for 200 years. Then Einstein showed they were slightly wrong at high speeds. We didn't throw them away (they still work for cars), but we updated the description.\n\n### Further Reading\n\n*   **Article:** *[Scientific Hypothesis, Theory, Law Definitions](https://www.livescience.com/21491-what-is-a-scientific-theory-definition-of-theory.html)*.\n*   **Video:** *[Fact vs. Theory vs. Hypothesis vs. Law](https://www.youtube.com/watch?v=lqk3TKuGNBA)*.\n"
-                            }
-                        ]
                     }
                 ]
             },
@@ -1833,6 +1752,124 @@ const wikiData = {
                                     "Health"
                                 ],
                                 "content": "# Epigenetics\n\n**Think of it like the \"Software\" that runs on your DNA \"Hardware.\"**\n\n**Epigenetics** is the study of biological mechanisms that switch genes on or off without altering the actual DNA sequence itself.\n\nIf your DNA is the rigid hardware (the unchangeable circuit board) of a computer, epigenetics is the operating system that decides which programs (genes) to run and which to ignore. You can't easily change your hardware, but your environment; stress, diet, sleep, chemicals; can change the software settings. This helps explain why identical twins (who have the exact same hardware) can develop completely different health issues as they age; their \"settings\" have drifted apart.\n\n## How it Works\n*   **Methylation (The Off Switch):** The body attaches small chemical tags (methyl groups) to specific parts of DNA. These act like \"Do Not Disturb\" signs, preventing that gene from being read.\n*   **Histone Modification (The Volume Knob):** DNA is wrapped around spools called histones. If the DNA is wrapped too tightly, the cell can't read it (volume down). If it's loose, the gene is active (volume up).\n\n## FAQs\n\n*1. Can I change my epigenetics?*\nYes! Unlike your DNA, which you're stuck with, your epigenetic markers are reversible. Improving your diet, exercising, and reducing stress can physically remove \"bad\" tags and add \"good\" ones, potentially lowering your risk of diseases like cancer or diabetes.\n\n*2. Do I pass this to my kids?*\nSurprisingly, yes. Some epigenetic tags can survive reproduction. This means extreme stress or famine experienced by a parent (or even grandparent) can leave a chemical \"scar\" on their genes that is passed down, potentially affecting the metabolism or stress response of their children.\n\n### Further Reading\n\n*   **Video:** *[The Epigenetics Revolution](https://www.youtube.com/watch?v=kp1bZEUgqVI)* (SciShow).\n*   **Article:** *[Epigenetics: It's not just genes that make us](https://www.bbc.com/news/health-29621689)* (BBC News).\n"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "methodology",
+                        "title": "Methodology",
+                        "icon": "fas fa-microscope",
+                        "desc": "The scientific method and foundations",
+                        "view": "list",
+                        "children": [
+                            {
+                                "id": "demarcation-problem",
+                                "title": "Demarcation Problem",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Methodology",
+                                    "Science",
+                                    "Logic"
+                                ],
+                                "content": "# Demarcation Problem\n\nDrawing the line in the sand.\n\nThe **Demarcation Problem** is the philosophical difficulty of distinguishing between **Science** (Astronomy, Chemistry) and **Non-Science/Pseudoscience** (Astrology, Alchemy).\n\nWhere exactly does one end and the other begin? It sounds easy, but there is no single agreed-upon rule that works 100% of the time.\n\n## Key Criteria Attempts\n\n1.  **[[falsifiability|Falsifiability]] (Popper):** If you can't test it, it's not science. (The Gold Standard).\n2.  **[[scientific-consensus|Consensus]]:** If most scientists agree, it's science. (Problem: Scientists used to agree on bad ideas).\n3.  **[[scientific-method|Method]]:** Does it use the Scientific Method? (Hypothesis -> Experiment -> Result).\n\n## FAQs\n\n*1. Why does it matter?*\nIt decides what gets taught in schools, what gets government funding, and what evidence is allowed in courtrooms. If we can't define science, we can't protect it from nonsense.\n\n*2. Is \"Non-Science\" bad?*\nNot necessarily. **Art**, **Philosophy**, and **Religion** are non-science, but they are valuable. **Pseudoscience** (fake science claiming to be real, like Phrenology) is the danger.\n\n### Further Reading\n\n*   **Article:** *[Stanford Encyclopedia: Science and Pseudo-Science](https://plato.stanford.edu/entries/pseudo-science/)*.\n*   **Video:** *[The Demarcation Problem Explained](https://www.youtube.com/watch?v=Prhi3_nF8rA)*.\n"
+                            },
+                            {
+                                "id": "falsifiability",
+                                "title": "Falsifiability",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Methodology",
+                                    "Science",
+                                    "KarlPopper"
+                                ],
+                                "content": "# Falsifiability\n\nThe ability to be proven wrong.\n\n**Falsifiability** is the defining characteristic of a scientific theory. It means that there must be a way to test the theory where it *could* fail.\nIf a theory explains *everything* no matter what happens, it explains *nothing*. It is not science; it is a belief system.\n\n## The Swan Analogy\n\n*   **Theory:** \"All swans are white.\"\n    *   **Is it Falsifiable?** Yes. All you need to do is find **one** black swan to prove it false.\n*   **Theory:** \"Ghosts exist, but they are invisible when you look for them.\"\n    *   **Is it Falsifiable?** No. There is no test you can run to prove they *don't* exist. Therefore, it is not science.\n\n## FAQs\n\n*1. Who came up with this?*\n**Karl Popper**. He noticed that Einstein's Physics made risky predictions (that could be wrong), while Freud's Psychology could explain any patient's behavior after the fact. He wanted to separate the two.\n\n*2. Does \"Falsifiable\" mean \"False\"?*\nNo! It means **\"Able to be proven false.\"**\n\"The Earth is round\" is falsifiable (we could go to space and check). It just happens to be true.\n\n### Further Reading\n\n*   **Book:** *[The Logic of Scientific Discovery](https://www.routledge.com/The-Logic-of-Scientific-Discovery/Popper/p/book/9780415278447)* by Karl Popper.\n*   **Video:** *[Karl Popper, Science, & Pseudoscience](https://www.youtube.com/watch?v=-X8Xfl0JdTQ)*.\n"
+                            },
+                            {
+                                "id": "just-so-stories",
+                                "title": "Just-So Stories",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Methodology",
+                                    "Science",
+                                    "Evolution",
+                                    "Criticism"
+                                ],
+                                "content": "# Just-So Stories\n\nA story that fits perfectly because it was made backwards.\n\nA **Just-So Story** is a criticism (coined by Stephen Jay Gould) of scientific explanations that sound plausible but are untestable and purely speculative.\nThe name comes from Rudyard Kipling's children's book *Just So Stories* (e.g., \"How the Leopard Got His Spots\").\n\n## The Flaw\n\nIt is often used in **Evolutionary Psychology** to explain modern behavior by inventing a prehistoric reason for it.\n\n*   *Observation:* Men like blue.\n*   *Just-So Story:* \"Ah, well, prehistoric men had to look at the sky to predict rain, so they evolved to like blue.\"\n*   *Problem:* It sounds smart, but **how do you test it?** You can't. It's just a creative writing exercise. You could just as easily argue men like blue because berries are blue.\n\n## FAQs\n\n*1. Is all Evolutionary Psychology bad?*\nNo. But good science requires **[[novel-prediction|Novel Predictions]]**.\n*   **Just-So:** Explaining why we *already* act this way.\n*   **Science:** Predicting that if we act this way, we should also find *this specific gene* or *this specific fossil*.\n\n*2. How to spot one?*\nAsk: \"Is there any evidence for this besides the fact that it sounds logical?\" If the answer is No, it's a Just-So Story.\n\n### Further Reading\n\n*   **Book:** *[Just So Stories](https://www.gutenberg.org/ebooks/2876)* by Rudyard Kipling (The origin of the name).\n*   **Article:** *[Gould's Criticism of Sociobiology](https://link.springer.com/article/10.1007/s10739-018-9519-2)*.\n"
+                            },
+                            {
+                                "id": "novel-prediction",
+                                "title": "Novel Prediction",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Methodology",
+                                    "Science",
+                                    "Evidence"
+                                ],
+                                "content": "# Novel Prediction\n\nThe fortune teller who actually gets it right.\n\nA **Novel Prediction** is when a scientific theory predicts a phenomenon that **no one has ever seen before**, and it turns out to be true.\n\nIt is the strongest possible evidence for a theory. Explaining old data is easy (hindsight is 20/20). Predicting the unknown is hard.\n\n## The Halley's Comet Example\n\n*   **Old Science:** Comets are random angry gods.\n*   **Edmond Halley (Using Newton's Laws):** \"I predict this comet will return in exactly 76 years, on this specific date.\"\n*   **The Result:** It appeared exactly when he said. This proved Newton's physics wasn't just a good story; it was a map of reality.\n\n## The Einstein Example\n\nEinstein's General Relativity predicted that gravity bends light. No one had ever seen bent light.\nDuring a solar eclipse in 1919, Arthur Eddington looked at the stars behind the sun. They were shifted. Einstein was right. The world changed overnight.\n\n## FAQs\n\n*1. Why is it better than explaining known facts?*\nBecause you can't cheat.\nIf you know the answer ($\\pi$), you can easily invent a math formula to equal $\\pi$. But if you write a formula that predicts a number no one has ever measured, and *then* we measure it and you're right... that's magic.\n\n### Further Reading\n\n*   **Concept:** *[Predictive Power](https://en.wikipedia.org/wiki/Predictive_power)*.\n*   **Story:** *[The Eclipse That Made Einstein Famous](https://www.smithsonianmag.com/science-nature/eclipse-made-einstein-world-famous-180972140/)*.\n"
+                            },
+                            {
+                                "id": "reasoning-types",
+                                "title": "Reasoning (Deduction, Induction, Abduction)",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Methodology",
+                                    "Logic",
+                                    "Thinking"
+                                ],
+                                "content": "# Reasoning\n\nThe three engines of thought.\n\nThere are three main ways humans (and AI) move from \"what we know\" to \"what we think.\"\n\n## 1. Deduction (The Sniper)\nMoving from **General** to **Specific**.\nIf the premises are true, the conclusion **MUST** be true.\n*   *Rule:* All men are mortal.\n*   *Observation:* Socrates is a man.\n*   *Conclusion:* Therefore, Socrates is mortal. (100% Certainty).\n\n## 2. Induction (The Surveyor)\nMoving from **Specific** to **General**.\nLooking at patterns to form a rule. The conclusion is **Likely**, but not certain.\n*   *Observation:* The sun has risen every morning for history.\n*   *Conclusion:* Therefore, the sun will rise tomorrow. (High Probability, but not guaranteed. The sun could explode tonight).\n\n## 3. Abduction (The Detective)\nInference to the **Best Explanation**.\nLooking at a weird fact and guessing the most likely cause.\n*   *Observation:* The grass is wet.\n*   *Hypotheses:* It rained? The sprinklers turned on? A dog peed?\n*   *Conclusion:* It rained (because the street is also wet).\n\n## FAQs\n\n*1. Which does Science use?*\nAll of them.\n*   **Abduction** to invent a hypothesis.\n*   **Deduction** to predict what should happen if the hypothesis is true.\n*   **Induction** to verify it with data.\n\n*2. Which does AI use?*\nMachine Learning is a massive **Induction** engine. It looks at millions of specific cat photos to learn the general rule of \"What a cat looks like.\"\n\n### Further Reading\n\n*   **Article:** *[Deductive vs Inductive vs Abductive Reasoning](https://uregina.ca/~gingrich/319j1506.htm)*.\n*   **Video:** *[Sherlock Holmes uses Abduction, not Deduction](https://www.youtube.com/watch?v=1bDFZ31q0rE)*.\n"
+                            },
+                            {
+                                "id": "scientific-consensus",
+                                "title": "Scientific Consensus",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Methodology",
+                                    "Science",
+                                    "PeerReview"
+                                ],
+                                "content": "# Scientific Consensus\n\nThe Jury Verdict, not a Popularity Contest.\n\n**Scientific Consensus** is the collective judgment, position, and opinion of the community of scientists in a particular field of study.\n\nIt works like a massive, global jury in a courtroom that never closes. One scientist presenting a new idea is like a lawyer making an opening statement. It's interesting, but it's not a verdict. The \"verdict\" (consensus) only happens after thousands of other scientists (the jury) have examined the evidence, tried to tear it apart, repeated the experiments, and failed to prove it wrong. It represents the best available explanation we have right now, based on strict scrutiny, not just what people \"feel\" is true.\n\n## How It Forms\nConsensus is built on a pyramid of evidence, not just raising hands.\n\n*   **Hypothesis:** An idea is proposed.\n*   **Peer Review:** Other experts check the work for errors.\n*   **Replication:** Other labs do the same experiment to see if they get the same result.\n*   **Meta-Analysis:** Combining results from hundreds of studies to see the big picture.\n*   **Consensus:** When the evidence is so overwhelming that the community stops arguing *if* it's happening and starts studying *how* it works.\n\n## FAQs\n\n*1. Is the consensus always right?*\nNo. The scientific consensus has been wrong before (e.g., we used to think Earth was the center of the universe). However, it is the **most reliable** guide we have at any given moment because it requires the most amount of evidence to overturn. To beat the consensus, you don't need a YouTube video; you need better data.\n\n*2. Why do scientists disagree if there is a consensus?*\nConsensus usually exists on the \"Big Picture\" (e.g., \"The climate is warming\"), but scientists still argue about the details (e.g., \"Exactly how fast is it warming?\"). Disagreement on details makes the core consensus stronger, not weaker, because it shows the system of scrutiny is working.\n\n### Further Reading\n\n*   **Article:** *[Scientific Consensus: What It Is and Why It Matters](https://www.unionofconcernedscientists.org)* (Explains the weight of collective agreement).\n"
+                            },
+                            {
+                                "id": "scientific-definitions",
+                                "title": "Scientific Definitions (Fact, Theory, Hypothesis, Law)",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Methodology",
+                                    "Science",
+                                    "Definition"
+                                ],
+                                "content": "# Scientific Definitions\n\nLanguage matters, especially when debugging reality.\n\n**Scientific Definitions** are precise labels for different levels of knowledge, often misused in daily conversation.\n\nIn everyday life, \"theory\" means a hunch (\"I have a theory about who stole my lunch\"). In science, that's an insult. In science, a **Fact** is a single data point (The screen is black). A **Hypothesis** is a testable guess (The battery is dead). A **Theory** is the comprehensive explanation of how batteries and electricity work. A **Law** is the mathematical formula calculating how long the battery will last. Mixing these up is like confusing a single brick (Fact) with the blueprint for the whole building (Theory).\n\n## The Heirarchy of Knowledge\n\n*   **Fact:** An observation.\n    *   *Example:* \"The apple fell.\"\n*   **Hypothesis:** A testable explanation for an observation.\n    *   *Example:* \"Apples fall because an invisible force pulls them.\"\n*   **Law:** A description (often mathematical) of *how* it happens.\n    *   *Example:* $F = G \\frac{m_1 m_2}{r^2}$ (Calculates the force exactly).\n    *   *Note:* Laws tell you *what* will happen, but not *why*.\n*   **Theory:** The highest level of understanding. An explanation of *why* it happens, supported by facts, laws, and tested hypotheses.\n    *   *Example:* The Theory of General Relativity (Explains gravity is warping of space-time).\n\n## FAQs\n\n*1. Is a Theory less than a Fact?*\nNo. A Theory is the *explanation* for facts. You can have facts without a theory (we knew gravity existed before we knew why), but a Theory is the gold standard because it explains *why* the facts are there.\n\n*2. Does a Hypothesis become a Theory, which becomes a Law?*\nNo! This is the video game model of science, and it's wrong.\n*   **Hypothesis** $\\rightarrow$ Tested $\\rightarrow$ Supported/Rejected.\n*   **Laws** describe patterns.\n*   **Theories** explain mechanisms.\nA Theory never becomes a Law, just like a map (explanation) never becomes the road (description).\n\n### Further Reading\n\n*   **Video:** *[Fact vs. Theory vs. Hypothesis vs. Law... EXPLAINED!](https://www.youtube.com/watch?v=yi0hwFDQTSQ)* (The source for this breakdown).\n"
+                            },
+                            {
+                                "id": "scientific-laws",
+                                "title": "Scientific Laws",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Methodology",
+                                    "Science",
+                                    "Definition"
+                                ],
+                                "content": "# Scientific Laws\n\nDescriptions, not rules.\n\nA **Scientific Law** is a statement that describes an observable occurrence in nature that appears to always be true.\nIt tells you **What** happens, not **Why** it happens.\n\n*   **The Law:** $F = ma$ (Newton's Second Law).\n    *   It describes exactly how a rock moves when you kick it.\n*   **The Theory:** General Relativity.\n    *   It explains *why* gravity exists (warped spacetime).\n\n## The Misconception\n\nWe often think of Laws like \"Traffic Laws\" (rules imposed by a government).\nNature's Laws are descriptive patterns, not prescriptions. The universe doesn't \"obey\" the law of gravity; the law of gravity is just our best description of what the universe already does.\n\n## FAQs\n\n*1. Is a Theory a \"baby Law\"?*\nNo. This is the biggest myth in science ed.\n*   **Fact:** Observation.\n*   **Law:** Description of the pattern.\n*   **Theory:** Explanation of the mechanism.\nA Theory never becomes a Law. They do different things. Evolution is a Theory (it explains). Gravity is a Law (it describes) AND a Theory (it explains).\n\n*2. Can laws change?*\nYes. Newton's Laws were considered absolute for 200 years. Then Einstein showed they were slightly wrong at high speeds. We didn't throw them away (they still work for cars), but we updated the description.\n\n### Further Reading\n\n*   **Article:** *[Scientific Hypothesis, Theory, Law Definitions](https://www.livescience.com/21491-what-is-a-scientific-theory-definition-of-theory.html)*.\n*   **Video:** *[Fact vs. Theory vs. Hypothesis vs. Law](https://www.youtube.com/watch?v=lqk3TKuGNBA)*.\n"
+                            },
+                            {
+                                "id": "scientific-method",
+                                "title": "Scientific Method",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Methodology",
+                                    "Science",
+                                    "Logic"
+                                ],
+                                "content": "# Scientific Method\n\nThe algorithm for debugging the universe.\n\n**The Scientific Method** is a systematic process for gathering data and testing ideas to minimize bias and error.\n\nImagine your lamp doesn't turn on. You don't just guess \"ghosts did it.\" You inherently use the scientific method:\n1.  **Observation:** \"The lamp is off.\"\n2.  **Hypothesis:** \"Maybe the bulb is burnt out.\"\n3.  **Experiment:** You screw in a new bulb.\n4.  **Result:** It lights up.\n5.  **Conclusion:** \"The old bulb was dead.\"\nScience is just this process, but rigorous, documented, and peer-reviewed so that we can trust the results even if we didn't do the experiment ourselves.\n\n## The Cycle\nThe method is circular, not a straight line. Every answer leads to new questions.\n\n1.  **Ask a Question:** What are you trying to solve?\n2.  **Do Background Research:** Has someone else already solved this?\n3.  **Construct a Hypothesis:** An educated guess you can test (must be [[falsifiability|falsifiable]]).\n4.  **Test with an Experiment:** A fair test that isolates variables.\n5.  **Analyze Data:** What happened?\n6.  **Communicate Results:** Tell others so they can check your work.\n\n## FAQs\n\n*1. Do scientists actually follow these steps 1-2-3-4?*\nIn the real world, it's messy. Scientists often jump back and forth, refining their hypothesis while designing the experiment, or finding accidental discoveries (like Penicillin) that change the original question entirely. The \"steps\" are more of a checklist for logic than a strict recipe.\n\n*2. What if my experiment fails?*\nThen you did good science! Proving a hypothesis *wrong* is just as valuable as proving it right. It tells us what the truth *isn't*, which gets us closer to what the truth *is*.\n\n### Further Reading\n\n*   **Video:** *[The Scientific Method: Steps, Terms and Examples](https://www.youtube.com/watch?v=yi0hwFDQTSQ)* (A clear animated breakdown).\n"
                             }
                         ]
                     },

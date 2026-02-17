@@ -368,6 +368,31 @@ function renderBreadcrumbs(path) {
   container.innerHTML = html;
 }
 
+// Helper: Render Markdown with Math Protection
+function renderMarkdown(text) {
+  if (!text) return "";
+
+  // 1. Protect Math ($...$ and $$...$$)
+  const mathBlocks = [];
+  const protectedText = text.replace(/(\$\$[\s\S]*?\$\$|\$[^$\n]+\$)/g, (match) => {
+    mathBlocks.push(match);
+    return `MATHBLOCKPLACEHOLDER${mathBlocks.length - 1}`;
+  });
+
+  // 2. Render Markdown
+  let html = marked.parse(protectedText, {
+    breaks: true,
+    html: false, // Security: Disable raw HTML
+  });
+
+  // 3. Restore Math
+  mathBlocks.forEach((block, index) => {
+    html = html.replace(`MATHBLOCKPLACEHOLDER${index}`, block);
+  });
+
+  return html;
+}
+
 function loadContent(id) {
   const result = lookup(id);
   if (!result) return;
@@ -442,11 +467,7 @@ function loadContent(id) {
         },
       );
 
-      // Security Fix: Disable raw HTML to prevent XSS
-      htmlContent += marked.parse(processedContent, {
-        breaks: true,
-        html: false,
-      });
+      htmlContent += renderMarkdown(processedContent);
     }
 
   } else {
@@ -464,6 +485,17 @@ function loadContent(id) {
 
   // --- 3. RENDER ---
   contentDisplay.innerHTML = htmlContent;
+
+  // --- 4. RENDER MATH (KaTeX) ---
+  if (window.renderMathInElement) {
+    renderMathInElement(contentDisplay, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false }
+      ],
+      throwOnError: false
+    });
+  }
 
   // Mobile: Close sidebar after selection
   if (window.innerWidth <= 768) {
@@ -638,7 +670,7 @@ function renderLogEntry(item) {
         // IGNORE THE TITLE (it is already rendered by the shelf-header)
         // But render the body (intro text) if any
         if (bodyRaw) {
-          html += marked.parse(bodyRaw, { breaks: true });
+          html += renderMarkdown(bodyRaw);
         }
 
       } else if (headerLevel === 2) {
@@ -647,7 +679,7 @@ function renderLogEntry(item) {
 
         // If body exists after H2 (intro text), render it
         if (bodyRaw) {
-          html += marked.parse(bodyRaw, { breaks: true });
+          html += renderMarkdown(bodyRaw);
         }
 
       } else {
@@ -713,7 +745,7 @@ function renderLogEntry(item) {
           }
         );
 
-        const renderedBody = marked.parse(processedBody, { breaks: true });
+        const renderedBody = renderMarkdown(processedBody);
         const imageStyle = image ? `background-image: url('${image}')` : '';
 
         html += `
@@ -735,7 +767,7 @@ function renderLogEntry(item) {
     } else {
       // Content appearing before any header? Render it normally
       if (i === 0) {
-        html += marked.parse(chunk, { breaks: true });
+        html += renderMarkdown(chunk);
       }
     }
   }
