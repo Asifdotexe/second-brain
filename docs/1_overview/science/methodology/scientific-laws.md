@@ -1,6 +1,6 @@
 ---
 title: Scientific Laws
-tags: Philosophy, Science, Definition
+tags: Methodology, Science, Definition
 ---
 
 # Scientific Laws

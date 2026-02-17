@@ -1,6 +1,6 @@
 ---
 title: Demarcation Problem
-tags: Philosophy, Science, Logic
+tags: Methodology, Science, Logic
 ---
 
 # Demarcation Problem
@@ -13,9 +13,9 @@ Where exactly does one end and the other begin? It sounds easy, but there is no 
 
 ## Key Criteria Attempts
 
-1.  **Falsifiability (Popper):** If you can't test it, it's not science. (The Gold Standard).
-2.  **Consensus:** If most scientists agree, it's science. (Problem: Scientists used to agree on bad ideas).
-3.  **Method:** Does it use the Scientific Method? (Hypothesis -> Experiment -> Result).
+1.  **[[falsifiability|Falsifiability]] (Popper):** If you can't test it, it's not science. (The Gold Standard).
+2.  **[[scientific-consensus|Consensus]]:** If most scientists agree, it's science. (Problem: Scientists used to agree on bad ideas).
+3.  **[[scientific-method|Method]]:** Does it use the Scientific Method? (Hypothesis -> Experiment -> Result).
 
 ## FAQs
 

@@ -1,6 +1,6 @@
 ---
 title: Just-So Stories
-tags: Philosophy, Evolution, Criticism
+tags: Methodology, Science, Evolution, Criticism
 ---
 
 # Just-So Stories
