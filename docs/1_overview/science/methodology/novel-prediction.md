@@ -1,6 +1,6 @@
 ---
 title: Novel Prediction
-tags: Philosophy, Science, Evidence
+tags: Methodology, Science, Evidence
 ---
 
 # Novel Prediction

@@ -1,6 +1,6 @@
 ---
 title: Falsifiability
-tags: Philosophy, Science, KarlPopper
+tags: Methodology, Science, KarlPopper
 ---
 
 # Falsifiability

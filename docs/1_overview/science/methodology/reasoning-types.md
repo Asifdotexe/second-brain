@@ -1,6 +1,6 @@
 ---
 title: Reasoning (Deduction, Induction, Abduction)
-tags: Philosophy, Logic, Thinking
+tags: Methodology, Logic, Thinking
 ---
 
 # Reasoning
