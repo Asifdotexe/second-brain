@@ -5,7 +5,7 @@ tags: [RiskModeling, InsuranceTerms]
 
 # Probable Maximum Loss (PML)
 
-**Probable Maximum Loss (PML)** is the "realistic worst-case scenario"—it’s the fire that burns down the building, but assumes the fire department eventually shows up.
+**Probable Maximum Loss (PML)** is the "realistic worst-case scenario"; it’s the fire that burns down the building, but assumes the fire department eventually shows up.
 
 **Probable Maximum Loss (PML)** is the maximum loss that an insurer or risk manager would expect to incur on a policy, assuming that normal protective measures function as intended.
 

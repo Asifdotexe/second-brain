@@ -15,7 +15,7 @@ You use it to visualize the entire range of potential disasters, from the common
 
 *   **The X-Axis:** Represents the loss amount in dollars.
 *   **The Y-Axis:** Represents the probability (percentage) of exceeding that loss.
-*   **The Curve:** It usually drastically slopes down—small losses are very likely, but massive losses are very unlikely.
+*   **The Curve:** It usually drastically slopes down; small losses are very likely, but massive losses are very unlikely.
 
 ## Real-World Analogies
 

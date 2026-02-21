@@ -16,7 +16,7 @@ The **GDPR** is a regulation in EU law on data protection and privacy in the Eur
 4.  **Breach Notification**: If a company is hacked, they MUST notify the authorities within **72 hours** of becoming aware of the breach.
 
 ## Consequences
-*   **Heavy Fines**: Non-compliance can lead to massive fines—up to 4% of a company's total global turnover or €20 million (whichever is higher).
+*   **Heavy Fines**: Non-compliance can lead to massive fines; up to 4% of a company's total global turnover or €20 million (whichever is higher).
 
 ---
 

@@ -9,7 +9,7 @@ tags: [RiskMetric, TailRisk]
 
 **Tail Value at Risk (TVaR)** (also known as Conditional VaR or Expected Shortfall) is the average of all losses that exceed the VaR threshold.
 
-While VaR tells you the "best of the worst" outcomes, TVaR tells you the average of the *absolute worst* outcomes. It focuses entirely on the "tail" of the risk distribution—the disasters.
+While VaR tells you the "best of the worst" outcomes, TVaR tells you the average of the *absolute worst* outcomes. It focuses entirely on the "tail" of the risk distribution; the disasters.
 
 ## How it Works
 
@@ -22,7 +22,7 @@ While VaR tells you the "best of the worst" outcomes, TVaR tells you the average
 | Context | Analogy |
 | :--- | :--- |
 | **General** | **The Storm Aftermath:** VaR says, "We are 99% sure the storm won't cause >$1M damage." TVaR asks, "Okay, but in the 1% chance it *does* cause >$1M damage, what’s the average bill? Is it $1.1M or $100M?" |
-| **Cyber Risk** | **The "Big One":** If a catastrophic cloud outage *does* happen (exceeding your 99% VaR), TVaR estimates the financial bleeding. It accounts for the cascading failures—lawsuits, regulatory fines, and stock drops—that happen in the worst 1% of scenarios. |
+| **Cyber Risk** | **The "Big One":** If a catastrophic cloud outage *does* happen (exceeding your 99% VaR), TVaR estimates the financial bleeding. It accounts for the cascading failures; lawsuits, regulatory fines, and stock drops; that happen in the worst 1% of scenarios. |
 
 ## FAQs
 

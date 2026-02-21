@@ -22,7 +22,7 @@ It works by smoothing out the jagged peaks of disaster costs into a predictable 
 | Context | Analogy |
 | :--- | :--- |
 | **General** | **Home Maintenance:** You might budget roughly $2,000/year for fixing leaks, painting, and lawn care. Some years you spend $500, others $5,000, but the *average* over 10 years is your AAL. |
-| **Cyber Risk** | **The "Cost of Glitches":** A company expects to lose $50,000/year dealing with phishing remediation, reimaging infected laptops, and minor downtime. This is their "Cyber AAL"—the routine cost of digital friction. |
+| **Cyber Risk** | **The "Cost of Glitches":** A company expects to lose $50,000/year dealing with phishing remediation, reimaging infected laptops, and minor downtime. This is their "Cyber AAL"; the routine cost of digital friction. |
 
 ## FAQs
 

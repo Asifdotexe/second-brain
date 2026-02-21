@@ -14,7 +14,7 @@ Think of it like a con artist wearing a fake uniform. In email phishing, they se
 ## How it Works
 
 *   **Spoofing:** Scammers use software to make their phone number look like it's coming from a legitimate organization (e.g., "Chase Bank" or a local area code).
-*   **The Script:** They follow a prepared script designed to trigger emotion—fear ("Your account is compromised!") or excitement ("You won a cruise!").
+*   **The Script:** They follow a prepared script designed to trigger emotion; fear ("Your account is compromised!") or excitement ("You won a cruise!").
 *   **The Ask:** The goal is always the same: get you to verify your identity (give up your SSN), fix a "virus" (grant remote access), or stop a "fraudulent charge" (send them money).
 
 ## FAQs

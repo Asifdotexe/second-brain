@@ -12,7 +12,7 @@ Cybersecurity attacks range from simple social engineering tricks to complex, au
 ## The Catalog of Attacks
 
 ### 1. [[malware|Malware (Overview)]]
-A broad category of malicious software—including viruses, worms, and ransomware—designed specifically to harm systems, steal data, or gain unauthorized access.
+A broad category of malicious software; including viruses, worms, and ransomware; designed specifically to harm systems, steal data, or gain unauthorized access.
 
 ### 2. [[phishing|Phishing]]
 Social engineering that uses deceptive emails or messages to trick users into revealing passwords, credit card numbers, or other sensitive information.

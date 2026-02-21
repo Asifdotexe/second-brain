@@ -5,7 +5,7 @@ tags: [RiskEconomics, Management]
 
 # Total Cost of Risk (TCoR)
 
-**Total Cost of Risk (TCoR)** is the realization that the sticker price of your insurance premium is just the tip of the iceberg—you also pay for the deductible, the safety team, and the time spent managing it all.
+**Total Cost of Risk (TCoR)** is the realization that the sticker price of your insurance premium is just the tip of the iceberg; you also pay for the deductible, the safety team, and the time spent managing it all.
 
 **Total Cost of Risk (TCoR)** is the sum of all costs related to an organization's risk, including insurance premiums, retained losses (deductibles), risk management administrative costs, and taxes/fees.
 

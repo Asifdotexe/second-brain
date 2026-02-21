@@ -33,7 +33,7 @@ A pragmatic and often ruthless political philosophy focusing on the acquisition 
 The rejection of all religious and moral principles, often resulting in the belief that life has no objective meaning, value, or purpose.
 
 ### 8. [[pragmatism|Pragmatism]]
-A practical approach that tests the truth of a belief by its "cash value"—if a belief works and is useful in action, it is considered true.
+A practical approach that tests the truth of a belief by its "cash value"; if a belief works and is useful in action, it is considered true.
 
 ### 9. [[socialism|Socialism]]
 A political and economic framework where resources and the means of production are owned by the community to promote cooperation and equality.
