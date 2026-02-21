@@ -1038,6 +1038,10 @@ function renderGraph() {
 
   // 2. Build items with scaling
   seenNodes.clear();
+  const style = getComputedStyle(document.documentElement);
+  const labelColor = style.getPropertyValue('--graph-label').trim() || "rgba(255,255,255,0.6)";
+  const focusedLabelColor = style.getPropertyValue('--graph-label-focused').trim() || "rgba(255,255,255,1)";
+
   function processItems(items) {
     if (!items) return;
     items.forEach(item => {
@@ -1064,7 +1068,7 @@ function renderGraph() {
           hover: { background: color, border: color }
         },
         font: {
-          color: "rgba(255, 255, 255, 0.6)",
+          color: labelColor,
           size: 10,
           strokeWidth: 0,
           face: "Inter"
@@ -1163,7 +1167,7 @@ function renderGraph() {
     const nodeUpdate = nodes.map(n => ({
       id: n.id,
       color: { opacity: (neighbors.includes(n.id) || n.id === hoveredNodeId) ? 1 : 0.1 },
-      font: { color: (neighbors.includes(n.id) || n.id === hoveredNodeId) ? "rgba(255,255,255,1)" : "rgba(255,255,255,0)" }
+      font: { color: (neighbors.includes(n.id) || n.id === hoveredNodeId) ? focusedLabelColor : "rgba(255,255,255,0)" }
     }));
     data.nodes.update(nodeUpdate);
 
@@ -1180,7 +1184,7 @@ function renderGraph() {
     data.nodes.update(nodes.map(n => ({
       id: n.id,
       color: { opacity: 1 },
-      font: { color: "rgba(255, 255, 255, 0.6)" }
+      font: { color: labelColor }
     })));
     data.edges.update(data.edges.getIds().map((id, idx) => ({
       id: id,

@@ -56,6 +56,11 @@ STYLE: Sidey Minimalist Replica
     --color-insurance: #ffa502;
     --color-psychology: #2ed573;
     --color-science: #eccc68;
+
+    /* --- THEME-AWARE GRAPH OVERLAYS --- */
+    --graph-label: rgba(30, 41, 59, 0.7);
+    /* Slate 800 - dark text for light mode */
+    --graph-label-focused: rgba(30, 41, 59, 1);
 }
 
 body[data-theme="dark"] {
@@ -79,6 +84,11 @@ body[data-theme="dark"] {
     --text-muted: var(--light-gray-70);
     --code-text: var(--vibrant-green);
     --text-code-block: var(--white-1);
+
+    /* --- THEME-AWARE GRAPH OVERLAYS --- */
+    --graph-label: rgba(255, 255, 255, 0.6);
+    /* White for dark mode */
+    --graph-label-focused: rgba(255, 255, 255, 1);
 }
 
 * {
