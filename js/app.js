@@ -969,13 +969,13 @@ init();
 // --- GRAPH VIEW LOGIC ---
 let graphNetwork = null;
 const categoryColors = {
-  ai: "#00f2fe",
-  cybersecurity: "#00ff87",
-  philosophy: "#bf00ff",
-  paradoxes: "#ff4b2b",
-  science: "#4facfe",
-  history: "#f9d423",
-  development: "#ff9966"
+  ai: "#00d4ff",
+  cybersecurity: "#ff4757",
+  general: "#ced6e0",
+  insurance: "#ffa502",
+  philosophy: "#a55eea",
+  psychology: "#2ed573",
+  science: "#eccc68"
 };
 
 function toggleGraphView() {
@@ -1127,7 +1127,11 @@ function renderGraph() {
       },
       solver: "forceAtlas2Based",
       timestep: 0.35,
-      stabilization: { iterations: 150 }
+      stabilization: {
+        enabled: true,
+        iterations: 1000,
+        updateInterval: 100
+      }
     },
     interaction: {
       hover: true,
@@ -1141,6 +1145,11 @@ function renderGraph() {
     graphNetwork.destroy();
   }
   graphNetwork = new vis.Network(container, data, options);
+
+  // Stop physics once stabilized to prevent oscillation/floating
+  graphNetwork.on("stabilized", function () {
+    graphNetwork.setOptions({ physics: { enabled: false } });
+  });
 
   // --- NEIGHBOR HIGHLIGHTING ---
   graphNetwork.on("hoverNode", function (params) {
@@ -1197,5 +1206,70 @@ function renderGraph() {
 
   graphNetwork.on("stabilizationIterationsDone", function () {
     graphNetwork.fit();
+  });
+
+  setupLegend(nodes, data);
+}
+
+function setupLegend(nodes, data) {
+  const legendContainer = document.getElementById("graphLegend");
+  if (!legendContainer) return;
+  legendContainer.innerHTML = "";
+
+  const activeGroups = [...new Set(nodes.map(n => n.group).filter(Boolean))];
+  let activeFilter = null;
+
+  activeGroups.forEach(group => {
+    const item = document.createElement("div");
+    item.className = "legend-item";
+    const color = categoryColors[group.toLowerCase()] || "#94a3b8";
+
+    item.innerHTML = `
+            <div class="legend-color" style="background: ${color}"></div>
+            <span>${group.toUpperCase()}</span>
+        `;
+
+    item.onclick = (e) => {
+      e.stopPropagation();
+      const isRemoving = activeFilter === group;
+      activeFilter = isRemoving ? null : group;
+
+      // Update UI
+      document.querySelectorAll(".legend-item").forEach(i => i.classList.remove("active"));
+      if (!isRemoving) item.classList.add("active");
+
+      // Update Graph
+      if (!activeFilter) {
+        // Restore all
+        data.nodes.update(nodes.map(n => ({
+          id: n.id,
+          color: { opacity: 1 },
+          font: { color: "rgba(255, 255, 255, 0.4)" }
+        })));
+        data.edges.update(data.edges.getIds().map(id => ({
+          id: id,
+          color: { opacity: 0.08 }
+        })));
+      } else {
+        // Focus category
+        data.nodes.update(nodes.map(n => ({
+          id: n.id,
+          color: { opacity: n.group === activeFilter ? 1 : 0.05 },
+          font: { color: n.group === activeFilter ? "rgba(255,255,255,1)" : "rgba(255,255,255,0)" }
+        })));
+        data.edges.update(data.edges.getIds().map(id => {
+          const edge = data.edges.get(id);
+          const fromNode = nodes.find(n => n.id === edge.from);
+          const toNode = nodes.find(n => n.id === edge.to);
+          const isRelevant = fromNode?.group === activeFilter || toNode?.group === activeFilter;
+          return {
+            id: id,
+            color: { opacity: isRelevant ? 0.4 : 0.01 }
+          };
+        }));
+      }
+    };
+
+    legendContainer.appendChild(item);
   });
 }

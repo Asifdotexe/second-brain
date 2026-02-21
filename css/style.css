@@ -72,12 +72,13 @@ body[data-theme="dark"] {
     --text-code-block: var(--white-1);
 
     /* --- GRAPH COLORS --- */
-    --color-ai: #00f2fe;
-    --color-cybersecurity: #00ff87;
-    --color-philosophy: #bf00ff;
-    --color-paradoxes: #ff4b2b;
-    --color-science: #4facfe;
-    --color-history: #f9d423;
+    --color-ai: #00d4ff;
+    --color-cybersecurity: #ff4757;
+    --color-philosophy: #a55eea;
+    --color-general: #ced6e0;
+    --color-insurance: #ffa502;
+    --color-psychology: #2ed573;
+    --color-science: #eccc68;
 }
 
 * {
