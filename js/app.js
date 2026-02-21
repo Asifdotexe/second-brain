@@ -1226,10 +1226,10 @@ function renderGraph() {
     graphNetwork.fit();
   });
 
-  setupLegend(nodes, data);
+  setupLegend(nodes, data, labelColor, focusedLabelColor);
 }
 
-function setupLegend(nodes, data) {
+function setupLegend(nodes, data, labelColor, focusedLabelColor) {
   const legendContainer = document.getElementById("graphLegend");
   if (!legendContainer) return;
   legendContainer.innerHTML = "";
@@ -1262,7 +1262,7 @@ function setupLegend(nodes, data) {
         data.nodes.update(nodes.map(n => ({
           id: n.id,
           opacity: 1,
-          font: { color: "rgba(255, 255, 255, 0.4)" }
+          font: { color: labelColor }
         })));
         data.edges.update(data.edges.getIds().map(id => ({
           id: id,
@@ -1273,7 +1273,7 @@ function setupLegend(nodes, data) {
         data.nodes.update(nodes.map(n => ({
           id: n.id,
           opacity: n.group === activeFilter ? 1 : 0.05,
-          font: { color: n.group === activeFilter ? "rgba(255,255,255,1)" : "rgba(255,255,255,0)" }
+          font: { color: n.group === activeFilter ? focusedLabelColor : "rgba(255,255,255,0)" }
         })));
         data.edges.update(data.edges.getIds().map(id => {
           const edge = data.edges.get(id);

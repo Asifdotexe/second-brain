@@ -5,14 +5,14 @@ Module to build the markdown file into JSON objects.
 import json
 import os
 import re
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
 
 # Configuration
 DOCS_DIR = "docs"
 OUTPUT_FILE = "js/data.js"
 
 
-def parse_markdown(file_path: str, group: str = None) -> Dict[str, Any]:
+def parse_markdown(file_path: str, group: Optional[str] = None) -> Dict[str, Any]:
     """
     Parse a markdown file to extract frontmatter and content.
 
@@ -27,7 +27,7 @@ def parse_markdown(file_path: str, group: str = None) -> Dict[str, Any]:
     file_id = os.path.splitext(os.path.basename(file_path))[0]
     links = re.findall(r"\[\[([^|\]\n]+)(?:\|[^\]\n]+)?\]\]", content)
     links = [link.strip().lower() for link in links]
-    links = list(set([l for l in links if l != file_id.lower()])) # Unique, exclude self
+    links = list({link for link in links if link != file_id.lower()}) # Unique, exclude self
 
     meta = {
         "id": file_id.lower(),
@@ -55,7 +55,7 @@ def parse_markdown(file_path: str, group: str = None) -> Dict[str, Any]:
 
                 if key == "tags":
                     meta["tags"] = [t.strip() for t in value.replace("[", "").replace("]", "").split(",")]
-                else:
+                elif key not in {"links", "group", "id"}:
                     meta[key] = value
 
         return {**meta, "content": markdown_body}
@@ -89,7 +89,7 @@ def get_folder_meta(folder_path: str) -> Dict[str, Any]:
     return defaults
 
 
-def build_tree(current_path: str, group: str = None) -> List[Dict[str, Any]]:
+def build_tree(current_path: str, group: Optional[str] = None) -> List[Dict[str, Any]]:
     """
     Recursively build the documentation tree from the directory structure.
 
