@@ -1170,7 +1170,7 @@ function renderGraph() {
     // Fade all nodes except neighbors and self
     const nodeUpdate = nodes.map(n => ({
       id: n.id,
-      color: { opacity: (neighbors.includes(n.id) || n.id === hoveredNodeId) ? 1 : 0.1 },
+      opacity: (neighbors.includes(n.id) || n.id === hoveredNodeId) ? 1 : 0.1,
       font: { color: (neighbors.includes(n.id) || n.id === hoveredNodeId) ? focusedLabelColor : "rgba(255,255,255,0)" }
     }));
     data.nodes.update(nodeUpdate);
@@ -1187,7 +1187,7 @@ function renderGraph() {
     // Restore everything
     data.nodes.update(nodes.map(n => ({
       id: n.id,
-      color: { opacity: 1 },
+      opacity: 1,
       font: { color: labelColor }
     })));
     data.edges.update(data.edges.getIds().map((id, idx) => ({
@@ -1253,7 +1253,7 @@ function setupLegend(nodes, data) {
         // Restore all
         data.nodes.update(nodes.map(n => ({
           id: n.id,
-          color: { opacity: 1 },
+          opacity: 1,
           font: { color: "rgba(255, 255, 255, 0.4)" }
         })));
         data.edges.update(data.edges.getIds().map(id => ({
@@ -1264,7 +1264,7 @@ function setupLegend(nodes, data) {
         // Focus category
         data.nodes.update(nodes.map(n => ({
           id: n.id,
-          color: { opacity: n.group === activeFilter ? 1 : 0.05 },
+          opacity: n.group === activeFilter ? 1 : 0.05,
           font: { color: n.group === activeFilter ? "rgba(255,255,255,1)" : "rgba(255,255,255,0)" }
         })));
         data.edges.update(data.edges.getIds().map(id => {
