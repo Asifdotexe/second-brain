@@ -966,3 +966,236 @@ function toggleSidebar() {
 
 // Start the Engine
 init();
+// --- GRAPH VIEW LOGIC ---
+let graphNetwork = null;
+const categoryColors = {
+  ai: "#00f2fe",
+  cybersecurity: "#00ff87",
+  philosophy: "#bf00ff",
+  paradoxes: "#ff4b2b",
+  science: "#4facfe",
+  history: "#f9d423",
+  development: "#ff9966"
+};
+
+function toggleGraphView() {
+  const mainContent = document.querySelector(".main-content");
+  const graphContainer = document.getElementById("graphContainer");
+  const toggleBtn = document.querySelector(".graph-toggle-btn");
+
+  mainContent.classList.toggle("graph-mode");
+  graphContainer.classList.toggle("active");
+  toggleBtn.classList.toggle("active");
+
+  if (graphContainer.classList.contains("active")) {
+    renderGraph();
+  } else if (graphNetwork) {
+    graphNetwork.destroy();
+    graphNetwork = null;
+  }
+}
+
+function renderGraph() {
+  const container = document.getElementById("graphContainer");
+  const nodes = [];
+  const edges = [];
+  const seenNodes = new Set();
+  const connectionCounts = {};
+
+  // 1. Pre-process to count connections for scaling
+  function countConnections(items) {
+    if (!items) return;
+    items.forEach(item => {
+      if (!item.id || seenNodes.has(item.id)) return;
+      seenNodes.add(item.id);
+      connectionCounts[item.id] = (connectionCounts[item.id] || 0);
+
+      if (item.children) {
+        item.children.forEach(child => {
+          connectionCounts[item.id]++;
+          connectionCounts[child.id] = (connectionCounts[child.id] || 0) + 1;
+          countConnections([child]);
+        });
+      }
+
+      if (item.links) {
+        item.links.forEach(linkId => {
+          if (lookup(linkId)) {
+            connectionCounts[item.id]++;
+            connectionCounts[linkId] = (connectionCounts[linkId] || 0) + 1;
+          }
+        });
+      }
+    });
+  }
+
+  seenNodes.clear();
+  if (wikiData.overview && wikiData.overview.items) {
+    countConnections(wikiData.overview.items);
+  }
+
+  // 2. Build items with scaling
+  seenNodes.clear();
+  function processItems(items) {
+    if (!items) return;
+    items.forEach(item => {
+      if (!item.id || seenNodes.has(item.id)) return;
+      seenNodes.add(item.id);
+
+      let color = "#94a3b8";
+      if (item.group && categoryColors[item.group.toLowerCase()]) {
+        color = categoryColors[item.group.toLowerCase()];
+      }
+
+      // Obsidian-style Scaling: Base size 4, scaling by sqrt of connections
+      const size = 6 + Math.sqrt(connectionCounts[item.id] || 0) * 4;
+
+      nodes.push({
+        id: item.id,
+        label: item.title,
+        group: item.group,
+        size: size,
+        color: {
+          background: color,
+          border: color,
+          highlight: { background: color, border: color },
+          hover: { background: color, border: color }
+        },
+        font: {
+          color: "rgba(255, 255, 255, 0.6)",
+          size: 10,
+          strokeWidth: 0,
+          face: "Inter"
+        },
+        title: item.desc || item.title
+      });
+
+      if (item.children) {
+        item.children.forEach(child => {
+          edges.push({
+            from: item.id,
+            to: child.id,
+            color: { opacity: 0.1, color: "#475569" },
+            width: 1,
+            dashes: true
+          });
+          processItems([child]);
+        });
+      }
+
+      if (item.links) {
+        item.links.forEach(linkId => {
+          if (lookup(linkId)) {
+            edges.push({
+              from: item.id,
+              to: linkId,
+              color: { opacity: 0.2, color: color },
+              width: 1
+            });
+          }
+        });
+      }
+    });
+  }
+
+  if (wikiData.overview && wikiData.overview.items) {
+    processItems(wikiData.overview.items);
+  }
+
+  const data = {
+    nodes: new vis.DataSet(nodes),
+    edges: new vis.DataSet(edges)
+  };
+
+  const options = {
+    nodes: {
+      shape: "dot",
+      borderWidth: 0,
+      shadow: { enabled: true, color: "rgba(0,0,0,0.2)", size: 4 },
+      font: { multi: true }
+    },
+    edges: {
+      arrows: { to: { enabled: true, scaleFactor: 0.3 } },
+      smooth: { type: "continuous" }
+    },
+    physics: {
+      forceAtlas2Based: {
+        gravitationalConstant: -26,
+        centralGravity: 0.005,
+        springLength: 90,
+        springConstant: 0.08
+      },
+      solver: "forceAtlas2Based",
+      timestep: 0.35,
+      stabilization: { iterations: 150 }
+    },
+    interaction: {
+      hover: true,
+      tooltipDelay: 300,
+      zoomView: true,
+      dragView: true
+    }
+  };
+
+  if (graphNetwork) {
+    graphNetwork.destroy();
+  }
+  graphNetwork = new vis.Network(container, data, options);
+
+  // --- NEIGHBOR HIGHLIGHTING ---
+  graphNetwork.on("hoverNode", function (params) {
+    const hoveredNodeId = params.node;
+    const neighbors = graphNetwork.getConnectedNodes(hoveredNodeId);
+    const neighborEdges = graphNetwork.getConnectedEdges(hoveredNodeId);
+
+    // Fade all nodes except neighbors and self
+    const nodeUpdate = nodes.map(n => ({
+      id: n.id,
+      color: { opacity: (neighbors.includes(n.id) || n.id === hoveredNodeId) ? 1 : 0.1 },
+      font: { color: (neighbors.includes(n.id) || n.id === hoveredNodeId) ? "rgba(255,255,255,1)" : "rgba(255,255,255,0)" }
+    }));
+    data.nodes.update(nodeUpdate);
+
+    // Fade all edges except connected ones
+    const edgeUpdate = data.edges.getIds().map(id => ({
+      id: id,
+      color: { opacity: neighborEdges.includes(id) ? 0.6 : 0.02 }
+    }));
+    data.edges.update(edgeUpdate);
+  });
+
+  graphNetwork.on("blurNode", function () {
+    // Restore everything
+    data.nodes.update(nodes.map(n => ({
+      id: n.id,
+      color: { opacity: 1 },
+      font: { color: "rgba(255, 255, 255, 0.6)" }
+    })));
+    data.edges.update(data.edges.getIds().map((id, idx) => ({
+      id: id,
+      color: { opacity: edges[idx].color.opacity }
+    })));
+  });
+
+  // --- ZOOM-AWARE LABELS ---
+  graphNetwork.on("zoom", function () {
+    const scale = graphNetwork.getScale();
+    if (scale < 0.6) {
+      data.nodes.update(nodes.map(n => ({ id: n.id, font: { size: 0 } })));
+    } else {
+      data.nodes.update(nodes.map(n => ({ id: n.id, font: { size: 10 } })));
+    }
+  });
+
+  graphNetwork.on("click", function (params) {
+    if (params.nodes.length > 0) {
+      const nodeId = params.nodes[0];
+      toggleGraphView();
+      loadContent(nodeId);
+    }
+  });
+
+  graphNetwork.on("stabilizationIterationsDone", function () {
+    graphNetwork.fit();
+  });
+}

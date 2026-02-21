@@ -19,6 +19,9 @@
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
+    <!-- Vis Network (Graph Visualization) -->
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -69,6 +72,10 @@
                 <i class="fas fa-search search-icon"></i>
                 <input type="text" class="search-input" placeholder="Search..." onkeyup="filterDocs(this.value)" />
             </div>
+            <button class="graph-toggle-btn" onclick="toggleGraphView()" title="Open Graph View">
+                <i class="fas fa-project-diagram"></i>
+                <span>Graph View</span>
+            </button>
         </div>
 
         <div class="nav-tree" id="navTree">
@@ -89,6 +96,11 @@
     <!-- Main Content Area -->
     <main class="main-content">
         <div id="breadcrumbs" class="breadcrumbs"></div>
+        <div id="graphContainer" class="graph-container">
+            <button class="graph-close-overlay" onclick="toggleGraphView()">
+                <i class="fas fa-times"></i> Close Graph
+            </button>
+        </div>
         <div id="contentDisplay" class="markdown-body">
             <!-- Content rendered here -->
         </div>
