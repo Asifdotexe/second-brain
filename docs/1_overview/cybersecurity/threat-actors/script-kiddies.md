@@ -1,6 +1,10 @@
 ---
 title: Script Kiddies
-tags: CyberSecurity, ThreatActor, ScriptKiddie, Amateur
+tags:
+  - CyberSecurity
+  - ThreatActor
+  - ScriptKiddie
+  - Amateur
 ---
 
 # Script Kiddies
