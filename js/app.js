@@ -1081,6 +1081,7 @@ function renderGraph() {
       if (item.children) {
         item.children.forEach(child => {
           edges.push({
+            id: `child-${item.id}-${child.id}`,
             from: item.id,
             to: child.id,
             color: { opacity: 0.1, color: "#475569" },
@@ -1095,6 +1096,7 @@ function renderGraph() {
         item.links.forEach(linkId => {
           if (lookup(linkId)) {
             edges.push({
+              id: `link-${item.id}-${linkId}`,
               from: item.id,
               to: linkId,
               color: { opacity: 0.2, color: color },
@@ -1110,6 +1112,12 @@ function renderGraph() {
     if (wikiData[key] && wikiData[key].items) {
       processItems(wikiData[key].items);
     }
+  });
+
+  // Create a fast lookup map for original edge opacities
+  const edgeOpacityMap = {};
+  edges.forEach(e => {
+    edgeOpacityMap[e.id] = e.color.opacity;
   });
 
   const data = {
@@ -1190,9 +1198,9 @@ function renderGraph() {
       opacity: 1,
       font: { color: labelColor }
     })));
-    data.edges.update(data.edges.getIds().map((id, idx) => ({
+    data.edges.update(data.edges.getIds().map((id) => ({
       id: id,
-      color: { opacity: edges[idx].color.opacity }
+      color: { opacity: edgeOpacityMap[id] || 0.1 }
     })));
   });
 
