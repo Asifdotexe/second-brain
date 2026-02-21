@@ -17,7 +17,7 @@ Instead of stealing your personal data (like passwords or photos), the hacker is
 
 There are two main ways:
 *  **Browser-Based (Drive-by):** You visit a shady website (streaming or gambling sites). A script runs in the background of that web page. As long as the tab is open, your computer mines for them.
-*  **Malware-Based:** You download a file (like a "free" game crack or software). The mining program installs itself deeper in your system and runs every time you turn the computer on.
+*  **Malware-Based:** You download a file (like a "free" game crack or software). The [[cryptomining-software|mining program]] installs itself deeper in your system and runs every time you turn the computer on.
 
 *2. How do I know if I'm infected?*
 

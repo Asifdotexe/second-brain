@@ -1,0 +1,6 @@
+{
+    "title": "Events",
+    "icon": "fas fa-calendar-exclamation",
+    "desc": "Significant cyber incidents and historical attacks",
+    "view": "list"
+}

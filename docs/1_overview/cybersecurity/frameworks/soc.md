@@ -23,7 +23,7 @@ Imagine a room full of screens like NASA, but instead of watching rockets, they 
 It can be. Tier 1 analysts suffer from **"Alert Fatigue"**—sifting through 10,000 false alarms a day to find the 1 real attack. It is the entry-level rite of passage in Cyber Security.
 
 *2. SOC vs NOC?*
-*   **SOC (Security):** Fixes hacks. "Are the bad guys in?"
+*   **SOC (Security):** Fixes hacks. "Are the bad guys in?" (Related to [[incident-response|Incident Response]])
 *   **NOC (Network):** Fixes outages. "Is the WiFi working?"
 
 ### Further Reading
