@@ -47,6 +47,15 @@ STYLE: Sidey Minimalist Replica
         "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         sans-serif;
     --radius: 8px;
+
+    /* --- GRAPH COLORS --- */
+    --color-ai: #00d4ff;
+    --color-cybersecurity: #ff4757;
+    --color-philosophy: #a55eea;
+    --color-general: #ced6e0;
+    --color-insurance: #ffa502;
+    --color-psychology: #2ed573;
+    --color-science: #eccc68;
 }
 
 body[data-theme="dark"] {
@@ -70,15 +79,6 @@ body[data-theme="dark"] {
     --text-muted: var(--light-gray-70);
     --code-text: var(--vibrant-green);
     --text-code-block: var(--white-1);
-
-    /* --- GRAPH COLORS --- */
-    --color-ai: #00d4ff;
-    --color-cybersecurity: #ff4757;
-    --color-philosophy: #a55eea;
-    --color-general: #ced6e0;
-    --color-insurance: #ffa502;
-    --color-psychology: #2ed573;
-    --color-science: #eccc68;
 }
 
 * {
@@ -1132,6 +1132,7 @@ body[data-theme="dark"] .mobile-header {
         gap: 24px;
     }
 }
+
 /* --- GRAPH VIEW --- */
 #graphContainer {
     width: 100%;
@@ -1176,7 +1177,7 @@ body[data-theme="dark"] .mobile-header {
     cursor: pointer;
     font-size: 0.85rem;
     font-weight: 600;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     gap: 8px;
