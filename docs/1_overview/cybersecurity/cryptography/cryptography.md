@@ -1,41 +1,45 @@
 ---
 title: Cryptography
-tags: CyberSecurity, Math, Privacy
+tags: CyberSecurity, Math, Privacy, Encryption
 ---
 
 # Cryptography
 
-The art of writing secrets.
+The art and science of writing secrets.
 
-**Cryptography** is the science of using math to transform a message so that only the intended recipient can read it. It is the foundation of specific tools like [[encryption|Encryption]].
+Cryptography is the mathematical foundation of digital security. It provides the tools to ensure that data remains confidential, authentic, and untampered with. This section covers the core concepts of encryption, world-standard algorithms, and the emerging threats of the quantum era.
 
-If you send a letter in a clear plastic bag, anyone can read it. Cryptography puts the letter in a steel safe.
+## The Catalog of Cryptography
 
-## The Two Main Types
+### 1. [[encryption|Encryption]]
+The fundamental process of scrambling plaintext into unreadable ciphertext using mathematical formulas.
 
-1.  **Symmetric (The Hotel Key):**
-    *   One key locks the door, and the *same* key unlocks it.
-    *   *Problem:* How do you give the key to your friend without a spy stealing it?
-    *   *Example:* [[aes-256|AES]].
+### 2. [[symmetric-encryption|Symmetric Encryption]]
+The "House Key" approach: using a single secret key for both locking and unlocking data. Extremely fast and efficient for bulk storage.
 
-2.  **Asymmetric (The Mailbox):**
-    *   **Public Key (Slot):** Anyone can put mail *in*. (Lock it).
-    *   **Private Key (Key):** Only you can take mail *out*. (Unlock it).
-    *   *Solution:* You shout your Public Key to the world. People use it to send you secrets. Only you can read them.
-    *   *Example:* [[rsa|RSA]], ECC (Used for HTTPS/Websites).
+### 3. [[asymmetric-encryption|Asymmetric Encryption]]
+The "Mailbox" approach: using pairs of public and private keys to solve the problem of safely sharing secrets over the internet.
 
-## FAQs
+### 4. [[rsa|RSA]]
+The pioneer of asymmetric encryption. Its security relies on the fact that multiplying large prime numbers is easy, but factoring them is nearly impossible for classical computers.
 
-*1. Is it just for spies?*
-No. You use it every time you:
-*   Use a credit card chip.
-*   Unlock your car with a fob.
-*   Visit a website with a "Padlock" icon (HTTPS).
+### 5. [[ecc|ECC]]
+The modern standard for efficiency. It provides the same security as RSA but with much smaller keys, making it ideal for mobile devices and cryptocurrencies.
 
-*2. What is Steganography?*
-Hiding files *inside* other files (like hiding a text document inside a picture of a cat). Cryptography scrambles the message; Steganography hides the existence of the message.
+### 6. [[aes-256|AES-256]]
+The world's gold standard for symmetric encryption, used to protect everything from personal hard drives to government secrets.
 
-### Further Reading
+### 7. [[shors-algorithm|Shor's Algorithm]]
+The quantum "doomsday clock": an algorithm that could theoretically break today's asymmetric encryption in hours.
 
-*   **Book:** *[The Code Book](https://www.simonandschuster.com/books/The-Code-Book/Simon-Singh/9780385495325)* by Simon Singh (A history of codes from Egypt to Quantum).
-*   **Concept:** *[Khan Academy: Cryptography](https://www.khanacademy.org/computing/computer-science/cryptography)*.
+### 8. [[post-quantum-cryptography|Post-Quantum Cryptography]]
+The next generation of mathematical defenses designed to be secure even against the threat of future quantum computers.
+
+---
+
+## Core Concepts
+
+Currently, this folder documents the transition from **Classical Cryptography** (like AES) to **[[post-quantum-cryptography|Post-Quantum Cryptography]]** (defenses against Shor's Algorithm). 
+
+- **[[symmetric-encryption|Symmetric Encryption]]**: Using the same key for locking and unlocking (Fast, secure, but requires safe key sharing).
+- **[[asymmetric-encryption|Asymmetric Encryption]]**: Using public/private key pairs (The backbone of HTTPS and secure web browsing).

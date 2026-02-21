@@ -112,53 +112,6 @@ const wikiData = {
                         ]
                     },
                     {
-                        "id": "hardware",
-                        "title": "Hardware",
-                        "icon": "fas fa-microchip",
-                        "desc": "The Physical Substrate of Intelligence",
-                        "view": "list",
-                        "children": [
-                            {
-                                "id": "extropic",
-                                "title": "Extropic",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "AI",
-                                    "Hardware",
-                                    "Thermodynamics",
-                                    "Physics"
-                                ],
-                                "content": "# Extropic\n\nNature doesn't fight noise; it rides it.\n\n**Extropic** is a computing company building \"Thermodynamic Computers\" that use the natural thermal noise of the universe to power AI, rather than spending energy to suppress it.\n\nThink of it like **A Ball on a Table**.\n*   **Traditional Computing (Digital):** You want the ball to stay perfectly still (0) or move perfectly to the right (1). But the table is constantly vibrating (thermal noise/heat). You have to spend massive amounts of energy (cooling, error correction) to force the table to be flat and the ball to be still.\n*   **Thermodynamic Computing (Extropic):** You *tilt* the vibrating table. You let the natural vibrations (heat) shake the ball around, and you just guide it generally downhill. You use the \"noise\" as the engine that moves the ball.\nInstead of fighting physics to create order, they use the chaos of physics to perform calculations (specifically, probability sampling).\n\n## Key Concepts\n\n*   **Thermodynamic Computing:** A new paradigm where the hardware is designed to relax into a lower energy state, which mathematically corresponds to finding the answer to a problem (like how a ball naturally finds the bottom of a hill).\n*   **p-bits (Probabilistic Bits):** Unlike a bit that is definitely 0 or 1, a p-bit is *probabilistically* 0 or 1. It flickers like a coin flipping in the air. This is perfect for AI, which is all about probability (\"Is this image 80% likely to be a cat?\").\n*   **Jellium:** A state of matter (electron gas) used as an analogy for their chip's substrate. They treat the electrons in their chip like a fluid that can inherently perform complex math just by flowing.\n\n## FAQs\n\n*1. Why do we need this?*\nThe \"Energy Wall.\" We are running out of electricity to power bigger AI Models. Traditional chips ([[gpu|GPUs]]) are becoming heaters that occasionally do math. Extropic claims their chips can be orders of magnitude more efficient because they don't fight heat; they run *on* it.\n\n*2. Is this Quantum Computing?*\nNo, but it's related. [[quantum-computing|Quantum Computers]] use quantum mechanics (entanglement). Extropic uses *Thermodynamics* (statistical mechanics). It fits in the gap between classical chips (too rigid) and quantum chips (too fragile). It works at room temperature.\n\n### Further Reading\n\n*   **Video:** *[Extropic: Thermodynamic Computing](https://www.youtube.com/watch?v=Y28JQzS6TlE)* (The \"Litepaper\" video).\n*   **Concept:** *[Brownian Motion](https://en.wikipedia.org/wiki/Brownian_motion)* (The physics of random fluctuations).\n"
-                            },
-                            {
-                                "id": "npu",
-                                "title": "NPU (Neural Processing Unit)",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "AI",
-                                    "Hardware",
-                                    "Mobile",
-                                    "EdgeComputing"
-                                ],
-                                "content": "# NPU (Neural Processing Unit)\n\nThe Brain in Your Pocket.\n\n**An NPU** is a specialized processor found in smartphones and laptops designed to run AI tasks efficiently locally (\"on the edge\"), rather than sending data to the cloud.\n\nThink of it like **Reflexes vs. Thinking**.\n*   **[[tpu|TPU]] (Cloud):** Like a supercomputer solving a complex math problem. It takes huge power and time.\n*   **NPU (Edge):** Like your hand pulling away from a hot stove. It\u2019s not \"smart\" in a general sense, but it is instant and happens right where the action is.\nWhen your phone unlocks with FaceID or blurs the background in a Zoom call, that's the NPU. It does the heavy AI lifting so your battery doesn't die.\n\n## How it Works\n\n1.  **Inference Only:** Unlike huge GPUs that *train* models (teach them), NPUs mostly *run* models (inference). They take a pre-trained brain and just use it.\n2.  **Low Power:** They are physically designed to sip battery. Doing the same FaceID calculation on your main CPU would drain your phone in an hour.\n\n## FAQs\n\n*1. Do I have one?*\nYes. If you have a modern iPhone (Apple Neural Engine) or Android (Hexagon), you use it every day for photos, voice-to-text, and battery management.\n\n*2. What's the difference from a GPU?*\nEfficiency. A [[gpu|GPU]] *can* do what an NPU does, but it's overkill. It\u2019s like using a flamethrower to light a candle. The NPU is the lighter, purpose-built and safe for your pocket.\n\n### Further Reading\n\n*   **Article:** *[What is an NPU?](https://semiconductor.samsung.com/support/tools-resources/dictionary/the-neural-processing-unit-npu-a-brainy-next-generation-semiconductor/)* (Samsung Explainer).\n*   **Comparison:** *[CPU vs GPU vs TPU vs NPU](https://youtu.be/d3SqH0UBLEY)*.\n"
-                            },
-                            {
-                                "id": "tpu",
-                                "title": "TPU (Tensor Processing Unit)",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "AI",
-                                    "Hardware",
-                                    "Google"
-                                ],
-                                "content": "# TPU (Tensor Processing Unit)\n\nThe Specialist.\n\n**A TPU** is a custom microchip designed by OpenAI/Google specifically to do *one thing* extremely fast: Matrix Multiplication (the math that powers Neural Networks).\n\nThink of it like a **Dragster vs. a Sediment**.\n*   **[[cpu|CPU]] (Sedan):** Can drive anywhere (grocery store, off-road, highway). Versatile, but slow max speed.\n*   **[[gpu|GPU]] (Sports Car):** Faster. Good for racing (gaming) and carrying moderate loads (parallel tasks).\n*   **TPU (Dragster):** Useless for going to the grocery store (can't run Windows). But on a straight line (Tensor math), it is unimaginably fast.\nIt strips away everything a general computer needs (cache, branch prediction) to make room for pure \"number crunching\" muscle.\n\n## How it Works\n\n1.  **Systolic Array:** Instead of moving data in and out of memory for every calculation (like a CPU), a TPU pumps data through a massive grid of calculator units like a heart pumps blood.\n2.  **Low Precision:** It often uses \"fuzzy\" numbers (8-bit or bfloat16) because AI doesn't need perfect accuracy (3.14159...), it just needs to be close enough (3.14). This saves massive energy.\n\n## FAQs\n\n*1. Can I buy one?*\nNot really. TPUs are mostly available only through Google Cloud. You rent them for a few dollars an hour.\n\n*2. Is it better than a GPU?*\nFor specific AI tasks (like training Transformers), yes/faster. For general tasks or smaller models, GPUs are often more flexible and easier to use.\n\n### Further Reading\n\n*   **Article:** *[Cloud TPU](https://cloud.google.com/tpu/docs/intro-to-tpu)* (Official Google Docs).\n*   **Video:** *[How Google's TPU works](https://www.youtube.com/watch?v=MXxN4fv01c8)*.\n"
-                            }
-                        ]
-                    },
-                    {
                         "id": "models",
                         "title": "Models",
                         "icon": "fas fa-layer-group",
@@ -290,6 +243,19 @@ const wikiData = {
                                     "VulnerabilityManagement"
                                 ],
                                 "content": "# Cyptojacking\n\nA digital parasite that secretly steals your computer's electricity and brainpower to make money for a hacker.\n\nIt is the unauthorized use of someone else\u2019s computer to \"mine\" cryptocurrency. \n\nInstead of stealing your personal data (like passwords or photos), the hacker is stealing your **resources**. They install a hidden program on your device (or hide it in a website you visit) that forces your computer to solve complex math problems. These solutions generate digital money, which goes straight to the hacker's wallet, while you are left with a slow computer and a high electricity bill.\n\n## FAQs\n\n*1. How does it get on my computer?*\n\nThere are two main ways:\n*  **Browser-Based (Drive-by):** You visit a shady website (streaming or gambling sites). A script runs in the background of that web page. As long as the tab is open, your computer mines for them.\n*  **Malware-Based:** You download a file (like a \"free\" game crack or software). The [[cryptomining-software|mining program]] installs itself deeper in your system and runs every time you turn the computer on.\n\n*2. How do I know if I'm infected?*\n\nCryptojacking is designed to be quiet, but look for these signs:\n* **The Fan Test:** Your laptop fans are spinning at max speed even when you are just reading text.\n* **Slowness:** Your computer feels laggy or freezes during simple tasks.\n* **Battery Drain:** Your phone or laptop battery dies much faster than usual.\n* **The Task Manager:** Open your Task Manager (Windows) or Activity Monitor (Mac). If you see \"CPU Usage\" at 90-100% caused by a browser or a weirdly named file, that's a red flag.\n\n### Further Reading\n\n* **History:** *[The rise and fall of Coinhive](https://www.darkreading.com/perimeter/the-rise-of-silence-and-the-fall-of-coinhive)* (The most famous browser mining script).\n* **Protection:** *[How to use \"NoCoin\" or \"MinerBlock\" browser extensions.](https://fossbytes.com/block-cryptocurrency-mining-in-browser/)*\n* **Official Guide:** *[Malwarebytes: What is Cryptojacking?](https://www.malwarebytes.com/cryptojacking)*\n"
+                            },
+                            {
+                                "id": "cyber-attacks",
+                                "title": "Cybersecurity Attacks",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Security",
+                                    "Malware",
+                                    "CyberAttack",
+                                    "Awareness"
+                                ],
+                                "content": "# Cybersecurity Attacks\n\nThe arsenal of the digital adversary.\n\nCybersecurity attacks range from simple social engineering tricks to complex, automated malware that can paralyze global infrastructure. This catalogue provides a summary of the various attack vectors, malicious software, and vulnerabilities documented in this knowledge bank.\n\n## The Catalog of Attacks\n\n### 1. [[malware|Malware (Overview)]]\nA broad category of malicious software\u2014including viruses, worms, and ransomware\u2014designed specifically to harm systems, steal data, or gain unauthorized access.\n\n### 2. [[phishing|Phishing]]\nSocial engineering that uses deceptive emails or messages to trick users into revealing passwords, credit card numbers, or other sensitive information.\n\n### 3. [[vishing|Vishing]]\n\"Voice Phishing\": Scammers use phone calls to create a sense of urgency and trick victims into granting remote access or transferring money.\n\n### 4. [[ransomware|Ransomware]]\nDigital kidnapping: Malware that encrypts your files and demands a ransom (usually in Bitcoin) in exchange for the decryption key.\n\n### 5. [[wipers|Wipers]]\nThe \"digital shredder\": Destructive malware used in cyber warfare to permanently erase data from hard drives with no intention of recovery.\n\n### 6. [[worms|Worms]]\nStandalone malware that spreads automatically across networks without needing a host program or any human action.\n\n### 7. [[virus|Computer Virus]]\nA classic infection that attaches itself to a host program or file and replicates by infecting other files when the host is executed.\n\n### 8. [[trojan|Trojan Horse]]\nMalicious software that disguises itself as something useful (like a free game or tool) to trick you into inviting it into your system.\n\n### 9. [[botnets|Botnets]]\nAn army of \"zombie\" computers (infected devices) secretly controlled by a hacker to launch massive attacks like DDoS or crypto mining.\n\n### 10. [[ddos|DDoS (Distributed Denial of Service)]]\nA \"digital traffic jam\": Overwhelming a website or server with a flood of traffic from a botnet to make it crash or become unreachable.\n\n### 11. [[cryptojacking|Cryptojacking]]\nA digital parasite that secretly uses your computer's processing power and electricity to mine cryptocurrency for a hacker.\n\n### 12. [[key-loggers|Keyloggers]]\nSurveillance tools (hardware or software) that secretly record everything you type to steal passwords and personal messages.\n\n### 13. [[spywares|Spyware]]\nBroad category of surveillance malware that quietly tracks your activities and steals information while remaining as invisible as possible.\n\n### 14. [[rootkit|Rootkit]]\nStealthy toolsets that give a hacker deep administrative control over a computer while hiding their presence from the operating system.\n\n### 15. [[logic-bomb|Logic Bomb]]\nMalicious code that sits dormant and \"explodes\" (triggers) only when a specific condition is met, such as a date or a specific event.\n\n### 16. [[supply-chain-attack|Supply Chain Attack]]\nAttacking a large organization by first compromising the smaller, less-secure vendors or suppliers that they trust.\n\n### 17. [[zero-day|Zero-Day]]\nAn attack that exploits a previously unknown software flaw before the developers have had \"zero days\" to create a fix or patch.\n\n### 18. [[remote-code-execution|Remote Code Execution (RCE)]]\nThe \"Holy Grail\" for hackers: A vulnerability that allows them to run their own code on a remote server from anywhere in the world.\n\n### 19. [[command-injection|Command Injection]]\nTricking a system into obeying unauthorized commands by hiding them in legitimate-looking input fields (like a search bar).\n\n### 20. [[react2shell|React2Shell]]\nA critical vulnerability (CVE-2025-55182) that allows hackers to take control of servers running specific versions of React Server Components.\n\n### 21. [[doxing|Doxing]]\nA real-world threat: Publicly revealing someone's private identifying information online to enable harassment or physical threats.\n\n### 22. [[adware|Adware]]\nUnwanted software that bombards you with advertisements, often tracking your browsing habits to sell your data to advertisers.\n"
                             },
                             {
                                 "id": "ddos",
@@ -525,6 +491,19 @@ const wikiData = {
                                 "content": "# AES-256\n\nThe unbreakable glass box.\n\n**AES-256** (Advanced Encryption Standard, 256-bit) is the gold standard for scrambling data so that no one can read it without the key.\n\nImagine you put a document in a glass box. AES-256 shuffles the atoms of the document 14 times in a row using a password. To reverse it, you need the exact password. If you try to guess it, you would need more energy than all the stars in the universe emitting for billions of years.\n\n## By The Numbers\n\n*   **AES:** The algorithm (the math).\n*   **256:** The Key Size. It means the password is 256 ones and zeros long.\n    *   **AES-128:** Unbreakable.\n    *   **AES-256:** *Paranoid* unbreakable (used for \"Top Secret\" government files).\n\n## FAQs\n\n*1. Can hackers break it?*\nNo. They don't break the *box* (AES); they steal the *key* (Password). If hackers get your password, AES can't help you.\n*   **Brute Force:** Trying every password? Impossible.\n*   **Rubber Hose Cryptanalysis:** Beating the password out of you? Highly effective.\n\n*2. Is it slow?*\nIt used to be. But modern CPUs have a special \"AES-NI\" instruction set, meaning your computer can encrypt terabytes of data instantly without slowing down.\n\n### Further Reading\n\n*   **Video:** *[AES Explained (Computerphile)](https://www.youtube.com/watch?v=O4xNJs315Os)* (Great visual explanation).\n*   **Comic:** *[XKCD: Security](https://xkcd.com/538/)* (Explaining why math isn't the weak link).\n"
                             },
                             {
+                                "id": "asymmetric-encryption",
+                                "title": "Asymmetric Encryption (Public Key Cryptography)",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Cryptography",
+                                    "Security",
+                                    "Web",
+                                    "TLS"
+                                ],
+                                "content": "# Asymmetric Encryption\n\nThe mailbox of the digital world.\n\n**Asymmetric Encryption** (also called Public Key Cryptography) uses a pair of mathematically related keys: a **Public Key** and a **Private Key**. \n\nThink of it like a **Mailbox**.\n*   **Public Key (The Slot):** Anyone can walk up to your mailbox and drop a letter in the slot. Everyone knows where the slot is.\n*   **Private Key (The Key):** Only the owner of the mailbox has the physical key to open the back and read the letters.\n*   Even if the person who dropped the letter in the slot changes their mind, they cannot get it back out. Only the holder of the Private Key can access the contents.\n\n## How it Works\n\n1.  **You generate two keys:** One you keep secret (Private), and one you give to everyone (Public).\n2.  **Sender:** Someone wants to send you a secret. They look up your Public Key and use it to scramble their message.\n3.  **Receiver:** You receive the scrambled mess. You use your Private Key to unscramble it.\n4.  **The Magic:** Even though the Public Key *locked* the message, it cannot *unlock* it. Only the Private Key can.\n\n## Why it's Important\nIt solves the **Key Exchange Problem**. You don't have to meet someone in a dark alley to share a secret password. You can post your Public Key on your website, and anyone can safely send you data.\n\n## Famous Examples\n*   **[[rsa|RSA]]:** The oldest and most famous asymmetric algorithm.\n*   **[[ecc|ECC (Elliptic Curve Cryptography)]]:** A newer, more efficient method used for SSL/TLS (HTTPS) on almost every website.\n\n## FAQs\n\n*1. Is it slower than Symmetric?*\nYes, much slower. The math is much more complex. This is why it is rarely used to encrypt large files. Instead, it is used to encrypt a small \"Session Key\" which is then used for [[symmetric-encryption|Symmetric Encryption]].\n\n*2. What is a Digital Signature?*\nIt's Asymmetric encryption in reverse. You \"lock\" a message with your *Private* key. If someone can unlock it with your *Public* key, they know for 100% certainty that it came from you and hasn't been changed.\n\n### Further Reading\n\n*   **Video:** *[Public Key Cryptography: RSA Encryption](https://www.youtube.com/watch?v=vgTtMqs66_A)*\n*   **Article:** *[How SSL/TLS works](https://www.cloudflare.com/learning/ssl/what-is-ssl/)*\n"
+                            },
+                            {
                                 "id": "cryptography",
                                 "title": "Cryptography",
                                 "icon": "far fa-file-alt",
@@ -532,9 +511,22 @@ const wikiData = {
                                 "tags": [
                                     "CyberSecurity",
                                     "Math",
-                                    "Privacy"
+                                    "Privacy",
+                                    "Encryption"
                                 ],
-                                "content": "# Cryptography\n\nThe art of writing secrets.\n\n**Cryptography** is the science of using math to transform a message so that only the intended recipient can read it. It is the foundation of specific tools like [[encryption|Encryption]].\n\nIf you send a letter in a clear plastic bag, anyone can read it. Cryptography puts the letter in a steel safe.\n\n## The Two Main Types\n\n1.  **Symmetric (The Hotel Key):**\n    *   One key locks the door, and the *same* key unlocks it.\n    *   *Problem:* How do you give the key to your friend without a spy stealing it?\n    *   *Example:* [[aes-256|AES]].\n\n2.  **Asymmetric (The Mailbox):**\n    *   **Public Key (Slot):** Anyone can put mail *in*. (Lock it).\n    *   **Private Key (Key):** Only you can take mail *out*. (Unlock it).\n    *   *Solution:* You shout your Public Key to the world. People use it to send you secrets. Only you can read them.\n    *   *Example:* [[rsa|RSA]], ECC (Used for HTTPS/Websites).\n\n## FAQs\n\n*1. Is it just for spies?*\nNo. You use it every time you:\n*   Use a credit card chip.\n*   Unlock your car with a fob.\n*   Visit a website with a \"Padlock\" icon (HTTPS).\n\n*2. What is Steganography?*\nHiding files *inside* other files (like hiding a text document inside a picture of a cat). Cryptography scrambles the message; Steganography hides the existence of the message.\n\n### Further Reading\n\n*   **Book:** *[The Code Book](https://www.simonandschuster.com/books/The-Code-Book/Simon-Singh/9780385495325)* by Simon Singh (A history of codes from Egypt to Quantum).\n*   **Concept:** *[Khan Academy: Cryptography](https://www.khanacademy.org/computing/computer-science/cryptography)*.\n"
+                                "content": "# Cryptography\n\nThe art and science of writing secrets.\n\nCryptography is the mathematical foundation of digital security. It provides the tools to ensure that data remains confidential, authentic, and untampered with. This section covers the core concepts of encryption, world-standard algorithms, and the emerging threats of the quantum era.\n\n## The Catalog of Cryptography\n\n### 1. [[encryption|Encryption]]\nThe fundamental process of scrambling plaintext into unreadable ciphertext using mathematical formulas.\n\n### 2. [[symmetric-encryption|Symmetric Encryption]]\nThe \"House Key\" approach: using a single secret key for both locking and unlocking data. Extremely fast and efficient for bulk storage.\n\n### 3. [[asymmetric-encryption|Asymmetric Encryption]]\nThe \"Mailbox\" approach: using pairs of public and private keys to solve the problem of safely sharing secrets over the internet.\n\n### 4. [[rsa|RSA]]\nThe pioneer of asymmetric encryption. Its security relies on the fact that multiplying large prime numbers is easy, but factoring them is nearly impossible for classical computers.\n\n### 5. [[ecc|ECC]]\nThe modern standard for efficiency. It provides the same security as RSA but with much smaller keys, making it ideal for mobile devices and cryptocurrencies.\n\n### 6. [[aes-256|AES-256]]\nThe world's gold standard for symmetric encryption, used to protect everything from personal hard drives to government secrets.\n\n### 7. [[shors-algorithm|Shor's Algorithm]]\nThe quantum \"doomsday clock\": an algorithm that could theoretically break today's asymmetric encryption in hours.\n\n### 8. [[post-quantum-cryptography|Post-Quantum Cryptography]]\nThe next generation of mathematical defenses designed to be secure even against the threat of future quantum computers.\n\n---\n\n## Core Concepts\n\nCurrently, this folder documents the transition from **Classical Cryptography** (like AES) to **[[post-quantum-cryptography|Post-Quantum Cryptography]]** (defenses against Shor's Algorithm). \n\n- **[[symmetric-encryption|Symmetric Encryption]]**: Using the same key for locking and unlocking (Fast, secure, but requires safe key sharing).\n- **[[asymmetric-encryption|Asymmetric Encryption]]**: Using public/private key pairs (The backbone of HTTPS and secure web browsing).\n"
+                            },
+                            {
+                                "id": "ecc",
+                                "title": "ECC (Elliptic Curve Cryptography)",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Cryptography",
+                                    "AsymmetricEncryption",
+                                    "Efficiency"
+                                ],
+                                "content": "# ECC (Elliptic Curve Cryptography)\n\nSmaller keys, bigger security.\n\n**ECC** is a modern form of [[asymmetric-encryption|Asymmetric Encryption]] that is faster and more efficient than older methods like [[rsa|RSA]]. It is the primary way your smartphone and web browser stay secure today.\n\n## How it Works: Bouncing a ball on a curve\nInstead of using massive prime numbers (like RSA), ECC uses the complex math of geographic curves.\n\nImagine a specific \"Elliptic Curve\" on a graph.\n1.  **The Trapdoor:** You pick a starting point on the curve and \"bounce\" a digital ball around the curve a specific number of times (this number is your **Private Key**).\n2.  **The Result:** The final landing spot of the ball is your **Public Key**.\n3.  **The Problem:** For an observer, it is impossible to look at the final landing spot and figure out exactly how many \"bounces\" it took to get there. They would have to guess every possibility, which takes trillions of years.\n\n## The Advantage: Size Matters\nThe biggest benefit of ECC is that it provides the same level of security as RSA but with **much smaller keys**.\n\n| Security Level | RSA Key Size | ECC Key Size |\n| :--- | :--- | :--- |\n| Standard | 3072 bits | 256 bits |\n| Maximum | 15360 bits | 512 bits |\n\nBecause the keys are smaller, they require less battery life, less storage, and less internet bandwidth. This is why ECC is the standard for mobile devices and the \"Padlock\" icon in your browser (HTTPS).\n\n## FAQs\n\n*1. Is ECC secure against Quantum Computers?*\nNo. Just like [[rsa|RSA]], ECC can be broken by **[[shors-algorithm|Shor's Algorithm]]**. While ECC is more efficient for today, the future will require **[[post-quantum-cryptography|Post-Quantum Cryptography]]**.\n\n*2. Where else is ECC used?*\n**Bitcoin** and other cryptocurrencies use ECC (specifically a curve called `secp256k1`) to generate wallet addresses and sign transactions.\n\n### Further Reading\n\n*   **Video:** *[Elliptic Curve Cryptography (Computerphile)](https://www.youtube.com/watch?v=NF1pwjL9-DE)*\n*   **Article:** *[A Relatively Easy-to-Understand Guide to ECC](https://blog.cloudflare.com/ecc-quic-tls/)*\n"
                             },
                             {
                                 "id": "encryption",
@@ -549,6 +541,30 @@ const wikiData = {
                                 "content": "# Encryption\n\nPutting your secret message in a locked safe.\n\n**Encryption** is the process of scrambling readable key text (\"plaintext\") into unreadable nonsense (\"ciphertext\") using a mathematical formula. Only someone with the correct **Key** can unscramble (decrypt) it back to normal.\n\n## Types\n\n1.  **Symmetric (The House Key):** The *same* key locks and unlocks the data. Fast, but you have to safely share the key.\n2.  **Asymmetric (The Mailbox):** Two keys. A **Public Key** (anyone can use it to lock a message/put mail in) and a **Private Key** (only you have it to unlock/take mail out). This is how the Internet (HTTPS) works.\n\n## FAQs\n\n*1. Can hackers break it?*\nModern encryption (like [[aes-256|AES-256]]) is practically unbreakable by brute force. Hackers don't break the math; they steal the **Key** (or guess your password) to bypass the lock.\n\n*2. What is End-to-End Encryption?*\nIt means the company (e.g., WhatsApp) cannot read your messages. The message is locked on your phone and only unlocked on your friend's phone.\n\n### Further Reading\n\n*   **Video:** *[Encryption as Fast As Possible](https://www.youtube.com/watch?v=r4i7-q2k2B4)*\n*   **Article:** *[What is Encryption? (Cloudflare)](https://www.cloudflare.com/learning/ssl/what-is-encryption/)*\n"
                             },
                             {
+                                "id": "post-quantum-cryptography",
+                                "title": "Post-Quantum Cryptography (PQC)",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Cryptography",
+                                    "QuantumComputing",
+                                    "FutureProofing"
+                                ],
+                                "content": "# Post-Quantum Cryptography\n\nFixing the locks before the master key is built.\n\n**Post-Quantum Cryptography (PQC)** refers to the development of new mathematical encryption methods that are secure against both classical computers and the future threat of **[[shors-algorithm|Quantum Computers]]**.\n\nCurrently, almost all internet security (RSA and ECC) can be broken by a large-scale quantum computer. PQC is the \"patch\" for the entire internet's plumbing.\n\n## The Quantum Threat\nQuantum computers use \"Qubits\" to perform calculations that are impossible for normal computers. **[[shors-algorithm|Shor's Algorithm]]** is a specific quantum recipe that can break the math behind our current [[asymmetric-encryption|Asymmetric Encryption]].\n\nIf a powerful quantum computer is built tomorrow, every bank account, government secret, and private message sent over the last 30 years could be unlocked.\n\n## PQC Strategies (The New Math)\nSince quantum computers are great at factoring numbers ([[rsa|RSA]]) and solving \"discrete logs\" ([[ecc|ECC]]), we need math problems that *don't* involve those. \n\n1.  **Lattice-based Cryptography:** Hiding data inside a massive, multi-dimensional grid of points. This is currently the most promising candidate.\n2.  **Hash-based Signatures:** Using one-way mathematical \"hashes\" (like fingerprints) to verify identity.\n3.  **Code-based Cryptography:** Based on error-correcting codes.\n\n## The Race: NIST Standardization\nThe US National Institute of Standards and Technology (NIST) has been running a global competition since 2016 to pick the winners of the \"Quantum-Safe\" era.\n*   **Current Winners:** Algorithms like **CRYSTALS-Kyber** (for encryption) and **CRYSTALS-Dilithium** (for signatures) are being rolled out globally (e.g., in Google Chrome and Cloudflare).\n\n## FAQs\n\n*1. Is this the same as \"Quantum Cryptography\"?*\nNo. \n*   **Quantum Cryptography (QKD):** Uses actual quantum physics (lasers and photons) to send secrets. Requires expensive hardware.\n*   **Post-Quantum Cryptography:** Uses normal math that runs on your current phone/laptop, but is *designed* to be too hard for quantum computers to solve.\n\n*2. Why do we need it now if quantum computers aren't ready?*\nBecause of **\"Store Now, Decrypt Later\"**. Attackers are currently stealing and storing encrypted government and corporate data today, hoping to use a quantum computer to unlock it 10 years from now. We need safe encryption *today* to protect the future.\n\n### Further Reading\n\n*   **Website:** *[NIST Post-Quantum Cryptography Project](https://csrc.nist.gov/projects/post-quantum-cryptography)*\n*   **Video:** *[The Quantum Apocalypse (Post-Quantum Cryptography)](https://www.youtube.com/watch?v=lvTqbM5Dq4Q)*\n"
+                            },
+                            {
+                                "id": "rsa",
+                                "title": "RSA (Rivest-Shamir-Adleman)",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Cryptography",
+                                    "AsymmetricEncryption",
+                                    "Math"
+                                ],
+                                "content": "# RSA\n\nThe math of very large prime numbers.\n\n**RSA** is the world's first and most famous [[asymmetric-encryption|Asymmetric Encryption]] algorithm. Created in 1977, it remains the foundation for much of the internet's security, including digital signatures and email encryption.\n\n## How it Works: The Prime number trapdoor\nThe security of RSA relies on one simple mathematical fact: **it is very easy to multiply two large prime numbers together, but extremely hard for a computer to do the reverse (factoring).**\n\nImagine you have two massive prime numbers, `P` and `Q`.\n*   **The Easy Direction:** Multiply `P * Q` to get `N`. (A calculator does this in a millisecond).\n*   **The Hard Direction (The Trapdoor):** Give a computer the number `N` and ask it to find `P` and `Q`. If `N` is huge (e.g., 2048 bits long), even a supercomputer would take billions of years to guess the answer.\n\n## The Keys\n*   **Public Key:** Shared with the world. It contains the number `N`. Anyone can use this to encrypt a message for you.\n*   **Private Key:** Kept secret by you. It contains the original prime numbers `P` and `Q`. Because only you know the \"ingredients,\" only you can undo the math to read the message.\n\n## FAQs\n\n*1. Is it secure?*\nYes, but only if the keys are long enough. Today, 1024-bit RSA is considered weak. The industry standard is **2048-bit** or **4096-bit**.\n\n*2. What is the \"Quantum Threat\" to RSA?*\nRSA is the primary target of **[[shors-algorithm|Shor's Algorithm]]**. A large-scale quantum computer could factor the prime numbers in hours, rendering all RSA encryption useless. This is why the world is moving toward **[[post-quantum-cryptography|Post-Quantum Cryptography]]**.\n\n### Further Reading\n\n*   **Video:** *[RSA Encryption (Computerphile)](https://www.youtube.com/watch?v=M7kEpw1tn50)*\n*   **Article:** *[How RSA works](https://en.wikipedia.org/wiki/RSA_(cryptosystem))*\n"
+                            },
+                            {
                                 "id": "shors-algorithm",
                                 "title": "Shor's Algorithm",
                                 "icon": "far fa-file-alt",
@@ -559,16 +575,40 @@ const wikiData = {
                                     "Threats"
                                 ],
                                 "content": "# Shor's Algorithm\n\nThe doomsday clock for internet privacy.\n\n**Shor's Algorithm** is a quantum math formula that can break the encryption protecting the entire internet.\n\nCurrently, our security (RSA Encryption) relies on the fact that computers are really bad at factoring massive numbers. It would take a supercomputer millions of years to guess the factors.\n**Peter Shor** proved that a **[[quantum-computing|Quantum Computer]]** running his algorithm could do it in *hours*.\n\n## The Hook\n\nImagine a lock that requires you to guess a number between 1 and Infinity.\n*   **Classic Computer:** Guesses 1, then 2, then 3... (Takes forever).\n*   **Shor's Algorithm:** Guesses *all numbers at once* and finds the pattern that leads to the answer.\n\n## FAQs\n\n*1. Why hasn't the internet crashed yet?*\nBecause we don't have a Quantum Computer big enough to run it. Yet.\nWe are currently in the \"NISQ\" era (Noisy Intermediate-Scale Quantum). We need thousands of perfect Qubits to break RSA. We currently have hundreds of noisy ones.\n\n*2. What are we doing about it?*\nThe world is racing to switch to **Post-Quantum Cryptography (PQC)**. These are new math problems (like Lattice-based cryptography) that even quantum computers can't solve easily. NIST is currently standardizing them.\n\n### Further Reading\n\n*   **Video:** *[How Quantum Computers Break Encryption (Veritasium)](https://www.youtube.com/watch?v=lvTqbM5Dq4Q)*.\n*   **Standard:** *[NIST Post-Quantum Cryptography](https://csrc.nist.gov/projects/post-quantum-cryptography)*.\n"
+                            },
+                            {
+                                "id": "symmetric-encryption",
+                                "title": "Symmetric Encryption",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Cryptography",
+                                    "Security",
+                                    "AES"
+                                ],
+                                "content": "# Symmetric Encryption\n\nOne key to rule them all.\n\n**Symmetric Encryption** is a method of encryption where the *same* secret key is used both to encrypt (lock) the data and decrypt (unlock) it. It is the oldest and simplest form of cryptography.\n\nThink of it like a **House Key**.\n*   You use the key to lock the front door when you leave.\n*   You use the same key to unlock the front door when you return.\n*   If you want a friend to get in, you have to give them a copy of that exact same key.\n\n## The Pros and Cons\n\n| Feature | Description |\n| :--- | :--- |\n| **Speed** | Extremely fast. Modern computers can encrypt gigabytes of data in seconds. |\n| **Efficiency** | Requires very little computing power. |\n| **The Key Problem** | If you need to send a secret to someone far away, you must first find a way to get the key to them without a spy stealing it. |\n\n## Famous Examples\n*   **[[aes-256|AES (Advanced Encryption Standard)]]**: The world standard for securing data at rest (hard drives, databases).\n*   **Caesar Cipher**: The ancient (and very weak) method of shifting letters by a certain number.\n\n## FAQs\n\n*1. When should I use it?*\nUse it for \"Storage.\" If you are encrypting your own hard drive or phone, you are the only one who needs the key, so there is no \"sharing\" problem.\n\n*2. How is the key sharing problem solved?*\nOn the internet, we usually use **[[asymmetric-encryption|Asymmetric Encryption]]** just to safely send a symmetric key to the other person. Once both sides have the key, they switch to Symmetric encryption for the rest of the conversation because it is faster.\n\n### Further Reading\n\n*   **Video:** *[Symmetric vs Asymmetric Encryption](https://www.youtube.com/watch?v=ERp842ooXls)*\n*   **Concept:** *[Diffie-Hellman Key Exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)* (The math trick used to share keys).\n"
                             }
                         ]
                     },
                     {
-                        "id": "events",
+                        "id": "cyber-events",
                         "title": "Events",
                         "icon": "fas fa-user-secret",
                         "desc": "Significant cyber incidents and historical attacks",
                         "view": "list",
                         "children": [
+                            {
+                                "id": "cyber-events",
+                                "title": "Cyber Events & Incidents",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "CyberSecurity",
+                                    "History",
+                                    "AttackAnalysis"
+                                ],
+                                "content": "# Cyber Events & Incidents\n\nHistorical milestones in the evolution of digital warfare.\n\nCybersecurity history is defined by the attacks that forced the world to change. From military-grade exploits leaked to the public to destructive \"wipers\" that paralyzed global shipping, these events illustrate the real-world impact of malicious code.\n\n## The Catalog of Cyber Events\n\n### 1. [[wanna-cry|WannaCry (2017)]]\nA global ransomware epidemic that infected 200,000+ computers in 150 countries. It was famously halted by an accidental \"kill switch\" discovered by a security researcher.\n\n### 2. [[notpetya|NotPetya (2017)]]\nDisguised as ransomware, this \"wiper\" attack targeted Ukraine but spread globally, causing $10 billion in damage by permanently destroying data rather than encrypting it.\n\n### 3. [[shamoon|Shamoon (2012)]]\nA destructive attack against Saudi Aramco that \"bricked\" 35,000 computers and replaced their data with a burning American flag, disrupting the global energy sector.\n\n### 4. [[eternalblue|EternalBlue]]\nA powerful exploit developed by the NSA and leaked by the \"Shadow Brokers.\" It became the engine for many major attacks by allowing malware to spread automatically across Windows networks.\n\n### 5. [[glassworm|GlassWorm (2025)]]\nA modern \"invisible\" worm that targets software developers by hiding malicious code in VS Code extensions using invisible characters and blockchain-based command control.\n\n### 6. [[hacktivism|Hacktivism]]\nThe use of digital tools (DDoS, Doxing, Defacement) for political ends, where \"code\" acts as a form of protest, whistleblowing, or digital civil disobedience.\n\n### 7. [[cyber-warfare|Cyber Warfare]]\nThe use of digital attacks by nation-states to disrupt, damage, or spy on another nation's physical or digital infrastructure.\n"
+                            },
                             {
                                 "id": "cyber-warfare",
                                 "title": "WannaCry",
@@ -656,7 +696,7 @@ const wikiData = {
                         ]
                     },
                     {
-                        "id": "frameworks",
+                        "id": "cybersecurity-frameworks",
                         "title": "Frameworks",
                         "icon": "fas fa-clipboard-list",
                         "desc": "Security standards, governance, and team structures",
@@ -722,6 +762,19 @@ const wikiData = {
                                     "Metrics"
                                 ],
                                 "content": "# CVSS\n\nA credit score for security bugs.\n\nWhen a new security hole (vulnerability) is found, security teams need to know: \"Should we panic now, or can we fix this next week?\" **CVSS** provides a number from **0.0 to 10.0** to answer that question.\n\n## The Scorecard\n\n| Score Range | Severity | Meaning |\n| :--- | :--- | :--- |\n| **0.0** | None | No risk. |\n| **0.1 - 3.9** | Low | Hard to exploit, or very little impact. |\n| **4.0 - 6.9** | Medium | Needs fixing, but requires specific conditions to work. |\n| **7.0 - 8.9** | High | Dangerous. Hackers can likely use this to harm the system. |\n| **9.0 - 10.0** | Critical | **Drop everything.** The door is wide open for attackers. |\n\n## FAQs\n\n*1. How is the score calculated?*\nIt looks at three main things (The \"CIA Triad\" impact + Exploitability):\n*   **Exploitability:** How easy is it? (Can a kid do it, or do you need a supercomputer?)\n*   **Impact:** What gets hurt? Confidentiality (secrets stolen), Integrity (data changed), or Availability (system crashes).\n*   **Privileges:** Do you need a login to do it, or can a stranger do it from the internet?\n\n*2. Is a 10.0 always worse than a 7.0?*\nTechnically, yes. But context matters. A \"Critical 10.0\" bug on a server that isn't connected to the internet might be less urgent than a \"High 8.0\" bug on your public website.\n\n### Further Reading\n\n*   **Tool:** *[CVSS Calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)* (Try creating your own score).\n*   **Reference:** *[First.org CVSS Specification](https://www.first.org/cvss/)*\n"
+                            },
+                            {
+                                "id": "cybersecurity-frameworks",
+                                "title": "Cybersecurity Frameworks & Teams",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Security",
+                                    "Governance",
+                                    "SOC",
+                                    "Strategy"
+                                ],
+                                "content": "# Cybersecurity Frameworks & Teams\n\nThe structures, systems, and teams that govern modern digital defense.\n\nCybersecurity is not just about technology; it's about the people and processes that manage risk. This section covers the teams (Red, Blue, Purple), the standards (CVE, CVSS), and the organizations (CISA) that form the backbone of security operations.\n\n## The Catalog of Frameworks & Teams\n\n### 1. [[blue-team|Blue Team]]\nThe \"castle guards\" the internal security staff responsible for defending the organization's network, monitoring logs, and patching systems.\n\n### 2. [[red-team|Red Team]]\nThe \"adversaries\" security professionals who act as attackers to test an organization's people, processes, and offensive resilience.\n\n### 3. [[purple-team|Purple Team]]\nThe \"coaches\" a collaborative unit where Red and Blue teams work together and share transparent feedback to improve detection speed.\n\n### 4. [[soc|SOC (Security Operations Center)]]\nMission Control for cyber defense: a 24/7/365 command center where analysts monitor logs, analyze alerts, and hunt for threats.\n\n### 5. [[incident-response|Incident Response]]\nThe structured lifecycle (Preparation, Detection, Containment, Eradication, Recovery) used to mitigate the impact of a breach.\n\n### 6. [[cisa|CISA]]\nThe \"nation's risk advisor\": a US federal agency dedicated to protecting critical infrastructure and coordinating national cyber risk response.\n\n### 7. [[cve|CVE (Common Vulnerabilities and Exposures)]]\nThe standardized \"naming\" system that gives every known security flaw a unique ID (e.g., `CVE-2025-12345`) for clear identification.\n\n### 8. [[cvss|CVSS (Common Vulnerability Scoring System)]]\nA \"credit score\" for security bugs, providing a number from 0.0 to 10.0 to help teams prioritize which flaws to fix first.\n\n### 9. [[bug-bounty|Bug Bounty Programs]]\nCrowdsourced security where organizations pay \"white hat\" hackers to find and responsibly disclose vulnerabilities in their systems.\n\n### 10. [[ethical-hackers|Ethical Hackers (White Hat)]]\nSecurity experts who use the same tools as criminals but with legal permission to find and help fix vulnerabilities.\n\n### 11. [[pen-testing|Penetration Testing]]\nA \"fire drill\" for systems: a planned, authorized attempt to breach security measures to evaluate the real-world strength of defenses.\n"
                             },
                             {
                                 "id": "ethical-hackers",
@@ -989,6 +1042,19 @@ const wikiData = {
                                 "content": "# CPU (Central Processing Unit)\n\nThe Professor.\n\n**The CPU** is the primary brain of a computer. It is designed to interpret and execute generalized commands from software.\n\nThink of it like **A Professor**.\n*   **The Professor (CPU):** Extremely smart and versatile. Can solve complex calculus, write poetry, or organize a schedule. But can only do *one thing at a time*.\n*   **The Factory ([[gpu|GPU]]):** Not smart, but has 1,000 workers who can all stack boxes at once.\n*   **The Specialist ([[tpu|TPU]]):** A savant who can only do matrix multiplication, but does it faster than anyone else.\n\n## How it Works\n\n1.  **Sequential Processing:** The CPU reads instruction 1, does it. Reads instruction 2, does it. It is optimized for \"Latency\" (finishing one task fast) rather than \"Throughput\" (finishing many tasks at once).\n2.  **General Purpose:** It can run *any* code; Operating Systems, Games, Excel, Browsers. It is the conductor that tells the other chips (GPU, Disk, Network) what to do.\n\n## FAQs\n\n*1. Why do I need a GPU if I have a CPU?*\nBecause the Professor is too slow at painting. If you ask a Professor to modify 2 million pixels on a screen 60 times a second (gaming), they will fail. You need the Factory (GPU) for that.\n\n*2. Does AI use the CPU?*\nYes, for logic and data preparation. But for the heavy \"training\" (math), it offloads the work to [[npu|NPUs]] (on phones) or [[tpu|TPUs]] (in the cloud).\n\n### Further Reading\n\n*   **Article:** *[How Microprocessors Work](https://computer.howstuffworks.com/microprocessor.htm)*.\n*   **Comparison:** *[CPU vs GPU vs TPU](https://cloud.google.com/tpu/docs/intro-to-tpu#cpu-vs-gpu-vs-tpu)*.\n"
                             },
                             {
+                                "id": "extropic",
+                                "title": "Extropic",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "AI",
+                                    "Hardware",
+                                    "Thermodynamics",
+                                    "Physics"
+                                ],
+                                "content": "# Extropic\n\nNature doesn't fight noise; it rides it.\n\n**Extropic** is a computing company building \"Thermodynamic Computers\" that use the natural thermal noise of the universe to power AI, rather than spending energy to suppress it.\n\nThink of it like **A Ball on a Table**.\n*   **Traditional Computing (Digital):** You want the ball to stay perfectly still (0) or move perfectly to the right (1). But the table is constantly vibrating (thermal noise/heat). You have to spend massive amounts of energy (cooling, error correction) to force the table to be flat and the ball to be still.\n*   **Thermodynamic Computing (Extropic):** You *tilt* the vibrating table. You let the natural vibrations (heat) shake the ball around, and you just guide it generally downhill. You use the \"noise\" as the engine that moves the ball.\nInstead of fighting physics to create order, they use the chaos of physics to perform calculations (specifically, probability sampling).\n\n## Key Concepts\n\n*   **Thermodynamic Computing:** A new paradigm where the hardware is designed to relax into a lower energy state, which mathematically corresponds to finding the answer to a problem (like how a ball naturally finds the bottom of a hill).\n*   **p-bits (Probabilistic Bits):** Unlike a bit that is definitely 0 or 1, a p-bit is *probabilistically* 0 or 1. It flickers like a coin flipping in the air. This is perfect for AI, which is all about probability (\"Is this image 80% likely to be a cat?\").\n*   **Jellium:** A state of matter (electron gas) used as an analogy for their chip's substrate. They treat the electrons in their chip like a fluid that can inherently perform complex math just by flowing.\n\n## FAQs\n\n*1. Why do we need this?*\nThe \"Energy Wall.\" We are running out of electricity to power bigger AI Models. Traditional chips ([[gpu|GPUs]]) are becoming heaters that occasionally do math. Extropic claims their chips can be orders of magnitude more efficient because they don't fight heat; they run *on* it.\n\n*2. Is this Quantum Computing?*\nNo, but it's related. [[quantum-computing|Quantum Computers]] use quantum mechanics (entanglement). Extropic uses *Thermodynamics* (statistical mechanics). It fits in the gap between classical chips (too rigid) and quantum chips (too fragile). It works at room temperature.\n\n### Further Reading\n\n*   **Video:** *[Extropic: Thermodynamic Computing](https://www.youtube.com/watch?v=Y28JQzS6TlE)* (The \"Litepaper\" video).\n*   **Concept:** *[Brownian Motion](https://en.wikipedia.org/wiki/Brownian_motion)* (The physics of random fluctuations).\n"
+                            },
+                            {
                                 "id": "flipper-zero",
                                 "title": "Flipper Zero",
                                 "icon": "far fa-file-alt",
@@ -1057,6 +1123,19 @@ const wikiData = {
                                 "content": "# NFC (Near Field Communication)\n\nThe digital handshake.\n\n**NFC** is a short-range wireless technology (max distance ~4cm) that lets two devices talk when they touch or get very close.\n\nIt is a subtype of **[[rfid|RFID]]**, but designed for secure, two-way communication.\n\n## Use Cases\n\n1.  **Payments:** Apple Pay / Google Pay (Tap to pay).\n2.  **Access:** Opening office doors with a badge or phone.\n3.  **Pairing:** Tapping headphones to a phone to connect Bluetooth instantly.\n\n## FAQs\n\n*1. Is it safe to leave on?*\nGenerally, yes. Because the range is tiny (inches), a hacker would have to physically bump into you with a reader to steal data (\"Skimming\"), which is difficult in practice.\n\n### Further Reading\n\n*   **Article:** *[NFC vs RFID: What's the difference?](https://www.rfidjournal.com/faq/what-is-the-difference-between-nfc-and-rfid)*\n"
                             },
                             {
+                                "id": "npu",
+                                "title": "NPU (Neural Processing Unit)",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "AI",
+                                    "Hardware",
+                                    "Mobile",
+                                    "EdgeComputing"
+                                ],
+                                "content": "# NPU (Neural Processing Unit)\n\nThe Brain in Your Pocket.\n\n**An NPU** is a specialized processor found in smartphones and laptops designed to run AI tasks efficiently locally (\"on the edge\"), rather than sending data to the cloud.\n\nThink of it like **Reflexes vs. Thinking**.\n*   **[[tpu|TPU]] (Cloud):** Like a supercomputer solving a complex math problem. It takes huge power and time.\n*   **NPU (Edge):** Like your hand pulling away from a hot stove. It\u2019s not \"smart\" in a general sense, but it is instant and happens right where the action is.\nWhen your phone unlocks with FaceID or blurs the background in a Zoom call, that's the NPU. It does the heavy AI lifting so your battery doesn't die.\n\n## How it Works\n\n1.  **Inference Only:** Unlike huge GPUs that *train* models (teach them), NPUs mostly *run* models (inference). They take a pre-trained brain and just use it.\n2.  **Low Power:** They are physically designed to sip battery. Doing the same FaceID calculation on your main CPU would drain your phone in an hour.\n\n## FAQs\n\n*1. Do I have one?*\nYes. If you have a modern iPhone (Apple Neural Engine) or Android (Hexagon), you use it every day for photos, voice-to-text, and battery management.\n\n*2. What's the difference from a GPU?*\nEfficiency. A [[gpu|GPU]] *can* do what an NPU does, but it's overkill. It\u2019s like using a flamethrower to light a candle. The NPU is the lighter, purpose-built and safe for your pocket.\n\n### Further Reading\n\n*   **Article:** *[What is an NPU?](https://semiconductor.samsung.com/support/tools-resources/dictionary/the-neural-processing-unit-npu-a-brainy-next-generation-semiconductor/)* (Samsung Explainer).\n*   **Comparison:** *[CPU vs GPU vs TPU vs NPU](https://youtu.be/d3SqH0UBLEY)*.\n"
+                            },
+                            {
                                 "id": "rfid",
                                 "title": "RFID (Radio Frequency Identification)",
                                 "icon": "far fa-file-alt",
@@ -1091,6 +1170,18 @@ const wikiData = {
                                     "HPC"
                                 ],
                                 "content": "# Supercomputer\n\nThe Formula 1 car of computing.\n\nA **Supercomputer** isn't just a \"fast laptop.\" It is an entirely different architecture designed to solve one massive math problem at a time by linking thousands of processors together.\n\nYour laptop is designed to do many things at once (Email, Spotify, Chrome).\nA Supercomputer is designed to simulate **Nuclear Explosions** or **Global Weather Patterns**.\n\n## How it Works\n\n**Parallel Processing.**\nImagine you need to read a library of 10,000 books.\n*   **Fast Computer:** One genius reading 1 book per second. (Total: 2.7 hours).\n*   **Supercomputer:** 10,000 average people reading 1 book each *at the same time*. (Total: 1 second).\n\n## FLOPs\n\nWe measure them in **FLOPS** (Floating Point Operations Per Second).\n*   **Current Champion:** **Frontier** (Oak Ridge National Lab).\n*   **Speed:** Exascale (1.1 ExaFLOPS). That is 1,100,000,000,000,000,000 calculations per second.\n\n## FAQs\n\n*1. Does it run Windows?*\nNo. Almost 100% of the world's supercomputers run **Linux**. It is the only OS flexible and efficient enough to manage that much hardware.\n\n*2. Where are they?*\nUniversities, Government Labs, and Massive tech companies (Meta/Google for AI training).\n\n### Further Reading\n\n*   **List:** *[Top500.org](https://top500.org/lists/top500/)* (The official ranking of the 500 fastest computers on Earth).\n*   **Video:** *[Building the World's Fastest Computer](https://www.youtube.com/watch?v=u3dJt_t-2tE)*.\n"
+                            },
+                            {
+                                "id": "tpu",
+                                "title": "TPU (Tensor Processing Unit)",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "AI",
+                                    "Hardware",
+                                    "Google"
+                                ],
+                                "content": "# TPU (Tensor Processing Unit)\n\nThe Specialist.\n\n**A TPU** is a custom microchip designed by OpenAI/Google specifically to do *one thing* extremely fast: Matrix Multiplication (the math that powers Neural Networks).\n\nThink of it like a **Dragster vs. a Sediment**.\n*   **[[cpu|CPU]] (Sedan):** Can drive anywhere (grocery store, off-road, highway). Versatile, but slow max speed.\n*   **[[gpu|GPU]] (Sports Car):** Faster. Good for racing (gaming) and carrying moderate loads (parallel tasks).\n*   **TPU (Dragster):** Useless for going to the grocery store (can't run Windows). But on a straight line (Tensor math), it is unimaginably fast.\nIt strips away everything a general computer needs (cache, branch prediction) to make room for pure \"number crunching\" muscle.\n\n## How it Works\n\n1.  **Systolic Array:** Instead of moving data in and out of memory for every calculation (like a CPU), a TPU pumps data through a massive grid of calculator units like a heart pumps blood.\n2.  **Low Precision:** It often uses \"fuzzy\" numbers (8-bit or bfloat16) because AI doesn't need perfect accuracy (3.14159...), it just needs to be close enough (3.14). This saves massive energy.\n\n## FAQs\n\n*1. Can I buy one?*\nNot really. TPUs are mostly available only through Google Cloud. You rent them for a few dollars an hour.\n\n*2. Is it better than a GPU?*\nFor specific AI tasks (like training Transformers), yes/faster. For general tasks or smaller models, GPUs are often more flexible and easier to use.\n\n### Further Reading\n\n*   **Article:** *[Cloud TPU](https://cloud.google.com/tpu/docs/intro-to-tpu)* (Official Google Docs).\n*   **Video:** *[How Google's TPU works](https://www.youtube.com/watch?v=MXxN4fv01c8)*.\n"
                             },
                             {
                                 "id": "vmx",
@@ -1203,8 +1294,8 @@ const wikiData = {
                 "view": "shelf",
                 "children": [
                     {
-                        "id": "concepts",
-                        "title": "Concepts",
+                        "id": "insurance-concepts",
+                        "title": "Insurance-Concepts",
                         "icon": "fas fa-folder",
                         "desc": "",
                         "view": null,
@@ -1317,17 +1408,6 @@ const wikiData = {
                                 "content": "# Agency & Free Will\n\nThe ghost in the machine.\n\n**Agency** is the capacity to act. A thermostat has agency (it gets hot -> it turns on fan).\n**Free Will** is the capacity to *choose* how to act, free from external force or internal programming.\n\nThe debate is: Do humans have Free Will, or are we just very complex biological thermostats?\n\n## Determinism vs. Volition\n\n*   **Determinism (The Machine):** The universe is a chain of cause-and-effect. Your brain is made of atoms. Atoms obey physics. Therefore, your \"choice\" to eat pizza was calculated by the Big Bang bits in your brain. You couldn't have chosen otherwise.\n*   **Libertarian Free Will (The Soul):** There is a \"You\" (Consciousness) that sits above the atoms and can veto the programming.\n\n## The AI Mirror\n\nWe are building **Agentic AI** which clearly has Agency (it can book flights, write code).\nBut it strictly lacks Free Will. It is deterministic code.\n*   If we are just biological machines, then AI is exactly like us.\n*   If we have Free Will, then there is a \"Special Sauce\" in biology that silicon might never replicate.\n\n## FAQs\n\n*1. Does Physics allow Free Will?*\nClassically (Newton)? No.\nQuantumly? Maybe. Quantum mechanics introduces randomness. But \"Randomness\" (a dice roll) isn't the same as \"Freedom\" (a choice).\n\n*2. Why does it matter?*\n**Justice.** If you have no free will, you aren't \"guilty\" of a crime; you are just a broken machine. Our entire legal system assumes you *could* have chosen not to commit the crime.\n\n### Further Reading\n\n*   **Book:** *[Free Will](https://www.goodreads.com/book/show/13259270-free-will)* by Sam Harris (The case against it).\n*   **Video:** *[Michio Kaku: Why Physics Ends the Free Will Debate](https://www.youtube.com/watch?v=Jint5kjoy6I)*.\n"
                             },
                             {
-                                "id": "introduction",
-                                "title": "Introduction",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Philosophy",
-                                    "Overview"
-                                ],
-                                "content": "# Introduction\n\nPhilosophy is the study of fundamental questions about existence, knowledge, values, reason, mind, and language. Here is a high-level overview of the major schools of thought covered in this knowledge bank.\n\n## Schools of Thought\n\n- **[[absurdism|Absurdism]]**: Laughing at the silence of the universe.\n  - *Concept*: Seeking meaning in a meaningless world is funny, not sad.\n- **[[cynicism|Cynicism]]**: Living like a dog to be truly free.\n  - *Concept*: Rejecting social norms (wealth, power, fame) to live in virtue with nature.\n- **[[existentialism|Existentialism]]**: You contain the paintbrush, not just the canvas.\n  - *Concept*: Existence precedes essence; you are not born with a purpose, you must create one.\n- **[[hedonism|Hedonism]]**: Pleasure is the only compass.\n  - *Concept*: The pursuit of pleasure and avoidance of pain is the highest good.\n- **[[law-of-attraction|Law of Attraction]]**: Like attracts like.\n  - *Concept*: The belief that positive thoughts bring positive results into a person's life.\n- **[[nihilism|Nihilism]]**: The game has no rules and no winner.\n  - *Concept*: Life is without objective meaning, purpose, or intrinsic value.\n- **[[paradox|Paradox]]**: A truth that sounds like a lie.\n  - *Concept*: A statement that contradicts itself but might still be true.\n- **[[pragmatism|Pragmatism]]**: If it works, it's true.\n  - *Concept*: Assessing theories or beliefs in terms of the success of their practical application.\n- **[[stoicism|Stoicism]]**: You cannot control the storm, only the ship.\n  - *Concept*: Happiness is found in accepting the moment as it presents itself, not in our desire to control it.\n- **[[utilitarianism|Utilitarianism]]**: The greatest good for the greatest number.\n  - *Concept*: The belief that the best action is the one that maximizes happiness and minimizes suffering."
-                            },
-                            {
                                 "id": "law-of-attraction",
                                 "title": "Law of Attraction",
                                 "icon": "far fa-file-alt",
@@ -1338,87 +1418,6 @@ const wikiData = {
                                     "Psychology"
                                 ],
                                 "content": "# Law of Attraction\n\nLike attracts like.\n\nThe **Law of Attraction** is the belief that positive or negative thoughts bring positive or negative experiences into a person's life.\n**\"Thoughts become Things.\"**\n\nIt suggests that if you focus intensely on a goal (visualize it, feel it as if it's already true), the Universe will conspire to make it happen.\n\n## Is it Magic or Psychology?\n\n*   **The Mystical View:** Your thoughts send out energy vibrations that magnetically attract similar energy from the Universe.\n*   **The Psychological View (Confirmation-Bias):** If you decide to buy a Red Tesla, you suddenly see Red Teslas everywhere. Because you are focused on \"Success,\" your brain subconsciously notices opportunities for success that you would have ignored before.\n\n## FAQs\n\n*1. Does it work?*\n*   **Scientifically:** There is no proof that thoughts change physical reality directly (telekinesis).\n*   **Practically:** Positive thinking and visualization *do* improve confidence and performance, which leads to better results.\n\n*2. What is the danger?*\n**Victim Blaming.** If you believe \"You attract what you think,\" it implies that if someone gets sick or poor, they \"attracted\" it with bad thoughts, which is cruel and untrue.\n\n### Further Reading\n\n*   **Book:** *[The Secret](https://www.thesecret.tv/)* by Rhonda Byrne (The most famous book on this).\n*   **Analysis:** *[The Psychology of the Law of Attraction](https://www.psychologytoday.com/us/blog/the-blame-game/201309/the-truth-about-the-law-attraction)*\n"
-                            },
-                            {
-                                "id": "paradox",
-                                "title": "Paradox",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Philosophy",
-                                    "Logic",
-                                    "CriticalThinking"
-                                ],
-                                "content": "# Paradox\n\nA truth that sounds like a lie.\n\nA **Paradox** is a statement that contradicts itself on the surface, but upon deeper reflection, reveals a truth (or exposes a flaw in our logic).\n\nIt breaks your brain's autopilot and forces you to think.\n\n## Famous Examples\n\n### 1. The Ship of Theseus (Identity)\nIf you replace one plank of a wooden ship every year, until every single part has been replaced... is it still the same ship?\n*   *If yes:* But every physical piece is different!\n*   *If no:* At what point did it become a new ship?\n\n### 2. The Liar's Paradox (Truth)\n\"This sentence is false.\"\n*   If it represents the truth -> Then it is false.\n*   If it represents a lie -> Then it is true.\nIt creates an infinite loop.\n\n### 3. The Tolerance Paradox (Society)\n\"Should a tolerant society tolerate intolerance?\"\nIf you tolerate Nazis (intolerance), they will destroy the tolerant society. Therefore, to be tolerant, you must be *intolerant* of intolerance.\n\n## FAQs\n\n*1. Why do philosophers love them?*\nThey act as \"Stress Tests\" for our definitions. We think we know what \"Same\" means, until the Ship of Theseus proves we don't.\n\n### Further Reading\n\n*   **Video:** *[The Ship of Theseus Explained](https://www.youtube.com/watch?v=d73I7aWcEIs)*\n*   **List:** *[Wikipedia: List of Paradoxes](https://en.wikipedia.org/wiki/List_of_paradoxes)*"
-                            },
-                            {
-                                "id": "pragmatism",
-                                "title": "Pragmatism",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Philosophy",
-                                    "Logic",
-                                    "Action"
-                                ],
-                                "content": "# Pragmatism\n\nIf it works, it's true.\n\nMost philosophy asks: \"Is this theory inherently true?\"\n**Pragmatism** asks: \"Does believing this theory actually help us?\"\n\nIt treats beliefs like tools. A hammer isn't \"True\" or \"False\"; it is \"Useful\" or \"Useless.\"\n\n## The Cash Value of Truth\n\nWilliam James (a father of Pragmatism) said we should look for the **\"Cash Value\"** of an idea.\n*   *Example:* \"Do we have Free Will?\"\n  **Metaphysics:** Let's debate for 2,000 years.\n  **Pragmatism:** If I believe I have free will, and it makes me act better, then \"Free Will\" is true *enough* for me. If I believe I am a robot, I get lazy. Therefore, acting *as if* I have free will is the \"True\" choice.\n\n## FAQs\n\n*1. Is it just \"The ends justify the means\"?*\nNo. That is [[machiavellianism|Machiavellianism]].\nPragmatism is about testing Truth by its consequences. If a belief makes you miserable and passive, it is a \"bad\" belief, even if it seems logically sound.\n\n*2. Is it anti-science?*\nNo, Science *is* pragmatic! Scientists don't say \"Gravity is the absolute final truth.\" They say \"Gravity is the best model we have right now that allows us to build bridges that don't fall down.\"\n\n### Further Reading\n\n*   **Article:** *[Pragmatism: The Philosophy of Action](https://plato.stanford.edu/entries/pragmatism/)*\n*   **Video:** *[What is Pragmatism?](https://www.youtube.com/watch?v=RPlfC808EPU)*\n"
-                            }
-                        ]
-                    },
-                    {
-                        "id": "ethics",
-                        "title": "Ethics",
-                        "icon": "fas fa-balance-scale",
-                        "desc": "Moral principles and dilemmas",
-                        "view": "list",
-                        "children": [
-                            {
-                                "id": "deontology",
-                                "title": "Deontology",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Philosophy",
-                                    "Ethics",
-                                    "Kant"
-                                ],
-                                "content": "# Deontology\n\nThe rules are the rules, no matter what.\n\n**Deontology** (from Greek *deon*, meaning \"duty\") is an ethical theory that says morality is about following rules. Actions are inherently \"Right\" or \"Wrong\" regardless of their consequences.\n\nIt is the opposite of **[[utilitarianism|Utilitarianism]]** (which cares only about the result).\n\n## The Categorical Imperative\n\nImmanuel Kant (the father of Deontology) proposed this rule: **\"Act only according to that maxim whereby you can, at the same time, will that it should become a universal law.\"**\n\n*   *Translation:* Before you do something, ask: \"Would it be okay if *everyone* did this?\"\n    *   **Lying?** If everyone lied, words would mean nothing. So, you must never lie.\n    *   **Stealing?** If everyone stole, private property wouldn't exist. So, you must never steal.\n\n## FAQs\n\n*1. What if lying saves a life?*\n*   **Utilitarian:** Lie! (1 life saved > 0 lives saved).\n*   **Strict Deontologist:** Don't lie. Lying is wrong. If the person dies, that is the murderer's fault, not yours. You did your duty. (This is the \"Murderer at the door\" problem).\n\n*2. Why use it?*\nIt provides clear moral certainty. You don't have to calculate complex math about \"future happiness\" every time you want to act. You just follow the Rules.\n\n### Further Reading\n\n*   **Video:** *[Kant & Categorical Imperatives](https://www.youtube.com/watch?v=8bIys6JoEDw)*\n*   **Article:** *[Deontological Ethics (Stanford)](https://plato.stanford.edu/entries/ethics-deontological/)*\n"
-                            },
-                            {
-                                "id": "hedonism",
-                                "title": "Hedonism",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Philosophy",
-                                    "Pleasure",
-                                    "Ethics"
-                                ],
-                                "content": "# Hedonism\n\nPleasure is the only compass.\n\n**Hedonism** is the belief that Pleasure is the supreme Good, and Pain is the supreme Evil. Therefore, the goal of life is to maximize pleasure and minimize pain.\n\nWhile often associated with partying and excess, philosophical Hedonism is often more subtle.\n\n## Types of Hedonism\n\n1.  **Cyrenaic (The Party Animal):** Instant bodily pleasure (food, drink, sex) is the best. \"Eat, drink, and be merry, for tomorrow we die.\"\n2.  **Epicurean (The Connoisseur):** Sustainable pleasure. Avoiding pain (anxiety/fear) is more important than chasing highs. A simple meal with friends is better than a banquet that gives you a hangover.\n\n## FAQs\n\n*1. Is it selfish?*\nNot necessarily. [[utilitarianism|Utilitarianism]] is a form of \"Social Hedonism\", trying to maximize the total happiness for *everyone* in society (The greatest good for the greatest number).\n\n*2. What is the \"Hedonic Treadmill\"?*\nThe problem where humans quickly return to a stable level of happiness. You buy a new car (Pleasure spike), but after a month, it's just \"your car\" (Neutral). Hedonism often fails because you need bigger and bigger doses to feel the same high.\n\n### Further Reading\n\n*   **Article:** *[Epicurus and the deeper meaning of Hedonism](https://www.dailystoic.com/epicureanism/)*\n*   **Video:** *[The Paradox of Hedonism](https://www.youtube.com/watch?v=Hu4YbmPhFKQ)*"
-                            },
-                            {
-                                "id": "machiavellianism",
-                                "title": "Machiavellianism",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Philosophy",
-                                    "Politics",
-                                    "Power"
-                                ],
-                                "content": "# Machiavellianism\n\nIt is better to be feared than loved.\n\n**Machiavellianism** is a political philosophy based on the writings of Niccol\u00f2 Machiavelli (specifically *The Prince*). It focuses on the harsh, pragmatic reality of gaining and keeping power.\n\nIt suggests that a ruler should do whatever is necessary (lie, cheat, steal, kill) to maintain stability and authority. \"The ends justify the means.\"\n\n## The Fox and the Lion\n\nMachiavelli said a leader must be both:\n*   **The Fox:** Cunning and able to spot traps (Manipulation/Diplomacy).\n*   **The Lion:** Strong and fierce to scare off wolves (Force/War).\n\nBeing just a Lion makes you dumb; being just a Fox makes you weak.\n\n## FAQs\n\n*1. Is it \"Evil\"?*\nMachiavelli didn't think he was teaching evil. He thought he was teaching **Results**. He argued that if a \"Good\" King is too nice and gets overthrown, his people suffer in the chaos. Therefore, a \"Bad\" King who acts ruthlessly to keep peace is actually better for the state.\n\n*2. Is it a personality trait?*\nYes. In psychology, it is one of the \"Dark Triad\" traits (along with Narcissism and Psychopathy). High-Mach people are manipulative, cold, and strategic.\n\n### Further Reading\n\n*   **Book:** *[The Prince](https://www.gutenberg.org/files/1232/1232-h/1232-h.htm)* by Niccol\u00f2 Machiavelli.\n*   **Analysis:** *[The School of Life: Machiavelli](https://www.youtube.com/watch?v=AOXl0Ll_t9s)*\n"
-                            },
-                            {
-                                "id": "utilitarianism",
-                                "title": "Utilitarianism",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Philosophy",
-                                    "Ethics",
-                                    "JeremyBentham"
-                                ],
-                                "content": "# Utilitarianism\n\nThe greatest good for the greatest number.\n\n**Utilitarianism** is an ethical theory that says: The \"Right\" thing to do is whatever maximizes happiness and minimizes suffering for the most people.\n\nIt treats morality like a math equation. Intentions don't matter; rules don't matter. Only the **Consequences** (the result) matter.\n\n## The Trolley Problem\n\nThis is the classic test for Utilitarianism.\n*   A train is about to kill **5 people**.\n*   You can pull a lever to switch tracks, where it will only kill **1 person**.\n*   **Utilitarian Answer:** Pull the lever. 1 death is better than 5 deaths. (Math).\n*   **Non-Utilitarian ([[deontology|Deontology]]) Answer:** Do not pull. Killing an innocent person is wrong, regardless of the outcome.\n\n## FAQs\n\n*1. Is it perfect?*\nNo. The flaw is the **\"Minority Rights\"** problem.\nIf killing one healthy person and harvesting their organs could save 5 dying patients, strict Utilitarianism might say \"Do it\" (1 death saves 5). But almost everyone agrees that murdering an innocent person for parts is wrong, even if the math works out.\n\n*2. Who started it?*\n*   **Jeremy Bentham:** The founder. \"Nature has placed mankind under the governance of two sovereign masters, pain and pleasure.\"\n*   **John Stuart Mill:** Refined it. He argued that \"Qualitative\" pleasures (poetry, friendship) are better than \"Quantitative\" pleasures (eating, drinking).\n\n### Further Reading\n\n*   **Video:** *[Justice: What's The Right Thing To Do? (Harvard)](https://www.youtube.com/watch?v=kBdfcR-8hEY)*\n*   **Article:** *[Utilitarianism Explained](https://ethics.org.au/ethics-explainer-utilitarianism/)*\n"
                             }
                         ]
                     },
@@ -1476,6 +1475,18 @@ const wikiData = {
                                     "BlackAndWhite"
                                 ],
                                 "content": "# False Dilemma\n\nBlack and White.\n\n**The False Dilemma** (or False Dichotomy) is a fallacy where a complex situation is presented as having only two options; usually \"My Way\" or \"The Apocalypse\"; when in reality there are many middle grounds.\n\nThink of it like **A Light Switch vs. A Dimmer**.\n*   **The Fallacy:** \"The room is either completely dark or blindingly bright!\" (A Switch).\n*   **The Reality:** Most rooms have dimmer switches. You can have 50% brightness, 20% brightness, or candle light.\n\n## How it Works\n\n1.  **Over-Simplification:** \"You are either with us, or against us.\"\n2.  **Forced Choice:** This trap forces the opponent to defend an extreme position they don't actually hold, or accept your extreme position.\n3.  **Ignoring Nuance:** It erases compromise, context, and third options.\n\n## FAQs\n\n*1. Is it always a fallacy?*\nNo. Sometimes there *are* only two options. \"You are either pregnant or you are not.\" There is no \"kind of\" pregnant. But in politics and ethics, binary choices are rare.\n\n*2. Why is it used?*\nIt creates urgency and fear. Salespeople use it (\"Buy now or lose this deal forever!\") to bypass critical thinking.\n\n"
+                            },
+                            {
+                                "id": "logical-fallacies",
+                                "title": "Logical Fallacies",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Philosophy",
+                                    "Logic",
+                                    "CriticalThinking"
+                                ],
+                                "content": "# Logical Fallacies\n\nFlaws in the mental plumbing.\n\nLogical fallacies are errors in reasoning that invalidate an argument. They are cognitive shortcuts, emotional deflections, or structural glitches that distract from the truth. Below is a catalog of the fallacies currently documented in this knowledge bank.\n\n## The Catalog of Fallacies\n\n### 1. [[ad-hominem|Ad Hominem]]\n\"To the Person\": Attacking the character or circumstances of the opponent rather than addressing their actual argument.\n\n### 2. [[appeal-to-authority|Appeal to Authority]]\nClaiming something is true solely because an \"expert\" or famous person said it, without offering supporting data.\n\n### 3. [[circular-reasoning|Circular Reasoning]]\nA loop where the conclusion is already assumed in the premise, essentially proving nothing but the assumption itself.\n\n### 4. [[false-dilemma|False Dilemma]]\nPresenting a complex situation as having only two extreme options, ignoring the many healthy middle grounds.\n\n### 5. [[middle-ground|Middle Ground Fallacy]]\nAssuming that because two opposing views exist, the correct position must be exactly halfway between them.\n\n### 6. [[post-hoc|Post Hoc Fallacy]]\nThe assumption that because one event followed another, the first event MUST have caused the second (Correlation vs. Causation).\n\n### 7. [[red-herring|Red Herring]]\nIntroducing an irrelevant topic to divert attention away from the original issue being debated.\n\n### 8. [[slippery-slope|Slippery Slope]]\nArguing that a small first step will inevitably lead to a chain of catastrophic events without evidence for the link.\n\n### 9. [[straw-man|Straw Man Fallacy]]\nReplacing an opponent's actual argument with a distorted or exaggerated version that is much easier to attack.\n\n### 10. [[steel-manning|Steel-Manning]]\n*(The Antidote)*: Addressing the strongest possible version of an opponent's argument to ensure a high-quality debate.\n\n### 11. [[tautology|Tautology]]\nA statement that is true by its own definition but adds zero new information (e.g., \"It is what it is\").\n\n### 12. [[tu-quoque|Tu Quoque]]\n\"You Too!\": Deflecting criticism by accusing the critic of being a hypocrite instead of addressing the claim.\n\n### 13. [[whataboutism|Whataboutism]]\nA weaponized deflection tactic that ignores criticism by pointing at the faults of others (\"But what about them?\").\n"
                             },
                             {
                                 "id": "middle-ground",
@@ -1654,6 +1665,18 @@ const wikiData = {
                                 "content": "# Paradox of Tolerance\n\nShould a tolerant society tolerate intolerance?\n\n**The Paradox of Tolerance** states that if a society is tolerant without limit, its ability to be tolerant will eventually be seized or destroyed by the intolerant.\n\nImagine a garden where you allow *everything* to grow because you are a \"tolerant\" gardener. Eventually, aggressive weeds (intolerance) will eagerly choke out the flowers (tolerance). To keep the garden tolerant of flowers, you must be *intolerant* of the weeds.\nPopper argued that to maintain a tolerant society, the society must be intolerant of intolerance.\n\n## The Fine Print\nPopper didn't say \"ban all ideas you dislike.\"\nHe specified: *Do not suppress intolerant philosophies as long as we can counter them by rational argument and keep them in check by public opinion.*\nSuppression is the last resort, used only when a group refuses to debate and answers arguments with fists or guns.\n\n## FAQs\n\n*1. Is this a license to be mean?*\nNo. It is a preservation instinct for democracy. It distinguishes between \"disagreement\" (I think your tax plan is wrong) and \"existential threat\" (I think you shouldn't exist).\n\n*2. Who decides what is \"intolerant\"?*\nThat is the hard part. The paradox warns us of the danger, but it doesn't give us a clear ruler to measure it. It's a constant balancing act for free speech.\n\n### Further Reading\n\n*   **Book:** *[The Open Society and Its Enemies](https://en.wikipedia.org/wiki/The_Open_Society_and_Its_Enemies)* by Karl Popper (Where this concept originated).\n"
                             },
                             {
+                                "id": "paradoxes",
+                                "title": "Paradox",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Philosophy",
+                                    "Logic",
+                                    "CriticalThinking"
+                                ],
+                                "content": "# Paradox\n\nA truth that sounds like a lie.\n\nA **Paradox** is a statement that contradicts itself on the surface, but upon deeper reflection, reveals a truth (or exposes a flaw in our logic).\n\nIt breaks your brain's autopilot and forces you to think.\n\n## The Catalog of Paradoxes\n\nBelow is a collection of thought experiments and logical contradictions that challenge our understanding of reality, time, and consciousness.\n\n### 1. [[bootstrap-paradox|The Bootstrap Paradox]]\nA causal loop where an object or information exists without ever being created. (Example: An author who copies their own book from the future).\n\n### 2. [[chinese-room|The Chinese Room]]\nArgues that AI might simulate understanding through rules (syntax) but lacks true consciousness or meaning (semantics).\n\n### 3. [[fermi-paradox|The Fermi Paradox]]\nThe unsettling contradiction between the high statistical likelihood of alien life and the fact that we have never heard from anyone.\n\n### 4. [[grandfather-paradox|The Grandfather Paradox]]\nThe classic time-travel glitch: if you kill your own grandfather, you prevent your own birth, which prevents you from ever traveling back to kill him.\n\n### 5. [[paradox-of-tolerance|The Paradox of Tolerance]]\nStates that for a society to remain tolerant, it must be intolerant of intolerance, otherwise the intolerant will destroy the system.\n\n### 6. [[ship-of-theseus|The Ship of Theseus]]\nIf every single plank of a ship is replaced over time, is it still the same ship? A fundamental question on the nature of identity.\n\n## FAQs\n\n*1. Why do philosophers love them?*\nThey act as \"Stress Tests\" for our definitions. We think we know what \"Same\" means, until the Ship of Theseus proves we don't.\n\n### Further Reading\n\n*   **Video:** *[The Ship of Theseus Explained](https://www.youtube.com/watch?v=d73I7aWcEIs)*\n*   **List:** *[Wikipedia: List of Paradoxes](https://en.wikipedia.org/wiki/List_of_paradoxes)*"
+                            },
+                            {
                                 "id": "ship-of-theseus",
                                 "title": "Ship of Theseus",
                                 "icon": "far fa-file-alt",
@@ -1668,31 +1691,10 @@ const wikiData = {
                         ]
                     },
                     {
-                        "id": "political",
-                        "title": "Political",
-                        "icon": "fas fa-folder",
-                        "desc": "",
-                        "view": null,
-                        "children": [
-                            {
-                                "id": "socialism",
-                                "title": "Socialism",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Philosophy",
-                                    "Politics",
-                                    "Economics"
-                                ],
-                                "content": "# Socialism\n\nThe community owns the factory.\n\n**Socialism** is a political and economic theory where the means of production (factories, farms, offices) are owned and regulated by the community as a whole, rather than by private individuals.\n\nImagine a lemonade stand.\n*   **Capitalism:** One kid pays for the lemons, owns the stand, and keeps the profit. The other kids work for a wage.\n*   **Socialism:** All the kids pool their money for lemons, work together, and vote on how to split the profit.\n\n## Core Principles\n\n1.  **Public Ownership:** Essential services (Healthcare, Energy, Transport) should not be for profit.\n2.  **Redistribution:** Wealth should be spread to ensure everyone has a baseline quality of life (Safety Net).\n3.  **Cooperation > Competition:** Society thrives when we work together, not when we fight for resources.\n\n## FAQs\n\n*1. Is it the same as Communism?*\nNo.\n*   **Socialism:** You can still own personal property (your phone, your house). The *economy* is socialized.\n*   **Communism:** A stateless, classless, moneyless society where *everything* is shared. (Socialism is often seen as the bridge to Communism).\n\n*2. Does it work?*\nIt's a spectrum.\n*   **Democratic Socialism (Nordic Model):** High taxes, free healthcare, strong unions, but still has a capitalist market (IKEA, Volvo). Works very well.\n*   **Authoritarian Socialism (Soviet Union):** Government controls everything. Historically failed due to corruption and inefficiency.\n\n### Further Reading\n\n*   **Book:** *[The Communist Manifesto](https://www.gutenberg.org/ebooks/61)* (The original theory by Marx & Engels).\n*   **Concept:** *[Democratic Socialism vs. Social Democracy](https://www.masterclass.com/articles/democratic-socialism-vs-social-democracy)*.\n"
-                            }
-                        ]
-                    },
-                    {
-                        "id": "schools",
-                        "title": "Schools of Thought",
+                        "id": "philosophical-frameworks",
+                        "title": "Frameworks & Schools",
                         "icon": "fas fa-university",
-                        "desc": "Major philosophical movements",
+                        "desc": "Philosophical schools, ethical systems, and political frameworks",
                         "view": "list",
                         "children": [
                             {
@@ -1720,6 +1722,18 @@ const wikiData = {
                                 "content": "# Cynicism\n\nLiving like a dog to be truly free.\n\nModern usage suggests a \"Cynic\" is someone who assumes people are selfish.\n**Ancient Cynicism** was a philosophy of rejecting all social conventions (money, fame, power, manners) to live in accordance with nature.\n\nThe word comes from *Kyon*, meaning \"Dog.\" The goal was to be as shameless, happy, and free as a stray dog.\n\n## The Diogenes Story\n\nDiogenes (the most famous Cynic) lived in a ceramic tub on the streets of Athens.\n*   He owned nothing but a wooden bowl (until he saw a boy drink from his hands, then smashed the bowl because it was \"unnecessary baggage\").\n*   When Alexander the Great (the most powerful man in the world) asked if he could do anything for Diogenes, he replied: *\"Yes, move. You are blocking my sunlight.\"*\n\n## FAQs\n\n*1. What is the core lesson?*\nHappiness comes from **Self-Sufficiency**. If you need nothing (no big house, no applause, no fancy clothes), nothing can be taken away from you. You are invincible.\n\n*2. Is it practical today?*\nYou don't have to live in a tub. But you can practice it by:\n*   Not caring what people think of you.\n*   Realizing you don't *need* the new iPhone to be happy.\n*   Living simply.\n\n### Further Reading\n\n*   **Article:** *[The Life of Diogenes](https://www.britannica.com/biography/Diogenes-of-Sinope)*\n*   **Video:** *[Diogenes, the Publicly-Defecating Philosopher](https://youtu.be/-A3IlRATIsI)*\n"
                             },
                             {
+                                "id": "deontology",
+                                "title": "Deontology",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Philosophy",
+                                    "Ethics",
+                                    "Kant"
+                                ],
+                                "content": "# Deontology\n\nThe rules are the rules, no matter what.\n\n**Deontology** (from Greek *deon*, meaning \"duty\") is an ethical theory that says morality is about following rules. Actions are inherently \"Right\" or \"Wrong\" regardless of their consequences.\n\nIt is the opposite of **[[utilitarianism|Utilitarianism]]** (which cares only about the result).\n\n## The Categorical Imperative\n\nImmanuel Kant (the father of Deontology) proposed this rule: **\"Act only according to that maxim whereby you can, at the same time, will that it should become a universal law.\"**\n\n*   *Translation:* Before you do something, ask: \"Would it be okay if *everyone* did this?\"\n    *   **Lying?** If everyone lied, words would mean nothing. So, you must never lie.\n    *   **Stealing?** If everyone stole, private property wouldn't exist. So, you must never steal.\n\n## FAQs\n\n*1. What if lying saves a life?*\n*   **Utilitarian:** Lie! (1 life saved > 0 lives saved).\n*   **Strict Deontologist:** Don't lie. Lying is wrong. If the person dies, that is the murderer's fault, not yours. You did your duty. (This is the \"Murderer at the door\" problem).\n\n*2. Why use it?*\nIt provides clear moral certainty. You don't have to calculate complex math about \"future happiness\" every time you want to act. You just follow the Rules.\n\n### Further Reading\n\n*   **Video:** *[Kant & Categorical Imperatives](https://www.youtube.com/watch?v=8bIys6JoEDw)*\n*   **Article:** *[Deontological Ethics (Stanford)](https://plato.stanford.edu/entries/ethics-deontological/)*\n"
+                            },
+                            {
                                 "id": "existentialism",
                                 "title": "Existentialism",
                                 "icon": "far fa-file-alt",
@@ -1730,6 +1744,30 @@ const wikiData = {
                                     "Sartre"
                                 ],
                                 "content": "# Existentialism\n\nYou contain the paintbrush, not just the canvas.\n\nFor objects (like a knife), **Essence precedes Existence**. (A blacksmith thinks \"I need something to cut,\" designs a knife, and then makes it). The *purpose* comes first.\n\nFor humans, **Existence precedes Essence**. You are born first (You exist), and you have NO built-in purpose. You are a blank slate. You must *create* your own essence through your choices.\n\n## The Burden of Freedom\n\nJean-Paul Sartre said we are **\"Condemned to be free.\"**\nBecause there is no God/Destiny/Nature telling you what to do, *everything* you do is your fault.\n*   You didn't \"have to\" work that job. You chose it.\n*   You didn't \"have to\" get angry. You chose it.\nThis responsibility creates \"Existential Dread\" (Anxiety).\n\n## FAQs\n\n*1. Isn't this depressing?*\nIt can be scary, but it is also empowering. It means you are not stuck. You can change your \"essence\" at any moment. You are the author of your life, not just an actor reading a script.\n\n*2. Who are the big names?*\n*   **Sartre:** Radical freedom.\n*   **Nietzsche:** Becoming the \"Ubermensch\" (Superman) by creating your own values.\n*   **Kierkegaard:** Taking the \"Leap of Faith.\"\n\n### Further Reading\n\n*   **Book:** *[Existentialism Is a Humanism](https://www.marxists.org/reference/archive/sartre/works/exist/sartre.htm)* by Jean-Paul Sartre.\n*   **Video:** *[Sartre and the Waiter](https://www.youtube.com/watch?v=xxrmEfW4on0)* (Understanding \"Bad Faith\")."
+                            },
+                            {
+                                "id": "hedonism",
+                                "title": "Hedonism",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Philosophy",
+                                    "Pleasure",
+                                    "Ethics"
+                                ],
+                                "content": "# Hedonism\n\nPleasure is the only compass.\n\n**Hedonism** is the belief that Pleasure is the supreme Good, and Pain is the supreme Evil. Therefore, the goal of life is to maximize pleasure and minimize pain.\n\nWhile often associated with partying and excess, philosophical Hedonism is often more subtle.\n\n## Types of Hedonism\n\n1.  **Cyrenaic (The Party Animal):** Instant bodily pleasure (food, drink, sex) is the best. \"Eat, drink, and be merry, for tomorrow we die.\"\n2.  **Epicurean (The Connoisseur):** Sustainable pleasure. Avoiding pain (anxiety/fear) is more important than chasing highs. A simple meal with friends is better than a banquet that gives you a hangover.\n\n## FAQs\n\n*1. Is it selfish?*\nNot necessarily. [[utilitarianism|Utilitarianism]] is a form of \"Social Hedonism\", trying to maximize the total happiness for *everyone* in society (The greatest good for the greatest number).\n\n*2. What is the \"Hedonic Treadmill\"?*\nThe problem where humans quickly return to a stable level of happiness. You buy a new car (Pleasure spike), but after a month, it's just \"your car\" (Neutral). Hedonism often fails because you need bigger and bigger doses to feel the same high.\n\n### Further Reading\n\n*   **Article:** *[Epicurus and the deeper meaning of Hedonism](https://www.dailystoic.com/epicureanism/)*\n*   **Video:** *[The Paradox of Hedonism](https://www.youtube.com/watch?v=Hu4YbmPhFKQ)*"
+                            },
+                            {
+                                "id": "machiavellianism",
+                                "title": "Machiavellianism",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Philosophy",
+                                    "Politics",
+                                    "Power"
+                                ],
+                                "content": "# Machiavellianism\n\nIt is better to be feared than loved.\n\n**Machiavellianism** is a political philosophy based on the writings of Niccol\u00f2 Machiavelli (specifically *The Prince*). It focuses on the harsh, pragmatic reality of gaining and keeping power.\n\nIt suggests that a ruler should do whatever is necessary (lie, cheat, steal, kill) to maintain stability and authority. \"The ends justify the means.\"\n\n## The Fox and the Lion\n\nMachiavelli said a leader must be both:\n*   **The Fox:** Cunning and able to spot traps (Manipulation/Diplomacy).\n*   **The Lion:** Strong and fierce to scare off wolves (Force/War).\n\nBeing just a Lion makes you dumb; being just a Fox makes you weak.\n\n## FAQs\n\n*1. Is it \"Evil\"?*\nMachiavelli didn't think he was teaching evil. He thought he was teaching **Results**. He argued that if a \"Good\" King is too nice and gets overthrown, his people suffer in the chaos. Therefore, a \"Bad\" King who acts ruthlessly to keep peace is actually better for the state.\n\n*2. Is it a personality trait?*\nYes. In psychology, it is one of the \"Dark Triad\" traits (along with Narcissism and Psychopathy). High-Mach people are manipulative, cold, and strategic.\n\n### Further Reading\n\n*   **Book:** *[The Prince](https://www.gutenberg.org/files/1232/1232-h/1232-h.htm)* by Niccol\u00f2 Machiavelli.\n*   **Analysis:** *[The School of Life: Machiavelli](https://www.youtube.com/watch?v=AOXl0Ll_t9s)*\n"
                             },
                             {
                                 "id": "nihilism",
@@ -1744,6 +1782,42 @@ const wikiData = {
                                 "content": "# Nihilism\n\nThe game has no rules and no winner.\n\n**Nihilism** (from Latin *nihil*, meaning \"nothing\") is the rejection of all religious and moral principles, often in the belief that life is meaningless.\nIt suggests there is no objective Right or Wrong, no God, and no \"Grand Plan.\"\n\n## The Crisis\n\nNietzsche famously said, **\"God is dead.\"**\nHe wasn't celebrating; he was warning us. He meant that the old structure giving us meaning (Religion) was collapsing, and without it, humans would fall into despair (Nihilism).\n\n## Types\n\n*   **Existential Nihilism:** Life has no intrinsic value.\n*   **Moral Nihilism:** Nothing is truly \"Evil\" or \"Good\"; those are just human opinions.\n*   **Epistemological Nihilism:** We cannot truly \"know\" anything for sure.\n\n## FAQs\n\n*1. Is it just for edgy teenagers?*\nIt is often a phase, but it's also a serious philosophical starting point. Once you accept there are no pre-set rules, you are forced to ask: \"Okay, then what do I want to do?\"\n\n*2. How do you beat it?*\n*   **Through Art (Nietzsche):** Create beauty.\n*   **Through Absurdism (Camus):** Rebel and enjoy the ride.\n*   **Through Existentialism (Sartre):** Build your own meaning.\n\n### Further Reading\n\n*   **Video:** *[Nietzsche and Nihilism](https://www.youtube.com/watch?v=wOHH3nS0kYk)*\n*   **Article:** *[Internet Encyclopedia of Philosophy: Nihilism](https://iep.utm.edu/nihilism/)*\n"
                             },
                             {
+                                "id": "philosophical-frameworks",
+                                "title": "Philosophical Frameworks",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Philosophy",
+                                    "Ethics",
+                                    "SchoolsOfThought"
+                                ],
+                                "content": "# Philosophical Frameworks\n\nA collection of goggles for viewing the world. \n\nPhilosophical frameworks (or \"schools of thought\") provide the underlying structures we use to determine truth, morality, and meaning. Below is a catalog of the frameworks currently documented in this knowledge bank.\n\n## The Catalog of Frameworks\n\n### 1. [[absurdism|Absurdism]]\nThe belief that life is inherently meaningless, but that we should rebel against this silence by living happily and embracing the absurd.\n\n### 2. [[cynicism|Cynicism]]\nAn ancient practice of rejecting social conventions (wealth, fame, power) to live a simple, self-sufficient life in accordance with nature.\n\n### 3. [[deontology|Deontology]]\nAn ethical theory stating that morality is defined by a duty to follow universal rules, regardless of the outcome or consequences.\n\n### 4. [[existentialism|Existentialism]]\nThe idea that humans are born without a pre-set purpose and must define their own \"essence\" through radical freedom and choice.\n\n### 5. [[hedonism|Hedonism]]\nA philosophy that identifies pleasure as the supreme good and pain as the supreme evil, aiming to maximize well-being through sustainable or instant joy.\n\n### 6. [[machiavellianism|Machiavellianism]]\nA pragmatic and often ruthless political philosophy focusing on the acquisition of power and the belief that \"the ends justify the means.\"\n\n### 7. [[nihilism|Nihilism]]\nThe rejection of all religious and moral principles, often resulting in the belief that life has no objective meaning, value, or purpose.\n\n### 8. [[pragmatism|Pragmatism]]\nA practical approach that tests the truth of a belief by its \"cash value\"\u2014if a belief works and is useful in action, it is considered true.\n\n### 9. [[socialism|Socialism]]\nA political and economic framework where resources and the means of production are owned by the community to promote cooperation and equality.\n\n### 10. [[stoicism|Stoicism]]\nA resilience-based philosophy that focuses on mastering one's internal state and accepting external events as being outside our control.\n\n### 11. [[utilitarianism|Utilitarianism]]\nAn ethical math equation: the \"right\" action is the one that produces the greatest happiness for the greatest number of people.\n\n---\n"
+                            },
+                            {
+                                "id": "pragmatism",
+                                "title": "Pragmatism",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Philosophy",
+                                    "Logic",
+                                    "Action"
+                                ],
+                                "content": "# Pragmatism\n\nIf it works, it's true.\n\nMost philosophy asks: \"Is this theory inherently true?\"\n**Pragmatism** asks: \"Does believing this theory actually help us?\"\n\nIt treats beliefs like tools. A hammer isn't \"True\" or \"False\"; it is \"Useful\" or \"Useless.\"\n\n## The Cash Value of Truth\n\nWilliam James (a father of Pragmatism) said we should look for the **\"Cash Value\"** of an idea.\n*   *Example:* \"Do we have Free Will?\"\n  **Metaphysics:** Let's debate for 2,000 years.\n  **Pragmatism:** If I believe I have free will, and it makes me act better, then \"Free Will\" is true *enough* for me. If I believe I am a robot, I get lazy. Therefore, acting *as if* I have free will is the \"True\" choice.\n\n## FAQs\n\n*1. Is it just \"The ends justify the means\"?*\nNo. That is [[machiavellianism|Machiavellianism]].\nPragmatism is about testing Truth by its consequences. If a belief makes you miserable and passive, it is a \"bad\" belief, even if it seems logically sound.\n\n*2. Is it anti-science?*\nNo, Science *is* pragmatic! Scientists don't say \"Gravity is the absolute final truth.\" They say \"Gravity is the best model we have right now that allows us to build bridges that don't fall down.\"\n\n### Further Reading\n\n*   **Article:** *[Pragmatism: The Philosophy of Action](https://plato.stanford.edu/entries/pragmatism/)*\n*   **Video:** *[What is Pragmatism?](https://www.youtube.com/watch?v=RPlfC808EPU)*\n"
+                            },
+                            {
+                                "id": "socialism",
+                                "title": "Socialism",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Philosophy",
+                                    "Politics",
+                                    "Economics"
+                                ],
+                                "content": "# Socialism\n\nThe community owns the factory.\n\n**Socialism** is a political and economic theory where the means of production (factories, farms, offices) are owned and regulated by the community as a whole, rather than by private individuals.\n\nImagine a lemonade stand.\n*   **Capitalism:** One kid pays for the lemons, owns the stand, and keeps the profit. The other kids work for a wage.\n*   **Socialism:** All the kids pool their money for lemons, work together, and vote on how to split the profit.\n\n## Core Principles\n\n1.  **Public Ownership:** Essential services (Healthcare, Energy, Transport) should not be for profit.\n2.  **Redistribution:** Wealth should be spread to ensure everyone has a baseline quality of life (Safety Net).\n3.  **Cooperation > Competition:** Society thrives when we work together, not when we fight for resources.\n\n## FAQs\n\n*1. Is it the same as Communism?*\nNo.\n*   **Socialism:** You can still own personal property (your phone, your house). The *economy* is socialized.\n*   **Communism:** A stateless, classless, moneyless society where *everything* is shared. (Socialism is often seen as the bridge to Communism).\n\n*2. Does it work?*\nIt's a spectrum.\n*   **Democratic Socialism (Nordic Model):** High taxes, free healthcare, strong unions, but still has a capitalist market (IKEA, Volvo). Works very well.\n*   **Authoritarian Socialism (Soviet Union):** Government controls everything. Historically failed due to corruption and inefficiency.\n\n### Further Reading\n\n*   **Book:** *[The Communist Manifesto](https://www.gutenberg.org/ebooks/61)* (The original theory by Marx & Engels).\n*   **Concept:** *[Democratic Socialism vs. Social Democracy](https://www.masterclass.com/articles/democratic-socialism-vs-social-democracy)*.\n"
+                            },
+                            {
                                 "id": "stoicism",
                                 "title": "Stoicism",
                                 "icon": "far fa-file-alt",
@@ -1754,6 +1828,18 @@ const wikiData = {
                                     "Resilience"
                                 ],
                                 "content": "# Stoicism\n\nYou cannot control the storm, only the ship.\n\n**Stoicism** is a user's manual for the mind, written by Greek slaves and Roman Emperors. Its core goal is **Eudaimonia** (Flourishing) by focusing only on what you can control and accepting what you cannot.\n\n## The Dichotomy of Control\n\nDraw a line in the sand.\n*   **In Your Control (Internal):** Your thoughts, your actions, your character, your reactions.\n*   **Not In Your Control (External):** The weather, traffic, what people think of you, the past, the future.\n\nIf you tie your happiness to things *outside* your control (like \"I hope it doesn't rain\"), you are a slave to fortune. If you tie it to things *inside* your control (like \"I will bring an umbrella\"), you are invincible.\n\n## FAQs\n\n*1. Is it about having no emotions?*\nNo. (That is lowercase \"s\" stoicism).\nCapital \"S\" **Stoicism** is not about suppressing emotion; it's about not being *enslaved* by it. You can feel grief, but you shouldn't let it destroy your reason.\n\n*2. Who are the big three?*\n*   **Marcus Aurelius:** The Emperor. Wrote \"Meditations\" (notes to himself on how to be a good ruler).\n*   **Seneca:** The Statesman. Wrote letters on how to manage time and anger.\n*   **Epictetus:** The Slave. Taught that freedom is a mental state.\n\n### Further Reading\n\n*   **Book:** *[Meditations](https://www.goodreads.com/book/show/30659.Meditations)* by Marcus Aurelius.\n*   **Website:** *[Daily Stoic](https://dailystoic.com/)* (Great modern intro).\n"
+                            },
+                            {
+                                "id": "utilitarianism",
+                                "title": "Utilitarianism",
+                                "icon": "far fa-file-alt",
+                                "desc": "",
+                                "tags": [
+                                    "Philosophy",
+                                    "Ethics",
+                                    "JeremyBentham"
+                                ],
+                                "content": "# Utilitarianism\n\nThe greatest good for the greatest number.\n\n**Utilitarianism** is an ethical theory that says: The \"Right\" thing to do is whatever maximizes happiness and minimizes suffering for the most people.\n\nIt treats morality like a math equation. Intentions don't matter; rules don't matter. Only the **Consequences** (the result) matter.\n\n## The Trolley Problem\n\nThis is the classic test for Utilitarianism.\n*   A train is about to kill **5 people**.\n*   You can pull a lever to switch tracks, where it will only kill **1 person**.\n*   **Utilitarian Answer:** Pull the lever. 1 death is better than 5 deaths. (Math).\n*   **Non-Utilitarian ([[deontology|Deontology]]) Answer:** Do not pull. Killing an innocent person is wrong, regardless of the outcome.\n\n## FAQs\n\n*1. Is it perfect?*\nNo. The flaw is the **\"Minority Rights\"** problem.\nIf killing one healthy person and harvesting their organs could save 5 dying patients, strict Utilitarianism might say \"Do it\" (1 death saves 5). But almost everyone agrees that murdering an innocent person for parts is wrong, even if the math works out.\n\n*2. Who started it?*\n*   **Jeremy Bentham:** The founder. \"Nature has placed mankind under the governance of two sovereign masters, pain and pleasure.\"\n*   **John Stuart Mill:** Refined it. He argued that \"Qualitative\" pleasures (poetry, friendship) are better than \"Quantitative\" pleasures (eating, drinking).\n\n### Further Reading\n\n*   **Video:** *[Justice: What's The Right Thing To Do? (Harvard)](https://www.youtube.com/watch?v=kBdfcR-8hEY)*\n*   **Article:** *[Utilitarianism Explained](https://ethics.org.au/ethics-explainer-utilitarianism/)*\n"
                             }
                         ]
                     }
