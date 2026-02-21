@@ -7,8 +7,7 @@ tags: [RiskMetric, CyberEconomics]
 
 **Average Annual Loss (AAL)** is like the yearly budget you set aside for car maintenance; you know you'll pay for oil changes and minor repairs every year, even if you don't crash.
 
-In cyber risk:
-**Average Annual Loss (AAL)** is the expected average financial loss a company will incur from risks over a specific period (usually a year) when averaged over a very long timeline.
+In cyber risk, **Average Annual Loss (AAL)** is the expected average financial loss a company will incur from risks over a specific period (usually a year) when averaged over a very long timeline.
 
 It works by smoothing out the jagged peaks of disaster costs into a predictable annual expense. Instead of panicking when a small incident happens, you treat it as a "pre-paid" operating cost.
 
