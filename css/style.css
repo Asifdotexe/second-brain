@@ -47,6 +47,20 @@ STYLE: Sidey Minimalist Replica
         "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         sans-serif;
     --radius: 8px;
+
+    /* --- GRAPH COLORS --- */
+    --color-ai: #00d4ff;
+    --color-cybersecurity: #ff4757;
+    --color-philosophy: #a55eea;
+    --color-general: #ced6e0;
+    --color-insurance: #ffa502;
+    --color-psychology: #2ed573;
+    --color-science: #eccc68;
+
+    /* --- THEME-AWARE GRAPH OVERLAYS --- */
+    --graph-label: rgba(30, 41, 59, 0.7);
+    /* Slate 800 - dark text for light mode */
+    --graph-label-focused: rgba(30, 41, 59, 1);
 }
 
 body[data-theme="dark"] {
@@ -70,6 +84,11 @@ body[data-theme="dark"] {
     --text-muted: var(--light-gray-70);
     --code-text: var(--vibrant-green);
     --text-code-block: var(--white-1);
+
+    /* --- THEME-AWARE GRAPH OVERLAYS --- */
+    --graph-label: rgba(255, 255, 255, 0.6);
+    /* White for dark mode */
+    --graph-label-focused: rgba(255, 255, 255, 1);
 }
 
 * {
@@ -143,6 +162,34 @@ body {
     transform: translateY(-50%);
     color: var(--text-secondary);
     font-size: 0.8rem;
+}
+
+.graph-toggle-btn {
+    width: 100%;
+    margin-top: 12px;
+    padding: 8px 12px;
+    background: var(--bg-input);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.graph-toggle-btn:hover {
+    color: var(--text-accent);
+    border-color: var(--text-accent);
+    background-color: var(--bg-quote);
+}
+
+.graph-toggle-btn i {
+    font-size: 0.9rem;
 }
 
 .theme-toggle {
@@ -1094,4 +1141,105 @@ body[data-theme="dark"] .mobile-header {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
     }
+}
+
+/* --- GRAPH VIEW --- */
+#graphContainer {
+    width: 100%;
+    max-width: 1000px;
+    height: 700px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    display: none;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    z-index: 10;
+}
+
+#graphContainer.active {
+    display: block !important;
+}
+
+.main-content.graph-mode .markdown-body,
+.main-content.graph-mode .breadcrumbs,
+.main-content.graph-mode .back-link {
+    display: none !important;
+}
+
+.graph-toggle-btn.active {
+    background: var(--text-accent);
+    color: var(--bg-sidebar) !important;
+    border-color: var(--text-accent);
+}
+
+.graph-close-overlay {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    padding: 8px 16px;
+    background: var(--bg-body);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.graph-close-overlay:hover {
+    border-color: var(--text-accent);
+    color: var(--text-accent);
+}
+
+.graph-legend {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    z-index: 105;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    pointer-events: auto;
+    max-height: calc(100% - 48px);
+    overflow-y: auto;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    transition: all 0.2s ease;
+    user-select: none;
+    opacity: 0.6;
+}
+
+.legend-item:hover,
+.legend-item.active {
+    opacity: 1;
+    color: var(--text-primary);
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    flex-shrink: 0;
 }

@@ -5,31 +5,40 @@ Module to build the markdown file into JSON objects.
 import json
 import os
 import re
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
 
 # Configuration
 DOCS_DIR = "docs"
 OUTPUT_FILE = "js/data.js"
 
 
-def parse_markdown(file_path: str) -> Dict[str, Any]:
+def parse_markdown(file_path: str, group: Optional[str] = None) -> Dict[str, Any]:
     """
     Parse a markdown file to extract frontmatter and content.
 
     :param file_path: The absolute or relative path to the markdown file.
+    :param group: The category group this file belongs to.
     :return: A dictionary containing metadata and the markdown content.
     """
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
 
+    # Extract Wikilinks: [[ID]] or [[ID|Label]]
+    file_id = os.path.splitext(os.path.basename(file_path))[0]
+    links = re.findall(r"\[\[([^|\]\n]+)(?:\|[^\]\n]+)?\]\]", content)
+    links = [link.strip().lower() for link in links]
+    links = list({link for link in links if link != file_id.lower()}) # Unique, exclude self
+
     meta = {
-        "id": os.path.splitext(os.path.basename(file_path))[0],
+        "id": file_id.lower(),
         "title": os.path.splitext(os.path.basename(file_path))[0]
         .replace("-", " ")
         .title(),
         "icon": "far fa-file-alt",
         "desc": "",
         "tags": [],
+        "links": links,
+        "group": group,
     }
 
     match = re.match(r"^---\s*\n(.*?)\n---\s*\n(.*)", content, re.DOTALL)
@@ -46,7 +55,7 @@ def parse_markdown(file_path: str) -> Dict[str, Any]:
 
                 if key == "tags":
                     meta["tags"] = [t.strip() for t in value.replace("[", "").replace("]", "").split(",")]
-                else:
+                elif key not in {"links", "group", "id"}:
                     meta[key] = value
 
         return {**meta, "content": markdown_body}
@@ -80,11 +89,12 @@ def get_folder_meta(folder_path: str) -> Dict[str, Any]:
     return defaults
 
 
-def build_tree(current_path: str) -> List[Dict[str, Any]]:
+def build_tree(current_path: str, group: Optional[str] = None) -> List[Dict[str, Any]]:
     """
     Recursively build the documentation tree from the directory structure.
 
     :param current_path: The path of the directory to scan.
+    :param group: The category group to assign to items.
     :return: A list of dictionaries representing files and subdirectories.
     """
     items = []
@@ -102,8 +112,10 @@ def build_tree(current_path: str) -> List[Dict[str, Any]]:
             continue
 
         if os.path.isdir(full_path):
+            # If group is not set, this top-level folder becomes the group
+            current_group = group if group else entry.lower()
             meta = get_folder_meta(full_path)
-            children = build_tree(full_path)
+            children = build_tree(full_path, group=current_group)
 
             if children:
                 items.append(
@@ -113,12 +125,13 @@ def build_tree(current_path: str) -> List[Dict[str, Any]]:
                         "icon": meta.get("icon", "fas fa-folder"),
                         "desc": meta.get("desc", ""),
                         "view": meta.get("view"),
+                        "group": current_group,
                         "children": children,
                     }
                 )
 
         elif entry.endswith(".md"):
-            data = parse_markdown(full_path)
+            data = parse_markdown(full_path, group=group)
             items.append(data)
 
     return items
