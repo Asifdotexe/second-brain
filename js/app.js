@@ -1032,9 +1032,11 @@ function renderGraph() {
   }
 
   seenNodes.clear();
-  if (wikiData.overview && wikiData.overview.items) {
-    countConnections(wikiData.overview.items);
-  }
+  Object.keys(wikiData).forEach(key => {
+    if (wikiData[key] && wikiData[key].items) {
+      countConnections(wikiData[key].items);
+    }
+  });
 
   // 2. Build items with scaling
   seenNodes.clear();
@@ -1104,9 +1106,11 @@ function renderGraph() {
     });
   }
 
-  if (wikiData.overview && wikiData.overview.items) {
-    processItems(wikiData.overview.items);
-  }
+  Object.keys(wikiData).forEach(key => {
+    if (wikiData[key] && wikiData[key].items) {
+      processItems(wikiData[key].items);
+    }
+  });
 
   const data = {
     nodes: new vis.DataSet(nodes),
