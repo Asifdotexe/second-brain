@@ -31,8 +31,8 @@ To get good at guessing, the model reads billions of sentences (books, websites,
 
 ## FAQ
 
-*1. What is a "Transformer"?*
-The "Transformer" is the engine under the hood of modern LLMs (like the 'T' in GPT). 
+*1. What is a "[[transformers|Transformer]]"?*
+The "Transformer" is the engine under the hood of modern [[llm|LLMs]] (like the 'T' in GPT). 
 
 Before Transformers, AI read sentences one word at a time, left to right. Transformers can read the **whole sentence at once**. This allows the model to understand context much better. 
 

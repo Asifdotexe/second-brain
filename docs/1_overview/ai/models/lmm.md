@@ -7,7 +7,7 @@ tags: ArtificialIntelligence, Multimodal, DeepLearning
 
 The AI that has eyes and ears, not just a brain in a jar.
 
-A **Large Multimodal Model (LMM)** is an AI system that can process and understand information from multiple "modalities" (data types) simultaneously—such as text, images, audio, and video.
+A **Large Multimodal Model (LMM)** is an AI system that can process and understand information from multiple "modalities" (data types) simultaneously; such as text, images, audio, and video.
 
 Standard Large Language Models (LLMs) like early GPT-3 were text-only; they were like a brilliant philosopher locked in a dark room who could only read books. LMMs (like GPT-4o or Gemini) are like giving that philosopher eyes and ears. They can look at a photo and tell you what's funny about it, or listen to a song and describe the instruments.
 

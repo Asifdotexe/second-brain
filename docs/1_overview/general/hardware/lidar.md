@@ -13,7 +13,7 @@ You know how bats use **Sonar** (Sound Navigation)? They scream, and listen for 
 
 ## What it sees
 
-It creates a "Point Cloud"—a precise 3D map of the world.
+It creates a "Point Cloud"; a precise 3D map of the world.
 *   **Cameras** see color (2D).
 *   **LiDAR** sees distance (3D). It knows exactly that the tree is 15.2 meters away, not 15.1.
 

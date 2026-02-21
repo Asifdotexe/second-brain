@@ -23,7 +23,7 @@ One proposed solution is that there is a barrier to life's development that is e
 This is the "Dark Forest" theory. It suggests the universe is like a dark forest full of hunters. If you shout (send radio signals), you get eaten. Therefore, every smart civilization stays quiet. We are the only idiots shouting "Hello!"
 
 *2. Are we just too early?*
-Possibly. The universe was too hot/chaotic for life for billions of years. We might be the "Elder Race"—the first ones to wake up.
+Possibly. The universe was too hot/chaotic for life for billions of years. We might be the "Elder Race"; the first ones to wake up.
 
 ### Further Reading
 

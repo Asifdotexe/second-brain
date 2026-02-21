@@ -7,7 +7,7 @@ tags: CyberAttack, Malware, Crime
 
 Digital kidnapping of your files.
 
-**Ransomware** is a specific type of malware that locks (encrypts) your computer or files so you cannot access them. The attacker then demands a "ransom" (usually in Bitcoin) to give you the key to unlock them.
+**Ransomware** is a specific type of [[malware]] that locks (encrypts) your computer or files so you cannot access them. The attacker then demands a "ransom" (usually in Bitcoin) to give you the key to unlock them.
 
 Imagine coming home, but your key doesn't work, and there is a note on the door saying: *"Pay $1000 to get your new key, or we burn the house down."*
 

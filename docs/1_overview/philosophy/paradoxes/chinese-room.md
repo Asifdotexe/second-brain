@@ -20,7 +20,7 @@ He follows the rules and slides the answers back out. To the people outside, he 
 ## FAQs
 
 *1. Does this mean AI can never be conscious?*
-It suggests that *current* digital computers (Turing Machines) cannot be conscious just by running software. To have consciousness, a machine might need something more than just symbol manipulation—perhaps a biological or physical ground for experience.
+It suggests that *current* digital computers (Turing Machines) cannot be conscious just by running software. To have consciousness, a machine might need something more than just symbol manipulation; perhaps a biological or physical ground for experience.
 
 *2. But if the output is perfect, does it matter?*
 For **utility** (using ChatGPT to write email), no. For **ethics** (does ChatGPT have rights?), yes. If it's just a rulebook, you can delete it. If it understands, deleting it might be murder.
