@@ -36,7 +36,7 @@ No. Age has nothing to do with it. A "Script Kiddie" is defined by their **lack 
 *2. How do I defend against them?*
 Most script kiddies can be stopped by "Basic Hygiene." They look for the easiest targets. If you keep your software updated (patched), use strong passwords, and have a basic [[firewalls|firewall]], they will usually move on to an easier victim.
 
-### Further Reading
+## Further Reading
 
-*   **Article:** *[The Evolution of the Script Kiddie](https://www.zdnet.com/article/the-evolution-of-the-script-kiddie/)* - How automated tools changed the threat landscape.
+*   **Article:** *[What is a Script Kiddie?](https://www.kaspersky.com/resource-center/definitions/script-kiddies)* - A modern breakdown of amateur threat actors and their risks.
 *   **Community:** *[OWASP Top 10](https://owasp.org/www-project-top-10/)* - The vulnerabilities script kiddies most often look for.
