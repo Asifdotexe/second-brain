@@ -291,6 +291,8 @@ function findItemAndParent(targetId, items, parent = null) {
 
 // Helper: Search across all Sections in wikiData
 function lookup(id) {
+  if (!id) return null;
+  id = id.toLowerCase();
   for (let key of Object.keys(wikiData)) {
     if (wikiData[key].items) {
       const found = findItemAndParent(id, wikiData[key].items);

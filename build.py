@@ -30,7 +30,7 @@ def parse_markdown(file_path: str, group: str = None) -> Dict[str, Any]:
     links = list(set([l for l in links if l != file_id.lower()])) # Unique, exclude self
 
     meta = {
-        "id": os.path.splitext(os.path.basename(file_path))[0],
+        "id": file_id.lower(),
         "title": os.path.splitext(os.path.basename(file_path))[0]
         .replace("-", " ")
         .title(),
