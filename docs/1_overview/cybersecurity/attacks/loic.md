@@ -35,5 +35,5 @@ Standard [[firewalls|firewalls]] struggle with LOIC because the traffic looks li
 
 ### Further Reading
 
-*   **History:** *[The Story of Anonymous and LOIC](https://www.theguardian.com/technology/2010/dec/08/anonymous-low-orbit-ion-cannon)* - How a tool was used for global digital protest.
+*   **History:** *[The Story of Anonymous and LOIC](https://web.archive.org/web/20101211115852/https://www.theguardian.com/technology/2010/dec/08/anonymous-low-orbit-ion-cannon)* - How a tool was used for global digital protest.
 *   **Technical:** *[How DDoS Protection Works](https://www.cloudflare.com/learning/ddos/ddos-mitigation/)* - How modern sites survive LOIC attacks.
