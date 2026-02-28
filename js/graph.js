@@ -92,7 +92,7 @@ function renderGraph() {
       nodes.push({
         id: item.id,
         label: item.title,
-        group: item.group,
+        category: item.group,
         size: size,
         color: {
           background: color,
@@ -266,7 +266,7 @@ function setupLegend(nodes, data, labelColor, focusedLabelColor) {
   if (!legendContainer) return;
   legendContainer.innerHTML = "";
 
-  const activeGroups = [...new Set(nodes.map(n => n.group).filter(Boolean))];
+  const activeGroups = [...new Set(nodes.map(n => n.category).filter(Boolean))];
   let activeFilter = null;
 
   activeGroups.forEach(group => {
@@ -304,14 +304,14 @@ function setupLegend(nodes, data, labelColor, focusedLabelColor) {
         // Focus category
         data.nodes.update(nodes.map(n => ({
           id: n.id,
-          opacity: n.group === activeFilter ? 1 : 0.05,
-          font: { color: n.group === activeFilter ? focusedLabelColor : "rgba(255,255,255,0)" }
+          opacity: n.category === activeFilter ? 1 : 0.05,
+          font: { color: n.category === activeFilter ? focusedLabelColor : "rgba(255,255,255,0)" }
         })));
         data.edges.update(data.edges.getIds().map(id => {
           const edge = data.edges.get(id);
           const fromNode = nodes.find(n => n.id === edge.from);
           const toNode = nodes.find(n => n.id === edge.to);
-          const isRelevant = fromNode?.group === activeFilter || toNode?.group === activeFilter;
+          const isRelevant = fromNode?.category === activeFilter || toNode?.category === activeFilter;
           return {
             id: id,
             color: { opacity: isRelevant ? 0.4 : 0.01 }
