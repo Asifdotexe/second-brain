@@ -28,7 +28,7 @@ Supply chain attacks aren't just one thing; they come in different "flavors" dep
 
 | Type | How it works | Famous Example |
 | :--- | :--- | :--- |
-| **Software (Upstream)** | The hacker infects the *code* or *update server* of a software vendor. Every customer who downloads the "update" gets infected. | **SolarWinds (2020):** Hackers hid malware in a legitimate IT management tool update. |
+| **Software (Upstream)** | The hacker infects the *code* or *update server* of a software vendor. Every customer who downloads the "update" gets infected. | **SolarWinds (2020):** Hackers hid [[malware]] in a legitimate IT management tool update. |
 | **Hardware** | The hacker tampers with physical components (chips, firmware, USBs) at the factory or during shipping before they reach you. | **Spy Chips:** Allegations of tiny spy chips added to server motherboards during manufacturing. |
 | **Open Source** | The hacker uploads a malicious package to a public code library (like npm or PyPI) with a name similar to a popular tool, hoping developers accidentally use it. | **Typosquatting:** Creating a package named `requessts` instead of `requests`. |
 

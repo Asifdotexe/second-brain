@@ -50,6 +50,21 @@ One of the most popular methods for Agentic AI is called **ReAct** (Reasoning + 
 ---
 <br>
 
+## The 7 Types of AI Agents
+
+As AI agents evolve, they possess varying degrees of complexity and autonomy. The seven primary types, from simplest to most advanced, are:
+
+1. **Simple Reflex Agents:** React immediately to basic environmental inputs using predefined rules (e.g., smart sprinklers that turn on when smoke is detected). They possess no memory.
+2. **Model-Based Reflex Agents:** Use an internal "world model" to track unobserved parts of their environment (e.g., self-driving cars knowing a pedestrian is still behind a truck).
+3. **Goal-Based Agents:** Execute multi-step planning and evaluate future consequences to reach a specific objective (e.g., warehouse robots finding the most efficient path to pack a pallet).
+4. **Learning Agents:** Use feedback (a "critic" mechanism) to improve their own performance over time through trial and error (e.g., Netflix's recommendation engine).
+5. **Utility-Based Agents:** Handle tradeoffs between competing goals by mathematically evaluating which outcome provides the maximum "utility" or benefit (e.g., stock trading bots balancing risk vs. reward).
+6. **Hierarchical Agents:** Operate in a tiered command structure where high-level manager agents break down complex goals and delegate subtasks to lower-level worker agents (e.g., automated manufacturing floors). Uses concepts from [[rlhf#Advanced Variation Hierarchical Reinforcement Learning (HRL)|Hierarchical Reinforcement Learning]].
+7. **Multi-Agent Systems (MAS):** Swarms of independent agents that collaborate or compete to solve massive problems, communicating with each other dynamically.
+
+---
+<br>
+
 ### Further Reading
 
 * **Concept:** *“[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/pdf/2210.03629)”* (The foundational paper).

@@ -17,7 +17,7 @@ The **Blue Team** is the internal security staff responsible for defending the o
 
 ## The endless job
 
-The Red Team only needs to find *one* open window to win. The Blue Team must close *every* window to win.
+The [[red-team|Red Team]] only needs to find *one* open window to win. The Blue Team must close *every* window to win.
 
 ### Further Reading
 

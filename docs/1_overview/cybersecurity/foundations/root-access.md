@@ -7,9 +7,9 @@ tags: OperatingSystem, AccessControl, Privileges
 
 God mode for your computer.
 
-In every operating system, there is a hierarchy of users. Normal users have limits (they can't delete system files or install big programs). **Root** (also called "Administrator" or "Superuser") is the user with **Zero Limits**.
+In every [[operating-system|operating system]], there is a hierarchy of users. Normal users have limits (they can't delete system files or install big programs). **Root** (also called "Administrator" or "Superuser") is the user with **Zero Limits**.
 
-If you have Root Access, you can do anything: read any file, delete the entire operating system, or change the rules of how the computer works.
+If you have Root Access, you can do anything: read any file, delete the entire [[operating-system|operating system]], or change the rules of how the computer works.
 
 ## Why is it called Root?
 Think of the file system like a tree.
@@ -20,8 +20,8 @@ Think of the file system like a tree.
 
 Running your computer as Root all the time is like driving a car without a seatbelt and with the doors removed.
 If you (or a virus) make a mistake while you are Root, nothing stops you.
-*   **As a Normal User:** Malware might delete your photos.
-*   **As Root:** Malware can wipe the hard drive, install a permanent spy, and lock you out forever.
+*   **As a Normal User:** [[malware|Malware]] might delete your photos.
+*   **As Root:** [[malware|Malware]] can wipe the [[hard-drive|hard drive]], install a permanent spy, and lock you out forever.
 
 ## FAQs
 

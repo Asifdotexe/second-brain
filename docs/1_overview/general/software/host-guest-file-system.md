@@ -13,7 +13,7 @@ Host-Guest File System (HGFS) is a proprietary file system protocol developed by
 - Think of HGFS as a specialized "tunnel" drilled through the wall that usually separates a virtual machine from the host.
 - On the Host: You verify a specific folder (e.g., `C:\Documents`) to be "shared." The virtualization software (like VMware ESXi or Workstation) acts as an HGFS server for this folder.
 - On the Guest: A driver (installed via VMware Tools) acts as the client. It mounts this shared folder so it looks like just another drive or directory inside the VM (e.g., `/mnt/hgfs/` on Linux or a Network Drive on Windows).
-- The Transfer: When you copy a file to this folder inside the VM, HGFS intercepts the request and passes the data directly to the host's hard drive.
+- The Transfer: When you copy a file to this folder inside the VM, HGFS intercepts the request and passes the data directly to the host's [[hard-drive|hard drive]].
 
 ### Resources
 

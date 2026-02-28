@@ -14,7 +14,7 @@ Imagine coming home, but your key doesn't work, and there is a note on the door 
 ## How it Works
 
 1.  **Infection:** You download a bad file or click a bad link.
-2.  **Encryption:** The malware quietly scrambles your photos, documents, and databases.
+2.  **Encryption:** The [[malware|malware]] quietly scrambles your photos, documents, and databases.
 3.  **The Note:** A pop-up screen appears with a countdown timer and payment instructions.
 4.  **Extortion:** If you don't pay, you lose the data forever. Sometimes, they also threaten to *leak* your private data to the public (Double Extortion).
 
@@ -28,7 +28,7 @@ Imagine coming home, but your key doesn't work, and there is a note on the door 
 
 *2. How do I protect myself?*
 The only 100% cure is **Backups**.
-If you have a backup of your files on an external hard drive that wasn't plugged in during the attack, you can just wipe your computer and restore your files. You lose nothing but time.
+If you have a backup of your files on an external [[hard-drive|hard drive]] that wasn't plugged in during the attack, you can just wipe your computer and restore your files. You lose nothing but time.
 
 ### Further Reading
 

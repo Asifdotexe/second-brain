@@ -10,7 +10,7 @@ The Brain in Your Pocket.
 **An NPU** is a specialized processor found in smartphones and laptops designed to run AI tasks efficiently locally ("on the edge"), rather than sending data to the cloud.
 
 Think of it like **Reflexes vs. Thinking**.
-*   **[[tpu|TPU]] (Cloud):** Like a supercomputer solving a complex math problem. It takes huge power and time.
+*   **[[tpu|TPU]] (Cloud):** Like a [[supercomputer|supercomputer]] solving a complex math problem. It takes huge power and time.
 *   **NPU (Edge):** Like your hand pulling away from a hot stove. It’s not "smart" in a general sense, but it is instant and happens right where the action is.
 When your phone unlocks with FaceID or blurs the background in a Zoom call, that's the NPU. It does the heavy AI lifting so your battery doesn't die.
 

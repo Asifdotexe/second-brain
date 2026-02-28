@@ -22,7 +22,7 @@ Think of the internet like a giant, busy city.
 ## FAQs
 
 *1. Is Hacktivism legal?*
-Generally, no. Techniques like DDoS attacks and unauthorized system access (hacking) are illegal in most countries, regardless of the moral intent.
+Generally, no. Techniques like [[ddos|DDoS]] attacks and unauthorized system access (hacking) are illegal in most countries, regardless of the moral intent.
 
 *2. Are they the "good guys"?*
 It depends on who you ask. To their supporters, they are modern-day freedom fighters and whistleblowers holding the powerful accountable. To governments and targeted corporations, they are cyber-terrorists causing chaos and financial damage.

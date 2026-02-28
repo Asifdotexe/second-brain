@@ -21,7 +21,7 @@ Think of it like **Training Dogs**.
 
 ## FAQs
 
-*1. Is it the same as Straw Man?*
+*1. Is it the same as [[straw-man|Straw Man]]?*
 No.
 *   **Straw Man:** Twists your *actual* argument.
 *   **Red Herring:** Changes the subject entirely.

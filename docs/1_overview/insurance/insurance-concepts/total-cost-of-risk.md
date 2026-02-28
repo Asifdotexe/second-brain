@@ -7,7 +7,7 @@ tags: [RiskEconomics, Management]
 
 **Total Cost of Risk (TCoR)** is the realization that the sticker price of your insurance premium is just the tip of the iceberg; you also pay for the deductible, the safety team, and the time spent managing it all.
 
-**Total Cost of Risk (TCoR)** is the sum of all costs related to an organization's risk, including insurance premiums, retained losses (deductibles), risk management administrative costs, and taxes/fees.
+**Total Cost of Risk (TCoR)** is the sum of all costs related to an organization's risk, including insurance premiums, retained losses (deductibles), [[risk-management|risk management]] administrative costs, and taxes/fees.
 
 It proves that buying cheap insurance doesn't always lower your total cost. If you buy cheap insurance (low premium) but have a high deductible and weak security (high losses), your TCoR might skyrocket.
 
@@ -28,7 +28,7 @@ It proves that buying cheap insurance doesn't always lower your total cost. If y
 *1. What are "Retained Losses"?*
 The parts of the loss you pay yourself. This includes your **deductible** (the first $X amount of a claim) and any losses that are **excluded** from your policy.
 
-*2. How does risk management lower TCoR?*
+*2. How does [[risk-management|risk management]] lower TCoR?*
 By preventing accidents! If you invest in fire sprinklers (or MFA for cyber), you reduce the frequency of claims. This lowers your Retained Losses and eventually convinces insurers to lower your Premiums.
 
 ### Further Reading

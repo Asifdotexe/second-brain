@@ -13,7 +13,7 @@ If a theory explains *everything* no matter what happens, it explains *nothing*.
 ## The Swan Analogy
 
 *   **Theory:** "All swans are white."
-    *   **Is it Falsifiable?** Yes. All you need to do is find **one** black swan to prove it false.
+    *   **Is it Falsifiable?** Yes. All you need to do is find **one** [[black-swan|black swan]] to prove it false.
 *   **Theory:** "Ghosts exist, but they are invisible when you look for them."
     *   **Is it Falsifiable?** No. There is no test you can run to prove they *don't* exist. Therefore, it is not science.
 

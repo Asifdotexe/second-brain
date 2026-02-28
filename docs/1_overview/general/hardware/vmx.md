@@ -9,7 +9,7 @@ The blueprint for a virtual machine.
 
 When you create a Virtual Machine (VM) using VMware, it isn't just one magic blob. It's a folder full of files. The **.vmx** file is the text file that describes the VM's hardware configuration.
 
-It tells the software: "This VM should have 4GB of RAM, 2 CPU cores, and use *this* specific hard drive file."
+It tells the software: "This VM should have 4GB of RAM, 2 CPU cores, and use *this* specific [[hard-drive|hard drive]] file."
 
 ## Inside the File
 
@@ -31,7 +31,7 @@ scsi0.virtualDev = "lsilogic"
 *1. Can I edit this file?*
 Yes, but be careful. Experts edit it to tweak settings that aren't available in the usual settings menu. If you make a typo, the VM won't start effectively "breaking" the machine blueprint.
 
-*2. Is VMX the hard drive?*
+*2. Is VMX the [[hard-drive|hard drive]]?*
 No.
 *   **.VMX:** The *Blueprint* (Text file, tiny size).
 *   **.VMDK:** The *Hard Drive* (Data file, huge size).

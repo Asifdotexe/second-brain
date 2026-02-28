@@ -7,7 +7,7 @@ tags: Malware, Network, Replication
 
 The traveler.
 
-A **Worm** is a standalone malware program that replicates itself to spread to other computers.
+A **Worm** is a standalone [[malware|malware]] program that replicates itself to spread to other computers.
 Crucially, it does **not** need a host file (like a [[virus]]) and does **not** need human interaction (like a [[trojan|Trojan]]).
 
 It scans the network, finds a vulnerability, and copies itself over.
@@ -24,4 +24,4 @@ Speed. A worm can infect millions of computers in hours because it spreads autom
 ### Further Reading
 
 *   **Article:** *[Computer Worms Explained (Norton)](https://us.norton.com/blog/malware/what-is-a-computer-worm)*
-*   **Video:** *[The Computer Virus that Almost Broke the Internet (Morris Worm)](https://www.youtube.com/watch?v=hG9sgtq_a1k)*
+*   **Video:** *[The [[virus|Computer Virus]] that Almost Broke the Internet (Morris Worm)](https://www.youtube.com/watch?v=hG9sgtq_a1k)*

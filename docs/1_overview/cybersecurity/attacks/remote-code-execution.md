@@ -14,4 +14,4 @@ This is often used to run malicious code on the remote system, this can lead to 
 - can lock your system in demand to extort money from you or your organization ([[ransomware|Ransomware]]).
   
 ### These can be of few different types:
-- Injection attacks: Applications and sites that take in user input, deliberately providing arbitrary code that would be executed by the Application or the site, example: SQL Injection, Command Injection and XSS etc.
+- Injection attacks: Applications and sites that take in user input, deliberately providing arbitrary code that would be executed by the Application or the site, example: SQL Injection, [[command-injection|Command Injection]] and XSS etc.

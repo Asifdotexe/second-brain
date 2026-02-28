@@ -20,8 +20,8 @@ While cryptomining software has legitimate uses, it is frequently used by hacker
 - **Energy Cost**: Cryptomining is extremely power-hungry; unauthorized mining can cause massive spikes in electricity bills.
 
 ## Detection
-Advanced antivirus and [[EDR]] systems often flag legitimate cryptomining software as "Potentially Unwanted Programs" (PUPs) because they are so commonly associated with malware infections.
+Advanced [[antivirus|antivirus]] and [[EDR]] systems often flag legitimate cryptomining software as "Potentially Unwanted Programs" (PUPs) because they are so commonly associated with [[malware|malware]] infections.
 
 ### Further Reading
 - [What is Cryptocurrency Mining?](https://www.investopedia.com/terms/c/cryptocurrency-mining.asp)
-- [[[cryptojacking|Learn more about Cryptojacking attacks]]].
+- [[cryptojacking|Learn more about Cryptojacking attacks]].

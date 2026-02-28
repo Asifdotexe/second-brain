@@ -11,7 +11,7 @@ Digital Amnesia.
 
 **The Google Effect** (or Digital Amnesia) is the tendency to forget information that can be found readily online by using Internet search engines.
 
-Your brain is an efficient hard drive manager. If it knows a file is backed up to the Cloud (Google), it deletes the local copy to save space.
+Your brain is an efficient [[hard-drive|hard drive]] manager. If it knows a file is backed up to the Cloud (Google), it deletes the local copy to save space.
 *   **Old Days:** You memorized phone numbers because you had to.
 *   **Now:** You don't know your best friend's number because your phone "knows" it for you.
 

@@ -30,7 +30,7 @@ It gives you a single dollar number that represents your maximum expected loss a
 **No!** This is the most dangerous misconception. VaR only tells you the maximum loss *within the confidence interval*. It tells you nothing about how bad things get if you breach that threshold (for that, see **TVaR**).
 
 *2. Why use 95% vs 99%?*
-95% is standard for general risk management. 99% is essentially saying "Prepare for the really, really rare stuff." Banks often required to use 99% by regulators.
+95% is standard for general [[risk-management|risk management]]. 99% is essentially saying "Prepare for the really, really rare stuff." Banks often required to use 99% by regulators.
 
 ### Further Reading
 

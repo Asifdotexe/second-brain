@@ -24,4 +24,4 @@ Generally, yes. Because the range is tiny (inches), a hacker would have to physi
 
 ### Further Reading
 
-*   **Article:** *[NFC vs RFID: What's the difference?](https://www.rfidjournal.com/faq/what-is-the-difference-between-nfc-and-rfid)*
+*   **Article:** *[NFC vs [[rfid|RFID]]: What's the difference?](https://www.rfidjournal.com/faq/what-is-the-difference-between-nfc-and-rfid)*

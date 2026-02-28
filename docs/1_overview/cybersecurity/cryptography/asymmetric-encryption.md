@@ -3,11 +3,11 @@ title: Asymmetric Encryption (Public Key Cryptography)
 tags: Cryptography, Security, Web, TLS
 ---
 
-# Asymmetric Encryption
+# Asymmetric [[encryption|Encryption]]
 
 The mailbox of the digital world.
 
-**Asymmetric Encryption** (also called Public Key Cryptography) uses a pair of mathematically related keys: a **Public Key** and a **Private Key**. 
+**Asymmetric [[encryption|Encryption]]** (also called Public Key Cryptography) uses a pair of mathematically related keys: a **Public Key** and a **Private Key**. 
 
 Think of it like a **Mailbox**.
 *   **Public Key (The Slot):** Anyone can walk up to your mailbox and drop a letter in the slot. Everyone knows where the slot is.
@@ -34,7 +34,7 @@ It solves the **Key Exchange Problem**. You don't have to meet someone in a dark
 Yes, much slower. The math is much more complex. This is why it is rarely used to encrypt large files. Instead, it is used to encrypt a small "Session Key" which is then used for [[symmetric-encryption|Symmetric Encryption]].
 
 *2. What is a Digital Signature?*
-It's Asymmetric encryption in reverse. You "lock" a message with your *Private* key. If someone can unlock it with your *Public* key, they know for 100% certainty that it came from you and hasn't been changed.
+It's Asymmetric [[encryption|encryption]] in reverse. You "lock" a message with your *Private* key. If someone can unlock it with your *Public* key, they know for 100% certainty that it came from you and hasn't been changed.
 
 ### Further Reading
 

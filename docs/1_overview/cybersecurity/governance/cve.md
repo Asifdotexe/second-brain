@@ -19,4 +19,4 @@ CVE -> Standard List Marker
 
 * **[cve.mitre.org](https://www.cve.org/):** The official home of the CVE list. You can search for specific bugs here.
 * **[NVD (National Vulnerability Database)](https://nvd.nist.gov/):** The US government's repository that adds more details (like severity scores) to the standard CVE list.
-* **[CVSS Score](https://www.first.org/cvss/):** This is the *next* thing to learn. While CVE gives the bug a *name*, CVSS gives it a *score* (from 1 to 10) to tell you how dangerous it is.
+* **[CVSS Score](https://www.first.org/cvss/):** This is the *next* thing to learn. While CVE gives the bug a *name*, [[cvss|CVSS]] gives it a *score* (from 1 to 10) to tell you how dangerous it is.

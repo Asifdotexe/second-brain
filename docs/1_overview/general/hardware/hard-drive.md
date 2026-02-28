@@ -26,7 +26,7 @@ If **RAM** is your tabletop (fast, temporary workspace), the **Hard Drive** is t
 
 *1. NVMe vs SATA?*
 *   **SATA:** The old cable connection (Max speed ~600 MB/s).
-*   **NVMe (M.2):** The new stick that plugs directly into the motherboard (Max speed ~7,000 MB/s). Always buy NVMe for your main Operating System drive.
+*   **NVMe (M.2):** The new stick that plugs directly into the motherboard (Max speed ~7,000 MB/s). Always buy NVMe for your main [[operating-system|Operating System]] drive.
 
 *2. How long do they last?*
 Usually 5-10 years. But they *will* fail.

@@ -13,9 +13,9 @@ Where exactly does one end and the other begin? It sounds easy, but there is no 
 
 ## Key Criteria Attempts
 
-1.  **[[falsifiability|Falsifiability]] (Popper):** If you can't test it, it's not science. (The Gold Standard).
+1.  **[[falsifiability|Falsifiability]] (Popper):** If you can'[[t-test|t test]] it, it's not science. (The Gold Standard).
 2.  **[[scientific-consensus|Consensus]]:** If most scientists agree, it's science. (Problem: Scientists used to agree on bad ideas).
-3.  **[[scientific-method|Method]]:** Does it use the Scientific Method? (Hypothesis -> Experiment -> Result).
+3.  **[[scientific-method|Method]]:** Does it use the [[scientific-method|Scientific Method]]? (Hypothesis -> Experiment -> Result).
 
 ## FAQs
 

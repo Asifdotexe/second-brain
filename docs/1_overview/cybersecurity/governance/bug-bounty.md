@@ -19,7 +19,7 @@ It turns hackers into allies. Instead of selling a security flaw on the black ma
 ## FAQs
 
 *1. How much do they pay?*
-It depends on the severity ([[cvss|CVSS Score]]).
+It depends on the severity ([[cvss|[[cvss|CVSS]] Score]]).
 *   **Low (Typo):** Swag (T-shirt) or $100.
 *   **Critical (Remote Code Execution):** $10,000 - $1,000,000+.
 *   *Apple pays up to $1 Million for hacking an iPhone.*

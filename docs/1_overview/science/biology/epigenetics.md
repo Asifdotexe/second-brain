@@ -9,7 +9,7 @@ tags: Biology, Genetics, Health
 
 **Epigenetics** is the study of biological mechanisms that switch genes on or off without altering the actual DNA sequence itself.
 
-If your DNA is the rigid hardware (the unchangeable circuit board) of a computer, epigenetics is the operating system that decides which programs (genes) to run and which to ignore. You can't easily change your hardware, but your environment; stress, diet, sleep, chemicals; can change the software settings. This helps explain why identical twins (who have the exact same hardware) can develop completely different health issues as they age; their "settings" have drifted apart.
+If your DNA is the rigid hardware (the unchangeable circuit board) of a computer, epigenetics is the [[operating-system|operating system]] that decides which programs (genes) to run and which to ignore. You can't easily change your hardware, but your environment; stress, diet, sleep, chemicals; can change the software settings. This helps explain why identical twins (who have the exact same hardware) can develop completely different health issues as they age; their "settings" have drifted apart.
 
 ## How it Works
 *   **Methylation (The Off Switch):** The body attaches small chemical tags (methyl groups) to specific parts of DNA. These act like "Do Not Disturb" signs, preventing that gene from being read.

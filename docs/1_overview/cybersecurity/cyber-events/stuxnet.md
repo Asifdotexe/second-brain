@@ -7,9 +7,9 @@ tags: CyberSecurity, CyberEvent, Malware, ICS, Air-Gap
 
 The digital spark that caused a physical fire.
 
-**Stuxnet** is a extremely sophisticated malicious computer worm, first uncovered in 2010, that was specifically designed to sabotage Iran's nuclear program. It is widely considered the world's first "cyber-physical weapon"; a piece of code designed not just to steal data, but to reach out and physically destroy machinery.
+**Stuxnet** is a extremely sophisticated malicious [[worms|computer worm]], first uncovered in 2010, that was specifically designed to sabotage Iran's nuclear program. It is widely considered the world's first "cyber-physical weapon"; a piece of code designed not just to steal data, but to reach out and physically destroy machinery.
 
-Unlike most malware that steals credit cards or locks files for ransom, Stuxnet was a precision-guided missile made of 1s and 0s.
+Unlike most [[malware|malware]] that steals credit cards or locks files for ransom, Stuxnet was a precision-guided missile made of 1s and 0s.
 
 ## How it Works
 

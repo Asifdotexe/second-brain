@@ -1,7 +1,7 @@
 {
     "id": "ai-concepts",
-    "title": "Concepts",
+    "title": "AI Concepts",
     "icon": "fas fa-lightbulb",
-    "desc": "Core AI definitions and mechanisms",
+    "desc": "General AI paradigms, fields, and phenomena",
     "view": "list"
 }

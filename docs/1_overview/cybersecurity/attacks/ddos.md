@@ -18,14 +18,14 @@ The shop isn't "broken" or "robbed"; it just can't serve anyone.
 ## How it Works
 
 1.  **The Mastermind:** The attacker wants to shut down a site (e.g., a bank or game server).
-2.  **The Army (Botnet):** The attacker secretly infects thousands of computers (IoT devices, laptops) with malware, turning them into "zombie" soldiers.
+2.  **The Army (Botnet):** The attacker secretly infects thousands of computers (IoT devices, laptops) with [[malware|malware]], turning them into "zombie" soldiers.
 3.  **The Attack:** On command, all 50,000 zombie computers try to visit the victim's website simultaneously.
 4.  **The Crash:** The website's server gets overloaded (CPU maxes out, bandwidth runs dry) and stops responding to *everyone*, including real users.
 
 ## FAQs
 
 *1. Is my computer part of a DDoS?*
-Possibly. If your computer is infected with malware (part of a Botnet), it could be attacking a website right now without you knowing, running silently in the background.
+Possibly. If your computer is infected with [[malware|malware]] (part of a Botnet), it could be attacking a website right now without you knowing, running silently in the background.
 
 *2. How do you stop it?*
 It's hard. You can't just "block the bad guy" because the traffic is coming from 50,000 different real IP addresses. You usually need a "Traffic Filter" (like Cloudflare) that stands in front of your shop and checks IDs, letting vast crowds be filtered out.

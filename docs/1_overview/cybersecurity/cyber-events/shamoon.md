@@ -21,10 +21,10 @@ In a matter of hours, it turned **35,000 computers** into useless bricks.
 ## FAQs
 
 *1. How did it get in?*
-Someone clicked a phishing link (likely malicious email attachment) or used an infected USB stick. The oldest trick in the book.
+Someone clicked a [[phishing|phishing]] link (likely malicious email attachment) or used an infected USB stick. The oldest trick in the book.
 
 *2. Why is it significant?*
-It was the first major instance of cyber warfare targeting the **Energy Sector** destructively. It showed the world that a piece of code could threaten the global oil supply.
+It was the first major instance of [[cyber-warfare|cyber warfare]] targeting the **Energy Sector** destructively. It showed the world that a piece of code could threaten the global oil supply.
 
 ### Further Reading
 
