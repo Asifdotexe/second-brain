@@ -5,7 +5,7 @@ tags: AI, DeepLearning, NeuralNetworks, NLP
 
 # Transformer Architecture
 
-The Transformer Architecture is like a sprawling library where, instead of reading books one by one in order, a million librarians instantly read every single book at the exact same time and shout across the room to figure out how they connect.
+The Transformer Architecture is like a sprawling library where, instead of reading books one by one in order, a million librarians instantly read every single book at the same time and shout across the room to figure out how they connect.
 
 **The Transformer Architecture** is a deep learning model introduced by Google researchers in the landmark 2017 paper *"Attention Is All You Need"*. It revolutionized natural language processing (NLP) by completely abandoning older sequential methods (like RNNs and [[lstm|LSTMs]]) in favor of analyzing entire sequences of data all at once using something called the **Self-Attention Mechanism**.
 

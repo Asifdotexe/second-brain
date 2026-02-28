@@ -19,7 +19,7 @@ If it guesses wrong, a mathematical process called **backpropagation** runs back
 
 *   **Nodes and Weights:** By adjusting the "weights" (the strength of the connection between two nodes) and "biases" (a baseline threshold), the network learns to prioritize certain pieces of information over others.
 *   **Hidden Layers:** The layers between the input and output are called "hidden" layers. If a network has many hidden layers, it is considered a "Deep" Neural Network; hence the extremely popular term **Deep Learning**.
-*   **Universal Approximators:** Mathematically, a large enough neural network can be trained to approximate almost any complex function or relationship in the universe, provided it has enough high-quality data to learn from.
+*   **Universal Approximators:** Mathematically, a sufficiently wide or deep neural network can be trained to approximate a broad class of continuous functions within a specific domain, provided it has an appropriate architecture and abundant high-quality data to learn from.
 
 ## FAQs
 

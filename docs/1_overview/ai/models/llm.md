@@ -29,7 +29,7 @@ The model looks at a sequence of tokens and calculates the *probability* of what
 **3. The Model Lifecycle (From Raw Data to Helpful Assistant)**
 Modern LLMs go through a rigorous, multi-stage process before they ever talk to a user:
 *   **Pretraining:** The model reads massive amounts of raw internet data (books, websites, articles). Running on thousands of GPUs, it adjusts its internal "settings" (parameters) every time it guesses right or wrong. This creates a "base model" that understands the structure of human language and facts, but it isn't very polite or conversational yet; it just wants to complete sentences.
-*   **[[ai-fine-tuning|Fine-Tuning]]:** Developers take the raw base model and explicitly teach it how to behave gracefully in a specific domain (like coding, or customer support) by feeding it a smaller set of extreme high-quality, human-curated examples.
+*   **[[ai-fine-tuning|Fine-Tuning]]:** Developers take the raw base model and explicitly teach it how to behave gracefully in a specific domain (like coding, or customer support) by feeding it a smaller set of extremely high-quality, human-curated examples.
 *   **[[rlhf|RLHF]] (Reinforcement Learning from Human Feedback):** To stop the AI from generating toxic or unhelpful answers, humans rank several AI responses from best to worst. A secondary "reward model" learns these human preferences and mathematically forces the main LLM to be safe, polite, and helpful.
 *   **Inference:** Once the model is deployed to the real world, "inference" is the act of the model reading your prompt and generating a response. During inference, developers can adjust the **Temperature** (lower temperature = more deterministic and focused; higher temperature = more creative and random).
 
@@ -56,11 +56,11 @@ Parameters are the "brain cells" of the model. They are the adjustable variables
 
 Since an LLM is a **probabilistic engine**, not a fact database, it sometimes predicts a word that *sounds* plausible but is factually wrong. It prioritizes the *pattern* of language over the *truth* of the facts.
 
-*4. What are "Scaling Laws"?*
+*   **What are "Scaling Laws"?**
 
-In 2020, researchers at OpenAI published *Scaling Laws for Neural Language Models*, proving that as we make models larger and train them with more data and compute power, their performance tends to improve in highly predictable, mathematical ways. By throwing more compute at the problem and building bigger models, researchers achieved progressively better results.
+In 2020, researchers at OpenAI published *[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)*, proving that as we make models larger and train them with more data and compute power, their performance tends to improve in highly predictable, mathematical ways. By throwing more compute at the problem and building bigger models, researchers achieved progressively better results.
 
-However, in 2024–2026, while "pretraining" scaling continued to work, the industry discovered a massive new lever: **Test-Time Compute**. Instead of purely making the *brain* bigger, researchers began giving the model more time to "think," reason, run tools (like [[agentic-ai|Agentic AI]]), and iterate *during* inference (when the user actually asks the question) to vastly improve complex problem-solving.
+However, in recent years, while "pretraining" scaling continued to work, the industry discovered a massive new lever: **Test-Time Compute**. Instead of purely making the *brain* bigger, researchers began giving the model more time to "think," reason, run tools (like [[agentic-ai|Agentic AI]]), and iterate *during* inference (when the user actually asks the question) to vastly improve complex problem-solving.
 
 ## Further Reading
 
