@@ -30,6 +30,13 @@ A collection of useful, interesting, or beautiful websites.
 | **MLU-Explain** | Interactive visual articles on machine learning concepts (Bias, Variance, etc.). | [mlu-explain.github.io](https://mlu-explain.github.io/) |
 | **VisuAlgo** | Visualizing data structures and algorithms through animation. | [visualgo.net](https://visualgo.net/en) |
 
+## Learning & Education
+
+| Site | Description | Link |
+| :--- | :--- | :--- |
+| **Language Transfer** | Innovative, completely free audio language courses that focus on thinking rather than memorizing. | [languagetransfer.org](https://www.languagetransfer.org/) |
+| **Notes2Tree** | Shared visual notes and mind maps for learning math, AI, and Deep Learning concepts. | [notes2tree.com](https://notes2tree.com/?shared=AT47mwVJoI) |
+
 ## Tools & Utilities
 
 | Site | Description | Link |
@@ -37,6 +44,7 @@ A collection of useful, interesting, or beautiful websites.
 | **roadmap.sh** | Interactive developer roadmaps for frontend, backend, DevOps, and more. | [roadmap.sh](https://roadmap.sh/) |
 | **NotebookLM** | Google's AI research tool that acts as a personalized research assistant. | [notebooklm.google.com](https://notebooklm.google.com/) |
 | **CSV Plot** | Online tool to visualize CSV data instantly. | [csvistool.com](https://csvistool.com) |
+| **Perfectly.so** | An AI-powered mock interview tool for candidates to practice and prepare. | [candidate.perfectly.so](https://candidate.perfectly.so/) |
 
 ## Reference
 
@@ -44,6 +52,7 @@ A collection of useful, interesting, or beautiful websites.
 | :--- | :--- | :--- |
 | **List of Cognitive Biases** | Wikipedia's massive list of the flaws in human reasoning. | [Wikipedia](https://en.wikipedia.org/wiki/List_of_cognitive_biases) |
 | **OpSec Failures** | OpSec examples: 6 spectacular operational security failures. | [csoonline.com](https://www.csoonline.com/article/571107/opsec-examples-6-spectacular-operational-security-failures.html) |
+| **METR** | Model Evaluation and Threat Research: an organization assessing whether frontier AI models pose catastrophic risks. | [metr.org](https://metr.org/) |
 
 ## Internet Humor
 

@@ -15,5 +15,5 @@ It is a field of Artificial Intelligence (AI) that enables computers to derive i
 ## Further Reading & Resources
 
 * **Watch:** [*How Computers See* by TED-Ed (YouTube)](https://www.youtube.com/watch?v=XS2UWYuh5u0).
-* **Learn:** "[CS231n: Convolutional Neural Networks for Visual Recognition](https://cs231n.stanford.edu/2020/)" (Stanford University Course Notes - highly technical but the gold standard).
+* **Learn:** "[CS231n: [[convolutional-neural-networks|Convolutional Neural Networks]] for Visual Recognition](https://cs231n.stanford.edu/2020/)" (Stanford University Course Notes - highly technical but the gold standard).
 * **Try:** [Google's "Teachable Machine"](https://teachablemachine.withgoogle.com/) (A web tool where you can train your own computer vision model in minutes without coding).

@@ -12,6 +12,8 @@ Traditional AI was a **Classifier**: You show it a picture, and it says "Cat."
 
 It is the difference between a **Librarian** (who finds existing books) and an **Author** (who writes new ones).
 
+Like all current generative technology, it is a form of Narrow AI, distinct from theoretical [[ai-vs-agi|Artificial General Intelligence (AGI)]].
+
 ## How it Works
 
 It learns by looking at billions of examples.
@@ -20,7 +22,7 @@ It learns by looking at billions of examples.
 
 ## Common Types
 
-*   **Text-to-Text:** ChatGPT, Claude, Gemini (Writes essays, code, poems).
+*   **Text-to-Text:** (Powered by [[llm|Large Language Models]]) ChatGPT, Claude, Gemini (Writes essays, code, poems).
 *   **Text-to-Image:** Midjourney, DALL-E (Creates art from words).
 *   **Text-to-Audio:** Suno, Udio (Composes music).
 
