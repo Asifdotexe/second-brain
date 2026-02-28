@@ -17,7 +17,7 @@ Stuxnet was designed with a very specific "kill chain" to target the Natanz uran
 
 1.  **Jumping the Air-Gap:** The facility was not connected to the internet (an "air-gap"). Stuxnet spread via infected USB sticks. When a worker plugged a stick into a target computer inside the facility, the worm jumped the gap.
 2.  **The Hunt:** Once inside, it didn't do anything to normal PCs. It looked for a specific type of **PLC (Programmable Logic Controller)** made by Siemens that controlled the speed of uranium-enrichment centrifuges.
-3.  **The Sabotage:** It took control of the centrifuges and forced them to spin at wildly fluctuating speeds—first dangerously fast, then dangerously slow. This physical stress caused the centrifuges to vibrate until they literally shattered.
+3.  **The Sabotage:** It took control of the centrifuges and forced them to spin at wildly fluctuating speeds; first dangerously fast, then dangerously slow. This physical stress caused the centrifuges to vibrate until they literally shattered.
 4.  **The Camouflage:** While destroying the machines, Stuxnet "replayed" normal sensor data to the control room monitors. The operators saw everything as "perfectly normal" while their machines were actually tearing themselves apart.
 
 ## FAQs
