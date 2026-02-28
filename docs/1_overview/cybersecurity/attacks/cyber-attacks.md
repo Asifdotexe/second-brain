@@ -11,7 +11,7 @@ Cybersecurity attacks range from simple social engineering tricks to complex, au
 
 ## The Catalog of Attacks
 
-### 1. [[malware|[[malware|Malware]] (Overview)]]
+### 1. [[malware|Malware]] (Overview)
 A broad category of malicious software; including viruses, [[worms|worms]], and [[ransomware|ransomware]]; designed specifically to harm systems, steal data, or gain unauthorized access.
 
 ### 2. [[phishing|Phishing]]
@@ -32,13 +32,13 @@ Standalone [[malware|malware]] that spreads automatically across networks withou
 ### 7. [[virus|Computer Virus]]
 A classic infection that attaches itself to a host program or file and replicates by infecting other files when the host is executed.
 
-### 8. [[trojan|[[trojan|Trojan]] Horse]]
+### 8. [[trojan|Trojan Horse]]
 Malicious software that disguises itself as something useful (like a free game or tool) to trick you into inviting it into your system.
 
 ### 9. [[botnets|Botnets]]
 An army of "zombie" computers (infected devices) secretly controlled by a hacker to launch massive attacks like [[ddos|DDoS]] or crypto mining.
 
-### 10. [[ddos|[[ddos|DDoS]] (Distributed Denial of Service)]]
+### 10. [[ddos|DDoS]] (Distributed Denial of Service)
 A "digital traffic jam": Overwhelming a website or server with a flood of traffic from a [[botnets|botnet]] to make it crash or become unreachable.
 
 ### 11. [[cryptojacking|Cryptojacking]]
@@ -62,7 +62,7 @@ Attacking a large organization by first compromising the smaller, less-secure ve
 ### 17. [[zero-day|Zero-Day]]
 An attack that exploits a previously unknown software flaw before the developers have had "zero days" to create a fix or patch.
 
-### 18. [[remote-code-execution|[[remote-code-execution|Remote Code Execution]] (RCE)]]
+### 18. [[remote-code-execution|Remote Code Execution]] (RCE)
 The "Holy Grail" for hackers: A vulnerability that allows them to run their own code on a remote server from anywhere in the world.
 
 ### 19. [[command-injection|Command Injection]]

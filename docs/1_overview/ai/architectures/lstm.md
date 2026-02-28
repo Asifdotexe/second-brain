@@ -29,5 +29,5 @@ Yes. A popular variant is the **Gated Recurrent Unit (GRU)**, which essentially 
 
 ### Further Reading
 
-*   **The Foundation:** *[[recurrent-neural-networks|[[recurrent-neural-networks|Recurrent Neural Networks]] (RNN)]]* (The architecture that LSTMs evolved from to fix the vanishing gradient problem).
+*   **The Foundation:** *[[recurrent-neural-networks|Recurrent Neural Networks (RNN)]]* (The architecture that LSTMs evolved from to fix the vanishing gradient problem).
 *   **The Successor:** *[[transformer-architecture|Transformer Architecture]]* (The parallel-processing architecture that eventually dethroned LSTMs).

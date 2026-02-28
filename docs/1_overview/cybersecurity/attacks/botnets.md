@@ -28,5 +28,5 @@ You might be if:
 ### Further Reading
 
 * **Article:** *"[The Morris Worm: The Internet's First Botnet](https://www.fbi.gov/news/stories/morris-worm-30-years-since-first-major-attack-on-internet-110218)"* (Search for history of botnets)
-* **Deep Dive:** [Cloudflare's guide on *"What is a [[ddos|DDoS]] Attack?"](https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/)*
+* **Deep Dive:** [Cloudflare's guide on *"What is a DDoS Attack?"](https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/)*
 * **Check your status:** [Have I Been Pwned?](https://haveibeenpwned.com/) (Website to check if your email has been compromised)

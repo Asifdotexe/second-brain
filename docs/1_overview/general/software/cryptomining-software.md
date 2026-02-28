@@ -24,4 +24,4 @@ Advanced [[antivirus|antivirus]] and [[EDR]] systems often flag legitimate crypt
 
 ### Further Reading
 - [What is Cryptocurrency Mining?](https://www.investopedia.com/terms/c/cryptocurrency-mining.asp)
-- [[[cryptojacking|Learn more about [[cryptojacking|Cryptojacking]] attacks]]].
+- [[cryptojacking|Learn more about Cryptojacking attacks]].

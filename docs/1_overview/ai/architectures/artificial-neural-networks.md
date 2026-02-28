@@ -31,6 +31,6 @@ Because they start out completely blank and randomly wired. Unlike a human toddl
 
 ### Further Reading
 
-*   **Related Concept:** *[[convolutional-neural-networks|[[convolutional-neural-networks|Convolutional Neural Networks]] (CNN)]]* (A specialized ANN designed specifically for images).
-*   **Related Concept:** *[[recurrent-neural-networks|[[recurrent-neural-networks|Recurrent Neural Networks]] (RNN)]]* (A specialized ANN designed for sequential data like text or time).
+*   **Related Concept:** *[[convolutional-neural-networks|Convolutional Neural Networks (CNN)]]* (A specialized ANN designed specifically for images).
+*   **Related Concept:** *[[recurrent-neural-networks|Recurrent Neural Networks (RNN)]]* (A specialized ANN designed for sequential data like text or time).
 *   **Contrasting Concept:** *[[ai-vs-agi|AI vs. AGI (Artificial General Intelligence)]]* (The distinction between modern Narrow AI and theoretical human-level intelligence).

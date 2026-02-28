@@ -31,5 +31,5 @@ Because RNNs *must* process things sequentially (step 1, then step 2, then step 
 
 ### Further Reading
 
-*   **Core Concept:** *[[artificial-neural-networks|[[artificial-neural-networks|Artificial Neural Networks]] (ANN)]]* (The foundational technology that RNNs build upon).
+*   **Core Concept:** *[[artificial-neural-networks|Artificial Neural Networks (ANN)]]* (The foundational technology that RNNs build upon).
 *   **The Successor:** *[[transformer-architecture|Transformer Architecture]]* (The modern architecture that dethroned RNNs in Natural Language Processing).

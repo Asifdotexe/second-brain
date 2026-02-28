@@ -39,4 +39,4 @@ Supply chain attacks aren't just one thing; they come in different "flavors" dep
 
 * **Case Study:** *[The SolarWinds Orion Hack](https://www.techtarget.com/whatis/feature/SolarWinds-hack-explained-Everything-you-need-to-know)* (The most famous example).
 * **Concept:** *[Target Data Breach (2013)](https://redriver.com/security/target-data-breach)* (Happened because of a hacked HVAC/Air Conditioning vendor).
-* **Deep Dive:** NIST's *"[Defending Against Software Supply Chain Attacks](https://www.[[cisa|cisa]].gov/sites/default/files/publications/defending_against_software_supply_chain_attacks_508.pdf)".*
+* **Deep Dive:** NIST's *"[Defending Against Software Supply Chain Attacks](https://www.cisa.gov/sites/default/files/publications/defending_against_software_supply_chain_attacks_508.pdf)".*
