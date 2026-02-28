@@ -15,7 +15,7 @@ A **Firewall** is a network security device (software or hardware) that monitors
 ## Types
 
 *   **Packet Filtering:** Checks the address label on the envelope (IP address/Port).
-*   **Next-Gen Firewall (NGFW):** Opens the envelope and reads the letter (Deep Packet Inspection) to stop malware hiding inside legitimate traffic.
+*   **Next-Gen Firewall (NGFW):** Opens the envelope and reads the letter (Deep Packet Inspection) to stop [[malware|malware]] hiding inside legitimate traffic.
 
 ## FAQs
 

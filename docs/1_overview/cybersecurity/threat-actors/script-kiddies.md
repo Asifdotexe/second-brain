@@ -17,7 +17,7 @@ The copy-paste armies of the internet.
 
 The term is disparaging, used by the security community to describe a specific type of threat actor:
 
-*   **Reliance on Others:** They download tools made by others (like [[metasploit|Metasploit]], [[loic|LOIC]], or various ransomware kits) and let the software do the heavy lifting.
+*   **Reliance on Others:** They download tools made by others (like [[metasploit|Metasploit]], [[loic|LOIC]], or various [[ransomware|ransomware]] kits) and let the software do the heavy lifting.
 *   **Motivation:** They are rarely motivated by complex ideology or precise theft. Most script kiddies are out for "bragging rights," digital vandalism, or "the lulz."
 *   **Lack of Trace Removal:** Because they don't understand the underlying protocols, they are often noisy and leave obvious trails for security investigators to find.
 

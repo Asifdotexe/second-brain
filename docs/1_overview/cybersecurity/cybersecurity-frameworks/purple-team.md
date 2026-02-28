@@ -9,7 +9,7 @@ Coach and sparring partner.
 
 **Purple Teaming** is a collaboration between [[red-team|Red]] (Attackers) and [[blue-team|Blue]] (Defenders).
 
-Instead of a secret attack (Red Team) where the Blue Team doesn't know what's happening, they sit in the same room.
+Instead of a secret attack (Red Team) where the [[blue-team|Blue Team]] doesn't know what's happening, they sit in the same room.
 *   **Red:** "I am going to run Attack X now."
 *   **Blue:** "Okay, let me see if my alarm triggers... Nope. Try again."
 *   **Red:** "Running Attack X again."

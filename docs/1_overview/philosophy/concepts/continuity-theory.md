@@ -24,7 +24,7 @@ At age 30, you remember being 25. At 25, you remembered being 15. At 15, you rem
 Philosophically, this is a fun (and terrifying) debate. Most agree continuity isn't broken by sleep because the physical brain maintains its background systemic functions and neurological states, keeping the timeline intact. 
 
 *2. Why is continuity better than the [[body-theory|Body Theory]]?*
-Because the Body Theory falls apart during gradual cell replacement. Continuity Theory admits that your physical body completely changes over the course of decades, yet still elegantly explains why you retain the same identity through an unbroken narrative.
+Because the [[body-theory|Body Theory]] falls apart during gradual cell replacement. Continuity Theory admits that your physical body completely changes over the course of decades, yet still elegantly explains why you retain the same identity through an unbroken narrative.
 
 ### Further Reading
 

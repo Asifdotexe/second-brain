@@ -11,7 +11,7 @@ The (ISC)² **CISSP** (Certified Information Systems Security Professional) cert
 
 ## The Eight Domains
 
-### 1. Security and Risk Management
+### 1. Security and [[risk-management|Risk Management]]
 Focused on defining security goals, identifying risks, and ensuring compliance with laws and ethics.
 *   **Risk Mitigation**: Developing procedures to reduce the impact of a breach.
 *   **Business Continuity**: Establishing disaster recovery plans so an organization survives a catastrophe.
@@ -32,7 +32,7 @@ Controlling who has access to what. It relies on the four pillars: **Identificat
 Identifying vulnerabilities before attackers do. This involves **[[pen-testing|Penetration Testing]]** and regular security audits.
 
 ### 7. Security Operations
-The "front lines" of defense. It focuses on incident investigation, log management (using **[[siem|SIEM tools]]**), and following **[[playbooks|Playbooks]]** to mitigate active attacks.
+The "front lines" of defense. It focuses on incident investigation, log management (using **[[siem|[[siem|SIEM]] tools]]**), and following **[[playbooks|Playbooks]]** to mitigate active attacks.
 
 ### 8. Software Development Security
 Embedding security into every phase of the software development lifecycle (SDLC), from design to release.

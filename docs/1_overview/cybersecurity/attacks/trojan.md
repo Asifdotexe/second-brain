@@ -7,7 +7,7 @@ tags: Malware, Deception, Access
 
 The gift that eats you.
 
-A **Trojan Horse** is a type of malware that disguises itself as legitimate software.
+A **Trojan Horse** is a type of [[malware|malware]] that disguises itself as legitimate software.
 It is named after the Greek story of the wooden horse used to trick the defenders of Troy.
 
 ## How it works
@@ -18,7 +18,7 @@ It is named after the Greek story of the wooden horse used to trick the defender
 ## FAQs
 
 *1. Does it replicate?*
-No. Unlike a worm or virus, a Trojan does not copy itself. It relies on **You** to download and run it.
+No. Unlike a worm or [[virus|virus]], a Trojan does not copy itself. It relies on **You** to download and run it.
 
 ### Further Reading
 

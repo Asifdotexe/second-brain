@@ -21,7 +21,7 @@ It is the difference between **Rent** vs **Own**.
 
 *1. Is "[[open-source|Open-Source]]" the same as "Open Model"?*
 Technically, no (though people use them interchangeably).
-*   **True Open Source:** They share the Training Data, The Code, AND The Weights (Everything).
+*   **True [[open-source|Open Source]]:** They share the Training Data, The Code, AND The Weights (Everything).
 *   **Open Weights:** They share the ready-to-use Brain (Weights), but keep the Training Data secret. Most "Open" AI today (like Llama) is actually just "[[open-weights|Open-Weights]]."
 
 *2. Can I run these at home?*

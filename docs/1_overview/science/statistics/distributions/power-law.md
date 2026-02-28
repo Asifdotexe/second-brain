@@ -7,10 +7,10 @@ tags: Statistics, Math, Pareto
 
 Extremistan.
 
-**A Power Law** (Pareto Distribution) is a pattern where a small number of items account for the vast majority of the impact. The average is meaningless because one "Black Swan" can skew the whole dataset.
+**A Power Law** (Pareto Distribution) is a pattern where a small number of items account for the vast majority of the impact. The average is meaningless because one "[[black-swan|Black Swan]]" can skew the whole dataset.
 
 Think of it like **Book Sales**.
-*   **The Long Tail:** Millions of authors sell 10 copies.
+*   **The [[long-tail|Long Tail]]:** Millions of authors sell 10 copies.
 *   **The Head:** J.K. Rowling sells 500 million copies.
 *   **The Skew:** If you average J.K. Rowling with me, we are both best-selling authors *on average*. But the average is a lie.
 
@@ -30,7 +30,7 @@ Think of it like **Book Sales**.
 
 ## Analysis
 
-In a Power Law world, risk management is hard. The past does not predict the future. One single event (an earthquake, a market crash, a viral post) can change everything. See **[[black-swan|Black Swan]]**.
+In a Power Law world, [[risk-management|risk management]] is hard. The past does not predict the future. One single event (an earthquake, a market crash, a viral post) can change everything. See **[[black-swan|Black Swan]]**.
 
 ### Further Reading
 

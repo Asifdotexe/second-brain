@@ -18,8 +18,8 @@ In a bootstrap loop, the object is "self-created" (it pulls itself up by its own
 
 ## FAQs
 
-*1. Is this the same as the Grandfather Paradox?*
-No. The Grandfather Paradox is a **destructive** loop (you stop yourself from existing). The Bootstrap Paradox is a **constructive** loop (the loop is stable and self-reinforcing).
+*1. Is this the same as the [[grandfather-paradox|Grandfather Paradox]]?*
+No. The [[grandfather-paradox|Grandfather Paradox]] is a **destructive** loop (you stop yourself from existing). The Bootstrap Paradox is a **constructive** loop (the loop is stable and self-reinforcing).
 
 *2. Where did the name come from?*
 From the phrase "pulling yourself up by your bootstraps" and popularized by the Robert Heinlein story *By His Bootstraps*.

@@ -27,4 +27,4 @@ It allows the community to improve the model (fixing bugs, making it run faster)
 ### Further Reading
 
 *   **Article:** *[The History of Open Weights](https://www.wired.com/story/open-source-generative-ai-llama-2/)*
-*   **Definition:** *[OSI: What is Open Source AI?](https://opensource.org/blog/what-is-open-source-ai)*
+*   **Definition:** *[OSI: What is [[open-source|Open Source]] AI?](https://opensource.org/blog/what-is-open-source-ai)*

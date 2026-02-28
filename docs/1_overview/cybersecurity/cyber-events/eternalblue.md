@@ -20,7 +20,7 @@ It attacked the **SMB Protocol** (File Sharing).
 ## FAQs
 
 *1. Why was it so dangerous?*
-Because it was **Wormable**. This means if *one* computer in an office got infected, EternalBlue automatically used that computer to attack *every other* computer on the network looking for the same flaw. It spread like a biological virus in a crowded room.
+Because it was **Wormable**. This means if *one* computer in an office got infected, EternalBlue automatically used that computer to attack *every other* computer on the network looking for the same flaw. It spread like a biological [[virus|virus]] in a crowded room.
 
 *2. Is it still a threat?*
 Microsoft fixed (patched) the hole in 2017 (MS17-010). If you update your computer, you are safe. But millions of old, unpatched computers (in hospitals and factories) are still vulnerable today.

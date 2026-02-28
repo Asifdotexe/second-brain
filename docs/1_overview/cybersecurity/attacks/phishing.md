@@ -35,7 +35,7 @@ Phishing works on three principles:
 *   **Bad Grammar:** Legitimate companies have editors; scammers often don't.
 
 *2. What do I do if I clicked?*
-*   **Disconnect:** Turn off your internet to stop any malware from downloading.
+*   **Disconnect:** Turn off your internet to stop any [[malware|malware]] from downloading.
 *   **Change Passwords:** Immediately change your passwords (from a different device if possible).
 *   **Report it:** Tell your IT team or the company being impersonated.
 

@@ -32,4 +32,4 @@ No. Like the other classical non-parametric tests, it only detects monotonic tre
 ### Further Reading
 
 *   **Related Concept:** *[[spearman-correlation|Spearman Rank Correlation Coefficient]]* (The other famous rank-based correlation method).
-*   **Related Concept:** *[[pearson-correlation|Pearson Correlation Coefficient]]* (The linear correlation coefficient that fails on ranked data).
+*   **Related Concept:** *[[pearson-correlation|[[pearson-correlation|Pearson Correlation]] Coefficient]]* (The linear correlation coefficient that fails on ranked data).

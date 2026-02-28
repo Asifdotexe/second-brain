@@ -21,7 +21,7 @@ Think of it like **Adult Male Height**.
 1.  **[[central-limit-theorem|Central Limit Theorem]]:** When you add up many independent random variables, they tend to form a Bell Curve.
 2.  **Symmetry:** 50% are above average, 50% are below.
 3.  **The 68-95-99.7 Rule:**
-    *   68% of data falls within 1 **[[standard-deviation|Standard Deviation (SD)]]**.
+    *   68% of data falls within 1 **[[standard-deviation|[[standard-deviation|Standard Deviation]] (SD)]]**.
     *   95% falls within 2 SDs.
     *   99.7% falls within 3 SDs.
 

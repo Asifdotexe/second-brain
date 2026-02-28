@@ -25,9 +25,9 @@ Spearman fixes this by ignoring the raw numbers (the actual salaries and years) 
 No. It only detects monotonic relationships (always going up, or always going down). If a trend goes up and then comes back down, Spearman will struggle. For deeply chaotic or complex functions, [[chatterjees-correlation|Chatterjee's Correlation]] is a better tool. 
 
 *2. How is it calculated?*
-It is calculated by rank-ordering both variables from lowest to highest, and then performing the standard Pearson correlation math purely on those ranked integers, rather than the original data points.
+It is calculated by rank-ordering both variables from lowest to highest, and then performing the standard [[pearson-correlation|Pearson correlation]] math purely on those ranked integers, rather than the original data points.
 
 ### Further Reading
 
-*   **Related Concept:** *[[pearson-correlation|Pearson Correlation Coefficient]]* (The linear, continuous-data counterpart).
-*   **Related Concept:** *[[kendall-tau-correlation|Kendall Tau Correlation Coefficient]]* (An alternative rank-based correlation that's more robust for smaller sample sizes).
+*   **Related Concept:** *[[pearson-correlation|[[pearson-correlation|Pearson Correlation]] Coefficient]]* (The linear, continuous-data counterpart).
+*   **Related Concept:** *[[kendall-tau-correlation|[[kendall-tau-correlation|Kendall Tau Correlation]] Coefficient]]* (An alternative rank-based correlation that's more robust for smaller sample sizes).

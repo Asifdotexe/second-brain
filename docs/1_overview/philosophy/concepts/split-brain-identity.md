@@ -5,7 +5,7 @@ tags: PersonalIdentity, PhilosophyOfMind, ThoughtExperiments
 
 # Split-Brain Experiment
 
-The Split-Brain Identity problem is like asking what happens to a computer program if you suddenly split its CPU and hard drive in half and start running both halves on two separate, independent machines simultaneously.
+The Split-Brain Identity problem is like asking what happens to a computer program if you suddenly split its CPU and [[hard-drive|hard drive]] in half and start running both halves on two separate, independent machines simultaneously.
 
 **The Split-Brain Experiment** in philosophy is a thought experiment challenging personal identity by asking what happens to the "self" if the two hemispheres of a human brain are separated and placed into two different bodies.
 

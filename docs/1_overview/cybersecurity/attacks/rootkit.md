@@ -9,7 +9,7 @@ The invisible mask.
 
 A **Rootkit** is a collection of software tools that enable an unauthorized user to gain control of a computer system without being detected.
 
-The name comes from "Root" (the admin user) + "Kit" (toolset). Its primary capability is **Stealth**. It hides itself, other malware, and malicious processes from the operating system and [[antivirus]].
+The name comes from "Root" (the admin user) + "Kit" (toolset). Its primary capability is **Stealth**. It hides itself, other [[malware|malware]], and malicious processes from the [[operating-system|operating system]] and [[antivirus]].
 
 ## How it hides
 

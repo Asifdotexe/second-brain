@@ -28,8 +28,8 @@ It is often a phase, but it's also a serious philosophical starting point. Once 
 
 *2. How do you beat it?*
 *   **Through Art (Nietzsche):** Create beauty.
-*   **Through Absurdism (Camus):** Rebel and enjoy the ride.
-*   **Through Existentialism (Sartre):** Build your own meaning.
+*   **Through [[absurdism|Absurdism]] (Camus):** Rebel and enjoy the ride.
+*   **Through [[existentialism|Existentialism]] (Sartre):** Build your own meaning.
 
 ### Further Reading
 

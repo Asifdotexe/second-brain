@@ -26,7 +26,7 @@ Commonly known as **"Grey Hat"** hackers.
 ### 3. Unauthorized Hackers (Unethical Hackers)
 Commonly known as **"Black Hat"** hackers or **Malicious Threat Actors**.
 *   **Motivation**: Financial gain, fame, or political agendas.
-*   **Methods**: They do not follow the law or respect boundaries. They steal data, plant malware, and disrupt systems.
+*   **Methods**: They do not follow the law or respect boundaries. They steal data, plant [[malware|malware]], and disrupt systems.
 
 ---
 

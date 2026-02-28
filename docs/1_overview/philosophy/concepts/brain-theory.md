@@ -5,11 +5,11 @@ tags: PersonalIdentity, PhilosophyOfMind, ThoughtExperiments
 
 # Brain Theory
 
-The Brain Theory is like saying a computer is defined by its hard drive and CPU, no matter what shiny new monitor or keyboard you plug it into.
+The Brain Theory is like saying a computer is defined by its [[hard-drive|hard drive]] and CPU, no matter what shiny new monitor or keyboard you plug it into.
 
 **Brain Theory** is the philosophical view that what makes you "you" is your physical brain, and your identity goes wherever your physical brain goes.
 
-Imagine taking the hard drive out of your old, beat-up laptop and plugging it into a brand new desktop computer. When you turn it on, all your files, your wallpaper, and your saved passwords are there. You'd probably say you kept your "computer," you just gave it a new shell. The Brain Theory applies this to humans: your physical brain is the hard drive. If a mad scientist were to pull your brain out of your skull and plop it into the skull of a stranger, the resulting person would wake up with your memories, your personality, and your fears. 
+Imagine taking the [[hard-drive|hard drive]] out of your old, beat-up laptop and plugging it into a brand new desktop computer. When you turn it on, all your files, your wallpaper, and your saved passwords are there. You'd probably say you kept your "computer," you just gave it a new shell. The Brain Theory applies this to humans: your physical brain is the [[hard-drive|hard drive]]. If a mad scientist were to pull your brain out of your skull and plop it into the skull of a stranger, the resulting person would wake up with your memories, your personality, and your fears. 
 
 According to the Brain Theory, that person *is* you. The old body you left behind isn't you anymore; it was just the monitor and keyboard you used to interact with the world. Wherever the physical tissue of the brain goes, your identity follows.
 

@@ -13,7 +13,7 @@ It works like a bouncer at a club checking IDs against a "Banned List." If a fil
 
 ## How it Detects Threats
 
-1.  **Signature Based (The Mugshot):** It compares every file on your PC to a massive database of verified virus "signatures" (hashes). If it matches, it's deleted. *Weakness: Can't catch brand new viruses.*
+1.  **Signature Based (The Mugshot):** It compares every file on your PC to a massive database of verified [[virus|virus]] "signatures" (hashes). If it matches, it's deleted. *Weakness: Can't catch brand new viruses.*
 2.  **Heuristic / Behavioral (The Profiler):** It watches what a program *does*. If a Notepad file suddenly tries to delete your System32 folder, the AV shouts "Hey! That's suspicious!" and kills it. *Strength: Catches unknown ([[zero-day|Zero-Day]]) threats.*
 
 ## FAQs

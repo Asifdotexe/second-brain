@@ -25,7 +25,7 @@ Instead of fighting physics to create order, they use the chaos of physics to pe
 *1. Why do we need this?*
 The "Energy Wall." We are running out of electricity to power bigger AI Models. Traditional chips ([[gpu|GPUs]]) are becoming heaters that occasionally do math. Extropic claims their chips can be orders of magnitude more efficient because they don't fight heat; they run *on* it.
 
-*2. Is this Quantum Computing?*
+*2. Is this [[quantum-computing|Quantum Computing]]?*
 No, but it's related. [[quantum-computing|Quantum Computers]] use quantum mechanics (entanglement). Extropic uses *Thermodynamics* (statistical mechanics). It fits in the gap between classical chips (too rigid) and quantum chips (too fragile). It works at room temperature.
 
 ### Further Reading

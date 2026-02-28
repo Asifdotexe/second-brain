@@ -3,11 +3,11 @@ title: Tail Value at Risk (TVaR)
 tags: [RiskMetric, TailRisk]
 ---
 
-# Tail Value at Risk (TVaR)
+# Tail [[value-at-risk|Value at Risk]] (TVaR)
 
-**Tail Value at Risk (TVaR)** asks the terrifying question: "If the dam *does* break (which VaR ignores), how deep will the water get?"
+**Tail [[value-at-risk|Value at Risk]] (TVaR)** asks the terrifying question: "If the dam *does* break (which VaR ignores), how deep will the water get?"
 
-**Tail Value at Risk (TVaR)** (also known as Conditional VaR or Expected Shortfall) is the average of all losses that exceed the VaR threshold.
+**Tail [[value-at-risk|Value at Risk]] (TVaR)** (also known as Conditional VaR or Expected Shortfall) is the average of all losses that exceed the VaR threshold.
 
 While VaR tells you the "best of the worst" outcomes, TVaR tells you the average of the *absolute worst* outcomes. It focuses entirely on the "tail" of the risk distribution; the disasters.
 

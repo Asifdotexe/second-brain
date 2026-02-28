@@ -14,7 +14,7 @@ It works by smoothing out the jagged peaks of disaster costs into a predictable 
 ## How it Works
 
 *   **The Baseline:** It calculates the "cost of doing business" regarding risk.
-*   **High Frequency, Low Severity:** AAL is mostly driven by small, frequent events (like fender benders or minor malware infections) rather than the massive, rare catastrophes.
+*   **High Frequency, Low Severity:** AAL is mostly driven by small, frequent events (like fender benders or minor [[malware|malware]] infections) rather than the massive, rare catastrophes.
 *   **Budgeting Tool:** Companies use AAL to decide how much premium they should realistically pay for insurance. If the premium is lower than their AAL, it might be a bad deal for the insurer!
 
 ## Real-World Analogies
@@ -22,7 +22,7 @@ It works by smoothing out the jagged peaks of disaster costs into a predictable 
 | Context | Analogy |
 | :--- | :--- |
 | **General** | **Home Maintenance:** You might budget roughly $2,000/year for fixing leaks, painting, and lawn care. Some years you spend $500, others $5,000, but the *average* over 10 years is your AAL. |
-| **Cyber Risk** | **The "Cost of Glitches":** A company expects to lose $50,000/year dealing with phishing remediation, reimaging infected laptops, and minor downtime. This is their "Cyber AAL"; the routine cost of digital friction. |
+| **Cyber Risk** | **The "Cost of Glitches":** A company expects to lose $50,000/year dealing with [[phishing|phishing]] remediation, reimaging infected laptops, and minor downtime. This is their "Cyber AAL"; the routine cost of digital friction. |
 
 ## FAQs
 

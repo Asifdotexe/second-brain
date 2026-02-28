@@ -7,12 +7,12 @@ tags: Cryptography, QuantumComputing, FutureProofing
 
 Fixing the locks before the master key is built.
 
-**Post-Quantum Cryptography (PQC)** refers to the development of new mathematical encryption methods that are secure against both classical computers and the future threat of **[[shors-algorithm|Quantum Computers]]**.
+**Post-Quantum Cryptography (PQC)** refers to the development of new mathematical [[encryption|encryption]] methods that are secure against both classical computers and the future threat of **[[shors-algorithm|Quantum Computers]]**.
 
 Currently, almost all internet security (RSA and ECC) can be broken by a large-scale quantum computer. PQC is the "patch" for the entire internet's plumbing.
 
 ## The Quantum Threat
-Quantum computers use "Qubits" to perform calculations that are impossible for normal computers. **[[shors-algorithm|Shor's Algorithm]]** is a specific quantum recipe that can break the math behind our current [[asymmetric-encryption|Asymmetric Encryption]].
+Quantum computers use "[[qubits|Qubits]]" to perform calculations that are impossible for normal computers. **[[shors-algorithm|Shor's Algorithm]]** is a specific quantum recipe that can break the math behind our current [[asymmetric-encryption|Asymmetric Encryption]].
 
 If a powerful quantum computer is built tomorrow, every bank account, government secret, and private message sent over the last 30 years could be unlocked.
 
@@ -35,7 +35,7 @@ No.
 *   **Post-Quantum Cryptography:** Uses normal math that runs on your current phone/laptop, but is *designed* to be too hard for quantum computers to solve.
 
 *2. Why do we need it now if quantum computers aren't ready?*
-Because of **"Store Now, Decrypt Later"**. Attackers are currently stealing and storing encrypted government and corporate data today, hoping to use a quantum computer to unlock it 10 years from now. We need safe encryption *today* to protect the future.
+Because of **"Store Now, Decrypt Later"**. Attackers are currently stealing and storing encrypted government and corporate data today, hoping to use a quantum computer to unlock it 10 years from now. We need safe [[encryption|encryption]] *today* to protect the future.
 
 ### Further Reading
 

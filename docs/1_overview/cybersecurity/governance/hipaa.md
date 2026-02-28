@@ -13,7 +13,7 @@ Protecting the most sensitive data: your health.
 To be HIPAA compliant, organizations must follow three specific sets of rules:
 
 1.  **The Privacy Rule**: Sets standards for when **Protected Health Information (PHI)** can be used or shared.
-2.  **The Security Rule**: Sets standards for the technical safeguards (like encryption and firewalls) that must be in place to protect *digital* PHI.
+2.  **The Security Rule**: Sets standards for the technical safeguards (like [[encryption|encryption]] and firewalls) that must be in place to protect *digital* PHI.
 3.  **The Breach Notification Rule**: Requires organizations to notify patients and the government if their health data is breached.
 
 ## Protected Health Information (PHI)

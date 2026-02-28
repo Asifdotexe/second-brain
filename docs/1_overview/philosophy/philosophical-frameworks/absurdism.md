@@ -20,7 +20,7 @@ Albert Camus used the Greek myth of Sisyphus to explain this.
 
 ## FAQs
 
-*1. Is it the same as Nihilism?*
+*1. Is it the same as [[nihilism|Nihilism]]?*
 No.
 *   **Nihilist:** "Nothing matters, so why bother?" (Despair).
 *   **Absurdist:** "Nothing matters, so let's go get ice cream!" (Freedom).
@@ -31,4 +31,4 @@ Stop looking for a "Grand Purpose." Enjoy your coffee. Laugh at bad luck. Realiz
 ### Further Reading
 
 *   **Book:** *[The Stranger](https://www.goodreads.com/book/show/49552.The_Stranger)* by Albert Camus.
-*   **Video:** *[Optimistic Nihilism (Kurzgesagt)](https://www.youtube.com/watch?v=MBRqu0YOH14)* (Very similar to Absurdism).
+*   **Video:** *[Optimistic [[nihilism|Nihilism]] (Kurzgesagt)](https://www.youtube.com/watch?v=MBRqu0YOH14)* (Very similar to Absurdism).

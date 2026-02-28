@@ -3,11 +3,11 @@ title: Symmetric Encryption
 tags: Cryptography, Security, AES
 ---
 
-# Symmetric Encryption
+# Symmetric [[encryption|Encryption]]
 
 One key to rule them all.
 
-**Symmetric Encryption** is a method of encryption where the *same* secret key is used both to encrypt (lock) the data and decrypt (unlock) it. It is the oldest and simplest form of cryptography.
+**Symmetric [[encryption|Encryption]]** is a method of [[encryption|encryption]] where the *same* secret key is used both to encrypt (lock) the data and decrypt (unlock) it. It is the oldest and simplest form of cryptography.
 
 Think of it like a **House Key**.
 *   You use the key to lock the front door when you leave.
@@ -23,16 +23,16 @@ Think of it like a **House Key**.
 | **The Key Problem** | If you need to send a secret to someone far away, you must first find a way to get the key to them without a spy stealing it. |
 
 ## Famous Examples
-*   **[[aes-256|AES (Advanced Encryption Standard)]]**: The world standard for securing data at rest (hard drives, databases).
+*   **[[aes-256|AES (Advanced [[encryption|Encryption]] Standard)]]**: The world standard for securing data at rest (hard drives, databases).
 *   **Caesar Cipher**: The ancient (and very weak) method of shifting letters by a certain number.
 
 ## FAQs
 
 *1. When should I use it?*
-Use it for "Storage." If you are encrypting your own hard drive or phone, you are the only one who needs the key, so there is no "sharing" problem.
+Use it for "Storage." If you are encrypting your own [[hard-drive|hard drive]] or phone, you are the only one who needs the key, so there is no "sharing" problem.
 
 *2. How is the key sharing problem solved?*
-On the internet, we usually use **[[asymmetric-encryption|Asymmetric Encryption]]** just to safely send a symmetric key to the other person. Once both sides have the key, they switch to Symmetric encryption for the rest of the conversation because it is faster.
+On the internet, we usually use **[[asymmetric-encryption|Asymmetric Encryption]]** just to safely send a symmetric key to the other person. Once both sides have the key, they switch to Symmetric [[encryption|encryption]] for the rest of the conversation because it is faster.
 
 ### Further Reading
 

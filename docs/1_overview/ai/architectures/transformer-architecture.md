@@ -15,7 +15,7 @@ The Transformer threw away the sequential step-by-step reading. Instead, it inge
 
 ## Key Features
 
-*   **No Recurrence:** It dispenses entirely with [[recurrent-neural-networks|Recurrent Neural Networks (RNNs)]] and [[convolutional-neural-networks|Convolutional Neural Networks (CNNs)]], relying strictly on [[self-attention-mechanism|Self-Attention Mechanisms]].
+*   **No Recurrence:** It dispenses entirely with [[recurrent-neural-networks|[[recurrent-neural-networks|Recurrent Neural Networks]] (RNNs)]] and [[convolutional-neural-networks|[[convolutional-neural-networks|Convolutional Neural Networks]] (CNNs)]], relying strictly on [[self-attention-mechanism|Self-Attention Mechanisms]].
 *   **Massively Parallelizable:** Because it doesn't process data sequentially, it can be trained across thousands of GPUs simultaneously, dropping training times from months down to days.
 *   **Encoder-Decoder Structure:** The original architecture is split into two halves: an **Encoder** (which reads the input and maps the mathematical meaning) and a **Decoder** (which generates the output prediction one token at a time). Modern models sometimes only use one half (e.g., GPT is a decoder-only Transformer).
 

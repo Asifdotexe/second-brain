@@ -14,7 +14,7 @@ It contrasts with *Maximum Possible Loss* (MPL), which assumes everything fails 
 ## How it Works
 
 *   **Plausibility Filter:** It discards the "meteor strike" scenarios. It focuses on severe but reasonably expected disasters.
-*   **The "Functioning" Assumption:** It assumes your sprinklers work (mostly), your firewalls hold (somewhat), and your backups exist (eventually).
+*   **The "Functioning" Assumption:** It assumes your sprinklers work (mostly), your [[firewalls|firewalls]] hold (somewhat), and your backups exist (eventually).
 *   **Setting Limits:** Companies buy insurance limits equal to their PML. Buying more (MPL) is usually too expensive and unnecessary.
 
 ## Real-World Analogies

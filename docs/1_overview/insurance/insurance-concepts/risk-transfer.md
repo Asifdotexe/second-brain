@@ -7,7 +7,7 @@ tags: [RiskManagement, InsuranceBasics]
 
 **Risk Transfer** is the business equivalent of paying someone else to worry for you so you can sleep at night.
 
-**Risk Transfer** is a risk management strategy where the burden of a potential loss is shifted from one party to another, typically through insurance policies or contractual indemnification.
+**Risk Transfer** is a [[risk-management|risk management]] strategy where the burden of a potential loss is shifted from one party to another, typically through insurance policies or contractual indemnification.
 
 Instead of keeping the risk (Retention) or avoiding it (Avoidance), you pay a fee (premium) to make it someone else's problem.
 

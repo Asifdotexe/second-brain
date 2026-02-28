@@ -22,7 +22,7 @@ This allows them to solve specific types of massive problems (like folding prote
 *1. Will it replace my laptop?*
 No. They are giant, fragile fridges that need to be kept near Absolute Zero (-273°C). They are for specific science/math tasks, not scrolling Twitter.
 
-*2. Will it break encryption?*
+*2. Will it break [[encryption|encryption]]?*
 Eventually, yes. [[shors-algorithm|Shor's-Algorithm]] proves a powerful enough Quantum Computer could crack all modern flexible [[encryption]]. This is why "Post-Quantum [[cryptography|Cryptography]]" is being researched now.
 
 ## How do we use them?

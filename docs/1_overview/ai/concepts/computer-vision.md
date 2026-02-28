@@ -10,7 +10,7 @@ Computer Vision is the science of teaching computers to "see" images and underst
 
 It is a field of Artificial Intelligence (AI) that enables computers to derive information from digital images, videos, and other visual inputs.
 
-<img src="https://images.prismic.io/turing/65981166531ac2845a272a03_How_computer_vision_works_7a55c421bf.webp?auto=format,compress" alt="Agentic AI Flow" style="width: 500px; height: auto;"/>
+<img src="https://images.prismic.io/turing/65981166531ac2845a272a03_How_computer_vision_works_7a55c421bf.webp?auto=format,compress" alt="[[agentic-ai|Agentic AI]] Flow" style="width: 500px; height: auto;"/>
 
 ## Further Reading & Resources
 

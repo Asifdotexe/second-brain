@@ -28,7 +28,7 @@ Supply chain attacks aren't just one thing; they come in different "flavors" dep
 
 | Type | How it works | Famous Example |
 | :--- | :--- | :--- |
-| **Software (Upstream)** | The hacker infects the *code* or *update server* of a software vendor. Every customer who downloads the "update" gets infected. | **SolarWinds (2020):** Hackers hid malware in a legitimate IT management tool update. |
+| **Software (Upstream)** | The hacker infects the *code* or *update server* of a software vendor. Every customer who downloads the "update" gets infected. | **SolarWinds (2020):** Hackers hid [[malware|malware]] in a legitimate IT management tool update. |
 | **Hardware** | The hacker tampers with physical components (chips, firmware, USBs) at the factory or during shipping before they reach you. | **Spy Chips:** Allegations of tiny spy chips added to server motherboards during manufacturing. |
 | **Open Source** | The hacker uploads a malicious package to a public code library (like npm or PyPI) with a name similar to a popular tool, hoping developers accidentally use it. | **Typosquatting:** Creating a package named `requessts` instead of `requests`. |
 
@@ -39,4 +39,4 @@ Supply chain attacks aren't just one thing; they come in different "flavors" dep
 
 * **Case Study:** *[The SolarWinds Orion Hack](https://www.techtarget.com/whatis/feature/SolarWinds-hack-explained-Everything-you-need-to-know)* (The most famous example).
 * **Concept:** *[Target Data Breach (2013)](https://redriver.com/security/target-data-breach)* (Happened because of a hacked HVAC/Air Conditioning vendor).
-* **Deep Dive:** NIST's *"[Defending Against Software Supply Chain Attacks](https://www.cisa.gov/sites/default/files/publications/defending_against_software_supply_chain_attacks_508.pdf)".*
+* **Deep Dive:** NIST's *"[Defending Against Software Supply Chain Attacks](https://www.[[cisa|cisa]].gov/sites/default/files/publications/defending_against_software_supply_chain_attacks_508.pdf)".*

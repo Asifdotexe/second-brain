@@ -16,7 +16,7 @@ If you want to know if these two variables are mathematically linked, you can't 
 ## Key Features
 
 *   **Continuous vs. Natural Binary:** It specifically pairs a continuous interval/ratio variable with a "naturally" dichotomous variable (e.g., Heads/Tails, Pass/Fail, Dead/Alive).
-*   **Mathematically Identical to Pearson:** Under the hood, the formula used for $r_{pb}$ simplifies down to the exact same math as the Pearson correlation coefficient.
+*   **Mathematically Identical to Pearson:** Under the hood, the formula used for $r_{pb}$ simplifies down to the exact same math as the [[pearson-correlation|Pearson correlation]] coefficient.
 *   **Sign Doesn't Matter:** The resulting score ranges from -1 to 1, but the positive or negative sign is arbitrary based on which group you assigned as "0" and which as "1". The absolute value is what tells you the strength of the relationship.
 
 ## FAQs
@@ -30,4 +30,4 @@ An independent T-Test determines if there's a *significant difference* between t
 ### Further Reading
 
 *   **Related Concept:** *[[rank-biserial-correlation|Rank-Biserial Correlation Coefficient]]* (The nonparametric equivalent used for ranked data instead of continuous data).
-*   **Related Concept:** *[[pearson-correlation|Pearson Correlation Coefficient]]* (The fundamental math driving this variation).
+*   **Related Concept:** *[[pearson-correlation|[[pearson-correlation|Pearson Correlation]] Coefficient]]* (The fundamental math driving this variation).

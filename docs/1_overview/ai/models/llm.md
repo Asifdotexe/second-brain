@@ -30,7 +30,7 @@ The model looks at a sequence of tokens and calculates the *probability* of what
 Modern LLMs go through a rigorous, multi-stage process before they ever talk to a user:
 *   **Pretraining:** The model reads massive amounts of raw internet data (books, websites, articles). Running on thousands of GPUs, it adjusts its internal "settings" (parameters) every time it guesses right or wrong. This creates a "base model" that understands the structure of human language and facts, but it isn't very polite or conversational yet; it just wants to complete sentences.
 *   **[[ai-fine-tuning|Fine-Tuning]]:** Developers take the raw base model and explicitly teach it how to behave gracefully in a specific domain (like coding, or customer support) by feeding it a smaller set of extreme high-quality, human-curated examples.
-*   **[[rlhf|RLHF (Reinforcement Learning from Human Feedback)]]:** To stop the AI from generating toxic or unhelpful answers, humans rank several AI responses from best to worst. A secondary "reward model" learns these human preferences and mathematically forces the main LLM to be safe, polite, and helpful.
+*   **[[rlhf|[[rlhf|RLHF]] (Reinforcement Learning from Human Feedback)]]:** To stop the AI from generating toxic or unhelpful answers, humans rank several AI responses from best to worst. A secondary "reward model" learns these human preferences and mathematically forces the main LLM to be safe, polite, and helpful.
 *   **Inference:** Once the model is deployed to the real world, "inference" is the act of the model reading your prompt and generating a response. During inference, developers can adjust the **Temperature** (lower temperature = more deterministic and focused; higher temperature = more creative and random).
 
 ## Advanced Concepts
@@ -67,6 +67,6 @@ However, in 2024–2026, while "pretraining" scaling continued to work, the indu
 * **[Scaling Laws for Neural Language Models (ArXiv)](https://arxiv.org/abs/2001.08361)** - The foundational paper defining the relationship between model size, dataset size, and performance.
 * **[Understanding AI (Lee Robinson)](https://leerob.com/ai)** - An excellent, easy-to-read primer on the technical lifecycle of neural networks and language models.
 * **[Cloudflare: What is a Large Language Model?](https://www.cloudflare.com/learning/ai/what-is-large-language-model/)** - A solid overview of LLM capabilities and how they process vast datasets.
-* **"[Attention Is All You Need](https://arxiv.org/pdf/1706.03762)"** - The original research paper that introduced the Transformer architecture.
+* **"[Attention Is All You Need](https://arxiv.org/pdf/1706.03762)"** - The original research paper that introduced the [[transformer-architecture|Transformer architecture]].
 * **[Wait But Why: The AI Revolution](https://futureoflife.org/ai/wait-but-why-the-ai-revolution/)** - A long-form, illustrated blog post explaining AI growth.
 * **[The Prompt Engineering Guide](https://www.promptingguide.ai/)** - The most famous community-run guide. Covers everything from basics to advanced logic.

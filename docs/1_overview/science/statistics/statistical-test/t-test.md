@@ -29,5 +29,5 @@ The T-Test gets confused by massive outliers because it relies on averages. If y
 
 ### Further Reading
 
-*   **Related Concept:** *[[anova|ANOVA (Analysis of Variance)]]* (What you use when you need to compare *three* or more groups instead of just two).
+*   **Related Concept:** *[[anova|[[anova|ANOVA]] (Analysis of Variance)]]* (What you use when you need to compare *three* or more groups instead of just two).
 *   **Related Concept:** *[[point-biserial-correlation|Point-Biserial Correlation]]* (Used to measure the exact mathematical strength of the difference found by an independent T-Test).

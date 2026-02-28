@@ -16,12 +16,12 @@ It is a layer of software that sits between the physical hardware (metal) and th
 There are only two main types you need to know:
 
 ### Type 1: Bare Metal (The Heavy Lifter)
-This runs **directly** on the hardware, replacing the operating system (like Windows). It's very fast and efficient.
+This runs **directly** on the hardware, replacing the [[operating-system|operating system]] (like Windows). It's very fast and efficient.
 *   *Analogy:* The building manager lives in the lobby and controls everything directly.
 *   *Examples:* VMware ESXi, Microsoft Hyper-V (Server), KVM.
 
 ### Type 2: Hosted (The App)
-This runs **inside** an operating system, just like a regular app (like Chrome or Spotify). It's easier to use but slower.
+This runs **inside** an [[operating-system|operating system]], just like a regular app (like Chrome or Spotify). It's easier to use but slower.
 *   *Analogy:* You are subletting a room inside someone's existing apartment.
 *   *Examples:* VMware Workstation, Oracle VirtualBox.
 

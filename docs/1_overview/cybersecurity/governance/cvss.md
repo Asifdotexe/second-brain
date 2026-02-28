@@ -23,7 +23,7 @@ When a new security hole (vulnerability) is found, security teams need to know: 
 
 *1. How is the score calculated?*
 It looks at three main things (The "CIA Triad" impact + Exploitability):
-*   **Exploitability:** How easy is it? (Can a kid do it, or do you need a supercomputer?)
+*   **Exploitability:** How easy is it? (Can a kid do it, or do you need a [[supercomputer|supercomputer]]?)
 *   **Impact:** What gets hurt? Confidentiality (secrets stolen), Integrity (data changed), or Availability (system crashes).
 *   **Privileges:** Do you need a login to do it, or can a stranger do it from the internet?
 

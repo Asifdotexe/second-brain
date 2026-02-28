@@ -7,7 +7,7 @@ tags: AI, DeepLearning, NeuralNetworks, ComputerVision
 
 A Convolutional Neural Network is like looking at a massive painting through a tiny magnifying glass, scanning it row by row to find edges, moving backwards to find shapes, and finally zooming all the way out to realize you're looking at a picture of a dog.
 
-**Convolutional Neural Networks (CNNs)** are a highly specialized class of [[artificial-neural-networks|Artificial Neural Networks]] designed specifically to process grid-like data, making them the absolute undisputed kings of Computer Vision and image processing.
+**Convolutional Neural Networks (CNNs)** are a highly specialized class of [[artificial-neural-networks|Artificial Neural Networks]] designed specifically to process grid-like data, making them the absolute undisputed kings of [[computer-vision|Computer Vision]] and image processing.
 
 Imagine feeding a standard neural network a 1000x1000 pixel image. If you flatten that image into a single line, it's 1,000,000 pixels long. A standard network would try to connect every single one of those 1,000,000 pixels to every single neuron in the next layer, resulting in trillions of mathematical connections that would instantly overload the computer. More importantly, flattening the image destroys the spatial relationship (the fact that pixel A is right next to pixel B) which is vital for understanding what the picture actually is.
 
@@ -29,5 +29,5 @@ Partially. In recent years, Vision Transformers (ViTs) have started applying the
 
 ### Further Reading
 
-*   **Core Concept:** *[[artificial-neural-networks|Artificial Neural Networks (ANN)]]* (The foundational technology that CNNs build upon).
-*   **The Challenger:** *[[transformer-architecture|Transformer Architecture]]* (The text-based architecture that recently invaded the computer vision space).
+*   **Core Concept:** *[[artificial-neural-networks|[[artificial-neural-networks|Artificial Neural Networks]] (ANN)]]* (The foundational technology that CNNs build upon).
+*   **The Challenger:** *[[transformer-architecture|Transformer Architecture]]* (The text-based architecture that recently invaded the [[computer-vision|computer vision]] space).

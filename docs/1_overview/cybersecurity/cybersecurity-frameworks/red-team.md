@@ -22,4 +22,4 @@ No. They are employees or contractors hired to attack.
 
 ### Further Reading
 
-*   **Article:** *[Red Team vs Blue Team vs Purple Team](https://www.csoonline.com/article/563806/red-team-vs-blue-team-vs-purple-team-the-roles-in-cybersecurity.html)*
+*   **Article:** *[Red Team vs [[blue-team|Blue Team]] vs Purple Team](https://www.csoonline.com/article/563806/red-team-vs-blue-team-vs-purple-team-the-roles-in-cybersecurity.html)*
