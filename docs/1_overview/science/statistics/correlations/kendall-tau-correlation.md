@@ -11,14 +11,14 @@ Kendall Tau Correlation is like counting how many pairs of people agree on the o
 
 Imagine you asked two different movie critics to rank the best 100 movies of the decade. Instead of looking at their overall lists, Kendall Tau logic compares specific pairs. It looks at Movie A and Movie B, and asks Critic 1: "Did you rank A above B?" Then it asks Critic 2: "Did you rank A above B?" If they both say yes (or both say no), that's a *concordant* (agreeing) pair. If one says yes and the other says no, that's a *discordant* (disagreeing) pair.
 
-Kendall $\tau$ simply calculates the difference between the total number of agreeing pairs and disagreeing pairs, scaling the final answer between -1 (perfect disagreement upside down) and 1 (perfect identical ranking).
+Kendall $\tau$ simply calculates the difference between the total number of agreeing pairs and disagreeing pairs, scaling the final answer between -1 (perfect disagreement upside down) and 1 (perfect identical ranking). Note that the basic version ($\tau$-a) does not correct for ties, while tie-adjusted variants ($\tau$-b or $\tau$-c) include specific mathematical corrections for tied ranks. This documentation refers to a tie-adjusted form, which is why it handles tied data far better.
 
 It is often compared directly to the [[spearman-correlation|Spearman Rank Correlation Coefficient]], as both measure monotonic relationships based on ranks instead of raw continuous data. However, Kendall Tau approaches the math much differently and is generally preferred for smaller datasets or datasets with a massive amount of identical ties.
 
 ## Key Features
 
 *   **Pairs-Based Logic:** Evaluates concordant vs. discordant pairs instead of converting the data points to numeric ranks and mapping them linearly like Spearman does.
-*   **Monotonic Focus:** Like Spearman, it measures whether the relationship is consistently increasing or decreasing, not whether it is a perfectly straight line like [[pearson-correlation|Pearson Correlation]] expects.
+*   **Monotonic Focus:** Like Spearman, it measures whether the relationship is consistently increasing or decreasing, not whether the relationship is perfectly linear; [[pearson-correlation|Pearson Correlation]] measures linear association, with perfect linearity only when |r| = 1.
 *   **Robust to Small Samples:** Because the math is essentially based on probabilities of pairs matching, it is considered more statistically robust and accurate than Spearman when you have a very small data set or a large number of tied ranks.
 
 ## FAQs

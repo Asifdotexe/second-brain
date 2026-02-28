@@ -9,7 +9,7 @@ The Kruskal-Wallis test is like pooling all the students from three different gy
 
 **The Kruskal-Wallis H Test** is a non-parametric statistical test that extends the [[mann-whitney-u|Mann-Whitney U Test]] to determine whether there are statistically significant differences between three or more independent groups.
 
-Imagine you are trying to test the exact same tire fuel efficiency concept used in [[anova|ANOVA]] (Brand X vs. Brand Y vs. Brand Z). However, your MPG data is completely chaotic. There are massive outliers, the data doesn’t form a nice, predictable bell curve, or maybe your data isn't even continuous (e.g., you are just asking people to rank the tires from 1-10 on a satisfaction survey). 
+Imagine you are trying to test the same tire fuel efficiency concept used in [[anova|ANOVA]] (Brand X vs. Brand Y vs. Brand Z). However, your MPG data is completely chaotic. There are massive outliers, the data doesn’t form a nice, predictable bell curve, or maybe your data isn't even continuous (e.g., you are just asking people to rank the tires from 1-10 on a satisfaction survey). 
 
 Because [[anova|ANOVA]] relies heavily on averages, inserting severe outliers or non-numerical rankings ruins its mathematical assumptions. Kruskal-Wallis ignores the raw values altogether and replaces them with **ranks**. It takes every single tire test result across all three brands, sorts them from 1st place to worst place, and then calculates the *average rank* belonging to each specific brand. If Brand X's average rank is significantly higher than Brand Z's, the test flags that at least one group mathematically dominates the others.
 
@@ -25,7 +25,7 @@ Because [[anova|ANOVA]] relies heavily on averages, inserting severe outliers or
 If your data perfectly fits a standard bell curve, [[anova|ANOVA]] is mathematically more powerful and precise because it uses the raw, nuanced numbers rather than stripping them down to blunt ranks. Kruskal-Wallis is the "safe" backup plan.
 
 *2. What happens if I use Kruskal-Wallis on just two groups?*
-If you only have two groups instead of three, the math perfectly collapses down and becomes the exact same thing as a [[mann-whitney-u|Mann-Whitney U Test]].
+If you only have two groups instead of three, the math perfectly collapses down and becomes the same thing as a [[mann-whitney-u|Mann-Whitney U Test]].
 
 ### Further Reading
 
