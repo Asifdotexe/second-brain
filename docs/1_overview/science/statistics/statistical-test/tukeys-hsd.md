@@ -31,5 +31,5 @@ A Bonferroni correction is another way of protecting against false positives by 
 
 ### Further Reading
 
-*   **Related Concept:** *[[anova|[[anova|ANOVA]] (Analysis of Variance)]]* (The required primary test you must run before using Tukey's HSD).
+*   **Related Concept:** *[[anova|ANOVA (Analysis of Variance)]]* (The required primary test you must run before using Tukey's HSD).
 *   **Related Concept:** *[[t-test|T-Test]]* (The basic pairwise comparison tool that Tukey upgrades to prevent false positive inflation).

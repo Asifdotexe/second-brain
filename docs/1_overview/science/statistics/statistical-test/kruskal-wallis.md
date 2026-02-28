@@ -29,5 +29,5 @@ If you only have two groups instead of three, the math perfectly collapses down 
 
 ### Further Reading
 
-*   **Related Concept:** *[[anova|[[anova|ANOVA]] (Analysis of Variance)]]* (The standard parametric version of this test used for continuous, normally distributed data).
+*   **Related Concept:** *[[anova|ANOVA (Analysis of Variance)]]* (The standard parametric version of this test used for continuous, normally distributed data).
 *   **Related Concept:** *[[mann-whitney-u|Mann-Whitney U Test]]* (The exact equivalent of this test when you only have two groups).

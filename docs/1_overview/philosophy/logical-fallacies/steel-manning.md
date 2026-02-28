@@ -7,7 +7,7 @@ tags: Logic, Debate, Philosophy, MentalModels
 
 Ironing out the Truth.
 
-**Steel-Manning** is the opposite of the [[straw-man|[[straw-man|Straw Man]] Fallacy]]. It is the practice of addressing the *strongest possible version* of your opponent's argument, even if they didn't articulate it well themselves.
+**Steel-Manning** is the opposite of the [[straw-man|Straw Man Fallacy]]. It is the practice of addressing the *strongest possible version* of your opponent's argument, even if they didn't articulate it well themselves.
 
 Think of it like **Training with a Heavy Weight**.
 *   **Straw Man:** You fight a weak opponent (a scarecrow) to look strong. You gain nothing.
@@ -26,4 +26,4 @@ Think of it like **Training with a Heavy Weight**.
 
 ### Further Reading
 
-*   **Contra:** *[[straw-man|[[straw-man|Straw Man]] Fallacy]]* (The common, lazy alternative).
+*   **Contra:** *[[straw-man|Straw Man Fallacy]]* (The common, lazy alternative).
