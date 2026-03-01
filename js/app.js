@@ -8,6 +8,7 @@ const contentDisplay = document.getElementById("contentDisplay");
 const sidebar = document.getElementById("sidebar");
 const themeToggle = document.getElementById("themeToggle");
 let currentDocId = null;
+let logsViewMode = localStorage.getItem('logsViewMode') || 'calendar';
 
 // ==========================================
 // 🚀 INITIALIZATION
@@ -374,6 +375,10 @@ function renderBreadcrumbs(path) {
 function renderMarkdown(text) {
   if (!text) return "";
 
+  // 0. Convert Obsidian Links [[Link|Label]] or [[Link]] to standard Markdown Links
+  text = text.replace(/\[\[([^|\]\n]+)\|([^\]\n]+)\]\]/g, (match, target, label) => `[${label}](${encodeURI(target.trim())})`);
+  text = text.replace(/\[\[([^\]\n]+)\]\]/g, (match, target) => `[${target.trim()}](${encodeURI(target.trim())})`);
+
   // 1. Protect Math ($...$ and $$...$$)
   const mathBlocks = [];
   const protectedText = text.replace(/(\$\$[\s\S]*?\$\$|\$[^$\n]+\$)/g, (match) => {
@@ -445,9 +450,9 @@ function loadContent(id) {
     if (viewType === "list") {
       htmlContent += renderList(item);
     } else {
-      // Check if we are in logs root (Year view) -> Render Calendar
+      // Check if we are in logs root (Year view) -> Render Calendar/List Toggle
       if (rootKey === "logs") {
-        htmlContent += renderCalendar(item);
+        htmlContent += renderLogs(item);
       } else {
         htmlContent += renderShelf(item);
       }
@@ -510,6 +515,101 @@ function loadContent(id) {
   window.scrollTo(0, 0);
 }
 
+function renderLogs(item) {
+  // Add global setter function if not already present
+  if (typeof window.toggleLogsView === "undefined") {
+    window.toggleLogsView = function () {
+      logsViewMode = logsViewMode === 'calendar' ? 'list' : 'calendar';
+      localStorage.setItem('logsViewMode', logsViewMode);
+      if (currentDocId) {
+        loadContent(currentDocId);
+      }
+    };
+  }
+
+  let html = `
+        <div class="shelf-header" style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:20px;">
+            <div>
+              <h1 style="margin-bottom:0.5rem">${item.title} Logs</h1>
+              <p style="color:var(--text-secondary)">Select a date to view entries.</p>
+            </div>
+            
+            <div class="view-toggle">
+              <button class="view-toggle-btn ${logsViewMode === 'calendar' ? 'active' : ''}" onclick="if(logsViewMode !== 'calendar') toggleLogsView()" aria-label="Calendar View" title="Calendar View">
+                <i class="fas fa-calendar-alt"></i>
+              </button>
+              <button class="view-toggle-btn ${logsViewMode === 'list' ? 'active' : ''}" onclick="if(logsViewMode !== 'list') toggleLogsView()" aria-label="List View" title="List View">
+                <i class="fas fa-list"></i>
+              </button>
+            </div>
+        </div>
+    `;
+
+  if (logsViewMode === 'list') {
+    html += renderLogList(item);
+  } else {
+    html += renderCalendar(item);
+  }
+
+  return html;
+}
+
+function renderLogList(item) {
+  let html = `<div class="log-list-container">`;
+
+  if (item.children && item.children.length > 0) {
+    // Sort items by date descending
+    const sortedChildren = [...item.children].sort((a, b) => b.id.localeCompare(a.id));
+
+    sortedChildren.forEach((child) => {
+      // Format: YYYY-MM-DD -> Month Day, Year
+      const parts = child.id.split('-');
+      let formattedDate = child.id;
+      if (parts.length === 3) {
+        const year = parseInt(parts[0]);
+        const monthIndex = parseInt(parts[1]) - 1;
+        const day = parseInt(parts[2]);
+        const dateObj = new Date(year, monthIndex, day);
+        const monthName = dateObj.toLocaleString('default', { month: 'long' });
+
+        const getSuffix = (d) => {
+          if (d > 3 && d < 21) return 'th';
+          switch (d % 10) {
+            case 1: return "st";
+            case 2: return "nd";
+            case 3: return "rd";
+            default: return "th";
+          }
+        };
+
+        // Calculate ISO Week Number
+        const currentThursday = new Date(dateObj.getTime() + (3 - ((dateObj.getDay() + 6) % 7)) * 86400000);
+        const yearOfThursday = currentThursday.getFullYear();
+        const firstThursday = new Date(yearOfThursday, 0, 4);
+        firstThursday.setDate(firstThursday.getDate() - ((firstThursday.getDay() + 6) % 7) + 3);
+        const diffMs = currentThursday.getTime() - firstThursday.getTime();
+        const weekNumber = Math.floor(diffMs / 604800000) + 1;
+
+        formattedDate = `${monthName} ${day}${getSuffix(day)}, ${year} - Week ${weekNumber}`;
+      }
+
+      html += `
+          <div class="list-item" data-id="${child.id}">
+              <div class="list-content">
+                <div class="list-title" style="font-size: 1.1rem; font-weight: 600;">${formattedDate}</div>
+              </div>
+              <i class="fas fa-chevron-right list-arrow"></i>
+          </div>
+      `;
+    });
+  } else {
+    html += `<p style="color:var(--text-secondary)">No logs available for this year.</p>`;
+  }
+
+  html += `</div>`;
+  return html;
+}
+
 function renderCalendar(item) {
   const year = parseInt(item.title) || new Date().getFullYear();
   const months = [
@@ -527,10 +627,6 @@ function renderCalendar(item) {
   }
 
   let html = `
-        <div class="shelf-header">
-            <h1 style="margin-bottom:0.5rem">${item.title} Logs</h1>
-            <p style="color:var(--text-secondary)">Select a date to view entries.</p>
-        </div>
         <div class="calendar-year-container">
     `;
 
