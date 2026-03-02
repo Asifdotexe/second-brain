@@ -20,7 +20,7 @@ If society is a sprawling, chaotic classroom, then "God" is often theorized as t
 While this statement aligns with the [[scientific-consensus|scientific consensus]] on the origin of religion, it is important to address the logical boundaries of this debate:
 
 *   **Genetic Fallacy:** To argue that "because we can explain the origin of a belief, the belief itself must be false" is a logical error. Explaining how humans conceptualized gods does not technically disprove the existence of a metaphysical entity; it only proves the human origin of the *concept*.
-*   **The Burden of Proof:** From a rationalist standpoint, the burden of proof lies with the person asserting the existence of a deity. However, it must be noted that "the absence of evidence is not evidence of absence."
+*   **The [[burden-of-proof|Burden of Proof]]:** From a rationalist standpoint, [[burden-of-proof|the burden of proof]] lies with the person asserting the existence of a deity. However, it must be noted that "the absence of evidence is not evidence of absence."
 *   **No-Go Direction:** Reasoning becomes [[circular-reasoning|circular]] when one attempts to use religious texts to prove a deity's existence, or conversely, when one uses the lack of physical evidence to disprove a non-physical claim. These paths lead to unfruitful dead ends.
 
 ## Socratic Inquiry
