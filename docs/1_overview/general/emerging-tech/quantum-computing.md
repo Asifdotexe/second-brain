@@ -34,3 +34,4 @@ We use software like **[[qiskit|IBM Qiskit]]**. It's a Python library that lets 
 
 *   **Video:** *[Quantum Computers Explained (Kurzgesagt)](https://www.youtube.com/watch?v=JhHMJCUmq28)*
 *   **Article:** *[IBM Quantum Experience](https://www.ibm.com/quantum)*
+*   **Deep Dive:** *[[quantum-computing-revolution|The Quantum Computing Revolution]]*

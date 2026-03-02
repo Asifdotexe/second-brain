@@ -68,12 +68,21 @@ def apply_links(docs_dir, concepts, sorted_concepts):
                     # (?<!...) Negative lookbehind: ensure the term is NOT preceded by [, ], (, ), -, word characters, /, `, #, *, or _
                     # (?![...]) Negative lookahead: ensure the term is NOT followed by [, ], (, ), -, word characters, /, `, or _
                     # This safely isolates the term from existing markdown links, URLs, code blocks, or partial words.
-                    pattern = re.compile(rf'(?<![\[\]\(\)\-\w/`#\*_])({escaped_concept})(?![\[\]\(\)\-\w/`_])', re.IGNORECASE)
+                    pattern = re.compile(rf'(\[\[.*?\]\]|\[.*?\]\(.*?\)|\[.*?\])|(?<![\[\]\(\)\-\w/`#\*_])({escaped_concept})(?![\[\]\(\)\-\w/`_])', re.IGNORECASE)
                     
-                    body, count = pattern.subn(replace_func, body)
-                    if count > 0:
-                        print(f"[{file}] Auto-linked '{concept}' -> [[{target_file}]] ({count} times)")
-                        total_mapped += count
+                    actual_replacements = 0
+                    def replace_func(m):
+                        nonlocal actual_replacements
+                        if m.group(1):
+                            return m.group(1)
+                        actual_replacements += 1
+                        original_text = m.group(2)
+                        return f"[[{target_file}|{original_text}]]"
+                    
+                    body = pattern.sub(replace_func, body)
+                    if actual_replacements > 0:
+                        print(f"[{file}] Auto-linked '{concept}' -> [[{target_file}]] ({actual_replacements} times)")
+                        total_mapped += actual_replacements
                 
                 if body != (parts[2] if len(parts)==3 else new_content):
                     with open(filepath, 'w', encoding='utf-8') as f:
