@@ -38,7 +38,7 @@ All of them.
 *   **Induction** to verify it with data.
 
 *2. Which does AI use?*
-Machine Learning is a massive **Induction** engine. It looks at millions of specific cat photos to learn the general rule of "What a cat looks like."
+[[machine-learning|Machine Learning]] is a massive **Induction** engine. It looks at millions of specific cat photos to learn the general rule of "What a cat looks like."
 
 ### Further Reading
 

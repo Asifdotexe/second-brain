@@ -7,7 +7,7 @@ tags: ArtificialIntelligence, MachineLearning, DataRepresentation, VectorDatabas
 
 **Embeddings** are the "language" that AI models use to understand the world.
 
-Machine learning models (like [[llm|LLMs]]) cannot read english text, see pixels in an image, or hear audio waves. They can only process numbers. An embedding is mathematical translation: it transforms a complex, real-world object (like a word, image, or document) into a **vector** (a long list of floating-point numbers).
+[[machine-learning|Machine learning]] models (like [[llm|LLMs]]) cannot read english text, see pixels in an image, or hear audio waves. They can only process numbers. An embedding is mathematical translation: it transforms a complex, real-world object (like a word, image, or document) into a **vector** (a long list of floating-point numbers).
 
 These lists of numbers plot the object on a massive, multi-dimensional map. 
 
