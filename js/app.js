@@ -201,6 +201,9 @@ function renderLandingPage() {
                 <p class="landing-subtitle">
                     A digital garden of thoughts, curated definitions, and evolving ideas.
                 </p>
+                <button id="random-overview-btn" class="random-btn">
+                    <i class="fas fa-random"></i> Random Overview
+                </button>
             </div>
     `;
 
@@ -235,6 +238,65 @@ function renderLandingPage() {
   html += `</div>`;
   contentDisplay.innerHTML = html;
   window.scrollTo(0, 0);
+
+  // Setup random overview button listener
+  setTimeout(() => {
+    const randomBtn = document.getElementById('random-overview-btn');
+    if (randomBtn) {
+      randomBtn.addEventListener('click', () => {
+        openRandomOverview();
+      });
+    }
+  }, 0);
+}
+
+// Open a random overview document seeded by the current date
+function openRandomOverview() {
+  const overviewSection = wikiData['overview'];
+  if (!overviewSection || !overviewSection.items || overviewSection.items.length === 0) return;
+
+  // Flatten overview items
+  let allOverviewItems = [];
+
+  function recurseItems(items) {
+    items.forEach(item => {
+      // If the item has children, it's a folder, so recurse
+      if (item.children && item.children.length > 0) {
+        recurseItems(item.children);
+      } else if (!item.children) {
+        // If it doesn't have children, it's a document
+        allOverviewItems.push(item);
+      }
+    });
+  }
+
+  recurseItems(overviewSection.items);
+
+  if (allOverviewItems.length === 0) return;
+
+  // Use a truly random approach combined with time to allow for a new document every click
+  const now = new Date();
+  const timeSeed = now.getTime(); // Get milliseconds for high variance
+
+  // Create a combined string of date, time, and a random number to hash
+  const seedString = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}-${timeSeed}-${Math.random()}`;
+
+  // Simple hash function for the seed string
+  let hash = 0;
+  for (let i = 0; i < seedString.length; i++) {
+    const char = seedString.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash = hash & hash; // Convert to 32bit integer
+  }
+
+  // Use absolute value to avoid negative index
+  const seed = Math.abs(hash);
+  const randomIndex = seed % allOverviewItems.length;
+
+  const randomItem = allOverviewItems[randomIndex];
+  if (randomItem) {
+    loadContent(randomItem.id);
+  }
 }
 
 // Open the section in sidebar and load its first item
