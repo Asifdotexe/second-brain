@@ -25,7 +25,7 @@ This bias is particularly dangerous in fields like medicine, finance, and forens
 
 ## FAQs
 
-*1. Is it the same as Confirmation Bias?*
+*1. Is it the same as [[confirmation-bias|Confirmation Bias]]?*
 No. [[confirmation-bias|Confirmation Bias]] is seeking out information that supports your current beliefs while ignoring opposing data. Hindsight bias is specifically about altering your *memory of your past beliefs* to match what actually happened.
 
 *2. Does intelligence prevent it?*
