@@ -166,6 +166,21 @@ function init() {
   });
 
   renderSidebar();
+
+  // --- KEYBOARD SHORTCUTS ---
+  document.addEventListener('keydown', (e) => {
+    // Check for Ctrl+K (Windows/Linux) or Cmd+K (Mac) or '/'
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k' || (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA')) {
+      e.preventDefault(); // Prevent default browser search or typing '/'
+      if (window.innerWidth <= 768) {
+        toggleMobileSearch();
+      } else {
+        const searchInput = document.getElementById('desktopSearchInput');
+        if (searchInput) searchInput.focus();
+      }
+    }
+  });
+
   renderLandingPage();
 }
 
@@ -978,12 +993,12 @@ function filterDocs(query) {
   navTree.appendChild(header);
 
   if (fuseResults.length === 0) {
-    const noRes = document.createElement("div");
-    noRes.style.padding = "0 24px";
-    noRes.style.color = "var(--text-secondary)";
-    noRes.style.fontSize = "0.9rem";
-    noRes.innerText = "No matches found.";
-    navTree.appendChild(noRes);
+    navTree.innerHTML = `
+        <div class="empty-state" style="padding: 40px 20px;">
+            <i class="fas fa-ghost empty-state-icon" style="font-size: 2rem;"></i>
+            <div class="empty-state-title" style="font-size: 1rem;">No results found</div>
+            <div class="empty-state-desc" style="font-size: 0.8rem;">Try searching for a different keyword.</div>
+        </div>`;
     return;
   }
 
@@ -1010,11 +1025,21 @@ function toggleMobileSearch() {
   const overlay = document.getElementById("mobileSearchOverlay");
   overlay.classList.toggle("open");
   const input = document.getElementById("mobileSearchInput");
+  const resultsContainer = document.getElementById("mobileSearchResults");
+
   if (overlay.classList.contains("open")) {
     input.focus();
+    if (!input.value.trim()) {
+      resultsContainer.innerHTML = `
+            <div class="empty-state">
+                <i class="fas fa-search empty-state-icon"></i>
+                <div class="empty-state-title">Search Second Brain</div>
+                <div class="empty-state-desc">Find notes, definitions, and concepts instantly. Press '/' anywhere to focus.</div>
+            </div>`;
+    }
   } else {
     input.value = "";
-    document.getElementById("mobileSearchResults").innerHTML = "";
+    resultsContainer.innerHTML = "";
   }
 }
 
@@ -1023,7 +1048,12 @@ function handleMobileSearch(query) {
   const resultsContainer = document.getElementById("mobileSearchResults");
 
   if (term.length < 2) {
-    resultsContainer.innerHTML = "";
+    resultsContainer.innerHTML = `
+        <div class="empty-state">
+            <i class="fas fa-search empty-state-icon"></i>
+            <div class="empty-state-title">Search Second Brain</div>
+            <div class="empty-state-desc">Find notes, definitions, and concepts instantly. Press '/' anywhere to focus.</div>
+        </div>`;
     return;
   }
 
@@ -1033,7 +1063,12 @@ function handleMobileSearch(query) {
   resultsContainer.innerHTML = "";
 
   if (fuseResults.length === 0) {
-    resultsContainer.innerHTML = `<div style="color:var(--text-secondary); padding:10px;">No matches found.</div>`;
+    resultsContainer.innerHTML = `
+        <div class="empty-state" style="padding: 40px 20px;">
+            <i class="fas fa-ghost empty-state-icon"></i>
+            <div class="empty-state-title">No results found</div>
+            <div class="empty-state-desc">Try searching for a different keyword or check your spelling.</div>
+        </div>`;
     return;
   }
 
