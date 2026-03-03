@@ -166,6 +166,21 @@ function init() {
   });
 
   renderSidebar();
+
+  // --- KEYBOARD SHORTCUTS ---
+  document.addEventListener('keydown', (e) => {
+    // Check for Ctrl+K (Windows/Linux) or Cmd+K (Mac) or '/'
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k' || (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA')) {
+      e.preventDefault(); // Prevent default browser search or typing '/'
+      if (window.innerWidth <= 768) {
+        toggleMobileSearch();
+      } else {
+        const searchInput = document.getElementById('desktopSearchInput');
+        if (searchInput) searchInput.focus();
+      }
+    }
+  });
+
   renderLandingPage();
 }
 
@@ -186,6 +201,9 @@ function renderLandingPage() {
                 <p class="landing-subtitle">
                     A digital garden of thoughts, curated definitions, and evolving ideas.
                 </p>
+                <button id="random-overview-btn" class="random-btn">
+                    <i class="fas fa-random"></i> Random Overview
+                </button>
             </div>
     `;
 
@@ -220,6 +238,65 @@ function renderLandingPage() {
   html += `</div>`;
   contentDisplay.innerHTML = html;
   window.scrollTo(0, 0);
+
+  // Setup random overview button listener
+  setTimeout(() => {
+    const randomBtn = document.getElementById('random-overview-btn');
+    if (randomBtn) {
+      randomBtn.addEventListener('click', () => {
+        openRandomOverview();
+      });
+    }
+  }, 0);
+}
+
+// Open a random overview document seeded by the current date
+function openRandomOverview() {
+  const overviewSection = wikiData['overview'];
+  if (!overviewSection || !overviewSection.items || overviewSection.items.length === 0) return;
+
+  // Flatten overview items
+  let allOverviewItems = [];
+
+  function recurseItems(items) {
+    items.forEach(item => {
+      // If the item has children, it's a folder, so recurse
+      if (item.children && item.children.length > 0) {
+        recurseItems(item.children);
+      } else if (!item.children) {
+        // If it doesn't have children, it's a document
+        allOverviewItems.push(item);
+      }
+    });
+  }
+
+  recurseItems(overviewSection.items);
+
+  if (allOverviewItems.length === 0) return;
+
+  // Use a truly random approach combined with time to allow for a new document every click
+  const now = new Date();
+  const timeSeed = now.getTime(); // Get milliseconds for high variance
+
+  // Create a combined string of date, time, and a random number to hash
+  const seedString = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}-${timeSeed}-${Math.random()}`;
+
+  // Simple hash function for the seed string
+  let hash = 0;
+  for (let i = 0; i < seedString.length; i++) {
+    const char = seedString.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash = hash & hash; // Convert to 32bit integer
+  }
+
+  // Use absolute value to avoid negative index
+  const seed = Math.abs(hash);
+  const randomIndex = seed % allOverviewItems.length;
+
+  const randomItem = allOverviewItems[randomIndex];
+  if (randomItem) {
+    loadContent(randomItem.id);
+  }
 }
 
 // Open the section in sidebar and load its first item
@@ -978,12 +1055,12 @@ function filterDocs(query) {
   navTree.appendChild(header);
 
   if (fuseResults.length === 0) {
-    const noRes = document.createElement("div");
-    noRes.style.padding = "0 24px";
-    noRes.style.color = "var(--text-secondary)";
-    noRes.style.fontSize = "0.9rem";
-    noRes.innerText = "No matches found.";
-    navTree.appendChild(noRes);
+    navTree.innerHTML = `
+        <div class="empty-state" style="padding: 40px 20px;">
+            <i class="fas fa-ghost empty-state-icon" style="font-size: 2rem;"></i>
+            <div class="empty-state-title" style="font-size: 1rem;">No results found</div>
+            <div class="empty-state-desc" style="font-size: 0.8rem;">Try searching for a different keyword.</div>
+        </div>`;
     return;
   }
 
@@ -1010,11 +1087,21 @@ function toggleMobileSearch() {
   const overlay = document.getElementById("mobileSearchOverlay");
   overlay.classList.toggle("open");
   const input = document.getElementById("mobileSearchInput");
+  const resultsContainer = document.getElementById("mobileSearchResults");
+
   if (overlay.classList.contains("open")) {
     input.focus();
+    if (!input.value.trim()) {
+      resultsContainer.innerHTML = `
+            <div class="empty-state">
+                <i class="fas fa-search empty-state-icon"></i>
+                <div class="empty-state-title">Search Second Brain</div>
+                <div class="empty-state-desc">Find notes, definitions, and concepts instantly. Press '/' anywhere to focus.</div>
+            </div>`;
+    }
   } else {
     input.value = "";
-    document.getElementById("mobileSearchResults").innerHTML = "";
+    resultsContainer.innerHTML = "";
   }
 }
 
@@ -1023,7 +1110,12 @@ function handleMobileSearch(query) {
   const resultsContainer = document.getElementById("mobileSearchResults");
 
   if (term.length < 2) {
-    resultsContainer.innerHTML = "";
+    resultsContainer.innerHTML = `
+        <div class="empty-state">
+            <i class="fas fa-search empty-state-icon"></i>
+            <div class="empty-state-title">Search Second Brain</div>
+            <div class="empty-state-desc">Find notes, definitions, and concepts instantly. Press '/' anywhere to focus.</div>
+        </div>`;
     return;
   }
 
@@ -1033,7 +1125,12 @@ function handleMobileSearch(query) {
   resultsContainer.innerHTML = "";
 
   if (fuseResults.length === 0) {
-    resultsContainer.innerHTML = `<div style="color:var(--text-secondary); padding:10px;">No matches found.</div>`;
+    resultsContainer.innerHTML = `
+        <div class="empty-state" style="padding: 40px 20px;">
+            <i class="fas fa-ghost empty-state-icon"></i>
+            <div class="empty-state-title">No results found</div>
+            <div class="empty-state-desc">Try searching for a different keyword or check your spelling.</div>
+        </div>`;
     return;
   }
 
