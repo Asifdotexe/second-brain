@@ -64,6 +64,7 @@ However, in recent years, while "pretraining" scaling continued to work, the ind
 
 ## Further Reading
 
+* **[[cognitive-debt|Cognitive Debt]]** - The psychological phenomenon where over-reliance on LLMs degrades human critical thinking abilities.
 * **[Scaling Laws for Neural Language Models (ArXiv)](https://arxiv.org/abs/2001.08361)** - The foundational paper defining the relationship between model size, dataset size, and performance.
 * **[Understanding AI (Lee Robinson)](https://leerob.com/ai)** - An excellent, easy-to-read primer on the technical lifecycle of neural networks and language models.
 * **[IBM: What Are Large Language Models (LLMs)?](https://www.ibm.com/topics/large-language-models)** - A solid overview of LLM capabilities and how they process vast datasets.
