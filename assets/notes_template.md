@@ -40,3 +40,4 @@ tags: [CamleCaseTag1], [CamleCaseTag2]
 ### Further Reading
 
 *   **[Type]:** *[Title of resource](Link)* (Short description of why it's good).
+*   **[Type]** *[Title of resource](Link)* These should be actual blog of external resources for further reading
