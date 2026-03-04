@@ -7,7 +7,7 @@ tags: Malware, Worm, CyberSecurityHistory
 
 The Morris Worm is like a census worker who knocks on every door in a neighborhood, but due to a misunderstanding, he ends up knocking on the same doors thousands of times until the entire street is in gridlock.
 
-**Morris Worm** is one of the first computer worms distributed via the early internet in 1988, which self-replicated and accidentally crippled thousands of computers.
+**Morris Worm** is one of the first computer [[worms|worms]] distributed via the early internet in 1988, which self-replicated and accidentally crippled thousands of computers.
 
 Created by university student Robert Tappan Morris to gauge the size of the internet (ARPANET), the program had a fatal mathematical flaw. Rather than just checking into a machine and moving on, it kept checking in. 
 
@@ -25,7 +25,7 @@ Imagine our aggressive census worker who refuses to believe you've already answe
 It wasn't meant to be destructive. The creator originally intended it as an intellectual experiment to measure how vast the internet was at the time.
 
 *2. Why is the Morris Worm so famous?*
-It was the first major malware to garner widespread media attention, affecting about 10% of the internet at the time. It completely changed how the world viewed cybersecurity and led to the first criminal conviction for computer fraud in the US.
+It was the first major [[malware|malware]] to garner widespread media attention, affecting about 10% of the internet at the time. It completely changed how the world viewed cybersecurity and led to the first criminal conviction for computer fraud in the US.
 
 ### Further Reading
 

@@ -12,7 +12,7 @@ Crucially, it does **not** need a host file (like a [[virus]]) and does **not** 
 
 It scans the network, finds a vulnerability, and copies itself over.
 
-## The Morris Worm (1988)
+## The [[morris-worm|Morris Worm]] (1988)
 
 The first internet worm. Robert Morris wrote it to gauge the size of the internet. A coding error made it replicate too fast, crashing 10% of the entire internet in days.
 
