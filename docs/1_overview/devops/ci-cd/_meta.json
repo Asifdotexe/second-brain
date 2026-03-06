@@ -1,0 +1,6 @@
+{
+    "title": "CI/CD & Automation",
+    "icon": "fas fa-sync",
+    "desc": "Continuous Integration, Delivery, and Deployment pipelines",
+    "view": "list"
+}
