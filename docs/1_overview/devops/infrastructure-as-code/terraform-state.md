@@ -23,7 +23,7 @@ When you write Terraform code and run `terraform apply`, Terraform creates the r
 It is a massive headache. If Terraform loses its State file, it completely "forgets" that it built your infrastructure. If you run `terraform apply` again, it will try to re-create everything from scratch, which will likely cause errors because the items already exist in the cloud.
 
 *2. Where should I store the State file?*
-If you are working alone, it sits on your laptop. But if you work on a team, you *must* use "Remote State." This means storing the `.tfstate` file in a secure, central location (like an AWS S3 bucket) so every engineer's laptop reads and writes to the exact same inventory ledger.
+If you are working alone, it sits on your laptop. But if you work on a team, you *must* use a remote backend (for example an AWS S3 bucket combined with DynamoDB for state locking) and enable bucket versioning. This ensures every engineer's laptop safely reads and writes to the exact same inventory ledger without overlapping or corrupting the state file, and allows for recovery if the state is accidentally destroyed.
 
 ### Further Reading
 

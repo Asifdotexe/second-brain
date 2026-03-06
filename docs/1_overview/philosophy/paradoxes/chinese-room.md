@@ -27,4 +27,4 @@ For **utility** (using ChatGPT to write email), no. For **ethics** (does ChatGPT
 
 ### Further Reading
 
-*   **Article:** *[Minds, Brains, and Programs](https://Behavioral-and-Brain-Sciences.org)* by John Searle (The original 1980 paper).
+*   **Article:** *[Minds, Brains, and Programs](https://home.csulb.edu/~cwallis/382/readings/482/searle.minds.brains.programs.bbs.1980.pdf)* by John Searle (The original 1980 paper).

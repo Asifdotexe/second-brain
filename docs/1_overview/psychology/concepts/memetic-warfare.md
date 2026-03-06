@@ -5,17 +5,15 @@ tags: InformationWarfare, Psychology, Propaganda, SocialMedia
 
 # Memetic Warfare
 
-Memetic warfare is like an intellectual [[virus|virus]] wrapped in a joke; it makes you laugh so you lower your mental defenses, allowing a hidden political agenda to infect your beliefs without you noticing.
+**Memetic Warfare** refers to the coordinated use of internet memes to influence public opinion and narratives. It is a modern form of information and psychological warfare that employs the spread of memes across social media platforms to manipulate society.
 
-**Memetic Warfare** is a modern form of information and psychological warfare that employs the spread of Internet memes across social media platforms to influence public opinion, control narratives, and manipulate society.
+According to researchers at Nottingham Trent University (NTU) and NATO's Strategic Communications Centre of Excellence, it represents a competition over narrative and social control in the digital battlefield. Instead of attacking computer networks, it targets human psychology. They describe it as being like an intellectual [[virus|virus]] wrapped in a joke; it makes you laugh so you may lower your mental defenses, allowing a hidden political agenda to influence your beliefs.
 
-Coined as a "digital native" version of psychological operations, memetic warfare leverages the viral nature, low cost, and high emotional resonance of memes. According to researchers at Nottingham Trent University (NTU) and NATO's Strategic Communications Centre of Excellence, it represents a competition over narrative and social control in the digital battlefield. Instead of attacking computer networks, it targets human psychology. 
-
-Because memes are visually simple and often humorous, they effectively operate under the radar of our critical scrutiny. When state actors, "troll farms," or extremist organizations seed these weaponized memes into social networks, the "snowball effect" takes over, and ordinary people unwittingly become carriers of the propaganda, spreading the ideas further until radical, false, or hostile concepts become normalized.
+Because memes are visually simple and often humorous, researchers suggest they can operate under the radar of our critical scrutiny. When state actors, "troll farms," or extremist organizations seed these weaponized memes into social networks, a "snowball effect" has been observed, where ordinary people may unwittingly become carriers of the propaganda, spreading the ideas further until radical, false, or hostile concepts become normalized.
 
 ## How Memes Are Used in Conflict
 
- según NTU Research and historical examples:
+According to NTU Research and historical examples:
 
 *   **Shaping Public Narratives:** Memes simplify complex political realities, appealing to emotion (like outrage or validation) to persuade audiences or manipulate opinion.
 *   **Normalizing Aggression:** Repeated exposure to aggressive or hostile memes can make once-unacceptable ideas feel familiar, embedding manipulation into widely circulating content.

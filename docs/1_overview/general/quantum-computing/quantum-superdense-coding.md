@@ -7,7 +7,7 @@ tags: Physics, Quantum, Emerging Tech, Communication
 
 Quantum Superdense Coding is like two spies who each hold half of a magically connected coin. If a spy wants to send two secret messages at once, they don't need to mail two letters; they just flip their half of the coin in a specific way and mail it. The receiver looks at the single coin they received, compares it to their half, and instantly understands both hidden messages.
 
-**Quantum Superdense Coding** is a quantum communication protocol that allows a sender to transmit two classical bits of information (like `00`, `01`, `10`, or `11`) by sending only a single [[quantum-computing-revolution|qubit]]. 
+**Quantum Superdense Coding** is a quantum communication protocol that allows a sender to transmit two classical bits of information (like `00`, `01`, `10`, or `11`) by sending only a single [[qubits|qubit]]. 
 
 In classical computing, the absolute limit of data transfer is 1-to-1: if you want to send two bits of information over a wire, you must send two distinct electrical signals. Superdense coding shatters this physical limitation by relying on a phenomenon called **Quantum Entanglement** (where two particles become inextricably linked across space, famously dubbed "spooky action at a distance" by Einstein).
 

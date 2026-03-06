@@ -23,7 +23,7 @@ Because an image is immutable (it cannot be changed once created), you are guara
 If the Image is the written recipe, the [[docker-container|Container]] is the physical cake you baked from that recipe. You can bake (spin up) as many identical cakes (containers) as you want from a single recipe (Image).
 
 *2. How big is a Docker Image?*
-It depends on what is inside it. A basic " Alpine Linux " OS layer might be only 5 Megabytes, whereas a complex image bundled with massive machine learning libraries might be several Gigabytes.
+It depends on what is inside it. A basic "Alpine Linux" OS layer might be only 5 Megabytes, whereas a complex image bundled with massive machine learning libraries might be several Gigabytes.
 
 ### Further Reading
 

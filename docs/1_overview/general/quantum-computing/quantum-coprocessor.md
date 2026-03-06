@@ -17,7 +17,7 @@ Currently, because we live in the [[nisq|NISQ]] era of noisy, fragile hardware, 
 
 1.  **Classical Setup:** A classical [[supercomputer|supercomputer]] formulates a problem (e.g., finding the optimal molecular structure for a new battery). 
 2.  **The Handoff:** The classical machine encounters a specific calculation where the variables grow exponentially—a roadblock that would take it 1,000 years to solve. It bundles this specific calculation and sends it to the Quantum Coprocessor via the cloud.
-3.  **Quantum Supremacy:** The QPU uses superposition and entanglement to explore all possible variables simultaneously. It collapses the probabilities, finds the optimal answer in a few seconds, and sends that single answer back.
+3.  **Quantum Supremacy:** The QPU uses superposition and entanglement to explore many possibilities simultaneously. It typically returns probabilistic samples that require classical post-processing and verification before an optimal answer is selected.
 4.  **Classical Finish:** The classical computer receives the answer and finishes constructing the battery model.
 
 ## Synergistic Use Cases

@@ -23,7 +23,7 @@ Think of it like **The Speeding Ticket**.
 ## FAQs
 
 *1. Is it a fallacy?*
-Yes, because it is a *Red Herring*. It changes the subject. It doesn't prove innocence; it just proves shared guilt.
+Yes, because it is a [[red-herring|Red Herring]]. It changes the subject. It doesn't prove innocence; it just proves shared guilt.
 
 *2. Why is it effective?*
 It appeals to our sense of fairness. We hate hypocrisy. But hypocrisy doesn't change facts.

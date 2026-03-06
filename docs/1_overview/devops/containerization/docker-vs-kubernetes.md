@@ -24,7 +24,7 @@ When a developer sets up local software on their laptop, they use Docker to buil
 Absolutely. For local development, small side projects, or simple websites, Docker by itself (or paired with Docker Compose) is more than enough. Kubernetes adds significant complexity and overhead, so it's usually reserved for larger, production-scale applications.
 
 *2. Can I use Kubernetes without Docker?*
-Yes, but you still need *some* kind of container. Kubernetes is an orchestrator, so it needs a "Container Runtime" to actually run the apps. While Docker was historically the default, K8s now heavily supports alternatives like `containerd` and `CRI-O`. You still build the images using Docker, but the cluster might use a different engine to run them.
+Yes, but you still need *some* kind of container. Kubernetes is an orchestrator, so it needs a "Container Runtime" to actually run the apps. While Docker was historically the default, K8s now heavily supports alternatives like `containerd` and `CRI-O`. Kubernetes simply requires OCI-compatible images, which can be built using alternatives such as Podman, Buildah, Kaniko, or cloud-native builders, meaning Docker is not mandatory.
 
 ### Further Reading
 
