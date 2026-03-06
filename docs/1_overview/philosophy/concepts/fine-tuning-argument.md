@@ -21,7 +21,7 @@ Before addressing the physics, the premise itself suffers from several logical s
 
 ## Evidence-Based Counters
 
-To contest this argument—or demonstrate it is not a logical necessity; modern theoretical physics and cosmology provide several alternative models:
+To contest this argument or demonstrate it is not a logical necessity; modern theoretical physics and cosmology provide several alternative models:
 
 *   **The Multiverse Hypothesis:** Data from the Planck Satellite regarding the Cosmic Microwave Background (CMB) supports the theory of Inflation. Models like Eternal Inflation suggest our universe is just one "bubble" in a vastly larger multiverse. If there are infinite universes with different physical constants, it is statistically certain that at least one will have the "correct" values for life without requiring a creator, purely through a massive sample size.
 *   **Functional Redundancy:** The claim that constants "cannot change" is challenged by computer modeling. Calculations have demonstrated that stars can still form and undergo fusion even if gravity or the weak nuclear force were altered by orders of magnitude, provided other constants were adjusted in tandem. The universe is more robust than the "fragile" [[ai-fine-tuning|fine-tuning]] argument suggests.

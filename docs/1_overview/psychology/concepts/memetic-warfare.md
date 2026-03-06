@@ -11,7 +11,7 @@ Memetic warfare is like an intellectual [[virus|virus]] wrapped in a joke; it ma
 
 Coined as a "digital native" version of psychological operations, memetic warfare leverages the viral nature, low cost, and high emotional resonance of memes. According to researchers at Nottingham Trent University (NTU) and NATO's Strategic Communications Centre of Excellence, it represents a competition over narrative and social control in the digital battlefield. Instead of attacking computer networks, it targets human psychology. 
 
-Because memes are visually simple and often humorous, they effectively operate under the radar of our critical scrutiny. When state actors, "troll farms," or extremist organizations seed these weaponized memes into social networks, the "snowball effect" takes over—ordinary people unwittingly become carriers of the propaganda, spreading the ideas further until radical, false, or hostile concepts become normalized.
+Because memes are visually simple and often humorous, they effectively operate under the radar of our critical scrutiny. When state actors, "troll farms," or extremist organizations seed these weaponized memes into social networks, the "snowball effect" takes over, and ordinary people unwittingly become carriers of the propaganda, spreading the ideas further until radical, false, or hostile concepts become normalized.
 
 ## How Memes Are Used in Conflict
 
