@@ -22,8 +22,8 @@ Docker solves this by packaging the application *and* everything it needs to run
 
 ## FAQs
 
-*1. Is a Docker container the same as a Virtual Machine (VM)?*
-No. A Virtual Machine simulates an entire physical computer, including running a full, heavy [[operating-system|Operating System]] (like Windows or Linux) on top of the host. Docker containers are much lighter because they share the host computer's operating system kernel. They only package what the app needs, making them start up in seconds rather than minutes.
+*1. Is a [[docker-container|Docker container]] the same as a Virtual Machine (VM)?*
+No. A Virtual Machine simulates an entire physical computer, including running a full, heavy [[operating-system|Operating System]] (like Windows or Linux) on top of the host. Docker containers are much lighter because they share the host computer's [[operating-system|operating system]] kernel. They only package what the app needs, making them start up in seconds rather than minutes.
 
 *2. Why do I need Docker if my code works fine locally?*
 Because eventually, your code has to leave your local machine. Docker ensures that when you deploy to the cloud, or hand the project to a coworker, they don't have to spend three hours installing dependencies and debugging configuration errors.
