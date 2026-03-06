@@ -1,0 +1,6 @@
+{
+  "title": "Containerization",
+  "icon": "fas fa-box",
+  "desc": "Docker, Kubernetes, and Container Orchestration",
+  "view": "list"
+}
