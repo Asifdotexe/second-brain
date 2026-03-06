@@ -9,7 +9,7 @@ If a classical computer navigates a maze by trying every single path one by one 
 
 **[[quantum-computing|Quantum Computing]]** represents a fundamental transition from classical bits (which can only be a 0 or a 1) to **qubits** (which leverage quantum mechanics to exist in a state of superposition and entanglement). This allows quantum systems to solve specific computational problems that are entirely intractable (NP-hard) for classical systems.
 
-While the field is currently in the NISQ (Noisy Intermediate-Scale Quantum) era, both theoretical proofs and empirical data strongly support the assertion that [[quantum-computing|quantum computing]] is a revolutionary threshold, not just an iterative speed upgrade.
+While the field is currently in the [[nisq|NISQ (Noisy Intermediate-Scale Quantum)]] era, both theoretical proofs and empirical data strongly support the assertion that [[quantum-computing|quantum computing]] is a revolutionary threshold, not just an iterative speed upgrade.
 
 ## The Case for Quantum Revolution
 
