@@ -36,13 +36,13 @@ Starting with $S$, we can repeatedly apply the first rule:
 
 When we eventually apply the second rule ($S \rightarrow \varepsilon$), the variable $S$ vanishes. Our final product is the string `000111`. 
 
-Because of these rules, this specific CFG generates the language of "all strings consisting of some number of zeroes, followed by the exact same number of ones" (mathematically written as $0^n1^n$).
+Because of these rules, this specific CFG generates the language of "all strings consisting of some number of zeroes, followed by the same number of ones" (mathematically written as $0^n1^n$).
 
 ## The Limits of Finite Automata
 
 CFGs are incredibly crucial because they represent a step up in computational power from basic Regular Expressions and Finite State Machines (like basic regex searching). 
 
-A standard Finite Automata (a computer with no memory) can easily recognize a string like "010101". However, a Finite Automata is mathematically incapable of recognizing the language $0^n1^n$, because it cannot "count" how many zeros it has seen in order to verify the number of ones formatting. 
+A standard Finite Automata (a computer with no memory) can easily recognize a string like "010101". However, a Finite Automata is mathematically incapable of recognizing the language $0^n1^n$, because it cannot "count" how many zeros it has seen to verify the number of ones. 
 
 A CFG *can* generate this language, proving that the class of Context-Free Languages is strictly larger and more powerful than the class of Regular Languages.
 

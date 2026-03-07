@@ -17,7 +17,7 @@ The lemma states that if a language $A$ is truly context-free, then there exists
 
 If the language is truly a CFL, you can take the $v$ and $y$ pieces and "pump" them (duplicate them in place) zero times, one time, or a billion times, and the resulting massive string will *always* still belong to language $A$. 
 
-Mathematically: *For any $i \ge 0$, the string $uv^ixy^iz$ is in $A$.*
+Mathematically: *For any $i \ge 0$, the string $uv^ixy^iz$ is in $A$.* Additionally, the middle three pieces are bounded by the pumping length ($|vxy| \le p$), and at least one of $v$ or $y$ must be non-empty ($|vy| > 0$).
 
 ## Proving a Language is NOT Context-Free
 

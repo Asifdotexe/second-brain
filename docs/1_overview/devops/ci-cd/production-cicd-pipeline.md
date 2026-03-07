@@ -18,7 +18,7 @@ Based on standard industry architecture, a piece of code generally travels throu
 1.  **Version Control (The Blueprint):** A developer finishes their code and submits a "Pull Request" (PR) to merge it into the main repository (like GitHub).
 2.  **Continuous Integration (The Assembly Line):** Tools like **GitHub Actions** detect the new code and trigger the pipeline.
 3.  **Quality Gate (The Inspector):** The code passes through static analysis tools like **SonarQube**, which automatically scan for bugs, security vulnerabilities, and messy code. If it fails, the assembly line stops here.
-4.  **Artifact Creation (The Packaging):** If the code is good, it is packaged into an isolated [[docker-image|Docker Image]] and pushed to a registry (like Docker Hub) so it can be deployed anywhere.
+4.  **Artifact Creation (The Packaging):** If the code is good, it is packaged into an isolated [[docker-image|Docker image]] and pushed to a registry (like Docker Hub) so it can be deployed anywhere.
 5.  **Staging Environment (The Test Track):** The [[docker-image|Docker image]] is deployed to a safe, internal testing environment that mimics production exactly.
 6.  **Continuous Deployment (The Showroom):** The code is finally sent to the live [[kubernetes-overview|Kubernetes Cluster]].
 7.  **Canary Rollout (The Test Drivers):** Instead of giving the new update to everyone instantly, tools like **Argo Rollouts** perform a "Canary Deployment." It routes just **10%** of live traffic to the new version (v2) while keeping **90%** on the stable older version (v1). Crucially, utilizing its AnalysisRun feature, Argo Rollouts automatically evaluates metrics to control progression or abort the rollout.
@@ -34,4 +34,4 @@ Each tool specializes in one step of the "assembly line." SonarQube is great at 
 
 ### Further Reading
 
-*   **Video Overview:** *[CI/CD Pipeline in 60 Seconds](https://www.instagram.com/reels/DVJmrdCknbg/)* (A rapid white-board breakdown of how code travels from GitHub to Kubernetes users).
+*   **Video Overview:** *[CI/CD Pipeline in 60 Seconds](https://www.youtube.com/watch?v=scEDHsr3APg)* (A reputable YouTube breakdown of how code travels from GitHub to Kubernetes users).

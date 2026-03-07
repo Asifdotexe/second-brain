@@ -19,7 +19,7 @@ This addition of a stack gives the PDA a form of unlimited, yet highly restricte
 
 ### Why is Memory Important?
 
-Recall the classic language $0^n1^n$ (a string composed of some amount of zeros, followed by the *exact same amount* of ones). A standard, memory-less Finite Automata cannot read this string, because it cannot "count" or remember how many zeros it passed before it reached the ones.
+Recall the classic language $0^n1^n$ (a string composed of some amount of zeros, followed by the *same number* of ones). A standard, memory-less Finite Automata cannot read this string, because it cannot "count" or remember how many zeros it passed before it reached the ones.
 
 A Pushdown Automaton solves this easily:
 1.  As it reads the $0$s from the input tape, it **pushes** a placeholder symbol (like `$`) onto the stack for every $0$ it sees.

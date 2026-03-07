@@ -24,8 +24,8 @@ In a serverless model (like **AWS Lambda**), you don't build a massive applicati
 
 **Why Developers Love It:**
 *   **Zero Operations:** The cloud provider handles all [[operating-system|operating system]] updates, security patches, and capacity planning. 
-*   **Infinite Scaling:** If 10,000 users upload photos at the exact same second, AWS instantly spins up 10,000 isolated Lambdas to handle it, and then scales them all back to zero a second later. 
-*   **Cost:** If nobody uses the app, the cost is literally $0.00.
+*   **Infinite Scaling:** Automatic scaling within platform limits (subject to constraints like concurrency quotas, cold-starts, API gateways, and backend storage). If 10,000 users upload photos at the exact same second, AWS instantly spins up isolated Lambdas to handle it, and then scales them all back to zero a second later. 
+*   **Cost:** Near-zero compute cost when idle (platform, storage, logging, and minimum service fees may still apply).
 
 **Why It Is Difficult:**
 *   **Cold Starts:** If a function hasn't been used in a while, it takes the cloud provider a second or two to fetch the code and spin up the environment (a "cold start"), which can cause noticeable lag for the user. 

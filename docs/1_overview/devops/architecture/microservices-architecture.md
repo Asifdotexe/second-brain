@@ -13,7 +13,7 @@ Each "microservice" runs its own unique process and communicates with the others
 
 ## The Microservice Solution
 
-When a [[monolithic-architecture|Monolith]] grows too large and unwieldy, engineers "decouple" the codebase. For an e-commerce site, this means moving the "Shopping Cart" code, the "User Profile" code, and the "Product Search" code into completely separate repositories. 
+When a [[monolithic-architecture|Monolith]] grows too large and unwieldy, engineers "decouple" the codebase. For an e-commerce site, this means creating separate services such as Shopping Cart, User Profile, and Product Search with independent deployment and ownership. 
 
 *   **Isolated Failures:** Because the "Shopping Cart" is now its own isolated mini-program, if a developer writes bad code that crashes the Cart, the rest of the website (Search, User Profiles) stays perfectly online. 
 *   **Independent Deployments:** The Shopping Cart team can update their code 50 times a day without having to wait for the rest of the massive application to compile.

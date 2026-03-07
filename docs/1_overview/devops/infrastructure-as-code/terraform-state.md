@@ -14,7 +14,7 @@ When you write Terraform code and run `terraform apply`, Terraform creates the r
 ## Why State is Critical
 
 *   **Mapping:** Your code might just say "Create a server named Web1." The State file remembers the exact complex Amazon ID (e.g., `i-0123456789abcdef0`) that corresponds to "Web1". Without the state, Terraform wouldn't know which specific server to modify later.
-*   **Performance:** Instead of asking AWS "Hey, what do you have running?" every single time (which takes forever for massive infrastructures), Terraform can quickly consult the State file to build its execution plan.
+*   **Performance:** Terraform uses the State file as a performance optimization to quickly build its execution plan. Note that by default, terraform plan and apply perform an implicit refresh of remote resources to detect drift, so Terraform still verifies actual infrastructure during these operations.
 *   **Destruction:** If you delete a line of code for a server, Terraform knows it must destroy that server in reality. It knows *which* server to destroy because the State file maps the deleted code to the real-world ID.
 
 ## FAQs
@@ -23,7 +23,7 @@ When you write Terraform code and run `terraform apply`, Terraform creates the r
 It is a massive headache. If Terraform loses its State file, it completely "forgets" that it built your infrastructure. If you run `terraform apply` again, it will try to re-create everything from scratch, which will likely cause errors because the items already exist in the cloud.
 
 *2. Where should I store the State file?*
-If you are working alone, it sits on your laptop. But if you work on a team, you *must* use a remote backend (for example an AWS S3 bucket combined with DynamoDB for state locking) and enable bucket versioning. This ensures every engineer's laptop safely reads and writes to the exact same inventory ledger without overlapping or corrupting the state file, and allows for recovery if the state is accidentally destroyed.
+If you are working alone, it sits on your laptop. But if you work on a team, you *must* use a remote backend (for example an AWS S3 bucket using the backend option `use_lockfile = true` for state locking, though older setups may combine S3 with DynamoDB) and enable bucket versioning. This ensures every engineer's laptop safely reads and writes to the exact same inventory ledger without overlapping or corrupting the state file, and allows for recovery if the state is accidentally destroyed.
 
 ### Further Reading
 
