@@ -7,7 +7,8 @@ const categoryColors = {
   insurance: "#ffa502",
   philosophy: "#a55eea",
   psychology: "#2ed573",
-  science: "#eccc68"
+  science: "#eccc68",
+  devops: "#38a89b"
 };
 
 function toggleGraphView() {

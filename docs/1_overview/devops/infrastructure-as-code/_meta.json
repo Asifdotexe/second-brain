@@ -1,0 +1,6 @@
+{
+    "title": "Infrastructure as Code",
+    "icon": "fas fa-code",
+    "desc": "Automating infrastructure provisioning with code",
+    "view": "list"
+}

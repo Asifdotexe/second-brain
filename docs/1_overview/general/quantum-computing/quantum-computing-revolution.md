@@ -9,7 +9,7 @@ If a classical computer navigates a maze by trying every single path one by one 
 
 **[[quantum-computing|Quantum Computing]]** represents a fundamental transition from classical bits (which can only be a 0 or a 1) to **qubits** (which leverage quantum mechanics to exist in a state of superposition and entanglement). This allows quantum systems to solve specific computational problems that are entirely intractable (NP-hard) for classical systems.
 
-While the field is currently in the NISQ (Noisy Intermediate-Scale Quantum) era, both theoretical proofs and empirical data strongly support the assertion that [[quantum-computing|quantum computing]] is a revolutionary threshold, not just an iterative speed upgrade.
+While the field is currently in the [[nisq|NISQ (Noisy Intermediate-Scale Quantum)]] era, both theoretical proofs and empirical data strongly support the assertion that [[quantum-computing|quantum computing]] is a revolutionary threshold, not just an iterative speed upgrade.
 
 ## The Case for Quantum Revolution
 
@@ -21,7 +21,7 @@ Classical [[rsa|RSA encryption]] relies on the sheer mathematical difficulty of 
 ### 2. Quantum Supremacy (Advantage)
 The milestone of **Quantum Supremacy** occurs when a quantum device solves a problem that no classical computer could feasibly solve in a reasonable timeframe.
 *   **The Proof:** In 2019, Google’s *Sycamore* processor performed a specific sampling task in 200 seconds that they estimated would take the world’s fastest classical [[supercomputer|supercomputer]] 10,000 years. 
-*   **The Nuance:** While competitors (like IBM) disputed the exact "10,000 years" figure—arguing highly optimized classical algorithms could reduce the gap—the computational disparity remains undeniably massive and is continuously widening.
+*   **The Nuance:** While competitors (like IBM) disputed the exact "10,000 years" figure, arguing highly optimized classical algorithms could reduce the gap, the computational disparity remains undeniably massive and is continuously widening.
 
 ### 3. Molecular Simulation (The True Impact)
 Classical computers fundamentally struggle to simulate basic molecules because the computational complexity grows exponentially with every single electron added to the simulation.

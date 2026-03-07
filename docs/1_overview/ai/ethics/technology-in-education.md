@@ -23,7 +23,7 @@ When designed for pedagogical outcomes, technology empowers students and scales 
 ### 2. Technology as a Surrogate (Passive Consumption)
 When technology is driven by engagement metrics rather than educational outcomes, it often harms cognitive development:
 * **The Attention Economy:** Platforms like social media utilize Variable Reward Schedules to trigger dopamine loops. This fragments focus and conditions the brain for constant, rapid stimuli.
-* **Cognitive Offloading (Atrophy):** Using AI to do the thinking *for* the user—rather than guiding them to the answer—leads to the atrophy of foundational skills like logical structuring and memory retrieval, contributing to [[cognitive-debt|Cognitive Debt]].
+* **Cognitive Offloading (Atrophy):** Using AI to do the thinking *for* the user rather than guiding them to the answer leads to the atrophy of foundational skills like logical structuring and memory retrieval, contributing to [[cognitive-debt|Cognitive Debt]].
 
 ## The Short-Form Video Epidemic
 

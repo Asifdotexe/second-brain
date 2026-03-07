@@ -22,7 +22,7 @@ Imagine a lock that requires you to guess a number between 1 and Infinity.
 
 *1. Why hasn't the internet crashed yet?*
 Because we don't have a Quantum Computer big enough to run it. Yet.
-We are currently in the "NISQ" era (Noisy Intermediate-Scale Quantum). We need thousands of perfect [[qubits|Qubits]] to break RSA. We currently have hundreds of noisy ones.
+We are currently in the "[[nisq|NISQ]]" era (Noisy Intermediate-Scale Quantum). We need thousands of perfect [[qubits|Qubits]] to break RSA. We currently have hundreds of noisy ones.
 
 *2. What are we doing about it?*
 The world is racing to switch to **Post-Quantum Cryptography (PQC)**. These are new math problems (like Lattice-based cryptography) that even quantum computers can't solve easily. NIST is currently standardizing them.
