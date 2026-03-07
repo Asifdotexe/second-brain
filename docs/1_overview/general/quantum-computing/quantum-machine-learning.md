@@ -22,7 +22,7 @@ The field is still in its infancy, primarily restricted by the current noise lev
 ## FAQs
 
 *1. Will QML replace normal Machine Learning?*
-Unlikely. Just as supercomputers didn't replace laptops, QML will likely be reserved for specific, immensely complex problems (like simulating molecular chemistry or factoring giant primes). Classical ML is perfectly sufficient—and much cheaper; for everyday tasks like predicting housing prices or running chatbots.
+Unlikely. Just as supercomputers didn't replace laptops, QML will likely be reserved for specific, immensely complex problems (like simulating molecular chemistry or factoring giant primes). Classical ML is perfectly sufficient, and much cheaper; for everyday tasks like predicting housing prices or running chatbots.
 
 *2. When will QML be widely adopted?*
 We are currently in the [[nisq|NISQ (Noisy Intermediate-Scale Quantum)]] era. Until hardware engineers solve the physical problem of "quantum noise" and stabilize [[qubits|qubits]], QML will remain largely theoretical and experimental.
