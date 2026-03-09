@@ -5,7 +5,7 @@ STYLE: Sidey Minimalist Replica
 */
 
 :root {
-    /* --- TERMINAL PALETTE --- */
+    /* --- INVERTED TERMINAL PALETTE (LIGHT) --- */
     --slate-50: #ffffff;
     --slate-100: #cccccc;
     --slate-200: #aaaaaa;
@@ -22,41 +22,6 @@ STYLE: Sidey Minimalist Replica
     --vibrant-green-hover: #008f11;
     --forest-glade: #00ff41;
 
-    /* --- FUNCTIONAL VARIABLES --- */
-    --bg-body: var(--slate-950);
-    --bg-sidebar: var(--slate-900);
-    --border-color: var(--vibrant-green-hover);
-    --bg-input: var(--slate-950);
-    --bg-card: var(--slate-950);
-    --bg-quote: var(--slate-900);
-    --bg-tag: var(--slate-900);
-    --bg-code-inline: var(--slate-900);
-    --bg-code-block: var(--slate-950);
-
-    --text-primary: var(--vibrant-green);
-    --text-secondary: var(--slate-100);
-    --text-accent: #ffffff;
-    --text-muted: var(--vibrant-green-hover);
-    --code-text: #ffffff;
-    --text-code-block: var(--vibrant-green);
-
-    --font-main: "JetBrains Mono", "Fira Code", monospace;
-    --radius: 0px;
-
-    /* --- GRAPH COLORS --- */
-    --color-ai: #00ff41;
-    --color-cybersecurity: #ffffff;
-    --color-philosophy: #cccccc;
-    --color-general: #aaaaaa;
-    --color-insurance: #888888;
-    --color-psychology: #666666;
-    --color-science: #444444;
-
-    --graph-label: rgba(0, 0, 0, 0.7);
-    --graph-label-focused: rgba(0, 255, 65, 1);
-}
-
-body[data-theme="dark"] {
     --bg-body: #ffffff;
     --bg-sidebar: #f0f0f0;
     --border-color: #008f11;
@@ -74,8 +39,42 @@ body[data-theme="dark"] {
     --code-text: #008f11;
     --text-code-block: #000000;
 
+    --font-main: "JetBrains Mono", "Fira Code", monospace;
+    --radius: 0px;
+
+    /* --- GRAPH COLORS --- */
+    --color-ai: #00ff41;
+    --color-cybersecurity: #ffffff;
+    --color-philosophy: #cccccc;
+    --color-general: #aaaaaa;
+    --color-insurance: #888888;
+    --color-psychology: #666666;
+    --color-science: #444444;
+
     --graph-label: rgba(255, 255, 255, 0.6);
     --graph-label-focused: rgba(255, 255, 255, 1);
+}
+
+body[data-theme="dark"] {
+    --bg-body: var(--slate-950);
+    --bg-sidebar: var(--slate-900);
+    --border-color: var(--vibrant-green-hover);
+    --bg-input: var(--slate-950);
+    --bg-card: var(--slate-950);
+    --bg-quote: var(--slate-900);
+    --bg-tag: var(--slate-900);
+    --bg-code-inline: var(--slate-900);
+    --bg-code-block: var(--slate-950);
+
+    --text-primary: var(--vibrant-green);
+    --text-secondary: var(--slate-100);
+    --text-accent: #ffffff;
+    --text-muted: var(--vibrant-green-hover);
+    --code-text: #ffffff;
+    --text-code-block: var(--vibrant-green);
+    
+    --graph-label: rgba(0, 0, 0, 0.7);
+    --graph-label-focused: rgba(0, 255, 65, 1);
 }
 
 * {
@@ -107,7 +106,7 @@ body[data-theme="dark"] {
 }
 
 body {
-    animation: flicker 0.15s infinite;
+    /* /* removed flicker for epilepsy safety */ removed for accessibility */
     text-shadow: 0 0 2px var(--vibrant-green-hover);
     font-family: var(--font-main);
     color: var(--text-primary);
