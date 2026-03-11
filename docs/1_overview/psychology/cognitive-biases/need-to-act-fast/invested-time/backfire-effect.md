@@ -22,8 +22,8 @@ Rather than calmly evaluating the new data, we automatically generate counter-ar
 *1. Are facts useless in debates then?*
 Not entirely, but throwing raw data at someone's core identity rarely works. To change a mind, you usually have to validate their emotional stance first and frame the new information in a way that inherently aligns with their underlying values, rather than attacking them directly.
 
-*2. Is this the same as Confirmation Bias?*
-They are related but distinct. Confirmation Bias is actively seeking out information that agrees with you. The Backfire Effect is aggressively defending yourself against information that disagrees with you.
+*2. Is this the same as [[confirmation-bias|Confirmation Bias]]?*
+They are related but distinct. [[confirmation-bias|Confirmation Bias]] is actively seeking out information that agrees with you. The Backfire Effect is aggressively defending yourself against information that disagrees with you.
 
 ### Further Reading
 

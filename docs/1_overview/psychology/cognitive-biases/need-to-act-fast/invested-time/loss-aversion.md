@@ -15,7 +15,7 @@ This means humans are not rational actors when evaluating risk. We will go to ir
 
 ## Key Characteristics
 *   **Asymmetrical Values:** The pain of losing $\$100$ is roughly twice as intense as the joy of gaining $\$100$.
-*   **The Endowment Effect:** Our tendency to overvalue an item simply because we currently own it.
+*   **The [[endowment-effect|Endowment Effect]]:** Our tendency to overvalue an item simply because we currently own it.
 *   **Framing Effects:** The way a risk is presented drastically changes our choices. People heavily prefer a medical procedure with a "90% survival rate" over one with a "10% mortality rate," despite them being mathematically identical.
 
 ## FAQs

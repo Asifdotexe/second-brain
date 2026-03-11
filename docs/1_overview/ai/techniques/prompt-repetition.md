@@ -26,7 +26,7 @@ Imagine giving a busy chef a complicated, highly specific recipe. If you only ha
 ## FAQs
 
 *1. Does this mean I should paste my prompt 100 times in the chat box?*
-No. The research shows that simply duplicating the core instructions once or twice (especially placing them again at the very bottom of the context window right before the model answers) yields the significant benefits without overwhelming the system.
+No. The research shows that simply duplicating the core instructions once or twice (especially placing them again at the very bottom of the [[context-window|context window]] right before the model answers) yields the significant benefits without overwhelming the system.
 
 *2. Why doesn't the model just understand it the first time?*
 Standard LLMs read left-to-right in a single forward pass without pausing to "think." If a prompt is buried at the beginning of a long context, the model's mathematical focus (attention) dilutes over time. Repeating it refocuses the math right where it belongs.

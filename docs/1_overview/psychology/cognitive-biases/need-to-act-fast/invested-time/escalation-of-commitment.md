@@ -21,8 +21,8 @@ We foolishly convince ourselves that if we just invest a *little* more time, mon
 
 ## FAQs
 
-*1. How is this different from the Sunk Cost Fallacy?*
-They are often used interchangeably, but Escalation of Commitment specifically refers to the *action* of actively increasing (escalating) the bad investment (e.g., a poker player doubling their bet on a terrible hand), whereas the Sunk Cost Fallacy is the *belief* underpinning it.
+*1. How is this different from the [[sunk-cost-fallacy|Sunk Cost Fallacy]]?*
+They are often used interchangeably, but Escalation of Commitment specifically refers to the *action* of actively increasing (escalating) the bad investment (e.g., a poker player doubling their bet on a terrible hand), whereas the [[sunk-cost-fallacy|Sunk Cost Fallacy]] is the *belief* underpinning it.
 
 *2. How do you stop escalating?*
 Bring in an outside observer. A neutral third party has no emotional attachment to the initial decision and can objectively point out that the ship is sinking and it's time to find a lifeboat.
