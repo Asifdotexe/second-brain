@@ -32,5 +32,5 @@ Because Transformers skipped the sequential reading entirely. They use the [[sel
 ### Further Reading
 
 *   **The Unreasonable Effectiveness of Recurrent Neural Networks:** [Andrej Karpathy's Blog](https://karpathy.github.io/2015/05/21/rnn-effectiveness/) (A classic deep dive into how RNNs work and what they can generate).
-*   **Understanding LSTM Networks:** [Colah's Blog](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) (The industry-standard visual explanation of how LSTM gates actually function).
+*   **Understanding [[lstm|LSTM]] Networks:** [Colah's Blog](https://colah.github.io/posts/2015-08-Understanding-LSTMs/) (The industry-standard visual explanation of how [[lstm|LSTM]] gates actually function).
 *   **Recurrent Neural Networks (RNN) with Keras:** [TensorFlow Documentation](https://www.tensorflow.org/guide/keras/rnn) (A practical guide to implementing RNNs, LSTMs, and GRUs in code).
