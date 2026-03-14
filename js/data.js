@@ -29,9 +29,9 @@ const wikiData = {
                                     "NeuralNetworks"
                                 ],
                                 "links": [
-                                    "ai-vs-agi",
                                     "recurrent-neural-networks",
-                                    "convolutional-neural-networks"
+                                    "convolutional-neural-networks",
+                                    "ai-vs-agi"
                                 ],
                                 "group": "ai",
                                 "content": "# Artificial Neural Networks (ANN)\n\nAn Artificial Neural Network is like a massive assembly line where raw materials are passed through hundreds of workers, each adding a tiny, specific judgment, until a final manager stamps \"Approved\" or \"Rejected\" at the very end of the line.\n\n**Artificial Neural Networks (ANN)**, often just called Neural Networks, are the foundational computing systems inspired by the biological neural networks that constitute animal brains. They are the core technology underlying almost all modern AI, from simple image classifiers to advanced language models like ChatGPT.\n\nImagine you want a computer to look at a picture and tell you if it's a cat or a dog. Instead of writing millions of lines of code with explicit rules (e.g., `if pointy_ears == true and whiskers > 4 then return \"Cat\"`), you build a neural network. \n\nAn ANN is made up of interconnected \"nodes\" (or artificial neurons) arranged in layers. When you input the image, the first layer of nodes simply looks at the raw pixels. They pass their findings to the next layer (a \"hidden layer\"), which combines pixel data to identify simple shapes like edges or curves. The next layer combines those shapes to find ears or snouts. This continues until the final \"output layer\" makes a confident mathematical guess: 90% Cat, 10% Dog. \n\nIf it guesses wrong, a mathematical process called **backpropagation** runs backwards through the entire network, tiny-tuning the weight (importance) of every single connection so that it gets closer to the right answer next time. This process of trial and error is what we call \"training.\"\n\n## Key Features\n\n*   **Nodes and Weights:** By adjusting the \"weights\" (the strength of the connection between two nodes) and \"biases\" (a baseline threshold), the network learns to prioritize certain pieces of information over others.\n*   **Hidden Layers:** The layers between the input and output are called \"hidden\" layers. If a network has many hidden layers, it is considered a \"Deep\" Neural Network; hence the extremely popular term **Deep Learning**.\n*   **Universal Approximators:** Mathematically, a sufficiently wide or deep neural network can be trained to approximate a broad class of continuous functions within a specific domain, provided it has an appropriate architecture and abundant high-quality data to learn from.\n\n## FAQs\n\n*1. Is it exactly like a human brain?*\nNo. It is *inspired* by the brain, but it is vastly simplified. Biological neurons use complex chemical timing and physical restructuring to learn. Artificial neurons are just mathematical formulas multiplying numbers together in giant spreadsheets (matrices).\n\n*2. Why do they need so much data?*\nBecause they start out completely blank and randomly wired. Unlike a human toddler who only needs to see three dogs to learn what a dog is, a neural network needs to see 30,000 pictures of dogs in various lighting, angles, and colors to mathematically average out the concept of \"dog.\"\n\n### Further Reading\n\n*   **Related Concept:** *[[convolutional-neural-networks|Convolutional Neural Networks (CNN)]]* (A specialized ANN designed specifically for images).\n*   **Related Concept:** *[[recurrent-neural-networks|Recurrent Neural Networks (RNN)]]* (A specialized ANN designed for sequential data like text or time).\n*   **Contrasting Concept:** *[[ai-vs-agi|AI vs. AGI (Artificial General Intelligence)]]* (The distinction between modern Narrow AI and theoretical human-level intelligence).\n"
@@ -48,8 +48,8 @@ const wikiData = {
                                     "ComputerVision"
                                 ],
                                 "links": [
-                                    "transformer-architecture",
                                     "computer-vision",
+                                    "transformer-architecture",
                                     "artificial-neural-networks"
                                 ],
                                 "group": "ai",
@@ -67,8 +67,8 @@ const wikiData = {
                                     "GenerativeAI"
                                 ],
                                 "links": [
-                                    "generative-ai",
                                     "deepfakes",
+                                    "generative-ai",
                                     "machine-learning"
                                 ],
                                 "group": "ai",
@@ -86,8 +86,8 @@ const wikiData = {
                                     "NLP"
                                 ],
                                 "links": [
-                                    "transformer-architecture",
-                                    "recurrent-neural-networks"
+                                    "recurrent-neural-networks",
+                                    "transformer-architecture"
                                 ],
                                 "group": "ai",
                                 "content": "# Long Short-Term Memory (LSTM)\n\nAn LSTM is like reading a massively long novel while constantly deciding what to write down in a notebook, what to scribble over in the notebook because it's no longer relevant, and what to keep in your active memory for the very next sentence.\n\n**Long Short-Term Memory (LSTM)** is a highly complex, specialized type of [[recurrent-neural-networks|Recurrent Neural Network (RNN)]] designed explicitly to fix the fatal \"short-term memory loss\" flaw of traditional RNNs over long sequences of data.\n\nStandard RNNs process data in sequence (like a sentence) and pass a \"hidden state\" (a mathematical memory) from one word to the next. However, as the sequence gets longer, the math doing the passing physically breaks down; a phenomenon known as the **Vanishing Gradient Problem**. By the time a standard RNN reads the 100th word in a paragraph, it has entirely forgotten the 1st word. \n\nLSTMs solve this by fundamentally redesigning the \"memory cell\" inside the network. Instead of just passing a single blended blob of memory forward, an LSTM creates a dedicated \"cell state\" (the notebook); a clean highway running straight through the entire sequence. Alongside this highway, the LSTM acts like an extremely picky editor using three mathematical \"gates\" to strictly control what enters and exits the notebook.\n\n## Key Features\n\n*   **Forget Gate:** This looks at the new word and the recent past, and actively decides what information in the long-term notebook should be permanently erased (e.g., if the sentence subject changes from \"Alice\" to \"Bob\", it erases the pronoun rules for Alice).\n*   **Input Gate:** This decides what new, relevant information from the current word is actually important enough to be written into the long-term notebook.\n*   **Output Gate:** This decides what specific pieces of the long-term notebook and the current word should be actively pushed forward as the \"short-term memory\" to predict the very next step.\n\n## FAQs\n\n*1. If LSTMs fixed RNNs, why don't we still use them for everything?*\nWhile LSTMs successfully solved the memory limit, they are still fundamentally sequential (they must read word 1, then word 2, then word 3). Because of this, they are extremely slow to train. The [[transformer-architecture|Transformer Architecture]] eventually replaced them in NLP because Transformers process the entire sequence simultaneously in parallel.\n\n*2. Are there simpler versions of LSTMs?*\nYes. A popular variant is the **Gated Recurrent Unit (GRU)**, which essentially merges the \"forget\" and \"input\" gates into a single mechanism, making the network slightly less complex and faster to train while retaining most of the memory benefits.\n\n### Further Reading\n\n*   **The Foundation:** *[[recurrent-neural-networks|Recurrent Neural Networks (RNN)]]* (The architecture that LSTMs evolved from to fix the vanishing gradient problem).\n*   **The Successor:** *[[transformer-architecture|Transformer Architecture]]* (The parallel-processing architecture that eventually dethroned LSTMs).\n"
@@ -104,10 +104,10 @@ const wikiData = {
                                     "NLP"
                                 ],
                                 "links": [
-                                    "transformer-architecture",
+                                    "self-attention-mechanism",
                                     "lstm",
-                                    "artificial-neural-networks",
-                                    "self-attention-mechanism"
+                                    "transformer-architecture",
+                                    "artificial-neural-networks"
                                 ],
                                 "group": "ai",
                                 "content": "# Recurrent Neural Networks (RNN)\n\nA Recurrent Neural Network is like reading a book while constantly keeping your finger on the previous page; it explicitly remembers what it just read a second ago so it can properly understand the current word in context.\n\n**Recurrent Neural Networks (RNNs)** are a specialized class of [[artificial-neural-networks|Artificial Neural Networks]] designed explicitly to process sequential data, such as time-series data (stock prices), audio (speech recognition), or natural language (text).\n\nStandard neural networks assume that every piece of incoming data is completely independent. If you feed a standard network a picture of a dog, and then a picture of a cat, the network doesn't care about the dog when looking at the cat. \n\nBut imagine processing the sentence: *\"I grew up in France, so I speak fluent ____.\"* If an AI processes that word by word, by the time it gets to the blank, it *must* remember the word \"France\" from earlier in the sequence to accurately guess \"French.\" \n\nRNNs solve this by introducing an internal loop (a **hidden state**). When an RNN processes word #2, it doesn't just look at word #2; it looks at word #2 *plus* the mathematical \"memory\" of what it thought about word #1. This looping memory allows it to maintain an ongoing context as it moves through time or sequence.\n\n## Key Features\n\n*   **Sequential Processing:** They process data sequentially, step-by-step from beginning to end, carrying a running \"memory\" forward at each step.\n*   **The Vanishing Gradient Problem:** As traditional RNNs process very long sequences, their \"memory\" of the early steps gets mathematically diluted and fades away. In the sentence about France, if there were 50 words between \"France\" and the blank space, a basic RNN would forget about France entirely.\n*   **LSTMs and GRUs:** To fix the vanishing memory problem, researchers invented advanced RNN variations like [[lstm|Long Short-Term Memory (LSTM)]] networks, which use complex internal \"gates\" to explicitly decide what information is vital to keep stored in long-term memory and what to immediately forget.\n\n## FAQs\n\n*1. Are RNNs still the best for processing text?*\nNo. While they dominated AI language processing for years, they have largely been entirely replaced by the [[transformer-architecture|Transformer Architecture]].\n\n*2. Why did Transformers replace RNNs?*\nBecause RNNs *must* process things sequentially (step 1, then step 2, then step 3), they cannot be sped up by throwing more computer chips at them. Transformers use the [[self-attention-mechanism|Self-Attention Mechanism]] to process the entire sequence simultaneously in parallel, allowing them to train infinitely faster and track much longer context windows without forgetting.\n\n### Further Reading\n\n*   **Core Concept:** *[[artificial-neural-networks|Artificial Neural Networks (ANN)]]* (The foundational technology that RNNs build upon).\n*   **The Successor:** *[[transformer-architecture|Transformer Architecture]]* (The modern architecture that dethroned RNNs in Natural Language Processing).\n"
@@ -124,13 +124,13 @@ const wikiData = {
                                     "NLP"
                                 ],
                                 "links": [
-                                    "self-attention-mechanism",
-                                    "lstm",
-                                    "recurrent-neural-networks",
-                                    "multi-head-attention",
                                     "prompt-repetition",
+                                    "self-attention-mechanism",
+                                    "multi-head-attention",
                                     "positional-encoding",
-                                    "convolutional-neural-networks"
+                                    "convolutional-neural-networks",
+                                    "lstm",
+                                    "recurrent-neural-networks"
                                 ],
                                 "group": "ai",
                                 "content": "# Transformer Architecture\n\nThe Transformer Architecture is like a sprawling library where, instead of reading books one by one in order, a million librarians instantly read every single book at the same time and shout across the room to figure out how they connect.\n\n**The Transformer Architecture** is a deep learning model introduced by Google researchers in the landmark 2017 paper *\"Attention Is All You Need\"*. It revolutionized natural language processing (NLP) by completely abandoning older sequential methods (like RNNs and [[lstm|LSTMs]]) in favor of analyzing entire sequences of data all at once using something called the **Self-Attention Mechanism**.\n\nBefore 2017, AI translated language sequentially. If you gave an AI the sentence *\"The cat didn't cross the street because it was too tired\"*, the AI would read \"The\", then \"cat\", then \"didn't\"; step by step, word by word. By the time it reached the word \"it\", it had almost forgotten about the \"cat\". This sequential process was also incredibly slow because a computer couldn't process word #8 until it had finished processing word #7.\n\nThe Transformer threw away the sequential step-by-step reading. Instead, it ingests the entire sentence *simultaneously*. It uses massive parallel processing (GPU power) to look at all the words at once, evaluating the mathematical relationships between every single word and every other word in the sentence simultaneously. This is what allows large language models (LLMs) like GPT and Claude to understand vast context and generate text so quickly.\n\n## Key Features\n\n*   **No Recurrence:** It dispenses entirely with [[recurrent-neural-networks|Recurrent Neural Networks]] (RNNs) and [[convolutional-neural-networks|Convolutional Neural Networks]] (CNNs), relying strictly on [[self-attention-mechanism|Self-Attention Mechanisms]].\n*   **Massively Parallelizable:** Because it doesn't process data sequentially, it can be trained across thousands of GPUs simultaneously, dropping training times from months down to days.\n*   **Encoder-Decoder Structure:** The original architecture is split into two halves: an **Encoder** (which reads the input and maps the mathematical meaning) and a **Decoder** (which generates the output prediction one token at a time). Modern models sometimes only use one half (e.g., GPT is a decoder-only Transformer).\n\n## FAQs\n\n*1. How does it know the order of words if it reads them all at once?*\nBecause it ingests words simultaneously, it has no inherent sense of sequence. To fix this, it uses [[positional-encoding|Positional Encoding]]; a mathematical timestamp stamped onto every word so the model knows where it originally lived in the sentence.\n\n*2. Why is it called \"Attention\"?*\nThe core math engine, [[multi-head-attention|Multi-Head Attention]], calculates how much \"attention\" (focus weight) every word should pay to every other word to understand the full context.\n\n### Further Reading\n\n*   **Paper:** *[Attention Is All You Need](https://arxiv.org/abs/1706.03762)* (Vaswani et al., 2017).\n*   **Related Concept:** *[[prompt-repetition|Prompt Repetition]]* (A modern technique used to force standard Transformers to focus on instructions better).\n"
@@ -191,8 +191,8 @@ const wikiData = {
                                 "links": [
                                     "generative-ai",
                                     "ai-hallucination",
-                                    "artificial-neural-networks",
-                                    "ai-fine-tuning"
+                                    "ai-fine-tuning",
+                                    "artificial-neural-networks"
                                 ],
                                 "group": "ai",
                                 "content": "# AI vs AGI\n\nNarrow AI is like a grandmaster chess computer that can beat anyone in the world at chess but would starve to death because it doesn't know how to order a pizza; AGI is the hypothetical machine that can both play the chess match and figure out dinner afterwards.\n\n**Artificial Intelligence (AI)** and **Artificial General Intelligence (AGI)** are often confused, but they represent vastly different stages of technological evolution. AI refers to current technologies that excel at highly specific, pre-programmed tasks. AGI is a theoretical future threshold where a machine possesses autonomous self-control, general human cognitive abilities, and the capacity to learn entirely new skills outside its original programming.\n\nToday, all existing AI is technically \"Narrow AI\" (or \"Weak AI\"). For example, an [[artificial-neural-networks|Artificial Neural Network]] trained on massive datasets can write code or generate beautiful images ([[generative-ai|Generative AI]]), but it cannot suddenly decide to become a medical diagnostic tool without extensive human intervention and retraining. \n\nAGI (often referred to as \"Strong AI\") represents the holy grail of computer science. An AGI system would be able to teach itself novel concepts, reason across diverse scenarios, apply emotional intelligence, and solve complex problems in environments it was never explicitly trained for; acting with the adaptability of a human being.\n\n## Key Features & Differences\n\n*   **Scope of Competence:** AI operates within strict boundaries (e.g., a spam filter only knows email text). AGI would operate across all domains, moving seamlessly from solving math equations to composing emotional poetry.\n*   **Learning Autonomy:** Current AI requires human engineers to curate data, adjust the architecture, and actively \"train\" it (like [[ai-fine-tuning|Fine-Tuning]]). AGI would possess the generalized reasoning required to seek out its own data and teach itself.\n*   **Contextual Awareness:** Today's AI, particularly large language models, often lack true contextual grounding, leading them to confidently output false information (known as [[ai-hallucination|Hallucinations]]). AGI implies a grounded, worldly understanding of nuance and context.\n\n## FAQs\n\n*1. When will AGI be created?*\nNobody knows. Some experts predict it could happen within a decade, while others believe true human-level generalization requires fundamentally different technology that we haven't invented yet.\n\n*2. Is ChatGPT considered AGI?*\nNo. While extraordinarily advanced, it is a form of Narrow (Weak) AI. It predicts the next word in a sequence based on its vast training data, but it does not possess actual independent reasoning, autonomous goals, or true comprehension of the text it generates.\n\n### Further Reading\n\n*   **Article:** *[What is AGI?](https://aws.amazon.com/what-is/artificial-general-intelligence/)* (AWS Cloud documentation detailing the current business and theoretical landscape).\n*   **Article:** *[The Crucial Difference Between AI And AGI](https://www.forbes.com/sites/bernardmarr/2024/05/20/the-crucial-difference-between-ai-and-agi/)* (Forbes overview by Bernard Marr).\n"
@@ -225,8 +225,8 @@ const wikiData = {
                                     "Concepts"
                                 ],
                                 "links": [
-                                    "llm",
-                                    "self-attention-mechanism"
+                                    "self-attention-mechanism",
+                                    "llm"
                                 ],
                                 "group": "ai",
                                 "content": "# Context Window\n\nA context window is like a person's short-term memory during a conversation. If you have a highly intelligent friend with a tiny short-term memory, they can give brilliant answers to your immediate question, but they will completely forget what you were talking about five minutes ago. \n\nThe **Context Window** of a [[llm|Large Language Model (LLM)]] is the maximum amount of text (measured in \"tokens\") that the model can process, \"remember,\" and consider at any single given time when generating a response.\n\nEverything outside of this window simply does not exist to the model.\n\n## Tokens vs. Words\n\nA context window's size is measured in **tokens**, not words. A token can be a single character, a chunk of a word, or an entire word depending on the language and tokenizer used. As a rough rule of thumb for English text, 1 token $\\approx$ $\\frac{3}{4}$ of a word (or 100 tokens $\\approx$ 75 words).\n\n## Why Size Matters\n\nThe size of the context window radically defines what an AI model is capable of doing.\n\n*   **Small Window (e.g., 4k tokens):** Good for simple Q&A, translating a few paragraphs, or summarizing a short article. The model will \"forget\" the beginning of a long conversation.\n*   **Medium Window (e.g., 32k - 128k tokens):** Capable of analyzing an entire research paper, a long podcast transcript, or a medium-sized codebase all at once.\n*   **Massive Window (e.g., 1M - 2M+ tokens):** Can process multiple full-length books, an entire corporate financial history, or massive repositories of code simultaneously. This allows the AI to draw connections across vast amounts of data that a human could never hold in their working memory.\n\n## The Technical Bottleneck\n\n*Why not just make every context window infinitely large?*\n\nBecause computing costs scale quadratically with the size of the context window. The underlying [[self-attention-mechanism|Self-Attention Mechanism]] requires the model to compare every single token against every other token in the window. \n\nIf you double the context window size, the computational power and memory required to process it roughly quadruples. This makes exceptionally large context windows incredibly expensive and slow to process compared to shorter prompts.\n\n### Further Reading\n\n*   **Underlying Technology:** *[[llm|Large Language Models]]*\n*   **Memory Mechanism:** *[[self-attention-mechanism|Self-Attention Mechanism]]*\n"
@@ -244,9 +244,9 @@ const wikiData = {
                                 ],
                                 "links": [
                                     "llm",
-                                    "vector-databases",
+                                    "machine-learning",
                                     "rag",
-                                    "machine-learning"
+                                    "vector-databases"
                                 ],
                                 "group": "ai",
                                 "content": "# Embeddings\n\n**Embeddings** are the \"language\" that AI models use to understand the world.\n\n[[machine-learning|Machine learning]] models (like [[llm|LLMs]]) cannot read english text, see pixels in an image, or hear audio waves. They can only process numbers. An embedding is mathematical translation: it transforms a complex, real-world object (like a word, image, or document) into a **vector** (a long list of floating-point numbers).\n\nThese lists of numbers plot the object on a massive, multi-dimensional map. \n\n## The Core Rule: Distance = Similarity\n\nThe magic of embeddings is that they capture *semantic meaning and context*. \n\nUnlike traditional databases that only look for exact keyword matches, embeddings map concepts. If you plot two embedding vectors on a graph:\n* **Small Distance:** The concepts are highly related. (The embedding for \"Cat\" will sit right next to \"Dog\" or \"Kitten\").\n* **Large Distance:** The concepts are unrelated. (\"Cat\" will be very far away from \"Carburetor\").\n\nFor example, IBM illustrates word vectors like this:\n* `dad` = [0.1548, 0.4848, \u2026, 1.864]\n* `mom` = [0.8785, 0.8974, \u2026, 2.794]\n* Because the concepts are related, the math ensures the word `father` would calculate out to live in extremely close proximity to `dad` in the vector space.\n\n## Common Use Cases\n\nBecause embeddings represent *meaning* rather than exact strings, they are the foundation for many modern AI capabilities:\n1.  **Search and Retrieval (Semantic Search):** Finding a document about \"felines\" when you search for \"cats.\" This is the foundational first step of [[rag|RAG (Retrieval-Augmented Generation)]].\n2.  **Recommendation Systems:** Mapping a User's latent preferences to an Item's characteristics. If the User Embedding and Movie Embedding are close together, the system recommends the movie.\n3.  **Classification & Clustering:** Automatically grouping similar documents or images together based on how tightly clustered their vectors are in the data space.\n4.  **Anomaly Detection:** Finding a data point that is plotted extremely far away from the rest of the normal herd (e.g., fraud detection).\n\n## Where do they live?\n\nBecause these multi-dimensional vectors are incredibly complex (often having thousands of dimensions), standard SQL databases struggle to search them quickly. Therefore, embeddings are stored and searched inside specialized [[vector-databases|Vector Databases]].\n\n### Further Reading\n*   **Article:** *[IBM: What is Embedding?](https://www.ibm.com/think/topics/embedding)*\n*   **Article:** *[Cloudflare: What are Embeddings?](https://www.cloudflare.com/learning/ai/what-are-embeddings/)*\n"
@@ -282,10 +282,10 @@ const wikiData = {
                                 "links": [
                                     "llm",
                                     "generative-ai",
-                                    "embeddings",
                                     "ai-hallucination",
                                     "vector-database",
-                                    "vector-databases"
+                                    "vector-databases",
+                                    "embeddings"
                                 ],
                                 "group": "ai",
                                 "content": "# Knowledge Graph\n\nA massive web of interconnected facts, rather than just a rigid table of numbers.\n\nA **Knowledge Graph** (or Semantic Network) is a data structure that represents information by capturing the relationships between different entities (objects, events, situations, or abstract concepts). Instead of storing data in isolated rows and columns like a traditional relational database, a knowledge graph stores data as **nodes** (the entities) connected by **edges** (the relationships).\n\nFor example, a knowledge graph wouldn't just store \"Leonardo da Vinci\" and \"Mona Lisa\" in separate text columns. It would map: [Leonardo da Vinci] --(painted)--> [Mona Lisa].\n\n## Why are they important?\n\nAs data becomes more complex, simply searching for keywords is no longer enough. Knowledge graphs provide context and semantics, allowing systems to understand the *meaning* behind the data. \n\n*   **Context for AI:** While a [[vector-database|Vector Database]] is excellent at finding *similar* text via [[embeddings]], a knowledge graph excels at finding *logical relationships*. Modern RAG (Retrieval-Augmented Generation) systems often combine both to give [[llm|LLMs]] highly accurate, structured facts to prevent [[ai-hallucination|hallucinations]].\n*   **Search Engine Optimization (SEO):** Google's transition from a \"string matching\" search engine to a \"thing matching\" search engine was driven by the Google Knowledge Graph. This is why searching for a famous person gives you a detailed infobox on the right side of your screen summarizing their life, family, and direct relationships.\n\n## Key Components\n\nA knowledge graph is built on a specific structure often referred to as an RDF triple:\n1.  **Subject:** The main entity (e.g., \"Paris\").\n2.  **Predicate:** The relationship (e.g., \"is the capital of\").\n3.  **Object:** The related entity (e.g., \"France\").\n\n## FAQs\n\n*1. Is it the same as a graph database?*\nNot exactly. A graph database (like Neo4j) is the physical database management system used to store and query the graph data. A Knowledge Graph is the actual map of interconnected data and the ontology (the rules defining what things mean) built *on top* of that database.\n\n*2. How does an AI build them?*\nThrough Natural Language Processing (NLP). AI models can be trained to read vast amounts of unstructured text (like Wikipedia), identify the entities, extract the relationships between them, and automatically map them into a knowledge graph.\n\n### Further Reading\n\n*   **Complementary Tech:** *[[vector-databases|Vector Databases]]*\n*   **Core Concept:** *[[generative-ai|Generative AI]]*\n"
@@ -349,9 +349,9 @@ const wikiData = {
                                     "Society"
                                 ],
                                 "links": [
+                                    "agentic-ai",
                                     "llm",
-                                    "universal-basic-income",
-                                    "agentic-ai"
+                                    "universal-basic-income"
                                 ],
                                 "group": "ai",
                                 "content": "# AI Job Displacement\n\nThe factory robots came for the blue-collar jobs; now the software robots are coming for the white-collar jobs.\n\n**AI Job Displacement** refers to the economic and societal disruption caused when automated AI systems outperform human workers at specific tasks, leading to the reduction or elimination of human roles in those sectors. \n\nWhile past automation waves physically replaced manual labor on assembly lines, the modern wave of [[llm|Large Language Models]] and forms of [[agentic-ai|Agentic AI]] threatens \"knowledge work\"; roles involving writing, legal analysis, coding, and customer service.\n\n## Two Competing Philosophies\n\nEconomists and ethicists generally fall into two camps regarding the AI transition:\n\n1.  **The Substitution Fear:** The belief that AI is fundamentally different from previous technologies because it mimics human cognition. If AI can write code, generate art, and manage schedules faster and cheaper than humans, corporations will simply fire the humans entirely, leading to mass unemployment and wealth concentration for the AI owners.\n2.  **The Centaur / Augmentation Theory:** The belief that AI is a tool, not a replacement. A \"Centaur\" model involves a human working *with* an AI. In this view, AI handles the tedious, repetitive tasks (drafting boilerplate emails), freeing the human to focus on high-level strategy and empathy. The slogan is: *\"AI won't replace you; a human using AI will replace you.\"*\n\n## The Transition Period\n\nEven if new jobs are eventually created, the *transition* period poses massive ethical challenges. A 55-year-old truck driver displaced by an autonomous vehicle cannot seamlessly pivot to becoming a prompt engineer overnight. Thus, the societal debate revolves around **reskilling programs**, structural economic reforms (like [[universal-basic-income|Universal Basic Income]]), and adjusting the education system.\n\n### Further Reading\n\n*   **Catalyst:** *[[agentic-ai|Agentic AI]]*\n*   **Catalyst:** *[[llm|LLMs]]*\n"
@@ -421,9 +421,9 @@ const wikiData = {
                                     "Media"
                                 ],
                                 "links": [
+                                    "generative-adversarial-networks",
                                     "generative-ai",
-                                    "vishing",
-                                    "generative-adversarial-networks"
+                                    "vishing"
                                 ],
                                 "group": "ai",
                                 "content": "# Deepfakes and Synthetic Media\n\nStealing someone's face and voice to make them confess on video to a crime they didn't commit.\n\n**Deepfakes** are hyper-realistic, AI-generated synthetic media (videos, audio, or images) where a person's likeness or voice is replaced with someone else's. The technology utilizes deep learning, specifically [[generative-adversarial-networks|GANs (Generative Adversarial Networks)]] and diffusion models via [[generative-ai|Generative AI]], to seamlessly stitch and alter media parameters.\n\nWhile synthetic media has benign uses in Hollywood VFX or personalized education, the democratization of these tools has created a massive ethical and security crisis.\n\n## Primary Threat Vectors\n\n*   **Political Disinformation:** Generating fake speeches by world leaders to trigger stock market crashes, incite violence, or swing democratic elections. \n*   **Social Engineering:** Scammers using voice cloning attacks to execute highly convincing [[vishing]] (voice phishing) schemes, impersonating a CEO to demand immediate wire transfers.\n*   **Non-Consensual Intimate Imagery (NCII):** The massive proliferation of \"revenge porn,\" where innocent individuals' faces are superimposed onto explicit content to harass, extort, or ruin their reputations.\n\n## The Defense\n\nThe concept of the \"Liar's Dividend\" suggests that in a world where *anything* can be faked, bad actors can simply dismiss actual, genuine evidence of their wrongdoings by claiming \"it's a deepfake.\" \n\nTo combat this, the industry is researching:\n1.  **Digital Watermarking:** Embedding invisible cryptographic signatures inside hardware cameras or AI generation tools to verify provenance. \n2.  **Detection Models:** AI trained specifically to spot the subtle imperfections left by generation algorithms (e.g., unnatural blinking patterns or blood-flow pulse detection in pixels).\n\n### Further Reading\n\n*   **Underlying Tech:** *[[generative-ai|Generative AI]]*\n*   **Attack Vector:** *[[vishing|Vishing]]*\n"
@@ -440,8 +440,8 @@ const wikiData = {
                                     "CognitiveScience"
                                 ],
                                 "links": [
-                                    "llm",
-                                    "cognitive-debt"
+                                    "cognitive-debt",
+                                    "llm"
                                 ],
                                 "group": "ai",
                                 "content": "# The Impact of Technology on Education\n\nThe impact of technology on education is not a binary \"good\" or \"bad.\" It acts as a **force multiplier** that amplifies the underlying pedagogical strategy or user intent.\n\n**Technology in Education (EdTech)** refers to the integration of software, hardware, and digital frameworks into teaching and learning environments. When evaluated critically, its impact is not inherently positive or negative, but rather determined by whether the technology functions as a *scaffold* (supporting active cognition) or a *surrogate* (replacing cognitive effort).\n\nUnderstanding this duality requires separating the \"distraction economy\" from purpose-built educational tools.\n\n## The Duality of EdTech\n\n### 1. Technology as a Scaffold (Active Learning)\nWhen designed for pedagogical outcomes, technology empowers students and scales individualized learning:\n* **Adaptive Learning:** Algorithms adjust task difficulty in real-time, keeping students in the optimal \"Zone of Proximal Development.\" This prevents boredom for advanced students and frustration for struggling ones.\n* **Personalized Tutoring:** AI solves the historical \"Two-Sigma Problem\" (the massive advantage of 1:1 tutoring) by providing scalable, individualized digital scaffolding.\n* **Cognitive Augmentation:** Tools like calculators or [[llm|Large Language Models]] act as \"calculators for words,\" allowing students to offload routine drafting and focus on higher-order synthesis and critical evaluation.\n* **Accessibility:** Digital formats provide built-in \"curb-cuts\" for students with learning disabilities, such as text-to-speech for dyslexia or visual aids for comprehension.\n\n### 2. Technology as a Surrogate (Passive Consumption)\nWhen technology is driven by engagement metrics rather than educational outcomes, it often harms cognitive development:\n* **The Attention Economy:** Platforms like social media utilize Variable Reward Schedules to trigger dopamine loops. This fragments focus and conditions the brain for constant, rapid stimuli.\n* **Cognitive Offloading (Atrophy):** Using AI to do the thinking *for* the user rather than guiding them to the answer leads to the atrophy of foundational skills like logical structuring and memory retrieval, contributing to [[cognitive-debt|Cognitive Debt]].\n\n## The Short-Form Video Epidemic\n\nA major point of systemic concern is the overlap between personal technology habits and educational environments. A [2025 meta-analysis](https://archive.fo/StHae) of over 100,000 participants (published in *Psychological Bulletin*) demonstrated that heavy consumption of short-form video (e.g., TikTok, Reels) is strongly associated with:\n* Poorer attention and inhibitory control.\n* Reduced working memory and language processing.\n\n**The Crucial Distinction:** It is a logical fallacy to conflate \"Short-Form Social Media\" (engineered to maximize time-spent) with \"Educational Technology\" (engineered for learning outcomes). Social media engagement is linked to reduced attention markers, whereas active digital tasks (like coding or interactive simulations) require sustained cognitive effort.\n\n## Systemic Realities \n\nThe debate around AI and tech usage often ignores real-world pressures. Students and employees frequently rely on AI uncritically just to survive increased workloads. However, while systemic pressures exist, uncritical reliance creates **Technical Debt** and liability loops. Maintaining critical oversight (AI Literacy) remains the only way for human operators to remain indispensable.\n\n## FAQs\n\n*1. Does using AI in the classroom make students lazier?*\nNot if used correctly. If AI writes an essay for a student, it bypasses the learning process. But if AI acts as a Socratic tutor, asking guiding questions and critiquing the student's draft, it forces deeper engagement than learning without it.\n\n*2. Should schools ban smartphones and laptops?*\nMany studies suggest that unmanaged personal devices in the classroom severely degrade memory retention and comprehension due to multitasking. The current consensus leans toward locking away personal distraction devices while integrating school-managed, purpose-built digital tools.\n\n### Further Reading\n\n*   **[Study]:** *[Impact of Short-Form Video on Cognition (Archive)](https://archive.fo/StHae)* (A 2025 Meta-Analysis detailing the cognitive degradation linked to short-form content).\n*   **[Article]:** *[The Two-Sigma Problem (Wikipedia)](https://en.wikipedia.org/wiki/Bloom%27s_2_sigma_problem)* (Benjamin Bloom's foundational educational phenomenon that AI is attempting to solve).\n"
@@ -502,10 +502,10 @@ const wikiData = {
                                 ],
                                 "links": [
                                     "self-attention-mechanism",
-                                    "recurrent-neural-networks",
                                     "lstm",
-                                    "transformer-architecture",
-                                    "computer-vision"
+                                    "computer-vision",
+                                    "recurrent-neural-networks",
+                                    "transformer-architecture"
                                 ],
                                 "group": "ai",
                                 "content": "# Positional Encoding\n\nPositional Encoding is like handing an alien a giant pile of randomly shuffled books, but mathematically printing page numbers and chapter numbers onto the spine of every single book so the alien automatically knows what order they should be read in.\n\n**Positional Encoding** is the vital mathematical trick used in the [[transformer-architecture|Transformer Architecture]] to give the otherwise order-blind neural network a strict sense of sequence, time, and word order.\n\nOlder language models, like [[recurrent-neural-networks|Recurrent Neural Networks]] (RNNs) and [[lstm|LSTMs]], read sentences linearly from left to right. They natively understood that word #2 came after word #1 simply because they processed it second.\n\nTransformers completely abandoned sequential reading to gain massive speed and power. A Transformer swallows every single word in an entire book simultaneously (using the [[self-attention-mechanism|Self-Attention Mechanism]]). The fatal problem? Mathematically, if you feed a Transformer the sentence *\"The dog chased the cat\"* versus *\"The cat chased the dog,\"* the model processes them as the exact same unordered soup of words because it isn't reading left-to-right. \n\nTo fix this fatal flaw without losing parallel processing speed, researchers invented Positional Encoding. Before a word enters the Transformer, the system injects a complex mathematical signal (a specific cocktail of sine and cosine waves) directly into the word's data vector. This signal acts like an invisible, permanent timestamp. When the Transformer ingests all the words simultaneously, those timestamps allow it to instantly calculate the exact distance and order between every word in the sequence.\n\n## Key Features\n\n*   **Sine and Cosine Waves:** The original 2017 paper uses sinusoidal functions of varying frequencies. This allows the model to easily learn to attend by relative positions, because the \"distance\" between any two positions can be represented as a predictable linear function.\n*   **Additive, Not Appended:** The positional signal isn't just slapped onto the end of the word data. It has the exact same dimensions as the word data itself and is literally added (summed) *into* the word vector, smoothly combining \"meaning\" and \"position\" before it enters the model.\n*   **Absolute and Relative:** While the original paper used fixed, absolute timestamps, modern variations often use *Relative* Positional Encoding (focusing entirely on the distance *between* tokens rather than their absolute index number in the text).\n\n## FAQs\n\n*1. Does it work for non-text data?*\nYes! Positional encoding is a huge reason why the [[transformer-architecture|Transformer architecture]] eventually conquered [[computer-vision|computer vision]] (e.g., Vision Transformers). An image is split into hundreds of grid patches, and positional encodings timestamp each patch so the model knows which patch is the \"top-left\" corner and which is the \"bottom-right.\"\n\n*2. What happens if you take it out?*\nAn AI without positional encoding essentially becomes a glorified \"Bag-of-Words\" model. It knows exactly *what* vocabulary was used, but fails completely at understanding syntax, grammar, or narrative structure.\n\n### Further Reading\n\n*   **Core Application:** *[[transformer-architecture|Transformer Architecture]]* (The neural network that specifically requires this fix).\n*   **Core Mechanism:** *[[self-attention-mechanism|Self-Attention Mechanism]]* (The parallel processing engine that caused the sequence problem in first place).\n"
@@ -522,8 +522,8 @@ const wikiData = {
                                     "NLP"
                                 ],
                                 "links": [
-                                    "transformer-architecture",
-                                    "multi-head-attention"
+                                    "multi-head-attention",
+                                    "transformer-architecture"
                                 ],
                                 "group": "ai",
                                 "content": "# Self-Attention Mechanism\n\nSelf-Attention is like walking into a crowded party and instantly identifying who is flirting with who, who is arguing, and who the host is, mapping the exact relationship between everyone in the room simultaneously.\n\nThe **Self-Attention Mechanism** is the core mathematical engine driving the [[transformer-architecture|Transformer Architecture]]. It allows a neural network to look at an entire sequence of data (like a sentence) and calculate how strongly every single element relates to, or \"attends to,\" every other element in that exact same sequence.\n\nConsider the sentence: *\"The animal didn't cross the street because it was too tired.\"* What does the word \"it\" refer to? A human instantly knows \"it\" refers to the \"animal,\" not the \"street.\" Older sequential AI models struggled with this because the word \"animal\" was processed long before the word \"it\". \n\nThe self-attention mechanism solves this. When calculating the mathematical meaning of the word \"it\", the mechanism forces the word to reach out and \"poll\" every other word in the sentence. It calculates a heavy connection weight with \"animal\", a slight connection with \"tired\", and almost zero connection with \"street\". It then bakes all those connections into a new, hyper-contextualized mathematical definition for the word \"it\".\n\n## Key Features\n\n*   **Query, Key, and Value (QKV):** It calculates these relationships using three vectors for each word. The **Query** (what the word is looking for), the **Key** (what the word offers to others), and the **Value** (the actual underlying meaning of the word). \n*   **Global Context:** Unlike older models that only looked at adjacent neighbor words, self-attention looks at the entire input sequence globally, allowing it to connect a word at the beginning of a book with a concept at the very end.\n*   **Dynamic Representation:** The meaning of a specific word literally changes depending on its neighbors. The representation of the word \"bank\" changes entirely depending on if the self-attention mechanism connects it heavily to \"river\" or \"money\".\n\n## FAQs\n\n*1. Is Self-Attention the only type of attention?*\nNo. In the original Encoder-Decoder [[transformer-architecture|Transformer]], there is also \"Cross-Attention\", where the Decoder looks over at the Encoder's output sequence to figure out what to focus on when generating an answer.\n\n*2. How does the model hold multiple views of the same sentence?*\nThe model uses [[multi-head-attention|Multi-Head Attention]], which essentially runs the self-attention math several times in parallel, allowing the model to simultaneously track grammar, emotional tone, and factual relationships.\n\n### Further Reading\n\n*   **Core Application:** *[[transformer-architecture|Transformer Architecture]]* (The model that made this mechanism world-famous).\n*   **Paper:** *[Attention Is All You Need](https://arxiv.org/abs/1706.03762)* (Vaswani et al., 2017).\n"
@@ -563,12 +563,12 @@ const wikiData = {
                                     "Transformers"
                                 ],
                                 "links": [
-                                    "embeddings",
-                                    "transformers",
-                                    "transformer-architecture",
+                                    "agentic-ai",
                                     "cognitive-debt",
                                     "ai-fine-tuning",
-                                    "agentic-ai",
+                                    "transformers",
+                                    "embeddings",
+                                    "transformer-architecture",
                                     "rlhf"
                                 ],
                                 "group": "ai",
@@ -599,9 +599,9 @@ const wikiData = {
                                     "Transparency"
                                 ],
                                 "links": [
-                                    "open-weights",
                                     "gpu",
-                                    "open-source"
+                                    "open-source",
+                                    "open-weights"
                                 ],
                                 "group": "ai",
                                 "content": "# Open Model\n\nA recipe that is shared with the world, not kept in a restaurant's safe.\n\nIn the AI world, there are two camps:\n1.  **Closed Models (Proprietary):** Like ChatGPT (OpenAI) or Gemini (Google). You can *use* the model through their website, but you cannot see how it works, what it learned from, or run it on your own computer. It is a \"Black Box.\"\n2.  **Open Models ([[open-weights|Open Weights]]):** Like Llama (Meta) or Mistral. The creators publish the \"brain\" (the weights) of the AI. You can download it, inspect it, and run it on your own private server without asking for permission.\n\n## Why does it matter?\n\nIt is the difference between **Rent** vs **Own**.\n*   **Closed:** You rent intelligence. If the company shuts down or bans you, you lose everything.\n*   **Open:** You own the intelligence. It runs on your hardware. No one can take it away.\n\n## FAQs\n\n*1. Is \"[[open-source|Open-Source]]\" the same as \"Open Model\"?*\nTechnically, no (though people use them interchangeably).\n*   **True [[open-source|Open Source]]:** They share the Training Data, The Code, AND The Weights (Everything).\n*   **Open Weights:** They share the ready-to-use Brain (Weights), but keep the Training Data secret. Most \"Open\" AI today (like Llama) is actually just \"[[open-weights|Open-Weights]].\"\n\n*2. Can I run these at home?*\nYes! If you have a decent computer (especially with a [[gpu|GPU]] like NVIDIA), you can use tools like **Ollama** or **LM Studio** to run powerful AI models completely offline.\n\n### Further Reading\n\n*   **Tool:** *[Ollama](https://ollama.com/)* (The easiest way to run open models locally).\n*   **Library:** *[Hugging Face](https://huggingface.co/)* (The \"GitHub\" of Open Models).\n"
@@ -700,11 +700,11 @@ const wikiData = {
                                     "KnowledgeManagement"
                                 ],
                                 "links": [
-                                    "embeddings",
-                                    "ai-hallucination",
+                                    "agentic-ai",
                                     "ai-fine-tuning",
+                                    "ai-hallucination",
                                     "vector-databases",
-                                    "agentic-ai"
+                                    "embeddings"
                                 ],
                                 "group": "ai",
                                 "content": "# RAG\n\nGiving the robot a textbook during the exam.\n\nStandard AI (like ChatGPT) relies on its **Training Memory** (what it learned months ago). It's like a student taking a closed-book exam; if they forgot the fact, they might guess ([[ai-hallucination|hallucinate]]).\n\n**RAG** (Retrieval Augmented Generation) connects the AI to your *live* documents. Before answering, it looks up the specific information in your files.\n\n## How it Works\n\nThe acronym itself perfectly describes the pipeline:\n1.  **Retrieval:** The system searches a specialized database (a [[vector-databases|Vector Database]]) containing your live documents to find chunks of text exactly relevant to the user's question.\n2.  **Augmentation:** The system combines the user's original question *with* the retrieved factual text chunks to create an \"augmented prompt\".\n3.  **Generation:** The AI language model reads this massive new prompt and uses both its internal logic and the provided factual context to generate a highly accurate, grounded answer.\n\n*Example:*\n1.  **User Asks:** \"How much vacation time do I have?\"\n2.  **Retrieval:** The system searches your company's HR Handbook PDF and finds a paragraph about PTO.\n3.  **Augmentation:** It builds a prompt: \"Using the following handbook excerpt, answer how much vacation time the user has: [insert handbook paragraph here].\"\n4.  **Generation:** \"According to the handbook excerpt provided, you have 15 days of vacation.\"\n\n### The Indexing Pipeline\nBefore the \"Lookup\" can happen, developers must prepare the documents using a standard **Indexing Pipeline** (frequently built with frameworks like [LangChain](https://www.langchain.com/)):\n1.  **Load:** Ingest raw data from a source (a local directory, a website, an AWS S3 bucket) using a Document Loader.\n2.  **Split:** Break large documents into small, manageable \"chunks\" (e.g., 500 words each). A language model has a finite memory window, so it cannot read a 1,000-page PDF at once.\n3.  **Store:** Convert those text chunks into mathematical arrays ([[embeddings|Embeddings]]) and save them inside a specialized **[[vector-databases|Vector Database]]**. When a user asks a question, the system mathematically compares the question against this database to find the most relevant chunks.\n\n### RAG Agents\nTraditionally, RAG is a rigid, one-way pipeline. However, by combining RAG with [[agentic-ai|Agentic AI]], you create a **RAG Agent**. \nInstead of forcing the AI to read a document every single time, the developer gives the AI a \"Search Database\" *tool*. The AI can then reason: *\"The user just asked me how my day is going; I don't need to search the HR handbook for that.\"* Or, *\"The user asked a complex question about holiday pay. Let me trigger my Search tool to find the answer.\"* This creates a vastly more dynamic and conversational system.\n\n## FAQs\n\n*1. Why is this better than [[ai-fine-tuning|fine-tuning]]?*\n*   **RAG** is cheaper and instant. If you update the HR handbook, the AI knows immediately.\n*   **Fine-tuning** is expensive and slow. You have to \"re-train\" the brain every time facts change.\n\n*2. Does it stop hallucinations?*\nDrastically reduces them. Because the AI is grounded in the text you gave it, it is much less likely to make things up (Hallucinate).\n\n### Further Reading\n\n*   **Article:** *[DataCamp: What is Retrieval-Augmented Generation?](https://www.datacamp.com/blog/what-is-retrieval-augmented-generation-rag)* (Great breakdown of how RAG fixes LLM hallucinations and limits).\n*   **Article:** *[Google Cloud: RAG Use Cases](https://cloud.google.com/use-cases/retrieval-augmented-generation)* (Google's overview of using RAG with tools like Vertex AI and BigQuery).\n*   **Guide:** *[Oracle: What is RAG?](https://www.oracle.com/artificial-intelligence/generative-ai/retrieval-augmented-generation-rag/)*\n*   **Tutorial:** *[RAG for Beginners](https://python.langchain.com/docs/use_cases/question_answering/)*\n"
@@ -721,8 +721,8 @@ const wikiData = {
                                     "Alignment"
                                 ],
                                 "links": [
-                                    "llm",
                                     "agentic-ai",
+                                    "llm",
                                     "ai-fine-tuning"
                                 ],
                                 "group": "ai",
@@ -777,8 +777,8 @@ const wikiData = {
                                     "Finance"
                                 ],
                                 "links": [
-                                    "encryption",
                                     "ransomware",
+                                    "encryption",
                                     "malware"
                                 ],
                                 "group": "cybersecurity",
@@ -840,30 +840,30 @@ const wikiData = {
                                     "Awareness"
                                 ],
                                 "links": [
-                                    "wipers",
-                                    "vishing",
-                                    "virus",
-                                    "ransomware",
-                                    "adware",
+                                    "supply-chain-attack",
+                                    "react2shell",
                                     "operating-system",
+                                    "cyber-warfare",
+                                    "cryptojacking",
+                                    "ransomware",
                                     "remote-code-execution",
                                     "rootkit",
-                                    "zero-day",
-                                    "botnets",
-                                    "worms",
-                                    "malware",
-                                    "phishing",
-                                    "cryptojacking",
-                                    "command-injection",
-                                    "supply-chain-attack",
-                                    "ddos",
                                     "doxing",
-                                    "trojan",
-                                    "logic-bomb",
-                                    "react2shell",
+                                    "key-loggers",
+                                    "adware",
+                                    "virus",
+                                    "phishing",
+                                    "worms",
+                                    "wipers",
+                                    "botnets",
                                     "spywares",
-                                    "cyber-warfare",
-                                    "key-loggers"
+                                    "vishing",
+                                    "command-injection",
+                                    "zero-day",
+                                    "trojan",
+                                    "ddos",
+                                    "logic-bomb",
+                                    "malware"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Cybersecurity Attacks\n\nThe arsenal of the digital adversary.\n\nCybersecurity attacks range from simple social engineering tricks to complex, automated [[malware|malware]] that can paralyze global infrastructure. This catalogue provides a summary of the various attack vectors, malicious software, and vulnerabilities documented in this knowledge bank.\n\n## The Catalog of Attacks\n\n### 1. [[malware|Malware]] (Overview)\nA broad category of malicious software; including viruses, [[worms|worms]], and [[ransomware|ransomware]]; designed specifically to harm systems, steal data, or gain unauthorized access.\n\n### 2. [[phishing|Phishing]]\nSocial engineering that uses deceptive emails or messages to trick users into revealing passwords, credit card numbers, or other sensitive information.\n\n### 3. [[vishing|Vishing]]\n\"Voice [[phishing|Phishing]]\": Scammers use phone calls to create a sense of urgency and trick victims into granting remote access or transferring money.\n\n### 4. [[ransomware|Ransomware]]\nDigital kidnapping: [[malware|Malware]] that encrypts your files and demands a ransom (usually in Bitcoin) in exchange for the decryption key.\n\n### 5. [[wipers|Wipers]]\nThe \"digital shredder\": Destructive [[malware|malware]] used in [[cyber-warfare|cyber warfare]] to permanently erase data from hard drives with no intention of recovery.\n\n### 6. [[worms|Worms]]\nStandalone [[malware|malware]] that spreads automatically across networks without needing a host program or any human action.\n\n### 7. [[virus|Computer Virus]]\nA classic infection that attaches itself to a host program or file and replicates by infecting other files when the host is executed.\n\n### 8. [[trojan|Trojan Horse]]\nMalicious software that disguises itself as something useful (like a free game or tool) to trick you into inviting it into your system.\n\n### 9. [[botnets|Botnets]]\nAn army of \"zombie\" computers (infected devices) secretly controlled by a hacker to launch massive attacks like [[ddos|DDoS]] or crypto mining.\n\n### 10. [[ddos|DDoS]] (Distributed Denial of Service)\nA \"digital traffic jam\": Overwhelming a website or server with a flood of traffic from a [[botnets|botnet]] to make it crash or become unreachable.\n\n### 11. [[cryptojacking|Cryptojacking]]\nA digital parasite that secretly uses your computer's processing power and electricity to mine cryptocurrency for a hacker.\n\n### 12. [[key-loggers|Keyloggers]]\nSurveillance tools (hardware or software) that secretly record everything you type to steal passwords and personal messages.\n\n### 13. [[spywares|Spyware]]\nBroad category of surveillance [[malware|malware]] that quietly tracks your activities and steals information while remaining as invisible as possible.\n\n### 14. [[rootkit|Rootkit]]\nStealthy toolsets that give a hacker deep administrative control over a computer while hiding their presence from the [[operating-system|operating system]].\n\n### 15. [[logic-bomb|Logic Bomb]]\nMalicious code that sits dormant and \"explodes\" (triggers) only when a specific condition is met, such as a date or a specific event.\n\n### 16. [[supply-chain-attack|Supply Chain Attack]]\nAttacking a large organization by first compromising the smaller, less-secure vendors or suppliers that they trust.\n\n### 17. [[zero-day|Zero-Day]]\nAn attack that exploits a previously unknown software flaw before the developers have had \"zero days\" to create a fix or patch.\n\n### 18. [[remote-code-execution|Remote Code Execution]] (RCE)\nThe \"Holy Grail\" for hackers: A vulnerability that allows them to run their own code on a remote server from anywhere in the world.\n\n### 19. [[command-injection|Command Injection]]\nTricking a system into obeying unauthorized commands by hiding them in legitimate-looking input fields (like a search bar).\n\n### 20. [[react2shell|React2Shell]]\nA critical vulnerability (CVE-2025-55182) that allows hackers to take control of servers running specific versions of React Server Components.\n\n### 21. [[doxing|Doxing]]\nA real-world threat: Publicly revealing someone's private identifying information online to enable harassment or physical threats.\n\n### 22. [[adware|Adware]]\nUnwanted software that bombards you with advertisements, often tracking your browsing habits to sell your data to advertisers.\n"
@@ -909,9 +909,9 @@ const wikiData = {
                                     "Espionage"
                                 ],
                                 "links": [
-                                    "phishing",
                                     "operating-system",
-                                    "antivirus"
+                                    "antivirus",
+                                    "phishing"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Keylogger\n\nThe digital spy looking over your shoulder.\n\nA **Keylogger** (Keystroke Logger) is a surveillance tool that records every single keystroke you make on your computer.\n\nIt captures passwords, credit card numbers, personal emails, and chat logs. It can be software (a hidden program) or hardware (a physical plug inserted between the keyboard and the computer).\n\n## How it works\n\n1.  **Infection:** You accidentally download it (via [[phishing]] or infected USB).\n2.  **Recording:** It silently writes `USER: typed 'facebook.com', then typed 'MyPassword123'` to a hidden text file.\n3.  **Exfiltration:** It secretly emails that text file to the hacker.\n\n## FAQs\n\n*1. Can [[antivirus]] detect it?*\nSoftware keyloggers: Yes, usually.\nHardware keyloggers: No, because they live outside the [[operating-system]]. You have to physically check your keyboard cable.\n\n### Further Reading\n\n*   **Article:** *[Keyloggers Explained (Kaspersky)](https://www.kaspersky.com/resource-center/definitions/keylogger)*\n*   **Video:** *[Hardware Keylogger Teardown](https://www.youtube.com/watch?v=scWj1BmrHXA)*\n"
@@ -945,9 +945,9 @@ const wikiData = {
                                     "ScriptKiddie"
                                 ],
                                 "links": [
+                                    "firewalls",
                                     "ddos",
-                                    "script-kiddies",
-                                    "firewalls"
+                                    "script-kiddies"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# LOIC (Low Orbit Ion Cannon)\n\nThe digital battering ram.\n\n**LOIC (Low Orbit Ion Cannon)** is an open-source network stress testing and [[ddos|[[ddos|DDoS]] (Distributed Denial of Service)]] attack tool. It is famous for its extreme simplicity: it features a big \"Fire\" button that floods a target website with so much junk traffic that the site crashes and becomes unavailable to everyone else.\n\nIt is the weapon of choice for [[script-kiddies|Script Kiddies]] and amateur hacktivist groups (like Anonymous) because it requires almost zero technical knowledge to use.\n\n## How it Works\n\nLOIC doesn't use any fancy exploits or \"magic\" code. It uses brute force:\n\n*   **TCP/UDP Flooding:** It sends thousands of requests per second to a target IP address.\n*   **The \"Hive Mind\":** A single person running LOIC is annoying but rarely crashes a major site. However, LOIC has a \"IRC\" mode where a central leader can control thousands of \"volunteer\" computers at once. When thousands of people press \"Fire\" at the same moment, it creates a massive digital tidal wave that can knock almost any server offline.\n\n## The Risks of Using It\n\nLOIC is notoriously \"noisy\" and dangerous for the attacker:\n\n1.  **No Anonymity:** Unlike advanced tools, LOIC does nothing to hide your IP address. It's like throwing a brick through a window while holding up your ID card. It is very easy for ISPs and law enforcement to trace the attack back to the user's home.\n2.  **Illegal Activity:** Engaging in a [[ddos|DDoS]] attack, even for \"protest\" reasons, is a felony in most countries (like the Computer Fraud and Abuse Act in the US).\n\n## FAQs\n\n*1. Is there a \"High Orbit\" version?*\nYes, there is a successor called **HOIC (High Orbit Ion Cannon)**. It is much more powerful and designed to bypass some basic [[ddos|DDoS]] protections that caught the original LOIC.\n\n*2. Can simple [[firewalls|firewalls]] stop it?*\nStandard [[firewalls|firewalls]] struggle with LOIC because the traffic looks like \"normal\" (but extremely fast) requests. Most modern websites use specialized services like Cloudflare to filter out this flood before it hits their servers.\n\n### Further Reading\n\n*   **History:** *[The Story of Anonymous and LOIC](https://web.archive.org/web/20101211115852/https://www.theguardian.com/technology/2010/dec/08/anonymous-low-orbit-ion-cannon)* - How a tool was used for global digital protest.\n*   **Technical:** *[How [[ddos|DDoS]] Protection Works](https://www.cloudflare.com/learning/ddos/ddos-mitigation/)* - How modern sites survive LOIC attacks.\n"
@@ -1013,10 +1013,10 @@ const wikiData = {
                                     "VulnerabilityManagement"
                                 ],
                                 "links": [
-                                    "cryptojacking",
-                                    "botnet",
+                                    "ransomware",
                                     "command-injection",
-                                    "ransomware"
+                                    "botnet",
+                                    "cryptojacking"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Remote Code Execution (RCE)\n\n**Remote Code Execution (RCE)** is a type of vulnerability that allows an attacker to execute arbitrary code on a victim's machine without having to physically access it through the network.\n\nThis is often used to run malicious code on the remote system, this can lead to bad actor(s)\n- getting inside your system\n- getting access to sensitive data\n- getting access to your system's resources for malicious activities like [[botnet|Botnet-Attacks]], [[cryptojacking|Cryptojacking]]\n- can lock your system in demand to extort money from you or your organization ([[ransomware|Ransomware]]).\n  \n### These can be of few different types:\n- Injection attacks: Applications and sites that take in user input, deliberately providing arbitrary code that would be executed by the Application or the site, example: SQL Injection, [[command-injection|Command Injection]] and XSS etc.\n"
@@ -1032,11 +1032,11 @@ const wikiData = {
                                     "Persistence"
                                 ],
                                 "links": [
-                                    "operating-system",
+                                    "antivirus",
                                     "os-kernel",
                                     "virus",
                                     "hard-drive",
-                                    "antivirus",
+                                    "operating-system",
                                     "malware"
                                 ],
                                 "group": "cybersecurity",
@@ -1053,10 +1053,10 @@ const wikiData = {
                                     "Surveillance"
                                 ],
                                 "links": [
-                                    "trojan",
+                                    "key-loggers",
                                     "adware",
                                     "virus",
-                                    "key-loggers"
+                                    "trojan"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Spyware\n\nThe bug in the room.\n\n**Spyware** is unwanted software that infiltrates your device, stealing your internet usage data and sensitive information. It is a broad category that includes [[adware|Adware]], [[trojan|Trojan]], and [[key-loggers|Keyloggers]].\n\nUnlike a [[virus]] (which wants to break things), Spyware wants your computer to keep working smoothly so it can keep watching you.\n\n## Taking hostages vs. Spying\n\n*   **Ransomware:** Announces itself loudly (\"PAY ME!\").\n*   **Spyware:** Tries to be invisible. If you know it's there, it has failed.\n\n## FAQs\n\n*1. Is Pegasus spyware?*\nYes. **Pegasus** is military-grade mobile spyware sold to governments. It can infect an iPhone with \"Zero-Click\" (you don't even have to open a link) and record calls, read messages, and track location.\n\n### Further Reading\n\n*   **Article:** *[What is Spyware? (Cisco)](https://www.cisco.com/c/en/us/products/security/what-is-spyware.html)*\n*   **News:** *[The Pegasus Project](https://forbiddenstories.org/case/the-pegasus-project/)*\n"
@@ -1105,9 +1105,9 @@ const wikiData = {
                                     "Replication"
                                 ],
                                 "links": [
-                                    "botnets",
-                                    "trojan",
                                     "ransomware",
+                                    "trojan",
+                                    "botnets",
                                     "malware"
                                 ],
                                 "group": "cybersecurity",
@@ -1124,8 +1124,8 @@ const wikiData = {
                                     "Fraud"
                                 ],
                                 "links": [
-                                    "phishing",
-                                    "virus"
+                                    "virus",
+                                    "phishing"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Vishing\n\nThe scammer who talks you into unlocking the door.\n\n**Vishing** (Voice Phishing) is a social engineering attack where fraudsters use phone calls; often with fake caller IDs; to trick you into revealing sensitive information or transferring money.\n\nThink of it like a con artist wearing a fake uniform. In email [[phishing|phishing]], they send a fake letter. In vishing, they actually call you, pretending to be someone you trust (like your bank or Amazon support) to create a false sense of urgency or authority. Because you hear a human voice, it can feel more \"real\" and harder to ignore than an email.\n\n## How it Works\n\n*   **Spoofing:** Scammers use software to make their phone number look like it's coming from a legitimate organization (e.g., \"Chase Bank\" or a local area code).\n*   **The Script:** They follow a prepared script designed to trigger emotion; fear (\"Your account is compromised!\") or excitement (\"You won a cruise!\").\n*   **The Ask:** The goal is always the same: get you to verify your identity (give up your SSN), fix a \"[[virus|virus]]\" (grant remote access), or stop a \"fraudulent charge\" (send them money).\n\n## FAQs\n\n*1. How can I tell if a call is fake?*\nLegitimate organizations will **never** call you and ask for your password, PIN, or 2FA code. If they pressure you to act *immediately*, it\u2019s a scam. Hang up and call the official number on the back of your card.\n\n*2. Why did the caller ID say \"IRS\"?*\nCaller ID is easily faked (spoofed). Do not trust the name or number on your screen.\n\n### Further Reading\n\n*   **Article:** *[What is Vishing?](https://www.kaspersky.com/resource-center/definitions/vishing)* (In-depth explanation of voice phishing).\n"
@@ -1142,10 +1142,10 @@ const wikiData = {
                                 ],
                                 "links": [
                                     "cyber-warfare",
-                                    "shamoon",
+                                    "notpetya",
                                     "ransomware",
                                     "hard-drive",
-                                    "notpetya",
+                                    "shamoon",
                                     "malware"
                                 ],
                                 "group": "cybersecurity",
@@ -1162,12 +1162,12 @@ const wikiData = {
                                     "Replication"
                                 ],
                                 "links": [
-                                    "eternalblue",
-                                    "morris-worm",
                                     "wanna-cry",
-                                    "trojan",
-                                    "virus",
                                     "ransomware",
+                                    "trojan",
+                                    "morris-worm",
+                                    "virus",
+                                    "eternalblue",
                                     "malware"
                                 ],
                                 "group": "cybersecurity",
@@ -1226,9 +1226,9 @@ const wikiData = {
                                 ],
                                 "links": [
                                     "rsa",
-                                    "symmetric-encryption",
+                                    "encryption",
                                     "ecc",
-                                    "encryption"
+                                    "symmetric-encryption"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Asymmetric [[encryption|Encryption]]\n\nThe mailbox of the digital world.\n\n**Asymmetric [[encryption|Encryption]]** (also called Public Key Cryptography) uses a pair of mathematically related keys: a **Public Key** and a **Private Key**. \n\nThink of it like a **Mailbox**.\n*   **Public Key (The Slot):** Anyone can walk up to your mailbox and drop a letter in the slot. Everyone knows where the slot is.\n*   **Private Key (The Key):** Only the owner of the mailbox has the physical key to open the back and read the letters.\n*   Even if the person who dropped the letter in the slot changes their mind, they cannot get it back out. Only the holder of the Private Key can access the contents.\n\n## How it Works\n\n1.  **You generate two keys:** One you keep secret (Private), and one you give to everyone (Public).\n2.  **Sender:** Someone wants to send you a secret. They look up your Public Key and use it to scramble their message.\n3.  **Receiver:** You receive the scrambled mess. You use your Private Key to unscramble it.\n4.  **The Magic:** Even though the Public Key *locked* the message, it cannot *unlock* it. Only the Private Key can.\n\n## Why it's Important\nIt solves the **Key Exchange Problem**. You don't have to meet someone in a dark alley to share a secret password. You can post your Public Key on your website, and anyone can safely send you data.\n\n## Famous Examples\n*   **[[rsa|RSA]]:** The oldest and most famous asymmetric algorithm.\n*   **[[ecc|ECC (Elliptic Curve Cryptography)]]:** A newer, more efficient method used for SSL/TLS (HTTPS) on almost every website.\n\n## FAQs\n\n*1. Is it slower than Symmetric?*\nYes, much slower. The math is much more complex. This is why it is rarely used to encrypt large files. Instead, it is used to encrypt a small \"Session Key\" which is then used for [[symmetric-encryption|Symmetric Encryption]].\n\n*2. What is a Digital Signature?*\nIt's Asymmetric [[encryption|encryption]] in reverse. You \"lock\" a message with your *Private* key. If someone can unlock it with your *Public* key, they know for 100% certainty that it came from you and hasn't been changed.\n\n### Further Reading\n\n*   **Video:** *[Public Key Cryptography: RSA Encryption](https://www.youtube.com/watch?v=vgTtMqs66_A)*\n*   **Article:** *[How SSL/TLS works](https://www.cloudflare.com/learning/ssl/what-is-ssl/)*\n"
@@ -1245,9 +1245,9 @@ const wikiData = {
                                 ],
                                 "links": [
                                     "rsa",
+                                    "asymmetric-encryption",
                                     "shors-algorithm",
-                                    "post-quantum-cryptography",
-                                    "asymmetric-encryption"
+                                    "post-quantum-cryptography"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# ECC (Elliptic Curve Cryptography)\n\nSmaller keys, bigger security.\n\n**ECC** is a modern form of [[asymmetric-encryption|Asymmetric Encryption]] that is faster and more efficient than older methods like [[rsa|RSA]]. It is the primary way your smartphone and web browser stay secure today.\n\n## How it Works: Bouncing a ball on a curve\nInstead of using massive prime numbers (like RSA), ECC uses the complex math of geographic curves.\n\nImagine a specific \"Elliptic Curve\" on a graph.\n1.  **The Trapdoor:** You pick a starting point on the curve and \"bounce\" a digital ball around the curve a specific number of times (this number is your **Private Key**).\n2.  **The Result:** The final landing spot of the ball is your **Public Key**.\n3.  **The Problem:** For an observer, it is impossible to look at the final landing spot and figure out exactly how many \"bounces\" it took to get there. They would have to guess every possibility, which takes trillions of years.\n\n## The Advantage: Size Matters\nThe biggest benefit of ECC is that it provides the same level of security as RSA but with **much smaller keys**.\n\n| Security Level | RSA Key Size | ECC Key Size |\n| :--- | :--- | :--- |\n| Standard | 3072 bits | 256 bits |\n| Maximum | 15360 bits | 512 bits |\n\nBecause the keys are smaller, they require less battery life, less storage, and less internet bandwidth. This is why ECC is the standard for mobile devices and the \"Padlock\" icon in your browser (HTTPS).\n\n## FAQs\n\n*1. Is ECC secure against Quantum Computers?*\nNo. Just like [[rsa|RSA]], ECC can be broken by **[[shors-algorithm|Shor's Algorithm]]**. While ECC is more efficient for today, the future will require **[[post-quantum-cryptography|Post-Quantum Cryptography]]**.\n\n*2. Where else is ECC used?*\n**Bitcoin** and other cryptocurrencies use ECC (specifically a curve called `secp256k1`) to generate wallet addresses and sign transactions.\n\n### Further Reading\n\n*   **Video:** *[Elliptic Curve Cryptography (Computerphile)](https://www.youtube.com/watch?v=NF1pwjL9-DE)*\n*   **Article:** *[A Relatively Easy-to-Understand Guide to ECC](https://blog.cloudflare.com/ecc-quic-tls/)*\n"
@@ -1279,11 +1279,11 @@ const wikiData = {
                                     "Math"
                                 ],
                                 "links": [
-                                    "asymmetric-encryption",
-                                    "shors-algorithm",
-                                    "encryption",
                                     "post-quantum-cryptography",
-                                    "supercomputer"
+                                    "encryption",
+                                    "supercomputer",
+                                    "asymmetric-encryption",
+                                    "shors-algorithm"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# RSA\n\nThe math of very large prime numbers.\n\n**RSA** is the world's first and most famous [[asymmetric-encryption|Asymmetric Encryption]] algorithm. Created in 1977, it remains the foundation for much of the internet's security, including digital signatures and email [[encryption|encryption]].\n\n## How it Works: The Prime number trapdoor\nThe security of RSA relies on one simple mathematical fact: **it is very easy to multiply two large prime numbers together, but extremely hard for a computer to do the reverse (factoring).**\n\nImagine you have two massive prime numbers, `P` and `Q`.\n*   **The Easy Direction:** Multiply `P * Q` to get `N`. (A calculator does this in a millisecond).\n*   **The Hard Direction (The Trapdoor):** Give a computer the number `N` and ask it to find `P` and `Q`. If `N` is huge (e.g., 2048 bits long), even a [[supercomputer|supercomputer]] would take billions of years to guess the answer.\n\n## The Keys\n*   **Public Key:** Shared with the world. It contains the number `N`. Anyone can use this to encrypt a message for you.\n*   **Private Key:** Kept secret by you. It contains the original prime numbers `P` and `Q`. Because only you know the \"ingredients,\" only you can undo the math to read the message.\n\n## FAQs\n\n*1. Is it secure?*\nYes, but only if the keys are long enough. Today, 1024-bit RSA is considered weak. The industry standard is **2048-bit** or **4096-bit**.\n\n*2. What is the \"Quantum Threat\" to RSA?*\nRSA is the primary target of **[[shors-algorithm|Shor's Algorithm]]**. A large-scale quantum computer could factor the prime numbers in hours, rendering all RSA [[encryption|encryption]] useless. This is why the world is moving toward **[[post-quantum-cryptography|Post-Quantum Cryptography]]**.\n\n### Further Reading\n\n*   **Video:** *[RSA [[encryption|Encryption]] (Computerphile)](https://www.youtube.com/watch?v=M7kEpw1tn50)*\n*   **Article:** *[How RSA works](https://en.wikipedia.org/wiki/RSA_(cryptosystem))*\n"
@@ -1299,11 +1299,11 @@ const wikiData = {
                                     "Threats"
                                 ],
                                 "links": [
-                                    "quantum-computing",
-                                    "qubits",
                                     "encryption",
                                     "supercomputer",
-                                    "nisq"
+                                    "nisq",
+                                    "qubits",
+                                    "quantum-computing"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Shor's Algorithm\n\nThe doomsday clock for internet privacy.\n\n**Shor's Algorithm** is a quantum math formula that can break the [[encryption|encryption]] protecting the entire internet.\n\nCurrently, our security (RSA Encryption) relies on the fact that computers are really bad at factoring massive numbers. It would take a [[supercomputer|supercomputer]] millions of years to guess the factors.\n**Peter Shor** proved that a **[[quantum-computing|Quantum Computer]]** running his algorithm could do it in *hours*.\n\n## The Hook\n\nImagine a lock that requires you to guess a number between 1 and Infinity.\n*   **Classic Computer:** Guesses 1, then 2, then 3... (Takes forever).\n*   **Shor's Algorithm:** Guesses *all numbers at once* and finds the pattern that leads to the answer.\n\n## FAQs\n\n*1. Why hasn't the internet crashed yet?*\nBecause we don't have a Quantum Computer big enough to run it. Yet.\nWe are currently in the \"[[nisq|NISQ]]\" era (Noisy Intermediate-Scale Quantum). We need thousands of perfect [[qubits|Qubits]] to break RSA. We currently have hundreds of noisy ones.\n\n*2. What are we doing about it?*\nThe world is racing to switch to **Post-Quantum Cryptography (PQC)**. These are new math problems (like Lattice-based cryptography) that even quantum computers can't solve easily. NIST is currently standardizing them.\n\n### Further Reading\n\n*   **Video:** *[How Quantum Computers Break [[encryption|Encryption]] (Veritasium)](https://www.youtube.com/watch?v=lvTqbM5Dq4Q)*.\n*   **Standard:** *[NIST Post-Quantum Cryptography](https://csrc.nist.gov/projects/post-quantum-cryptography)*.\n"
@@ -1319,10 +1319,10 @@ const wikiData = {
                                     "AES"
                                 ],
                                 "links": [
-                                    "aes-256",
-                                    "asymmetric-encryption",
                                     "hard-drive",
-                                    "encryption"
+                                    "asymmetric-encryption",
+                                    "encryption",
+                                    "aes-256"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Symmetric [[encryption|Encryption]]\n\nOne key to rule them all.\n\n**Symmetric [[encryption|Encryption]]** is a method of [[encryption|encryption]] where the *same* secret key is used both to encrypt (lock) the data and decrypt (unlock) it. It is the oldest and simplest form of cryptography.\n\nThink of it like a **House Key**.\n*   You use the key to lock the front door when you leave.\n*   You use the same key to unlock the front door when you return.\n*   If you want a friend to get in, you have to give them a copy of that exact same key.\n\n## The Pros and Cons\n\n| Feature | Description |\n| :--- | :--- |\n| **Speed** | Extremely fast. Modern computers can encrypt gigabytes of data in seconds. |\n| **Efficiency** | Requires very little computing power. |\n| **The Key Problem** | If you need to send a secret to someone far away, you must first find a way to get the key to them without a spy stealing it. |\n\n## Famous Examples\n*   **[[aes-256|AES (Advanced [[encryption|Encryption]] Standard)]]**: The world standard for securing data at rest (hard drives, databases).\n*   **Caesar Cipher**: The ancient (and very weak) method of shifting letters by a certain number.\n\n## FAQs\n\n*1. When should I use it?*\nUse it for \"Storage.\" If you are encrypting your own [[hard-drive|hard drive]] or phone, you are the only one who needs the key, so there is no \"sharing\" problem.\n\n*2. How is the key sharing problem solved?*\nOn the internet, we usually use **[[asymmetric-encryption|Asymmetric Encryption]]** just to safely send a symmetric key to the other person. Once both sides have the key, they switch to Symmetric [[encryption|encryption]] for the rest of the conversation because it is faster.\n\n### Further Reading\n\n*   **Video:** *[Symmetric vs Asymmetric Encryption](https://www.youtube.com/watch?v=ERp842ooXls)*\n*   **Concept:** *[Diffie-Hellman Key Exchange](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)* (The math trick used to share keys).\n"
@@ -1366,10 +1366,10 @@ const wikiData = {
                                     "Worm"
                                 ],
                                 "links": [
-                                    "eternalblue",
+                                    "ransomware",
                                     "wanna-cry",
-                                    "virus",
-                                    "ransomware"
+                                    "eternalblue",
+                                    "virus"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# [[wanna-cry|WannaCry]]\n\nThe epidemic that held the world hostage.\n\n**WannaCry** (2017) was a global **[[ransomware|Ransomware]]** attack that infected over 200,000 computers in 150 countries within a single weekend.\n\nIt was the first time a criminal [[ransomware|ransomware]] used a military-grade weapon (the **[[eternalblue|EternalBlue]]** exploit) to spread automatically. It didn't wait for you to click an email; if your computer was connected to the internet and unpatched, it just *happened*.\n\n## The Damage\n\n*   **NHS (UK Hospitals):** The biggest tragedy. It shut down X-ray machines, ambulances were diverted, and surgeries were cancelled. Lives were put at risk.\n*   **Telef\u00f3nica (Spain):** The telecom giant was paralyzed.\n*   **FedEx & Renault:** Factories stopped production.\n\n## FAQs\n\n*1. How was it stopped?*\nBy accident. A 22-year-old security researcher named **Marcus Hutchins** found a \\\"Kill Switch\\\" in the code.\nThe [[virus|virus]] checked if a specific (gibberish) website existed before attacking. If the website existed, the [[virus|virus]] stopped. Marcus bought the domain for $10, and the entire global attack instantly shut down.\n\n*2. Did people pay?*\nSurprisingly, not much. The hackers made only about $140,000 total. The chaos cost the world nearly **$4 billion** in damages, but the criminals failed to cash in efficiently.\n\n### Further Reading\n\n*   **Story:** *[The Confessions of Marcus Hutchins](https://www.wired.com/story/confessions-marcus-hutchins-hacker-who-saved-the-internet/)*.\n*   **Documentary:** *[WannaCry: The Marcus Hutchins Story](https://www.youtube.com/watch?v=Getj6f9y8Gk)*.\n"
@@ -1466,12 +1466,12 @@ const wikiData = {
                                     "Wiper"
                                 ],
                                 "links": [
-                                    "eternalblue",
-                                    "wipers",
+                                    "firewalls",
                                     "supply-chain-attack",
-                                    "virus",
                                     "ransomware",
-                                    "firewalls"
+                                    "eternalblue",
+                                    "virus",
+                                    "wipers"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# NotPetya\n\nA disguised assassin pretending to be a kidnapper.\n\n**NotPetya** (2017) was a devastating cyberattack that looked like [[ransomware|Ransomware]] but was actually a **[[wipers|Wiper]]**.\n\n[[ransomware|Ransomware]] locks your files and asks for money to unlock them. NotPetya locked the files, asked for money, but **deleted the key**. Even if you paid, you could never get your data back. Its goal wasn't money; it was pure destruction.\n\n## The Target\n\nIt was a targeted attack against **Ukraine** by Russian military hackers (Sandworm).\n*   They hacked a popular Ukrainian accounting software (**M.E.Doc**) that every business used to pay taxes.\n*   They pushed a malicious \\\"Update\\\" to everyone.\n*   Boom. Banks, airports, and power companies in Ukraine went dark.\n*   *Collateral Damage:* It spread globally (via [[eternalblue|EternalBlue]]), costing companies like Maersk and FedEx over **$10 billion**.\n\n## FAQs\n\n*1. Why call it \\\"NotPetya\\\"?*\nWhen it first appeared, it looked exactly like an older criminal [[ransomware|ransomware]] called \\\"Petya.\\\" Security researchers said, \\\"Oh, it's Petya again.\\\"\nThen they realized the code was different and purely destructive. So they named it \\\"Not-Petya.\\\"\n\n*2. What did we learn?*\nIt showed the danger of **[[supply-chain-attack|Supply Chain Attacks]]**. You can have the best [[firewalls|firewall]] in the world, but if the software you *trust* (like your accounting app) sends you a [[virus|virus]], you let it right in.\n\n### Further Reading\n\n*   **Deep Dive:** *[The Untold Story of NotPetya](https://www.wired.com/story/notpetya-cyberattack-ukraine-russia-code-crashed-the-world/)* (Wired Article - A Must Read).\n*   **Analysis:** *[Difference between Petya and NotPetya](https://www.kaspersky.com/resource-center/definitions/petya-notpetya)*.\n"
@@ -1523,9 +1523,9 @@ const wikiData = {
                                     "Worm"
                                 ],
                                 "links": [
+                                    "ransomware",
                                     "eternalblue",
-                                    "virus",
-                                    "ransomware"
+                                    "virus"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# WannaCry\n\nThe epidemic that held the world hostage.\n\n**WannaCry** (2017) was a global **[[ransomware|Ransomware]]** attack that infected over 200,000 computers in 150 countries within a single weekend.\n\nIt was the first time a criminal [[ransomware|ransomware]] used a military-grade weapon (the **[[eternalblue|EternalBlue]]** exploit) to spread automatically. It didn't wait for you to click an email; if your computer was connected to the internet and unpatched, it just *happened*.\n\n## The Damage\n\n*   **NHS (UK Hospitals):** The biggest tragedy. It shut down X-ray machines, ambulances were diverted, and surgeries were cancelled. Lives were put at risk.\n*   **Telef\u00f3nica (Spain):** The telecom giant was paralyzed.\n*   **FedEx & Renault:** Factories stopped production.\n\n## FAQs\n\n*1. How was it stopped?*\nBy accident. A 22-year-old security researcher named **Marcus Hutchins** found a \\\"Kill Switch\\\" in the code.\nThe [[virus|virus]] checked if a specific (gibberish) website existed before attacking. If the website existed, the [[virus|virus]] stopped. Marcus bought the domain for $10, and the entire global attack instantly shut down.\n\n*2. Did people pay?*\nSurprisingly, not much. The hackers made only about $140,000 total. The chaos cost the world nearly **$4 billion** in damages, but the criminals failed to cash in efficiently.\n\n### Further Reading\n\n*   **Story:** *[The Confessions of Marcus Hutchins](https://www.wired.com/story/confessions-marcus-hutchins-hacker-who-saved-the-internet/)*.\n*   **Documentary:** *[WannaCry: The Marcus Hutchins Story](https://www.youtube.com/watch?v=Getj6f9y8Gk)*.\n"
@@ -1551,9 +1551,9 @@ const wikiData = {
                                     "SOC"
                                 ],
                                 "links": [
-                                    "soc",
                                     "red-team",
-                                    "firewalls"
+                                    "firewalls",
+                                    "soc"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Blue Team\n\nThe castle guards.\n\nThe **Blue Team** is the internal security staff responsible for defending the organization. They are the ones watching the monitors, installing the [[firewalls|Firewalls]], patching the software, and responding when an alarm goes off.\n\n## Responsibilities\n\n*   **monitoring:** Watching logs for suspicious activity ([[soc|SOC]]).\n*   **Incident Response:** Kicking the hackers out when a breach happens.\n*   **Hardening:** Making the servers tougher to crack.\n\n## The endless job\n\nThe [[red-team|Red Team]] only needs to find *one* open window to win. The Blue Team must close *every* window to win.\n\n### Further Reading\n\n*   **Guide:** *[Blue Team Handbook](https://www.amazon.com/Blue-Team-Handbook-condensed-Operations/dp/1500734756)*\n"
@@ -1569,8 +1569,8 @@ const wikiData = {
                                     "Strategy"
                                 ],
                                 "links": [
-                                    "blue-team",
-                                    "red-team"
+                                    "red-team",
+                                    "blue-team"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Purple Team\n\nCoach and sparring partner.\n\n**Purple Teaming** is a collaboration between [[red-team|Red]] (Attackers) and [[blue-team|Blue]] (Defenders).\n\nInstead of a secret attack (Red Team) where the [[blue-team|Blue Team]] doesn't know what's happening, they sit in the same room.\n*   **Red:** \"I am going to run Attack X now.\"\n*   **Blue:** \"Okay, let me see if my alarm triggers... Nope. Try again.\"\n*   **Red:** \"Running Attack X again.\"\n*   **Blue:** \"Got it! I see you now.\"\n\n## Goal\n\nTo rapidly improve detection capabilities through transparent feedback loops.\n\n### Further Reading\n\n*   **Article:** *[What is a Purple Team? (Rapid7)](https://www.rapid7.com/fundamentals/purple-teaming/)*\n"
@@ -1587,8 +1587,8 @@ const wikiData = {
                                 ],
                                 "links": [
                                     "blue-team",
-                                    "phishing",
-                                    "pen-testing"
+                                    "pen-testing",
+                                    "phishing"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Red Team\n\nPlaying the enemy.\n\nThe **Red Team** is a group of security professionals who act as adversaries to an organization's security squad.\n\nUnlike a [[pen-testing|Pen-Test]] (which finds *technical* bugs), a Red Team Operation tests the **People and Processes**. They simulate a full-scale real-world attack: sending [[phishing]] emails, trying to break into the physical building, and moving quietly through the network to steal data without being caught.\n\n## Goal\n\nTo train the [[blue-team|Blue-Team]] (Defenders) by giving them a realistic sparring partner. \"Train hard, fight easy.\"\n\n## FAQs\n\n*1. Are they bad guys?*\nNo. They are employees or contractors hired to attack.\n\n### Further Reading\n\n*   **Article:** *[Red Team vs [[blue-team|Blue Team]] vs Purple Team](https://www.csoonline.com/article/563806/red-team-vs-blue-team-vs-purple-team-the-roles-in-cybersecurity.html)*\n"
@@ -1631,13 +1631,13 @@ const wikiData = {
                                     "CISSP"
                                 ],
                                 "links": [
-                                    "zero-trust",
-                                    "playbooks",
-                                    "pen-testing",
-                                    "risk-management",
-                                    "siem",
                                     "privacy-protection",
-                                    "defense-in-depth"
+                                    "playbooks",
+                                    "zero-trust",
+                                    "risk-management",
+                                    "defense-in-depth",
+                                    "siem",
+                                    "pen-testing"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# CISSP Security Domains\n\nThe high-level architecture of professional cybersecurity.\n\nThe (ISC)\u00b2 **CISSP** (Certified Information Systems Security Professional) certification is built on eight \"domains\" that cover every aspect of an organization's security posture.\n\n## The Eight Domains\n\n### 1. Security and [[risk-management|Risk Management]]\nFocused on defining security goals, identifying risks, and ensuring compliance with laws and ethics.\n*   **Risk Mitigation**: Developing procedures to reduce the impact of a breach.\n*   **Business Continuity**: Establishing disaster recovery plans so an organization survives a catastrophe.\n\n### 2. Asset Security\nManaging the lifecycle of digital and physical assets, including storage, retention, and secure destruction. It emphasizes protecting **[[privacy-protection|PII and SPII]]**.\n\n### 3. Security Architecture and Engineering\nOptimizing security by designing effective tools and systems. It follows principles like **Shared Responsibility**, **[[defense-in-depth|Defense in Depth]]**, and **[[zero-trust|Zero Trust]]**.\n\n### 4. Communication and Network Security\nSecuring the physical and wireless networks, whether they are on-site, remote, or in the cloud.\n\n### 5. Identity and Access Management (IAM)\nControlling who has access to what. It relies on the four pillars: **Identification**, **Authentication**, **Authorization**, and **Accountability**.\n\n### 6. Security Assessment and Testing\nIdentifying vulnerabilities before attackers do. This involves **[[pen-testing|Penetration Testing]]** and regular security audits.\n\n### 7. Security Operations\nThe \"front lines\" of defense. It focuses on incident investigation, log management (using **[[siem|[[siem|SIEM]] tools]]**), and following **[[playbooks|Playbooks]]** to mitigate active attacks.\n\n### 8. Software Development Security\nEmbedding security into every phase of the software development lifecycle (SDLC), from design to release.\n\n---\n\n## Key Concepts\n*   **Security Posture**: An organization's overall ability to manage its defense and react to changes in the threat landscape.\n*   **Information Security (InfoSec)**: The broader set of processes designed to secure data across all these domains.\n"
@@ -1653,8 +1653,8 @@ const wikiData = {
                                     "SOC"
                                 ],
                                 "links": [
-                                    "soc",
                                     "ransomware",
+                                    "soc",
                                     "malware"
                                 ],
                                 "group": "cybersecurity",
@@ -1667,18 +1667,18 @@ const wikiData = {
                                 "desc": "",
                                 "tags": [],
                                 "links": [
-                                    "wipers",
-                                    "adware",
-                                    "cryptojacking",
                                     "spywares",
-                                    "trojan",
-                                    "rootkit",
-                                    "virus",
+                                    "key-loggers",
+                                    "cryptojacking",
                                     "ransomware",
-                                    "botnets",
-                                    "logic-bomb",
+                                    "trojan",
+                                    "virus",
+                                    "adware",
                                     "worms",
-                                    "key-loggers"
+                                    "wipers",
+                                    "logic-bomb",
+                                    "rootkit",
+                                    "botnets"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Malware\n\nIt is a piece of malicious software, that intends to harm your system and also in cases steal or encrypt data from you.\n\n![malware-image.png](../../../assets/images/malware-image.png)\n\nThere are several different types of malwares:\n- [[ransomware|Ransomware]]\n- [[worms|Worms]]\n- [[virus|Virus]]\n- [[logic-bomb|Logic-bombs]]\n- [[wipers|Wipers]]\n- [[key-loggers|Key-loggers]]\n- [[trojan|Trojan]]\n- [[spywares|Spywares]]\n- [[adware|Adware]]\n- [[botnets|Botnets]]\n- [[rootkit|Rootkit]]\n- [[cryptojacking|Cryptojacking]]\n\n### Further resources\n- Watch: [Every [[virus|Computer Virus]] Explained in 9 Minutes](https://www.youtube.com/watch?v=cFo5D9mFUJQ)\n\n"
@@ -1855,10 +1855,10 @@ const wikiData = {
                                     "Finance"
                                 ],
                                 "links": [
-                                    "antivirus",
+                                    "firewalls",
                                     "gdpr",
-                                    "hipaa",
-                                    "firewalls"
+                                    "antivirus",
+                                    "hipaa"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# PCI DSS\n\nSecuring the swipe.\n\n**PCI DSS** is a set of security standards designed to ensure that ALL companies that accept, process, store, or transmit credit card information maintain a secure environment.\n\n## Why it Exists\nThe goal is simple: **Reduce payment card fraud.** Unlike [[gdpr|GDPR]] or [[hipaa|HIPAA]], PCI DSS is NOT a government law. It is a private standard created by major credit card companies (Visa, Mastercard, Amex, etc.). However, if you want to accept credit cards, you *must* follow it.\n\n## Key Requirements\n1.  **Build and Maintain a Secure Network**: Using [[firewalls|firewalls]] and not using vendor-supplied default passwords.\n2.  **Protect Cardholder Data**: Encrypting card data when it is stored and when it is sent across networks.\n3.  **Maintain a Vulnerability Management Program**: Using and regularly updating [[antivirus|antivirus]] software.\n4.  **Implement Strong Access Control Measures**: Restricting access to cardholder data on a \"need to know\" basis.\n5.  **Regularly Monitor and Test Networks**: Tracking and monitoring all access to network resources and cardholder data.\n\n## Scope\nPCI DSS applies to both the physical hardware (card readers) and the software (POS systems, websites) involved in a transaction.\n"
@@ -1952,10 +1952,10 @@ const wikiData = {
                                 ],
                                 "links": [
                                     "script-kiddies",
+                                    "key-loggers",
                                     "pen-testing",
-                                    "ethical-hackers",
                                     "zero-day",
-                                    "key-loggers"
+                                    "ethical-hackers"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Metasploit\n\nThe Swiss Army Knife of the hacker's toolkit.\n\n**Metasploit** is the world's most widely used [[pen-testing|penetration testing]] framework. It is a powerful, modular system that allows security professionals (and threat actors) to find, exploit, and validate vulnerabilities in computer systems.\n\nThink of it as a massive library of pre-made digital keys. Instead of writing a custom program for every lock, you just pick the right \"key\" (exploit) from the Metasploit database and tell it which door to open.\n\n## Key Concepts\n\n*   **Exploit:** The actual code that takes advantage of a vulnerability to get inside a system.\n*   **Payload:** What happens *after* the exploit works. This could be opening a remote command shell, installing a [[key-loggers|keylogger]], or stealing passwords.\n*   **Module:** Metasploit is modular. You can mix and match different exploits with different payloads depending on your goal.\n*   **Meterpreter:** A highly advanced payload that stays in the target's memory (making it hard to detect) and gives the attacker total control over the machine.\n\n## Dual-Use Nature\n\nMetasploit is a perfect example of a \"dual-use\" tool:\n\n1.  **For the Good Guys:** [[ethical-hackers|Ethical hackers]] use it to test their own company's defenses. If Metasploit can get in, they know they need to patch the hole before a criminal does.\n2.  **For the Bad Guys:** [[script-kiddies|Script Kiddies]] and professional criminals use it to launch fast, automated attacks against unpatched systems. It lowers the \"barrier to entry\" for hacking significantly.\n\n## FAQs\n\n*1. Is Metasploit illegal?*\nNo. It is a legitimate tool used by security professionals globally. However, using it to access a system you don't have explicit, written permission to test is a serious crime.\n\n*2. How do I stop Metasploit attacks?*\nMost Metasploit modules target *known* vulnerabilities. If you keep your software updated and systems patched (especially after a [[zero-day|Zero-Day]] is found), most \"out of the box\" Metasploit attacks will fail.\n\n### Further Reading\n\n*   **Official:** *[Metasploit Project Home](https://www.metasploit.com/)* - The gateway to the framework.\n*   **Training:** *[Metasploit Unleashed](https://www.offsec.com/metasploit-unleashed/)* - A free ethical hacking course by Offensive Security.\n*   **Database:** *[Rapid7 Vulnerability Database](https://www.rapid7.com/db/)* - Browse the exploits available in the framework.\n"
@@ -2041,11 +2041,11 @@ const wikiData = {
                                     "StateSponsors"
                                 ],
                                 "links": [
-                                    "social-engineering",
-                                    "phishing",
-                                    "stuxnet",
-                                    "ransomware",
                                     "notpetya",
+                                    "social-engineering",
+                                    "ransomware",
+                                    "stuxnet",
+                                    "phishing",
                                     "malware"
                                 ],
                                 "group": "cybersecurity",
@@ -2062,8 +2062,8 @@ const wikiData = {
                                     "Defense"
                                 ],
                                 "links": [
-                                    "pen-testing",
-                                    "bug-bounty"
+                                    "bug-bounty",
+                                    "pen-testing"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Ethical Hacker\n\nThe good guys breaking in to show you the holes.\n\nAn **Ethical Hacker** (or White Hat) is a security expert authorized to try and hack into a system. They use the *same* tools and techniques as malicious hackers (Black Hats), but with one key difference: **Permission**.\n\nTheir goal is to find vulnerabilities and report them so they can be fixed *before* the bad guys find them.\n\n## The Hat Colors\n\n*   **White Hat:** Good guys (Authorized).\n*   **Black Hat:** Bad guys (Criminals).\n*   **Gray Hat:** Chaos neutral. They hack without permission but usually disclose the bug instead of exploiting it (often illegal but well-intentioned).\n\n## FAQs\n\n*1. Is it a real job?*\nYes. Companies pay huge salaries for [[pen-testing|Penetration-Testers]] and [[bug-bounty|Bug-Bounty]] Hunters.\n\n### Further Reading\n\n*   **Certification:** *[Certified Ethical Hacker (CEH)](https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/)*\n*   **Platform:** *[HackerOne (Bug Bounties)](https://www.hackerone.com/)*\n"
@@ -2080,9 +2080,9 @@ const wikiData = {
                                 ],
                                 "links": [
                                     "script-kiddies",
+                                    "bug-bounty",
                                     "pen-testing",
                                     "hactivists",
-                                    "bug-bounty",
                                     "malware"
                                 ],
                                 "group": "cybersecurity",
@@ -2117,8 +2117,8 @@ const wikiData = {
                                 ],
                                 "links": [
                                     "siem",
-                                    "phishing",
-                                    "least-privilege"
+                                    "least-privilege",
+                                    "phishing"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Insider Threats\n\nThe enemy within.\n\nAn **Insider Threat** is a security risk that originates from within the organization. This could be a current or former employee, contractor, or business partner who has authorized access to the network and exploits it for harm.\n\n## Types of Insiders\n*   **The Malicious Insider**: A person who intentionally uses their access to harm the organization (e.g., for revenge or financial gain).\n*   **The Negligent Insider**: A person who makes a mistake, like clicking a [[phishing|phishing]] link or leaving a server exposed, that allows an external attacker in.\n*   **The Compromised Insider**: A person whose credentials have been stolen by an external threat actor without their knowledge.\n\n## Intentions and Motivation\n1.  **Sabotage**: Disrupting operations or destroying data.\n2.  **Corruption**: Modifying data for personal gain.\n3.  **Espionage**: Stealing information to sell to a competitor or foreign government.\n4.  **Unauthorized Access or Leaks**: Sharing sensitive data with the public or unauthorized parties.\n\n## Prevention\nProtecting against insider threats requires a combination of technical controls and culture:\n*   **[[least-privilege|Principle of Least Privilege]]**: Only giving people the access they absolutely need for their job.\n*   **Monitoring**: Using **[[siem|[[siem|SIEM]] tools]]** to flag unusual behavior (e.g., someone downloading 10,000 files at 2:00 AM).\n*   **Offboarding**: Ensuring all access is immediately revoked when an employee leaves the company.\n"
@@ -2132,11 +2132,11 @@ const wikiData = {
                                     ""
                                 ],
                                 "links": [
-                                    "eternalblue",
                                     "metasploit",
-                                    "loic",
+                                    "firewalls",
                                     "ransomware",
-                                    "firewalls"
+                                    "eternalblue",
+                                    "loic"
                                 ],
                                 "group": "cybersecurity",
                                 "content": "# Script Kiddies\n\nThe copy-paste armies of the internet.\n\n**Script Kiddies** (often shortened to \"skiddies\") are low-skilled individuals who use pre-written hacking scripts and automated tools to attack computer systems. Unlike professional hackers or nation-state actors, script kiddies usually don't understand *how* the code they are running actually works; they just know how to press \"Enter.\"\n\n## The \"Kiddie\" Mentality\n\nThe term is disparaging, used by the security community to describe a specific type of threat actor:\n\n*   **Reliance on Others:** They download tools made by others (like [[metasploit|Metasploit]], [[loic|LOIC]], or various [[ransomware|ransomware]] kits) and let the software do the heavy lifting.\n*   **Motivation:** They are rarely motivated by complex ideology or precise theft. Most script kiddies are out for \"bragging rights,\" digital vandalism, or \"the lulz.\"\n*   **Lack of Trace Removal:** Because they don't understand the underlying protocols, they are often noisy and leave obvious trails for security investigators to find.\n\n## Why They Are Still Dangerous\n\nIt is a mistake to ignore them just because they are amateurs. They are dangerous for two main reasons:\n\n1.  **Volume:** There are millions of them. Even if a single person isn't a genius, a million people running automated scanners against your server 24/7 will eventually find a hole.\n2.  **Military-Grade Tools:** Advanced hacker groups sometimes release their tools (like [[eternalblue|EternalBlue]]). This puts military-grade weapons in the hands of untrained people who might use them recklessly without understanding the consequences.\n\n## FAQs\n\n*1. Are all young hackers script kiddies?*\nNo. Age has nothing to do with it. A \"Script Kiddie\" is defined by their **lack of skill and original contribution**. A 14-year-old who writes their own original exploits is a hacker; a 40-year-old who just downloads \"Wifi Hacker Pro\" is a script kiddie.\n\n*2. How do I defend against them?*\nMost script kiddies can be stopped by \"Basic Hygiene.\" They look for the easiest targets. If you keep your software updated (patched), use strong passwords, and have a basic [[firewalls|firewall]], they will usually move on to an easier victim.\n\n## Further Reading\n\n*   **Article:** *[What is a Script Kiddie?](https://www.kaspersky.com/resource-center/definitions/script-kiddies)* - A modern breakdown of amateur threat actors and their risks.\n*   **Community:** *[OWASP Top 10](https://owasp.org/www-project-top-10/)* - The vulnerabilities script kiddies most often look for.\n"
@@ -2174,8 +2174,8 @@ const wikiData = {
                                 ],
                                 "links": [
                                     "monolithic-architecture",
-                                    "docker-overview",
                                     "docker-image",
+                                    "docker-overview",
                                     "kubernetes-overview"
                                 ],
                                 "group": "devops",
@@ -2209,8 +2209,8 @@ const wikiData = {
                                     "Backend"
                                 ],
                                 "links": [
-                                    "microservices-architecture",
                                     "operating-system",
+                                    "microservices-architecture",
                                     "kubernetes-overview"
                                 ],
                                 "group": "devops",
@@ -2238,8 +2238,8 @@ const wikiData = {
                                     "Kubernetes"
                                 ],
                                 "links": [
-                                    "docker-image",
-                                    "kubernetes-overview"
+                                    "kubernetes-overview",
+                                    "docker-image"
                                 ],
                                 "group": "devops",
                                 "content": "# Production CI/CD Pipeline\n\nA production-grade CI/CD pipeline is like a highly automated car manufacturing plant; instead of a single mechanic building a car by hand and hoping it drives, the code travels down an assembly line where robots automatically test the brakes, package the engine, and safely release the car to a small group of test drivers before mass production.\n\nA **CI/CD (Continuous Integration / Continuous Deployment) Pipeline** is an automated series of steps that software undergoes to travel from a developer's laptop to the end-users in a production environment safely and reliably.\n\nWhen developers write code, they cannot simply upload it directly to the live server. That is dangerous and prone to human error. Instead, modern engineering teams use a pipeline consisting of specialized tools to automatically build, test, package, and deploy the code. \n\n## Stages of a Modern Pipeline\n\nBased on standard industry architecture, a piece of code generally travels through the following automated checkpoints:\n\n1.  **Version Control (The Blueprint):** A developer finishes their code and submits a \"Pull Request\" (PR) to merge it into the main repository (like GitHub).\n2.  **Continuous Integration (The Assembly Line):** Tools like **GitHub Actions** detect the new code and trigger the pipeline.\n3.  **Quality Gate (The Inspector):** The code passes through static analysis tools like **SonarQube**, which automatically scan for bugs, security vulnerabilities, and messy code. If it fails, the assembly line stops here.\n4.  **Artifact Creation (The Packaging):** If the code is good, it is packaged into an isolated [[docker-image|Docker image]] and pushed to a registry (like Docker Hub) so it can be deployed anywhere.\n5.  **Staging Environment (The Test Track):** The [[docker-image|Docker image]] is deployed to a safe, internal testing environment that mimics production exactly.\n6.  **Continuous Deployment (The Showroom):** The code is finally sent to the live [[kubernetes-overview|Kubernetes Cluster]].\n7.  **Canary Rollout (The Test Drivers):** Instead of giving the new update to everyone instantly, tools like **Argo Rollouts** perform a \"Canary Deployment.\" It routes just **10%** of live traffic to the new version (v2) while keeping **90%** on the stable older version (v1). Crucially, utilizing its AnalysisRun feature, Argo Rollouts automatically evaluates metrics to control progression or abort the rollout.\n8.  **Observability (The Dashboard):** Tools like **Grafana** actively visualize and monitor the CPU, memory, and error rates of the new 10%, providing the metric data that informs the automatic rollout decisions.\n\n## FAQs\n\n*1. What happens if the new code breaks during the 10% Canary rollout?*\nBecause of the heavy automation and Observability tools, detection and automatic rollback are performed by Argo Rollouts' analysis (informed by the metrics that Grafana displays). If errors spike, Argo automatically halts the rollout and routes all traffic back to the stable v1, meaning 90% of your users never even knew there was an issue.\n\n*2. Why do we need so many different tools?*\nEach tool specializes in one step of the \"assembly line.\" SonarQube is great at reading code, Docker is great at packaging it flawlessly, and Kubernetes is great at running it at scale. The CI/CD pipeline is just the glue that connects them together.\n\n### Further Reading\n\n*   **Video Overview:** *[CI/CD Pipeline in 60 Seconds](https://www.youtube.com/watch?v=scEDHsr3APg)* (A reputable YouTube breakdown of how code travels from GitHub to Kubernetes users).\n"
@@ -2265,8 +2265,8 @@ const wikiData = {
                                     "Docker"
                                 ],
                                 "links": [
-                                    "docker-image",
-                                    "operating-system"
+                                    "operating-system",
+                                    "docker-image"
                                 ],
                                 "group": "devops",
                                 "content": "# Docker Container\n\nA Docker container is like a soundproof glass room inside a crowded office; the people working inside the room can't interact with the rest of the office and have their own dedicated desk and phone, even though they technically exist inside the same building.\n\nA **Docker Container** is a lightweight, standalone, and executable package of software that includes everything needed to run an application. It is the running instance of a [[docker-image|Docker Image]].\n\nContainers isolate software from its environment and ensure that it works uniformly despite differences for instance between development and staging. Because they don\u2019t require a bulky [[operating-system|Operating System]] to be booted up for each application (like a Virtual Machine does), containers are incredibly fast, often starting up in a fraction of a second. \n\n## Key Features of Containers\n\n*   **Isolation:** A container runs in a secure, isolated environment. It has its own private filesystem, networking, and process space. It doesn't know what other processes are running on the host machine.\n*   **Ephemeral:** Containers are designed to be temporary and disposable. If a container crashes, you don't usually try to \"fix\" it; you simply delete it and spin up a perfect, brand new container from the original Image.\n*   **Lightweight:** Because multiple containers on the same server share the server's single [[operating-system|operating system]] kernel, they use a fraction of the memory and CPU power that traditional Virtual Machines require.\n\n## FAQs\n\n*1. Where is my data saved if a container is meant to be disposable?*\nIf you delete a container, any data saved directly *inside* it is deleted too. To save permanent data (like a database), developers use \"Volumes,\" which act like a USB drive plugged into the container. The container writes to the volume; if the container dies, the data on the volume is safe.\n\n*2. How many containers can I run on one computer?*\nBecause they are so lightweight, a standard server can easily run dozens or even hundreds of containers simultaneously, compared to only a handful of Virtual Machines. \n\n### Further Reading\n\n*   **Documentation:** *[Use Containers to Build, Share and Run Your Applications](https://www.docker.com/resources/what-container)* (Docker\u2019s official explanation of the running phase of their pipeline).\n"
@@ -2282,8 +2282,8 @@ const wikiData = {
                                     "Docker"
                                 ],
                                 "links": [
-                                    "docker-container",
-                                    "operating-system"
+                                    "operating-system",
+                                    "docker-container"
                                 ],
                                 "group": "devops",
                                 "content": "# Docker Image\n\nA Docker Image is like an uneditable, master recipe for a very specific type of cake; it contains exactly what ingredients are needed, what temperature to bake at, and what the frosting looks like, but it isn't the cake itself until you put it in the oven.\n\nA **Docker Image** is a read-only, immutable template that contains the application's source code, libraries, dependencies, tools, and other files needed for an application to run. \n\nBecause an image is immutable (it cannot be changed once created), it ensures the image contents are identical, but the runtime environment may vary due to volumes, environment variables, host kernel, platform/architecture, and runtime configuration. Developers create these images using a simple text file called a `Dockerfile`, which acts as a list of instructions: \"Start with a basic Linux system, add Python, download my code, and open port 8000.\"\n\n## How Docker Images Work\n\n*   **Immutability:** Once an image is built, its contents are locked. If you need to change your app's code, you don't change the image, you build a brand new image.\n*   **Layers:** Images are built in layers. If you have an image for your web app, the bottom layer might be the [[operating-system|operating system]] (like Ubuntu), the next layer might be the runtime (like Node.js), and the top layer is your specific app code. If you just change your app code, Docker only rebuilds that top layer, saving time and storage.\n*   **Registries:** Images are stored and shared in registries. The most famous public registry is Docker Hub, where you can download official and community images for almost any piece of software imaginable. It is recommended to verify image provenance and scan images for vulnerabilities before use.\n\n## FAQs\n\n*1. What is the difference between an Image and a Container?*\nIf the Image is the written recipe, the [[docker-container|Container]] is the physical cake you baked from that recipe. You can bake (spin up) as many identical cakes (containers) as you want from a single recipe (Image).\n\n*2. How big is a Docker Image?*\nIt depends on what is inside it. A basic \"Alpine Linux\" OS layer might be only 5 Megabytes, whereas a complex image bundled with massive machine learning libraries might be several Gigabytes.\n\n### Further Reading\n\n*   **Documentation:** *[Docker Images and Containers](https://docs.docker.com/get-started/02_our_app/)* (A practical guide on how to build your first image).\n"
@@ -2299,9 +2299,9 @@ const wikiData = {
                                     "Docker"
                                 ],
                                 "links": [
+                                    "operating-system",
                                     "docker-container",
-                                    "docker-image",
-                                    "operating-system"
+                                    "docker-image"
                                 ],
                                 "group": "devops",
                                 "content": "# Docker Overview\n\nDocker is like the invention of the standardized steel shipping container; before it, loading cargo (code) onto a ship (server) was a chaotic, custom process that broke constantly, but Docker puts everything in identical boxes that can be stacked and shipped anywhere flawlessly.\n\n**Docker** is a software platform that allows developers to build, test, and deploy applications quickly by packaging them into standardized executable units called [[docker-container|containers]].\n\nBefore Docker, a common excuse among developers was \"it works on my machine.\" This happened because an app requires specific versions of other software (like databases, libraries, and language runtimes) to run. If a developer's laptop had slightly different underlying software than the production web server, the app would break when deployed. \n\nDocker solves this by packaging the application *and* everything it needs to run inside a single, isolated \"box.\" When you hand that box to another computer; whether it's a teammate's laptop or a giant cloud server; it runs exactly the same way, completely isolated from the host machine's quirks. \n\n## Core Concepts of Docker\n\n*   **[[docker-image|Image]]:** The blueprint or recipe used to create a container. It contains the application code, libraries, and instructions on how to set up the environment.\n*   **[[docker-container|Container]]:** The actual running instance of an image. If the image is the recipe, the container is the baked cake.\n*   **Docker Engine:** The underlying software that actually runs and manages the containers on the host machine.\n*   **Docker Hub:** A public registry (think of it like an App Store for developers) where people can share and download pre-made Docker images (like an official \"Node.js\" image or a \"PostgreSQL\" image).\n\n## FAQs\n\n*1. Is a [[docker-container|Docker container]] the same as a Virtual Machine (VM)?*\nNo. A Virtual Machine simulates an entire physical computer, including running a full, heavy [[operating-system|Operating System]] (like Windows or Linux) on top of the host. Docker containers are much lighter because they share the host computer's [[operating-system|operating system]] kernel. They only package what the app needs, making them start up in seconds rather than minutes.\n\n*2. Why do I need Docker if my code works fine locally?*\nBecause eventually, your code has to leave your local machine. Docker ensures that when you deploy to the cloud, or hand the project to a coworker, they don't have to spend three hours installing dependencies and debugging configuration errors.\n\n### Further Reading\n\n*   **Documentation:** *[What is Docker?](https://docs.docker.com/get-started/overview/)* (The official documentation explaining the architecture and components).\n*   **Video:** *[Docker Core Concepts Explained](https://youtu.be/Gjnup-PuquQ)* (A quick, high-level breakdown of how Docker works under the hood).\n"
@@ -2353,9 +2353,9 @@ const wikiData = {
                                     "Kubernetes"
                                 ],
                                 "links": [
+                                    "docker-vs-kubernetes",
                                     "docker-container",
-                                    "docker-overview",
-                                    "docker-vs-kubernetes"
+                                    "docker-overview"
                                 ],
                                 "group": "devops",
                                 "content": "# Kubernetes Overview\n\nKubernetes is like the air traffic controller at an incredibly busy airport; it doesn't build the airplanes or fly them, but it decides which runway they use, redirects them if there is a storm, keeps them from crashing into each other, and magically materializes new airplanes if one breaks down.\n\n**Kubernetes** (often abbreviated as **K8s**) is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications.\n\nWhile tools like [[docker-overview|Docker]] are fantastic for creating [[docker-container|containers]], what happens when you need to run thousands of [[docker-container|containers]] across dozens of different servers for a massive app like Netflix or Spotify? You need a system to manage that complexity. Kubernetes acts as the automated brain holding it all together. You tell Kubernetes what you want the system to look like (e.g., \"I always want 5 copies of my web server running\"), and Kubernetes constantly monitors the servers to ensure that state is maintained.\n\n## What Kubernetes Actually Does \n\n*   **Automated Scaling:** If a sudden spike of users hits your website, Kubernetes can automatically spin up extra containers to handle the load, and then shut them down when traffic drops to save money.\n*   **Self-Healing:** If a container crashes, or an entire physical server catches fire, Kubernetes notices immediately and instantly recreates those containers on a healthy, unaffected server.\n*   **Load Balancing:** It acts as a traffic cop. If ten thousand requests come in, Kubernetes intelligently distributes those requests across your available containers so none of them get overwhelmed.\n*   **Automated Rollouts:** If you release an update with a bug, Kubernetes can smoothly roll back the application to the previous, working version without taking the entire website offline.\n\n## FAQs\n\n*1. Does Kubernetes replace Docker?*\nNo! They work together. Docker builds and runs the containers (the airplanes). Kubernetes is the orchestration system that directs and manages those containers at scale (the air traffic controller). *See: [[docker-vs-kubernetes|Docker vs Kubernetes]]*.\n\n*2. Why is Kubernetes abbreviated as K8s?*\nIt's an old tech tradition. The '8' simply stands for the 8 letters between the 'K' and the 's' in the word \"Kubernetes\".\n\n### Further Reading\n\n*   **Video:** *[Kubernetes in 100 Seconds](https://youtu.be/PziYflu8cB8)* (A rapid-fire, high-level technical breakdown of K8s).\n*   **Documentation:** *[What is Kubernetes?](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)* (The official documentation explaining the \"why\" and \"how\" of K8s).\n"
@@ -2398,8 +2398,8 @@ const wikiData = {
                                     "Cloud"
                                 ],
                                 "links": [
-                                    "terraform-overview",
-                                    "firewalls"
+                                    "firewalls",
+                                    "terraform-overview"
                                 ],
                                 "group": "devops",
                                 "content": "# Infrastructure as Code (IaC)\n\nInfrastructure as Code (IaC) is like handing an architect a precise digital blueprint instead of handing fifty different construction workers a massive pile of bricks; the architect reads the file and automatically builds everything perfectly to spec without human error.\n\n**Infrastructure as Code (IaC)** is the practice of managing and provisioning computer data centers (like servers, networking, and databases) through machine-readable definition files, rather than through physical hardware configuration or interactive configuration tools (like clicking buttons in a web console).\n\nHistorically, setting up a new server online meant a human systems administrator had to log into a cloud provider's web console (like AWS) and manually click through menus; creating a network, provisioning a database, setting up a [[firewalls|firewall]], and launching the virtual machine. This is commonly referred to derisively as \"ClickOps.\"\n\nClickOps is dangerous because it's slow, prone to human error, and almost impossible to replicate perfectly if the server crashes or needs to be duplicated in a different region. Infrastructure as code solves this by allowing developers to write a configuration file (like a text document) describing exactly what they want. They run the file, and the IaC tool talks to the cloud provider's API to build it all instantly.\n\n## Key Benefits\n\n*   **Version Control:** Because your entire data center is defined in text files, you can store it in Git. You can track exactly who changed a [[firewalls|firewall]] rule, when, and why.\n*   **Idempotency:** A good IaC tool is idempotent. This means if you run the same blueprint file 100 times, it won't accidentally spin up 100 servers. It will realize \"Ah, this server already exists exactly as described,\" and do nothing.\n*   **Disaster Recovery:** If your entire cloud environment is accidentally deleted, you don't panic. You simply run your IaC script again, and your entire architecture is rebuilt from scratch in minutes.\n\n## FAQs\n\n*1. What is the difference between IaC and a bash script?*\nA bash script is *imperative* (you tell the computer *how* to do something, step-by-step: \"Create a folder, then download this, then start this service\"). Most robust IaC is *declarative* (you simply declare *what* the final state should be: \"I want a server with these specs\"). The IaC engine figures out the necessary API calls to make that happen.\n\n*2. Who are the major players in IaC?*\n**[[terraform-overview|Terraform]]** by HashiCorp is the undisputed industry standard because it works across almost every cloud provider. Other notable tools include AWS CloudFormation (AWS only), Ansible, and Pulumi.\n\n### Further Reading\n\n*   **Concepts:** *[What is Infrastructure as Code?](https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac)* (A fantastic breakdown by Red Hat of the philosophy of IaC).\n"
@@ -2416,9 +2416,9 @@ const wikiData = {
                                     "Terraform"
                                 ],
                                 "links": [
+                                    "terraform-providers",
                                     "terraform-state",
-                                    "infrastructure-as-code",
-                                    "terraform-providers"
+                                    "infrastructure-as-code"
                                 ],
                                 "group": "devops",
                                 "content": "# Terraform Overview\n\nTerraform is like a universal general contractor who speaks every language in the world. You hand them a single set of English blueprints, and they can boss around the plumbers, the electricians, and the carpenters, no matter what country the building is in.\n\n**Terraform**, created by HashiCorp, is the industry-standard [[infrastructure-as-code|Infrastructure as Code (IaC)]] tool that allows you to define, provision, and manage cloud infrastructure using a declarative configuration language.\n\nInstead of writing custom scripts to talk to Amazon Web Services (AWS), a different script to talk to Google Cloud, and another script to manage your GitHub repositories, you just write a `.tf` (Terraform) file. You declare your desired end-state using HashiCorp Configuration Language (HCL), a human-readable text format.\n\nWhen you run `terraform apply`, Terraform calculates the difference between what currently exists in the real world and what you asked for in your code. It then formulates a completely optimized plan and makes the necessary API calls to create, update, or destroy resources to match your blueprint exactly.\n\n## How Terraform Works in Practice\n\n1.  **Write:** You write configuration files (`main.tf`) defining the resources you want (e.g., \"I want an AWS EC2 instance named 'Web-Server'\").\n2.  **Plan:** You run `terraform plan`. Terraform looks at your code, looks at the actual cloud provider, and prints out a dry-run list of *exactly* what it intends to change without actually touching anything yet.\n3.  **Apply:** You run `terraform apply`. Terraform reaches out to the cloud APIs via its [[terraform-providers|Providers]] and provisions the infrastructure. \n\n## FAQs\n\n*1. Is Terraform only for Cloud Infrastructure?*\nNo! While it is most famous for spinning up servers on AWS or Azure, Terraform can manage *anything* that has an API. You can write Terraform code to configure your Spotify playlists, order Domino's pizza, or manage user permissions in Okta.\n\n*2. How does Terraform know what already exists in my cloud account?*\nTerraform maintains a highly detailed tracking ledger called the [[terraform-state|Terraform State]] file. Before making any changes, it looks at this file to remember what it built last time.\n\n### Further Reading\n\n*   **Documentation:** *[What is Terraform?](https://developer.hashicorp.com/terraform/intro)* (The official HashiCorp introduction to the tool).\n*   **Video:** *[Terraform in 100 Seconds](https://youtu.be/tomUWcQ0P3k)* (A rapid-fire overview of the Terraform workflow).\n*   **Course:** *[Complete Terraform Course - Beginner to Pro](https://youtu.be/7xngnjfIlK4)* (A comprehensive, multi-hour deep dive into practical AWS deployment with Terraform).\n"
@@ -2435,8 +2435,8 @@ const wikiData = {
                                     "Terraform"
                                 ],
                                 "links": [
-                                    "terraform-overview",
-                                    "terraform-state"
+                                    "terraform-state",
+                                    "terraform-overview"
                                 ],
                                 "group": "devops",
                                 "content": "# Terraform Providers\n\nA Terraform Provider is like a universal translator earpiece; the core Terraform engine only speaks one language, but when you plug the \"AWS earpiece\" in, it suddenly knows how to translate your demands into perfect Amazon API calls.\n\nA **Terraform Provider** is a plugin that enables [[terraform-overview|Terraform]] to communicate with an external API. They are the essential bridge between your Terraform configuration files and the actual cloud platforms or services you are trying to manage.\n\nTerraform itself is incredibly \"dumb.\" The core program doesn't actually know how to build a virtual machine on Azure, nor does it know how to configure a DNS record on Cloudflare. Its only job is to read your configuration files, calculate changes, and manage the [[terraform-state|State]]. \n\nTo actually do the heavy lifting of talking to the outside world, it relies on thousands of Providers built and maintained by the cloud companies themselves or the open-source community. \n\n## How Providers Function\n\n*   **Initialization:** When you run `terraform init` on a new project, Terraform scans your code, sees that you are trying to build AWS resources, and automatically downloads the official AWS Provider plugin.\n*   **Resource Translation:** The Provider contains the specific logic required to translate HCL (HashiCorp Configuration Language) into the complex, proprietary REST API requests expected by a specific company's service.\n*   **The Ecosystem:** Because Providers are just modular plugins, the Terraform ecosystem is massive. There are Official providers (maintained by HashiCorp), Partner providers (maintained by companies like Amazon or Microsoft), and thousands of Community providers built for niche software.\n\n## FAQs\n\n*1. Can I use multiple providers in the same Terraform project?*\nYes! This is one of Terraform's greatest strengths. You can define a project where Terraform creates a networking environment in AWS (using the AWS Provider), spins up Kubernetes nodes inside it, and then instantly configures monitoring alerts using the Datadog Provider, all in a single `terraform apply`.\n\n*2. How do I find a provider for my specific software?*\nYou search the public **Terraform Registry**. It acts like an App Store for Terraform plugins, containing the documentation and installation code for every available provider.\n\n### Further Reading\n\n*   **Documentation:** *[Terraform Providers Overview](https://developer.hashicorp.com/terraform/language/providers)* (Detailed breakdown of how to declare and configure providers).\n"
@@ -2453,206 +2453,11 @@ const wikiData = {
                                     "Terraform"
                                 ],
                                 "links": [
-                                    "terraform-overview",
-                                    "terraform-providers"
+                                    "terraform-providers",
+                                    "terraform-overview"
                                 ],
                                 "group": "devops",
                                 "content": "# Terraform State\n\nTerraform State is like an incredibly detailed warehouse inventory ledger; without it, the warehouse manager (Terraform) has absolutely no idea what boxes are already on the shelves, meaning they might accidentally order duplicates or throw away existing items when you ask them to manage the room.\n\nA **Terraform State** file (commonly named `terraform.tfstate`) is a JSON document that [[terraform-overview|Terraform]] uses to map the resources you defined in your configuration code to the actual, physical resources that exist in the real world. \n\nWhen you write Terraform code and run `terraform apply`, Terraform creates the resources via the [[terraform-providers|Providers]] and immediately records every tiny detail about them in the State file (including unique IDs assigned by the cloud provider, metadata, and dependencies). The next time you run `terraform apply`, Terraform doesn't blindly guess what to do. It checks the State file, compares it to your code, and says, \"Ah, I already built this database last week, so I don't need to create a new one, but I *do* see you changed the size, so I will update the existing one.\"\n\n## Why State is Critical\n\n*   **Mapping:** Your code might just say \"Create a server named Web1.\" The State file remembers the exact complex Amazon ID (e.g., `i-0123456789abcdef0`) that corresponds to \"Web1\". Without the state, Terraform wouldn't know which specific server to modify later.\n*   **Performance:** Terraform uses the State file as a performance optimization to quickly build its execution plan. Note that by default, terraform plan and apply perform an implicit refresh of remote resources to detect drift, so Terraform still verifies actual infrastructure during these operations.\n*   **Destruction:** If you delete a line of code for a server, Terraform knows it must destroy that server in reality. It knows *which* server to destroy because the State file maps the deleted code to the real-world ID.\n\n## FAQs\n\n*1. What happens if I lose or corrupt my State file?*\nIt is a massive headache. If Terraform loses its State file, it completely \"forgets\" that it built your infrastructure. If you run `terraform apply` again, it will try to re-create everything from scratch, which will likely cause errors because the items already exist in the cloud.\n\n*2. Where should I store the State file?*\nIf you are working alone, it sits on your laptop. But if you work on a team, you *must* use a remote backend (for example an AWS S3 bucket using the backend option `use_lockfile = true` for state locking, though older setups may combine S3 with DynamoDB) and enable bucket versioning. This ensures every engineer's laptop safely reads and writes to the exact same inventory ledger without overlapping or corrupting the state file, and allows for recovery if the state is accidentally destroyed.\n\n### Further Reading\n\n*   **Documentation:** *[Purpose of Terraform State](https://developer.hashicorp.com/terraform/language/state)* (A deep dive into why State is a necessary component of declarative IaC).\n"
-                            }
-                        ]
-                    },
-                    {
-                        "id": "refactoring",
-                        "title": "Refactoring",
-                        "icon": "fas fa-broom",
-                        "desc": "Techniques for cleaning code and managing technical debt",
-                        "view": "shelf",
-                        "group": "devops",
-                        "children": [
-                            {
-                                "id": "code-smells",
-                                "title": "Code Smells",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Refactoring",
-                                    "CleanCode",
-                                    "SoftwareDesign"
-                                ],
-                                "links": [
-                                    "technical-debt"
-                                ],
-                                "group": "devops",
-                                "content": "# Code Smells\n\nA \"Code Smell\" is like discovering a weird, fuzzy green spot on a slice of bread in your pantry. The bread might still be technically edible today, and it still functions as a sandwich holder, but the smell and the fuzz indicate a much deeper, underlying rotting problem. If you ignore the smell and eat it anyway (or build a feature on top of it), you are going to get incredibly sick (introduce catastrophic bugs) down the road.\n\nA **Code Smell** is a surface indication that usually corresponds to a deeper problem in the system. They are the classic warning signs that your codebase has accrued serious [[technical-debt|Technical Debt]] and is desperately in need of **Refactoring**.\n\n## Categories of Code Smells\n\nCode Smells are generally clumped into several distinct categories:\n\n### 1. Bloaters\nThese are code, methods, or classes that have increased to such gargantuan proportions that they are impossible to maintain. They rarely happen immediately; they slowly bloat over years of feature additions without any refactoring.\n*   *Examples:* Long Method (a function that spans hundreds of lines), Large Class, Long Parameter List.\n\n### 2. Object-Orientation Abusers\nThese smells occur when developers incompletely or incorrectly apply object-oriented programming principles, making the code stiff and brittle.\n*   *Examples:* Switch Statements (instead of polymorphism), Refused Bequest (a child class inheriting methods from a parent that it explicitly doesn't want or need).\n\n### 3. Change Preventers\nThese smells mean that if you need to change something in one place in your code, you have to hunt down and make changes in 10 other scattered places too. \n*   *Examples:* Divergent Change, Shotgun Surgery.\n\n### 4. Dispensables\nThis is something pointless and unneeded whose absence would make the code cleaner, shorter, and easier to understand.\n*   *Examples:* Duplicate Code, Dead Code, Lazy Classes (classes that do almost nothing).\n\n### 5. Couplers\nThese smells signify that two classes or modules are too deeply tied together. If you change one, the other breaks.\n*   *Examples:* Feature Envy (when a method accesses the data of another object more than its own data).\n\n### Further Reading\n\n*   *[Refactoring.guru: Code Smells](https://refactoring.guru/refactoring/smells)*\n"
-                            },
-                            {
-                                "id": "how-to-refactor",
-                                "title": "How to Refactor",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Refactoring",
-                                    "CleanCode",
-                                    "SoftwareDesign",
-                                    "Testing"
-                                ],
-                                "links": [],
-                                "group": "devops",
-                                "content": "# How to Refactor\n\nThe most critical rule of refactoring is that it must go unnoticed by the end user. You are changing the *internal structure* of the code, never the *external behavior*.\n\nBecause refactoring involves ripping apart the core foundation of an application, it is exceptionally dangerous. To mitigate this risk, refactoring must be done using a rigid, step-by-step checklist.\n\n## The Refactoring Checklist\n\n1.  **The Code Must Be Green (Passing Tests):** Do not ever attempt to refactor code that doesn't have an automated test suite. If you break something while refactoring and don't have tests to catch it, you will ship a highly destructive bug to production.\n2.  **Take Tiny Steps:** Refactoring should never be a massive \"rewrite\" that takes three weeks. It should consist of dozens of microscopic, 5-minute changes. \n3.  **Run Tests After Every Step:** After you hit \"Save\" on your tiny change (like moving one variable into a new file), immediately run the entire test suite. If the tests turn \"Red\" (fail), you know *exactly* which tiny change broke the system, allowing you to instantly hit `Ctrl+Z` and fix it.\n4.  **Do Not Add Features:** If you notice a bug while refactoring, or realize a feature is missing, **do not fix or add it yet**. Keep your refactoring \"hat\" on. Only after you have completely finished cleaning the structure and all tests are passing should you put your feature-building \"hat\" back on to make behavioral changes.\n\nIf you try to rewrite a massive 500-line function all at once without running tests in between, you will inevitably end up deeply confused, drowning in broken logic, and wasting days trying to debug your own \"clean up.\"\n\n### Further Reading\n\n*   *[Refactoring.guru: How to Refactor](https://refactoring.guru/refactoring/how-to)*\n"
-                            },
-                            {
-                                "id": "refactoring-techniques",
-                                "title": "Refactoring Techniques",
-                                "icon": "fas fa-code",
-                                "desc": "Granular, implementable code restructuring techniques",
-                                "view": "shelf",
-                                "group": "devops",
-                                "children": [
-                                    {
-                                        "id": "composing-methods",
-                                        "title": "Composing Methods",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Refactoring",
-                                            "CleanCode",
-                                            "Techniques"
-                                        ],
-                                        "links": [
-                                            "what-is-refactoring"
-                                        ],
-                                        "group": "devops",
-                                        "content": "# Composing Methods\n\nMuch of [[what-is-refactoring|refactoring]] is devoted to correctly composing methods (functions). In most cases, excessively long methods are the root of all evil. The vagaries of code inside these massive functions conceal the execution logic and make the method extremely hard to understand and change.\n\nThe techniques in this group streamline methods, remove code duplication, and pave the way for future improvements.\n\n## 1. Extract Method\n\n**Problem:** You have a code fragment that can be grouped together.\n\n```javascript\nfunction printOwing() {\n  printBanner();\n\n  // Print details\n  console.log(\"name: \" + name);\n  console.log(\"amount: \" + getOutstanding());\n}\n```\n\n**Solution:** Move this code to a separate new method (or function) and replace the old code with a call to the method.\n\n```javascript\nfunction printOwing() {\n  printBanner();\n  printDetails(getOutstanding());\n}\n\nfunction printDetails(outstanding) {\n  console.log(\"name: \" + name);\n  console.log(\"amount: \" + outstanding);\n}\n```\n\n## 2. Inline Method\n\n**Problem:** When a method body is more obvious than the method itself, use this technique.\n\n```javascript\nclass PizzaDelivery {\n  getRating() {\n    return this.moreThanFiveLateDeliveries() ? 2 : 1;\n  }\n\n  moreThanFiveLateDeliveries() {\n    return this.numberOfLateDeliveries > 5;\n  }\n}\n```\n\n**Solution:** Replace calls to the method with the method's content and delete the method itself.\n\n```javascript\nclass PizzaDelivery {\n  getRating() {\n    return this.numberOfLateDeliveries > 5 ? 2 : 1;\n  }\n}\n```\n\n## 3. Extract Variable\n\n**Problem:** You have an expression that is hard to understand.\n\n```javascript\nfunction renderBanner() {\n  if ((platform.toUpperCase().indexOf(\"MAC\") > -1) &&\n       (browser.toUpperCase().indexOf(\"IE\") > -1) &&\n        wasInitialized() && resize > 0 )\n  {\n    // do something\n  }\n}\n```\n\n**Solution:** Place the result of the expression or its parts in separate variables that are self-explanatory.\n\n```javascript\nfunction renderBanner() {\n  const isMacOs = platform.toUpperCase().indexOf(\"MAC\") > -1;\n  const isIE = browser.toUpperCase().indexOf(\"IE\") > -1;\n  const wasResized = resize > 0;\n\n  if (isMacOs && isIE && wasInitialized() && wasResized) {\n    // do something\n  }\n}\n```\n\n### Further Reading\n\n*   *[Refactoring.guru: Composing Methods](https://refactoring.guru/refactoring/techniques/composing-methods)*\n"
-                                    },
-                                    {
-                                        "id": "dealing-with-generalization",
-                                        "title": "Dealing with Generalization",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Refactoring",
-                                            "CleanCode",
-                                            "Techniques"
-                                        ],
-                                        "links": [
-                                            "what-is-refactoring"
-                                        ],
-                                        "group": "devops",
-                                        "content": "# Dealing with Generalization\n\nAbstraction has its own group of [[what-is-refactoring|refactoring]] techniques, primarily associated with moving functionality along the class inheritance hierarchy, creating new classes and interfaces, and replacing inheritance with delegation (or vice versa).\n\n## 1. Pull Up Field / Pull Up Method\n\n**Problem:** Two separate subclasses have the exact same field or method.\n\n```java\nclass Employee {\n  // Parent class\n}\n\nclass Salesman extends Employee {\n  private String name;\n}\n\nclass Engineer extends Employee {\n  private String name;\n}\n```\n\n**Solution:** Remove the field/method from the subclasses and move it to the shared superclass.\n\n```java\nclass Employee {\n  protected String name;\n}\n\nclass Salesman extends Employee {\n  // Uses parent's name\n}\n\nclass Engineer extends Employee {\n  // Uses parent's name\n}\n```\n\n## 2. Push Down Field / Push Down Method\n\n**Problem:** A method or field exists in a superclass, but is only actually used by one specific subclass.\n\n```java\nclass Employee {\n  public double getQuota() { /*...*/ }\n}\n\nclass Engineer extends Employee {\n  // Engineers do not have sales quotas\n}\n\nclass Salesman extends Employee {\n  // Uses getQuota()\n}\n```\n\n**Solution:** Move the field/method down from the parent class explicitly into the subclass that uses it.\n\n```java\nclass Employee {\n  // Removed getQuota()\n}\n\nclass Engineer extends Employee { }\n\nclass Salesman extends Employee {\n  public double getQuota() { /*...*/ }\n}\n```\n\n### Further Reading\n\n*   *[Refactoring.guru: Dealing with Generalization](https://refactoring.guru/refactoring/techniques/dealing-with-generalization)*\n"
-                                    },
-                                    {
-                                        "id": "moving-features",
-                                        "title": "Moving Features between Objects",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Refactoring",
-                                            "CleanCode",
-                                            "Techniques"
-                                        ],
-                                        "links": [
-                                            "what-is-refactoring"
-                                        ],
-                                        "group": "devops",
-                                        "content": "# Moving Features between Objects\n\nEven if you have distributed functionality among different classes in a less-than-perfect way, there is still hope. These [[what-is-refactoring|refactoring]] techniques show how to safely move functionality between classes, create new classes, and hide implementation details from public access.\n\n## 1. Move Method\n\n**Problem:** A method is used more in another class than in its own class.\n\n```java\n// The Account class calculates overdraft charges based on an AccountType.\nclass Account {\n  private AccountType type;\n  private int daysOverdrawn;\n  \n  // This method relies more on AccountType than Account itself\n  double overdraftCharge() {\n    if (type.isPremium()) {\n      double result = 10;\n      if (daysOverdrawn > 7) {\n        result += (daysOverdrawn - 7) * 0.85;\n      }\n      return result;\n    } else {\n      return daysOverdrawn * 1.75;\n    }\n  }\n}\n```\n\n**Solution:** Create a new method in the class that uses the method the most, then move code from the old method to there. Turn the code of the original method into a reference to the new method in the other class or else remove it entirely.\n\n```java\nclass AccountType {\n  // Method is moved here\n  double overdraftCharge(int daysOverdrawn) {\n    if (isPremium()) {\n      double result = 10;\n      if (daysOverdrawn > 7) {\n        result += (daysOverdrawn - 7) * 0.85;\n      }\n      return result;\n    } else {\n      return daysOverdrawn * 1.75;\n    }\n  }\n}\n\nclass Account {\n  private AccountType type;\n  private int daysOverdrawn;\n  \n  double overdraftCharge() {\n    return type.overdraftCharge(daysOverdrawn);\n  }\n}\n```\n\n## 2. Extract Class\n\n**Problem:** When one class does the work of two, awkwardness results.\n\n```java\nclass Person {\n  private String name;\n  private String officeAreaCode;\n  private String officeNumber;\n\n  public String getTelephoneNumber() {\n    return (\"(\" + officeAreaCode + \") \" + officeNumber);\n  }\n}\n```\n\n**Solution:** Instead, create a new class and place the fields and methods responsible for the relevant functionality in it.\n\n```java\nclass TelephoneNumber {\n  private String areaCode;\n  private String number;\n\n  public String getTelephoneNumber() {\n    return (\"(\" + areaCode + \") \" + number);\n  }\n}\n\nclass Person {\n  private String name;\n  private TelephoneNumber officeTelephone = new TelephoneNumber();\n\n  public String getTelephoneNumber() {\n    return officeTelephone.getTelephoneNumber();\n  }\n}\n```\n\n### Further Reading\n\n*   *[Refactoring.guru: Moving Features](https://refactoring.guru/refactoring/techniques/moving-features)*\n"
-                                    },
-                                    {
-                                        "id": "organizing-data",
-                                        "title": "Organizing Data",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Refactoring",
-                                            "CleanCode",
-                                            "Techniques"
-                                        ],
-                                        "links": [
-                                            "what-is-refactoring"
-                                        ],
-                                        "group": "devops",
-                                        "content": "# Organizing Data\n\nThese [[what-is-refactoring|refactoring]] techniques help with data handling, replacing primitives with rich class functionality. Another important result is untangling of class associations, which makes classes more portable and reusable.\n\n## 1. Replace Magic Number with Symbolic Constant\n\n**Problem:** Your code uses a number that has a certain meaning to it.\n\n```javascript\nfunction potentialEnergy(mass, height) {\n  // 9.81 is a magic number\n  return mass * height * 9.81;\n}\n```\n\n**Solution:** Replace this number with a constant that has a human-readable name explaining the meaning of the number.\n\n```javascript\nconst GRAVITATIONAL_CONSTANT = 9.81;\n\nfunction potentialEnergy(mass, height) {\n  return mass * height * GRAVITATIONAL_CONSTANT;\n}\n```\n\n## 2. Encapsulate Field\n\n**Problem:** You have a public field. Public fields are a bad idea because you can't assert any control over how they are accessed or updated by other parts of the application.\n\n```java\nclass Person {\n  public String name;\n}\n```\n\n**Solution:** Make the field private and create accessors (getters/setters) for it.\n\n```java\nclass Person {\n  private String name;\n\n  public String getName() {\n    return name;\n  }\n\n  public void setName(String arg) {\n    name = arg;\n  }\n}\n```\n\n### Further Reading\n\n*   *[Refactoring.guru: Organizing Data](https://refactoring.guru/refactoring/techniques/organizing-data)*\n"
-                                    },
-                                    {
-                                        "id": "simplifying-conditionals",
-                                        "title": "Simplifying Conditional Expressions",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Refactoring",
-                                            "CleanCode",
-                                            "Techniques"
-                                        ],
-                                        "links": [],
-                                        "group": "devops",
-                                        "content": "# Simplifying Conditional Expressions\n\nConditionals tend to get more and more complicated in their logic over time, and there are yet more techniques to combat this as well.\n\n## 1. Decompose Conditional\n\n**Problem:** You have a complex conditional (`if-then`/`else` or `switch`).\n\n```javascript\nif (date.before(SUMMER_START) || date.after(SUMMER_END)) {\n  charge = quantity * winterRate + winterServiceCharge;\n} else {\n  charge = quantity * summerRate;\n}\n```\n\n**Solution:** Decompose the complicated parts of the conditional into separate methods. The condition, `then`, and `else` should be extracted.\n\n```javascript\nif (isNotSummer(date)) {\n  charge = winterCharge(quantity);\n} else {\n  charge = summerCharge(quantity);\n}\n```\n\n## 2. Replace Nested Conditional with Guard Clauses\n\n**Problem:** You have a group of nested conditionals that make it hard to determine the normal flow of code execution.\n\n```java\npublic double getPayAmount() {\n  double result;\n  if (isDead) {\n    result = deadAmount();\n  } else {\n    if (isSeparated) {\n      result = separatedAmount();\n    } else {\n      if (isRetired) {\n        result = retiredAmount();\n      } else {\n        result = normalPayAmount();\n      }\n    }\n  }\n  return result;\n}\n```\n\n**Solution:** Isolate all special checks and edge cases into independent \"Guard Clauses\" and place them before the main checks. A guard clause says \"If this edge case is true, bail out and return right away.\"\n\n```java\npublic double getPayAmount() {\n  if (isDead) {\n    return deadAmount();\n  }\n  if (isSeparated) {\n    return separatedAmount();\n  }\n  if (isRetired) {\n    return retiredAmount();\n  }\n  \n  // Normal flow is much clearer now\n  return normalPayAmount();\n}\n```\n\n### Further Reading\n\n*   *[Refactoring.guru: Simplifying Conditional Expressions](https://refactoring.guru/refactoring/techniques/simplifying-conditional-expressions)*\n"
-                                    },
-                                    {
-                                        "id": "simplifying-method-calls",
-                                        "title": "Simplifying Method Calls",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Refactoring",
-                                            "CleanCode",
-                                            "Techniques"
-                                        ],
-                                        "links": [
-                                            "what-is-refactoring"
-                                        ],
-                                        "group": "devops",
-                                        "content": "# Simplifying Method Calls\n\nThese [[what-is-refactoring|refactoring]] techniques make method calls simpler and easier to understand. This, in turn, simplifies the interfaces for interaction between classes.\n\n## 1. Rename Method\n\n**Problem:** The name of a method doesn't explain what the method does.\n\n```java\nclass Customer {\n  public String getnm() {\n    return name;\n  }\n}\n```\n\n**Solution:** Rename the method so that the name accurately describes what it does.\n\n```java\nclass Customer {\n  public String getName() {\n    return name;\n  }\n}\n```\n\n## 2. Add Parameter / Remove Parameter\n\n**Problem:** A method either lacks the data it needs to execute, or it receives data that it doesn't use.\n\n```javascript\n// A department is no longer needed to get contact details\nfunction getContact(person, department) {\n    return person.phone;\n}\n```\n\n**Solution:** Add the necessary parameter, or carefully remove the unused parameter from the method signature and all of its caller sites.\n\n```javascript\nfunction getContact(person) {\n    return person.phone;\n}\n```\n\n## 3. Replace Parameter with Method Call\n\n**Problem:** You invoke a method and pass the result as a parameter to another method, while that second method could just call the first method itself.\n\n```javascript\nlet basePrice = quantity * itemPrice;\nlet finalPrice = discountedPrice(basePrice);\n```\n\n**Solution:** Remove the parameter and let the receiving method invoke the sender method itself, reducing coupling.\n\n```javascript\nlet finalPrice = discountedPrice(); // The logic to calculate basePrice is now calculated inside\n```\n\n### Further Reading\n\n*   *[Refactoring.guru: Simplifying Method Calls](https://refactoring.guru/refactoring/techniques/simplifying-method-calls)*\n"
-                                    }
-                                ]
-                            },
-                            {
-                                "id": "technical-debt",
-                                "title": "Technical Debt",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Refactoring",
-                                    "CleanCode",
-                                    "SoftwareDesign",
-                                    "Management"
-                                ],
-                                "links": [
-                                    "code-smells"
-                                ],
-                                "group": "devops",
-                                "content": "# Technical Debt\n\nWriting bad code to ship a feature quickly is like taking out a high-interest loan from a bank. The loan allows you to buy a house (ship the feature) faster than if you had saved up cash. However, every day you wait to pay off that loan, you accrue interest. Eventually, the interest payments become so massive that you can't afford to buy groceries (build new features); all of your energy is spent just servicing the debt.\n\n**Technical Debt** (a metaphor coined by Ward Cunningham) describes the implied cost of additional rework caused by choosing an easy (limited) solution now instead of using a better approach that would take longer.\n\nNo programmer starts a project intending to write awful code. But under pressure, clean code inevitably accrues debt.\n\n## Causes of Technical Debt\n\n1.  **Business Pressure:** A manager demands a feature be released before an impossible deadline. The developer hard-codes values and skips writing tests just to hit the date.\n2.  **Lack of Understanding:** The team doesn't truly understand the business domain yet, so they build a rigid database structure that becomes cripplingly difficult to change when the real requirements are discovered later.\n3.  **Lack of Collaboration:** Knowledge is siloed. A junior developer writes a massive, tangled function (a [[code-smells|Code Smell]]) because a senior developer didn't mentor them or review their pull request. \n4.  **Delayed Refactoring:** The team says, \"We will clean this up later.\" (Spoiler: They rarely do, until the system breaks).\n\n## Paying Off the Debt\n\nYou pay off the \"principal\" of technical debt by **Refactoring** the codebase; spending a week writing tests, breaking down massive classes, and renaming variables so they make sense to the rest of the team.\n\nIf you don't pay off the debt, development velocity will slowly grind to a halt. Every new feature will take three times longer to build because developers have to carefully navigate around the fragile, messy \"debt-ridden\" areas of the application.\n\n### Further Reading\n\n*   *[Refactoring.guru: Technical Debt](https://refactoring.guru/refactoring/technical-debt)*\n"
-                            },
-                            {
-                                "id": "what-is-refactoring",
-                                "title": "What is Refactoring?",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Refactoring",
-                                    "CleanCode",
-                                    "SoftwareDesign"
-                                ],
-                                "links": [
-                                    "technical-debt"
-                                ],
-                                "group": "devops",
-                                "content": "# What is Refactoring?\n\nRefactoring is like cleaning up a messy workshop. You aren't building a new car and you aren't fixing the engine; you are simply sweeping the floor and putting the tools back on the pegboard. You do this so that when you *do* decide to build your next car (write a new feature), you won't trip over a stray hammer and break your ankle (introduce a bug).\n\n**Refactoring** is the systematic process of improving code without creating new functionality. It's about transforming a massive, tangled mess of logic into clean code and simple design. \n\nThe primary goal of refactoring is to fight [[technical-debt|Technical Debt]].\n\n## What is \"Clean Code\"?\n\nRefactoring aims to produce \"clean code,\" which is universally characterized by the following traits:\n\n1.  **It is Obvious:** It shouldn't require a Ph.D. to understand what a variable does. Poor variable naming, bloated classes, and \"magic numbers\" make code sloppy. Clean code reads like well-written prose.\n2.  **No Duplication:** If you have to fix a bug in three different places because you copy-pasted a function three times, your code is dirty. Refactoring aims to consolidate logic so you only ever have to update it once.\n3.  **Minimal Moving Parts:** Code is a liability, not an asset. The more code you write, the more you have to maintain, test, and debug. Clean code keeps classes tight and focused on a single responsibility.\n4.  **It Passes Tests:** You know your code is dirty if only 95% of your unit tests pass. \n\n## What Refactoring Is *Not*\n\nIt is crucial to understand that refactoring **does not change the observable behavior of the software**. \n\nIf you add a new \"login\" button while you are refactoring the authentication module, you are no longer strictly refactoring; you are feature building. Refactoring should always be done as an isolated, deliberate step before or after adding a feature, never at the exact same time.\n\n### Further Reading\n\n*   *[Refactoring.guru: What is Refactoring?](https://refactoring.guru/refactoring/what-is-refactoring)*\n"
-                            },
-                            {
-                                "id": "when-to-refactor",
-                                "title": "When to Refactor",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Refactoring",
-                                    "CleanCode",
-                                    "SoftwareDesign"
-                                ],
-                                "links": [
-                                    "technical-debt",
-                                    "code-smells"
-                                ],
-                                "group": "devops",
-                                "content": "# When to Refactor\n\nRefactoring shouldn't be a special event explicitly scheduled on a calendar (e.g., \"Refactoring Sprint\"). It should be a continuous, ongoing habit woven directly into the daily software development lifecycle. \n\nThere are three primary triggers that should signal a developer that it is time to clean up the code.\n\n## 1. The Rule of Three\n\nThe most famous heuristic for refactoring is the \"Rule of Three\":\n\n1.  When you're doing something for the first time, just get it done.\n2.  When you're doing something similar for the second time, cringe at having to repeat yourself, but do it anyway.\n3.  **When you're doing something for the third time, start refactoring.** Extract that duplicated code into its own reusable function or class.\n\n## 2. When Adding a Feature\n\nBefore you add a new feature, look at the existing code you have to interact with. If that code is a massive, tangled mess, *do not add the feature yet*. \n\nFirst, refactor the existing messy code so that it is clean, modular, and easy to understand. Only *after* the codebase is clean should you add the new feature. As the saying goes: *\"For each desired change, make the change easy (warning: this may be hard), then make the easy change.\"*\n\n## 3. During a Code Review\n\nCode reviews are the final line of defense before messy code merges into the `main` repository and becomes official [[technical-debt|Technical Debt]]. \n\nIf a senior reviewer spots a [[code-smells|Code Smell]] (like a method that is 400 lines long), they should require the author to pause, refactor the code using techniques like *Extract Method*, and update the pull request before it is approved for production.\n\n### Further Reading\n\n*   *[Refactoring.guru: When to Refactor](https://refactoring.guru/refactoring/when)*\n"
                             }
                         ]
                     }
@@ -2773,8 +2578,8 @@ const wikiData = {
                                     "Tool"
                                 ],
                                 "links": [
-                                    "nfc",
-                                    "rfid"
+                                    "rfid",
+                                    "nfc"
                                 ],
                                 "group": "general",
                                 "content": "# Flipper Zero\n\nThe Swiss Army knife for geeks.\n\nThe **Flipper Zero** is a portable, tamagotchi-like multi-tool for pentesters and hardware geeks. It houses antennas for almost every common radio protocol: **[[nfc|NFC]]**, **[[rfid|RFID]]**, **Infrared** (TV remotes), **Sub-GHz** (Garage doors), and **iButton**.\n\n## Why is it famous/infamous?\nIt makes hardware hacking accessible.\n*   **Cool usage:** Cloning your office keycard so you don't lose it. Turning off all TV screens in a bar (TV-B-Gone).\n*   **Bad usage:** \"SPAM Attacks\" that crash iPhones by flooding them with Bluetooth pairing requests (Apple fixed this, but Flipper popularized it).\n\n## FAQs\n\n*1. Is it illegal?*\nNo. The device itself is legal hardware. *Using* it to open a Tesla charge port you don't own or clone a stranger's card is illegal.\n\n### Further Reading\n\n*   **Official Site:** *[flipperzero.one](https://flipperzero.one/)*\n*   **Video:** *[Can the Flipper Zero Break Into My House?](https://www.youtube.com/watch?v=S2uF1v8g-jU)*\n"
@@ -2791,8 +2596,8 @@ const wikiData = {
                                 ],
                                 "links": [
                                     "tpu",
-                                    "npu",
-                                    "cpu"
+                                    "cpu",
+                                    "npu"
                                 ],
                                 "group": "general",
                                 "content": "# GPU\n\nA factory with thousands of workers, instead of one genius.\n\nThe **[[cpu|CPU]]** (Central Processing Unit) in your computer is like a **Professor**: extremely smart, can do complex math (calculus), but can only do one or two things at a time.\n\nThe **GPU** (Graphics Processing Unit) is like a **Factory** full of thousands of workers: they aren't very smart (basic math only), but they can do 10,000 simple things at the exact same time.\n\n## Why is it used for AI?\n\nAI (and Video Games) require changing millions of pixels or calculating millions of numbers simultaneously.\n*   **[[cpu|CPU]]:** Solves one complex equation in 0.1 seconds.\n*   **GPU:** Solves 10,000 simple equations in 0.1 seconds.\n*   *(See also: [[tpu|TPUs]] for specialized AI/Cloud training and [[npu|NPUs]] for mobile AI).*\n\n## FAQs\n\n*1. Can I use a GPU for normal work?*\nYou use it every day! It draws the windows on your screen. But for running Excel or Word, your CPU does the heavy lifting because those tasks are sequential (step-by-step), not parallel.\n\n*2. Why are they so expensive?*\nSupply and Demand. They are the shovels in the AI Gold Rush. Everyone from gamers to Google needs them to run modern software.\n\n### Further Reading\n\n*   **Video:** *[Mythbusters Demo: CPU vs GPU](https://www.youtube.com/watch?v=-P28LKWTzrI)* (The famous paintball illustration).\n*   **Explainer:** *[NVIDIA: What is a GPU?](https://www.nvidia.com/en-us/geforce/technologies/what-is-a-gpu/)*\n"
@@ -2958,12 +2763,12 @@ const wikiData = {
                                     "Hardware"
                                 ],
                                 "links": [
-                                    "quantum-computing",
-                                    "quantum-machine-learning",
-                                    "qubits",
                                     "supercomputer",
+                                    "quantum-computing-revolution",
                                     "quantum-coprocessor",
-                                    "quantum-computing-revolution"
+                                    "qubits",
+                                    "quantum-computing",
+                                    "quantum-machine-learning"
                                 ],
                                 "group": "general",
                                 "content": "# NISQ (Noisy Intermediate-Scale Quantum)\n\nA NISQ computer is like a prototype race car; it runs at speeds unimaginable to ordinary vehicles, but parts frequently vibrate loose or break down during the drive. You can't rely on it for a cross-country road trip, but engineers use it for short, intense test laps to learn how to build the perfect car of the future.\n\n**NISQ (Noisy Intermediate-Scale Quantum)** is the current era of [[quantum-computing|quantum computing]] development. Coined by physicist John Preskill in 2018, the acronym perfectly describes both the promise and the physical limitations of modern [[quantum-computing-revolution|Quantum Computers]].\n\nUnlike your laptop, which is incredibly stable and rarely makes a basic math error, quantum computers operate using delicate subatomic principles. Because these systems are so sensitive, the slightest change in temperature, a stray electromagnetic wave, or even building vibrations can cause a qubit to suddenly lose its state; a phenomenon known as \"decoherence.\"\n\n## Breaking Down the Acronym\n\n*   **Noisy:** The computers lack robust error-correction. When a qubit decoheres due to environmental interference, it introduces an error (noise) into the calculation. In classical computing, if a bit accidentally flips, other bits immediately detect and correct it. We don't yet have enough [[qubits|qubits]] to dedicate millions of them solely to error-checking.\n*   **Intermediate-Scale:** Today's quantum processors contain anywhere from a few dozen to a few hundred [[qubits|qubits]]. This is \"intermediate.\" It is large enough to perform calculations that classical [[supercomputer|Supercomputers]] cannot simulate, but it is far too small to run massive, world-changing algorithms (like Shor's Algorithm) entirely fault-free.\n\n## Current Uses for NISQ\n\nBecause NISQ computers cannot be trusted to run a billion steps flawlessly, researchers use them for \"shallow\" circuits; short algorithms that can be completed before the noise overwhelms the system. \n\nThe most common application is hybrid computing. A classical computer handles 99% of a problem, and it hands the absolute hardest 1% to the NISQ processor, using it essentially as a highly specialized [[quantum-coprocessor|Quantum Coprocessor]].\n\n## FAQs\n\n*1. When will the NISQ era end?*\nThe goal of the industry is \"Fault-Tolerant [[quantum-computing|Quantum Computing]].\" This will happen when engineers successfully build systems with enough physical [[qubits|qubits]] (likely in the millions) to implement perfect, real-time error correction, effectively silencing the \"noise.\" \n\n*2. Are NISQ computers useless right now?*\nNot at all. They are essential stepping stones. Researchers use them constantly in fields like [[quantum-machine-learning|Quantum Machine Learning]] and molecular simulation, trying to extract usefulness from \"noisy\" data while simultaneously learning how to build better hardware.\n\n### Further Reading\n\n*   **Industry Standards:** *[Google Quantum AI: The NISQ Era](https://quantumai.google/learn/map)* (Google's perspective on extracting value from intermediate-scale devices).\n"
@@ -2981,8 +2786,8 @@ const wikiData = {
                                 ],
                                 "links": [
                                     "operating-system",
-                                    "qubits",
-                                    "supercomputer"
+                                    "supercomputer",
+                                    "qubits"
                                 ],
                                 "group": "general",
                                 "content": "# Origin Pilot\n\nA quantum computer OS is like the essential conductor of a massive, incredibly complex orchestra (the quantum hardware). While individual musicians (qubits) are playing mind-bendingly difficult music at extremely high speeds, the conductor (Origin Pilot) keeps them all in perfect sync, schedules their solos, and translates the composer's sheet music (your code) into a language they can physically play.\n\n**Origin Pilot** is the world's first open-source quantum [[operating-system|operating system]]. Developed by Origin Quantum Computing Technology based in Hefei, China, it was officially released for public download globally on February 26, 2026. \n\nIt is designed as an integrated \"quantum-classical-AI\" [[operating-system|operating system]]. It manages core functions such as task scheduling, hardware-software coordination, parallel execution of quantum tasks, and automatic qubit calibration across various hardware platforms (such as superconducting, ion-trap, and neutral-atom processors).\n\n## Integration with Wukong\n\nOrigin Pilot currently powers China's **Origin Wukong** superconducting quantum computer. Launched in early 2024 and named after the mythical Monkey King, the Wukong features a 72-qubit superconducting quantum chip. \n\nWith Origin Pilot acting as its brain, Wukong operates as a unified platform entirely independent of US technology. It is highly accessible via cloud platforms and has already executed hundreds of thousands of tasks for users in over 120 countries. According to recent tests, researchers successfully used the OS and hardware together to fine-tune a billion-parameter artificial intelligence model, massively reducing its size while improving its performance.\n\n## Geopolitical Significance\n\nThe release of Origin Pilot is more than a software launch; it is a major geopolitical signal regarding China's technological independence.\n\n### The 15th Five-Year Plan (2026\u20132030)\nQuantum technology is explicitly listed as a critical, strategic sector in China's 15th Five-Year Plan. The period between 2026 and 2030 represents massive state investment into achieving \"commercial quantum advantage\"; the moment quantum computers become demonstrably better at solving real-world problems in pharmaceuticals, chemicals, and finance than classical [[supercomputer|Supercomputers]].\n\n### Controlling the Ecosystem\nBy making Origin Pilot open-source and globally accessible, China is aggressively shifting from closed innovation to building a global developer ecosystem around its domestic quantum infrastructure. This signifies that the race for quantum supremacy is no longer merely about who can build the hardware with the most [[qubits|qubits]]; the true winner will be whichever entity controls the [[operating-system|operating system]] that shapes the entire ecosystem.\n\n## FAQs\n\n*1. Are Google or IBM doing this?*\nWhile American heavyweights like IBM and Google operate advanced quantum systems and offer cloud access (like Qiskit and IBM Quantum Experience), neither has made a comparable foundational [[operating-system|Operating System]] entirely open-source and publicly downloadable for local deployment.\n\n*2. Can I install this on my laptop?*\nYou can download the open-source code to study how quantum OS architecture functions, but you cannot run quantum tasks on your laptop's standard silicon CPU without utilizing a cloud connection to actual quantum hardware. \n\n### Further Reading\n\n*   **Corporate Hub:** *[Origin Quantum Official Site](https://www.originqc.com/)* (Details on the company's full-stack quantum development).\n"
@@ -2998,12 +2803,12 @@ const wikiData = {
                                     "FutureProofing"
                                 ],
                                 "links": [
+                                    "encryption",
                                     "ecc",
+                                    "rsa",
                                     "asymmetric-encryption",
                                     "qubits",
-                                    "shors-algorithm",
-                                    "rsa",
-                                    "encryption"
+                                    "shors-algorithm"
                                 ],
                                 "group": "general",
                                 "content": "# Post-Quantum Cryptography\n\nFixing the locks before the master key is built.\n\n**Post-Quantum Cryptography (PQC)** refers to the development of new mathematical [[encryption|encryption]] methods that are secure against both classical computers and the future threat of **[[shors-algorithm|Quantum Computers]]**.\n\nCurrently, almost all internet security (RSA and ECC) can be broken by a large-scale quantum computer. PQC is the \"patch\" for the entire internet's plumbing.\n\n## The Quantum Threat\nQuantum computers use \"[[qubits|Qubits]]\" to perform calculations that are impossible for normal computers. **[[shors-algorithm|Shor's Algorithm]]** is a specific quantum recipe that can break the math behind our current [[asymmetric-encryption|Asymmetric Encryption]].\n\nIf a powerful quantum computer is built tomorrow, every bank account, government secret, and private message sent over the last 30 years could be unlocked.\n\n## PQC Strategies (The New Math)\nSince quantum computers are great at factoring numbers ([[rsa|RSA]]) and solving \"discrete logs\" ([[ecc|ECC]]), we need math problems that *don't* involve those. \n\n1.  **Lattice-based Cryptography:** Hiding data inside a massive, multi-dimensional grid of points. This is currently the most promising candidate.\n2.  **Hash-based Signatures:** Using one-way mathematical \"hashes\" (like fingerprints) to verify identity.\n3.  **Code-based Cryptography:** Based on error-correcting codes.\n\n## The Race: NIST Standardization\nThe US National Institute of Standards and Technology (NIST) has been running a global competition since 2016 to pick the winners of the \"Quantum-Safe\" era.\n*   **Current Winners:** Algorithms like **CRYSTALS-Kyber** (for encryption) and **CRYSTALS-Dilithium** (for signatures) are being rolled out globally (e.g., in Google Chrome and Cloudflare).\n\n## FAQs\n\n*1. Is this the same as \"Quantum Cryptography\"?*\nNo. \n*   **Quantum Cryptography (QKD):** Uses actual quantum physics (lasers and photons) to send secrets. Requires expensive hardware.\n*   **Post-Quantum Cryptography:** Uses normal math that runs on your current phone/laptop, but is *designed* to be too hard for quantum computers to solve.\n\n*2. Why do we need it now if quantum computers aren't ready?*\nBecause of **\"Store Now, Decrypt Later\"**. Attackers are currently stealing and storing encrypted government and corporate data today, hoping to use a quantum computer to unlock it 10 years from now. We need safe [[encryption|encryption]] *today* to protect the future.\n\n### Further Reading\n\n*   **Website:** *[NIST Post-Quantum Cryptography Project](https://csrc.nist.gov/projects/post-quantum-cryptography)*\n*   **Video:** *[The Quantum Apocalypse (Post-Quantum Cryptography)](https://www.youtube.com/watch?v=lvTqbM5Dq4Q)*\n"
@@ -3037,12 +2842,12 @@ const wikiData = {
                                     "Physics"
                                 ],
                                 "links": [
-                                    "quantum-computing",
-                                    "qubits",
-                                    "rsa",
-                                    "shors-algorithm",
                                     "supercomputer",
-                                    "nisq"
+                                    "nisq",
+                                    "rsa",
+                                    "qubits",
+                                    "quantum-computing",
+                                    "shors-algorithm"
                                 ],
                                 "group": "general",
                                 "content": "# The [[quantum-computing|Quantum Computing]] Revolution\n\nIf a classical computer navigates a maze by trying every single path one by one until it finds the exit, a quantum computer floods the entire maze with water to find all possible paths simultaneously.\n\n**[[quantum-computing|Quantum Computing]]** represents a fundamental transition from classical bits (which can only be a 0 or a 1) to **qubits** (which leverage quantum mechanics to exist in a state of superposition and entanglement). This allows quantum systems to solve specific computational problems that are entirely intractable (NP-hard) for classical systems.\n\nWhile the field is currently in the [[nisq|NISQ (Noisy Intermediate-Scale Quantum)]] era, both theoretical proofs and empirical data strongly support the assertion that [[quantum-computing|quantum computing]] is a revolutionary threshold, not just an iterative speed upgrade.\n\n## The Case for Quantum Revolution\n\n### 1. Breaking Complexity Barriers (Shor\u2019s Algorithm)\nClassical [[rsa|RSA encryption]] relies on the sheer mathematical difficulty of integer factorization. A classical computer would theoretically take billions of years to factor a 2048-bit integer.\n*   **The Data:** [[shors-algorithm|Shor\u2019s Algorithm]] mathematically demonstrates that a fault-tolerant quantum computer could complete this exact factorization in mere hours.\n*   **The Revolution:** This is not merely a \"faster calculation.\" It is a fundamental paradigm shift providing a polynomial-time solution to a problem previously proven to be exponential.\n\n### 2. Quantum Supremacy (Advantage)\nThe milestone of **Quantum Supremacy** occurs when a quantum device solves a problem that no classical computer could feasibly solve in a reasonable timeframe.\n*   **The Proof:** In 2019, Google\u2019s *Sycamore* processor performed a specific sampling task in 200 seconds that they estimated would take the world\u2019s fastest classical [[supercomputer|supercomputer]] 10,000 years. \n*   **The Nuance:** While competitors (like IBM) disputed the exact \"10,000 years\" figure, arguing highly optimized classical algorithms could reduce the gap, the computational disparity remains undeniably massive and is continuously widening.\n\n### 3. Molecular Simulation (The True Impact)\nClassical computers fundamentally struggle to simulate basic molecules because the computational complexity grows exponentially with every single electron added to the simulation.\n*   **The Match:** Quantum computers function on the exact same probabilistic laws of quantum mechanics as the molecules they are trying to simulate. \n*   **The Revolution:** This capability will likely revolutionize material science and chemistry. Successfully simulating complexes like FeMo-co (vital for nitrogen fixation) could revolutionize synthetic fertilizer production and advanced battery chemistry, drastically reducing global energy consumption.\n\n## Logic and Limitations\n\nA rational analysis of the quantum revolution must guard against common logical fallacies:\n\n*   **Hasty Generalization:** Assuming that because quantum computers excel at highly specific mathematical tasks (prime factoring, optimization, molecular simulation), they will replace classical laptops for general consumer tasks (like word processing or gaming). They will not; they are highly specialized accelerators.\n*   **Appeal to Novelty:** The sheer \"newness\" of the technology does not guarantee its immediate utility.\n*   **The Decoherence Barrier:** We are currently battling severe hardware fragility. [[qubits|Qubits]] are extremely susceptible to environmental noise. Creating one stable \"logical qubit\" requires thousands of \"physical [[qubits|qubits]]\" to sustain error correction.\n\n## The Socratic Challenge\n\nTo further refine predictions on the quantum timeline, consider the following:\n\n*   If the industry cannot achieve stable Quantum Error Correction (QEC) at scale within the next decade, does the \"revolution\" remain a practical reality, or does it become a relegated theoretical footnote?\n\n### Further Reading\n\n*   **[Research]:** *Shor, P. W. (1994). \"Algorithms for quantum computation: discrete logarithms and factoring.\" IEEE.*\n*   **[Research]:** *Arute, F., et al. (2019). \"Quantum supremacy using a programmable superconducting processor.\" Nature.*\n*   **[Research]:** *Reiher, M., et al. (2017). \"Elucidating reaction mechanisms on quantum computers.\" PNAS.*\n"
@@ -3058,12 +2863,12 @@ const wikiData = {
                                     "Computing"
                                 ],
                                 "links": [
-                                    "cryptography",
-                                    "shors-algorithm",
                                     "encryption",
                                     "supercomputer",
-                                    "qiskit",
-                                    "quantum-computing-revolution"
+                                    "quantum-computing-revolution",
+                                    "cryptography",
+                                    "shors-algorithm",
+                                    "qiskit"
                                 ],
                                 "group": "general",
                                 "content": "# Quantum Computing\n\nCalculating every path through the maze at once.\n\nClassical computers (like the one you are using) think in **Bits** (0 OR 1).\nQuantum computers think in **Qubits** (0 AND 1, at the same time).\n\nThis allows them to solve specific types of massive problems (like folding proteins for drug discovery or breaking [[encryption]]) exponentially faster than a [[supercomputer]].\n\n## Superposition & Entanglement\n\n*   **Superposition:** A coin spinning on a table is neither Heads nor Tails; it is a blur of both. That is a Qubit.\n*   **Entanglement:** Two spinning coins are linked. If you stop one and it lands Heads, the other one *instantly* becomes Tails, even if it is on Mars.\n\n## FAQs\n\n*1. Will it replace my laptop?*\nNo. They are giant, fragile fridges that need to be kept near Absolute Zero (-273\u00b0C). They are for specific science/math tasks, not scrolling Twitter.\n\n*2. Will it break [[encryption|encryption]]?*\nEventually, yes. [[shors-algorithm|Shor's-Algorithm]] proves a powerful enough Quantum Computer could crack all modern flexible [[encryption]]. This is why \"Post-Quantum [[cryptography|Cryptography]]\" is being researched now.\n\n## How do we use them?\n\nWe use software like **[[qiskit|IBM Qiskit]]**. It's a Python library that lets you write code (circuits) on your laptop, which is then sent to a real Quantum Computer (via the cloud) to be executed.\n\n\n### Further Reading\n\n*   **Video:** *[Quantum Computers Explained (Kurzgesagt)](https://www.youtube.com/watch?v=JhHMJCUmq28)*\n*   **Article:** *[IBM Quantum Experience](https://www.ibm.com/quantum)*\n*   **Deep Dive:** *[[quantum-computing-revolution|The Quantum Computing Revolution]]*\n"
@@ -3079,10 +2884,10 @@ const wikiData = {
                                     "System-Architecture"
                                 ],
                                 "links": [
-                                    "operating-system",
                                     "nisq",
-                                    "quantum-machine-learning",
-                                    "supercomputer"
+                                    "operating-system",
+                                    "supercomputer",
+                                    "quantum-machine-learning"
                                 ],
                                 "group": "general",
                                 "content": "# Quantum Coprocessor\n\nA Quantum Coprocessor is like having a specialized friend sitting next to you while you solve a massive maze; you systematically trace lines to figure out the easiest paths, but when you reach an incredibly complicated knot in the center, you hand the paper to your friend. Because of their unique eyesight, they can instantly see all the correct paths at once, draw the line, and hand the paper back to you to finish.\n\nA **Quantum Coprocessor** is a specialized piece of hardware designed to work seamlessly alongside a traditional, classical CPU. Instead of replacing conventional computers entirely, the quantum processor acts as an immensely powerful assistant, dedicated *only* to mathematical tasks that classical chips find impossible.\n\nThis concept mirrors how modern computers already operate. Your computer's CPU is a generalist; it handles the [[operating-system|operating system]], word processing, and web browsing. But when you launch a complex 3D video game, the CPU offloads the heavy mathematical geometry to a dedicated Graphics Processing Unit (GPU). In the future of High-Performance Computing, the CPU will similarly offload specifically entangled, multidimensional problems to a Quantum Processing Unit (QPU).\n\n## How it Works in Practice\n\nCurrently, because we live in the [[nisq|NISQ]] era of noisy, fragile hardware, physical quantum coprocessors don't sit inside your laptop. They live in massive data centers. \n\n1.  **Classical Setup:** A classical [[supercomputer|supercomputer]] formulates a problem (e.g., finding the optimal molecular structure for a new battery). \n2.  **The Handoff:** The classical machine encounters a specific calculation where the variables grow exponentially, a roadblock that would take it 1,000 years to solve. It bundles this specific calculation and sends it to the Quantum Coprocessor via the cloud.\n3.  **Quantum Supremacy:** The QPU uses superposition and entanglement to explore many possibilities simultaneously. It typically returns probabilistic samples that require classical post-processing and verification before an optimal answer is selected.\n4.  **Classical Finish:** The classical computer receives the answer and finishes constructing the battery model.\n\n## Synergistic Use Cases\n\n*   **[[quantum-machine-learning|Quantum Machine Learning]]:** Classical networks manage the data pipelines and basic training, while the QPU handles complex feature mapping and kernel estimation in high-dimensional spaces.\n*   **Chemistry & Material Science:** Simulating how electrons interact in complex molecules is a natively quantum problem, perfectly suited to be offloaded to a QPU while the classical computer manages the broader simulation environment.\n\n## FAQs\n\n*1. Will I ever have a Quantum Coprocessor in my desktop PC?*\nIt is highly unlikely in the near future. Quantum chips currently require massive dilution refrigerators to cool them to near Absolute Zero. Until room-temperature superconductors are discovered, QPUs will remain massive, cloud-accessible mainframes.\n\n*2. Doesn't this mean quantum computers are just regular computers?*\nNo. It means quantum computers are highly specialized tools. Just as you wouldn't use a bulldozer to commute to work, you wouldn't use a quantum computer to run a web browser. The coprocessor model ensures each type of machine does exactly what it is best at.\n\n### Further Reading\n\n*   **Hardware Integration:** *[IBM Quantum Architecture](https://www.ibm.com/quantum/hardware)* (How IBM is physically linking classical supercomputing clusters directly with quantum processors).\n"
@@ -3098,11 +2903,11 @@ const wikiData = {
                                     "Machine Learning"
                                 ],
                                 "links": [
-                                    "qubits",
                                     "supercomputer",
-                                    "quantum-coprocessor",
                                     "nisq",
-                                    "quantum-computing-revolution"
+                                    "quantum-computing-revolution",
+                                    "quantum-coprocessor",
+                                    "qubits"
                                 ],
                                 "group": "general",
                                 "content": "# Quantum Machine Learning (QML)\n\nQuantum Machine Learning is like trying to find the center of a massive, impossibly complex maze; a classical computer runs down one path, hits a dead-end, and has to walk all the way back to try again. A quantum computer explores hundreds of paths simultaneously, finding the exact route to the center instantly.\n\n**Quantum Machine Learning (QML)** is an emerging interdisciplinary field that integrates quantum algorithms into machine learning programs. The goal is to rapidly accelerate the speed, efficiency, and scale at which AI can process data by leveraging the physics of [[quantum-computing-revolution|Quantum Computers]].\n\nTraditional Machine Learning analyzes data using classical bits (which exist strictly as a `0` or a `1`). As datasets grow into the petabytes; particularly in fields like drug discovery or genetics; classical computers bottleneck. Because QML uses \"[[qubits|qubits]]\" (which can exist as a `0`, a `1`, or both simultaneously via superposition), it possesses a theoretical ability to parse multidimensional data and find patterns infinitely faster than the most powerful classical [[supercomputer|Supercomputers]].\n\n## Current Applications & Techniques\n\nThe field is still in its infancy, primarily restricted by the current noise levels in quantum hardware, but several theoretical models are being actively developed:\n\n*   **Hybrid Quantum-Classical Models:** The most common approach today. A classical computer handles data formulation and optimization, while it offloads the heaviest, most complex mathematical calculations to a \"[[quantum-coprocessor|Quantum Coprocessor]],\" much like a CPU offloads graphics rendering to a GPU.\n*   **Quantum Support Vector Machines (QSVM):** A quantum iteration of classical classification tasks. It can map data points into vastly higher-dimensional spaces faster than classical machines, making it easier to separate and classify complex datasets.\n*   **Quantum Neural Networks (QNNs):** Experimental algorithms that mimic the structure of a biological brain, but instead of classical mathematical nodes, the \"neurons\" are parameterized quantum circuits.\n\n## FAQs\n\n*1. Will QML replace normal Machine Learning?*\nUnlikely. Just as supercomputers didn't replace laptops, QML will likely be reserved for specific, immensely complex problems (like simulating molecular chemistry or factoring giant primes). Classical ML is perfectly sufficient, and much cheaper; for everyday tasks like predicting housing prices or running chatbots.\n\n*2. When will QML be widely adopted?*\nWe are currently in the [[nisq|NISQ (Noisy Intermediate-Scale Quantum)]] era. Until hardware engineers solve the physical problem of \"quantum noise\" and stabilize [[qubits|qubits]], QML will remain largely theoretical and experimental.\n\n### Further Reading\n\n*   **Concept Overview:** *[IBM: What is Quantum Machine Learning?](https://www.ibm.com/quantum/machine-learning)* (IBM's perspective on fusing quantum advantage with AI).\n"
@@ -3159,10 +2964,10 @@ const wikiData = {
                                     "Resources"
                                 ],
                                 "links": [
-                                    "cryptojacking",
-                                    "malware",
                                     "edr",
-                                    "antivirus"
+                                    "antivirus",
+                                    "cryptojacking",
+                                    "malware"
                                 ],
                                 "group": "general",
                                 "content": "# Cryptomining Software\n\nComputer programs designed to solve complex mathematical problems (\"hashes\") in order to secure a blockchain and earn cryptocurrency rewards.\n\nWhile cryptomining software has legitimate uses, it is frequently used by hackers in unauthorized ways to steal processing power.\n\n## Legitimate vs. Malicious Use\n\n- **Legitimate Miner**: A user intentionally installs software (like NiceHash or PhoenixMiner) on their own hardware to earn crypto. They pay for their own electricity and hardware wear-and-tear.\n- **Malicious Miner**: A hacker secretly installs a mining script or program on a victim's device without their knowledge. This is known as **[[cryptojacking]]**.\n\n## How it Impacts Systems\n- **CPU/GPU Saturation**: The software tries to use 100% of available processing power, making the computer laggy.\n- **Heat & Wear**: Running hardware at max capacity for long periods can cause permanent damage or shortened lifespan.\n- **Energy Cost**: Cryptomining is extremely power-hungry; unauthorized mining can cause massive spikes in electricity bills.\n\n## Detection\nAdvanced [[antivirus|antivirus]] and [[EDR]] systems often flag legitimate cryptomining software as \"Potentially Unwanted Programs\" (PUPs) because they are so commonly associated with [[malware|malware]] infections.\n\n### Further Reading\n- [What is Cryptocurrency Mining?](https://www.investopedia.com/terms/c/cryptocurrency-mining.asp)\n- [[cryptojacking|Learn more about Cryptojacking attacks]].\n"
@@ -3483,8 +3288,8 @@ const wikiData = {
                                     "Logic"
                                 ],
                                 "links": [
-                                    "false-dilemma",
-                                    "ai-fine-tuning"
+                                    "ai-fine-tuning",
+                                    "false-dilemma"
                                 ],
                                 "group": "philosophy",
                                 "content": "# The [[ai-fine-tuning|Fine-Tuning]] Argument\n\nImagine winning the lottery a trillion times in a row; you would naturally suspect the game was rigged in your favor, which is exactly how some people feel about the perfectly balanced laws of physics framing our existence.\n\n**The [[ai-fine-tuning|Fine-Tuning]] Argument** (also known as the Teleological Argument) is the philosophical proposition that the fundamental constants of physics; such as the gravitational constant ($G$), the cosmological constant ($\\Lambda$), or the mass of an electron; are so precisely calibrated that any slight deviation would render the universe entirely inhospitable to life. It posits that this precision cannot be coincidental and therefore requires a conscious creator.\n\nHowever, when analyzing the logical validity of this claim, there are several data-driven counter-arguments and structural fallacies to consider.\n\n## Logical Fallacies\n\nBefore addressing the physics, the premise itself suffers from several logical structural issues:\n\n*   **Argument from Incredulity:** This fallacy occurs when one concludes that because a phenomenon is difficult to imagine or explain scientifically (the \"coincidence\" of constants), it *must* have a supernatural origin.\n*   **[[false-dilemma|False Dilemma]]:** The argument suggests only two options: Random Chance or a Conscious Creator. It ignores third possibilities such as Physical Necessity or the Multiverse Theory.\n*   **The Anthropic Principle (Survivor Bias):** We observe a \"fine-tuned\" universe precisely because we are here to observe it. If the constants were different, we wouldn't exist to note the \"error.\" This is similar to a puddle marveling at how perfectly the hole it sits in fits its exact shape (Douglas Adams\u2019 Puddle Analogy).\n\n## Evidence-Based Counters\n\nTo contest this argument or demonstrate it is not a logical necessity; modern theoretical physics and cosmology provide several alternative models:\n\n*   **The Multiverse Hypothesis:** The Planck 2018 results regarding the Cosmic Microwave Background (CMB) provide constraints consistent with inflationary models. Building on this, some speculative extensions of inflation (e.g., \"Eternal Inflation\" and the \"multiverse\") have been proposed, though they are not directly confirmed by those observations. If there are infinite universes with different physical constants, it is statistically certain that at least one will have the \"correct\" values for life without requiring a creator, purely through a massive sample size.\n*   **Functional Redundancy:** The claim that constants \"cannot change\" is challenged by computer modeling. Calculations have demonstrated that stars can still form and undergo fusion even if gravity or the weak nuclear force were altered by orders of magnitude, provided other constants were adjusted in tandem. The universe is more robust than the \"fragile\" [[ai-fine-tuning|fine-tuning]] argument suggests.\n*   **The Cosmological Constant Problem:** The cosmological constant ($\\Lambda$) is often cited as the most \"fine-tuned\" value (1 part in $10^{120}$). However, the fact that our current calculations in Quantum Field Theory differ from general astronomical observations by such a massive margin suggests that our understanding of the physics is merely incomplete, rather than the universe itself being literally \"tuned.\"\n\n## Socratic Analysis\n\nEven assuming the universe *is* intentionally fine-tuned, jumping to the conclusion of a \"Creator\" remains a *non-sequitur* (it does not follow):\n\n*   **Who Tunes the Tuner?** If a complex universe requires a creator, doesn't a creator capable of tuning a universe require an even more complex creator? This leads to an unstable infinite regress.\n*   **Lack of Specificity:** Even if [[ai-fine-tuning|fine-tuning]] proved the existence of an \"agent,\" it provides zero data to identify the nature of that agent. The tuner could just as easily be naturalistic (e.g., a higher-dimensional civilization running a simulation) rather than a supernatural deity.\n*   **God of the Gaps:** Inferring a creator solely from the [[ai-fine-tuning|fine-tuning]] of constants is inserting a divine explanation into the exact place where human scientific knowledge is currently just incomplete.\n\n### Further Reading\n\n*   **[Research]:** *Adams, F. C. (2008). \"Stars in other universes: stellar structure with different fundamental constants.\" Journal of Cosmology and Astroparticle Physics.*\n*   **[Book]:** *Stenger, V. J. (2011). \"The Fallacy of [[ai-fine-tuning|Fine-Tuning]].\" Prometheus Books.*\n*   **[Book]:** *Susskind, L. (2005). \"The Cosmic Landscape: String Theory and the Illusion of Intelligent Design.\"*\n"
@@ -3501,10 +3306,10 @@ const wikiData = {
                                     "Psychology"
                                 ],
                                 "links": [
-                                    "burden-of-proof",
+                                    "cognitive-bias",
                                     "scientific-consensus",
-                                    "circular-reasoning",
-                                    "cognitive-bias"
+                                    "burden-of-proof",
+                                    "circular-reasoning"
                                 ],
                                 "group": "philosophy",
                                 "content": "# Is God Made by Humans?\n\nIf society is a sprawling, chaotic classroom, then \"God\" is often theorized as the ultimate, invisible teacher created by the students to ensure everyone plays by the rules when no actual mortal teacher is looking.\n\n**The Anthropological Perspective on God** is the proposition supported by social science research that deities are sociocultural constructs; functional tools utilized by early human societies to explain natural phenomena and enforce social cohesion.\n\n## Evidence and Data-Driven Support\n\n*   **Evolutionary Psychology (HADD):** Humans possess a Hyperactive Agency Detection Device (HADD). Research by Justin L. Barrett suggests that humans are evolutionarily primed to attribute \"agency\" to events (e.g., assuming rustling leaves = a predator or spirit). This [[cognitive-bias|cognitive bias]] is a primary driver in the conceptualization of deities.\n*   **Sociological Functionalism:** \u00c9mile Durkheim, in *The Elementary Forms of Religious Life*, argued that religion is a unified system of beliefs relative to sacred things. He posited that \"God\" is often a symbolic representation of society itself; a way to codify laws and ethics through a higher power to ensure group survival.\n*   **Historical Correlation:** The \"Big Gods\" hypothesis (Norenzayan et al.) suggests that as human societies grew too large for face-to-face monitoring, humans \"created\" or evolved the concept of omniscient, punishing deities to prevent \"free-riding\" and ensure cooperation among strangers.\n\n## Logical Integrity and Fallacies\n\nWhile this statement aligns with the [[scientific-consensus|scientific consensus]] on the origin of religion, it is important to address the logical boundaries of this debate:\n\n*   **Genetic Fallacy:** To argue that \"because we can explain the origin of a belief, the belief itself must be false\" is a logical error. Explaining how humans conceptualized gods does not technically disprove the existence of a metaphysical entity; it only proves the human origin of the *concept*.\n*   **The [[burden-of-proof|Burden of Proof]]:** From a rationalist standpoint, [[burden-of-proof|the burden of proof]] lies with the person asserting the existence of a deity. However, it must be noted that \"the absence of evidence is not evidence of absence.\"\n*   **No-Go Direction:** Reasoning becomes [[circular-reasoning|circular]] when one attempts to use religious texts to prove a deity's existence, or conversely, when one uses the lack of physical evidence to disprove a non-physical claim. These paths lead to unfruitful dead ends.\n\n## Socratic Inquiry\n\nSince the ontological existence of a \"God\" cannot be factually proven or disproven by current empirical methods, consider the following:\n\n*   If two isolated cultures create gods with diametrically opposed attributes, does that imply the creation is a reflection of the culture rather than a discovery of a single truth?\n*   If a deity existed before humans, would it require human recognition or language to be \"real\"?\n*   Can a construct be \"created\" by humans but still point toward an objective external reality?\n\n### Further Reading\n\n*   **[Research]:** *Barrett, J. L. (2000). \"Exploring the natural foundations of religion.\" Trends in Cognitive Sciences.* \n*   **[Research]:** *Norenzayan, A., et al. (2016). \"The cultural evolution of prosocial religions.\" Behavioral and Brain Sciences.*\n*   **[Book]:** *Durkheim, \u00c9. (1912). \"The Elementary Forms of Religious Life.\"*\n"
@@ -3554,9 +3359,9 @@ const wikiData = {
                                     "FutureOfWork"
                                 ],
                                 "links": [
-                                    "universal-basic-services",
                                     "agentic-ai",
-                                    "ai-job-displacement"
+                                    "ai-job-displacement",
+                                    "universal-basic-services"
                                 ],
                                 "group": "philosophy",
                                 "content": "# Universal Basic Income (UBI)\n\nA guaranteed financial floor to ensure no one starves when the robots inevitably take over the assembly line (and the cubicle).\n\n**Universal Basic Income (UBI)** is a socio-economic proposition in which all citizens (or residents) of a given population regularly receive a legally stipulated and equal financial grant paid by the government. This income is unconditional; meaning there is no means test, and it is given regardless of whether the person is employed, unemployed, or looking for work.\n\nHistorically discussed as a mechanism to eradicate poverty, UBI has gained massive traction in Silicon Valley as the proposed \"silver bullet\" to handle the mass technological unemployment anticipated by [[ai-job-displacement|AI Job Displacement]]. \n\n## The Core Arguments\n\n### The Case *For* UBI\n1.  **The Automation Safety Net:** If [[agentic-ai|Agentic AI]] and robotics permanently reduce the total number of physical and cognitive jobs available, humans need a way to purchase goods to keep the economy afloat. \n2.  **Eradicating the Poverty Trap:** Current welfare systems often penalize people for getting a job by instantly retracting benefits. Because UBI is unconditional, every dollar earned *on top* of the UBI is a net positive, encouraging entrepreneurial risk-taking and part-time work.\n3.  **Valuing Unpaid Labor:** It provides direct financial compensation for vital societal roles that the current free market values at $0, such as stay-at-home parenting or caring for sick relatives.\n\n### The Case *Against* UBI\n1.  **Inflationary Risks:** Skeptics argue that if everyone suddenly receives $1,000 extra a month, landlords and corporations will immediately raise housing and food prices by exactly that amount, completely neutralizing the benefit.\n2.  **The Cost Problem:** Funding a true UBI requires trillions of dollars annually. To afford it without collapsing the currency, a government must implement massive taxation (often proposed as a tax on AI productivity, carbon emissions, or land value), which faces heavy political opposition.\n3.  **Disincentive to Work:** Critics fear that decoupling income from labor removes the fundamental motivation to contribute to society, potentially causing a collapse in critical human sectors (like sanitation or construction) before robots are fully capable of replacing them.\n\n## FAQs\n\n*1. Has it been tested?*\nYes, but usually in limited, localized scopes (e.g., trials in Finland, Kenya, and various US cities). Most of these trials reported significantly improved mental health, better nutrition, and, surprisingly, no significant drop in employment rates. However, because they were small-scale, they didn't stress-test macro-economic factors like inflation.\n\n*2. How does it differ from [[universal-basic-services|Universal Basic Services (UBS)]]?*\n[[universal-basic-services|UBS]] proposes that rather than giving people raw cash (UBI), the government should provide essential human needs (housing, healthcare, transport, internet) for free. \n\n### Further Reading\n\n*   **Article:** *[What is Universal Basic Income? (Stanford Basic Income Lab)](https://basicincome.stanford.edu/about/what-is-ubi/)*\n*   **Article:** *[The paradox of Universal Basic Income (Wired)](https://www.wired.com/story/the-paradox-of-universal-basic-income/)*"
@@ -3627,9 +3432,9 @@ const wikiData = {
                                     "Epistemology"
                                 ],
                                 "links": [
-                                    "fine-tuning-argument",
                                     "quantum-computing",
-                                    "cognitive-biases"
+                                    "cognitive-biases",
+                                    "fine-tuning-argument"
                                 ],
                                 "group": "philosophy",
                                 "content": "# Argument from Incredulity\n\nAssuming magic must be real because you personally do not know the trick the magician used.\n\nThe **Argument from Incredulity** (or Appeal to Common Sense) is a logical fallacy where a person concludes that because a claim sounds unbelievable, difficult to imagine, or lacks a currently obvious explanation, it must be inherently false. \n\nHuman intuition is highly grounded in our day-to-day survival, which makes us very bad at conceptualizing massive scales (like deep time, quantum physics, or macro-economics). When confronted with these complex concepts, our brain\u2019s default reaction is to reject them as \"absurd,\" substituting a simpler, more intuitive explanation instead.\n\n## The Structure of the Error\n\nThis fallacy follows a very simple flawed logic path:\n1.  I cannot imagine how $X$ could be true.\n2.  Therefore, $X$ is false.\n\nFor example, looking at the complex structure of a human eye and saying, *\"I simply cannot imagine how random mutations over time could create something this perfect, therefore evolution must be false.\"* The flaw is that *your* personal inability to imagine a mechanism has zero bearing on the objective reality of the biology.\n\n## FAQs\n\n*1. Why do we fall for this?*\nBecause our brains prefer efficiency over accuracy. It takes immense cognitive effort to process complex, counter-intuitive data (like [[quantum-computing|Quantum Mechanics]]), so the brain shortcuts to \"That doesn't make sense, I reject it.\"\n\n*2. How do I counter it in a debate?*\nGently separate the person's *understanding* from the *evidence*. You can say, \"It is entirely counter-intuitive and very difficult to wrap your head around, but here is the raw data that shows it happens regardless of how weird it feels.\"\n\n### Further Reading\n\n*   **Deep Dive:** *[[fine-tuning-argument|The Fine-Tuning Argument]]*\n*   **Related Bias:** *[[cognitive-biases|Cognitive Biases]]*\n"
@@ -3645,8 +3450,8 @@ const wikiData = {
                                     "Debate"
                                 ],
                                 "links": [
-                                    "is-god-made-by-humans",
-                                    "scientific-definitions"
+                                    "scientific-definitions",
+                                    "is-god-made-by-humans"
                                 ],
                                 "group": "philosophy",
                                 "content": "# The Burden of Proof\n\nTelling a judge someone is guilty of a crime and then demanding the defendant prove they *didn't* do it.\n\n**The Burden of Proof** (Onus Probandi) is the logical obligation that the person making a claim is the one responsible for providing the evidence to support it. The burden never lies with the person questioning or denying the claim.\n\nIn any debate or scientific inquiry, the default state of the universe is the negative (the *null hypothesis*). If you propose that a new phenomenon exists; whether it's a new law of physics, a conspiracy theory, or a literal teapot orbiting Mars; you must bring the data. You cannot make a claim and then declare it true simply because your opponent cannot definitively prove it false.\n\n## How it Works\n\n*   **Shifting the Burden:** A common debate tactic is attempting to shift the burden of proof. E.g., Person A says, \"Aliens built the pyramids.\" Person B says, \"I don't believe that.\" Person A replies, \"Well, prove they didn't!\" This is a logical fallacy.\n*   **The Null Hypothesis:** In science, we assume there is no relationship or no new entity until proven otherwise. We don't assume a new drug cures cancer until proven useless; we assume it is useless until proven it cures cancer.\n*   **Hitchens's Razor:** Coined by journalist Christopher Hitchens: *\"What can be asserted without evidence can also be dismissed without evidence.\"*\n\n## FAQs\n\n*1. Does \"absence of evidence\" equal \"evidence of absence\"?*\nNo. Just because we don't have evidence of alien life right now doesn't mean alien life physically does not exist. It just means the *claim* \"aliens exist\" cannot currently be accepted as proven fact.\n\n*2. Who has the burden when both sides make a claim?*\nBoth sides. If Person A claims \"The economy will crash tomorrow\" and Person B claims \"The economy will boom tomorrow,\" both have made positive assertions and both must bring evidence. \n\n### Further Reading\n\n*   **Concept:** *[[is-god-made-by-humans|Is God Made by Humans?]]*\n*   **Concept:** *[[scientific-definitions|Scientific Definitions]]*\n"
@@ -4148,242 +3953,544 @@ const wikiData = {
                         "group": "psychology",
                         "children": [
                             {
-                                "id": "1-too-much-info",
-                                "title": "Problem 1: Too Much Info",
-                                "icon": "fas fa-filter",
-                                "desc": "We can't see everything, so we filter aggressively.",
-                                "view": "list",
+                                "id": "need-to-act-fast",
+                                "title": "Need To Act Fast",
+                                "icon": "fas fa-folder",
+                                "desc": "Need To Act Fast",
+                                "view": "shelf",
                                 "group": "psychology",
                                 "children": [
                                     {
-                                        "id": "anchoring-bias",
-                                        "title": "Anchoring Bias",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Psychology",
-                                            "Negotiation",
-                                            "Marketing"
-                                        ],
-                                        "links": [],
+                                        "id": "immediate-relatable",
+                                        "title": "Immediate Relatable",
+                                        "icon": "fas fa-folder",
+                                        "desc": "Immediate Relatable",
+                                        "view": "shelf",
                                         "group": "psychology",
-                                        "content": "# Anchoring Bias\n\nThe Sticky Price Tag.\n\n![Anchoring Bias](https://images.prismic.io/thedecisionlab/ac7d00b4-1c09-4c47-97f3-72d7bf8c922d_anchoring-effect-bias.jpeg?auto=compress,format&rect=0,1,2387,1667&w=2388&h=1668)\n\n**Anchoring Bias** is the cognitive tendency to rely too heavily on the first piece of information offered (the \"anchor\") when making decisions.\n\nImagine walking into a luxury store. You see a bag for $5,000. \"Insane!\" you think. Then you see a smaller bag for $1,200. \"Ooh, that's a steal!\"\nIs $1,200 a good price for a bag? Probably not. But because your brain was \"anchored\" to the $5,000 price, the $1,200 feels cheap by comparison. The first number you see sets the stage for everything that follows.\n\n## Key Examples\n\n*   **Salary Negotiation:** The first number spoken usually dictates the final range. If you ask for $100k, the negotiation happens around $100k. If you ask for $60k, you'll never get to $100k.\n*   **Sales:** \"Was $100, Now $50!\" The $100 is a fake anchor designed to make the $50 feel like a win.\n\n## FAQs\n\n*1. Does it work even if the number is random?*\nYes. Studies show that if you ask people to write down the last two digits of their social security number, and then bid on a bottle of wine, people with higher SSN numbers bid higher. The brain clings to *any* available number when it's unsure.\n\n*2. How do I avoid it?*\nDo your research *before* you enter the room. If you know the car is worth $20k, the dealer's $30k sticker price won't anchor you because you brought your own anchor.\n\n### Further Reading\n\n*   **Concept:** *[Anchoring and Adjustment](https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/anchoring-heuristic/)*.\n*   **Study:** *[The Effect of Anchoring in Negotiation](https://www.pon.harvard.edu/daily/negotiation-skills-daily/what-is-anchoring-in-negotiation/)* (Harvard Law School).\n"
+                                        "children": [
+                                            {
+                                                "id": "appeal-to-novelty",
+                                                "title": "Appeal to Novelty",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "Fallacy"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Appeal to Novelty\n\nAssuming the brand new smartphone is inherently better than last year's model simply because it was released today.\n\n**Appeal to Novelty** is a logical fallacy and cognitive bias where an idea, proposal, or product is deemed superior strictly because it is new or modern.\n\nWe have an evolutionary draw to novelty because historically, discovering new information or new resources meant distinct survival advantages. Our brains reward us with a hit of dopamine when we encounter something new. \n\nIn modern society, marketers heavily exploit this by slapping \"New & Improved!\" on identical or even inferior products. We mentally shortcut the evaluation process by trusting the feeling of the \"new\" rather than doing the hard work of actually comparing specs and features.\n\n## Key Characteristics\n*   **Equating Age with Quality:** The core of the fallacy is directly linking the timeline of a concept to its actual merit.\n*   **Dismissal of the Old:** Automatically rejecting older, proven methods or tools just because they have been around for a long time.\n\n## FAQs\n\n*1. Is a new thing ever actually better?*\nYes, but the *Appeal to Novelty* occurs when newness is the *only* justification for its superiority, without examining the actual concrete improvements or merits.\n\n*2. How do I avoid this bias?*\nUse a mental flip: Ask yourself, \"If this exact new option was actually 5 years old, would I still prefer it over what I am using right now?\"\n\n### Further Reading\n\n*   **Article:** *[Appeal to Novelty (Logically Fallacious)](https://www.logicallyfallacious.com/logicalfallacies/Appeal-to-Novelty)* (A breakdown of the logical structure of the fallacy).\n"
+                                            },
+                                            {
+                                                "id": "hyperbolic-discounting",
+                                                "title": "Hyperbolic Discounting",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "DecisionMaking"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Hyperbolic Discounting\n\nChoosing to eat a whole pizza today for instant gratification, even though you explicitly know your future-self will deeply regret the stomach ache tomorrow.\n\n![Hyperbolic Discounting](https://images.prismic.io/thedecisionlab/Z1CBYZbqstJ98CQk_HyperbolicDiscounting.png?auto=format,compress)\n\n**Hyperbolic Discounting** is the cognitive tendency for people to increasingly choose a smaller-sooner reward over a larger-later reward as the delay occurs sooner rather than later in time.\n\nOur brains are hardwired for immediate survival in a scarce environment. Historically, a bird in the hand was absolutely worth two in the bush, especially if reaching the bush took a month. Because the future is inherently uncertain, our brains heavily \"discount\" or devalue rewards that happen far away in time.\n\nAs a result, we act completely irrationally regarding our long-term goals. We choose to buy a new TV today (immediate small dopamine) instead of putting that $500 into a retirement fund that will grow to $5000 (delayed large dopamine). We basically view our \"future selves\" as completely different strangers, and we routinely throw those strangers under the bus.\n\n## Key Characteristics\n*   **Time Inconsistency:** We make choices today that our future selves would prefer not to have made.\n*   **The Hyperbolic Curve:** The value of a reward drops off extremely quickly for short delays, but levels off for longer delays (e.g., we wouldn't want to wait 1 extra day right now, but we wouldn't mind waiting 366 days instead of 365).\n\n## FAQs\n\n*1. Why do we procrastinate so much?*\nProcrastination is hyperbolic discounting in action. The pain of working *right now* is huge, while the reward of a good grade *next month* is heavily discounted. Conversely, watching YouTube *right now* is an immediate reward.\n\n*2. How can I overcome this?*\nUse \"pre-commitment\" strategies. Automate your savings account transfers or block distracting websites on your computer so your current self makes the responsible decision *before* your future self gets presented with the temptation.\n\n### Further Reading\n\n*   **Article:** *[Hyperbolic Discounting (The Decision Lab)](https://thedecisionlab.com/biases/hyperbolic-discounting)* (How to combat our preference for immediate payoffs).\n"
+                                            },
+                                            {
+                                                "id": "identifiable-victim-effect",
+                                                "title": "Identifiable Victim Effect",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "Empathy"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Identifiable Victim Effect\n\nDonating $100 to help a specific, named rescue dog you saw on a commercial, while completely ignoring statistics about thousands of anonymous dogs dying in shelters.\n\nThe **Identifiable Victim Effect** is the psychological tendency for humans to offer greater aid and feel significantly more empathy when a specific, identifiable person (or animal) is observed under hardship, compared to a large, vaguely defined group facing the exact same need.\n\nHuman empathy does not scale well with numbers. Our brains evolved in small tribes, meaning our emotional circuits are triggered by individuals: their stories, their faces, and their isolated struggles. \n\nWhen a charity campaign shows a picture of a single starving child with a name, an age, and a hometown, it triggers an intense emotional reaction and a desire to help. Conversely, when charities present stark statistical data\u2014\"10,000 children are starving\"\u2014it transitions from being an emotional narrative into an abstract math problem, which completely fails to activate our empathy systems. \n\n## Key Characteristics\n*   **The Drop in Compassion:** Empathy sharply decreases as the number of victims increases (a phenomenon sometimes called *Compassion Fade*).\n*   **Narrative Power:** A compelling narrative about one person will consistently out-fundraise a statistically massive, faceless tragedy.\n\n## FAQs\n\n*1. Is it bad to donate to identifiable victims?*\nNot inherently, as help is still being given. However, from a purely utilitarian standpoint, the bias causes massive misallocation of resources, where highly publicized individual tragedies receive millions of dollars in excess donations while structural crises affecting millions remain vastly under-funded.\n\n*2. How do charities use this?*\nEffective charities explicitly lean into this bias. Instead of telling you about the million people without clean water, they will focus their entire ad campaign around one mother, \"Sarah,\" and her daily walk to fetch water, directly connecting a face to your wallet.\n\n### Further Reading\n\n*   **Article:** *[The Identifiable Victim Effect (Behavioral Economics)](https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/identifiable-victim-effect/)* (Understanding the limits of human empathy in mass tragedies).\n"
+                                            }
+                                        ]
                                     },
                                     {
-                                        "id": "availability-heuristic",
-                                        "title": "Availability Heuristic",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Psychology",
-                                            "Media",
-                                            "RiskAssessment"
-                                        ],
-                                        "links": [],
+                                        "id": "invested-time",
+                                        "title": "Invested Time",
+                                        "icon": "fas fa-folder",
+                                        "desc": "Invested Time",
+                                        "view": "shelf",
                                         "group": "psychology",
-                                        "content": "# Availability Heuristic\n\nThe \"Shark Attack\" Syndrome.\n\n![Availability Heuristic](https://images.prismic.io/thedecisionlab/cce9c879-5faa-46cb-a685-4542362fc572_availability-heuristic-the-decision-lab.png?auto=compress,format)\n\n**The Availability Heuristic** is a mental shortcut where we judge the likelihood of an event based on how easily we can recall similar examples.\n\nIf you ask someone, \"What is more likely to kill you: A shark or a falling coconut?\" most people intuitively scream \"SHARK!\" Why? because you've seen the movie *Jaws*. You recall catchy news headlines about shark attacks. You have *zero* vivid memories of coconut deaths.\nYour brain assumes: **\"If I can remember it easily, it must happen often.\"**\n\n![Availability Heuristic](https://images.prismic.io/thedecisionlab/Z3163JbqstJ99JWC_AvailabilityHeuristic.png?auto=format%2Ccompress&rect=1%2C0%2C510%2C268&w=2000&h=1050)\n\n## How it Works\n\nYour brain uses \"Ease of Recall\" as a proxy for \"Frequency.\"\n*   **Vivid events** (plane crashes, kidnapping, winning the lottery) stick in memory.\n*   **Boring events** (car crashes, heart disease, losing the lottery) fade away.\nResult: We are terrified of planes but text while driving.\n\n## FAQs\n\n*1. Is this why the news feels so scary?*\nYes. The news reports *anomalies* (rare, scary things). If you watch the news every day, your availability heuristic is hacked to believe the world is far more dangerous than it statistically is.\n\n*2. How does it affect business?*\nPerformance reviews. A manager might judge an employee's entire year based on a mistake they made *yesterday*, because that memory is the most \"available.\"\n\n### Further Reading\n\n*   **Article:** *[The Availability Heuristic](https://thedecisionlab.com/biases/availability-heuristic)* (The Decision Lab).\n*   **Book:** *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)* by Daniel Kahneman.\n"
+                                        "children": [
+                                            {
+                                                "id": "backfire-effect",
+                                                "title": "Backfire Effect",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "InvestedTime"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Backfire Effect\n\nTrying to extinguish a grease fire with a bucket of water, only to make the flames explode larger.\n\nThe **Backfire Effect** is a cognitive bias where presenting people with objective facts that contradict their deeply held beliefs actually causes them to double down and strengthen their original, inaccurate belief.\n\nWhen our core beliefs are challenged, our brain registers the contradiction precisely as a physical threat to our identity. Our amygdala (the brain's threat center) engages a literal \"fight or flight\" response against the new external information. \n\nRather than calmly evaluating the new data, we automatically generate counter-arguments and rationalizations to aggressively defend our worldview. As a result, the very act of trying to correct someone's misinformation often leaves them holding their original stance even tighter than before they encountered the contradicting evidence.\n\n## Key Characteristics\n*   **Rejection of Objective Evidence:** Factual data is dismissed as fake, biased, or manipulated if it threatens an established identity structure.\n*   **Increased Polarization:** Debates surrounding highly entrenched ideologies (like politics or religion) rarely change minds; they generally just radicalize both sides further.\n\n## FAQs\n\n*1. Are facts useless in debates then?*\nNot entirely, but throwing raw data at someone's core identity rarely works. To change a mind, you usually have to validate their emotional stance first and frame the new information in a way that inherently aligns with their underlying values, rather than attacking them directly.\n\n*2. Is this the same as Confirmation Bias?*\nThey are related but distinct. Confirmation Bias is actively seeking out information that agrees with you. The Backfire Effect is aggressively defending yourself against information that disagrees with you.\n\n### Further Reading\n\n*   **Article:** *[The Backfire Effect (You Are Not So Smart)](https://youarenotsosmart.com/2011/06/10/the-backfire-effect/)* (A deep dive into why facts don't win arguments).\n"
+                                            },
+                                            {
+                                                "id": "disposition-effect",
+                                                "title": "Disposition Effect",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "InvestedTime",
+                                                    "Finance"
+                                                ],
+                                                "links": [
+                                                    "loss-aversion"
+                                                ],
+                                                "group": "psychology",
+                                                "content": "# Disposition Effect\n\nQuickly cashing in your winning lottery ticket while stubborn refusing to throw away a mountain of losing scratch-offs because \"one of them might still be a winner.\"\n\nThe **Disposition Effect** is an anomaly in behavioral finance where investors are far more likely to sell assets that have increased in value (locking in gains) while stubbornly holding onto assets that have dropped in value (refusing to accept losses).\n\nThis bias is a direct descendant of [[loss-aversion|Loss Aversion]] and works in tandem with the innate human desire to feel \"right.\" When an investment goes up, we sell it prematurely to quickly validate that we made a smart choice. When an investment plummets, admitting we made a mistake by selling it hurts our ego and brings the painful reality of a financial loss.\n\nInstead of cutting our losses early, we irrationally hold onto the sinking ship, convincing ourselves that the stock \"will eventually bounce back,\" just so we don't have to finalize the loss on paper.\n\n## Key Characteristics\n*   **The \"Locking In\" Fallacy:** Selling a winning stock simply to experience the immediate dopamine hit of a \"win,\" even if all data suggests the stock will keep growing.\n*   **Aversion to Realization:** Holding onto deeply losing positions to avoid the emotional pain of *realizing* the loss.\n\n## FAQs\n\n*1. Is it always bad to sell a winning investment?*\nNo, taking profits is a sound financial strategy. The *Disposition Effect* only occurs when the decision to sell is driven by the emotional need to \"win\" rather than the objective, underlying data of the investment's future potential.\n\n*2. How can I fight this in my own finances?*\nRemove emotion by setting rigid, automated rules *before* you invest. For example, use stop-loss orders (automatically selling if it drops 10%) and take-profit orders (automatically selling half if it jumps 20%) so that math makes the decision for you, not your ego.\n\n### Further Reading\n\n*   **Article:** *[The Disposition Effect (Behavioral Economics)](https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/disposition-effect/)* (A thorough breakdown of why we hold losers and sell winners).\n"
+                                            },
+                                            {
+                                                "id": "endowment-effect",
+                                                "title": "Endowment Effect",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "InvestedTime"
+                                                ],
+                                                "links": [
+                                                    "loss-aversion"
+                                                ],
+                                                "group": "psychology",
+                                                "content": "# Endowment Effect\n\nDemanding $6 to sell an old, beat-up mug you got for free at a conference, while refusing to pay more than $2 to buy that exact same mug from someone else.\n\n![Endowment effect](https://images.prismic.io/thedecisionlab/Z1Hdo5bqstJ98FbE_Youtube-3-.png?auto=format,compress)\n\nThe **Endowment Effect** is the cognitive bias where individuals place a significantly higher value on an object simply because they currently possess and own it.\n\nThis bias is deeply tied to [[loss-aversion|Loss Aversion]] and the psychological principle that we evaluate changes relative to a reference point, in this case, our current state of ownership. Once an item becomes \"ours,\" the thought of giving it up registers in our brains as a painful loss. \n\nBecause losses hurt roughly twice as much as equivalent gains feel good, we demand a disproportionately high price to part with our belongings, effectively irrationally inflating their objective market value.\n\n## Key Characteristics\n*   **Ownership Premium:** A sudden, instant spike in perceived value the moment an item changes hands into our possession.\n*   **Reluctance to Trade:** People will often choose to keep an item they were randomly given over trading it for an item of exactly equal or slightly higher objective value.\n\n## FAQs\n\n*1. How do companies use this bias?*\nMoney-back guarantees and \"30-day free trial\" periods are classic examples. Once you take the product home and consider it \"yours\" for 30 days, returning it feels like a loss, making you far more likely to simply keep it and pay the invoice.\n\n*2. Does this apply to abstract things?*\nYes! It strongly applies to ideas, beliefs, and job titles. We irrationally overvalue our current routines or our own proposed solutions merely because they \"belong\" to us.\n\n### Further Reading\n\n*   **Article:** *[The Endowment Effect (The Decision Lab)](https://thedecisionlab.com/biases/endowment-effect)* (Deep dive into why possession increases value).\n"
+                                            },
+                                            {
+                                                "id": "escalation-of-commitment",
+                                                "title": "Escalation of Commitment",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "InvestedTime"
+                                                ],
+                                                "links": [
+                                                    "sunk-cost-fallacy"
+                                                ],
+                                                "group": "psychology",
+                                                "content": "# Escalation of Commitment\n\nKeeping a $500 monthly gym membership for five years without ever going, simply because canceling it would mean admitting the first four years were a massive waste of money.\n\n**Escalation of Commitment** (also heavily related to the [[sunk-cost-fallacy|Sunk Cost Fallacy]] and sometimes called **Irrational Escalation**) is the human behavior pattern in which an individual or group faces increasingly negative outcomes from a decision, action, or investment, but continues to heavily invest resources rather than altering course.\n\nThis happens because stopping the behavior forces the brain to painfully admit two things: \n1) the initial resources are completely gone\n2) we made a terrible mistake. To protect our delicate egos and avoid looking foolish or incompetent to our peers, we double down. \n\nWe foolishly convince ourselves that if we just invest a *little* more time, money, or effort, the tide will turn and we will ultimately be vindicated.\n\n## Key Characteristics\n*   **The Paradigm of Justification:** The need to justify prior choices heavily outweighs objective logic about the future.\n*   **Groupthink Amplification:** Escalation happens even faster in corporate teams because admitting failure means losing face in front of a committee.\n\n## FAQs\n\n*1. How is this different from the Sunk Cost Fallacy?*\nThey are often used interchangeably, but Escalation of Commitment specifically refers to the *action* of actively increasing (escalating) the bad investment (e.g., a poker player doubling their bet on a terrible hand), whereas the Sunk Cost Fallacy is the *belief* underpinning it.\n\n*2. How do you stop escalating?*\nBring in an outside observer. A neutral third party has no emotional attachment to the initial decision and can objectively point out that the ship is sinking and it's time to find a lifeboat.\n\n### Further Reading\n\n*   **Article:** *[Escalation of Commitment (Harvard Business Review)](https://hbr.org/1987/03/knowing-when-to-pull-the-plug)* (A classic exploration of knowing when to pull the plug on failing projects).\n"
+                                            },
+                                            {
+                                                "id": "generation-effect",
+                                                "title": "Generation Effect",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "Memory",
+                                                    "InvestedTime"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Generation Effect\n\nRemembering a complex recipe perfectly because you experimented and created it yourself from scratch, compared to immediately forgetting a recipe you just passively read out of a cookbook.\n\nThe **Generation Effect** is a cognitive phenomenon where information is better remembered if it is generated from one's own mind rather than simply being read or heard passively.\n\nWhen we actively generate an answer, a word, or a concept, our brains must work significantly harder, engaging in deeper cognitive processing. We have to access semantic memory, build internal associations, and connect the new information to things we already know in order to \"generate\" the output.\n\nThis mental heavy lifting creates far stronger, more durable neural pathways than simply scanning our eyes over a pre-written paragraph (passive reception). In short: effortful retrieval builds robust memory.\n\n## Key Characteristics\n*   **Active vs. Passive Processing:** The core mechanism relies on the brain being an active participant in creating the information rather than a passive sponge.\n*   **The Power of Cues:** Simply providing a fragment of a word (like \"C_G_I_I_E\" for \"COGNITIVE\") and forcing the brain to fill in the blanks utilizes the generation effect, vastly improving recall of that word later.\n\n## FAQs\n\n*1. How can I use this when studying?*\nStop re-reading your textbooks. Re-reading feels productive but relies on passive recognition. Instead, close the book and aggressively try to summarize the chapter using only your own words on a blank sheet of paper, or use flashcards that force you to generate the answer from scratch.\n\n*2. Why do teachers use the Socratic method?*\nThe Socratic method (constantly asking students leading questions rather than just lecturing them) forcefully triggers the Generation Effect by forcing the students to generate the logical conclusions themselves, solidifying the lessons.\n\n### Further Reading\n\n*   **Article:** *[The Generation Effect (American Psychological Association)](https://dictionary.apa.org/generation-effect)* (Scientific definition and cognitive applications).\n"
+                                            },
+                                            {
+                                                "id": "ikea-effect",
+                                                "title": "IKEA Effect",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "InvestedTime"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# IKEA Effect\n\nLoving your wobbly, slightly crooked bookshelf more than a master-crafted piece simply because you spent three hours building it yourself with an Allen wrench.\n\nThe **IKEA Effect** is a cognitive bias in which consumers place a disproportionately high value on products they partially created or assembled themselves.\n\nWhen we expend labor on a task and successfully complete it, we develop a deep psychological attachment to the outcome. By successfully building the furniture, we are not just evaluating the physical wood; we are adding the emotional value of our own perceived competence and hard work to the final \"worth\" of the object. \n\nThe labor we invest physically alters our perception of the product, making us view our amateurish creations on par with those of experts across various domains spanning from flat-pack furniture to origami.\n\n## Key Characteristics\n*   **Effort Justification:** The harder it was to build or the more frustrating the assembly process, the more fiercely we will defend the final product's quality.\n*   **Requirement of Completion:** The effect entirely disappears if the person fails to complete the assembly or if their creation is immediately disassembled after completion.\n*   **Blindness to Flaws:** Objective design flaws are ignored or rationalized because \"I physically built it.\"\n\n## FAQs\n\n*1. Do companies exploit this bias?*\nHeavily. Many meal-kit companies deliberately leave out basic ingredient steps (like requiring you to crack your own eggs or add your own milk) because taking away *all* the effort actually removes the customer's feeling of accomplishment and connection to the meal.\n\n*2. Is this limited to physical objects?*\nNo. It heavily impacts software engineering (the \"Not Invented Here\" syndrome, where developers irrationally prefer their own buggy code over far superior open-source tools) and project management.\n\n### Further Reading\n\n*   **Article:** *[The IKEA effect: When labor leads to love (HBS)](https://www.hbs.edu/faculty/Pages/item.aspx?num=41121)* (The foundational research paper defining the bias).\n"
+                                            },
+                                            {
+                                                "id": "loss-aversion",
+                                                "title": "Loss Aversion",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "InvestedTime"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Loss Aversion\n\nBeing significantly more devastated about dropping a $20 bill on the sidewalk than you are happy about finding a random $20 bill inside your jacket.\n\n**Loss Aversion** is the cognitive bias where individuals strongly prefer avoiding losses over acquiring equivalent gains.\n\nIn evolutionary terms, this makes perfect sense. Failing to acquire a gain (like missing out on an extra patch of berries) was mildly bad, but failing to avoid a loss (like losing your winter food stash to a bear) meant absolute, certain death. Therefore, our psychological \"pain\" of losing something is mathematically weighted by our brains to be about twice as powerful as the psychological \"joy\" of gaining that exact same thing.\n\nThis means humans are not rational actors when evaluating risk. We will go to irrational extremes and take massive gambles just to prevent the feeling of losing something we already possess. \n\n## Key Characteristics\n*   **Asymmetrical Values:** The pain of losing $\\$100$ is roughly twice as intense as the joy of gaining $\\$100$.\n*   **The Endowment Effect:** Our tendency to overvalue an item simply because we currently own it.\n*   **Framing Effects:** The way a risk is presented drastically changes our choices. People heavily prefer a medical procedure with a \"90% survival rate\" over one with a \"10% mortality rate,\" despite them being mathematically identical.\n\n## FAQs\n\n*1. How does this appear in behavioral economics?*\nIt is the core concept of Prospect Theory. It explains why investors will stubbornly hold onto plummeting stocks (refusing to accept the \"loss\" on paper) while selling rising stocks far too early just to lock in a minor gain.\n\n*2. How do corporations use this against me?*\n\"Free trials.\" Once you use a streaming service for 30 days, your brain shifts from \"I could gain a new service\" to \"I am going to lose my service.\" The pain of losing it forces you to pay the subscription fee.\n\n### Further Reading\n\n*   **Article:** *[Loss Aversion (The Decision Lab)](https://thedecisionlab.com/biases/loss-aversion)* (How the pain of loss dictates human irrationality).\n"
+                                            },
+                                            {
+                                                "id": "processing-difficulty-effect",
+                                                "title": "Processing Difficulty Effect",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "InvestedTime",
+                                                    "Memory"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Processing Difficulty Effect\n\nStruggling to decipher the terrible, jagged handwriting on a post-it note, which inadvertently causes you to remember that exact note's message perfectly three weeks later.\n\nThe **Processing Difficulty Effect** is a cognitive phenomenon where information that takes longer to read and requires more mental effort to process is often remembered and retained significantly better than information that is easily glossed over.\n\nWhen information is presented cleanly (like in a standard, highly legible font), our brain enters effortless \"auto-pilot\" mode, skimming over the words without deeply engaging with the semantic meaning behind them. Because the brain exerts almost no energy reading it, it also exerts almost no energy storying it in long-term memory. \n\nHowever, when we encounter \"disfluent\" or difficult-to-process information (like slightly blurred text or a complex analogy), our brain is forced to \"wake up\" and allocate a burst of conscious, intense cognitive resources just to decipher it. The act of struggling to understand the input builds far stronger neural pathways, heavily improving long-term recall.\n\n## Key Characteristics\n*   **Desirable Difficulties:** The concept that introducing calculated hurdles and friction into the learning process actually vastly improves later performance.\n*   **The Disfluency Trap:** If the information becomes *too* difficult to process, the brain simply gives up, resulting in no learning at all.\n\n## FAQs\n\n*1. Should I study using a terrible font?*\nSurprisingly, yes! Minor studies have shown that changing your study materials to a slightly harder-to-read font (like *Comic Sans* or *Haettenschweiler*) forces momentary mental friction that improves retention, compared to standardized fonts like Arial or Times New Roman.\n\n*2. How else is this used?*\nTeachers force this effect when they make textbooks use dense, challenging vocabulary instead of overly simple language. The struggle to translate the complex vocabulary forces the student's brain to actually process the concept.\n\n### Further Reading\n\n*   **Article:** *[Desirable Difficulties in Learning (American Psychological Association)](https://www.apa.org/science/about/psa/2011/06/desirable-difficulties)* (How friction builds stronger memories).\n"
+                                            },
+                                            {
+                                                "id": "pseudocertainty-effect",
+                                                "title": "Pseudocertainty Effect",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "InvestedTime",
+                                                    "Risk"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Pseudocertainty Effect\n\nChoosing a cleaning spray that guarantees killing \"100% of bathroom germs!\" over a spray that kills \"80% of ALL house germs!\", completely ignoring that the bathroom is only a tiny fraction of the house.\n\nThe **Pseudocertainty Effect** is a cognitive bias in which people severely misjudge their overall risk exposure because they value obtaining absolute certainty (0% risk) in one highly specific, narrow area, while completely ignoring the broader, identical risks spanning the rest of their situation.\n\nThe human brain deeply craves certainty. Because dealing with percentages (like \"70% safe\") requires complex probabilistic thinking and induces anxiety, we vastly prefer the concept of absolute \"100% safety\"\u2014even if that safety is essentially an illusion (\"pseudo-certainty\") manufactured by artificially narrowing the scope of the problem.\n\nPeople will irrationally choose to completely eliminate a small risk (moving it from 5% to 0%) rather than massive reducing a huge risk (moving it from 50% to 15%), simply because the first option provides the psychological comfort blanket of a \"0% risk\" claim, entirely missing the forest for the trees.\n\n## Key Characteristics\n*   **Risk Compartmentalization:** Mentally dividing risks into isolated buckets rather than viewing them holistically, leading to poor overall decisions.\n*   **The Illusion of Zero:** Our disproportionate psychological attraction to the number zero when it comes to risk, completely divorcing us from raw math.\n\n## FAQs\n\n*1. How do marketers exploit this?*\nConstantly. Insurance companies will sell you \"100% Total Coverage for Fire Damage!\" which sounds incredible, obscuring the fact that fire damage accounts for a tiny fraction of total home destruction compared to floods or earthquakes that remain entirely uninsured.\n\n### Further Reading\n\n*   **Article:** *[The Pseudocertainty Effect (Behavioral Economics)](https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/pseudocertainty-effect/)* (Understanding how we manufacture the feeling of safety).\n"
+                                            },
+                                            {
+                                                "id": "sunk-cost-fallacy",
+                                                "title": "Sunk Cost Fallacy",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "DecisionMaking"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Sunk Cost Fallacy\n\nSitting through an excruciatingly bad two-hour movie just because you already paid $15 for the ticket.\n\nThe **Sunk Cost Fallacy** is the phenomenon where a person is reluctant to abandon a strategy or course of action because they have already invested heavily in it, even when it is clear that abandonment would be more beneficial.\n\nWe inherently hate wasting resources. When we put time, money, or effort into a project, our emotional attachment to recovering that investment blinds us to the logical reality that those resources are forever gone (they are \"sunk\"). \n\nMathematically and logically, the only sound way to make a decision is to evaluate whether the *future* costs outweigh the *future* benefits. However, our brains refuse to let go of the past. We continue burning new resources purely in an attempt to justify the old ones we already lost.\n\n## Key Characteristics\n*   **Throwing Good Money After Bad:** The primary behavioral symptom, often seen in gambling or failing business ventures.\n*   **Justification and Denial:** Ignoring objective evidence of failure in order to protect our ego from admitting we made a bad investment.\n\n## FAQs\n\n*1. When is this most common?*\nIt happens constantly in business (trying to save a failing project rather than cutting losses) and in relationships (staying in a toxic relationship simply because you have already invested 5 years into it).\n\n*2. How do you beat the Sunk Cost Fallacy?*\nBy realizing that the past investment is already gone, regardless of what you do next. Ask yourself: \"If I hadn't already spent $100 on this project, would I pay $10 right now to continue it?\"\n\n### Further Reading\n\n*   **Article:** *[The Sunk Cost Fallacy (Behavioral Economics)](https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/sunk-cost-fallacy/)* (How irrational attachment destroys future value).\n"
+                                            },
+                                            {
+                                                "id": "unit-bias",
+                                                "title": "Unit Bias",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "InvestedTime",
+                                                    "Food"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Unit Bias\n\nEating an entire massive movie-theater pretzel solely because it was handed to you as one single object, even though you realistically only wanted three small bites of it.\n\n**Unit Bias** is the cognitive heuristic where people inherently view any single, defined \"unit\" of a given item, task, or serving as the appropriate and optimal amount to consume or complete, regardless of the actual size of that unit.\n\nThe human brain heavily relies on visual and environmental cues to dictate \"stopping points,\" rather than relying on internal signals (like actually feeling full) or objective measurements. If an item is presented as a singular, cohesive entity (a \"unit\"), our brain unconsciously decides that finishing the *entire* unit is the standard, correct behavior.\n\nIf we are given a massive 32-ounce soda, we will subconsciously aim to drink the entire thing because it is \"one cup.\" If we are given an 8-ounce soda, we will drink it and feel equally satisfied because we still successfully finished \"one cup.\" \n\n## Key Characteristics\n*   **The Completion Heuristic:** The deeply ingrained psychological urge to wipe a plate clean or reach the physical bottom of a container simply to check the mental box of \"done.\"\n*   **Portion Distortion:** The inability of the brain to accurately judge the actual volume of an item when it is presented as a single unit or on a massive plate.\n\n## FAQs\n\n*1. Does unit bias only apply to food?*\nNo! It heavily impacts productivity. If a manager assigns you a massive, vague \"Project X\" as a single unit of work, it feels incredibly daunting. If they break that exact same project down into five small \"units\" (sub-tasks), you will aggressively try to finish the first unit purely to get the satisfaction of completion.\n\n*2. How can I use this to lose weight?*\nSimply buy smaller plates and glasses, and individually packaged snacks. Your brain will register the smaller plate as a \"full unit\" of food, and you will feel satisfied eating significantly fewer calories.\n\n### Further Reading\n\n*   **Article:** *[Unit Bias (The Decision Lab)](https://thedecisionlab.com/biases/unit-bias)* (Why portion control is secretly a psychological trick).\n"
+                                            },
+                                            {
+                                                "id": "zero-risk-bias",
+                                                "title": "Zero-Risk Bias",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToActFast",
+                                                    "InvestedTime",
+                                                    "Risk"
+                                                ],
+                                                "links": [
+                                                    "pseudocertainty-effect"
+                                                ],
+                                                "group": "psychology",
+                                                "content": "# Zero-Risk Bias\n\nSpending $1,000 on a security system to drop your 5% chance of a home robbery to absolute 0%, while completely ignoring the massive 50% chance your roof crashes in because fixing it \"only\" drops the risk to 10%, not 0%.\n\n**Zero-Risk Bias** is the deeply irrational cognitive tendency to prefer the complete elimination of a specific risk entirely (reducing it to 0%), rather than choosing a vastly superior alternative strategy that results in a far greater overall reduction in mathematical risk but leaves a tiny bit of residual uncertainty.\n\nThis bias is structurally identical to the [[pseudocertainty-effect|Pseudocertainty Effect]]. The concept of \"zero risk\" provides massive psychological comfort. Dealing with probabilistic math is stressful for our brains. When we see an option that offers absolute certainty (0% risk), our brains latch onto it like a life raft, ignoring the actual objective data.\n\nPeople consistently choose to eliminate a tiny 1% risk completely rather than drastically cutting a massive 40% risk down to 5%, simply because the idea of a remaining 5% threat causes a lingering, unquantifiable anxiety that the brain desperately wants to avoid, even if it is mathematically the far smarter choice.\n\n## Key Characteristics\n*   **The All-or-Nothing Fallacy:** Viewing risk mitigation as a binary state (either we are perfectly safe, or we are in danger) rather than a sliding scale of probabilities.\n*   **Misallocation of Resources:** Spending massive amounts of money, time, or public taxpayer funds chasing the impossibly expensive final 1% of safety, while starving critical programs that could reduce overall societal harm massively.\n\n## FAQs\n\n*1. Why do politicians love Zero-Risk Bias?*\nBecause it wins elections. Proposing legislation that promises to \"completely eliminate all terrorism risks at the airport\" using billions of dollars is incredibly popular, even if those billions could save 10,000 times as many lives if invested in standard traffic safety improvements instead.\n\n*2. How do I fight the Zero-Risk Bias?*\nStop thinking in terms of \"safe\" vs. \"unsafe\" and start thinking entirely in numbers and probabilities. Force yourself to calculate the exact mathematical number of adverse events prevented by Option A versus Option B, completely ignoring the psychological comfort of the \"0%\" claim.\n\n### Further Reading\n\n*   **Article:** *[Zero-Risk Bias (The Decision Lab)](https://thedecisionlab.com/biases/zero-risk-bias)* (Explaining the danger of seeking absolute certainties).\n"
+                                            }
+                                        ]
                                     },
                                     {
-                                        "id": "confirmation-bias",
-                                        "title": "Confirmation Bias",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Psychology",
-                                            "CriticalThinking",
-                                            "DecisionMaking"
-                                        ],
-                                        "links": [],
+                                        "id": "need-to-impact",
+                                        "title": "Need To Impact",
+                                        "icon": "fas fa-folder",
+                                        "desc": "Need To Impact",
+                                        "view": "shelf",
                                         "group": "psychology",
-                                        "content": "# Confirmation Bias\n\nThe \"Yes Man\" inside your head.\n\n![Confirmation Bias](https://images.prismic.io/thedecisionlab/ZkdQKiol0Zci9Pcq_Untitled_Artwork35.png?auto=format,compress)\n\n**Confirmation Bias** is the tendency to search for, interpret, favor, and recall information in a way that confirms your pre-existing beliefs or hypotheses.\n\nImagine you are looking for a new car. You decide you want a red Toyota. Suddenly, you see red Toyotas *everywhere*. Did the factory just make more? No. Your brain is filtering out the blue Hondas and white Fords because they don't match your current \"mission.\" Confirmation Bias works the same way with ideas. If you believe \"Left-handed people are creative,\" you will notice every creative lefty and ignore every uncreative one.\n\n![Confirmation Bias](https://images.prismic.io/thedecisionlab/b2f27a87-b3da-487f-8359-adf46d4bd96a_Confirmation_Bias_TDL-1024x715.png?auto=compress,format)\n\n## How it Works\n\n1.  **Filtering:** You subconsciously ignore evidence that contradicts your view (Disconfirmation Bias).\n2.  **Interpretation:** You twist ambiguous evidence to support your view. (e.g., \"He didn't text back because he's busy,\" not \"He's not interested,\" because you *want* to believe he likes you).\n3.  **Memory:** You remember the times you were right and forget the times you were wrong.\n\n## FAQs\n\n*1. Is it lying?*\nNo, it's not intentional deception. It's an efficiency mechanism. Your brain wants to save energy. Changing your mind requires re-wiring neural pathways (hard work). Keeping your current opinion requires doing nothing (easy).\n\n*2. How do I beat it?*\nActively look for the **disconfirming evidence**. Ask yourself: \"If I were wrong, what would I expect to see?\" Then look for *that*.\n\n### Further Reading\n\n*   **Book:** *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)* by Daniel Kahneman.\n*   **Article:** *[The Mother of All Biases](https://fs.blog/confirmation-bias/)* (Farnam Street).\n"
+                                        "children": [
+                                            {
+                                                "id": "dunning-kruger-effect",
+                                                "title": "Dunning-Kruger Effect",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToImpact",
+                                                    "SelfAssessment"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Dunning-Kruger Effect\n\nThe guy who watched one 10-minute YouTube video on crypto investing confidently interrupting a finance professor to explain how the entire global banking system works.\n\nThe **Dunning-Kruger Effect** is a cognitive bias in which people with low ability at a given task dramatically overestimate their own ability, while people with high ability tend to underestimate their own ability.\n\nThis happens because the exact skills required to *be competent* at a task are the exact same skills required to *accurately evaluate* your own competence. A beginner simply does not know enough about the field to recognize how many complex nuances they are missing, leading to an illusion of mastery. \n\nConversely, a true expert knows exactly how vast the field is and assumes that because the core tasks are easy for *them*, they must be easy for everyone else, frequently leading to imposter syndrome.\n\n## Key Characteristics\n*   **The Peak of Mount Stupid:** The massive spike in overwhelming confidence that occurs almost immediately after a beginner learns the very basics of a new subject.\n*   **The Valley of Despair:** As the learner inevitably discovers how much they don't know, their confidence crashes to rock bottom, slowly recovering only through genuine mastery.\n\n## FAQs\n\n*1. How do I know if I'm suffering from this?*\nYou likely are suffering from it anytime you confidently start a brand new hobby or read an article on a new industry. The fastest cure is to seek out brutal, objective feedback from a true expert, which forces a rapid recalibration of your perceived skill level.\n\n*2. Is this just arrogance?*\nNot usually. It is a genuine inability to recognize one's own incompetence due to a lack of foundational knowledge, rather than malicious arrogance.\n\n### Further Reading\n\n*   **Article:** *[The Dunning-Kruger Effect (Psychology Today)](https://www.psychologytoday.com/us/basics/dunning-kruger-effect)* (An overview of the psychological mechanics behind the bias).\n"
+                                            },
+                                            {
+                                                "id": "fundamental-attribution-error",
+                                                "title": "Fundamental Attribution Error",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "CognitiveBias",
+                                                    "NeedToImpact",
+                                                    "SocialPsychology"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Fundamental Attribution Error\n\nAssuming the person who cut you off in traffic is an inherently evil psychopath, but when *you* cut someone off later that day, it's totally acceptable because you were genuinely late for a medical emergency.\n\nThe **Fundamental Attribution Error** is the psychological tendency to overemphasize personal characteristics and ignore situational factors when judging others' behavior, while doing the exact opposite for ourselves.\n\nWhen we observe *others*, their personality is the focal point of our attention. Because we cannot see the rest of their stressful life, we default to attributing their actions to fixed character traits (\"he is a careless driver; she is a lazy worker\"). \n\nBut when we evaluate *our own* behavior, we are intimately aware of the complex environmental pressures forcing us to act (\"the sun was in my eyes; the project deadline was unfair\"). We constantly give ourselves the benefit of the external context while denying it to everyone else.\n\n## Key Characteristics\n*   **The Actor-Observer Bias:** We judge others as \"actors\" with inherent traits, but view ourselves as \"observers\" forced to respond to our environment.\n*   **Blaming the Victim:** Believing bad things happen to people because of their fundamental character flaws, rather than their societal or environmental situations.\n\n## FAQs\n\n*1. Does this happen in the workplace?*\nConstantly. If a coworker misses a deadline, management assumes they are unmotivated or lazy. If the manager misses a deadline, they blame the slow software or the vendor delays.\n\n*2. How can I reduce this error?*\nPractice active empathy. The next time a stranger acts rudely, intentionally force yourself to invent a highly plausible external situation that *would* drive a completely reasonable person to do that exact action. It short-circuits the brain's assumption of malicious character flaws.\n\n### Further Reading\n\n*   **Article:** *[Fundamental Attribution Error (Simply Psychology)](https://www.simplypsychology.org/fundamental-attribution.html)* (Exploring the mechanics of how we judge others vs. ourselves).\n"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
                             {
-                                "id": "2-not-enough-meaning",
-                                "title": "Problem 2: Not Enough Meaning",
-                                "icon": "fas fa-puzzle-piece",
-                                "desc": "The world is confusing, so we fill in the gaps.",
-                                "view": "list",
+                                "id": "not-enough-meaning",
+                                "title": "Not Enough Meaning",
+                                "icon": "fas fa-folder",
+                                "desc": "Not Enough Meaning",
+                                "view": "shelf",
                                 "group": "psychology",
                                 "children": [
                                     {
-                                        "id": "gamblers-fallacy",
-                                        "title": "Gamblers Fallacy",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Psychology",
-                                            "Investing",
-                                            "Probability"
-                                        ],
-                                        "links": [],
+                                        "id": "familiar-better",
+                                        "title": "Familiar Better",
+                                        "icon": "fas fa-folder",
+                                        "desc": "Familiar Better",
+                                        "view": "shelf",
                                         "group": "psychology",
-                                        "content": "# Gambler's Fallacy\n\nThe Coin Has No Memory.\n\n![Gambler's Fallacy](https://images.prismic.io/thedecisionlab/60997d5f-3a48-4c5a-bd63-a92178e122d0_Untitled_Artwork.jpeg?auto=compress,format)\n\n**The Gambler's Fallacy** is the mistaken belief that if something generally happens more frequently than normal during a given period, it will happen *less* frequently in the future (or vice versa).\n\nYou flip a coin. Heads. Heads. Heads. Heads. Heads.\nWhat's next? You scream \"Tails! It *has* to be Tails! It's due!\"\n**Wrong.** The probability is still 50/50. The coin doesn't know it just landed on Heads 5 times. It has no memory. You are inventing a \"balancing force\" in the universe that doesn't exist.\n\n![Gambler's Fallacy](https://images.prismic.io/thedecisionlab/Z1CGlZbqstJ98CUm_GamblersFallacy_Whyithappens.png?auto=format,compress)\n\n## Why it Happens\n\nHumans are obsessed with patterns. We expect small samples (10 coin flips) to look like the global average (50/50 distribution). When they don't, we assume the universe will \"correct\" itself immediately.\n\n## FAQs\n\n*1. Does this apply to the Stock Market?*\nBig time. Investors often sell a stock because \"it's gone up for 10 days straight, it *must* come down.\" While markets do correct, they don't do it just because they \"owe\" you a drop.\n\n*2. Is \"Regression to the Mean\" the same thing?*\nNo. Regression to the mean is a statistical fact: over time, extreme scores average out. Gambler's Fallacy is the *belief* that the next specific turn will be the correction.\n\n### Further Reading\n\n*   **Story:** *[The Monte Carlo Fallacy](https://www.investopedia.com/terms/g/gamblersfallacy.asp)* (In 1913, a roulette wheel hit black 26 times in a row. Gamblers lost millions betting on red).\n*   **Article:** *[Why We Think We're Due for a Win](https://thedecisionlab.com/biases/gamblers-fallacy)*.\n"
+                                        "children": [
+                                            {
+                                                "id": "halo-effect",
+                                                "title": "Halo Effect",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "Psychology",
+                                                    "Perception",
+                                                    "Leadership"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Halo Effect\n\nThe \"Angel Script.\"\n\n![Halo Effect](https://images.prismic.io/thedecisionlab/a42484a0-b8c7-461d-b822-39c356338142_HaloEffect.png?auto=compress,format)\n\n**The Halo Effect** is a cognitive bias where the impression of one positive trait influences your opinion of a person's other (unrelated) traits.\n\nIf you meet someone who is tall, good-looking, and well-dressed, your brain instantly assumes they are also smart, funny, and successful. You assume because they have *one* \"good\" quality (beauty), they must have *all* good qualities (a \"halo\"). Just like in a movie script: the Hero is beautiful *and* kind *and* brave.\n\n![Halo Effect](https://images.prismic.io/thedecisionlab/ZkdfWCol0Zci9PnX_Untitled_Artwork39.png?auto=format%2Ccompress&rect=80%2C585%2C598%2C837&w=500&h=700)\n\n## Why it Happens\n\nYour brain acts like a lazy autocomplete function.\n*   **Input:** \"He is attractive.\"\n*   **Autocomplete:** \"...therefore he is a good leader and a nice person.\"\nIt creates a consistent narrative because \"Beautiful but Evil\" is harder for the brain to process quickly than \"Beautiful and Good.\"\n\n## FAQs\n\n*1. Is the reverse true?*\nYes. That is the **Horn Effect**. If someone is messy or unattractive, you subconsciously assume they are also lazy or incompetent, even if they are a genius.\n\n*2. Where is this most dangerous?*\n**Hiring and Politics.** We often vote for or hire the person who \"looks the part\" (tall, deep voice) rather than the person with the best skills. Apple's Steve Jobs famously used his \"Reality Distortion Field\" (charisma) to make people believe impossible deadlines were possible.\n\n### Further Reading\n\n*   **Article:** *[The Halo Effect in Psychology](https://www.verywellmind.com/what-is-the-halo-effect-2795906)*.\n*   **Article:** *[The Halo Effect](https://thedecisionlab.com/biases/halo-effect)*."
+                                            }
+                                        ]
                                     },
                                     {
-                                        "id": "halo-effect",
-                                        "title": "Halo Effect",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Psychology",
-                                            "Perception",
-                                            "Leadership"
-                                        ],
-                                        "links": [],
+                                        "id": "project-mindset",
+                                        "title": "Project Mindset",
+                                        "icon": "fas fa-folder",
+                                        "desc": "Project Mindset",
+                                        "view": "shelf",
                                         "group": "psychology",
-                                        "content": "# Halo Effect\n\nThe \"Angel Script.\"\n\n![Halo Effect](https://images.prismic.io/thedecisionlab/a42484a0-b8c7-461d-b822-39c356338142_HaloEffect.png?auto=compress,format)\n\n**The Halo Effect** is a cognitive bias where the impression of one positive trait influences your opinion of a person's other (unrelated) traits.\n\nIf you meet someone who is tall, good-looking, and well-dressed, your brain instantly assumes they are also smart, funny, and successful. You assume because they have *one* \"good\" quality (beauty), they must have *all* good qualities (a \"halo\"). Just like in a movie script: the Hero is beautiful *and* kind *and* brave.\n\n![Halo Effect](https://images.prismic.io/thedecisionlab/ZkdfWCol0Zci9PnX_Untitled_Artwork39.png?auto=format%2Ccompress&rect=80%2C585%2C598%2C837&w=500&h=700)\n\n## Why it Happens\n\nYour brain acts like a lazy autocomplete function.\n*   **Input:** \"He is attractive.\"\n*   **Autocomplete:** \"...therefore he is a good leader and a nice person.\"\nIt creates a consistent narrative because \"Beautiful but Evil\" is harder for the brain to process quickly than \"Beautiful and Good.\"\n\n## FAQs\n\n*1. Is the reverse true?*\nYes. That is the **Horn Effect**. If someone is messy or unattractive, you subconsciously assume they are also lazy or incompetent, even if they are a genius.\n\n*2. Where is this most dangerous?*\n**Hiring and Politics.** We often vote for or hire the person who \"looks the part\" (tall, deep voice) rather than the person with the best skills. Apple's Steve Jobs famously used his \"Reality Distortion Field\" (charisma) to make people believe impossible deadlines were possible.\n\n### Further Reading\n\n*   **Article:** *[The Halo Effect in Psychology](https://www.verywellmind.com/what-is-the-halo-effect-2795906)*.\n*   **Article:** *[The Halo Effect](https://thedecisionlab.com/biases/halo-effect)*."
+                                        "children": [
+                                            {
+                                                "id": "hindsight-bias",
+                                                "title": "Hindsight Bias",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "Psychology",
+                                                    "CognitiveBiases",
+                                                    "Memory",
+                                                    "Analysis"
+                                                ],
+                                                "links": [
+                                                    "confirmation-bias",
+                                                    "survivor-bias",
+                                                    "cognitive-biases"
+                                                ],
+                                                "group": "psychology",
+                                                "content": "# Hindsight Bias\n\nConvincing yourself that you knew the magician was going to pull a rabbit out of the hat, but only after you actually see the rabbit.\n\n**Hindsight Bias** (also known as the \"I-knew-it-all-along\" phenomenon) is a cognitive bias where people believe, after an event has occurred, that they accurately predicted or expected it. It involves the revision of one's own memory to align with the actual outcome.\n\nWhen we experience a surprising event, our brain immediately scrambles to make sense of it. Once an explanation is found, the brain seamlessly integrates this new understanding into our memory of the past, erasing the prior state of uncertainty. This makes the event seem far more predictable than it actually was.\n\n## The Flaw in the Matrix\n\nThis bias is particularly dangerous in fields like medicine, finance, and forensic analysis:\n\n*   **Medical Diagnosis:** A doctor reviewing a misdiagnosed case may look at the symptoms and think the correct illness was \"obvious,\" unfairly judging the original physician who was dealing with ambiguity.\n*   **Investments:** After a stock market crash, analysts often claim the warning signs were \"clear as day,\" leading to overconfidence in their ability to predict the *next* crash.\n\n## How to Counteract It\n\n1.  **Document Predictions in Advance:** The only surefire way to defeat hindsight bias is establishing an unalterable paper trail. By writing down your predictions, reasoning, and degree of uncertainty *before* the event, you prevent your brain from rewriting history later.\n2.  **Consider the Alternatives:** Actively force yourself to explain how the exact *opposite* outcome could have occurred. \n\n## FAQs\n\n*1. Is it the same as [[confirmation-bias|Confirmation Bias]]?*\nNo. [[confirmation-bias|Confirmation Bias]] is seeking out information that supports your current beliefs while ignoring opposing data. Hindsight bias is specifically about altering your *memory of your past beliefs* to match what actually happened.\n\n*2. Does intelligence prevent it?*\nResearch suggests that hindsight bias affects everyone, regardless of intelligence or expertise. The brain's drive to create coherent narratives out of chaos is a fundamental human trait.\n\n### Further Reading\n\n*   **Concept:** *[[survivor-bias|Survivor Bias]]*\n*   **Concept:** *[[cognitive-biases|Cognitive Biases]]*\n"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "stories-and-patterns",
+                                        "title": "Stories And Patterns",
+                                        "icon": "fas fa-folder",
+                                        "desc": "Stories And Patterns",
+                                        "view": "shelf",
+                                        "group": "psychology",
+                                        "children": [
+                                            {
+                                                "id": "gamblers-fallacy",
+                                                "title": "Gamblers Fallacy",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "Psychology",
+                                                    "Investing",
+                                                    "Probability"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Gambler's Fallacy\n\nThe Coin Has No Memory.\n\n![Gambler's Fallacy](https://images.prismic.io/thedecisionlab/60997d5f-3a48-4c5a-bd63-a92178e122d0_Untitled_Artwork.jpeg?auto=compress,format)\n\n**The Gambler's Fallacy** is the mistaken belief that if something generally happens more frequently than normal during a given period, it will happen *less* frequently in the future (or vice versa).\n\nYou flip a coin. Heads. Heads. Heads. Heads. Heads.\nWhat's next? You scream \"Tails! It *has* to be Tails! It's due!\"\n**Wrong.** The probability is still 50/50. The coin doesn't know it just landed on Heads 5 times. It has no memory. You are inventing a \"balancing force\" in the universe that doesn't exist.\n\n![Gambler's Fallacy](https://images.prismic.io/thedecisionlab/Z1CGlZbqstJ98CUm_GamblersFallacy_Whyithappens.png?auto=format,compress)\n\n## Why it Happens\n\nHumans are obsessed with patterns. We expect small samples (10 coin flips) to look like the global average (50/50 distribution). When they don't, we assume the universe will \"correct\" itself immediately.\n\n## FAQs\n\n*1. Does this apply to the Stock Market?*\nBig time. Investors often sell a stock because \"it's gone up for 10 days straight, it *must* come down.\" While markets do correct, they don't do it just because they \"owe\" you a drop.\n\n*2. Is \"Regression to the Mean\" the same thing?*\nNo. Regression to the mean is a statistical fact: over time, extreme scores average out. Gambler's Fallacy is the *belief* that the next specific turn will be the correction.\n\n### Further Reading\n\n*   **Story:** *[The Monte Carlo Fallacy](https://www.investopedia.com/terms/g/gamblersfallacy.asp)* (In 1913, a roulette wheel hit black 26 times in a row. Gamblers lost millions betting on red).\n*   **Article:** *[Why We Think We're Due for a Win](https://thedecisionlab.com/biases/gamblers-fallacy)*.\n"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
                             {
-                                "id": "3-need-to-act-fast",
-                                "title": "Problem 3: Need To Act Fast",
-                                "icon": "fas fa-running",
-                                "desc": "We can't wait for certainty, so we jump to conclusions.",
-                                "view": "list",
+                                "id": "too-much-information",
+                                "title": "Too Much Information",
+                                "icon": "fas fa-folder",
+                                "desc": "Too Much Information",
+                                "view": "shelf",
                                 "group": "psychology",
                                 "children": [
                                     {
-                                        "id": "dunning-kruger",
-                                        "title": "Dunning Kruger Effect",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Psychology",
-                                            "Learning",
-                                            "Competence"
-                                        ],
-                                        "links": [],
+                                        "id": "changed-things",
+                                        "title": "Changed Things",
+                                        "icon": "fas fa-folder",
+                                        "desc": "Changed Things",
+                                        "view": "shelf",
                                         "group": "psychology",
-                                        "content": "# Dunning-Kruger Effect\n\nMount Stupid.\n\n![Dunning-Kruger Effect](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Dunning%E2%80%93Kruger_Effect_01.svg/1280px-Dunning%E2%80%93Kruger_Effect_01.svg.png?20250428155053)\n\n**The Dunning-Kruger Effect** is a cognitive bias where people with low ability at a task overestimate their ability.\n\nBasically: **Incompetent people are too incompetent to realize they are incompetent.**\nTo know you are bad at grammar, you need to know the rules of grammar. If you don't know the rules, you assume your emails are perfect.\n\n## The Curve (The Analogy)\n\n1.  **Mount Stupid:** You learn a little bit and think, \"I'm a genius! This is easy!\" (High Confidence, Low Competence).\n2.  **Valley of Despair:** You learn more and realize, \"Oh god, this is actually incredibly hard.\" (Low Confidence, Med Competence).\n3.  **Slope of Enlightenment:** You actually get good and your confidence slowly returns. (High Confidence, High Competence).\n\n## FAQs\n\n*1. Is it just for \"Stupid\" people?*\nNo! It hits smart people too. A brilliant programmer might think they can easily run a marketing campaign (\"How hard can writing ads be?\"). We are all Dunning-Kruger victims in fields we don't know.\n\n*2. How do I fix it?*\nAssume you know nothing. Seek feedback early. The only cure for the Dunning-Kruger effect is **Metacognition** (thinking about your own thinking).\n\n### Further Reading\n\n*   **Study:** *[Unskilled and Unaware of It](https://www.ncbi.nlm.nih.gov/pubmed/10626367)* (The original 1999 paper).\n*   **Video:** *[Why Incompetent People Think They Are Amazing](https://www.youtube.com/watch?v=pOLmD_WVY-E)* (TED-Ed).\n"
+                                        "children": [
+                                            {
+                                                "id": "anchoring-bias",
+                                                "title": "Anchoring Bias",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "Psychology",
+                                                    "Negotiation",
+                                                    "Marketing"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Anchoring Bias\n\nThe Sticky Price Tag.\n\n![Anchoring Bias](https://images.prismic.io/thedecisionlab/ac7d00b4-1c09-4c47-97f3-72d7bf8c922d_anchoring-effect-bias.jpeg?auto=compress,format&rect=0,1,2387,1667&w=2388&h=1668)\n\n**Anchoring Bias** is the cognitive tendency to rely too heavily on the first piece of information offered (the \"anchor\") when making decisions.\n\nImagine walking into a luxury store. You see a bag for $5,000. \"Insane!\" you think. Then you see a smaller bag for $1,200. \"Ooh, that's a steal!\"\nIs $1,200 a good price for a bag? Probably not. But because your brain was \"anchored\" to the $5,000 price, the $1,200 feels cheap by comparison. The first number you see sets the stage for everything that follows.\n\n## Key Examples\n\n*   **Salary Negotiation:** The first number spoken usually dictates the final range. If you ask for $100k, the negotiation happens around $100k. If you ask for $60k, you'll never get to $100k.\n*   **Sales:** \"Was $100, Now $50!\" The $100 is a fake anchor designed to make the $50 feel like a win.\n\n## FAQs\n\n*1. Does it work even if the number is random?*\nYes. Studies show that if you ask people to write down the last two digits of their social security number, and then bid on a bottle of wine, people with higher SSN numbers bid higher. The brain clings to *any* available number when it's unsure.\n\n*2. How do I avoid it?*\nDo your research *before* you enter the room. If you know the car is worth $20k, the dealer's $30k sticker price won't anchor you because you brought your own anchor.\n\n### Further Reading\n\n*   **Concept:** *[Anchoring and Adjustment](https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/anchoring-heuristic/)*.\n*   **Study:** *[The Effect of Anchoring in Negotiation](https://www.pon.harvard.edu/daily/negotiation-skills-daily/what-is-anchoring-in-negotiation/)* (Harvard Law School).\n"
+                                            }
+                                        ]
                                     },
                                     {
-                                        "id": "fundamental-attribution-error",
-                                        "title": "Fundamental Attribution Error",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Psychology",
-                                            "Relationships",
-                                            "Empathy"
-                                        ],
-                                        "links": [],
+                                        "id": "confirm-existing-beliefs",
+                                        "title": "Confirm Existing Beliefs",
+                                        "icon": "fas fa-folder",
+                                        "desc": "Confirm Existing Beliefs",
+                                        "view": "shelf",
                                         "group": "psychology",
-                                        "content": "# Fundamental Attribution Error\n\nThe Bad Driver Analogy.\n\n![Fundamental Attribution Error](https://images.prismic.io/thedecisionlab/1d414500-fd4a-401c-a85b-00b6bb86081a_Untitled_Artwork-2.jpeg?auto=compress,format)\n\n**The Fundamental Attribution Error** is the tendency to believe that what people *do* reflects who they keeping *are*, while ignoring the situation they are in.\n\n*   **When someone cuts you off in traffic:** You scream, \"What a jerk!\" (You blame their **Personality**).\n*   **When YOU cut someone off:** You think, \"I'm sorry, I'm just late for a flight!\" (You blame the **Situation**).\nWe judge others by their character, but we judge ourselves by our circumstances.\n\n## The Equation\n\n*   **Their Behavior** = **Their Flaw** (Internal Attribution).\n*   **My Behavior** = **My Environment** (External Attribution).\n\n![Fundamental Attribution Error](https://images.prismic.io/thedecisionlab/Zxv4t4F3NbkBYDEQ_FundamentalAttributionError.png?auto=format,compress)\n\n## FAQs\n\n*1. Why do we do this?*\nBecause we can see *them*, but we can't see the *pressure* they are under. When you watch an actor trip, you see a clumsy person. You don't see the slippery floor because your eyes are focused on the person.\n\n*2. How does this help me?*\nIt is the secret to **Empathy**. Next time a coworker is rude, instead of thinking \"They are mean,\" try thinking \"They might be having a terrible day.\" It stops you from taking things personally and escalating conflicts.\n\n### Further Reading\n\n*   **Video:** *[Fundamental Attribution Error Explained](https://youtu.be/AdrDAik86rc)* (\nMcCombs School of Business).\n*   **Article:** *[Why We Judge Others Severely](https://fs.blog/fundamental-attribution-error/)* (Farnam Street).\n"
+                                        "children": [
+                                            {
+                                                "id": "confirmation-bias",
+                                                "title": "Confirmation Bias",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "Psychology",
+                                                    "CriticalThinking",
+                                                    "DecisionMaking"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Confirmation Bias\n\nThe \"Yes Man\" inside your head.\n\n![Confirmation Bias](https://images.prismic.io/thedecisionlab/ZkdQKiol0Zci9Pcq_Untitled_Artwork35.png?auto=format,compress)\n\n**Confirmation Bias** is the tendency to search for, interpret, favor, and recall information in a way that confirms your pre-existing beliefs or hypotheses.\n\nImagine you are looking for a new car. You decide you want a red Toyota. Suddenly, you see red Toyotas *everywhere*. Did the factory just make more? No. Your brain is filtering out the blue Hondas and white Fords because they don't match your current \"mission.\" Confirmation Bias works the same way with ideas. If you believe \"Left-handed people are creative,\" you will notice every creative lefty and ignore every uncreative one.\n\n![Confirmation Bias](https://images.prismic.io/thedecisionlab/b2f27a87-b3da-487f-8359-adf46d4bd96a_Confirmation_Bias_TDL-1024x715.png?auto=compress,format)\n\n## How it Works\n\n1.  **Filtering:** You subconsciously ignore evidence that contradicts your view (Disconfirmation Bias).\n2.  **Interpretation:** You twist ambiguous evidence to support your view. (e.g., \"He didn't text back because he's busy,\" not \"He's not interested,\" because you *want* to believe he likes you).\n3.  **Memory:** You remember the times you were right and forget the times you were wrong.\n\n## FAQs\n\n*1. Is it lying?*\nNo, it's not intentional deception. It's an efficiency mechanism. Your brain wants to save energy. Changing your mind requires re-wiring neural pathways (hard work). Keeping your current opinion requires doing nothing (easy).\n\n*2. How do I beat it?*\nActively look for the **disconfirming evidence**. Ask yourself: \"If I were wrong, what would I expect to see?\" Then look for *that*.\n\n### Further Reading\n\n*   **Book:** *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)* by Daniel Kahneman.\n*   **Article:** *[The Mother of All Biases](https://fs.blog/confirmation-bias/)* (Farnam Street).\n"
+                                            },
+                                            {
+                                                "id": "survivor-bias",
+                                                "title": "Survivor Bias (and the Anthropic Principle)",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "Psychology",
+                                                    "CognitiveBiases",
+                                                    "DataAnalysis",
+                                                    "Philosophy"
+                                                ],
+                                                "links": [
+                                                    "confirmation-bias",
+                                                    "reasoning-types",
+                                                    "fine-tuning-argument"
+                                                ],
+                                                "group": "psychology",
+                                                "content": "# Survivor Bias\n\nLooking at the armor damage on returning fighter planes and reinforcing those spots, forgetting completely that the planes hit in other spots didn't return at all.\n\n**Survivor Bias** (or Survivorship Bias) is a logical error and cognitive bias where you draw conclusions based entirely on an incomplete set of data because only the \"survivors\" or successful outcomes are visible to you. By fundamentally ignoring the failures (because they are invisible or were destroyed), your resulting analysis is dangerously skewed.\n\nThis happens everywhere, from business (studying only successful CEOs and ignoring the 99% who did the exact same things but failed) to architecture (believing \"they don't build houses like they used to\" simply because all the poorly built houses from 100 years ago already collapsed and only the strong ones survived to the present day).\n\n## The Anthropic Principle\n\nIn philosophy and cosmology, a massive, universe-scale version of Survivor Bias is known as the **Anthropic Principle**. \n\nWhen people look at the fundamental laws of physics, they often marvel at how perfectly calibrated they are for human life to exist (see [[fine-tuning-argument|The Fine-Tuning Argument]]). The Anthropic Principle is the counter-argument: *Of course* the universe we observe possesses the exact properties required for the observer to exist. If the universe's physics were hostile to our existence, we simply wouldn't be here to observe it. We are the ultimate survivors looking at our own dataset.\n\n## How to Defeat Survivor Bias\n\nTo conquer this bias when making decisions or analyzing data, you must aggressively hunt for the missing data:\n1.  **Ask \"What am I not seeing?\"** - Actively look for the failures.\n2.  **Examine the Drop-Outs** - If you are studying successful startups, you must study 10 failed startups in the exact same industry to see if they actually did the same things as the successful ones.\n\n## FAQs\n\n*1. How is this different from [[confirmation-bias|Confirmation Bias]]?*\n[[confirmation-bias|Confirmation Bias]] is actively filtering out data that disagrees with what you already believe. Survivor Bias is when the data *actually is missing* from your dataset because the \"losers\" have been naturally removed from the pool before you got there.\n\n*2. How did they fix the fighter planes?*\nDuring WWII, statistician Abraham Wald realized the military was making a fatal error in analyzing bullet hole patterns on returning bombers. By applying inverse logic, he recommended putting heavy armor *where the returning planes had no damage*, correctly deducing that planes hit in those untouched areas were the ones being shot down and not making it back.\n\n### Further Reading\n\n*   **Deep Dive:** *[[fine-tuning-argument|The Fine-Tuning Argument]]*\n*   **Concept:** *[[reasoning-types|Logical Reasoning]]*\n"
+                                            }
+                                        ]
                                     },
                                     {
-                                        "id": "sunk-cost-fallacy",
-                                        "title": "Sunk Cost Fallacy",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Psychology",
-                                            "Economics",
-                                            "DecisionMaking"
-                                        ],
-                                        "links": [],
+                                        "id": "primed-in-memory",
+                                        "title": "Primed In Memory",
+                                        "icon": "fas fa-folder",
+                                        "desc": "Primed In Memory",
+                                        "view": "shelf",
                                         "group": "psychology",
-                                        "content": "# Sunk Cost Fallacy\n\nThrowing Good Money After Bad.\n\n![Sunk Cost Fallacy](https://images.prismic.io/thedecisionlab/09b9c938-6bee-416b-8d91-f0c22560c5c9_Sunk-Cost-Fallacy-TDL-1024x715.jpeg?auto=compress,format)\n\n**The Sunk Cost Fallacy** is the tendency to continue an endeavor just because we have already invested money, effort, or time into it, even if the current costs outweigh the benefits.\n\n*   **The Movie Theater:** You paid $20 for a ticket. The movie is terrible. 30 minutes in, you are bored.\n    *   *Rational Choice:* Leave. The $20 is gone regardless. Why lose $20 AND 2 hours of time?\n    *   *Sunk Cost Choice:* \"I paid for it, so I have to get my money's worth.\" (So you suffer for 2 more hours).\n\n![Sunk Cost Fallacy](https://images.prismic.io/thedecisionlab/Zjj2wUMTzAJOCkvf_Untitled_Artwork323.jpg?auto=format,compress)\n\n## The Logic\n\nYour brain hates \"Loss.\" Admitting the money is gone feels like a loss. Continuing feels like you are \"saving\" the investment.\n**Rule:** Past costs (Sunk Costs) should *never* factor into future decisions. Only future costs and benefits matter.\n\n## FAQs\n\n*1. Does this apply to relationships?*\nYes. \"We've been together for 5 years, I can't break up now.\" If the relationship is bad, the 5 years are \"sunk.\" Staying another 5 years just means wasting 10 years total.\n\n*2. Why is it hard to quit?*\nBecause quitting looks like failure. Our egos are tied to our past decisions. We want to prove to ourselves (and others) that we made the right choice, even if the ship is sinking.\n\n### Further Reading\n\n*   **Article:** *[The Sunk Cost Fallacy](https://thedecisionlab.com/biases/the-sunk-cost-fallacy)* (The Decision Lab).\n*   **Video:** *[The Sunk Cost Fallacy: What is it and why does it happen?](https://youtu.be/AFPgxIJHxsE)*.\n"
+                                        "children": [
+                                            {
+                                                "id": "availability-heuristic",
+                                                "title": "Availability Heuristic",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "Psychology",
+                                                    "Media",
+                                                    "RiskAssessment"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Availability Heuristic\n\nThe \"Shark Attack\" Syndrome.\n\n![Availability Heuristic](https://images.prismic.io/thedecisionlab/cce9c879-5faa-46cb-a685-4542362fc572_availability-heuristic-the-decision-lab.png?auto=compress,format)\n\n**The Availability Heuristic** is a mental shortcut where we judge the likelihood of an event based on how easily we can recall similar examples.\n\nIf you ask someone, \"What is more likely to kill you: A shark or a falling coconut?\" most people intuitively scream \"SHARK!\" Why? because you've seen the movie *Jaws*. You recall catchy news headlines about shark attacks. You have *zero* vivid memories of coconut deaths.\nYour brain assumes: **\"If I can remember it easily, it must happen often.\"**\n\n![Availability Heuristic](https://images.prismic.io/thedecisionlab/Z3163JbqstJ99JWC_AvailabilityHeuristic.png?auto=format%2Ccompress&rect=1%2C0%2C510%2C268&w=2000&h=1050)\n\n## How it Works\n\nYour brain uses \"Ease of Recall\" as a proxy for \"Frequency.\"\n*   **Vivid events** (plane crashes, kidnapping, winning the lottery) stick in memory.\n*   **Boring events** (car crashes, heart disease, losing the lottery) fade away.\nResult: We are terrified of planes but text while driving.\n\n## FAQs\n\n*1. Is this why the news feels so scary?*\nYes. The news reports *anomalies* (rare, scary things). If you watch the news every day, your availability heuristic is hacked to believe the world is far more dangerous than it statistically is.\n\n*2. How does it affect business?*\nPerformance reviews. A manager might judge an employee's entire year based on a mistake they made *yesterday*, because that memory is the most \"available.\"\n\n### Further Reading\n\n*   **Article:** *[The Availability Heuristic](https://thedecisionlab.com/biases/availability-heuristic)* (The Decision Lab).\n*   **Book:** *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)* by Daniel Kahneman.\n"
+                                            }
+                                        ]
                                     }
                                 ]
                             },
                             {
-                                "id": "4-what-should-we-remember",
-                                "title": "Problem 4: What Should We Remember",
-                                "icon": "fas fa-save",
-                                "desc": "We space is limited, so we save only the highlights.",
-                                "view": "list",
+                                "id": "what-should-we-remember",
+                                "title": "What Should We Remember",
+                                "icon": "fas fa-folder",
+                                "desc": "What Should We Remember",
+                                "view": "shelf",
                                 "group": "psychology",
                                 "children": [
                                     {
-                                        "id": "cognitive-debt",
-                                        "title": "Cognitive Debt",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "AIEthics",
-                                            "Psychology",
-                                            "MachineLearning",
-                                            "CognitiveScience"
-                                        ],
-                                        "links": [
-                                            "generative-ai",
-                                            "llm"
-                                        ],
+                                        "id": "intense-parts",
+                                        "title": "Intense Parts",
+                                        "icon": "fas fa-folder",
+                                        "desc": "Intense Parts",
+                                        "view": "shelf",
                                         "group": "psychology",
-                                        "content": "# Cognitive Debt\n\nRelying on a GPS so much that you forget how to navigate your own neighborhood. \n\n**Cognitive Debt** is a proposed psychological condition in which repeated, uncritical reliance on external automated systems (specifically [[generative-ai|generative AI]] like [[llm|Large Language Models]]) replaces the effortful cognitive processes required for independent thinking. It acts as an insidious tax on human knowledge and critical inquiry.\n\nThe term was formalized following a [2025 MIT Study on ChatGPT usage](https://arxiv.org/abs/2506.08872v1), which explored the neural and behavioral consequences of LLM-assisted cognitive tasks. \n\n## The MIT Study on Essay Writing\n\nIn the landmark trial, researchers monitored participants writing essays across three conditions over four months:\n1. **The Brain-Only Group:** No external assistance.\n2. **The Search Engine Group:** Traditional internet research. \n3. **The LLM Group:** Full access to an AI assistant (ChatGPT/GPT-4o).\n\nUsing Electroencephalography (EEG) and Natural Language Processing (NLP) evaluations, the results highlighted significant neurological divergence. \n\n### Key Findings: The Cost of Convenience\n\n1. **Decreased Neural Coherence:** The \"Brain-Only\" participants exhibited the strongest, most distributed brain networks during the task. The LLM group displayed the *weakest* connectivity. AI tools optimized for procedural integration rather than deep, systemic thought processing.\n2. **Superficial Fluency:** LLM users produced work that looked correct on the surface (fluency) but failed to internalize the knowledge. They struggled significantly to recall information or even quote their \"own\" essays later.\n3. **Loss of Ownership:** The LLM group self-reported the lowest feelings of psychological ownership over their final output. \n\n## The Long-Term Tradeoff \n\nThe core danger of Cognitive Debt is that it defers cognitive effort in the short term (getting the essay written faster) but incurs compounding long-term costs:\n* **Diminished Critical Inquiry:** Users become accustomed to accepting synthesized truth rather than interrogating sources.\n* **Vulnerability to Manipulation:** A brain that is out of practice at critical analysis is highly susceptible to the persuasive capabilities of future AI systems.\n* **Decreased Creativity:** Homogenized output limits the collision of novel ideas that spark genuine innovation.\n\n## The 'Centaur' Solution: Strategic Sequencing\n\nThe study did not conclude that AI makes humans \"dumb,\" but rather that *how* we sequence tool usage dictates the cognitive outcome. \n\nWhen participants were swapped (The *Brain-to-LLM* sequence), researchers found the optimal integration. If a human exerts initial, unassisted effort to map out a conceptual framework and *then* introduces the LLM to refine or expand. This sequence, known practically as the augmented or \"Centaur\" approach, engaged even more extensive brain network interactions than the Brain-only group alone. \n\nAI must be the editor, never the architect.\n\n### Further Reading\n\n*   **[Study]:** *[Cognitive Offloading and the Future of Human Thought](https://arxiv.org/abs/2506.08872v1)* (The original 2025 MIT Study on ChatGPT usage).\n*   **[Article]:** *[MIT Study: Using ChatGPT Won't Make You Dumb (Unless You Do It Wrong)](https://www.thealgorithmicbridge.com/p/mit-study-using-chatgpt-wont-make)* (A detailed breakdown of the MIT study and its implications by The Algorithmic Bridge).\n"
+                                        "children": [
+                                            {
+                                                "id": "peak-end-rule",
+                                                "title": "Peak End Rule",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "Psychology",
+                                                    "Memory",
+                                                    "UXDesign"
+                                                ],
+                                                "links": [],
+                                                "group": "psychology",
+                                                "content": "# Peak-End Rule\n\nThe Highlight Reel.\n\n**The Peak-End Rule** is the psychological heuristic where we judge an experience strictly by how it felt at its most intense point (the \"Peak\") and at its end (the \"End\"), rather than the average of the whole experience.\n\nImagine a 10-day vacation.\n*   **Scenario A:** 9 amazing days, but on Day 10 you lose your luggage.\n*   **Scenario B:** 3 good days, 6 okay days, and on Day 10 you get a free upgrade.\nYou will remember **Scenario B** as the \"better\" trip, even though Scenario A had more total happiness. Your brain ignores the duration; it only saves the snapshots of the Climax and the Finale.\n\n## Why it Happens\n\nMemory is expensive. Your brain doesn't record a video of your life; it keeps a scrapbook. It only has room for the emotional spikes and the most recent moment.\n\n## FAQs\n\n*1. How is this used against me?*\n**Disney World.** You wait in line for 2 hours (pain), spend 5 minutes on the ride (Peak), and buy a souvenir on the way out (End). You forget the 2 hours of sweating and remember it as \"Magical.\"\n\n*2. How can I use this?*\nIf you have a bad meeting or a bad date, try to crack a joke or give a compliment right at the **end**. The other person will remember the whole interaction much more fondly.\n\n### Further Reading\n\n*   **Concept:** *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)* (Kahneman introduced this).\n*   **Article:** *[How the Peak-End Rule rules your life](https://www.nngroup.com/articles/peak-end-rule/)* (Nielsen Norman Group - UX Perspective).\n"
+                                            }
+                                        ]
                                     },
                                     {
-                                        "id": "google-effect",
-                                        "title": "Google Effect",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Psychology",
-                                            "Memory",
-                                            "Technology"
-                                        ],
-                                        "links": [
-                                            "hard-drive"
-                                        ],
+                                        "id": "memories-stored-differently",
+                                        "title": "Memories Stored Differently",
+                                        "icon": "fas fa-folder",
+                                        "desc": "Memories Stored Differently",
+                                        "view": "shelf",
                                         "group": "psychology",
-                                        "content": "# Google Effect\n\nDigital Amnesia.\n\n![Google Effect](https://images.prismic.io/thedecisionlab/Zk4wGCol0Zci9XYW_TheGoogleEffect.jpg?auto=format,compress)\n\n**The Google Effect** (or Digital Amnesia) is the tendency to forget information that can be found readily online by using Internet search engines.\n\nYour brain is an efficient [[hard-drive|hard drive]] manager. If it knows a file is backed up to the Cloud (Google), it deletes the local copy to save space.\n*   **Old Days:** You memorized phone numbers because you had to.\n*   **Now:** You don't know your best friend's number because your phone \"knows\" it for you.\n\n## The Trade-Off\n\nWe are becoming better at knowing **Where** to find information (Index Memory) and worse at knowing **What** the information is (Content Memory).\n*   *Pros:* We can access infinite knowledge.\n*   *Cons:* We are helpless without connection.\n\n## FAQs\n\n*1. Is it making us stupid?*\nDebatable. Some argue it frees up brain power for \"higher-level\" thinking (creativity, analysis) instead of rote memorization. Others argue that you can't think deeply about a subject if you don't have the facts stored in your head.\n\n*2. How do I fight it?*\nIf you want to remember something, **write it down by hand**. The physical act of writing signals to your brain: \"This is important, keep a local copy.\"\n\n### Further Reading\n\n*   **Study:** *[Google Effects on Memory](https://science.sciencemag.org/content/333/6043/776)* (The original Science paper).\n*   **Article:** *[The Google Effect](https://thedecisionlab.com/biases/google-effect)*.\n"
-                                    },
-                                    {
-                                        "id": "hindsight-bias",
-                                        "title": "Hindsight Bias",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Psychology",
-                                            "CognitiveBiases",
-                                            "Memory",
-                                            "Analysis"
-                                        ],
-                                        "links": [
-                                            "confirmation-bias",
-                                            "cognitive-biases",
-                                            "survivor-bias"
-                                        ],
-                                        "group": "psychology",
-                                        "content": "# Hindsight Bias\n\nConvincing yourself that you knew the magician was going to pull a rabbit out of the hat, but only after you actually see the rabbit.\n\n**Hindsight Bias** (also known as the \"I-knew-it-all-along\" phenomenon) is a cognitive bias where people believe, after an event has occurred, that they accurately predicted or expected it. It involves the revision of one's own memory to align with the actual outcome.\n\nWhen we experience a surprising event, our brain immediately scrambles to make sense of it. Once an explanation is found, the brain seamlessly integrates this new understanding into our memory of the past, erasing the prior state of uncertainty. This makes the event seem far more predictable than it actually was.\n\n## The Flaw in the Matrix\n\nThis bias is particularly dangerous in fields like medicine, finance, and forensic analysis:\n\n*   **Medical Diagnosis:** A doctor reviewing a misdiagnosed case may look at the symptoms and think the correct illness was \"obvious,\" unfairly judging the original physician who was dealing with ambiguity.\n*   **Investments:** After a stock market crash, analysts often claim the warning signs were \"clear as day,\" leading to overconfidence in their ability to predict the *next* crash.\n\n## How to Counteract It\n\n1.  **Document Predictions in Advance:** The only surefire way to defeat hindsight bias is establishing an unalterable paper trail. By writing down your predictions, reasoning, and degree of uncertainty *before* the event, you prevent your brain from rewriting history later.\n2.  **Consider the Alternatives:** Actively force yourself to explain how the exact *opposite* outcome could have occurred. \n\n## FAQs\n\n*1. Is it the same as [[confirmation-bias|Confirmation Bias]]?*\nNo. [[confirmation-bias|Confirmation Bias]] is seeking out information that supports your current beliefs while ignoring opposing data. Hindsight bias is specifically about altering your *memory of your past beliefs* to match what actually happened.\n\n*2. Does intelligence prevent it?*\nResearch suggests that hindsight bias affects everyone, regardless of intelligence or expertise. The brain's drive to create coherent narratives out of chaos is a fundamental human trait.\n\n### Further Reading\n\n*   **Concept:** *[[survivor-bias|Survivor Bias]]*\n*   **Concept:** *[[cognitive-biases|Cognitive Biases]]*\n"
-                                    },
-                                    {
-                                        "id": "peak-end-rule",
-                                        "title": "Peak End Rule",
-                                        "icon": "far fa-file-alt",
-                                        "desc": "",
-                                        "tags": [
-                                            "Psychology",
-                                            "Memory",
-                                            "UXDesign"
-                                        ],
-                                        "links": [],
-                                        "group": "psychology",
-                                        "content": "# Peak-End Rule\n\nThe Highlight Reel.\n\n**The Peak-End Rule** is the psychological heuristic where we judge an experience strictly by how it felt at its most intense point (the \"Peak\") and at its end (the \"End\"), rather than the average of the whole experience.\n\nImagine a 10-day vacation.\n*   **Scenario A:** 9 amazing days, but on Day 10 you lose your luggage.\n*   **Scenario B:** 3 good days, 6 okay days, and on Day 10 you get a free upgrade.\nYou will remember **Scenario B** as the \"better\" trip, even though Scenario A had more total happiness. Your brain ignores the duration; it only saves the snapshots of the Climax and the Finale.\n\n## Why it Happens\n\nMemory is expensive. Your brain doesn't record a video of your life; it keeps a scrapbook. It only has room for the emotional spikes and the most recent moment.\n\n## FAQs\n\n*1. How is this used against me?*\n**Disney World.** You wait in line for 2 hours (pain), spend 5 minutes on the ride (Peak), and buy a souvenir on the way out (End). You forget the 2 hours of sweating and remember it as \"Magical.\"\n\n*2. How can I use this?*\nIf you have a bad meeting or a bad date, try to crack a joke or give a compliment right at the **end**. The other person will remember the whole interaction much more fondly.\n\n### Further Reading\n\n*   **Concept:** *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)* (Kahneman introduced this).\n*   **Article:** *[How the Peak-End Rule rules your life](https://www.nngroup.com/articles/peak-end-rule/)* (Nielsen Norman Group - UX Perspective).\n"
+                                        "children": [
+                                            {
+                                                "id": "google-effect",
+                                                "title": "Google Effect",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "Psychology",
+                                                    "Memory",
+                                                    "Technology"
+                                                ],
+                                                "links": [
+                                                    "hard-drive"
+                                                ],
+                                                "group": "psychology",
+                                                "content": "# Google Effect\n\nDigital Amnesia.\n\n![Google Effect](https://images.prismic.io/thedecisionlab/Zk4wGCol0Zci9XYW_TheGoogleEffect.jpg?auto=format,compress)\n\n**The Google Effect** (or Digital Amnesia) is the tendency to forget information that can be found readily online by using Internet search engines.\n\nYour brain is an efficient [[hard-drive|hard drive]] manager. If it knows a file is backed up to the Cloud (Google), it deletes the local copy to save space.\n*   **Old Days:** You memorized phone numbers because you had to.\n*   **Now:** You don't know your best friend's number because your phone \"knows\" it for you.\n\n## The Trade-Off\n\nWe are becoming better at knowing **Where** to find information (Index Memory) and worse at knowing **What** the information is (Content Memory).\n*   *Pros:* We can access infinite knowledge.\n*   *Cons:* We are helpless without connection.\n\n## FAQs\n\n*1. Is it making us stupid?*\nDebatable. Some argue it frees up brain power for \"higher-level\" thinking (creativity, analysis) instead of rote memorization. Others argue that you can't think deeply about a subject if you don't have the facts stored in your head.\n\n*2. How do I fight it?*\nIf you want to remember something, **write it down by hand**. The physical act of writing signals to your brain: \"This is important, keep a local copy.\"\n\n### Further Reading\n\n*   **Study:** *[Google Effects on Memory](https://science.sciencemag.org/content/333/6043/776)* (The original Science paper).\n*   **Article:** *[The Google Effect](https://thedecisionlab.com/biases/google-effect)*.\n"
+                                            }
+                                        ]
                                     }
                                 ]
-                            },
-                            {
-                                "id": "survivor-bias",
-                                "title": "Survivor Bias (and the Anthropic Principle)",
-                                "icon": "far fa-file-alt",
-                                "desc": "",
-                                "tags": [
-                                    "Psychology",
-                                    "CognitiveBiases",
-                                    "DataAnalysis",
-                                    "Philosophy"
-                                ],
-                                "links": [
-                                    "fine-tuning-argument",
-                                    "confirmation-bias",
-                                    "reasoning-types"
-                                ],
-                                "group": "psychology",
-                                "content": "# Survivor Bias\n\nLooking at the armor damage on returning fighter planes and reinforcing those spots, forgetting completely that the planes hit in other spots didn't return at all.\n\n**Survivor Bias** (or Survivorship Bias) is a logical error and cognitive bias where you draw conclusions based entirely on an incomplete set of data because only the \"survivors\" or successful outcomes are visible to you. By fundamentally ignoring the failures (because they are invisible or were destroyed), your resulting analysis is dangerously skewed.\n\nThis happens everywhere, from business (studying only successful CEOs and ignoring the 99% who did the exact same things but failed) to architecture (believing \"they don't build houses like they used to\" simply because all the poorly built houses from 100 years ago already collapsed and only the strong ones survived to the present day).\n\n## The Anthropic Principle\n\nIn philosophy and cosmology, a massive, universe-scale version of Survivor Bias is known as the **Anthropic Principle**. \n\nWhen people look at the fundamental laws of physics, they often marvel at how perfectly calibrated they are for human life to exist (see [[fine-tuning-argument|The Fine-Tuning Argument]]). The Anthropic Principle is the counter-argument: *Of course* the universe we observe possesses the exact properties required for the observer to exist. If the universe's physics were hostile to our existence, we simply wouldn't be here to observe it. We are the ultimate survivors looking at our own dataset.\n\n## How to Defeat Survivor Bias\n\nTo conquer this bias when making decisions or analyzing data, you must aggressively hunt for the missing data:\n1.  **Ask \"What am I not seeing?\"** - Actively look for the failures.\n2.  **Examine the Drop-Outs** - If you are studying successful startups, you must study 10 failed startups in the exact same industry to see if they actually did the same things as the successful ones.\n\n## FAQs\n\n*1. How is this different from [[confirmation-bias|Confirmation Bias]]?*\n[[confirmation-bias|Confirmation Bias]] is actively filtering out data that disagrees with what you already believe. Survivor Bias is when the data *actually is missing* from your dataset because the \"losers\" have been naturally removed from the pool before you got there.\n\n*2. How did they fix the fighter planes?*\nDuring WWII, statistician Abraham Wald realized the military was making a fatal error in analyzing bullet hole patterns on returning bombers. By applying inverse logic, he recommended putting heavy armor *where the returning planes had no damage*, correctly deducing that planes hit in those untouched areas were the ones being shot down and not making it back.\n\n### Further Reading\n\n*   **Deep Dive:** *[[fine-tuning-argument|The Fine-Tuning Argument]]*\n*   **Concept:** *[[reasoning-types|Logical Reasoning]]*\n"
                             }
                         ]
                     },
@@ -4488,6 +4595,211 @@ const wikiData = {
                         "group": "science",
                         "children": [
                             {
+                                "id": "software-engineering",
+                                "title": "Software Engineering",
+                                "icon": "fas fa-folder",
+                                "desc": "Software Engineering",
+                                "view": "shelf",
+                                "group": "science",
+                                "children": [
+                                    {
+                                        "id": "refactoring",
+                                        "title": "Refactoring",
+                                        "icon": "fas fa-broom",
+                                        "desc": "Techniques for cleaning code and managing technical debt",
+                                        "view": "shelf",
+                                        "group": "science",
+                                        "children": [
+                                            {
+                                                "id": "code-smells",
+                                                "title": "Code Smells",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "Refactoring",
+                                                    "CleanCode",
+                                                    "SoftwareDesign"
+                                                ],
+                                                "links": [
+                                                    "technical-debt"
+                                                ],
+                                                "group": "science",
+                                                "content": "# Code Smells\n\nA \"Code Smell\" is like discovering a weird, fuzzy green spot on a slice of bread in your pantry. The bread might still be technically edible today, and it still functions as a sandwich holder, but the smell and the fuzz indicate a much deeper, underlying rotting problem. If you ignore the smell and eat it anyway (or build a feature on top of it), you are going to get incredibly sick (introduce catastrophic bugs) down the road.\n\nA **Code Smell** is a surface indication that usually corresponds to a deeper problem in the system. They are the classic warning signs that your codebase has accrued serious [[technical-debt|Technical Debt]] and is desperately in need of **Refactoring**.\n\n## Categories of Code Smells\n\nCode Smells are generally clumped into several distinct categories:\n\n### 1. Bloaters\nThese are code, methods, or classes that have increased to such gargantuan proportions that they are impossible to maintain. They rarely happen immediately; they slowly bloat over years of feature additions without any refactoring.\n*   *Examples:* Long Method (a function that spans hundreds of lines), Large Class, Long Parameter List.\n\n### 2. Object-Orientation Abusers\nThese smells occur when developers incompletely or incorrectly apply object-oriented programming principles, making the code stiff and brittle.\n*   *Examples:* Switch Statements (instead of polymorphism), Refused Bequest (a child class inheriting methods from a parent that it explicitly doesn't want or need).\n\n### 3. Change Preventers\nThese smells mean that if you need to change something in one place in your code, you have to hunt down and make changes in 10 other scattered places too. \n*   *Examples:* Divergent Change, Shotgun Surgery.\n\n### 4. Dispensables\nThis is something pointless and unneeded whose absence would make the code cleaner, shorter, and easier to understand.\n*   *Examples:* Duplicate Code, Dead Code, Lazy Classes (classes that do almost nothing).\n\n### 5. Couplers\nThese smells signify that two classes or modules are too deeply tied together. If you change one, the other breaks.\n*   *Examples:* Feature Envy (when a method accesses the data of another object more than its own data).\n\n### Further Reading\n\n*   *[Refactoring.guru: Code Smells](https://refactoring.guru/refactoring/smells)*\n"
+                                            },
+                                            {
+                                                "id": "how-to-refactor",
+                                                "title": "How to Refactor",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "Refactoring",
+                                                    "CleanCode",
+                                                    "SoftwareDesign",
+                                                    "Testing"
+                                                ],
+                                                "links": [],
+                                                "group": "science",
+                                                "content": "# How to Refactor\n\nThe most critical rule of refactoring is that it must go unnoticed by the end user. You are changing the *internal structure* of the code, never the *external behavior*.\n\nBecause refactoring involves ripping apart the core foundation of an application, it is exceptionally dangerous. To mitigate this risk, refactoring must be done using a rigid, step-by-step checklist.\n\n## The Refactoring Checklist\n\n1.  **The Code Must Be Green (Passing Tests):** Do not ever attempt to refactor code that doesn't have an automated test suite. If you break something while refactoring and don't have tests to catch it, you will ship a highly destructive bug to production.\n2.  **Take Tiny Steps:** Refactoring should never be a massive \"rewrite\" that takes three weeks. It should consist of dozens of microscopic, 5-minute changes. \n3.  **Run Tests After Every Step:** After you hit \"Save\" on your tiny change (like moving one variable into a new file), immediately run the entire test suite. If the tests turn \"Red\" (fail), you know *exactly* which tiny change broke the system, allowing you to instantly hit `Ctrl+Z` and fix it.\n4.  **Do Not Add Features:** If you notice a bug while refactoring, or realize a feature is missing, **do not fix or add it yet**. Keep your refactoring \"hat\" on. Only after you have completely finished cleaning the structure and all tests are passing should you put your feature-building \"hat\" back on to make behavioral changes.\n\nIf you try to rewrite a massive 500-line function all at once without running tests in between, you will inevitably end up deeply confused, drowning in broken logic, and wasting days trying to debug your own \"clean up.\"\n\n### Further Reading\n\n*   *[Refactoring.guru: How to Refactor](https://refactoring.guru/refactoring/how-to)*\n"
+                                            },
+                                            {
+                                                "id": "refactoring-techniques",
+                                                "title": "Refactoring Techniques",
+                                                "icon": "fas fa-code",
+                                                "desc": "Granular, implementable code restructuring techniques",
+                                                "view": "shelf",
+                                                "group": "science",
+                                                "children": [
+                                                    {
+                                                        "id": "composing-methods",
+                                                        "title": "Composing Methods",
+                                                        "icon": "far fa-file-alt",
+                                                        "desc": "",
+                                                        "tags": [
+                                                            "Refactoring",
+                                                            "CleanCode",
+                                                            "Techniques"
+                                                        ],
+                                                        "links": [
+                                                            "what-is-refactoring"
+                                                        ],
+                                                        "group": "science",
+                                                        "content": "# Composing Methods\n\nMuch of [[what-is-refactoring|refactoring]] is devoted to correctly composing methods (functions). In most cases, excessively long methods are the root of all evil. The vagaries of code inside these massive functions conceal the execution logic and make the method extremely hard to understand and change.\n\nThe techniques in this group streamline methods, remove code duplication, and pave the way for future improvements.\n\n## 1. Extract Method\n\n**Problem:** You have a code fragment that can be grouped together.\n\n```javascript\nfunction printOwing() {\n  printBanner();\n\n  // Print details\n  console.log(\"name: \" + name);\n  console.log(\"amount: \" + getOutstanding());\n}\n```\n\n**Solution:** Move this code to a separate new method (or function) and replace the old code with a call to the method.\n\n```javascript\nfunction printOwing() {\n  printBanner();\n  printDetails(getOutstanding());\n}\n\nfunction printDetails(outstanding) {\n  console.log(\"name: \" + name);\n  console.log(\"amount: \" + outstanding);\n}\n```\n\n## 2. Inline Method\n\n**Problem:** When a method body is more obvious than the method itself, use this technique.\n\n```javascript\nclass PizzaDelivery {\n  getRating() {\n    return this.moreThanFiveLateDeliveries() ? 2 : 1;\n  }\n\n  moreThanFiveLateDeliveries() {\n    return this.numberOfLateDeliveries > 5;\n  }\n}\n```\n\n**Solution:** Replace calls to the method with the method's content and delete the method itself.\n\n```javascript\nclass PizzaDelivery {\n  getRating() {\n    return this.numberOfLateDeliveries > 5 ? 2 : 1;\n  }\n}\n```\n\n## 3. Extract Variable\n\n**Problem:** You have an expression that is hard to understand.\n\n```javascript\nfunction renderBanner() {\n  if ((platform.toUpperCase().indexOf(\"MAC\") > -1) &&\n       (browser.toUpperCase().indexOf(\"IE\") > -1) &&\n        wasInitialized() && resize > 0 )\n  {\n    // do something\n  }\n}\n```\n\n**Solution:** Place the result of the expression or its parts in separate variables that are self-explanatory.\n\n```javascript\nfunction renderBanner() {\n  const isMacOs = platform.toUpperCase().indexOf(\"MAC\") > -1;\n  const isIE = browser.toUpperCase().indexOf(\"IE\") > -1;\n  const wasResized = resize > 0;\n\n  if (isMacOs && isIE && wasInitialized() && wasResized) {\n    // do something\n  }\n}\n```\n\n### Further Reading\n\n*   *[Refactoring.guru: Composing Methods](https://refactoring.guru/refactoring/techniques/composing-methods)*\n"
+                                                    },
+                                                    {
+                                                        "id": "dealing-with-generalization",
+                                                        "title": "Dealing with Generalization",
+                                                        "icon": "far fa-file-alt",
+                                                        "desc": "",
+                                                        "tags": [
+                                                            "Refactoring",
+                                                            "CleanCode",
+                                                            "Techniques"
+                                                        ],
+                                                        "links": [
+                                                            "what-is-refactoring"
+                                                        ],
+                                                        "group": "science",
+                                                        "content": "# Dealing with Generalization\n\nAbstraction has its own group of [[what-is-refactoring|refactoring]] techniques, primarily associated with moving functionality along the class inheritance hierarchy, creating new classes and interfaces, and replacing inheritance with delegation (or vice versa).\n\n## 1. Pull Up Field / Pull Up Method\n\n**Problem:** Two separate subclasses have the exact same field or method.\n\n```java\nclass Employee {\n  // Parent class\n}\n\nclass Salesman extends Employee {\n  private String name;\n}\n\nclass Engineer extends Employee {\n  private String name;\n}\n```\n\n**Solution:** Remove the field/method from the subclasses and move it to the shared superclass.\n\n```java\nclass Employee {\n  protected String name;\n}\n\nclass Salesman extends Employee {\n  // Uses parent's name\n}\n\nclass Engineer extends Employee {\n  // Uses parent's name\n}\n```\n\n## 2. Push Down Field / Push Down Method\n\n**Problem:** A method or field exists in a superclass, but is only actually used by one specific subclass.\n\n```java\nclass Employee {\n  public double getQuota() { /*...*/ }\n}\n\nclass Engineer extends Employee {\n  // Engineers do not have sales quotas\n}\n\nclass Salesman extends Employee {\n  // Uses getQuota()\n}\n```\n\n**Solution:** Move the field/method down from the parent class explicitly into the subclass that uses it.\n\n```java\nclass Employee {\n  // Removed getQuota()\n}\n\nclass Engineer extends Employee { }\n\nclass Salesman extends Employee {\n  public double getQuota() { /*...*/ }\n}\n```\n\n### Further Reading\n\n*   *[Refactoring.guru: Dealing with Generalization](https://refactoring.guru/refactoring/techniques/dealing-with-generalization)*\n"
+                                                    },
+                                                    {
+                                                        "id": "moving-features",
+                                                        "title": "Moving Features between Objects",
+                                                        "icon": "far fa-file-alt",
+                                                        "desc": "",
+                                                        "tags": [
+                                                            "Refactoring",
+                                                            "CleanCode",
+                                                            "Techniques"
+                                                        ],
+                                                        "links": [
+                                                            "what-is-refactoring"
+                                                        ],
+                                                        "group": "science",
+                                                        "content": "# Moving Features between Objects\n\nEven if you have distributed functionality among different classes in a less-than-perfect way, there is still hope. These [[what-is-refactoring|refactoring]] techniques show how to safely move functionality between classes, create new classes, and hide implementation details from public access.\n\n## 1. Move Method\n\n**Problem:** A method is used more in another class than in its own class.\n\n```java\n// The Account class calculates overdraft charges based on an AccountType.\nclass Account {\n  private AccountType type;\n  private int daysOverdrawn;\n  \n  // This method relies more on AccountType than Account itself\n  double overdraftCharge() {\n    if (type.isPremium()) {\n      double result = 10;\n      if (daysOverdrawn > 7) {\n        result += (daysOverdrawn - 7) * 0.85;\n      }\n      return result;\n    } else {\n      return daysOverdrawn * 1.75;\n    }\n  }\n}\n```\n\n**Solution:** Create a new method in the class that uses the method the most, then move code from the old method to there. Turn the code of the original method into a reference to the new method in the other class or else remove it entirely.\n\n```java\nclass AccountType {\n  // Method is moved here\n  double overdraftCharge(int daysOverdrawn) {\n    if (isPremium()) {\n      double result = 10;\n      if (daysOverdrawn > 7) {\n        result += (daysOverdrawn - 7) * 0.85;\n      }\n      return result;\n    } else {\n      return daysOverdrawn * 1.75;\n    }\n  }\n}\n\nclass Account {\n  private AccountType type;\n  private int daysOverdrawn;\n  \n  double overdraftCharge() {\n    return type.overdraftCharge(daysOverdrawn);\n  }\n}\n```\n\n## 2. Extract Class\n\n**Problem:** When one class does the work of two, awkwardness results.\n\n```java\nclass Person {\n  private String name;\n  private String officeAreaCode;\n  private String officeNumber;\n\n  public String getTelephoneNumber() {\n    return (\"(\" + officeAreaCode + \") \" + officeNumber);\n  }\n}\n```\n\n**Solution:** Instead, create a new class and place the fields and methods responsible for the relevant functionality in it.\n\n```java\nclass TelephoneNumber {\n  private String areaCode;\n  private String number;\n\n  public String getTelephoneNumber() {\n    return (\"(\" + areaCode + \") \" + number);\n  }\n}\n\nclass Person {\n  private String name;\n  private TelephoneNumber officeTelephone = new TelephoneNumber();\n\n  public String getTelephoneNumber() {\n    return officeTelephone.getTelephoneNumber();\n  }\n}\n```\n\n### Further Reading\n\n*   *[Refactoring.guru: Moving Features](https://refactoring.guru/refactoring/techniques/moving-features)*\n"
+                                                    },
+                                                    {
+                                                        "id": "organizing-data",
+                                                        "title": "Organizing Data",
+                                                        "icon": "far fa-file-alt",
+                                                        "desc": "",
+                                                        "tags": [
+                                                            "Refactoring",
+                                                            "CleanCode",
+                                                            "Techniques"
+                                                        ],
+                                                        "links": [
+                                                            "what-is-refactoring"
+                                                        ],
+                                                        "group": "science",
+                                                        "content": "# Organizing Data\n\nThese [[what-is-refactoring|refactoring]] techniques help with data handling, replacing primitives with rich class functionality. Another important result is untangling of class associations, which makes classes more portable and reusable.\n\n## 1. Replace Magic Number with Symbolic Constant\n\n**Problem:** Your code uses a number that has a certain meaning to it.\n\n```javascript\nfunction potentialEnergy(mass, height) {\n  // 9.81 is a magic number\n  return mass * height * 9.81;\n}\n```\n\n**Solution:** Replace this number with a constant that has a human-readable name explaining the meaning of the number.\n\n```javascript\nconst GRAVITATIONAL_CONSTANT = 9.81;\n\nfunction potentialEnergy(mass, height) {\n  return mass * height * GRAVITATIONAL_CONSTANT;\n}\n```\n\n## 2. Encapsulate Field\n\n**Problem:** You have a public field. Public fields are a bad idea because you can't assert any control over how they are accessed or updated by other parts of the application.\n\n```java\nclass Person {\n  public String name;\n}\n```\n\n**Solution:** Make the field private and create accessors (getters/setters) for it.\n\n```java\nclass Person {\n  private String name;\n\n  public String getName() {\n    return name;\n  }\n\n  public void setName(String arg) {\n    name = arg;\n  }\n}\n```\n\n### Further Reading\n\n*   *[Refactoring.guru: Organizing Data](https://refactoring.guru/refactoring/techniques/organizing-data)*\n"
+                                                    },
+                                                    {
+                                                        "id": "simplifying-conditionals",
+                                                        "title": "Simplifying Conditional Expressions",
+                                                        "icon": "far fa-file-alt",
+                                                        "desc": "",
+                                                        "tags": [
+                                                            "Refactoring",
+                                                            "CleanCode",
+                                                            "Techniques"
+                                                        ],
+                                                        "links": [],
+                                                        "group": "science",
+                                                        "content": "# Simplifying Conditional Expressions\n\nConditionals tend to get more and more complicated in their logic over time, and there are yet more techniques to combat this as well.\n\n## 1. Decompose Conditional\n\n**Problem:** You have a complex conditional (`if-then`/`else` or `switch`).\n\n```javascript\nif (date.before(SUMMER_START) || date.after(SUMMER_END)) {\n  charge = quantity * winterRate + winterServiceCharge;\n} else {\n  charge = quantity * summerRate;\n}\n```\n\n**Solution:** Decompose the complicated parts of the conditional into separate methods. The condition, `then`, and `else` should be extracted.\n\n```javascript\nif (isNotSummer(date)) {\n  charge = winterCharge(quantity);\n} else {\n  charge = summerCharge(quantity);\n}\n```\n\n## 2. Replace Nested Conditional with Guard Clauses\n\n**Problem:** You have a group of nested conditionals that make it hard to determine the normal flow of code execution.\n\n```java\npublic double getPayAmount() {\n  double result;\n  if (isDead) {\n    result = deadAmount();\n  } else {\n    if (isSeparated) {\n      result = separatedAmount();\n    } else {\n      if (isRetired) {\n        result = retiredAmount();\n      } else {\n        result = normalPayAmount();\n      }\n    }\n  }\n  return result;\n}\n```\n\n**Solution:** Isolate all special checks and edge cases into independent \"Guard Clauses\" and place them before the main checks. A guard clause says \"If this edge case is true, bail out and return right away.\"\n\n```java\npublic double getPayAmount() {\n  if (isDead) {\n    return deadAmount();\n  }\n  if (isSeparated) {\n    return separatedAmount();\n  }\n  if (isRetired) {\n    return retiredAmount();\n  }\n  \n  // Normal flow is much clearer now\n  return normalPayAmount();\n}\n```\n\n### Further Reading\n\n*   *[Refactoring.guru: Simplifying Conditional Expressions](https://refactoring.guru/refactoring/techniques/simplifying-conditional-expressions)*\n"
+                                                    },
+                                                    {
+                                                        "id": "simplifying-method-calls",
+                                                        "title": "Simplifying Method Calls",
+                                                        "icon": "far fa-file-alt",
+                                                        "desc": "",
+                                                        "tags": [
+                                                            "Refactoring",
+                                                            "CleanCode",
+                                                            "Techniques"
+                                                        ],
+                                                        "links": [
+                                                            "what-is-refactoring"
+                                                        ],
+                                                        "group": "science",
+                                                        "content": "# Simplifying Method Calls\n\nThese [[what-is-refactoring|refactoring]] techniques make method calls simpler and easier to understand. This, in turn, simplifies the interfaces for interaction between classes.\n\n## 1. Rename Method\n\n**Problem:** The name of a method doesn't explain what the method does.\n\n```java\nclass Customer {\n  public String getnm() {\n    return name;\n  }\n}\n```\n\n**Solution:** Rename the method so that the name accurately describes what it does.\n\n```java\nclass Customer {\n  public String getName() {\n    return name;\n  }\n}\n```\n\n## 2. Add Parameter / Remove Parameter\n\n**Problem:** A method either lacks the data it needs to execute, or it receives data that it doesn't use.\n\n```javascript\n// A department is no longer needed to get contact details\nfunction getContact(person, department) {\n    return person.phone;\n}\n```\n\n**Solution:** Add the necessary parameter, or carefully remove the unused parameter from the method signature and all of its caller sites.\n\n```javascript\nfunction getContact(person) {\n    return person.phone;\n}\n```\n\n## 3. Replace Parameter with Method Call\n\n**Problem:** You invoke a method and pass the result as a parameter to another method, while that second method could just call the first method itself.\n\n```javascript\nlet basePrice = quantity * itemPrice;\nlet finalPrice = discountedPrice(basePrice);\n```\n\n**Solution:** Remove the parameter and let the receiving method invoke the sender method itself, reducing coupling.\n\n```javascript\nlet finalPrice = discountedPrice(); // The logic to calculate basePrice is now calculated inside\n```\n\n### Further Reading\n\n*   *[Refactoring.guru: Simplifying Method Calls](https://refactoring.guru/refactoring/techniques/simplifying-method-calls)*\n"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "id": "technical-debt",
+                                                "title": "Technical Debt",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "Refactoring",
+                                                    "CleanCode",
+                                                    "SoftwareDesign",
+                                                    "Management"
+                                                ],
+                                                "links": [
+                                                    "code-smells"
+                                                ],
+                                                "group": "science",
+                                                "content": "# Technical Debt\n\nWriting bad code to ship a feature quickly is like taking out a high-interest loan from a bank. The loan allows you to buy a house (ship the feature) faster than if you had saved up cash. However, every day you wait to pay off that loan, you accrue interest. Eventually, the interest payments become so massive that you can't afford to buy groceries (build new features); all of your energy is spent just servicing the debt.\n\n**Technical Debt** (a metaphor coined by Ward Cunningham) describes the implied cost of additional rework caused by choosing an easy (limited) solution now instead of using a better approach that would take longer.\n\nNo programmer starts a project intending to write awful code. But under pressure, clean code inevitably accrues debt.\n\n## Causes of Technical Debt\n\n1.  **Business Pressure:** A manager demands a feature be released before an impossible deadline. The developer hard-codes values and skips writing tests just to hit the date.\n2.  **Lack of Understanding:** The team doesn't truly understand the business domain yet, so they build a rigid database structure that becomes cripplingly difficult to change when the real requirements are discovered later.\n3.  **Lack of Collaboration:** Knowledge is siloed. A junior developer writes a massive, tangled function (a [[code-smells|Code Smell]]) because a senior developer didn't mentor them or review their pull request. \n4.  **Delayed Refactoring:** The team says, \"We will clean this up later.\" (Spoiler: They rarely do, until the system breaks).\n\n## Paying Off the Debt\n\nYou pay off the \"principal\" of technical debt by **Refactoring** the codebase; spending a week writing tests, breaking down massive classes, and renaming variables so they make sense to the rest of the team.\n\nIf you don't pay off the debt, development velocity will slowly grind to a halt. Every new feature will take three times longer to build because developers have to carefully navigate around the fragile, messy \"debt-ridden\" areas of the application.\n\n### Further Reading\n\n*   *[Refactoring.guru: Technical Debt](https://refactoring.guru/refactoring/technical-debt)*\n"
+                                            },
+                                            {
+                                                "id": "what-is-refactoring",
+                                                "title": "What is Refactoring?",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "Refactoring",
+                                                    "CleanCode",
+                                                    "SoftwareDesign"
+                                                ],
+                                                "links": [
+                                                    "technical-debt"
+                                                ],
+                                                "group": "science",
+                                                "content": "# What is Refactoring?\n\nRefactoring is like cleaning up a messy workshop. You aren't building a new car and you aren't fixing the engine; you are simply sweeping the floor and putting the tools back on the pegboard. You do this so that when you *do* decide to build your next car (write a new feature), you won't trip over a stray hammer and break your ankle (introduce a bug).\n\n**Refactoring** is the systematic process of improving code without creating new functionality. It's about transforming a massive, tangled mess of logic into clean code and simple design. \n\nThe primary goal of refactoring is to fight [[technical-debt|Technical Debt]].\n\n## What is \"Clean Code\"?\n\nRefactoring aims to produce \"clean code,\" which is universally characterized by the following traits:\n\n1.  **It is Obvious:** It shouldn't require a Ph.D. to understand what a variable does. Poor variable naming, bloated classes, and \"magic numbers\" make code sloppy. Clean code reads like well-written prose.\n2.  **No Duplication:** If you have to fix a bug in three different places because you copy-pasted a function three times, your code is dirty. Refactoring aims to consolidate logic so you only ever have to update it once.\n3.  **Minimal Moving Parts:** Code is a liability, not an asset. The more code you write, the more you have to maintain, test, and debug. Clean code keeps classes tight and focused on a single responsibility.\n4.  **It Passes Tests:** You know your code is dirty if only 95% of your unit tests pass. \n\n## What Refactoring Is *Not*\n\nIt is crucial to understand that refactoring **does not change the observable behavior of the software**. \n\nIf you add a new \"login\" button while you are refactoring the authentication module, you are no longer strictly refactoring; you are feature building. Refactoring should always be done as an isolated, deliberate step before or after adding a feature, never at the exact same time.\n\n### Further Reading\n\n*   *[Refactoring.guru: What is Refactoring?](https://refactoring.guru/refactoring/what-is-refactoring)*\n"
+                                            },
+                                            {
+                                                "id": "when-to-refactor",
+                                                "title": "When to Refactor",
+                                                "icon": "far fa-file-alt",
+                                                "desc": "",
+                                                "tags": [
+                                                    "Refactoring",
+                                                    "CleanCode",
+                                                    "SoftwareDesign"
+                                                ],
+                                                "links": [
+                                                    "code-smells",
+                                                    "technical-debt"
+                                                ],
+                                                "group": "science",
+                                                "content": "# When to Refactor\n\nRefactoring shouldn't be a special event explicitly scheduled on a calendar (e.g., \"Refactoring Sprint\"). It should be a continuous, ongoing habit woven directly into the daily software development lifecycle. \n\nThere are three primary triggers that should signal a developer that it is time to clean up the code.\n\n## 1. The Rule of Three\n\nThe most famous heuristic for refactoring is the \"Rule of Three\":\n\n1.  When you're doing something for the first time, just get it done.\n2.  When you're doing something similar for the second time, cringe at having to repeat yourself, but do it anyway.\n3.  **When you're doing something for the third time, start refactoring.** Extract that duplicated code into its own reusable function or class.\n\n## 2. When Adding a Feature\n\nBefore you add a new feature, look at the existing code you have to interact with. If that code is a massive, tangled mess, *do not add the feature yet*. \n\nFirst, refactor the existing messy code so that it is clean, modular, and easy to understand. Only *after* the codebase is clean should you add the new feature. As the saying goes: *\"For each desired change, make the change easy (warning: this may be hard), then make the easy change.\"*\n\n## 3. During a Code Review\n\nCode reviews are the final line of defense before messy code merges into the `main` repository and becomes official [[technical-debt|Technical Debt]]. \n\nIf a senior reviewer spots a [[code-smells|Code Smell]] (like a method that is 400 lines long), they should require the author to pause, refactor the code using techniques like *Extract Method*, and update the pull request before it is approved for production.\n\n### Further Reading\n\n*   *[Refactoring.guru: When to Refactor](https://refactoring.guru/refactoring/when)*\n"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
                                 "id": "theory-of-computation",
                                 "title": "Theory of Computation",
                                 "icon": "fas fa-square-root-alt",
@@ -4564,10 +4876,10 @@ const wikiData = {
                                     "Logic"
                                 ],
                                 "links": [
-                                    "falsifiability",
+                                    "t-test",
                                     "scientific-consensus",
                                     "scientific-method",
-                                    "t-test"
+                                    "falsifiability"
                                 ],
                                 "group": "science",
                                 "content": "# Demarcation Problem\n\nDrawing the line in the sand.\n\nThe **Demarcation Problem** is the philosophical difficulty of distinguishing between **Science** (Astronomy, Chemistry) and **Non-Science/Pseudoscience** (Astrology, Alchemy).\n\nWhere exactly does one end and the other begin? It sounds easy, but there is no single agreed-upon rule that works 100% of the time.\n\n## Key Criteria Attempts\n\n1.  **[[falsifiability|Falsifiability]] (Popper):** If you can'[[t-test|t test]] it, it's not science. (The Gold Standard).\n2.  **[[scientific-consensus|Consensus]]:** If most scientists agree, it's science. (Problem: Scientists used to agree on bad ideas).\n3.  **[[scientific-method|Method]]:** Does it use the [[scientific-method|Scientific Method]]? (Hypothesis -> Experiment -> Result).\n\n## FAQs\n\n*1. Why does it matter?*\nIt decides what gets taught in schools, what gets government funding, and what evidence is allowed in courtrooms. If we can't define science, we can't protect it from nonsense.\n\n*2. Is \"Non-Science\" bad?*\nNot necessarily. **Art**, **Philosophy**, and **Religion** are non-science, but they are valuable. **Pseudoscience** (fake science claiming to be real, like Phrenology) is the danger.\n\n### Further Reading\n\n*   **Article:** *[Stanford Encyclopedia: Science and Pseudo-Science](https://plato.stanford.edu/entries/pseudo-science/)*.\n*   **Video:** *[The Demarcation Problem Explained](https://www.youtube.com/watch?v=Prhi3_nF8rA)*.\n"
@@ -4660,9 +4972,9 @@ const wikiData = {
                                     "Definition"
                                 ],
                                 "links": [
+                                    "scientific-method",
                                     "scientific-laws",
-                                    "falsifiability",
-                                    "scientific-method"
+                                    "falsifiability"
                                 ],
                                 "group": "science",
                                 "content": "# Scientific Definitions\n\nLanguage matters, especially when debugging reality.\n\n**Scientific Definitions** are precise labels for different levels of knowledge, often misused in daily conversation.\n\nIn everyday life, \"theory\" means a hunch (\"I have a theory about who stole my lunch\"). In science, that's an insult. In the **[[scientific-method|Scientific Method]]**, a **Fact** is a single data point (The screen is black). A **Hypothesis** is a [[falsifiability|testable]] guess (The battery is dead). A **Theory** is the comprehensive explanation of how batteries and electricity work. A **[[scientific-laws|Law]]** is the mathematical formula calculating how long the battery will last. Mixing these up is like confusing a single brick (Fact) with the blueprint for the whole building (Theory).\n\n## The Heirarchy of Knowledge\n\n*   **Fact:** An observation.\n    *   *Example:* \"The apple fell.\"\n*   **Hypothesis:** A testable explanation for an observation.\n    *   *Example:* \"Apples fall because an invisible force pulls them.\"\n*   **[[scientific-laws|Law]]:** A description (often mathematical) of *how* it happens.\n    *   *Example:* $F = G \\frac{m_1 m_2}{r^2}$ (Calculates the force exactly).\n    *   *Note:* Laws tell you *what* will happen, but not *why*.\n*   **Theory:** The highest level of understanding. An explanation of *why* it happens, supported by facts, laws, and tested hypotheses.\n    *   *Example:* The Theory of General Relativity (Explains gravity is warping of space-time).\n\n## FAQs\n\n*1. Is a Theory less than a Fact?*\nNo. A Theory is the *explanation* for facts. You can have facts without a theory (we knew gravity existed before we knew why), but a Theory is the gold standard because it explains *why* the facts are there.\n\n*2. Does a Hypothesis become a Theory, which becomes a Law?*\nNo! This is the video game model of science, and it's wrong.\n*   **Hypothesis** $\\rightarrow$ Tested $\\rightarrow$ Supported/Rejected.\n*   **[[scientific-laws|Laws]]** describe patterns.\n*   **Theories** explain mechanisms.\nA Theory never becomes a Law, just like a map (explanation) never becomes the road (description).\n\n### Further Reading\n\n*   **Video:** *[Fact vs. Theory vs. Hypothesis vs. Law... EXPLAINED!](https://www.youtube.com/watch?v=yi0hwFDQTSQ)* (The source for this breakdown).\n"
@@ -4852,8 +5164,8 @@ const wikiData = {
                                         ],
                                         "links": [
                                             "chatterjees-correlation",
-                                            "point-biserial-correlation",
-                                            "spearman-correlation"
+                                            "spearman-correlation",
+                                            "point-biserial-correlation"
                                         ],
                                         "group": "science",
                                         "content": "# Pearson Correlation Coefficient (r)\n\nPearson's Correlation is like a synchronized swimming score; it measures how perfectly two divers stretch and dive in a straight, perfectly timed line together.\n\n**Pearson Correlation Coefficient ($r$)** is a statistical measure that calculates the strength and direction of the linear relationship between two continuous variables. It returns a value between `-1` and `1`.\n\nImagine you are tracking how many hours a student studies versus their test score. If every extra hour studied perfectly matches a specific, steady increase in their score, that relationship forms a straight, upward line on a graph. This is where Pearson's coefficient shines. It asks one simple question: \"If I draw the best possible straight line through this data, how tightly do all the dots cluster around it?\"\n\nA score of `1` means they move in perfect \"straight-line\" lockstep upwards. A score of `-1` means they move perfectly in opposite directions (e.g., as speed increases, travel time decreases). A score of `0` means finding a straight line is impossible. \n\nHowever, Pearson is famously \"blind\" to anything that isn't a straight line. If your data curves like a smiley face (e.g., stress vs. performance: too little is bad, a medium amount is great, and too much is terrible), Pearson will confidently return a `0`, missing the meaningful relationship completely.\n\n## Key Features\n\n*   **Linear Only:** Only measures straight-line relationships between variables.\n*   **Continuous Data:** Both variables must be continuous (like height, weight, or temperature), rather than categorical (like \"yes/no\" or rankings).\n*   **Outlier Sensitive:** A single massive outlier (like one person studying 0 hours but scoring 100%) can severely distort the entire Pearson score.\n\n## FAQs\n\n*1. If my Pearson score is 0, does that mean the variables are unrelated?*\nNot necessarily! It only means there is no *linear* relationship. They could still be deeply connected in a curved or complex way (like a U-shape). To catch complex relationships, you'd want something like [[chatterjees-correlation|Chatterjee's Correlation]].\n\n*2. When should I use Pearson over Spearman?*\nUse Pearson when both of your variables are continuous numerical values, and you are specifically looking for a straight-line relationship. If your data consists of \"ranks\" (1st place, 2nd place) or has heavy outliers, use [[spearman-correlation|Spearman Correlation]] instead.\n\n### Further Reading\n\n*   **Related Concept:** *[[spearman-correlation|Spearman Rank Correlation Coefficient]]* (For monotonic relationships and ranked data).\n*   **Related Concept:** *[[point-biserial-correlation|Point-Biserial Correlation]]* (A variation of Pearson when one variable is true/false).\n"
@@ -4869,8 +5181,8 @@ const wikiData = {
                                             "Correlation"
                                         ],
                                         "links": [
-                                            "pearson-correlation",
-                                            "rank-biserial-correlation"
+                                            "rank-biserial-correlation",
+                                            "pearson-correlation"
                                         ],
                                         "group": "science",
                                         "content": "# Point-Biserial Correlation Coefficient\n\nThe Point-Biserial Correlation is like checking if owning a gym membership (a strict \"yes\" or \"no\") predicts exactly how many pushups someone can do (a continuous number).\n\n**Point-Biserial Correlation Coefficient ($r_{pb}$)** is a mathematical variation of the [[pearson-correlation|Pearson Correlation]] used specifically when attempting to measure the relationship between one strictly continuous variable and one naturally dichotomous (binary) variable.\n\nImagine you are trying to figure out if drinking coffee before a test improves the final test score. \"Test Score\" is a continuous variable ranging from 0 to 100. \"Drank Coffee?\" is a pure binary variable: either Yes (1) or No (0). There is no \"in-between\" or fractional state.\n\nIf you want to know if these two variables are mathematically linked, you can't use standard scatterplot logic, because half your data is locked to the number 0 and the other half is locked to the number 1. The Point-Biserial coefficient is a mathematical shortcut designed exactly for this scenario. It effectively measures if the continuous scores belonging to the \"Yes\" group are significantly higher or lower than the continuous scores belonging to the \"No\" group.\n\n## Key Features\n\n*   **Continuous vs. Natural Binary:** It specifically pairs a continuous interval/ratio variable with a \"naturally\" dichotomous variable (e.g., Heads/Tails, Pass/Fail, Dead/Alive).\n*   **Mathematically Identical to Pearson:** Under the hood, the formula used for $r_{pb}$ simplifies down to the exact same math as the [[pearson-correlation|Pearson correlation]] coefficient.\n*   **Sign Doesn't Matter:** The resulting score ranges from -1 to 1, but the positive or negative sign is arbitrary based on which group you assigned as \"0\" and which as \"1\". The absolute value is what tells you the strength of the relationship.\n\n## FAQs\n\n*1. What is the difference between Point-Biserial and Biserial correlation?*\nPoint-Biserial is used for *naturally* binary variables (e.g., Left-handed vs. Right-handed). Biserial correlation is used for *artificially* binary variables; a continuous scale you manually chopped in half (e.g., grouping test scores into \"High Scorers\" vs \"Low Scorers\").\n\n*2. How is this different from a T-Test?*\nAn independent T-Test determines if there's a *significant difference* between the means of the two groups. Point-Biserial gives you the *effect size* (the strength) of that relationship.\n\n### Further Reading\n\n*   **Related Concept:** *[[rank-biserial-correlation|Rank-Biserial Correlation Coefficient]]* (The nonparametric equivalent used for ranked data instead of continuous data).\n*   **Related Concept:** *[[pearson-correlation|[[pearson-correlation|Pearson Correlation]] Coefficient]]* (The fundamental math driving this variation).\n"
@@ -4948,8 +5260,8 @@ const wikiData = {
                                             "BellCurve"
                                         ],
                                         "links": [
-                                            "central-limit-theorem",
-                                            "standard-deviation"
+                                            "standard-deviation",
+                                            "central-limit-theorem"
                                         ],
                                         "group": "science",
                                         "content": "# Normal Distribution\n\nMediocristan.\n\n**The Normal Distribution** (Bell Curve) is the most common pattern in nature. Most things are average, and extreme deviations are rare and symmetric.\n\nThink of it like **Adult Male Height**.\n*   **The Average:** Most men are around 5'9\".\n*   **The Deviations:** A few are 6'5\", a few are 5'2\".\n*   **The Impossible:** No one is 500 feet tall.\n\n![Normal Distribution Chart](https://www.w3schools.com/statistics/img_normal_distribution.svg)\n\n## How it Works\n\n1.  **[[central-limit-theorem|Central Limit Theorem]]:** When you add up many independent random variables, they tend to form a Bell Curve.\n2.  **Symmetry:** 50% are above average, 50% are below.\n3.  **The 68-95-99.7 Rule:**\n    *   68% of data falls within 1 **[[standard-deviation|Standard Deviation (SD)]]**.\n    *   95% falls within 2 SDs.\n    *   99.7% falls within 3 SDs.\n\n## Real World Use Cases\n\n*   **IQ Tests:** Designed to be a Bell Curve with 100 as the mean.\n*   **Manufacturing:** Checking bolt sizes. If too many are \"outliers\" (outside 3 SDs), the machine is broken.\n*   **height/Weight:** Biology usually follows this.\n\n## Analysis\n\nIn a Normal world, prediction is easy. Historical data (last 100 years of flood data) accurately predicts the future. You are safe from \"Black Swans\" (mostly).\n\n### Further Reading\n\n*   **Contrast:** *[power-law|Power Law]* (Where averages don't exist).\n"
@@ -4981,9 +5293,9 @@ const wikiData = {
                                             "Pareto"
                                         ],
                                         "links": [
+                                            "risk-management",
                                             "pareto-principle",
                                             "black-swan",
-                                            "risk-management",
                                             "long-tail"
                                         ],
                                         "group": "science",
@@ -5010,9 +5322,9 @@ const wikiData = {
                                             "Parametric"
                                         ],
                                         "links": [
-                                            "tukeys-hsd",
                                             "kruskal-wallis",
-                                            "t-test"
+                                            "t-test",
+                                            "tukeys-hsd"
                                         ],
                                         "group": "science",
                                         "content": "# ANOVA (Analysis of Variance)\n\nANOVA is like a bouncer at a club specifically looking for the loudest, rowdiest table; it scans the whole room to see if at least one group of people is significantly different from the rest of the crowd.\n\n**ANOVA (Analysis of Variance)** is a statistical test used to determine whether there are statistically significant differences between the averages (means) of three or more independent groups.\n\nImagine you are testing the fuel efficiency of three different brands of car tires: Brand X, Brand Y, and Brand Z. You drive 20 cars with each brand and record their miles per gallon (MPG). If you only had two brands, you could just use a simple [[t-test|T-Test]]. But with three brands, running multiple T-Tests (X vs Y, Y vs Z, and X vs Z) gets mathematically dangerous; every extra test you run accidentally increases your chances of finding a \"fake\" difference purely by statistical luck (the false positive rate).\n\nANOVA solves this by analyzing all the variance at once. It compares how spread out the MPG numbers are *within* each brand's group versus how spread out the actual averages are *between* the three different brands. If the differences between the three brands' averages are much larger than the random noise inside the groups, ANOVA throws a flag and says, \"Yes, these tires are not all equal!\"\n\n## Key Features\n\n*   **The \"Omnibus\" Test:** ANOVA is an omnibus test, meaning it only tells you that *at least one* group is significantly different from the others. It does *not* tell you which specific group it is (e.g., it tells you the tires are different, but won't specify if X is better than Y).\n*   **Post-Hoc Testing:** Once ANOVA tells you there is a distinct difference somewhere in the mix, you act like a detective and run secondary \"Post-Hoc\" tests (like [[tukeys-hsd|Tukey's HSD]]) to pinpoint exactly which specific group is the odd one out.\n*   **Parametric Math:** Like the T-Test, it assumes your data is continuous, normally distributed (bell curve), and that each group has roughly the same amount of variance spread.\n\n## FAQs\n\n*1. Can I use ANOVA for just two groups?*\nTechnically, yes. If you run a one-way ANOVA on just two groups, the underlying math works out to the exact same result as an Independent [[t-test|T-Test]]. T-Tests are just simpler to report when it's only two things.\n\n*2. What if my data is messy, ranked, or hopelessly skewed?*\nANOVA will struggle, as loud outliers destroy averages. If you have three or more groups but your data doesn't form a nice bell curve, you must switch to the nonparametric version: the [[kruskal-wallis|Kruskal-Wallis Test]].\n\n### Further Reading\n\n*   **Related Concept:** *[[t-test|T-Test]]* (The foundational math used when comparing only two groups).\n*   **Related Concept:** *[[kruskal-wallis|Kruskal-Wallis Test]]* (The rank-based, non-parametric alternative to ANOVA).\n"
@@ -5028,12 +5340,12 @@ const wikiData = {
                                             "NonParametric"
                                         ],
                                         "links": [
-                                            "t-test",
-                                            "anova",
                                             "pearson-correlation",
+                                            "t-test",
                                             "fishers-exact-test",
+                                            "point-biserial-correlation",
                                             "kruskal-wallis",
-                                            "point-biserial-correlation"
+                                            "anova"
                                         ],
                                         "group": "science",
                                         "content": "# Chi-Square Test\n\nA Chi-Square Test is like counting how many people bought red versus blue shirts in your store, and mathematically checking if you genuinely sold way more blue ones than you originally predicted.\n\n**The Chi-Square Test of Independence ($\\chi^2$)** is a non-parametric statistical test used to determine if there is a mathematically significant association between two categorical (nominal) variables.\n\nUnlike an [[anova|ANOVA]] or a [[t-test|T-Test]], the Chi-Square test doesn't look at continuous numbers or averages (like height or test scores). It only cares about **counts** and **categories**.\n\nImagine you flip a coin 100 times. You *expect* around 50 heads and 50 tails. If you get 52 heads and 48 tails, that's normal statistical noise. But what if you get 80 heads and 20 tails? Is the coin rigged? The Chi-Square test compares your *Observed Frequencies* (what you actually counted) against your *Expected Frequencies* (what math says should have happened by pure luck). By adding up the differences across all possible categories, Chi-Square outputs a massive single number ($\\chi^2$). If the score is huge, your coin is heavily rigged.\n\n## Key Types of Chi-Square\n\n*   **Test of Independence:** Checks if two categorical variables (e.g., Eye Color and Hair Color) are related to one another.\n*   **Goodness of Fit:** Checks a single categorical variable against a theoretical distribution (e.g., checking if M&M's actually produce exactly 20% blue candies as they claim).\n*   **The Big Rule:** The math absolutely depends on raw counts (frequencies). You cannot use percentages, fractions, or negative numbers inside the Chi-Square formula. \n\n## FAQs\n\n*1. Are there limits to the Chi-Square test?*\nYes. Because it uses raw counts to estimate probabilities, the math starts to break down if any of your categories have fewer than 5 expected responses (e.g., only 3 people out of 1000 have green hair and blue eyes). For those tiny datasets, statisticians switch to a more precise, brute-force calculation called **[[fishers-exact-test|Fisher's Exact Test]]**.\n\n*2. How does this compare to Correlation?*\nChi-Square is used when *both* variables are categorical (e.g., Gender vs. Voted/Did Not Vote). [[pearson-correlation|Pearson Correlation]] requires continuous numbers (e.g., Age vs. Salary). [[point-biserial-correlation|Point-Biserial]] mixes one of each.\n\n### Further Reading\n\n*   **Related Concept:** *[[anova|ANOVA]]* (What to use when your categories need to predict a continuous number instead of raw counts).\n*   **Related Concept:** *[[kruskal-wallis|Kruskal-Wallis Test]]* (What to use for ranked categories).\n"
@@ -5049,8 +5361,8 @@ const wikiData = {
                                             "NonParametric"
                                         ],
                                         "links": [
-                                            "anova",
-                                            "chi-square"
+                                            "chi-square",
+                                            "anova"
                                         ],
                                         "group": "science",
                                         "content": "# Fisher's Exact Test\n\nFisher's Exact Test is like painstakingly writing out every possible winning hand in a card game to prove exactly how lucky your opponent's royal flush was, rather than just guessing based on general odds.\n\n**Fisher's Exact Test** is a statistical significance test used in the analysis of contingency tables. It is typically used as an alternative to the [[chi-square|Chi-Square Test]] when sample sizes are extremely small or when the expected frequencies in your data table are too low for Chi-Square math to work reliably.\n\nImagine you are testing a brand new, highly experimental medicine on a tiny group of 10 hospital patients. You give 5 of them the medicine and 5 of them a placebo. In the medicine group, 4 get better and 1 stays sick. In the placebo group, 1 gets better and 4 stay sick. \n\nIf you try to run a standard **Chi-Square test** on this data, the math will break. Chi-Square relies on an approximation of a massive, continuous bell curve, and it usually requires at least 5 \"expected\" people in every single category to be accurate. \n\nFisher's Exact Test doesn't approximate anything. Instead of checking a bell curve, it uses brute-force math to literally calculate the exact probability of getting that specific arrangement of sick/healthy patients (and every arrangement more extreme than it), assuming the medicine did absolutely nothing. Because it calculates exact probabilities rather than estimating them, it is flawlessly accurate for tiny sample sizes.\n\n## Key Features\n\n*   **Exact, Not Approximated:** It calculates the exact probability (p-value), rather than an approximation based on large-number theory.\n*   **Small Sample Sizes:** It is the universally preferred test over Chi-Square when your total sample size is small or when any expected cell count in your data table is less than 5.\n*   **Computationally Heavy:** Historically, calculating exact probabilities for large numbers by hand (involving massive factorials) was impossible. Today, computers handle it instantly for small to medium datasets, but it can still be mathematically exhausting for massive contingency tables.\n\n## FAQs\n\n*1. Can I use Fisher's Exact Test for large sample sizes?*\nYes, absolutely. Because it calculates the *exact* probability, it is technically always accurate. However, for massive datasets, a [[chi-square|Chi-Square Test]] will give you practically the exact same answer in a fraction of the computing power. \n\n*2. Does it only work on 2x2 tables?*\nOriginally, yes (e.g., Medicine/Placebo vs. Sick/Healthy). Modern software can run Fisher's Exact Test on larger tables (like 3x3 or 4x2), but the sheer number of factorial calculations grows exponentially, sometimes causing computers to struggle or default back to Chi-Square approximations.\n\n### Further Reading\n\n*   **Related Concept:** *[[chi-square|Chi-Square Test]]* (The approximation used when your sample size is comfortably large).\n*   **Related Concept:** *[[anova|ANOVA]]* (What to use if your outcome isn't categorical \"Sick/Healthy,\" but rather a continuous number like blood pressure).\n"
@@ -5066,8 +5378,8 @@ const wikiData = {
                                             "NonParametric"
                                         ],
                                         "links": [
-                                            "anova",
-                                            "mann-whitney-u"
+                                            "mann-whitney-u",
+                                            "anova"
                                         ],
                                         "group": "science",
                                         "content": "# Kruskal-Wallis Test\n\nThe Kruskal-Wallis test is like pooling all the students from three different gym classes into a massive, single line from shortest to tallest, and then checking if everyone from Ms. Smith's class just happens to be crammed near the very tall end of the line.\n\n**The Kruskal-Wallis H Test** is a non-parametric statistical test that extends the [[mann-whitney-u|Mann-Whitney U Test]] to determine whether there are statistically significant differences between three or more independent groups.\n\nImagine you are trying to test the same tire fuel efficiency concept used in [[anova|ANOVA]] (Brand X vs. Brand Y vs. Brand Z). However, your MPG data is completely chaotic. There are massive outliers, the data doesn\u2019t form a nice, predictable bell curve, or maybe your data isn't even continuous (e.g., you are just asking people to rank the tires from 1-10 on a satisfaction survey). \n\nBecause [[anova|ANOVA]] relies heavily on averages, inserting severe outliers or non-numerical rankings ruins its mathematical assumptions. Kruskal-Wallis ignores the raw values altogether and replaces them with **ranks**. It takes every single tire test result across all three brands, sorts them from 1st place to worst place, and then calculates the *average rank* belonging to each specific brand. If Brand X's average rank is significantly higher than Brand Z's, the test flags that at least one group mathematically dominates the others.\n\n## Key Features\n\n*   **Distribution-Free:** Because it abandons raw numbers for mere ranks, it genuinely does not matter if your data is severely skewed or un-normally distributed.\n*   **The \"Omnibus\" Test:** Like [[anova|ANOVA]], Kruskal-Wallis only tells you that *at least one* group is significantly different from the others. It does *not* tell you which specific one it is.\n*   **Post-Hoc Testing:** To figure out which specific groups are different, you must run secondary tests (often a series of [[mann-whitney-u|Mann-Whitney U Tests]] with a strict mathematical penalty called a Bonferroni correction to prevent false positives).\n\n## FAQs\n\n*1. Why not just always use Kruskal-Wallis instead of [[anova|ANOVA]]?*\nIf your data perfectly fits a standard bell curve, [[anova|ANOVA]] is mathematically more powerful and precise because it uses the raw, nuanced numbers rather than stripping them down to blunt ranks. Kruskal-Wallis is the \"safe\" backup plan.\n\n*2. What happens if I use Kruskal-Wallis on just two groups?*\nIf you only have two groups instead of three, the math perfectly collapses down and becomes the same thing as a [[mann-whitney-u|Mann-Whitney U Test]].\n\n### Further Reading\n\n*   **Related Concept:** *[[anova|ANOVA (Analysis of Variance)]]* (The standard parametric version of this test used for continuous, normally distributed data).\n*   **Related Concept:** *[[mann-whitney-u|Mann-Whitney U Test]]* (The exact equivalent of this test when you only have two groups).\n"
@@ -5084,8 +5396,8 @@ const wikiData = {
                                         ],
                                         "links": [
                                             "rank-biserial-correlation",
-                                            "wilcoxon-signed-rank",
-                                            "t-test"
+                                            "t-test",
+                                            "wilcoxon-signed-rank"
                                         ],
                                         "group": "science",
                                         "content": "# Mann-Whitney U Test\n\nThe Mann-Whitney U test is like deciding which of two decks of cards is \"better\" by drawing one card from each deck over and over, and counting how often Deck A beats Deck B.\n\n**The Mann-Whitney U Test** (also known as the Wilcoxon rank-sum test) is a non-parametric statistical test used to determine whether there is a significant difference between two independent groups when the data is not normally distributed or represents ordinal rankings.\n\nImagine you have two rival schools, and you want to know if School A students are generally faster runners than School B students. A standard [[t-test|T-Test]] would just average their running times and compare the two averages. But what if one student in School A is an Olympic sprinter who runs so fast that they pull the whole school's average up, making School A look faster overall even if most of its students are quite slow? A T-Test gets fooled by that outlier.\n\nThe Mann-Whitney U test solves this by ignoring the raw running times and replacing them with **ranks** (1st place, 2nd place, 3rd place, etc.). It pools all students together, ranks them, and then checks if the ranks belonging to School A are consistently higher or lower than the ranks of School B. It asks: \"If I pick a random student from School A and a random student from School B, what is the probability that Student A is faster than Student B?\"\n\n## Key Features\n\n*   **Non-Parametric:** It works perfectly even if your data doesn't follow a neat \"bell curve\" (normal distribution).\n*   **Rank-Based:** By converting raw numbers to ranks, it becomes highly resistant to extreme outliers.\n*   **Independent Groups:** It requires that the two groups being compared are completely independent (e.g., Men vs. Women, Control vs. Treatment), not the same people measured twice.\n\n## FAQs\n\n*1. When should I use this instead of an Independent T-Test?*\nUse Mann-Whitney U when your data is heavily skewed, has massive outliers, or is ordinal (like customer satisfaction surveys ranked 1 to 5). Use a [[t-test|T-Test]] if your data is numerical and looks roughly like a normal bell curve.\n\n*2. How does this relate to correlation?*\nIf you want to measure the *strength* of the difference found by the Mann-Whitney U test, you would calculate the [[rank-biserial-correlation|Rank-Biserial Correlation]] as your effect size.\n\n### Further Reading\n\n*   **Related Concept:** *[[t-test|T-Test]]* (The parametric, average-based alternative to this test).\n*   **Related Concept:** *[[wilcoxon-signed-rank|Wilcoxon Signed-Rank Test]]* (The version of this test used when the two groups are not independent, like \"before\" and \"after\" measurements of the same people).\n"
@@ -5101,10 +5413,10 @@ const wikiData = {
                                             "Parametric"
                                         ],
                                         "links": [
-                                            "anova",
-                                            "wilcoxon-signed-rank",
+                                            "point-biserial-correlation",
                                             "mann-whitney-u",
-                                            "point-biserial-correlation"
+                                            "anova",
+                                            "wilcoxon-signed-rank"
                                         ],
                                         "group": "science",
                                         "content": "# T-Test (Independent & Paired)\n\nA T-Test is like putting two entirely different recipes of chili on a scale; it doesn't care about the individual ingredients, it just tells you if one bowl mathematically weighs more than the other.\n\n**The Student's T-Test** is a parametric statistical test used to determine if there is a significant difference between the average (mean) values of two groups, helping you figure out if the difference is real or just due to random chance.\n\nImagine you invent a new fertilizer and want to know if it makes tomatoes grow taller. You spray it on Field A, while Field B gets regular water. At the end, you measure all the tomatoes. Because of nature's randomness, the average height of Field A will rarely be *exactly* the same as Field B. Let's say Field A averages 10 inches and Field B averages 9.5 inches. Did your fertilizer actually work, or did Field A just happen to get slightly luckier seeds this time?\n\nThe T-Test takes the exact averages, factors in how spread out (messy) the data is, and calculates the probability that a 0.5-inch difference happened purely by random, dumb luck. If that probability (the p-value) is incredibly low (usually under 5%), you can confidently claim your fertilizer works. \n\n## Key Types of T-Tests\n\n*   **Independent Samples T-Test:** Compares two completely separate groups of things (e.g., Field A vs. Field B, Men vs. Women).\n*   **Paired (Dependent) Samples T-Test:** Compares the *same* group of things measured at two different times (e.g., measuring patients' blood pressure *before* a new pill, and then measuring those exact same patients' blood pressure *after*).\n*   **One-Sample T-Test:** Compares your one group's average against a known standard (e.g., \"Is our factory producing batteries that last longer than the industry standard of 50 hours?\").\n\n## FAQs\n\n*1. What are the rules (assumptions) for using a T-Test?*\nYour data must be continuous (like height or time, not categories), your data should look roughly like a normal \"bell curve,\" and in the case of the independent test, the groups should have roughly the same amount of variance (spread).\n\n*2. What do I do if my data doesn't make a bell curve or has crazy outliers?*\nThe T-Test gets confused by massive outliers because it relies on averages. If your data is heavily skewed, you should drop the T-Test and use the [[mann-whitney-u|Mann-Whitney U Test]] (for independent groups) or the [[wilcoxon-signed-rank|Wilcoxon Signed-Rank Test]] (for paired groups).\n\n### Further Reading\n\n*   **Related Concept:** *[[anova|[[anova|ANOVA]] (Analysis of Variance)]]* (What you use when you need to compare *three* or more groups instead of just two).\n*   **Related Concept:** *[[point-biserial-correlation|Point-Biserial Correlation]]* (Used to measure the exact mathematical strength of the difference found by an independent T-Test).\n"
@@ -5120,8 +5432,8 @@ const wikiData = {
                                             "PostHoc"
                                         ],
                                         "links": [
-                                            "anova",
-                                            "t-test"
+                                            "t-test",
+                                            "anova"
                                         ],
                                         "group": "science",
                                         "content": "# Tukey's HSD (Honest Significant Difference)\n\nTukey's HSD is like a forensic detective called to the scene after a security alarm goes off; the alarm only tells you *someone* broke in, but Tukey's job is to interrogate every single suspect one-by-one to find exactly *who* did it.\n\n**Tukey's HSD (Honest Significant Difference)** is a post-hoc statistical test used after an [[anova|ANOVA]] to determine exactly which specific groups in your data have statistically distinct means.\n\nImagine running an **ANOVA** to test three different racing fuels: Fuel X, Fuel Y, and Fuel Z. Your [[anova|ANOVA]] test alerts you to a mathematically significant difference in lap times. However, [[anova|ANOVA]] is an \"omnibus\" test; it only throws the flag to say, \"Hey, at least one of these fuels is different from the others!\" It absolutely refuses to tell you if Fuel X is better than Fuel Y, or if Fuel Z is just uniquely terrible.\n\nYou might be tempted to just run three separate [[t-test|T-Tests]] (X vs Y, Y vs Z, X vs Z) to find out. But doing that is statistically dangerous, because every repeated test artificially inflates your chance of finding a \"false positive\" (Type I error). \n\nTukey's HSD fixes this. It compares all the possible pairs simultaneously, but mathematically protects you by enforcing a stricter threshold for what counts as \"different.\" It ensures that your overall, family-wise error rate across all those comparisons stays firmly locked at your chosen confidence level (usually 5%).\n\n## Key Features\n\n*   **Post-Hoc Necessity:** It is incredibly rare to run Tukey's HSD on its own. It is almost exclusively run as \"Step 2\" immediately following a significant [[anova|ANOVA]] result.\n*   **Error Protection:** It mathematically controls the *family-wise error rate*. If you compare 10 different groups in 45 different pairs, Tukey ensures your chance of *any* false positive across the entire family of 45 tests stays at 5%.\n*   **Honest Difference:** The test calculates a specific \"HSD\" value. If the distance between two groups' averages is larger than this HSD value, those groups are officially declared significantly different.\n\n## FAQs\n\n*1. What if my [[anova|ANOVA]] says there is no significant difference?*\nIf your overall [[anova|ANOVA]] is non-significant, you stop. You pack up and go home. You do not run Tukey's HSD. The security alarm never went off, so you don't call the detective. \n\n*2. Why not use Bonferroni instead of Tukey?*\nA Bonferroni correction is another way of protecting against false positives by ruthlessly dividing your significance threshold. However, Bonferroni is extremely conservative and heavily punishes you if you have a huge number of groups. Tukey's HSD is perfectly balanced and specifically mathematically designed for pairwise [[anova|ANOVA]] follow-ups.\n\n### Further Reading\n\n*   **Related Concept:** *[[anova|ANOVA (Analysis of Variance)]]* (The required primary test you must run before using Tukey's HSD).\n*   **Related Concept:** *[[t-test|T-Test]]* (The basic pairwise comparison tool that Tukey upgrades to prevent false positive inflation).\n"
@@ -5173,19 +5485,19 @@ const wikiData = {
                             "architecture"
                         ],
                         "links": [
-                            "generative-ai",
-                            "ssh",
-                            "ai-hallucination",
-                            "remote-code-execution",
+                            "cve",
+                            "cvss",
                             "vpn",
-                            "hypervisor",
-                            "vmx",
                             "command-injection",
                             "zero-day",
-                            "cve",
                             "ransomware",
-                            "cvss",
-                            "semiconductor"
+                            "ai-hallucination",
+                            "generative-ai",
+                            "remote-code-execution",
+                            "ssh",
+                            "hypervisor",
+                            "semiconductor",
+                            "vmx"
                         ],
                         "group": "2026",
                         "content": "# Week 2\n\n## Cyber Security\n\n### Critical RCE Flaws Patched in Veeam Backup\n\n![Veeam](https://www.bleepstatic.com/content/hl-images/2024/11/08/Veeam.jpg)\n\nDate: 2026-01-07\n\n- Veeam released urgent patches for its Backup & Replication software to fix a critical vulnerability ([[cve|CVE]]-2025-59470) and two high-severity flaws.\n- The flaw allows low-privileged users, such as backup operators, to execute arbitrary code remotely ([[remote-code-execution|RCE]]) by manipulating backup configuration files or password parameters.\n- Given Veeam's ubiquity in enterprise disaster recovery, unpatched servers act as a prime gateway for attackers to seize control of backup data and demand extortion payments.\n\n*Read more about it: https://www.bleepingcomputer.com/news/security/new-veeam-vulnerabilities-expose-backup-servers-to-rce-attacks/*\n\n### China-Linked Bad Actors Exploit VMware ESXi zero-day Chain\n\n![VMware](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhm8E9a8qNOO2_xOS89H3cvGDWPpRKo2WRFf41jVFbT6TGf62B4tUg2HJVFblopdAftu8NYjNO-S2MF-_VOr6mHghokD_zhl8Ybf-H8XLhw5_E4tDfkvIfjltzVwsOo-BK731rpbx2-eClOz4yN3Nw8nHXZaRo9ATkbzTLNIP9j7OaeHCdebT_S8uXri6Iu/s790-rw-e365/vmware.jpg)\n\nDate: 2026-01-09\n\n- Chinese-speaking bad actors utilized a chain of three [[zero-day|zero-day]] vulnerabilities ([[cve|CVE]]-2025-22224, 22225, 22226) to escape virtual machines and compromise host systems.\n- Successful exploitation of the issue could permit a malicious actor with admin privileges to leak memory from the Virtual Machine Executable ([[vmx|VMX]]) process or execute code as the [[vmx|VMX]] process.\n- The attack vector originated from a compromised SonicWall [[vpn|VPN]], allowing attackers to deploy a toolkit named \"MAESTRO\" and a malicious driver to execute code on the [[hypervisor|Hypervisor]] level.\n- This highlights a sophisticated escalation where attackers can bypass standard isolation protections, putting critical virtualized infrastructure at severe risk of [[ransomware|Ransomware]] deployment.\n\n*Read more about it: https://thehackernews.com/2026/01/chinese-linked-hackers-exploit-vmware.html*\n\n### Critical Flaws Expose 50k+ Coolify Instances to Root Takeover\n\n![Coolify](https://image-optimizer.cyberriskalliance.com/unsafe/1920x0/https://files.cyberriskalliance.com/wp-content/uploads/2025/09/AdobeStock_1364130870.jpg)\n\nDate: 2026-01-09\n\n- Security researchers have disclosed 11 critical vulnerabilities in Coolify, an open-source self-hosting platform, with severity scores reaching the maximum [[cvss|CVSS]] rating of 10.0.\n- The flaws include massive security gaps such as the exposure of private [[ssh|SSH]] keys (CVE-2025-64420) and [[command-injection|Command-Injection]] bugs ([[cve|CVE]]-2025-59157) that allow low-privileged users to execute arbitrary code.\n- With over 52,000 instances currently exposed online, unpatched servers are at immediate risk of total compromise, allowing attackers to escape container environments and seize full control of the host infrastructure.\n\n*Read more about it: https://www.scworld.com/brief/nearly-a-dozen-coolify-flaws-put-servers-at-risk*\n\n## Artificial Intelligence\n\n### Google Rolls Out Speed-Focused Gemini 3 Flash Model\n\n![Gemini 3 Flash](https://bostoninstituteofanalytics.b-cdn.net/wp-content/uploads/2026/01/image-16.png)\n\nDate: 2026-01-03\n\n- Google has globally deployed \"Gemini 3 Flash,\" a new iteration of its model designed specifically for low-latency, real-time responses in Search and mobile ecosystems.\n- The model powers a new \"AI Mode\" in Google Search, capable of verifying its own answers to minimize [[ai-hallucination|AI-Hallucination]] before presenting them to the user.\n- This marks a shift from \"larger is better\" to \"faster and more reliable,\" directly targeting users who need instant, verified information rather than creative generation.\n\n*Read more about it: [Boston Institute of Analytics](ht tps://bostoninstituteofanalytics.org/blog/this-week-in-ai-29th-dec-2nd-jan-biggest-breakthroughs-news-you-missed/)*\n\n### India Launches \"Skill the Nation\" AI Initiative\n\n![Skill the Nation](https://bostoninstituteofanalytics.b-cdn.net/wp-content/uploads/2026/01/image-17.png)\n\nDate: 2026-01-03\n\n- The Indian government announced the SOAR (Skilling for AI Readiness) initiative, aiming to upskill the workforce for an AI-centric economy.\n- Announced by President Murmu, the program shifts the focus of AI from a \"tech sector issue\" to a national GDP driver, with specific training mandates.\n- This represents one of the largest state-sponsored AI literacy pushes, potentially positioning India as a massive talent hub for the global [[generative-ai|Generative-AI]] supply chain.\n\n*Read more about it: [Boston Institute of Analytics](https://bostoninstituteofanalytics.org/blog/this-week-in-ai-29th-dec-2nd-jan-biggest-breakthroughs-news-you-missed/)*\n\n\n### Perplexity launches free AI tool for law enforcement agencies\n\n![Perplexity](https://i-invdn-com.investing.com/news/world_news_2_69x52._800x533_L_1419494365.jpg)\n\nDate: 2026-01-08\n\n- Perplexity has released a specialized enterprise AI platform designed for law enforcement and emergency responders, offered free to qualifying agencies for one year.\n- The tool allows officers to analyze crime scene photos, bodycam transcripts, and incident reports in real-time, though Perplexity states the data is isolated and not used for model training.\n- While aimed at reducing police paperwork, the launch has ignited immediate privacy debates regarding the reliability of AI analysis in criminal justice and the potential for automated bias in policing.\n\n*Read more about it: [Investing.com](https://in.investing.com/news/company-news/perplexity-launches-free-ai-tool-for-law-enforcement-agencies-93CH-5179360)*\n\n### OpenAI and SoftBank Invest $1B in \"Stargate\" Energy Project\n\n![Stargate](https://media.gettyimages.com/id/2243573116/photo/the-openai-logo-appears-on-a-smartphone-screen-reflecting-an-abstract-illustration-dominated.jpg?s=612x612&w=0&k=20&c=Bm-p9812p4vS8LpdeOV9X-caneeclVR3bIg-1lic_5A=)\n\nDate: 2026-01-09\n\n- OpenAI and SoftBank Group have jointly invested $1 billion into SB Energy to build massive renewable energy infrastructure for the upcoming \"Stargate\" data center project.\n- The partnership focuses on supplying 1.2 gigawatts of power, enough to light up a major city, specifically to support the immense compute requirements of OpenAI's next-generation models.\n- This move signals that power availability, not just chip supply, is now the primary bottleneck for AI scaling, forcing tech giants to become energy infrastructure developers.\n\n*Read more about it: [OpenAI Official Blog](https://openai.com/index/stargate-sb-energy-partnership/)*\n\n### Allianz Deploys Anthropic's Claude to Global Workforce\n\n![Allianz](https://www.pymnts.com/wp-content/uploads/2025/07/Allianz-.jpg?w=768)\n\nDate: 2026-01-09\n\n- Insurance giant Allianz announced a global partnership with Anthropic to integrate the Claude AI model into its daily operations across insurance, claims, and compliance.\n- Unlike standard chatbots, this integration will embed Claude directly into Allianz's core risk assessment workflows to automate complex document processing and claims analysis.\n- This represents one of the largest enterprise deployments of 2026 so far, signaling a shift where traditional industries are moving from \"AI experiments\" to full-scale production dependencies.\n\n*Read more about it: [PYMNTS](https://www.pymnts.com/artificial-intelligence-2/2026/allianz-taps-anthropic-to-help-deploy-ai-throughout-its-insurance-business/)*\n\n### Amazon\u2019s Ring rolls out controversial, AI-powered facial-recognition feature to video doorbells\n\nDate: 2026-01-09\n\n![Ring](https://techcrunch.com/wp-content/uploads/2024/08/ring_battery_doorbell_2024.jpg)\n\n- Amazon's Ring has begun deploying AI-powered facial recognition features that can identify specific individuals rather than just detecting generic motion.\n- The \"Familiar Faces\" update allows the system to tag known visitors, a feature that has sparked renewed debate regarding biometric privacy in consumer electronics.\n- While offering convenience for users to screen visitors, the mainstreaming of granular surveillance in home security raises concerns about data retention and neighborhood privacy.\n\n## General Technology\n\n### Intel Launches \"Panther Lake\" on Historic 18A Process\n\n![Intel](https://mms.businesswire.com/media/20260105738564/en/2682502/4/ntel-Core-Ultra-processor-series3-with-Arc-GPU.jpg)\n\nDate: 2026-01-08\n\n- At CES 2026, Intel officially debuted its Core Ultra Series 3 processors (codenamed \"Panther Lake\"), the first consumer chips built on its advanced 18A Node manufacturing process.\n- These chips utilize \"RibbonFET\" transistors to deliver a massive leap in efficiency, with Intel claiming up to 27 hours of battery life and a 77% boost in gaming performance over previous generations.\n- This is a \"make or break\" moment for US [[semiconductor|semiconductor]] manufacturing; successfully shipping 18A proves Intel can arguably match or beat TSMC\u2019s technology, potentially reshaping the global chip supply chain.\n\n*Read more about it: [Extreme Tech](https://www.extremetech.com/computing/intel-debuts-core-ultra-series-3-cpus-from-its-18a-node)*"
@@ -5203,13 +5515,13 @@ const wikiData = {
                             "IOT"
                         ],
                         "links": [
-                            "ntn",
                             "crispr",
-                            "deepseek-engram",
-                            "cisa",
-                            "ransomware",
                             "encryption",
-                            "semiconductor"
+                            "cisa",
+                            "ntn",
+                            "ransomware",
+                            "semiconductor",
+                            "deepseek-engram"
                         ],
                         "group": "2026",
                         "content": "# Week 03\n\n## Cyber Security\n\n### Microsoft Patch Tuesday: 3 Zero-Days, 114 Flaws\n\n![Patch Tuesday](https://www.bleepstatic.com/content/hl-images/2024/10/08/patch_tuesday_microsoft.jpg)\n\nDate: January 13, 2026\n\n- **The Event:** Microsoft's January 2026 Patch Tuesday addressed **114 vulnerabilities**, including **three zero-days** that were either exploited in the wild or publicly disclosed.\n- **The Detail:**\n    1.  **CVE-2026-20805** (Exploited): A **Desktop Window Manager (DWM)** information disclosure vulnerability. Attackers can leak sensitive memory data to bypass protections.\n    2.  **CVE-2026-21265** (Publicly Disclosed): A **Secure Boot** security feature bypass caused by expiring certificates. Unpatched systems may fail to trust new bootloaders.\n    3.  **CVE-2023-31096** (Exploited): A **Windows Agere Soft Modem Driver** elevation of privilege flaw. Microsoft removed the deprecated `agrsm64.sys` driver to fix this legacy issue that allowed SYSTEM-level access.\n- **The Impact:** [[cisa|CISA]] has added the exploited flaws to its Known Exploited Vulnerabilities catalog. Federal agencies are mandated to patch immediately to prevent [[ransomware|ransomware]] groups from leveraging these now-public exploits.\n\n*Read more about it: [Bleeping Computer](https://www.bleepingcomputer.com/news/microsoft/microsoft-january-2026-patch-tuesday-fixes-3-zero-days-114-flaws/)*\n\n---\n<br>\n\n### WEF Report: \"Cyber-Fraud\" Now Outranks [[ransomware|Ransomware]]\n\n![WEF Report](https://assets.weforum.org/report/cover_image/responsive_thumbnail_webp_QCV9PYtw81K_YOp7U7Ic_Ht3IoEIEgPRnmWIYonSGZY.webp)\n\nDate: January 12, 2026\n\n- **The Report:** The World Economic Forum released its *Global Cybersecurity Outlook 2026* on January 12, revealing a major shift in the threat landscape.\n- **The Detail:** For the first time, CEOs rated \"Cyber-enabled Fraud\" (deepfakes, manipulated financial transfers) as a higher concern than [[ransomware|Ransomware]], driven by the accessibility of AI cloning tools.\n- **The Impact:** This signals a strategic pivot for defenders: while [[encryption]] attacks (ransomware) are stabilizing, the integrity of *communication* (is this video call real?) is becoming the new battleground.\n\n*Read more about it: [World Economic Forum](https://www.weforum.org/publications/global-cybersecurity-outlook-2026/)*\n\n---\n<br>\n\n### Global Crackdown on DeepSeek Intensifies\n\n![DeepSeek App](https://www.insurancejournal.com/app/uploads/2025/02/deepseek-app-on-smartphone-25028119378678-AP-768x512.jpg)\n\nDate: January 7, 2026\n\n- **The Scrutiny:** Following its rapid rise, Chinese AI firm DeepSeek faced a wave of regulatory actions this week, with Australia and France launching probes into its data handling practices.\n- **The Detail:** Concerns focus on the app's data storage policies and potential ties to state surveillance, leading to bans on government devices in multiple jurisdictions as of mid-January.\n- **The Impact:** This geopolitical friction highlights the fragmentation of the global \"AI Stack,\" potentially forcing multinational companies to choose between Western-sanctioned tools and cost-effective Asian alternatives.\n\n*Read more about it: [Insurance Journal](https://www.insurancejournal.com/news/international/2026/01/07/853376.htm)*\n\n---\n<br>\n\n## Artificial Intelligence\n\n### DeepSeek Publishes \"Engram\" to Bypass Chip Sanctions\n\n![Engram](https://techwireasia.com/wp-content/uploads/2026/01/solen-feyissa-MHgLD0-9VvM-unsplash-2048x1366.jpg)\n\nDate: January 14, 2026\n\n- **The Breakthrough:** On Jan 14, DeepSeek published a technical paper detailing \"[[deepseek-engram|Engram]],\" a new training method designed to build massive models using older, less powerful chips.\n- **The Detail:** The technique optimizes memory usage to overcome hardware bottlenecks, effectively allowing them to train GPT-4 class models without needing restricted Nvidia H100/Blackwell GPUs.\n- **The Impact:** This undermines the effectiveness of US [[semiconductor|semiconductor]] export controls, suggesting that algorithmic innovation is outpacing hardware restrictions in the global AI arms race.\n\n*Read more about it: [Tech Wire Asia](https://techwireasia.com/2026/01/deepseek-engram-technique-v4-model/)*\n\n---\n<br>\n\n### OpenAI Signs $10B Inference Deal with Cerebras\n\n![Cerebras](https://theaiinsider.tech/wp-content/uploads/2026/01/Screenshot-2025-09-26-at-11.46.06-3.png)\n\nDate: January 16, 2026\n\n- **The Deal:** In a move to diversify away from Nvidia, OpenAI has reportedly secured a multi-year compute agreement valued at over $10 billion with chipmaker Cerebras Systems.\n- **The Detail:** The partnership focuses specifically on \"Inference\" (running the models) rather than training, utilizing Cerebras' wafer-scale chips to drastically lower the cost and latency of ChatGPT responses.\n- **The Impact:** This is a direct challenge to Nvidia's monopoly, signaling that top AI labs are willing to fund alternative hardware ecosystems to reduce their dependency on a single supplier.\n\n*Read more about it: [The AI Insider](https://theaiinsider.tech/2026/01/16/openai-secures-multi-year-compute-agreement-with-cerebras-valued-at-over-10b/)*\n\n---\n<br>\n\n### Microsoft Report: DeepSeek Dominates 89% of Chinese Market\n\n![DeepSeek Market Share](https://capacityglobal.com/wp-content/uploads/2025/09/urlhttp3A2F2Feuromoney-brightspot.s3.amazonaws.com2F862Fa62F1eb8334f407f9c61b28e788f8b862Fcm-microsoft1-12.png)\n\nDate: January 13, 2026\n\n- **The Statistic:** A new Microsoft AI Diffusion report (Jan 13) highlights that DeepSeek has captured nearly 89% of the AI user base in China, vastly outperforming local competitors like Baidu.\n- **The Detail:** The report warns of a widening \"AI Divide,\" where the Global South is adopting affordable, open-weight models from China, while the Global North sticks to expensive, closed US models.\n- **The Impact:** This entrenchment creates a \"bifurcated internet\" for AI, where future software ecosystems in Africa and SE Asia may be built on Chinese standards rather than Western APIs.\n\n*Read more about it: [Capacity Media](https://capacityglobal.com/news/microsoft-report-warns-of-deepseeks-rise-and-a-global-ai-divide/)*\n\n---\n<br>\n\n## General Technology\n\n### TSMC Forecasts 30% Growth Driven by \"Insatiable\" AI Demand\n\n![TSMC Forecast](https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20260116064457.jpg)\n\nDate: January 16, 2026\n\n- **The Forecast:** On Jan 16, [[semiconductor]] giant TSMC projected a nearly 30% revenue jump for 2026, shattering analyst expectations.\n- **The Detail:** The growth is driven almost entirely by demand for 2nm and 3nm chips used in AI accelerators, prompting TSMC to increase its capital expenditure to expand production capacity.\n- **The Impact:** As the sole manufacturer for both Apple and Nvidia's best chips, TSMC's confidence confirms that the \"AI Boom\" is not slowing down in 2026; in fact, hardware demand is accelerating.\n\n*Read more about it: [ANI News](https://aninews.in/news/business/tsmc-forecasts-nearly-30-sales-growth-in-2026-plans-capex-expansion-amid-ai-demand20260116121515)*\n\n---\n<br>\n\n### Historic Medical Evacuation from ISS (NASA Crew-11)\n\n![Crew-11](https://cdn.kpbs.org/dims4/default/8cf7169/2147483647/strip/true/crop/1253x772+0+84/resize/1760x1084!/format/webp/quality/90/?url=https%3A%2F%2Fnpr.brightspotcdn.com%2Fdims3%2Fdefault%2Fstrip%2Ffalse%2Fcrop%2F1253x940%2043%200%2Fresize%2F1253x940%21%2F%3Furl%3Dhttp%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F85%2F06%2F2af7dc874dea8039c7c243a3b4f6%2Fap26014814815837.jpg)\n\nDate: January 15, 2026\n\n- **The Event:** On Jan 15, NASA\u2019s Crew-11 astronauts returned to Earth a month early aboard a SpaceX Dragon capsule, marking the first time in history that a medical emergency forced an early end to a station mission.\n- **The Detail:** While NASA kept the specific astronaut's condition confidential due to privacy rules, the urgency required an unscheduled \"splashdown\" off the coast of San Diego to get the crew member to a hospital immediately.\n- **The Impact:** This rare event tests the \"Emergency Return\" protocols that will be critical for future Mars missions, where a 10-hour flight home is impossible, highlighting the need for advanced autonomous medical tech in deep space.\n\n*Read more about it: [KPBS News](https://www.kpbs.org/news/science-technology/2026/01/15/after-a-medical-evacuation-from-space-nasas-crew-11-returns-to-earth-a-month-early)*\n\n---\n<br>\n\n### Breakthrough \"Epigenetic\" [[crispr|CRISPR]] Tool Fixes Genes Without Cutting\n\n![CRISPR](https://www.sciencedaily.com/images/1920/dna-repair-genetic-mutation-damage.webp)\n\nDate: January 5, 2026\n\n- **The Discovery:** Researchers at UNSW Sydney have validated a new [[crispr|CRISPR]] technique that \"switches\" genes on or off by removing chemical tags (methylation), rather than cutting the DNA strand itself.\n- **The Detail:** Traditional [[crispr|CRISPR]] acts like molecular scissors (risking unintended damage); this new method acts like a molecular \"eraser,\" removing the \"silencing\" markers on genes to treat conditions like Sickle Cell Anemia without altering the genome sequence.\n- **The Impact:** This resolves a decades-long biological debate and offers a significantly safer path for gene therapy, reducing the risk of accidental mutations or cancer associated with DNA-cutting methods.\n\n\n*Read more about it: [ScienceDaily](https://www.sciencedaily.com/releases/2026/01/260104202813.htm)*\n\n---\n<br>\n\n### Airbus Launches \"SpaceRAN\" to Standardize 5G from Orbit\n\n![SpaceRAN](https://mediarenditions.airbus.com/YxF8zRxCB6Xwb4_lGaCzXLd243twMw2ao3GX2bqRyf0/resize?src=kpkp%3A%2F%2Fairbus%2F38%2F676%2F676942-ttukbtg06j.jpg&w=2560&h=1200&poiX=50&poiY=50&el=true&t=fill-down)\n\nDate: January 14, 2026\n\n- **The Innovation:** Airbus UpNext has launched a demonstrator program called \"SpaceRAN\" to test a standardized way for satellites to provide direct-to-device 5G connectivity without proprietary lock-ins.\n- **The Detail:** Unlike Starlink\u2019s closed system, SpaceRAN uses a \"software-defined\" satellite architecture that allows standard commercial 5G devices to connect to satellites as if they were normal cell towers.\n- **The Impact:** If successful, this creates a unified global standard for [[ntn|Non-Terrestrial Networks]], allowing aviation, shipping, and remote industrial sites to switch between satellite providers instantly without changing hardware.\n\n\n*Read more about it: [Airbus Newsroom](https://www.airbus.com/en/newsroom/stories/2026-01-expanding-5g-connectivity-with-the-airbus-upnext-spaceran-demonstrator)*\n\n---\n<br>\n\n### China Launches \"Yaogan-50\" in First 2026 Orbital Mission\n\n![Yaogan-50](https://img.inform.kz/kazinform-photobank/media/2026-01-13/a26d1af9-17de-4c42-81e0-3adf4f799e79.webp)\n\nDate: January 13, 2026\n\n- **The Launch:** China Aerospace Science and Technology Corp (CASC) successfully conducted its first launch of 2026, sending the Yaogan-50 remote sensing satellite into orbit via a Long March 6 rocket.\n- **The Detail:** The satellite is equipped with high-definition land survey sensors officially designated for \"disaster prevention and crop estimation,\" though western analysts often associate the Yaogan series with electronic surveillance.\n- **The Impact:** This kickstarts China's ambitious 2026 launch calendar, which aims to exceed 100 orbital missions this year, further accelerating the density of the Low Earth Orbit (LEO) environment.\n\n*Read more about it: [Qazinform](https://qazinform.com/news/china-launches-satellite-in-first-orbital-mission-of-2026-31e383)*\n\n---\n<br>\n"
@@ -5227,14 +5539,14 @@ const wikiData = {
                             "IOT"
                         ],
                         "links": [
-                            "vishing",
-                            "operating-system",
-                            "remote-code-execution",
-                            "cisa",
                             "vulnerability",
                             "cve",
                             "encryption",
-                            "http"
+                            "cisa",
+                            "vishing",
+                            "remote-code-execution",
+                            "http",
+                            "operating-system"
                         ],
                         "group": "2026",
                         "content": "# Week 04\n\n## Cyber Security\n\n### Zero-Day Payouts Reach $1M at Pwn2Own Automotive 2026\n\n![Pwn2Own](https://www.bleepstatic.com/content/hl-images/2024/01/24/Pwn2Own_Tokyo.jpg)\n\nDate: 23 January 2026\n\n- Security researchers earned a combined total of $1,047,000 for discovering 76 unique [[vulnerability|Vulnerabilities]] over a three-day event.\n- The competition focused on automotive technologies, including electric vehicle (EV) chargers, infotainment systems, and operating systems like Tesla's.\n- These findings allow vendors to patch critical flaws before they can be exploited by malicious actors to hijack vehicle systems or charging infrastructure.\n\n*Read more about it: https://www.bleepingcomputer.com/news/security/hackers-get-1-047-000-for-76-zero-days-at-pwn2own-automotive-2026/*\n\n---\n<br>\n\n### Critical [[remote-code-execution|Remote Code Execution]] Flaw in Cisco Enterprise Tools\n\n![Cisco](https://imgs.search.brave.com/_EJ-NRiq-aaT23gGmbI7Ox8f39NQnPmcIFpYvR7Sc6s/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi8wLzA4L0Np/c2NvX2xvZ29fYmx1/ZV8yMDE2LnN2Zy8y/NTBweC1DaXNjb19s/b2dvX2JsdWVfMjAx/Ni5zdmcucG5n)\n\nDate: 21 January 2026\n\n- Cisco warned of a high-severity code injection flaw ([[cve|CVE]]-2026-20045) affecting its Unified Communications Manager and Unity Connection products.\n- The bug allows unauthenticated attackers to send crafted [[http|HTTP]] requests to gain root-level access to the underlying [[operating-system|operating system]].\n- [[cisa|CISA]] has already added this flaw to its Known Exploited Vulnerabilities catalog, signaling that active attacks are occurring in the wild.\n\n*Read more about it: https://www.helpnetsecurity.com/2026/01/21/cisco-enterprise-communications-cve-2026-20045/*\n\n---\n<br>\n\n### ShinyHunters Gang Targets Single Sign-On Accounts via [[vishing|Vishing]]\n\n![ShinyHunters](https://www.bleepstatic.com/content/hl-images/2023/11/17/Hacker_phones.jpg)\n\nDate: 17 November 2023\n\n- The ShinyHunters extortion group claimed responsibility for a wave of [[vishing|Voice Phishing]] attacks targeting corporate employees.\n- By impersonating IT staff over the phone, the attackers trick victims into handing over credentials for Microsoft, Google, and Okta platforms.\n- This campaign has bypassed standard protections to breach corporate SaaS environments and steal internal data for ransom.\n\n*Read more about it: https://www.bleepingcomputer.com/news/security/shinyhunters-claim-to-be-behind-sso-account-data-theft-attacks/*\n\n---\n<br>\n\n### Under Armour Investigates Massive 72 Million Record Breach\n\n![Under Armour](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Under_armour_logo.svg/250px-Under_armour_logo.svg.png)\n\nDate: 23 January 2026\n\n- A massive 343GB database containing the personal details and email addresses of 72 million individuals was reportedly leaked on a hacking forum.\n- According to Have I Been Pwned, the compromised data includes names, dates of birth, genders, geographic locations, and purchase history, though payment information was reportedly not included.\n- The company is working with external forensic experts to verify the scope of the unauthorized access.\n\n*Read more about it: https://www.infosecurity-magazine.com/news/under-armour-investigates-data/*\n\n---\n<br>\n\n## Artificial Intelligence\n\n### Nvidia Closes $20 Billion Acquisition of Groq IP\n\n![Groq Acquisition](https://etcjournal.com/wp-content/uploads/2026/01/chatgpt-image-jan-18-2026-12_13_42-pm.png)\n\nDate: 18 January 2026\n\n- Nvidia has finalized its massive deal to acquire the intellectual property of Groq, a startup known for its high-speed Language Processing Units (LPUs).\n- The acquisition focuses on Groq's breakthrough \"real-time inference\" capabilities, which allow LLMs to run significantly faster than on standard GPUs.\n- This move consolidates Nvidia's power in the AI hardware market, transitioning from a focus on training models to dominating the deployment (inference) phase.\n\n*Read more about it: https://etcjournal.com/2026/01/18/three-biggest-ai-stories-in-jan-2026-real-time-ai-inference/*\n\n---\n<br>\n\n### Global Focus Shifts to AI Data Center Power Constraints\n\n![Power Wall](https://yt3.googleusercontent.com/12DXqfZQBwvHFBp31Teww9briF_9d45RTmGp6fiYScdvI4LZ3xPEfmw54EXV4o6tQMuG1I2t4Q=s160-c-k-c0x00ffffff-no-rj)\n\nDate: 23 January 2026\n\n- Reports from Bloomberg Tech: Asia highlighted that power demand for AI data centers is projected to quadruple over the next decade.\n- Tech giants like Microsoft are aggressively investing in energy innovations to prevent the \"power wall\" from stalling AI model scaling.\n- The shift highlights that the future of AI is now as much about electrical engineering and grid stability as it is about software algorithms.\n\n*Read more about it: https://www.youtube.com/watch?v=7HGp1ZuJqaI*\n\n---\n<br>\n\n## General Technology\n\n### Post-Quantum Cryptography Standards Framework Released\n\n![Post-Quantum Cryptography](https://www.cisa.gov/sites/default/files/images/SVG/header_logo_tagline_update.svg)\n\nDate: 23 January 2026\n\n- [[cisa|CISA]] and NIST published a new list of product categories that must begin incorporating \"Quantum-Resistant\" algorithms.\n- The guidelines are designed to protect critical infrastructure against future quantum computers capable of breaking current [[encryption|encryption]].\n- This marks the beginning of a mandatory transition for federal agencies and tech vendors to update their security protocols.\n\n*Read more about it: https://www.[[cisa|cisa]].gov/resources-tools/resources/product-categories-technologies-use-post-quantum-cryptography-standards*\n\n---\n<br>"
@@ -5253,22 +5565,22 @@ const wikiData = {
                         ],
                         "links": [
                             "llm",
-                            "neural_networks",
                             "digital_infrastructure",
                             "credential_stuffing",
-                            "pii",
-                            "social_engineering",
-                            "remote-code-execution",
                             "cisa",
+                            "social_engineering",
+                            "neural_networks",
                             "environment_variables",
-                            "ddos",
+                            "pii",
                             "supply-chain-attack",
                             "zero-day",
                             "scada",
-                            "botnets",
-                            "tbps",
-                            "telnet",
+                            "remote-code-execution",
                             "bgp",
+                            "botnets",
+                            "telnet",
+                            "ddos",
+                            "tbps",
                             "malware"
                         ],
                         "group": "2026",
@@ -5301,8 +5613,8 @@ const wikiData = {
                             "CyberSecurity"
                         ],
                         "links": [
-                            "ai-psychosis",
-                            "2026-02-15"
+                            "2026-02-15",
+                            "ai-psychosis"
                         ],
                         "group": "2026",
                         "content": "# [[2026-02-15|Week 08]]\n\n## Artificial Intelligence\n\n### OpenAI Is Nuking Its 4o Model. China\u2019s ChatGPT Fans Aren\u2019t OK\n\n![openai](https://media.wired.com/photos/698e1b134e0cc71b0d6dee95/master/w_1920,c_limit/OpenAI-Nuking-4o-Model-Business.jpg)\n\nDate: 13 February 2026\n\n- ChatGPT users are fighting to keep the chatbot that powers their romantic partners in the app.\n- OpenAI has sunsetted GPT-4o for app users, and it will cut off access to developers using its API on Monday.\n- Many of the most vocal opponents to 4o\u2019s demise are people who treat their chatbot as an emotional or romantic companion.\n\n*Read more about it: https://www.wired.com/story/openai-nuking-4o-model-china-chatgpt-fans-arent-ok/*\n\n---\n<br>\n\n### Zillow Has Gone Wild for AI\n\n![zillow](https://media.wired.com/photos/698e6de5fb604500de64de72/master/w_1920,c_limit/Backchannel-How-AI-Changed-Zillow-Business-85654719.jpg)\n\nDate: 13 February 2026\n\n- Zillow CEO Jeremy Wacksman says the real estate market is \"bouncing along the bottom\" He expects things to improve only marginally in 2026.\n- Zillow is integrating AI into every aspect of its business, from the way it showcases houses.\n- Wacksman says a handful of people were not meeting a performance bar. Wacksman: \u201cA handful of folks that were not Meeting a Performance Bar\u2019\u2019\n\n*Read more about it: https://www.wired.com/story/backchannel-how-artificial-intelligence-changed-zillow/*\n\n---\n<br>\n\n### Why top talent is walking away from OpenAI and xAI\n\n![top-talent](https://media.wired.com/photos/6983b56827e294ea7eb1b76d/master/w_1920,c_limit/Companies-Wont-Admit-to-Replacing-Workers-with-AI-Business.jpg)\n\nDate: 13 February 2026\n\n- AI companies have been hemorrhaging talent the past few weeks.\n- Half of xAI\u2019s founding team has left the company.\n- OpenAI is facing its own shakeups.\n\n*Read more about it: https://techcrunch.com/video/why-top-talent-is-walking-away-from-openai-and-xai/*\n\n---\n<br>\n\n### Anthropic\u2019s Super Bowl ads mocking AI with ads helped push Claude\u2019s app into the top 10\n\n![anthropic](https://techcrunch.com/wp-content/uploads/2026/02/Claude-app-gettyImages-2216579136.jpg)\n\nDate: 13 February 2026\n\n- Anthropic\u2019s AI chatbot Claude has climbed from No. 41 on the U.S. App Store to become a top 10 app.\n- As of Friday, Claude sits at No. 7; its highest rank to date.\n- The consumer-focused AI app arrived on iOS in May 2024 to a fairly tepid reception.\n\n*Read more about it: https://techcrunch.com/2026/02/13/anthropics-super-bowl-ads-mocking-ai-with-ads-helped-push-claudes-app-into-the-top-10/*\n\n---\n<br>\n\n### OpenAI removes access to sycophancy-prone GPT-4o model\n\n![openai-gpt-4o](https://techcrunch.com/wp-content/uploads/2025/02/GettyImages-2195918462.jpg)\n\nDate: 13 February 2026\n\n- OpenAI is retiring five ChatGPT models, including the controversial GPT-4o model.\n- The 4o model has been at the center of a number of lawsuits concerning user self-harm, delusional behavior, and [[ai-psychosis|AI psychosis]].\n- Thousands of users have rallied against the retirement of 4o.\n\n*Read more about it: https://techcrunch.com/2026/02/13/openai-removes-access-to-sycophancy-prone-gpt-4o-model/*\n\n---\n<br>\n\n### Airbnb says a third of its customer support is now handled by AI in the US and Canada\n\n![airbnb](https://techcrunch.com/wp-content/uploads/2025/05/Airbnb-Summer-feat.jpg?resize=1280,720)\n\nDate: 13 February 2026\n\n- Airbnb says its custom-built AI agent is now handling roughly a third of its customer support issues in North America.\n- If successful, more than 30% of its total customer support tickets will be handled by AI voice and chat in all the languages where it also employs a human customer service agent.\n- The company also touted its recent hire of CTO Ahmad Al-Dahle for his AI expertise.\n\n*Read more about it: https://techcrunch.com/2026/02/13/airbnb-says-a-third-of-its-customer-support-is-now-handled-by-ai-in-the-u-s-and-canada/*\n\n---\n<br>\n\n## Cyber Security\n\n### Fintech lending giant Figure confirms data breach\n\n![fintech](https://techcrunch.com/wp-content/uploads/2026/02/figure-technology-logo-times-squware.jpg?resize=1280,854)\n\nDate: 13 February 2026\n\n- Figure Technology, a blockchain-based lending company, confirmed it experienced a data breach.\n- A spokesperson said the breach originated when an employee was tricked with a social engineering attack.\n- The hacking group ShinyHunters took responsibility for the hack on its official dark web leak website.\n\n*Read more about it: https://techcrunch.com/2026/02/13/fintech-lending-giant-figure-confirms-data-breach/*\n\n---\n<br>\n\n### Indian pharmacy chain giant exposed customer data and internal systems\n\n![indian-pharmacy](https://techcrunch.com/wp-content/uploads/2026/02/medications-drugs-2237708773.jpg?resize=1280,848)\n\nDate: 13 February 2026\n\n- A security lapse allowed outsiders to gain full administrative control of DavaIndia Pharmacy's website.\n- The issue affected the pharmacy arm of Zota Healthcare, which operates a large network of retail outlets across India.\n- The vulnerability was fixed within weeks, though confirmation from the company took longer.\n\n*Read more about it: https://techcrunch.com/2026/02/13/indias-major-pharmacy-chain-exposed-customer-data-and-internal-systems/*\n\n---\n<br>\n"
@@ -5334,9 +5646,9 @@ const wikiData = {
                             "ArtificialIntelligence"
                         ],
                         "links": [
+                            "cvss",
                             "beyondtrust",
                             "ransomware",
-                            "cvss",
                             "semiconductor",
                             "malware"
                         ],
@@ -5354,8 +5666,8 @@ const wikiData = {
                             "ArtificialIntelligence"
                         ],
                         "links": [
-                            "2026-02-28",
                             "agentic-ai",
+                            "2026-02-28",
                             "malware"
                         ],
                         "group": "2026",
@@ -5373,10 +5685,10 @@ const wikiData = {
                             "GeneralTechnology"
                         ],
                         "links": [
+                            "ransomware",
                             "2026-02-28",
                             "open-source",
-                            "phishing",
-                            "ransomware"
+                            "phishing"
                         ],
                         "group": "2026",
                         "content": "# [[2026-02-28|Week 09]]\n\n## Artificial Intelligence\n\n### Google\u2019s AI search results will make links more obvious\n\nDate: 17 February 2026\n\n- Google says it will now display links more prominently inside its AI-powered features in Search.\n- A list of links will now appear inside a pop-up when you hover over the sources in AI Overviews and AI Mode on desktop.\n- The European Commission also began investigating the company\u2019s AI search features.\n\n*Read more about it: https://www.theverge.com/tech/880475/google-ai-overviews-ai-mode-links-update*\n\n---\n<br>\n\n### India bids to attract over $200B in AI infrastructure investment by 2028\n\nDate: 17 February 2026\n\n- India has set out an aggressive push to attract more than $200 billion in artificial-intelligence infrastructure investment over the next two years.\n- To attract investment, the government is rolling out a mix of tax incentives, state-backed venture capital, and policy support.\n- The push also faces structural challenges, including access to reliable power and water for energy-intensive data centers.\n\n*Read more about it: https://techcrunch.com/2026/02/17/india-bids-to-attract-over-200b-in-ai-infrastructure-investment-by-2028/*\n\n---\n<br>\n\n### European Parliament blocks AI on lawmakers\u2019 devices, citing security risks\n\nDate: 17 February 2026\n\n- The European Parliament has reportedly blocked lawmakers from using the baked-in AI tools on their work devices.\n- The move comes as several EU member countries reevaluate their relationships with U.S. tech giants.\n- The EU has some of the strongest data protection rules in the world.\n\n*Read more about it: https://techcrunch.com/2026/02/17/european-parliament-blocks-ai-on-lawmakers-devices-citing-security-risks/*\n\n---\n<br>\n\n### Running AI models is turning into a memory game\n\nDate: 17 February 2026\n\n- The price for DRAM chips has jumped roughly 7x in the last year.\n- There\u2019s a growing discipline in orchestrating all that memory.\n- Companies that master it will be able to make the same queries with fewer tokens.\n\n*Read more about it: https://techcrunch.com/2026/02/17/running-ai-models-is-turning-into-a-memory-game/*\n\n---\n<br>\n\n### Mistral AI buys Koyeb in first acquisition to back its cloud ambitions\n\nDate: 17 February 2026\n\n- Koyeb was founded in 2020 by three former employees of French cloud provider Scaleway. It helps developers process data without worrying about server infrastructure.\n- Koyeb expects its platform to transition into a \u2018core component\u2019 of Mistral Compute.\n\n*Read more about it: https://techcrunch.com/2026/02/17/mistral-ai-buys-koyeb-in-first-acquisition-to-back-its-cloud-ambitions/*\n\n---\n<br>\n\n### Anthropic releases Sonnet 4.6\n\nDate: 17 February 2026\n\n- Anthropic has released a new version of its midsized Sonnet model.\n- Sonnet 4.6 will be the default model for Free and Pro plan users.\n- The beta release of the new model includes a context window of 1 million tokens.\n\n*Read more about it: https://techcrunch.com/2026/02/17/anthropic-releases-sonnet-4-6/*\n\n---\n<br>\n\n## Cyber Security\n\n### Meta and Other Tech Firms Put Restrictions on Use of OpenClaw Over Security Fears\n\nDate: 17 February 2026\n\n- OpenClaw is a free, [[open-source|open source]] AI tool that can take control of a user\u2019s computer.\n- A Meta executive says he recently told his team to keep OpenClaw off their regular work laptops or risk losing their jobs.\n- At another tech company, Valere, which works on software for organizations including Johns Hopkins University, an employee posted about the tool on internal Slack.\n\n*Read more about it: https://www.wired.com/story/openclaw-banned-by-tech-companies-as-security-concerns-mount/*\n\n---\n<br>\n\n### Man arrested for demanding reward after accidental police data leak\n\nDate: 17 February 2026\n\n- Dutch authorities arrest a 40-year-old man after he downloaded confidential documents.\n- The man allegedly refused to delete them unless he received \"something in return\"\n- Police detained the suspect at his Prinses Beatrixstraat residence in Ridderkerk.\n\n*Read more about it: https://www.bleepingcomputer.com/news/security/man-arrested-for-demanding-reward-after-accidental-police-data-leak/*\n\n---\n<br>\n\n### Eurail says stolen traveler data now up for sale on dark web\n\nDate: 17 February 2026\n\n- Eurail B.V. is a Netherlands-based firm that manages and sells passes for train travel across Europe.\n- Last month, the company disclosed that it suffered a data breach when threat actors gained unauthorized access to its customer database.\n- Customers who may have had their information exposed in this incident should be vigilant to potential [[phishing|phishing]] and scam attempts.\n\n*Read more about it: https://www.bleepingcomputer.com/news/security/eurail-says-stolen-traveler-data-now-up-for-sale-on-dark-web/*\n\n---\n<br>\n\n### Washington Hotel in Japan discloses [[ransomware|ransomware]] infection incident\n\nDate: 17 February 2026\n\n- The Washington Hotel brand in Japan has announced that that its servers were compromised in a [[ransomware|ransomware]] attack, exposing various business data.\n- The hospitality group has established an internal task force and engaged external cybersecurity experts to assess the impact of the intrusion.\n\n*Read more about it: https://www.bleepingcomputer.com/news/security/washington-hotel-in-japan-discloses-ransomware-infection-incident/Washington Hotel in Japan discloses [[ransomware|ransomware]] infection incident*\n\n---\n<br>\n\n## General Technology\n\n### Now Pixel 9 phones can transfer files with AirDrop, too\n\nDate: 17 February 2026\n\n- Google has expanded AirDrop support to the Pixel 9 series.\n- Owners of (almost all) Pixel 9 phones will be able to send and receive files a little more easily with Apple devices.\n- Files sent from a Pixel to an iPhone, Mac, or iPad will appear as AirDrop transfers.\n\n*Read more about it: https://www.theverge.com/tech/880210/google-pixel-9-airdrop-quick-share*\n\n---\n<br>\n\n### These are the countries moving to ban social media for children\n\nDate: 17 February 2026\n\n- Australia became the world\u2019s first country to ban social media for children under 16 in December 2025.\n- The ban blocks children from using Facebook, Instagram, Snapchat, Threads, TikTok, X, YouTube, Reddit, Twitch, and Kick.\n- Critics, including Amnesty Tech, have said such bans are ineffective.\n\n*Read more about it: https://techcrunch.com/2026/02/17/social-media-ban-children-countries-list/*\n\n---\n<br>\n"
@@ -5393,12 +5705,12 @@ const wikiData = {
                             "GeneralTechnology"
                         ],
                         "links": [
-                            "vpn",
-                            "model-context-protocol",
-                            "gdpr",
-                            "ransomware",
-                            "2026-02-28",
                             "agentic-ai",
+                            "model-context-protocol",
+                            "2026-02-28",
+                            "vpn",
+                            "ransomware",
+                            "gdpr",
                             "malware"
                         ],
                         "group": "2026",
@@ -5416,11 +5728,11 @@ const wikiData = {
                             "GeneralTechnology"
                         ],
                         "links": [
-                            "generative-ai",
-                            "lmm",
-                            "supply-chain-attack",
+                            "agentic-ai",
                             "2026-02-28",
-                            "agentic-ai"
+                            "supply-chain-attack",
+                            "generative-ai",
+                            "lmm"
                         ],
                         "group": "2026",
                         "content": "# [[2026-02-28|Week 09]]\n\n## Artificial Intelligence\n\n### Google\u2019s new Gemini Pro model has record benchmark scores ;  again\n\nDate: 19 February 2026\n\n- Gemini 3.1 Pro appears to be a big step up from its predecessor, Gemini 3.\n- Google also shared statistics from independent benchmarks that showed it performing significantly better than its previous version. [[lmm|Gemini]] is a Multimodal model.\n\n*Read more about it: https://techcrunch.com/2026/02/19/googles-new-gemini-pro-model-has-record-benchmark-scores-again/*\n\n---\n<br>\n\n### Nvidia deepens early-stage push into India\u2019s AI startup ecosystem\n\nDate: 19 February 2026\n\n- N Nvidia is stepping up efforts to court India\u2019s artificial intelligence startups earlier in their lifecycle.\n- The push is intended to help the AI chipmaker cultivate relationships with future customers.\n- The latest move comes through a partnership with early-stage venture firm Activate.\n- U.S. lacks technical talent outside of the U.S., according to a new study. The study found that the majority of the world's technical talent comes from outside the United States. It also found that many of America's top engineers are from other countries.\n\n*Read more about it: https://techcrunch.com/2026/02/19/nvidia-deepens-early-stage-push-into-indias-ai-startup-ecosystem/*\n\n---\n<br>\n\n### An AI data center boom is fueling Redwood\u2019s energy storage business\n\nDate: 19 February 2026\n\n- Redwood Materials is the fastest-growing unit within the battery recycling and materials startup.\n- Its R&D lab in San Francisco has expanded four-fold into a 55,000-square-foot facility and now employs nearly 100 people.\n- The company\u2019s recent $425 million Series E raise will provide the capital needed to scale the business.\n\n*Read more about it: https://techcrunch.com/2026/02/19/an-ai-data-center-boom-is-fueling-redwoods-energy-storage-business/*\n\n---\n<br>\n\n### Why these startup CEOs don\u2019t think AI will replace human roles\n\nDate: 19 February 2026\n\n- There is a constant debate about how AI is replacing humans in various jobs.\n- Studies suggest that roles where AI can automate most tasks will be impacted. Some analysts believe that AI may also create jobs, with the displacement effect only transitional.\n- Asiri said that Lucidya discloses to users when it\u2019s using a voice AI to communicate. He said that for users, issue resolution is more important than the fact that an AI bot is handling their calls.\n\n*Read more about it: https://techcrunch.com/2026/02/19/web-summit-qatar-read-ai-lucidya-notetakers-customer-support/*\n\n---\n<br>\n\n### YouTube\u2019s latest experiment brings its conversational AI tool to TVs\n\nDate: 19 February 2026\n\n- YouTube is expanding its conversational AI tool to smart TVs, gaming consoles, and streaming devices.\n- Users can click the \u201cAsk\u201d button on their TV screen to summon the AI assistant.\n- The feature offers suggested questions based on the video, or users can use their remote\u2019s microphone button.\n\n*Read more about it: https://techcrunch.com/2026/02/19/youtubes-latest-experiment-brings-its-conversational-ai-tool-to-tvs/*\n\n---\n<br>\n\n### Reddit is testing a new AI search feature for shopping\n\nDate: 19 February 2026\n\n- Reddit is testing a new AI search tool that takes community recommendations and matches them with products from some of the company's shopping and advertising partners.\n- A small group of users in the U.S. will start to see search results that include interactive product carousels with pricing, images, and direct where-to-buy links.\n\n*Read more about it: https://techcrunch.com/2026/02/19/reddit-is-testing-a-new-ai-search-feature-for-shopping/*\n\n---\n<br>\n\n### OpenAI reportedly finalizing $100B deal at more than $850B valuation\n\nDate: 19 February 2026\n\n- OpenAI is nearing a deal to raise more than $100 billion at a valuation that could exceed $850 billion, Bloomberg reports.\n- The deal comes as the [[generative-ai|ChatGPT]]-maker burns through cash as it inches toward profitability.\n\n*Read more about it: https://techcrunch.com/2026/02/19/openai-reportedly-finalizing-100b-deal-at-more-than-850b-valuation/*\n\n---\n<br>\n\n### Perplexity\u2019s Retreat From Ads Signals a Bigger Strategic Shift\n\nDate: 19 February 2026\n\n- Perplexity is abandoning plans to put ads in its AI search product.\n- The company will focus on becoming the most accurate AI service for developers, enterprises, and consumers willing to pay a monthly fee.\n- The move marks a major change for the company, which was one of the first AI firms to start experimenting with ads in 2024.\n\n*Read more about it: https://www.wired.com/story/perplexity-ads-shift-search-google/*\n\n---\n<br>\n\n### Code Metal Raises $125 Million to Rewrite the Defense Industry\u2019s Code With AI\n\nDate: 19 February 2026\n\n- Code Metal, a Boston-based startup that uses AI to write code and translate it into other programming languages, just closed a $125 million Series B funding round.\n- The startup is part of a new wave of startups aiming to modernize the tech industry by using AI to generate code.\n\n*Read more about it: https://www.wired.com/story/vibe-coding-startup-code-metal-raises-series-b-fundraising/*\n\n---\n<br>\n\n## Cyber Security\n\n### FBI says ATM \u2018jackpotting\u2019 attacks are on the rise, and netting hackers millions in stolen cash\n\nDate: 19 February 2026\n\n- Hackers have ramped up their attacks on ATMs in recent years, the FBI says.\n- More than 700 attacks on cash dispensers during 2025 alone netted hackers at least $20 million in stolen cash.\n\n*Read more about it: https://techcrunch.com/2026/02/19/fbi-says-atm-jackpotting-attacks-are-on-the-rise-and-netting-hackers-millions-in-stolen-cash/*\n\n---\n<br>\n\n### Cellebrite cut off Serbia citing abuse of its phone unlocking tools. Why not others?\n\nDate: 19 February 2026\n\n- Phone hacking tool maker Cellebrite has been accused of using its tools to hack into the phones of human rights activists in Jordan and Kenya.\n- The company has dismissed the allegations and declined to commit to investigating them.\n- It's unclear why the company has changed its approach, which appears contrary to its previous actions.\n\n*Read more about it: https://techcrunch.com/2026/02/19/cellebrite-cut-off-serbia-citing-abuse-of-its-phone-unlocking-tools-why-not-others/*\n\n---\n<br>\n\n### The AI security nightmare is here and it looks suspiciously like lobster\n\nDate: 19 February 2026\n\n- A hacker tricked a popular AI coding tool into installing OpenClaw.\n- The hacker took advantage of a vulnerability in Cline, an open-source AI coding [[agentic-ai|agent]].\n- It's a sign of how quickly things can unravel when AI agents are given control over our computers.\n\n*Read more about it: https://www.theverge.com/ai-artificial-intelligence/881574/cline-openclaw-prompt-injection-hack*\n\n---\n<br>\n\n### Texas is suing TP-Link over its ties to China\n\nDate: 19 February 2026\n\n- Texas Attorney General Ken Paxton is suing TP-Link over claims that the router-maker is misleading customers about its ties to China.\n- In a lawsuit filed this week, Paxton claims TP-link is \u201cmasking its Chinese connections,\u201d while serving as \u201can open window for Chinese-sponsored threat actors and Chinese intelligence agencies\u201d - a clear [[supply-chain-attack|Supply Chain Risk]].\n\n*Read more about it: https://www.theverge.com/tech/881500/texas-tp-link-china-lawsuit-anzu-robotics*\n\n---\n<br>\n\n### An FBI \u2018Asset\u2019 Helped Run a Dark Web Site That Sold Fentanyl-Laced Drugs for Years\n\nDate: 19 February 2026\n\n- The father of a tennis player killed by a fatal dose of fentanyl spoke in court earlier this month. He was speaking at the sentencing hearing for Lin Rui-Siang, a convicted administrator of the dark web drug market Incognito.\n- Lin's defense has pointed to an FBI informant who helped run the site for almost two years.\n- The informant allegedly approved the sale of products flagged as potentially tainted with that lethally powerful opioid.\n\n*Read more about it: https://www.wired.com/story/an-fbi-asset-helped-run-a-dark-web-site-that-sold-fentanyl-laced-drugs-for-years/*\n\n---\n<br>\n\n### How to Organize Safely in the Age of Surveillance\n\nDate: 19 February 2026\n\n- Americans are seeking a bottom-up approach to resistance: grassroots organizing.\n- Organizing safely in an age of surveillance increasingly requires technical security know-how.\n- There\u2019s no simple set of tech tips that can help organizers safely build a movement.\n\n*Read more about it: https://www.wired.com/story/how-to-organize-safely-in-the-age-of-surveillance/*\n\n---\n<br>\n\n## General Technology\n\n### The executive that helped build Meta\u2019s ad machine is trying to expose it\n\nDate: 19 February 2026\n\n- Brian Boland served as Meta\u2019s VP of partnerships before leaving in 2020. He testified that Mark Zuckerberg fostered a culture that prioritized growth and profit over users\u2019 wellbeing from the top down.\n- Boland testified that there was never a lockdown around user safety.\n- Boland said he left upwards of $10 million worth of unvested Meta stock on the table when he departed. He said he still finds it \u201cnerve-wracking\u201d every time he speaks out about the company. Boland agreed that advertising business models are not inherently bad.\n\n*Read more about it: https://www.theverge.com/policy/881706/meta-executive-brian-boland-testimony-social-media-addiction-trial*\n\n---\n<br>\n\n### A $10K+ bounty is waiting for anyone who can unplug Ring doorbells from Amazon\u2019s cloud\n\nDate: 19 February 2026\n\n- Ring users currently have to pay a subscription fee to store recordings in Amazon\u2019s cloud.\n- The Fulu Foundation, the consumer advocacy group cofounded by YouTuber Louis Rossmann, is offering an initial bounty of $10,000 to anyone who can integrate Ring doorbells with a local PC or server.\n\n*Read more about it: https://www.theverge.com/tech/881678/ring-doorbell-bounty-amazon-servers-fulu*\n\n---\n<br>\n\n### Meta\u2019s VR metaverse is ditching VR\n\nDate: 19 February 2026\n\n- The company is shifting its focus from VR to mobile games. CEO Mark Zuckerberg says he sees AI as the new social media.\n- The new approach sets Meta up to better compete with platforms like Roblox and Fortnite.\n\n*Read more about it: https://www.theverge.com/tech/881647/meta-vr-mobile-metaverse-horizon-worlds*\n\n---\n<br>\n\n### After Search Party backlash, Ring is still avoiding the bigger questions\n\nDate: 19 February 2026\n\n- Ring founder Jamie Siminoff has been on an \u201cexplanation tour,\u201d following the fallout from its Super Bowl ad and the introduction of its Search Party feature.\n- The problem is the potential for Ring\u2019s vast network of AI-powered camera technology to be turned into a surveillance tool, one accessible to law enforcement.\n\n*Read more about it: https://www.theverge.com/news/881339/after-search-party-backlash-ring-is-still-avoiding-the-bigger-questions*\n\n---\n<br>\n\n### \u2018Pew Pew\u2019: The Chinese Companies Marketing Anti-Drone Weapons on TikTok\n\nDate: 19 February 2026\n\n- Nearly any product imaginable is available for purchase on TikTok straight from Chinese factories.\n- The app\u2019s offerings, it appears, now also extend to drone jammers and other drone-related hardware.\n- TikTok has become an improbable showroom for a drone economy that powers conflicts like Russia's war in Ukraine.\n\n*Read more about it: https://www.wired.com/story/pew-pew-the-chinese-sellers-marketing-military-drones-on-tiktok/*\n\n---\n<br>\n\n### Inside the Rolling Layoffs at Jack Dorsey\u2019s Block\n\nDate: 19 February 2026\n\n- Hundreds of workers were laid off in early February from Jack Dorsey\u2019s Block. Block is the parent company behind the merchant payment processor Square and the payment app Cash App.\n- \u201cMorale is probably the worst I\u2019ve felt in four years,\u201d reads an employee complaint.\n\n*Read more about it: https://www.wired.com/story/inside-rolling-layoffs-jack-dorsey-block/*\n\n---\n<br>\n\n### DHS Opens a Billion-Dollar Tab With Palantir\n\nDate: 19 February 2026\n\n- The Department of Homeland Security struck a $1 billion purchasing agreement with Palantir last week.\n- The agreement simplifies how DHS buys software from the software company.\n- It comes as the company is struggling to address growing tensions over its relationship with DHS and ICE.\n\n*Read more about it: https://www.wired.com/story/department-homeland-security-ice-billion-dollar-agreement-palantir/*\n\n---\n<br>\n\n### Mark Zuckerberg Tries to Play It Safe in Social Media Addiction Trial Testimony\n\nDate: 19 February 2026\n\n- Mark Zuckerberg appeared before a jury in Los Angeles on Wednesday. He was testifying in a lawsuit brought by a now 20-year-old Californian identified as K.G.M.\n- She and her mother are suing Meta, YouTube, Snap, and TikTok. They allege their children fell victim to depression, dysmorphia, and suicide.\n\n*Read more about it: https://www.wired.com/story/mark-zuckerberg-testifies-social-media-addiction-trial-meta/*\n\n---\n<br>\n"
@@ -5437,14 +5749,14 @@ const wikiData = {
                             "GeneralTechnology"
                         ],
                         "links": [
-                            "generative-ai",
-                            "llm",
-                            "vishing",
-                            "phishing",
-                            "cisa",
-                            "zero-day",
                             "cve",
+                            "llm",
+                            "cisa",
+                            "vishing",
                             "2026-02-28",
+                            "generative-ai",
+                            "zero-day",
+                            "phishing",
                             "malware"
                         ],
                         "group": "2026",
@@ -5462,15 +5774,15 @@ const wikiData = {
                             "GeneralTechnology"
                         ],
                         "links": [
-                            "atm-jackpotting",
-                            "incident-response",
-                            "cryptomining-software",
-                            "beyondtrust",
-                            "cisa",
-                            "remote-code-execution",
                             "cve",
-                            "ransomware",
+                            "cisa",
                             "2026-02-28",
+                            "beyondtrust",
+                            "incident-response",
+                            "ransomware",
+                            "cryptomining-software",
+                            "atm-jackpotting",
+                            "remote-code-execution",
                             "semiconductor",
                             "malware"
                         ],
@@ -5489,18 +5801,18 @@ const wikiData = {
                             "GeneralTechnology"
                         ],
                         "links": [
-                            "llm",
-                            "atm-jackpotting",
-                            "phishing",
-                            "supercomputer",
-                            "cryptomining-software",
-                            "beyondtrust",
-                            "cisa",
-                            "cve",
-                            "supply-chain-risk",
-                            "ransomware",
-                            "ai-psychosis",
                             "agentic-ai",
+                            "cve",
+                            "llm",
+                            "supercomputer",
+                            "cisa",
+                            "beyondtrust",
+                            "ransomware",
+                            "cryptomining-software",
+                            "atm-jackpotting",
+                            "ai-psychosis",
+                            "supply-chain-risk",
+                            "phishing",
                             "semiconductor"
                         ],
                         "group": "2026",
@@ -5518,11 +5830,11 @@ const wikiData = {
                             "GeneralTechnology"
                         ],
                         "links": [
-                            "autonomous-weapons",
                             "context-window",
+                            "autonomous-weapons",
                             "zero-day",
-                            "supply-chain-risk",
                             "ai-guardrails",
+                            "supply-chain-risk",
                             "logic-bomb",
                             "malware"
                         ],
@@ -5561,8 +5873,8 @@ const wikiData = {
                     "Code"
                 ],
                 "links": [
-                    "open-source",
-                    "operating-system"
+                    "operating-system",
+                    "open-source"
                 ],
                 "group": null,
                 "content": "# Github Finds\n\nInteresting Pull Requests and Commits from the history of [[open-source|open source]].\n\n## Resources & Culture\n\nGuides on how to behave (or not behave) in [[open-source|open source]].\n\n| Description | Link |\n| :--- | :--- |\n| **The Art of the Commit** | [The Art of the Commit](https://alistapart.com/article/the-art-of-the-commit/) |\n\n## Canonical History\n\nActual milestones in software history.\n\n| Description | Link |\n| :--- | :--- |\n| **Self-Referential**<br>The first commit in the Git repo describing Git itself. | [Git / e83c516](https://github.com/git/git/commit/e83c5163316f89bfbde7d9ab23ca2e25604af290) |\n| **The Removed Promise**<br>Mozilla removes the FAQ: \"Does Firefox sell your personal data? Nope. Never have, never will.\" | [Mozilla / d459add](https://github.com/mozilla/bedrock/commit/d459addab846d8144b61939b7f4310eb80c5470e) |\n\n## The Linux \"Read Only\" Mirror\n\nThe Linux kernel does not accept PRs on GitHub (it uses a mailing list). This has led to a genre of \"confused\" or \"joke\" PRs on the read-only mirror.\n\n| PR | Description | Link |\n| :--- | :--- | :--- |\n| **#386** | **The Typo Incident**<br>User tries to fix a typo. Bot politely says \"email us\". Chaos ensues in comments. | [View PR](https://github.com/torvalds/linux/pull/386) |\n| **#486** | **\"This Code Very Fast\"**<br>A classic joke PR claiming to optimize the kernel for a calculator. | [View PR](https://github.com/torvalds/linux/pull/486) |\n| **#698** | **\"Remove Extra Spaces\"**<br>A bold attempt to remove trailing whitespace from the *entire* kernel at once. | [View PR](https://github.com/torvalds/linux/pull/698) |\n| **#437** | **\"Delete Linux\"**<br>A proposal to simply delete the [[operating-system|operating system]]. | [View PR](https://github.com/torvalds/linux/pull/437) |\n| **#765** | **\"Merry Christmas\"**<br>Optimizing the kernel for the holidays. | [View PR](https://github.com/torvalds/linux/pull/765) |\n| **#779** | **\"Infinity Diff\"**<br>Another massive, mostly broken attempt to fix things via web UI. | [View PR](https://github.com/torvalds/linux/pull/779) |\n"
