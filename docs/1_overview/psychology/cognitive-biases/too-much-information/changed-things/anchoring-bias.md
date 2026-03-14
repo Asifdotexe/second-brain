@@ -5,29 +5,31 @@ tags: Psychology, Negotiation, Marketing
 
 # Anchoring Bias
 
-The Sticky Price Tag.
+"The Sticky First Number"—a cognitive bias where we rely way too heavily on the **first** piece of information we hear (the "Anchor") when making a decision, even if that information is totally random or wrong.
 
-![Anchoring Bias](https://images.prismic.io/thedecisionlab/ac7d00b4-1c09-4c47-97f3-72d7bf8c922d_anchoring-effect-bias.jpeg?auto=compress,format&rect=0,1,2387,1667&w=2388&h=1668)
+**Anchoring Bias** is why you think a $50 shirt is a "bargain" if you saw a $150 shirt first. Your brain doesn't look at the $50 shirt in a vacuum. It Compares it to the "Anchor" ($150). Once a number is in your head, it "Sticks" there, and every other number you see is judged based on that first one.
 
-**Anchoring Bias** is the cognitive tendency to rely too heavily on the first piece of information offered (the "anchor") when making decisions.
+Think of it like **A Boat Anchor**:
+*   Imagine you are in a boat. You drop a heavy anchor into the water.
+*   You can swim around, but the anchor keeps you trapped in one small circle. No matter how hard you paddle, you can't get away from where that anchor hit the floor.
+*   In your mind, the **First Number** is the anchor. You might "negotiate" or "think," but you will always stay within a small circle around that first number.
 
-Imagine walking into a luxury store. You see a bag for $5,000. "Insane!" you think. Then you see a smaller bag for $1,200. "Ooh, that's a steal!"
-Is $1,200 a good price for a bag? Probably not. But because your brain was "anchored" to the $5,000 price, the $1,200 feels cheap by comparison. The first number you see sets the stage for everything that follows.
-
-## Key Examples
-
-*   **Salary Negotiation:** The first number spoken usually dictates the final range. If you ask for $100k, the negotiation happens around $100k. If you ask for $60k, you'll never get to $100k.
-*   **Sales:** "Was $100, Now $50!" The $100 is a fake anchor designed to make the $50 feel like a win.
+## Common Examples
+*   **The Luxury Store:** A jewelry store puts a $50,000 watch right in the window. No one buys it. But because you saw $50,000 first, the $2,000 watches inside feel "Reasonable." The $50,000 was a fake anchor.
+*   **Salary Negotiation:** If an employer says, *"We usually pay $50k,"* they have dropped the anchor. Even if you are worth $80k, you will find yourself arguing for $55k or $60k. They have trapped you in their "Circle."
+*   **Sales/Discounts:** "Was $100, Now $49!" The $100 anchor makes the $49 look like a victory, even if the item is only worth $20.
 
 ## FAQs
 
 *1. Does it work even if the number is random?*
-Yes. Studies show that if you ask people to write down the last two digits of their social security number, and then bid on a bottle of wine, people with higher SSN numbers bid higher. The brain clings to *any* available number when it's unsure.
+**Shockingly, yes.** In one study, researchers asked people to spin a "Wheel of Fortune" (with random numbers). Then they asked them to guess how many countries are in Africa. People who spun a **High** number on the wheel guessed a **Higher** number of countries. The brain clings to **Any** number it sees when it is unsure.
 
-*2. How do I avoid it?*
-Do your research *before* you enter the room. If you know the car is worth $20k, the dealer's $30k sticker price won't anchor you because you brought your own anchor.
+*2. How do I beat it?*
+**Set your own Anchor.** Don't let someone else speak first. If you are buying a car, do your research and know it's worth $15k. When you walk in, you say: *"I'm looking to spend $14k."* Now **You** have dropped the anchor, and the dealer has to fight to get out of your circle.
 
 ### Further Reading
 
-*   **Concept:** *[Anchoring and Adjustment](https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/anchoring-heuristic/)*.
-*   **Study:** *[The Effect of Anchoring in Negotiation](https://www.pon.harvard.edu/daily/negotiation-skills-daily/what-is-anchoring-in-negotiation/)* (Harvard Law School).
+*   **The Price Trap:** *[[loss-aversion|Loss Aversion Overview]]* (Why losing money hurts).
+*   **The Frame:** *[[false-dilemma|False Dilemma Overview]]* (How choices are limited).
+*   **Article:** *[The Anchoring Effect in Negotiations](https://www.pon.harvard.edu/daily/negotiation-skills-daily/what-is-anchoring-in-negotiation/)* (Harvard Law tips).
+*   **Video:** *[How Numbers Control Your Brain](https://www.youtube.com/watch?v=RPlfC808EPU)* (Understanding 'Anchoring and Adjustment').

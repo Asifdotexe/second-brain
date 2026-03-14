@@ -5,27 +5,32 @@ tags: CognitiveBias, NeedToActFast, InvestedTime
 
 # IKEA Effect
 
-Loving your wobbly, slightly crooked bookshelf more than a master-crafted piece simply because you spent three hours building it yourself with an Allen wrench.
+"The Builder’s Love"—a cognitive bias where we believe a product is significantly more valuable simply because we built or assembled it ourselves.
 
-The **IKEA Effect** is a cognitive bias in which consumers place a disproportionately high value on products they partially created or assembled themselves.
+**The IKEA Effect** is named after the Swedish furniture store where you have to build your own bookshelves. It’s an "Ego Bias." When you spend 4 hours sweating, swearing, and holding an Allen wrench to build a table, your brain doesn't just see a "Table." It sees a monument to your own **Competence**. Because you put your own "Labor" into it, you "Endow" the object with extra value that no one else can see.
 
-When we expend labor on a task and successfully complete it, we develop a deep psychological attachment to the outcome. By successfully building the furniture, we are not just evaluating the physical wood; we are adding the emotional value of our own perceived competence and hard work to the final "worth" of the object. 
+Think of it like **A Wobbly Bookshelf**:
+*   You build a bookshelf. It’s a little crooked, and one of the screws is sticking out. 
+*   If you saw that same bookshelf at a garage sale for $50, you would laugh and walk away. It’s "Garbage."
+*   But because **You built it**, you wouldn't sell it for less than $200. You tell people, *"It has character! It’s sturdy!"*
+*   **The Reality:** You aren't valuing the wood; you are valuing the **Effort** you spent building it.
 
-The labor we invest physically alters our perception of the product, making us view our amateurish creations on par with those of experts across various domains spanning from flat-pack furniture to origami.
-
-## Key Characteristics
-*   **Effort Justification:** The harder it was to build or the more frustrating the assembly process, the more fiercely we will defend the final product's quality.
-*   **Requirement of Completion:** The effect entirely disappears if the person fails to complete the assembly or if their creation is immediately disassembled after completion.
-*   **Blindness to Flaws:** Objective design flaws are ignored or rationalized because "I physically built it."
+## How Companies Trick You into Loving Them
+*   **The Cake Mix Paradox:** In the 1950s, instant cake mixes failed because they were "too easy." All you had to do was add water. Housewives felt like they weren't "Baking." 
+*   **The Solution:** Companies changed the recipe so you had to **Crack an Egg** yourself. That tiny extra bit of labor (The IKEA Effect) made people feel like they "Made the Cake," and sales exploded.
+*   **Meal Kits:** Companies like Blue Apron make you chop the onions yourself so you feel like a "Chef," which makes the meal taste better to you than if it had arrived already cooked.
 
 ## FAQs
 
-*1. Do companies exploit this bias?*
-Heavily. Many meal-kit companies deliberately leave out basic ingredient steps (like requiring you to crack your own eggs or add your own milk) because taking away *all* the effort actually removes the customer's feeling of accomplishment and connection to the meal.
+*1. Does it only happen for physical things?*
+**No.** It happens in **Software** (The "Not Invented Here" syndrome, where programmers refuse to use a better tool just because they didn't write it) and in **Writing** (Refusing to delete a bad paragraph because you spent 3 hours writing it).
 
-*2. Is this limited to physical objects?*
-No. It heavily impacts software engineering (the "Not Invented Here" syndrome, where developers irrationally prefer their own buggy code over far superior open-source tools) and project management.
+*2. When does it STOP working?*
+The effect disappears if you fail to finish. If you build half a table and it breaks, you hate it. The IKEA Effect only kicks in when you **successfully complete** the task.
 
 ### Further Reading
 
-*   **Article:** *[The IKEA effect: When labor leads to love (HBS)](https://www.hbs.edu/faculty/Pages/item.aspx?num=41121)* (The foundational research paper defining the bias).
+*   **The Ownership Bias:** *[[endowment-effect|The Endowment Effect]]* (Valuing what you own).
+*   **The Labor Rule:** *[[generation-effect|The Generation Effect]]* (Remembering what you create).
+*   **Article:** *[The IKEA Effect: When Labor Leads to Love](https://www.hbs.edu/faculty/Pages/item.aspx?num=41121)* (The original research paper).
+*   **Video:** *[Why We Love Things We Build](https://www.youtube.com/watch?v=wOHH3nS0kYk)* (The psychology of construction).

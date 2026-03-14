@@ -5,33 +5,33 @@ tags: Psychology, Media, RiskAssessment
 
 # Availability Heuristic
 
-The "Shark Attack" Syndrome.
+"The Shark Attack Syndrome"—a mental shortcut where our brains judge the probability of an event happening based on how easily we can remember an example of it. 
 
-![Availability Heuristic](https://images.prismic.io/thedecisionlab/cce9c879-5faa-46cb-a685-4542362fc572_availability-heuristic-the-decision-lab.png?auto=compress,format)
+**The Availability Heuristic** is why people are more afraid of flying than driving, even though car crashes are 1,000x more common. A plane crash is a "Vivid" memory—it’s on the news, it has dramatic videos, and it’s terrifying. A car crash is "Boring" and happens every day. Because the plane crash is "Available" in your memory, your brain tells you it is "More Likely."
 
-**The Availability Heuristic** is a mental shortcut where we judge the likelihood of an event based on how easily we can recall similar examples.
+Think of it like **A Google Search with Bad Ranking**:
+*   Your brain is a search engine. When you ask, *"Is it safe to go in the ocean?"* your brain clicks the **Top 5 Results**. 
+*   Because you watched the movie *Jaws* and saw a news story about a shark attack last month, those two videos are at the **Very Top** of your memory results.
+*   **The Error:** You ignore the millions of news stories that would say *"Billions of people swam today and nothing happened,"* because those stories are "Boring" and were never "Indexed" by your brain. You assume because you can recall a shark attack easily, it must happen all the time.
 
-If you ask someone, "What is more likely to kill you: A shark or a falling coconut?" most people intuitively scream "SHARK!" Why? because you've seen the movie *Jaws*. You recall catchy news headlines about shark attacks. You have *zero* vivid memories of coconut deaths.
-Your brain assumes: **"If I can remember it easily, it must happen often."**
-
-![Availability Heuristic](https://images.prismic.io/thedecisionlab/Z3163JbqstJ99JWC_AvailabilityHeuristic.png?auto=format%2Ccompress&rect=1%2C0%2C510%2C268&w=2000&h=1050)
-
-## How it Works
-
-Your brain uses "Ease of Recall" as a proxy for "Frequency."
-*   **Vivid events** (plane crashes, kidnapping, winning the lottery) stick in memory.
-*   **Boring events** (car crashes, heart disease, losing the lottery) fade away.
-Result: We are terrified of planes but text while driving.
+## How it Changes Your Life
+1.  **News Hacking:** The news intentionally focuses on the "Rare and Scary." This "Hacks" your brain into believing the world is much more dangerous than it actually is.
+2.  **Productivity:** You might judge a coworker's entire year of hard work based on a small mistake they made **Yesterday**, simply because that mistake is the most "Available" memory you have of them.
+3.  **Lottery:** You see one person on TV with a giant novelty check. That vivid image makes you think winning is possible, helping you ignore the 100 million people who lost.
 
 ## FAQs
 
-*1. Is this why the news feels so scary?*
-Yes. The news reports *anomalies* (rare, scary things). If you watch the news every day, your availability heuristic is hacked to believe the world is far more dangerous than it statistically is.
+*1. Is it the same as [[confirmation-bias|Confirmation Bias]]?*
+**No.** 
+*   **[[confirmation-bias|Confirmation Bias]]:** Is looking for info that proves you are right.
+*   **Availability Heuristic:** Is judging the world based on what is "loudest" in your memory.
 
-*2. How does it affect business?*
-Performance reviews. A manager might judge an employee's entire year based on a mistake they made *yesterday*, because that memory is the most "available."
+*2. How do I beat it?*
+**Look at the Math.** Stop trusting your "Vivid Memories" and start trusting **Statistics**. If you feel scared of something, Google the actual percentage chance of it happening. The numbers will usually calm your "Availability" brain down.
 
 ### Further Reading
 
-*   **Article:** *[The Availability Heuristic](https://thedecisionlab.com/biases/availability-heuristic)* (The Decision Lab).
-*   **Book:** *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)* by Daniel Kahneman.
+*   **The Probability Gap:** *[[gamblers-fallacy|Gambler's Fallacy Overview]]* (Misunderstanding randomness).
+*   **The Vivid Trap:** *[[identifiable-victim-effect|Identifiable Victim Effect]]* (Caring about one person more than a million).
+*   **Article:** *[The Availability Heuristic (The Decision Lab)](https://thedecisionlab.com/biases/availability-heuristic)* (Why ease of recall is a bad ruler).
+*   **Video:** *[Thinking Fast and Slow](https://www.youtube.com/watch?v=Hu4YbmPhFKQ)* (Kahneman’s guide to our two-speed brain).

@@ -5,31 +5,31 @@ tags: Psychology, CriticalThinking, DecisionMaking
 
 # Confirmation Bias
 
-The "Yes Man" inside your head.
+"The Yes-Man inside Your Head"—the cognitive bias where you only notice, look for, and remember information that proves you are **Right**, while completely ignoring everything that proves you are **Wrong**.
 
-![Confirmation Bias](https://images.prismic.io/thedecisionlab/ZkdQKiol0Zci9Pcq_Untitled_Artwork35.png?auto=format,compress)
+**Confirmation Bias** is the mother of all biases. It’s why we only watch news channels that agree with us and only follow people on social media who think like we do. Our brain hates being "Wrong" because changing our minds requires a lot of biological energy. To save power, your brain acts like a filter that lets in the "Friendly" data and blocks the "Hostile" data.
 
-**Confirmation Bias** is the tendency to search for, interpret, favor, and recall information in a way that confirms your pre-existing beliefs or hypotheses.
+Think of it like **A Special Pair of Sunglasses**:
+*   Imagine you put on a pair of sunglasses that only lets you see the color **Red**. 
+*   You walk outside and you see red cars, red flowers, and red signs everywhere. You think, *"Wow, the whole world is red! I was right!"*
+*   **The Reality:** The world is full of blue, green, and yellow objects. You just can't see them because your "Sunglasses" (your current belief) are filtering them out. 
 
-Imagine you are looking for a new car. You decide you want a red Toyota. Suddenly, you see red Toyotas *everywhere*. Did the factory just make more? No. Your brain is filtering out the blue Hondas and white Fords because they don't match your current "mission." Confirmation Bias works the same way with ideas. If you believe "Left-handed people are creative," you will notice every creative lefty and ignore every uncreative one.
-
-![Confirmation Bias](https://images.prismic.io/thedecisionlab/b2f27a87-b3da-487f-8359-adf46d4bd96a_Confirmation_Bias_TDL-1024x715.png?auto=compress,format)
-
-## How it Works
-
-1.  **Filtering:** You subconsciously ignore evidence that contradicts your view (Disconfirmation Bias).
-2.  **Interpretation:** You twist ambiguous evidence to support your view. (e.g., "He didn't text back because he's busy," not "He's not interested," because you *want* to believe he likes you).
-3.  **Memory:** You remember the times you were right and forget the times you were wrong.
+## How it Tricks You
+1.  **Selective Searching:** You only Google things like *"Why coffee is healthy"* instead of *"The risks of coffee."*
+2.  **Twisted Interpretation:** When you see a "neutral" event, you twist it to support your view. (e.g., *"He didn't text me back because he's so busy being a successful person,"* instead of *"Maybe he's just not interested."*)
+3.  **Selective Memory:** You remember the one time your "lucky socks" worked, and you forget the ten times you lost while wearing them.
 
 ## FAQs
 
-*1. Is it lying?*
-No, it's not intentional deception. It's an efficiency mechanism. Your brain wants to save energy. Changing your mind requires re-wiring neural pathways (hard work). Keeping your current opinion requires doing nothing (easy).
+*1. Is it the same as lying?*
+**No.** You aren't doing it on purpose. It happens subconsciously. Your brain is just trying to protect your ego and keep your world feeling "Stable."
 
 *2. How do I beat it?*
-Actively look for the **disconfirming evidence**. Ask yourself: "If I were wrong, what would I expect to see?" Then look for *that*.
+**Become your own "Devil’s Advocate."** Whenever you feel 100% sure about something, stop and ask: *"What evidence would I expect to see if I were WRONG?"* Then, go look for that specific evidence. If you search for the thing that proves you wrong and **can't** find it, then your belief is actually strong.
 
 ### Further Reading
 
-*   **Book:** *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)* by Daniel Kahneman.
-*   **Article:** *[The Mother of All Biases](https://fs.blog/confirmation-bias/)* (Farnam Street).
+*   **The Ego Shield:** *[[backfire-effect|The Backfire Effect]]* (When facts make you more stubborn).
+*   **The Follower:** *[[social-proof|Social Proof Overview]]* (Following the crowd).
+*   **Article:** *[The Mother of All Biases](https://fs.blog/confirmation-bias/)* (A deep dive into why we see what we want).
+*   **Video:** *[Why You Think You're Right Even When You're Wrong](https://www.youtube.com/watch?v=Hu4YbmPhFKQ)* (TED Talk on the 'Soldier' vs 'Scout' mindset).

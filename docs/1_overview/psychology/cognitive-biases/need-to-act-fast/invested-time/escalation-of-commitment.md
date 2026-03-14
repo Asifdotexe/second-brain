@@ -5,28 +5,34 @@ tags: CognitiveBias, NeedToActFast, InvestedTime
 
 # Escalation of Commitment
 
-Keeping a $500 monthly gym membership for five years without ever going, simply because canceling it would mean admitting the first four years were a massive waste of money.
+"Doubling Down on Disaster"—the human tendency to keep pouring time, money, or effort into a failing project simply because you’ve already invested so much in it.
 
-**Escalation of Commitment** (also heavily related to the [[sunk-cost-fallacy|Sunk Cost Fallacy]] and sometimes called **Irrational Escalation**) is the human behavior pattern in which an individual or group faces increasingly negative outcomes from a decision, action, or investment, but continues to heavily invest resources rather than altering course.
+**Escalation of Commitment** is the "Action" version of the **[[sunk-cost-fallacy|Sunk Cost Fallacy]]**. It is a desperate attempt to save your ego. Stopping a failing project means admitting you were "Wrong" and that your past effort was "Wasted." To avoid that pain, your brain tells you: *"Just a little more effort and we will finally win!"* 
 
-This happens because stopping the behavior forces the brain to painfully admit two things: 
-1) the initial resources are completely gone
-2) we made a terrible mistake. To protect our delicate egos and avoid looking foolish or incompetent to our peers, we double down. 
+Think of it like **A Bad Poker Hand**:
+*   You’ve already put $100 into the pot. You realize your cards are terrible and you are 99% likely to lose.
+*   **The Smart Move:** Fold. Stop the bleeding. Save your remaining $900.
+*   **The Escalation:** You think, *"I can't fold now! I've already spent $100! I have to stay in to 'get it back'!"*
+*   You bet another $200, and then another $200. You ended up losing $500 instead of $100, just because you couldn't admit the first $100 was gone.
 
-We foolishly convince ourselves that if we just invest a *little* more time, money, or effort, the tide will turn and we will ultimately be vindicated.
-
-## Key Characteristics
-*   **The Paradigm of Justification:** The need to justify prior choices heavily outweighs objective logic about the future.
-*   **Groupthink Amplification:** Escalation happens even faster in corporate teams because admitting failure means losing face in front of a committee.
+## Why it Happens in Groups
+Corporate teams and governments are even worse at this than individuals. This is called **"Loss of Face."**
+*   A CEO starts a massive project that is clearly failing.
+*   If she cancels it, she looks incompetent in front of the board.
+*   So, she asks for **more** budget. She hopes that if she can eventually make it work (even if it costs 10x more than it's worth), no one will remember the mistake. 
 
 ## FAQs
 
 *1. How is this different from the [[sunk-cost-fallacy|Sunk Cost Fallacy]]?*
-They are often used interchangeably, but Escalation of Commitment specifically refers to the *action* of actively increasing (escalating) the bad investment (e.g., a poker player doubling their bet on a terrible hand), whereas the [[sunk-cost-fallacy|Sunk Cost Fallacy]] is the *belief* underpinning it.
+*   **[[sunk-cost-fallacy|Sunk Cost Fallacy]]:** Is the **Belief** ("I can't quit because of my past investment").
+*   **Escalation of Commitment:** Is the **Action** ("I am going to invest *even more* right now to fix it").
 
-*2. How do you stop escalating?*
-Bring in an outside observer. A neutral third party has no emotional attachment to the initial decision and can objectively point out that the ship is sinking and it's time to find a lifeboat.
+*2. How do I stop?*
+Bring in a **Neutral Outsider**. A person who didn't start the project doesn't have an ego attached to it. They can look at the math and tell you: *"The ship is sinking. Get on the lifeboat now."*
 
 ### Further Reading
 
-*   **Article:** *[Escalation of Commitment (Harvard Business Review)](https://hbr.org/1987/03/knowing-when-to-pull-the-plug)* (A classic exploration of knowing when to pull the plug on failing projects).
+*   **The Underlying Belief:** *[[sunk-cost-fallacy|The Sunk Cost Fallacy]]* (Throwing good money after bad).
+*   **The Pride Bias:** *[[disposition-effect|The Disposition Effect]]* (Holding onto losers).
+*   **Article:** *[Knowing When to Pull the Plug (HBR)](https://hbr.org/1987/03/knowing-when-to-pull-the-plug)* (A classic business guide).
+*   **Video:** *[Why We Keep Doing Things We Hate](https://www.youtube.com/watch?v=Hu4YbmPhFKQ)* (Understanding irrational escalation).

@@ -5,28 +5,31 @@ tags: Psychology, Memory, UXDesign
 
 # Peak-End Rule
 
-The Highlight Reel.
+"The Highlight Reel"—a cognitive bias where we judge an entire experience by how we felt at its absolute **Peak** (most intense part) and at its **End**, rather than the average of the whole thing.
 
-**The Peak-End Rule** is the psychological heuristic where we judge an experience strictly by how it felt at its most intense point (the "Peak") and at its end (the "End"), rather than the average of the whole experience.
+**The Peak-End Rule** is why you forget the boring parts of your life. Your brain is not a video camera; it is a scrapbook. It doesn't have room for every minute of a 10-day vacation, so it only saves a few "High Resolution" photos of the best (or worst) moments and the final moment. This means a vacation can be 90% terrible, but if the last day is amazing, you will remember it as a "Good Trip."
 
-Imagine a 10-day vacation.
-*   **Scenario A:** 9 amazing days, but on Day 10 you lose your luggage.
-*   **Scenario B:** 3 good days, 6 okay days, and on Day 10 you get a free upgrade.
-You will remember **Scenario B** as the "better" trip, even though Scenario A had more total happiness. Your brain ignores the duration; it only saves the snapshots of the Climax and the Finale.
+Think of it like **A Trip to an Amusement Park**:
+*   You spend 8 hours sweating in a long line, eating overpriced food, and being annoyed by crowds. (90% of the time is Boring/Painful).
+*   Then, you ride a 5-minute roller coaster that is the most exciting thing you've ever done. (**The Peak**).
+*   Right before you leave, you share a beautiful sunset ice cream with a friend. (**The End**).
+*   **The Result:** You tell everyone, *"That was the best day ever!"* Your brain has completely "Deleted" the 8 hours of standing in line and only saved the 10 minutes of joy.
 
-## Why it Happens
-
-Memory is expensive. Your brain doesn't record a video of your life; it keeps a scrapbook. It only has room for the emotional spikes and the most recent moment.
+## How to "Hack" Your Reputation
+1.  **Dates and Meetings:** It doesn't matter if a meeting was a bit dry. If you end with a high-energy "Win" or a great compliment, people will walk away thinking the whole hour was productive.
+2.  **Product Design:** Apps like **Duolingo** use this. The lessons can be hard, but when you finish, you get a "Happy Owl" and a "Streak" celebration. That "High Point" at the end is why you keep coming back.
 
 ## FAQs
 
-*1. How is this used against me?*
-**Disney World.** You wait in line for 2 hours (pain), spend 5 minutes on the ride (Peak), and buy a souvenir on the way out (End). You forget the 2 hours of sweating and remember it as "Magical."
+*1. Does it work for bad things too?*
+**Absolutely.** You could have a perfect 2-year relationship, but if the breakup is messy and painful, you will look back on the entire 2 years as "Terrible." The bad ending "Poisons" the good memories.
 
-*2. How can I use this?*
-If you have a bad meeting or a bad date, try to crack a joke or give a compliment right at the **end**. The other person will remember the whole interaction much more fondly.
+*2. Why does the brain do this?*
+**Efficiency.** It is too expensive for the brain to store every "Normal" moment. It only stores the **Survival Data**: *"Where was the danger (The Peak)?"* and *"How did it turn out (The End)?"* 
 
 ### Further Reading
 
-*   **Concept:** *[Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)* (Kahneman introduced this).
-*   **Article:** *[How the Peak-End Rule rules your life](https://www.nngroup.com/articles/peak-end-rule/)* (Nielsen Norman Group - UX Perspective).
+*   **The Duration Bias:** *[Duration Neglect](https://en.wikipedia.org/wiki/Duration_neglect)* (Why the length of an experience doesn't matter).
+*   **The Memory Pruning:** *[[availability-heuristic|Availability Heuristic Overview]]* (Judging by what flashes first).
+*   **Article:** *[How the Peak-End Rule Rules Your Life](https://www.nngroup.com/articles/peak-end-rule/)* (UX design secrets).
+*   **Video:** *[Daniel Kahneman: The Riddle of Experience vs. Memory](https://www.ted.com/talks/daniel_kahneman_the_riddle_of_experience_vs_memory)* (The source of this rule).

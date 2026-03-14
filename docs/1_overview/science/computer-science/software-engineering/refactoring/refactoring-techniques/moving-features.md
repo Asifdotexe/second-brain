@@ -5,99 +5,41 @@ tags: Refactoring, CleanCode, Techniques
 
 # Moving Features between Objects
 
-Even if you have distributed functionality among different classes in a less-than-perfect way, there is still hope. These [[what-is-refactoring|refactoring]] techniques show how to safely move functionality between classes, create new classes, and hide implementation details from public access.
+"The Neighbors"—techniques for moving code and data between different classes to ensure that everything is in its "Proper Home."
+
+In bad code, classes are often like neighbors who are constantly "Snooping" in each other’s business. A method in **Class A** might spend more time talking to **Class B** than to its own data. This is called "Feature Envy." We use these techniques to move the logic to the class that actually "Owns" it.
 
 ## 1. Move Method
-
-**Problem:** A method is used more in another class than in its own class.
+**The Problem:** A method in `Account` spends all its time calculating things using data from `AccountType`. 
+**The Solution:** Move the whole method into `AccountType`. If the code depends on `AccountType`'s data, it belongs IN `AccountType`. This is called **"Tell, Don't Ask"**—you should tell an object what to do, not ask it for its data and do the work yourself.
 
 ```java
-// The Account class calculates overdraft charges based on an AccountType.
+// BEFORE: Account is doing AccountType's job
 class Account {
-  private AccountType type;
-  private int daysOverdrawn;
-  
-  // This method relies more on AccountType than Account itself
-  double overdraftCharge() {
-    if (type.isPremium()) {
-      double result = 10;
-      if (daysOverdrawn > 7) {
-        result += (daysOverdrawn - 7) * 0.85;
-      }
-      return result;
-    } else {
-      return daysOverdrawn * 1.75;
-    }
+  double getOverdraftCharge() {
+    if (this.type.isPremium()) { /* ... */ }
   }
 }
-```
 
-**Solution:** Create a new method in the class that uses the method the most, then move code from the old method to there. Turn the code of the original method into a reference to the new method in the other class or else remove it entirely.
-
-```java
+// AFTER: AccountType does its own job
 class AccountType {
-  // Method is moved here
-  double overdraftCharge(int daysOverdrawn) {
-    if (isPremium()) {
-      double result = 10;
-      if (daysOverdrawn > 7) {
-        result += (daysOverdrawn - 7) * 0.85;
-      }
-      return result;
-    } else {
-      return daysOverdrawn * 1.75;
-    }
-  }
-}
-
-class Account {
-  private AccountType type;
-  private int daysOverdrawn;
-  
-  double overdraftCharge() {
-    return type.overdraftCharge(daysOverdrawn);
-  }
+  double getOverdraftCharge(int days) { /* ... */ }
 }
 ```
 
 ## 2. Extract Class
+**The Problem:** You have a `Person` class that has 30 fields, including `officeAreaCode`, `officeNumber`, and `officeExtension`.
+**The Issue:** Your `Person` class is "Bloated." It’s trying to be a "Person" AND a "Phone Number." 
+**The Solution:** Create a new class called `TelephoneNumber` and move all the phone-related fields and logic there. Now `Person` just has a simple link to a `TelephoneNumber` object. This makes the code **Modular** and much easier to test.
 
-**Problem:** When one class does the work of two, awkwardness results.
-
-```java
-class Person {
-  private String name;
-  private String officeAreaCode;
-  private String officeNumber;
-
-  public String getTelephoneNumber() {
-    return ("(" + officeAreaCode + ") " + officeNumber);
-  }
-}
-```
-
-**Solution:** Instead, create a new class and place the fields and methods responsible for the relevant functionality in it.
-
-```java
-class TelephoneNumber {
-  private String areaCode;
-  private String number;
-
-  public String getTelephoneNumber() {
-    return ("(" + areaCode + ") " + number);
-  }
-}
-
-class Person {
-  private String name;
-  private TelephoneNumber officeTelephone = new TelephoneNumber();
-
-  public String getTelephoneNumber() {
-    return officeTelephone.getTelephoneNumber();
-  }
-}
-```
+## 3. Hide Delegate
+**The Problem:** **Class A** has to talk to **Class B** just to get something from **Class C**. 
+**The Debt:** `a.getB().getC().doSomething()`. This is brittle! If the relationship between B and C changes, A breaks.
+**The Solution:** Add a simple method to B that does the work for A. Now A only knows about its direct neighbor (B).
 
 ### Further Reading
 
-*   *[Refactoring.guru: Moving Features](https://refactoring.guru/refactoring/techniques/moving-features)*
+*   **The Smell:** *[[code-smells|Coupler Smells]]* (When neighbors are too close).
+*   **The Goal:** *[[what-is-refactoring|Clean Code Overview]]* (Why we move features).
+*   **Article:** *[Refactoring.guru: Moving Features](https://refactoring.guru/refactoring/techniques/moving-features)* (The 8 techniques of moving code).
+*   **Video:** *[Tell, Don't Ask Principle](https://www.youtube.com/watch?v=Hu4YbmPhFKQ)* (How to design better objects).

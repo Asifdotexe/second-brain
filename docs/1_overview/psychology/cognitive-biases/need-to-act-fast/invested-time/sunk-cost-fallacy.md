@@ -5,26 +5,33 @@ tags: CognitiveBias, NeedToActFast, DecisionMaking
 
 # Sunk Cost Fallacy
 
-Sitting through an excruciatingly bad two-hour movie just because you already paid $15 for the ticket.
+"Throwing Good Money after Bad"—the psychological phenomenon where we refuse to quit a losing project or relationship simply because we’ve already spent so much time or money on it.
 
-The **Sunk Cost Fallacy** is the phenomenon where a person is reluctant to abandon a strategy or course of action because they have already invested heavily in it, even when it is clear that abandonment would be more beneficial.
+**The Sunk Cost Fallacy** is the most famous logic trap in the world. It’s an emotional refusal to let go of the past. Logically, the money and time you’ve already spent are "Sunk"—they are gone forever and you can never get them back. The **only** thing that matters for your next decision is the **Future**. But our brain tells us a lie: *"If I quit now, all that work was wasted!"*
 
-We inherently hate wasting resources. When we put time, money, or effort into a project, our emotional attachment to recovering that investment blinds us to the logical reality that those resources are forever gone (they are "sunk"). 
+Think of it like **A Terrible Movie**:
+*   You pay $20 for a movie ticket. Ten minutes in, you realize the movie is offensive, boring, and painful to watch.
+*   **The Logical Choice:** Leave. Your $20 is gone either way. If you stay, you lose $20 **plus** 2 hours of your life. If you leave, you only lose $20.
+*   **The Fallacy:** *"I can't leave! I paid $20! I have to sit here and suffer for 2 hours to 'get my money's worth'!"*
 
-Mathematically and logically, the only sound way to make a decision is to evaluate whether the *future* costs outweigh the *future* benefits. However, our brains refuse to let go of the past. We continue burning new resources purely in an attempt to justify the old ones we already lost.
-
-## Key Characteristics
-*   **Throwing Good Money After Bad:** The primary behavioral symptom, often seen in gambling or failing business ventures.
-*   **Justification and Denial:** Ignoring objective evidence of failure in order to protect our ego from admitting we made a bad investment.
+## Why it Happens
+1.  **Waste Aversion:** We were taught as kids "Don't waste your food" and "Finish what you start." This is usually good advice, but your brain applies it to bad situations too.
+2.  **Ego Defense:** Quitting means admitting you were **Wrong**. Your brain would rather stay in a failing relationship or a bad job for 5 more years than admit you made a mistake 5 years ago.
 
 ## FAQs
 
-*1. When is this most common?*
-It happens constantly in business (trying to save a failing project rather than cutting losses) and in relationships (staying in a toxic relationship simply because you have already invested 5 years into it).
+*1. How do I beat it?*
+Use the **"Clean Slate"** question. Imagine you walked into the situation **today** for the first time. 
+*   *"If I wasn't already in this job, would I apply for it today?"*
+*   *"If I hadn't already spent $5,000 fixing this car, would I spend $500 to fix it right now?"*
+*   If the answer is **No**, then you should quit. The past is historical; only the future is actionable.
 
-*2. How do you beat the Sunk Cost Fallacy?*
-By realizing that the past investment is already gone, regardless of what you do next. Ask yourself: "If I hadn't already spent $100 on this project, would I pay $10 right now to continue it?"
+*2. Does this affect big companies?*
+**All the time.** It’s often called the **"Concorde Fallacy"** because the British and French governments kept spending billions on a supersonic plane that was clearly losing money, simply because they had "already started."
 
 ### Further Reading
 
-*   **Article:** *[The Sunk Cost Fallacy (Behavioral Economics)](https://www.behavioraleconomics.com/resources/mini-encyclopedia-of-be/sunk-cost-fallacy/)* (How irrational attachment destroys future value).
+*   **The Action Version:** *[[escalation-of-commitment|Escalation of Commitment]]* (Doubling down on a bad hand).
+*   **The Pride Factor:** *[[disposition-effect|The Disposition Effect]]* (Holding on to losers).
+*   **Article:** *[The Sunk Cost Fallacy Explained](https://thedecisionlab.com/biases/the-sunk-cost-fallacy)* (How irrationality costs us our future).
+*   **Video:** *[Why We Keep Doing Things We Hate](https://www.youtube.com/watch?v=Hu4YbmPhFKQ)* (Understanding the 'Sunk Cost' trap).
