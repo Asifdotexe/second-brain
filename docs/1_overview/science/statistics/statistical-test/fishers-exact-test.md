@@ -5,7 +5,7 @@ tags: Statistics, HypothesisTesting, NonParametric
 
 # Fisher's Exact Test
 
-"The Brute-Force Accuracy Test"—a tool used to calculate the **exact** probability of an outcome, mainly used when your sample size is so tiny that normal statistical estimations would fail.
+"The Brute-Force Accuracy Test" ,a tool used to calculate the **exact** probability of an outcome, mainly used when your sample size is so tiny that normal statistical estimations would fail.
 
 **Fisher's Exact Test** is what you use when you want the "Perfect Answer" for a small group. While the [[chi-square|Chi-Square Test]] is an "Estimation" that works best with hundreds of people, Fisher's Exact Test uses raw math to literally calculate every possible combination of results to see how lucky you got. 
 

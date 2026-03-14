@@ -5,7 +5,7 @@ tags: CyberSecurity, DefensiveSecurity, SOC
 
 # Incident Response (IR)
 
-"Digital Firefighting"—the step-by-step "Battle Plan" used by security teams to stop a hack before it burns the entire company down.
+"Digital Firefighting" ,the step-by-step "Battle Plan" used by security teams to stop a hack before it burns the entire company down.
 
 In cybersecurity, it’s not a matter of *if* you will get hacked, but *when*. **Incident Response** is what happens when the alarm finally goes off. Instead of panicking, the team follows a playbook designed to save the data, preserve the evidence, and get the business back online as fast as possible.
 

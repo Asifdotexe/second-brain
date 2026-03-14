@@ -5,7 +5,7 @@ tags: Refactoring, CleanCode, Techniques
 
 # Organizing Data
 
-"Cleaning the Cabinets"—techniques for turning messy, "Magic" numbers and loose data into clear, self-explanatory structures.
+"Cleaning the Cabinets" ,techniques for turning messy, "Magic" numbers and loose data into clear, self-explanatory structures.
 
 If your code is full of random numbers like `9.81` or `0.05`, it is like a kitchen where nothing has a label. You might know what the powders are today, but six months from now, you’ll accidentally put salt in your coffee. We use "Data Organization" to put labels on everything and make the code "Self-Documenting."
 

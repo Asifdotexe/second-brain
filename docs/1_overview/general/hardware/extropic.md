@@ -5,7 +5,7 @@ tags: AI, Hardware, Thermodynamics, Physics
 
 # Extropic
 
-"Computers that Run on Chaos"—a radical new company building "Thermodynamic Computers" that don't fight heat and noise, but actually use them to power the next generation of AI.
+"Computers that Run on Chaos" ,a radical new company building "Thermodynamic Computers" that don't fight heat and noise, but actually use them to power the next generation of AI.
 
 Traditional computers (like the one in your phone) are "Control Freaks." They hate "Noise" (random electrical interference) and they hate "Heat." To keep a **[[cpu|CPU]]** running perfectly, we have to spend massive amounts of energy on cooling and "error correction" to make sure every 1 stays a 1 and every 0 stays a 0.
 

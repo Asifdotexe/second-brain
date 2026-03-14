@@ -5,14 +5,14 @@ tags: QuantumComputing, EmergingTech, ComputerScience, Physics
 
 # The Quantum Computing Revolution
 
-The "Great Leap"—a moment in human history equivalent to the invention of the steam engine or the internet. We aren't just making faster computers; we are unlocking a new reality of what is "Calculable."
+The "Great Leap" ,a moment in human history equivalent to the invention of the steam engine or the internet. We aren't just making faster computers; we are unlocking a new reality of what is "Calculable."
 
-The **Quantum Revolution** is the transition from the world of **Bits** (0 or 1) to the world of **[[qubits|Qubits]]**. While we are currently in the early, shaky **[[nisq|NISQ Era]]**, the potential impact of quantum technology isn't just "iteration"—it’s a complete transformation of biology, chemistry, and security.
+The **Quantum Revolution** is the transition from the world of **Bits** (0 or 1) to the world of **[[qubits|Qubits]]**. While we are currently in the early, shaky **[[nisq|NISQ Era]]**, the potential impact of quantum technology isn't just "iteration" ,it’s a complete transformation of biology, chemistry, and security.
 
 Think of the Revolution like **The Discovery of Flight**:
 *   For thousands of years, humans could only travel as fast as a horse could run (Classical Computing).
 *   Quantum Computing is like the **Wright Brothers**. Their first plane was small, noisy, and didn't fly very far. 
-*   But it proved that humans could leave the ground. Once we did, we didn't just get "faster horses"—we got to the Moon.
+*   But it proved that humans could leave the ground. Once we did, we didn't just get "faster horses" ,we got to the Moon.
 
 ## The 3 Pillars of the Revolution
 

@@ -5,7 +5,7 @@ tags: Refactoring, CleanCode, Techniques
 
 # Simplifying Conditional Expressions
 
-"Unlocking the Maze"—techniques for taking complex `if/else` logic that looks like a tangled ball of yarn and turning it into a straight, clear path.
+"Unlocking the Maze" ,techniques for taking complex `if/else` logic that looks like a tangled ball of yarn and turning it into a straight, clear path.
 
 Conditionals (If/Else) are where most bugs live. As a project grows, we add "Wait, what if this happens?" checks until the code is a 10-level deep "Nest" that no human can understand. We use these techniques to "Flatten" the logic and make it readable at a glance.
 
@@ -56,7 +56,7 @@ public double getPay() {
 
 ## 3. Replace Conditional with Polymorphism
 **The Problem:** You have a giant `switch` statement that checks `if (animal == "Cat")`, `if (animal == "Dog")`, etc.
-**The Solution:** Create a `Cat` class and a `Dog` class. Give them both a `makeSound()` method. Now, your main code doesn't need to "Check" anything—it just calls `animal.makeSound()` and the object handles itself.
+**The Solution:** Create a `Cat` class and a `Dog` class. Give them both a `makeSound()` method. Now, your main code doesn't need to "Check" anything ,it just calls `animal.makeSound()` and the object handles itself.
 
 ### Further Reading
 

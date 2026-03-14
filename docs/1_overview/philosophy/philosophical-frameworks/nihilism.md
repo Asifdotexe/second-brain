@@ -5,7 +5,7 @@ tags: Philosophy, Nietzsche, Meaning
 
 # Nihilism
 
-"The Ruleless Game"—the radical belief that there is no objective meaning, no God, and no "Grand Plan" behind the universe. It is a blank slate of nothingness.
+"The Ruleless Game" ,the radical belief that there is no objective meaning, no God, and no "Grand Plan" behind the universe. It is a blank slate of nothingness.
 
 **Nihilism** (from the Latin word *nihil*, meaning "nothing") is the ultimate "No." It rejects all religious and moral principles. It says that "Right and Wrong" are just human inventions, and that in a billion years, when the sun dies, nothing we did will have mattered.
 

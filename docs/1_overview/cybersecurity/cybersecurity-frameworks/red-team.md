@@ -5,7 +5,7 @@ tags: Security, OffensiveSecurity, Simulation
 
 # Red Team
 
-"The Digital Saboteurs"—a team of ethical hackers hired to act like the most dangerous criminals on the planet. They test a company's defenses by trying to break, steal, and manipulate everything in their path.
+"The Digital Saboteurs" ,a team of ethical hackers hired to act like the most dangerous criminals on the planet. They test a company's defenses by trying to break, steal, and manipulate everything in their path.
 
 A **Red Team** challenges an organization's security by simulating a real-world, full-scale attack. While other tests might look for a "technical bug" in one app, the Red Team looks for a way to "win" by any means necessary.
 

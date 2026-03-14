@@ -5,7 +5,7 @@ tags: Statistics, HypothesisTesting, NonParametric
 
 # Wilcoxon Signed-Rank Test
 
-"The Before-and-After Tracker"—a tool used to compare the **same people** measured twice (like "Before a diet" and "After a diet") when the data is messy or non-normal.
+"The Before-and-After Tracker" ,a tool used to compare the **same people** measured twice (like "Before a diet" and "After a diet") when the data is messy or non-normal.
 
 The **Wilcoxon Signed-Rank Test** is the "Non-Parametric" sibling of the **Paired [[t-test|T-Test]]**. It focuses on the **Sign** (was the change positive or negative?) and the **Rank** (was the change big or small?). It doesn't care about the exact, raw numbers, which makes it safe from outliers.
 

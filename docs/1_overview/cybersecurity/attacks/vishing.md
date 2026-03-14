@@ -5,7 +5,7 @@ tags: CyberSecurity, SocialEngineering, Fraud
 
 # Vishing (Voice Phishing)
 
-"The Digital Con Artist"—a high-stakes scam where a hacker uses their voice, a fake caller ID, and a sense of panic to trick you into handing over your life savings.
+"The Digital Con Artist" ,a high-stakes scam where a hacker uses their voice, a fake caller ID, and a sense of panic to trick you into handing over your life savings.
 
 **Vishing** is the more intense sibling of **[[phishing|Email Phishing]]**. While an email is cold and easy to ignore, a human voice on the phone can sound urgent, authoritative, and terrifying. The scammer might pretend to be from your bank's fraud department, the IRS, or even your company’s IT desk, using a believable script to make you feel like you are in trouble.
 

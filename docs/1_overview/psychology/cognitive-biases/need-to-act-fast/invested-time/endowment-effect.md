@@ -5,7 +5,7 @@ tags: CognitiveBias, NeedToActFast, InvestedTime
 
 # Endowment Effect
 
-"The Ownership Premium"—the psychological glitch where we believe a simple object is worth significantly more money just because we happen to own it ourselves.
+"The Ownership Premium" ,the psychological glitch where we believe a simple object is worth significantly more money just because we happen to own it ourselves.
 
 **The Endowment Effect** is why it's so hard to declutter your garage. The moment an object becomes "Yours," your brain attaches extra value to it. This isn't because the object is actually better; it’s because humans hate **Loss**. Giving up an object you "Own" feels like a painful loss, so your brain demands a higher "price" to let it go.
 

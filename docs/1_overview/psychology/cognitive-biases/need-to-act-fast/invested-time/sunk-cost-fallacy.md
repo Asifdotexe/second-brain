@@ -5,9 +5,9 @@ tags: CognitiveBias, NeedToActFast, DecisionMaking
 
 # Sunk Cost Fallacy
 
-"Throwing Good Money after Bad"—the psychological phenomenon where we refuse to quit a losing project or relationship simply because we’ve already spent so much time or money on it.
+"Throwing Good Money after Bad" ,the psychological phenomenon where we refuse to quit a losing project or relationship simply because we’ve already spent so much time or money on it.
 
-**The Sunk Cost Fallacy** is the most famous logic trap in the world. It’s an emotional refusal to let go of the past. Logically, the money and time you’ve already spent are "Sunk"—they are gone forever and you can never get them back. The **only** thing that matters for your next decision is the **Future**. But our brain tells us a lie: *"If I quit now, all that work was wasted!"*
+**The Sunk Cost Fallacy** is the most famous logic trap in the world. It’s an emotional refusal to let go of the past. Logically, the money and time you’ve already spent are "Sunk" ,they are gone forever and you can never get them back. The **only** thing that matters for your next decision is the **Future**. But our brain tells us a lie: *"If I quit now, all that work was wasted!"*
 
 Think of it like **A Terrible Movie**:
 *   You pay $20 for a movie ticket. Ten minutes in, you realize the movie is offensive, boring, and painful to watch.

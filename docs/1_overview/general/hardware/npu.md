@@ -5,7 +5,7 @@ tags: AI, Hardware, Mobile, EdgeComputing
 
 # NPU (Neural Processing Unit)
 
-The "Instinctive Brain"—a tiny, hyper-efficient chip inside your phone or laptop that is designed to do only one thing: run Artificial Intelligence instantly while using almost zero battery.
+The "Instinctive Brain" ,a tiny, hyper-efficient chip inside your phone or laptop that is designed to do only one thing: run Artificial Intelligence instantly while using almost zero battery.
 
 An **NPU** is a specialist. While your **[[cpu|CPU]]** handles the thinking and your **[[gpu|GPU]]** handles the visuals, the NPU handles the **AI Features**. In a modern smartphone, the NPU is the reason why your camera can recognize a face, why your battery lasts all day despite running complex apps, and why Siri can understand you even when you're whispering.
 

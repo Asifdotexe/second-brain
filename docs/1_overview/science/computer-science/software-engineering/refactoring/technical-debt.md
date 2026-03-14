@@ -5,7 +5,7 @@ tags: Refactoring, CleanCode, SoftwareDesign, Management
 
 # Technical Debt
 
-"Interest on Bad Habits"—the future cost you will eventually have to pay for taking a "Short-Cut" or choosing a messy solution today just to ship a feature faster.
+"Interest on Bad Habits" ,the future cost you will eventually have to pay for taking a "Short-Cut" or choosing a messy solution today just to ship a feature faster.
 
 **Technical Debt** is a metaphor coined by Ward Cunningham. It’s like taking out a high-interest loan from a bank. 
 *   **The Loan:** You write "Dirty" code (hard-coding, no tests) to launch a feature 2 weeks early. 
@@ -24,7 +24,7 @@ Think of it like **Building a House**:
 3.  **Lack of Vision:** Changing requirements mean the original "Clean" design is now "Messy" for the new world.
 
 ## How to Pay It Back
-You pay back technical debt by **[[what-is-refactoring|Refactoring]]**. You spend a week not adding features, but simply cleaning the mess, writing tests, and renaming variables. If you don't "Pay the Bank," your project will eventually go "Bankrupt"—meaning it will be cheaper to delete the whole app and start over than to try and fix it.
+You pay back technical debt by **[[what-is-refactoring|Refactoring]]**. You spend a week not adding features, but simply cleaning the mess, writing tests, and renaming variables. If you don't "Pay the Bank," your project will eventually go "Bankrupt" ,meaning it will be cheaper to delete the whole app and start over than to try and fix it.
 
 ### Further Reading
 

@@ -5,7 +5,7 @@ tags: CyberSecurity, VulnerabilityManagement, Metrics
 
 # CVSS (Common Vulnerability Scoring System)
 
-"The Richter Scale for Cyberattacks"—a universal scoring system from 0 to 10 that tells every security team exactly how much they should panic when a new bug is discovered.
+"The Richter Scale for Cyberattacks" ,a universal scoring system from 0 to 10 that tells every security team exactly how much they should panic when a new bug is discovered.
 
 If the **[[cve|CVE ID]]** is a bug's "Name," then **CVSS** is its "Fever Temperature." It tells security managers what to prioritize. When you have 10,000 potential security holes, you can’t fix them all at once. You use CVSS to find the "Tens" and fix them before lunch, leaving the "Ones" for later.
 

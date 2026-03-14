@@ -5,7 +5,7 @@ tags: CyberSecurity, Governance, Compliance, Finance
 
 # PCI DSS
 
-"The Security of the Swipe"—strict rules created by the world’s biggest credit card brands to ensure that your card number doesn't end up on a hacker's "shopping list."
+"The Security of the Swipe" ,strict rules created by the world’s biggest credit card brands to ensure that your card number doesn't end up on a hacker's "shopping list."
 
 **PCI DSS** is unique because it isn't a government law. It is a private "contract" created by Visa, Mastercard, AMEX, and Discover. If a business wants to accept cards, they **must** follow these rules. If they don't, the banks can ban them from taking payments entirely.
 

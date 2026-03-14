@@ -5,7 +5,7 @@ tags: DevOps, Containerization, Docker
 
 # Docker Image
 
-The "Master Blueprint"—an unchangeable, indestructible file that contains the exact "DNA" of your application, ensuring that every time you "spawn" it, it looks and acts exactly the same.
+The "Master Blueprint" ,an unchangeable, indestructible file that contains the exact "DNA" of your application, ensuring that every time you "spawn" it, it looks and acts exactly the same.
 
 A **Docker Image** is the starting point for every container. It is a read-only template that includes everything your app needs to live: the source code, the libraries, the tools, and the settings. Because an image is **Immutable** (meaning it can never be changed), it is the ultimate "Single Source of Truth" in the DevOps world.
 

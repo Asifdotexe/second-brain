@@ -5,7 +5,7 @@ tags: CognitiveBias, NeedToActFast, InvestedTime
 
 # Loss Aversion
 
-"The Pain of Losing"—the psychological rule that the pain of losing $20 is much more powerful than the joy of finding $20. We are twice as motivated to avoid a loss than we are to achieve a gain.
+"The Pain of Losing" ,the psychological rule that the pain of losing $20 is much more powerful than the joy of finding $20. We are twice as motivated to avoid a loss than we are to achieve a gain.
 
 **Loss Aversion** is the king of all biases. It’s an evolutionary survival mechanism. For our ancestors, failing to find a "Gain" (like missing out on a handful of berries) was no big deal. But failing to stop a "Loss" (like a lion stealing your dinner) meant you died. Because of this, our brains are hardwired to be **Terrified of Loss**.
 

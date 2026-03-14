@@ -5,7 +5,7 @@ tags: Psychology, CriticalThinking, DecisionMaking
 
 # Confirmation Bias
 
-"The Yes-Man inside Your Head"—the cognitive bias where you only notice, look for, and remember information that proves you are **Right**, while completely ignoring everything that proves you are **Wrong**.
+"The Yes-Man inside Your Head" ,the cognitive bias where you only notice, look for, and remember information that proves you are **Right**, while completely ignoring everything that proves you are **Wrong**.
 
 **Confirmation Bias** is the mother of all biases. It’s why we only watch news channels that agree with us and only follow people on social media who think like we do. Our brain hates being "Wrong" because changing our minds requires a lot of biological energy. To save power, your brain acts like a filter that lets in the "Friendly" data and blocks the "Hostile" data.
 

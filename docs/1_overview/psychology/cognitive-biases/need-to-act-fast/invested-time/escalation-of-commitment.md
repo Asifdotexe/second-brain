@@ -5,7 +5,7 @@ tags: CognitiveBias, NeedToActFast, InvestedTime
 
 # Escalation of Commitment
 
-"Doubling Down on Disaster"—the human tendency to keep pouring time, money, or effort into a failing project simply because you’ve already invested so much in it.
+"Doubling Down on Disaster" ,the human tendency to keep pouring time, money, or effort into a failing project simply because you’ve already invested so much in it.
 
 **Escalation of Commitment** is the "Action" version of the **[[sunk-cost-fallacy|Sunk Cost Fallacy]]**. It is a desperate attempt to save your ego. Stopping a failing project means admitting you were "Wrong" and that your past effort was "Wasted." To avoid that pain, your brain tells you: *"Just a little more effort and we will finally win!"* 
 

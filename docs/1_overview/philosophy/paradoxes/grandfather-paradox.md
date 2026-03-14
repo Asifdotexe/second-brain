@@ -5,9 +5,9 @@ tags: Philosophy, TimeTravel, Causality
 
 # Grandfather Paradox
 
-"The Reality Crash"—a famous logical puzzle where a time traveler goes back in time and accidentally (or on purpose) stops themselves from ever being born, creating a loop that the universe cannot solve.
+"The Reality Crash" ,a famous logical puzzle where a time traveler goes back in time and accidentally (or on purpose) stops themselves from ever being born, creating a loop that the universe cannot solve.
 
-**The Grandfather Paradox** is the ultimate "Error Message" for time travel. It highlights the problem of **Causality**—the rule that the Cause must always come before the Effect. If you destroy your own cause, you logically cannot exist to perform the action.
+**The Grandfather Paradox** is the ultimate "Error Message" for time travel. It highlights the problem of **Causality** ,the rule that the Cause must always come before the Effect. If you destroy your own cause, you logically cannot exist to perform the action.
 
 Think of it like **Deleting the Folder You Are Currently Using**:
 *   Imagine you are using a computer. You open a folder and start a program that is inside it.

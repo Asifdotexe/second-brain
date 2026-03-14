@@ -5,7 +5,7 @@ tags: CognitiveBias, NeedToActFast, InvestedTime
 
 # Backfire Effect
 
-"The Fact-Proof Shield"—a cognitive bias where presenting someone with hard, objective evidence that proves they are wrong actually causes them to double down and believe their original (wrong) idea even more strongly.
+"The Fact-Proof Shield" ,a cognitive bias where presenting someone with hard, objective evidence that proves they are wrong actually causes them to double down and believe their original (wrong) idea even more strongly.
 
 **The Backfire Effect** is the reason logic rarely wins arguments online. When our deepest beliefs (especially about politics or religion) are challenged, our brain registers the "Fact" as a literal physical threat to our identity. Instead of calmly updating our "Data," our brain’s panic center (the Amygdala) kicks in and pushes the "Fight or Flight" button.
 

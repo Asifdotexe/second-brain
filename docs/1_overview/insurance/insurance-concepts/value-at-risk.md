@@ -5,7 +5,7 @@ tags: [RiskMetric, FinancialRisk, Statistics]
 
 # Value at Risk (VaR)
 
-"The Fence Around Reality"—a statistical "Wall" that gives you a single dollar number representing your maximum expected loss on a "Normal Bad Day."
+"The Fence Around Reality" ,a statistical "Wall" that gives you a single dollar number representing your maximum expected loss on a "Normal Bad Day."
 
 **Value at Risk (VaR)** is the world’s most famous risk metric. It answers the question: *"On a really bad day, how much money could I lose?"* 
 It doesn't tell you the "Absolute Worst" that could happen; it tells you the worst that is **likely** to happen within a certain comfort zone (like 95% or 99%).

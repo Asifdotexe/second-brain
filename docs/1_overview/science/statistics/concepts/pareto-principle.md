@@ -5,14 +5,14 @@ tags: Statistics, Efficiency, 80/20
 
 # Pareto Principle
 
-"The 80/20 Rule"—the observation that in almost every part of life, roughly **80% of the results** come from only **20% of the effort**.
+"The 80/20 Rule" ,the observation that in almost every part of life, roughly **80% of the results** come from only **20% of the effort**.
 
 The **Pareto Principle** is the ultimate tool for **Efficiency**. It was discovered by Vilfredo Pareto, who noticed that 80% of the land in Italy was owned by only 20% of the people. Later, he looked at his garden and saw that 80% of his peas came from only 20% of his pea pods. This isn't just a math quirk; it’s a fundamental "Law of Nature" for how resources and results are distributed.
 
 Think of it like **Your Living Room Carpet**:
 *   **The Fact:** You own a large carpet. 
 *   **The Rule:** If you look at where the carpet is dirty or worn down, you will find that **80% of the foot traffic** happens on only **20% of the surface area** (the paths between the door and the couch). 
-*   **The Strategy:** If you want the carpet to look new, you don't need to clean the corners—you just need to scrub that "Vital 20%" in the middle.
+*   **The Strategy:** If you want the carpet to look new, you don't need to clean the corners ,you just need to scrub that "Vital 20%" in the middle.
 
 ## Where to find the 80/20
 1.  **Business:** 20% of your customers usually provide 80% of your total revenue. (Focus on them!).

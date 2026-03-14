@@ -5,13 +5,13 @@ tags: Malware, History, CyberSecurity
 
 # Brain Virus
 
-"The Original Warning Label"—the first-ever PC virus. It didn't want to steal your money or delete your files; it just wanted to send a firm message about piracy.
+"The Original Warning Label" ,the first-ever PC virus. It didn't want to steal your money or delete your files; it just wanted to send a firm message about piracy.
 
 **Brain** was the first computer virus for MS-DOS and IBM PCs, created in 1986. Unlike modern **[[ransomware|Ransomware]]** that acts like a kidnapper, Brain was a "digital watermark" designed to track down people who were illegally copying medical software.
 
 Think of it as **A Digital Handshake with a Message**:
 *   **The Creators:** Two brothers in Pakistan who were tired of people stealing their code.
-*   **The Method:** It infected the **[[boot-sector|Boot Sector]]** of floppy disks—the first thing a computer reads when it turns on.
+*   **The Method:** It infected the **[[boot-sector|Boot Sector]]** of floppy disks ,the first thing a computer reads when it turns on.
 *   **The Spread:** In 1986, there was no internet. The virus traveled physically. You borrowed a floppy disk, put it in your PC, and the virus jumped into your computer's memory. Every "clean" disk you used from then on was infected.
 
 ## Key Characteristics
@@ -25,7 +25,7 @@ Think of it as **A Digital Handshake with a Message**:
 **No.** They never intended to cause harm. They reportedly received thousands of calls from around the world from people asking how to "cure" their disks. They even became famous in the tech world for their creation.
 
 *2. Can I get it today?*
-**Basically impossible.** Modern computers don't have floppy drives, and they start up using completely different technology. Brain is now a museum piece—a relic from a time when hacking was about sending a message, not stealing a credit card.
+**Basically impossible.** Modern computers don't have floppy drives, and they start up using completely different technology. Brain is now a museum piece ,a relic from a time when hacking was about sending a message, not stealing a credit card.
 
 ### Further Reading
 

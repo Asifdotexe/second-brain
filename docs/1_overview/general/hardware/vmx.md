@@ -5,7 +5,7 @@ tags: Virtualization, VMware, Configuration
 
 # VMX File
 
-The "DNA Sequence" of a Virtual Machine—a simple, plain-text blueprint that tells a computer exactly how to "imagine" a fake piece of hardware into existence.
+The "DNA Sequence" of a Virtual Machine ,a simple, plain-text blueprint that tells a computer exactly how to "imagine" a fake piece of hardware into existence.
 
 When you use **[[virtualization|Virtualization]]** software like VMware, the "Virtual Machine" (VM) isn't just one big file. It’s actually a folder filled with different pieces. The **.vmx** file is the brain of that folder. It is a tiny configuration file that tells the software exactly what the "fake" computer should look like.
 

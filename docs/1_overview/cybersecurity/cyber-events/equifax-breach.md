@@ -5,9 +5,9 @@ tags: DataBreach, CyberSecurityEvent
 
 # Equifax Data Breach
 
-"The Front Door Left Wide Open"—a failure where one of the world's most powerful financial companies forgot to click "Update," allowing hackers to quietly steal the private details of nearly 150 million people.
+"The Front Door Left Wide Open" ,a failure where one of the world's most powerful financial companies forgot to click "Update," allowing hackers to quietly steal the private details of nearly 150 million people.
 
-The **Equifax Breach** (2017) is the ultimate cautionary tale. Equifax is a credit agency—they know your Social Security number, address history, and every loan you've ever taken. Because they had a single "unpatched" server, hackers walked right in and stole the "Identity Keys" for half the adult population of the United States.
+The **Equifax Breach** (2017) is the ultimate cautionary tale. Equifax is a credit agency ,they know your Social Security number, address history, and every loan you've ever taken. Because they had a single "unpatched" server, hackers walked right in and stole the "Identity Keys" for half the adult population of the United States.
 
 ## A Comedy of Errors
 This wasn't a "genius" hack; it was a series of basic management mistakes:

@@ -5,7 +5,7 @@ tags: Logic, Debate, Tautology
 
 # Circular Reasoning
 
-"The Snake Eating Its Tail"—a logical fallacy where the proof for an idea is just the idea itself, repeated in different words. You aren't actually proving anything; you're just running in a circle.
+"The Snake Eating Its Tail" ,a logical fallacy where the proof for an idea is just the idea itself, repeated in different words. You aren't actually proving anything; you're just running in a circle.
 
 **Circular Reasoning** (also called *Begging the Question*) happens when your starting point and your ending point are the same. It sounds like an argument, but no new information has been added. It is like trying to lift yourself up by pulling on your own shoelaces.
 

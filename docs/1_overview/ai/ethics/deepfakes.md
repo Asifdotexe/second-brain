@@ -9,9 +9,9 @@ Stealing someone's face and voice to make them confess on 4k video to a crime th
 
 **Deepfakes** are hyper-realistic, AI-generated videos, images, or audio clips where a real person's likeness or voice is maliciously replaced with someone else's. 
 
-The tech relies entirely on deep learning—specifically [[generative-adversarial-networks|GANs (Generative Adversarial Networks)]] and [[diffusion-models|diffusion models]]—to seamlessly stitch and alter skin textures, lighting, and vocal cadence. 
+The tech relies entirely on deep learning ,specifically [[generative-adversarial-networks|GANs (Generative Adversarial Networks)]] and [[diffusion-models|diffusion models]] ,to seamlessly stitch and alter skin textures, lighting, and vocal cadence. 
 
-While synthetic media absolutely has benign uses (like flawlessly de-aging actors in Hollywood blockbusters or creating personalized education avatars), the democratization of these tools—putting them on the public internet for free—has triggered a massive global ethical and security crisis.
+While synthetic media absolutely has benign uses (like flawlessly de-aging actors in Hollywood blockbusters or creating personalized education avatars), the democratization of these tools ,putting them on the public internet for free ,has triggered a massive global ethical and security crisis.
 
 ## The Three Horsemen of the Deepfake Apocalypse
 

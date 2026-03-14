@@ -5,7 +5,7 @@ tags: CyberSecurity, CyberAttack, VulnerabilityManagement
 
 # React2Shell
 
-"The 2025 Megabug"—a catastrophic flaw in the React framework that allowed hackers to seize total control of a web server just by sending a single, clever web request.
+"The 2025 Megabug" ,a catastrophic flaw in the React framework that allowed hackers to seize total control of a web server just by sending a single, clever web request.
 
 **React2Shell** (officially **CVE-2025-55182**) is a massive security hole discovered in late 2025 affecting **React Server Components (RSC)**. It is considered a "Severity 10/10" emergency because it is scarily easy to exploit and targets one of the most popular web frameworks on Earth.
 
@@ -23,7 +23,7 @@ Think of it like **A "Secret Password" that Everyone has**:
 ## FAQs
 
 *1. Am I still at risk?*
-If you are a web developer, **Update your packages now.** You need to be running the React/Next versions released after December 20, 2025. If you are a normal user, you can't do anything—you have to trust that the websites you visit have updated their servers.
+If you are a web developer, **Update your packages now.** You need to be running the React/Next versions released after December 20, 2025. If you are a normal user, you can't do anything ,you have to trust that the websites you visit have updated their servers.
 
 *2. How can I tell if I've been hit?*
 Look for **"Outbound Traffic Spikes."** If your server is suddenly sending massive amounts of data to an unknown IP address in another country, it might have been "Recruited" into a **[[botnets|Botnet]]** via this bug.

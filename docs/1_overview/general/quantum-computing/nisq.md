@@ -5,12 +5,12 @@ tags: Physics, Quantum, Hardware
 
 # NISQ (Noisy Intermediate-Scale Quantum)
 
-The "Prototype Era"—the current stage of quantum development where we have computers that are powerful enough to be useful, but "noisy" enough to be extremely annoying and error-prone.
+The "Prototype Era" ,the current stage of quantum development where we have computers that are powerful enough to be useful, but "noisy" enough to be extremely annoying and error-prone.
 
 **NISQ** (pronounced "nisk") is an acronym coined by physicist John Preskill to describe the technology we have *right now*. A NISQ computer is a machine with 50 to 500 **[[qubits|Qubits]]** that lacks the "Error Correction" needed to run massive, perfect calculations.
 
 Think of a NISQ computer like a **Vintage Race Car**:
-*   It is incredibly fast—it can reach speeds a normal car could never dream of.
+*   It is incredibly fast ,it can reach speeds a normal car could never dream of.
 *   **BUT**, the wheels are constantly wobbling, the engine is smoking, and parts fall off every five minutes.
 *   You can't use it to drive your family across the country (Long Calculations), but you can use it for **short, intense test laps** (Small Math Problems) to learn how to build a better car for the future.
 

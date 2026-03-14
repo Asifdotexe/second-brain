@@ -5,7 +5,7 @@ tags: Security, Network, Defense
 
 # Firewall
 
-"The Digital Border Patrol"—a physical or software-based bouncer that sits between your private network and the internet, checking the ID of every single "packet" of data that tries to enter your house.
+"The Digital Border Patrol" ,a physical or software-based bouncer that sits between your private network and the internet, checking the ID of every single "packet" of data that tries to enter your house.
 
 A **Firewall** is the most basic barrier in cybersecurity. Without one, your computer is essentially shouting "Hello!" to every hacker on the planet. The firewall’s job is to enforce **The Rulebook**: allowing the "Good Traffic" (like Netflix) and instantly blocking the "Bad Traffic" (like a hacker scanning for holes).
 

@@ -5,7 +5,7 @@ tags: CognitiveBias, NeedToActFast, InvestedTime, Risk
 
 # Zero-Risk Bias
 
-"The Illusion of Perfect Safety"—the irrational tendency to spend massive effort to completely eliminate a small risk (reaching 0%), while ignoring a much larger risk that you could have easily reduced.
+"The Illusion of Perfect Safety" ,the irrational tendency to spend massive effort to completely eliminate a small risk (reaching 0%), while ignoring a much larger risk that you could have easily reduced.
 
 **Zero-Risk Bias** happens because mathematical probabilities are stressful. Our brains hate "Maybe." If you tell a person: *"This medicine is 99.9% safe,"* they will spend the whole night worrying about the 0.1%. But if you tell them: *"This medicine is 100% safe,"* they feel instant peace. We will pay a "Premium" for the internal calm that comes with the number Zero.
 

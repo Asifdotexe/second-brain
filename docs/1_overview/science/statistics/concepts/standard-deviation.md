@@ -5,7 +5,7 @@ tags: Statistics, Math, Jargon
 
 # Standard Deviation
 
-"The Spread"—the mathematical ruler we use to measure how much a piece of data "Wanders" away from the average.
+"The Spread" ,the mathematical ruler we use to measure how much a piece of data "Wanders" away from the average.
 
 If you have two pizza places that both claim an **Average Delivery Time of 30 Minutes**, they might seem the same. But **Standard Deviation (SD)** tells you the "Reliability." 
 *   **Pizza Place A (Low SD):** Almost every pizza arrives between 28 and 32 minutes. (Very Reliable).

@@ -5,7 +5,7 @@ tags: Biology, Genetics, Biotech
 
 # CRISPR
 
-"Find and Replace for DNA"—a revolutionary biological tool that allows scientists to precisely edit, remove, or change any specific piece of genetic code inside a living cell.
+"Find and Replace for DNA" ,a revolutionary biological tool that allows scientists to precisely edit, remove, or change any specific piece of genetic code inside a living cell.
 
 **CRISPR** (pronounced "Crisper") is like a "GPS and Cissor" system for your DNA. In the past, genetic engineering was like trying to fix a typo in a book by throwing a bucket of ink at it and hoping it hit the right spot. CRISPR changed everything because it can find the **exact** sentence on the **exact** page and fix it without touching anything else.
 
@@ -23,10 +23,10 @@ Think of it like **A Word Processor for Life**:
 ## FAQs
 
 *1. Is it safe?*
-**It’s complicated.** The main worry is "Off-Target Effects." This is when the scissors accidentally cut a "Sentence" that looks similar to the one you wanted to fix, but is on a different page. This could cause unintended mutations or even cancer. Scientists are working on "Base Editing"—a newer version that is like a pencil and eraser instead of scissors, which is much safer.
+**It’s complicated.** The main worry is "Off-Target Effects." This is when the scissors accidentally cut a "Sentence" that looks similar to the one you wanted to fix, but is on a different page. This could cause unintended mutations or even cancer. Scientists are working on "Base Editing" ,a newer version that is like a pencil and eraser instead of scissors, which is much safer.
 
 *2. What about "Designer Babies"?*
-**This is the biggest ethical debate.** In 2018, a scientist in China used CRISPR on human embryos to make them resistant to HIV. The world was shocked because those changes are "Heritable"—meaning they will be passed down to every child, grandchild, and future human in that family's line. Most countries have banned this because we don't know the long-term consequences of "Editing" the human race.
+**This is the biggest ethical debate.** In 2018, a scientist in China used CRISPR on human embryos to make them resistant to HIV. The world was shocked because those changes are "Heritable" ,meaning they will be passed down to every child, grandchild, and future human in that family's line. Most countries have banned this because we don't know the long-term consequences of "Editing" the human race.
 
 ### Further Reading
 

@@ -5,7 +5,7 @@ tags: Cryptography, AsymmetricEncryption, Math
 
 # RSA
 
-"The Prime Number Trapdoor"—the world's first and most famous system for sharing secrets. It is built on a simple mathematical bet: that it is easy to multiply two giant numbers together, but nearly impossible to pull them apart.
+"The Prime Number Trapdoor" ,the world's first and most famous system for sharing secrets. It is built on a simple mathematical bet: that it is easy to multiply two giant numbers together, but nearly impossible to pull them apart.
 
 **RSA** (named after its creators Rivest, Shamir, and Adleman) is a type of **[[asymmetric-encryption|Asymmetric Encryption]]**. Since 1977, it has been the invisible backbone of the internet, securing everything from your private emails to the digital signatures that prove a software update actually came from Apple or Microsoft.
 

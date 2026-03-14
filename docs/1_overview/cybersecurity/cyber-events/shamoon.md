@@ -5,7 +5,7 @@ tags: CyberSecurity, Wiper, SaudiArabia
 
 # Shamoon
 
-"The Burning of the Digital Oil Fields"—a brutal, revenge-driven attack that didn't just steal data, but physically paralyzed the world’s richest oil company by "killing" 35,000 computers in a single afternoon.
+"The Burning of the Digital Oil Fields" ,a brutal, revenge-driven attack that didn't just steal data, but physically paralyzed the world’s richest oil company by "killing" 35,000 computers in a single afternoon.
 
 **Shamoon** (2012) is one of the most aggressive **[[wipers|Wiper]]** attacks ever. It was used by state-sponsored hackers to attack **Saudi Aramco**. Unlike hackers who stay hidden to steal secrets, the people behind Shamoon wanted to be loud and destructive. They didn't just delete files; they replaced every hard drive with a picture of a **burning American flag**, then broke the computer so it couldn't turn on.
 

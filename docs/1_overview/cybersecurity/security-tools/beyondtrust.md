@@ -5,9 +5,9 @@ tags: CyberSecurity, IdentityManagement, PrivilegedAccess
 
 # BeyondTrust
 
-"The Master Key Manager"—a security platform designed to stop the most dangerous type of hack: the "Insider Threat" or the stolen "Admin" password.
+"The Master Key Manager" ,a security platform designed to stop the most dangerous type of hack: the "Insider Threat" or the stolen "Admin" password.
 
-Massive companies have thousands of employees. Most just have a key to the front door. But a few (IT Admins) have the **"Master Keys"**—they can read payroll, see medical records, or even delete the whole company. In most major hacks, a hacker steals a regular password and then goes looking for these Master Keys. **BeyondTrust** is the digital vault that locks those keys away and watches exactly who uses them.
+Massive companies have thousands of employees. Most just have a key to the front door. But a few (IT Admins) have the **"Master Keys"** ,they can read payroll, see medical records, or even delete the whole company. In most major hacks, a hacker steals a regular password and then goes looking for these Master Keys. **BeyondTrust** is the digital vault that locks those keys away and watches exactly who uses them.
 
 Think of it as **Guardian of the "God Mode" Power**:
 1.  **Removing "Local Admin":** Most workers don't need "God Powers" on their laptops to do their job. BeyondTrust takes those powers away. If a worker needs to install a specific app, the tool gives them permission for 10 minutes and then takes it away. If that worker gets hacked, the hacker finds a "Powerless" machine.

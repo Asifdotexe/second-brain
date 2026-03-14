@@ -5,7 +5,7 @@ tags: Statistics, Math, BellCurve
 
 # Normal Distribution
 
-"The Bell Curve"—the most common shape in nature. It describes a world where most things are average, and extreme weirdness is incredibly rare.
+"The Bell Curve" ,the most common shape in nature. It describes a world where most things are average, and extreme weirdness is incredibly rare.
 
 **The Normal Distribution** is the "Default Mode" of the universe. If you measure the height of 10,000 men, the weight of 10,000 apples, or the IQ of 10,000 students, you will almost always see the same shape: a big bump in the middle (the Average) that slopes down gently on both sides. In a "Normal" world, a safe prediction today is usually a safe prediction tomorrow.
 
@@ -18,7 +18,7 @@ Think of it like **Adult Height**:
 In a Normal Distribution, we measure "Weirdness" using **[[standard-deviation|Standard Deviation (SD)]]**:
 *   **68% of People** are within 1 SD of the average. (Totally Normal).
 *   **95% of People** are within 2 SDs. (Slightly unusual).
-*   **99.7% of People** are within 3 SDs. (Very Rare—this is where geniuses and pro athletes live).
+*   **99.7% of People** are within 3 SDs. (Very Rare ,this is where geniuses and pro athletes live).
 
 ## FAQs
 

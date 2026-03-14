@@ -5,14 +5,14 @@ tags: Logic, Debate, Status
 
 # Appeal to Authority
 
-"Because I Said So"—a logical fallacy where you claim something is true solely because a famous person or an "expert" said it, without providing any actual evidence or data.
+"Because I Said So" ,a logical fallacy where you claim something is true solely because a famous person or an "expert" said it, without providing any actual evidence or data.
 
 **The Appeal to Authority** relies on the idea that status equals truth. While it is often smart to listen to experts, an expert's opinion is not **Proof**. Even the smartest people in history have been spectacularly wrong about things outside (and inside) their fields.
 
 Think of it like **A White Lab Coat**:
 *   If a man in a lab coat tells you that drinking orange juice cures baldness, your brain is tempted to believe him because he looks like a "Doctor."
 *   But the **Lab Coat** doesn't cure baldness. The orange juice either works or it doesn't. 
-*   Until the man shows you the study, the data, and the results, his opinion is just a guess—no matter how many fancy degrees he has.
+*   Until the man shows you the study, the data, and the results, his opinion is just a guess ,no matter how many fancy degrees he has.
 
 ## When it Becomes a Fallacy
 1.  **Irrelevant Authority:** Asking a famous actor for medical advice. They are an "authority" on acting, not biology.

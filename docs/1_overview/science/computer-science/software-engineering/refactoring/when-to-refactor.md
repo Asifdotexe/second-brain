@@ -5,7 +5,7 @@ tags: Refactoring, CleanCode, SoftwareDesign
 
 # When to Refactor
 
-"Maintenance over Miracles"—the rule that you should clean your code every single day, rather than waiting for it to become a disaster that requires a "Miracle" to fix.
+"Maintenance over Miracles" ,the rule that you should clean your code every single day, rather than waiting for it to become a disaster that requires a "Miracle" to fix.
 
 Refactoring shouldn't be a special event on your calendar (like a "Refactoring Month"). It should be a **Constant Habit**, like washing your hands. If you only wash your hands once a year, you’re going to get sick. If you only clean your code once a year, your project is going to die.
 

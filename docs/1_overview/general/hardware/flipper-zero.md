@@ -5,7 +5,7 @@ tags: Hardware, Hacking, Tool
 
 # Flipper Zero
 
-The "Hacker’s Tamagotchi"—a portable, multi-tool "Swiss Army Knife" for geeks that can talk to almost every invisible radio wave in the world, from garage door openers to office keycards.
+The "Hacker’s Tamagotchi" ,a portable, multi-tool "Swiss Army Knife" for geeks that can talk to almost every invisible radio wave in the world, from garage door openers to office keycards.
 
 The **Flipper Zero** is a device that looks like a toy from the 90s, complete with a pixelated digital dolphin that lives inside. But behind that cute screen is a powerhouse of antennas. It can read, record, and "replay" signals for **[[nfc|NFC]]**, **[[rfid|RFID]]**, **Infrared** (TV remotes), and **Sub-GHz** (wireless keys).
 

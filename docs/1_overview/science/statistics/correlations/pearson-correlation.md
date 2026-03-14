@@ -5,7 +5,7 @@ tags: Statistics, DataScience, Correlation
 
 # Pearson Correlation Coefficient (r)
 
-"The Straight-Line Test"—a measure of how perfectly two things move together in a steady, consistent, straight line.
+"The Straight-Line Test" ,a measure of how perfectly two things move together in a steady, consistent, straight line.
 
 **Pearson's Correlation ($r$)** is the most common way to measure a relationship. It asks: *"If I draw a straight line through these data points, how close do they stay to that line?"* If the dots are perfectly on the line, the score is `1`. If they are scattered like a cloud, the score is `0`.
 

@@ -5,7 +5,7 @@ tags: Statistics, Marketing, Anderson
 
 # The Long Tail
 
-"The Niche Goldmine"—the strategy of selling a million different "Small" items rather than just a few "Big" hits.
+"The Niche Goldmine" ,the strategy of selling a million different "Small" items rather than just a few "Big" hits.
 
 In a physical store (like a local bookstore), shelf space is limited. They can only stock the Top 1,000 "Hits" (like *Harry Potter*) because they need every book to sell fast. This is the "Head" of the curve. **The Long Tail** refers to the millions of obscure, niche items that a physical store could never afford to carry, but a digital store (like Amazon or Netflix) can stock effortlessly.
 

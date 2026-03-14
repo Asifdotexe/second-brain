@@ -5,7 +5,7 @@ tags: Logic, Debate, Propaganda
 
 # Whataboutism
 
-"The Counter-Finger-Point"—a communication tactic used to distract from criticism by immediately accusing the other person (or someone else) of something equally bad or worse.
+"The Counter-Finger-Point" ,a communication tactic used to distract from criticism by immediately accusing the other person (or someone else) of something equally bad or worse.
 
 **Whataboutism** is a weaponized version of the **[[tu-quoque|Tu Quoque]]** fallacy. It is designed to shut down a conversation and make everyone feel like a "Sinner," so that no one can be judged. It changes the subject from "Is this action wrong?" to "Is everyone else also doing something wrong?"
 

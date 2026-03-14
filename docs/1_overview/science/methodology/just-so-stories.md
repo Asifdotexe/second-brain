@@ -5,7 +5,7 @@ tags: Methodology, Science, Evolution, Criticism
 
 # Just-So Stories
 
-"Scientific Creative Writing"—the criticism for explanations that sound smart and logical, but are actually untestable guesses made "backwards" to fit the facts we already see.
+"Scientific Creative Writing" ,the criticism for explanations that sound smart and logical, but are actually untestable guesses made "backwards" to fit the facts we already see.
 
 The name comes from Rudyard Kipling's children's book *Just So Stories*, which explains things like "How the Elephant Got Its Trunk" (a crocodile pulled on it). In science, a **Just-So Story** is when a researcher looks at a modern human behavior (like "Men liking the color blue") and invents a prehistoric "Reason" for it without any actual evidence.
 

@@ -5,7 +5,7 @@ tags: Statistics, HypothesisTesting, NonParametric
 
 # Kruskal-Wallis Test
 
-"The Multi-Group Ranker"—the tool you use to see if **three or more** groups are different, when your data is too messy or "Extreme" for a normal [[anova|ANOVA]].
+"The Multi-Group Ranker" ,the tool you use to see if **three or more** groups are different, when your data is too messy or "Extreme" for a normal [[anova|ANOVA]].
 
 The **Kruskal-Wallis Test** is the "Safe Backup" for **[[anova|ANOVA]]**. If you have three different types of tires and you want to see which one is best, but your data is full of crazy outliers or isn't a "Normal" bell curve, the Kruskal-Wallis test saves the day. It does this by throwing away the raw numbers and replacing them with **Ranks** (1st to last).
 

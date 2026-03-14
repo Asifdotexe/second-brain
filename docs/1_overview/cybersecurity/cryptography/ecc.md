@@ -5,7 +5,7 @@ tags: Cryptography, AsymmetricEncryption, Efficiency
 
 # ECC (Elliptic Curve Cryptography)
 
-"The Heavy Hitter of the Mobile World"—ultra-efficient encryption that provides bulletproof security using tiny keys. It is the secret reason your smartphone doesn't overheat when you visit a secure website.
+"The Heavy Hitter of the Mobile World" ,ultra-efficient encryption that provides bulletproof security using tiny keys. It is the secret reason your smartphone doesn't overheat when you visit a secure website.
 
 **ECC** is a modern form of **[[asymmetric-encryption|Asymmetric Encryption]]**. It produces the same world-class security as older methods like **[[rsa|RSA]]**, but it uses significantly less math and smaller "key" sizes. 
 

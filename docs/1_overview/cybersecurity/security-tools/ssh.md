@@ -5,9 +5,9 @@ tags: Networking, Tools, Encryption
 
 # SSH (Secure Shell)
 
-"The Secret Portal"—a secure, encrypted tunnel that allows you to "teleport" your hands and mind into a computer on the other side of the planet, controlling it as if you were sitting right in front of it.
+"The Secret Portal" ,a secure, encrypted tunnel that allows you to "teleport" your hands and mind into a computer on the other side of the planet, controlling it as if you were sitting right in front of it.
 
-**SSH** is the "Grand Master" of remote control. If you are a developer or an IT admin, this is how you work. It allows you to open a terminal in London while sitting in Los Angeles. Most importantly, it uses **military-grade encryption** to ensure no one—not a hacker, not the government—can see what you are doing or steal your password.
+**SSH** is the "Grand Master" of remote control. If you are a developer or an IT admin, this is how you work. It allows you to open a terminal in London while sitting in Los Angeles. Most importantly, it uses **military-grade encryption** to ensure no one ,not a hacker, not the government ,can see what you are doing or steal your password.
 
 Think of it like **A Secure Video Call with a Robot**:
 *   You send it commands: *"Tell me how much battery is left."*
@@ -29,7 +29,7 @@ Think of it like **A Secure Video Call with a Robot**:
 *   **SSH**: Only connects **one terminal window** to one specific computer. It’s a "Sniper Rifle" for controlling one machine; a VPN is a "Shield" for your whole connection.
 
 *2. Is it just for Geeks?*
-Mostly, but it’s built into **Windows 10/11**, Mac, and Linux. You don't need fancy software—you can just open a "Command Prompt" and start using it.
+Mostly, but it’s built into **Windows 10/11**, Mac, and Linux. You don't need fancy software ,you can just open a "Command Prompt" and start using it.
 
 ### Further Reading
 

@@ -5,9 +5,9 @@ tags: CyberSecurity, Governance, Compliance, Privacy, EU
 
 # GDPR
 
-"The Privacy Bill of Rights"—revolutionary laws that give you control over how your data is used. It forces every company on Earth to treat your personal info with the same respect as your money.
+"The Privacy Bill of Rights" ,revolutionary laws that give you control over how your data is used. It forces every company on Earth to treat your personal info with the same respect as your money.
 
-**GDPR** (2018) is the toughest privacy law in history. Born in the EU, its power is global. If a company anywhere—from a tiny app in California to a giant bank in Japan—has even one customer living in Europe, they must follow these rules. It shifted power from the "Data Giants" back to the "Humans."
+**GDPR** (2018) is the toughest privacy law in history. Born in the EU, its power is global. If a company anywhere ,from a tiny app in California to a giant bank in Japan ,has even one customer living in Europe, they must follow these rules. It shifted power from the "Data Giants" back to the "Humans."
 
 ## Your 4 Major Powers
 1.  **Clear Consent:** No more 50-page legal documents. Companies must ask you to "Opt-In" using simple language. If it isn't easy to understand, it isn't legal.

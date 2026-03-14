@@ -5,7 +5,7 @@ tags: Logic, Debate, BlackAndWhite
 
 # False Dilemma
 
-"The Binary Trap"—a logical fallacy where a complex situation is presented as having only two extreme options (usually "My Way" or "Total Disaster"), ignoring all the possible middle grounds in between.
+"The Binary Trap" ,a logical fallacy where a complex situation is presented as having only two extreme options (usually "My Way" or "Total Disaster"), ignoring all the possible middle grounds in between.
 
 **The False Dilemma** (also called a *False Dichotomy*) is a favorite tool of master-manipulators and high-pressure salespeople. It simplifies the world into "Black and White" to force you into a corner. By pretending there are only two paths, they make you feel like you have to choose their path, even if you don't like it.
 

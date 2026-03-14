@@ -5,7 +5,7 @@ tags: CyberSecurity, Defense, Tools
 
 # Antivirus
 
-"The Immune System"—a silent, 24/7 worker that studies every file you download and every app you run, ready to pounce on anything that even smells like a digital disease.
+"The Immune System" ,a silent, 24/7 worker that studies every file you download and every app you run, ready to pounce on anything that even smells like a digital disease.
 
 **Antivirus (AV)** is your essential "Night Watchman." Its job is to detect, block, and remove **[[malware|Malware]]** before it can do damage. While older programs were slow and annoying, modern ones use "Global Brains" in the cloud to identify new threats in seconds, even if they have never been seen before.
 

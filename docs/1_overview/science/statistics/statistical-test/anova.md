@@ -5,7 +5,7 @@ tags: Statistics, HypothesisTesting, Parametric
 
 # ANOVA (Analysis of Variance)
 
-"The Table Scanner"—a tool used to determine if there is a significant difference between **three or more** groups. 
+"The Table Scanner" ,a tool used to determine if there is a significant difference between **three or more** groups. 
 
 **ANOVA** is like a more powerful version of the [[t-test|T-Test]]. While a T-Test can only compare two things at a time (A vs. B), ANOVA can look at a whole room of groups (A, B, C, D...) and tell you if any of them are performing differently. It does this by comparing the "Variance" (the noise) inside each group against the "Variance" (the signal) between the group averages.
 
@@ -13,7 +13,7 @@ Think of it like **A Bouncer Scanning a Club**:
 *   The bouncer is looking for a group that is being "extra loud."
 *   If every table is equally loud, there is no signal.
 *   But if one table is screaming while the rest are whispering, the bouncer spots the "Significant Difference" immediately. 
-*   **The Outcome:** ANOVA tells you that **at least one** table is being loud—but it doesn't specify which one yet. You need a "Post-Hoc" test to figure that out.
+*   **The Outcome:** ANOVA tells you that **at least one** table is being loud ,but it doesn't specify which one yet. You need a "Post-Hoc" test to figure that out.
 
 ## Why not just run 10 T-Tests?
 If you have 5 different types of tires and you want to see which is best, you *could* run a T-Test for A vs B, A vs C, B vs C, etc.

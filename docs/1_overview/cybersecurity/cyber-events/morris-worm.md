@@ -5,7 +5,7 @@ tags: Malware, Worm, CyberSecurityHistory
 
 # Morris Worm
 
-"The First Warning Shot"—an intellectual experiment that accidentally broke the internet. It turned a student's curiosity into a global crisis that proved how fragile our new digital world really was.
+"The First Warning Shot" ,an intellectual experiment that accidentally broke the internet. It turned a student's curiosity into a global crisis that proved how fragile our new digital world really was.
 
 Released on November 2, 1988, the **Morris Worm** was the world's first major internet-scale "outbreak." Created by 23-year-old student Robert Tappan Morris, it wasn't designed to steal data. He just wanted to "gauge the size of the internet" by counting how many computers were connected. However, a tiny mathematical error transformed his "census taker" into a digital plague.
 
@@ -16,7 +16,7 @@ Think of it like **A Census Taker who forgot to stop knocking**:
 
 ## Why it changed the world
 *   **The First Conviction:** Robert Morris became the first person convicted under the new "Computer Fraud and Abuse Act."
-*   **Created the CERT:** The chaos led directly to the creation of the first **Computer Emergency Response Team (CERT)**—the "firefighters" of the internet.
+*   **Created the CERT:** The chaos led directly to the creation of the first **Computer Emergency Response Team (CERT)** ,the "firefighters" of the internet.
 *   **The End of Innocence:** In 1988, the internet was a small community of scientists who all trusted each other. The Morris Worm ended that era of trust forever.
 
 ## FAQs

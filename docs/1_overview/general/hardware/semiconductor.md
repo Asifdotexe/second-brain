@@ -5,7 +5,7 @@ tags: Hardware, Physics, Electronics
 
 # Semiconductor (Chip)
 
-The "Brain Cells" of the Modern World—the microscopic, near-magical material that allows us to control electricity with so much precision that we can turn "On" and "Off" signals 5 billion times every second.
+The "Brain Cells" of the Modern World ,the microscopic, near-magical material that allows us to control electricity with so much precision that we can turn "On" and "Off" signals 5 billion times every second.
 
 A **Semiconductor** is a material (usually **Silicon**) that sits in a goldilocks zone: it’s not a **Conductor** (which lets electricity flow freely, like copper) and it’s not an **Insulator** (which blocks electricity completely, like rubber). It’s "Semi."
 
@@ -17,7 +17,7 @@ Think of it like a **Frictionless Water Valve**:
 
 ## Why the World is "Hooked" on Chips
 
-Every single piece of modern technology—from your Smart Toaster to your Electric Car to the **[[supercomputer|Supercomputers]]** training **[[ai|AI]]**—relies on these chips. 
+Every single piece of modern technology ,from your Smart Toaster to your Electric Car to the **[[supercomputer|Supercomputers]]** training **[[ai|AI]]** ,relies on these chips. 
 *   **The Intelligence:** A computer is just a massive collection of these 1s and 0s.
 *   **The Efficiency:** Because transistors are so small (only a few atoms wide), they use almost no energy.
 

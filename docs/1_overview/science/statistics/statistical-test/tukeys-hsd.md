@@ -5,7 +5,7 @@ tags: Statistics, HypothesisTesting, PostHoc
 
 # Tukey's HSD
 
-"The Detective"—the second step you take only **after** your [[anova|ANOVA]] alarm goes off. It interrogates every group one-by-one to find exactly **who** is the winner and **who** is the loser.
+"The Detective" ,the second step you take only **after** your [[anova|ANOVA]] alarm goes off. It interrogates every group one-by-one to find exactly **who** is the winner and **who** is the loser.
 
 The **Tukey HSD** test is a "Post-Hoc" (after-the-fact) test. An **[[anova|ANOVA]]** is like a security alarm that only tells you *"Someone is in the building!"* It doesn't tell you who. Tukey HSD is the detective who comes in and scans every single pair of groups to find the "Honest Significant Difference."
 

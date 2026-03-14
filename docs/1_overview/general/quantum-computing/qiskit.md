@@ -5,7 +5,7 @@ tags: Quantum, Python, Coding, IBM
 
 # IBM Qiskit
 
-The "Sheet Music" of the Quantum World—an open-source toolkit that allows you to write instructions for a quantum computer using the familiar language of Python, even if you don't have a PhD in physics.
+The "Sheet Music" of the Quantum World ,an open-source toolkit that allows you to write instructions for a quantum computer using the familiar language of Python, even if you don't have a PhD in physics.
 
 **Qiskit** is the most popular software library for **[[quantum-computing|Quantum Computing]]**. It acts as the bridge between your brain and the actual, freezing-cold hardware sitting in a lab. You write your logic in Python on your laptop, and Qiskit translates it into the complex pulses of light and magnetism that a quantum chip understands.
 
@@ -17,7 +17,7 @@ Think of it like **Composing a Symphony**:
 ## The 3 Steps of a Qiskit Program
 
 1.  **The Circuit (The Canvas):** You start by drawing a "map" of your qubits and "gates" (the operations you want to perform). This is where you tell the computer exactly how to "spin" your qubits.
-2.  **Transpilation (The Translation):** Every quantum chip is built differently—some have 5 qubits in a line, some have 100 in a grid. Qiskit automatically "rewrites" your code to fit the specific chip you are using, making sure your logic doesn't get lost in translation.
+2.  **Transpilation (The Translation):** Every quantum chip is built differently ,some have 5 qubits in a line, some have 100 in a grid. Qiskit automatically "rewrites" your code to fit the specific chip you are using, making sure your logic doesn't get lost in translation.
 3.  **The Primitive (The Result):** You run the code and get the answer. You can ask for a simple "Heads or Tails" probability (The Sampler) or a deep mathematical calculation of a molecule's energy (The Estimator).
 
 ## FAQs

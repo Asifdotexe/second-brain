@@ -5,7 +5,7 @@ tags: Psychology, Memory, UXDesign
 
 # Peak-End Rule
 
-"The Highlight Reel"—a cognitive bias where we judge an entire experience by how we felt at its absolute **Peak** (most intense part) and at its **End**, rather than the average of the whole thing.
+"The Highlight Reel" ,a cognitive bias where we judge an entire experience by how we felt at its absolute **Peak** (most intense part) and at its **End**, rather than the average of the whole thing.
 
 **The Peak-End Rule** is why you forget the boring parts of your life. Your brain is not a video camera; it is a scrapbook. It doesn't have room for every minute of a 10-day vacation, so it only saves a few "High Resolution" photos of the best (or worst) moments and the final moment. This means a vacation can be 90% terrible, but if the last day is amazing, you will remember it as a "Good Trip."
 

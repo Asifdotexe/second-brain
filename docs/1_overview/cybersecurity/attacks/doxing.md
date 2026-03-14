@@ -5,7 +5,7 @@ tags: Cybersecurity, Privacy, SocialEngineering
 
 # Doxing
 
-"The Weaponized Resume"—unmasking an anonymous internet persona to reveal their home address, their boss, and their family members to a hostile online mob.
+"The Weaponized Resume" ,unmasking an anonymous internet persona to reveal their home address, their boss, and their family members to a hostile online mob.
 
 **Doxing** (shorthand for "dropping docs") is the act of publicly revealing a person's private identifying information online without their consent. In the digital world, anonymity is a shield. Doxing is the act of violently shattering that shield to invite real-world harassment, stalkers, and threats into a victim's life.
 
@@ -26,7 +26,7 @@ Doxers rarely "hack" computers; they are just incredibly patient detectives:
 **It’s a grey area.** If the info was found via "public" sources (like property records or your own social media), the act of compiling it often isn't a crime. However, if the info is used to encourage stalking or "Swatting" (calling a fake police raid on someone's house), the perpetrator can go to jail for those specific crimes.
 
 *2. How can I protect myself?*
-**Practice Data Hygiene.** Use different usernames for every platform. Use a "Data Removal Service" to scrub your name from "People Search" sites. And most importantly, never post a photo of your house or the view from your window—the internet is scarily good at identifying locations from a single tree or a street sign.
+**Practice Data Hygiene.** Use different usernames for every platform. Use a "Data Removal Service" to scrub your name from "People Search" sites. And most importantly, never post a photo of your house or the view from your window ,the internet is scarily good at identifying locations from a single tree or a street sign.
 
 ### Further Reading
 

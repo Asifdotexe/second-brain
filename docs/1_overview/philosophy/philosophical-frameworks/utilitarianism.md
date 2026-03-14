@@ -5,7 +5,7 @@ tags: Philosophy, Ethics, JeremyBentham
 
 # Utilitarianism
 
-"Moral Mathematics"—an ethical system that says the "Right" choice is always the one that results in the **Greatest Happiness for the Greatest Number of People.**
+"Moral Mathematics" ,an ethical system that says the "Right" choice is always the one that results in the **Greatest Happiness for the Greatest Number of People.**
 
 **Utilitarianism** treats morality like a spreadsheet. It doesn't care about your "Intentions" (why you did it) or "Rules" (thou shalt not kill). It only cares about the **Results**. If an action creates more "Units of Happiness" than "Units of Pain," then it is the only moral choice.
 
@@ -27,7 +27,7 @@ Strict Utilitarianism can lead to some very scary places.
 *   **John Stuart Mill:** The man who made it "Human." He argued that it’s better to be a "Dissatisfied Socrates" than a "Satisfied Pig."
 
 *2. How do I use it?*
-You use it every time you make a group decision! When you and your friends can't decide on a movie, and you vote so that the most people are happy—that is Utilitarianism in action.
+You use it every time you make a group decision! When you and your friends can't decide on a movie, and you vote so that the most people are happy ,that is Utilitarianism in action.
 
 ### Further Reading
 

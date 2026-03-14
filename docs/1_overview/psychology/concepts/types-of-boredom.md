@@ -5,7 +5,7 @@ tags: Emotion, Psychology, MentalHealth, Motivation
 
 # Types of Boredom
 
-"The Spectrum of Meh"—the psychological discovery that boredom isn't just one feeling; it’s a range of 5 different states, from a "Relaxing Day-Off" to "Aggressive Frustration."
+"The Spectrum of Meh" ,the psychological discovery that boredom isn't just one feeling; it’s a range of 5 different states, from a "Relaxing Day-Off" to "Aggressive Frustration."
 
 **Boredom** is usually defined by two things: how **Bad** you feel (Valence) and how **Restless** your body is (Arousal). In the past, scientists thought everyone experienced boredom the same way. But new research shows that being "Bored" while staring at a beautiful ceiling is completely different from being "Bored" while stuck in a 4-hour meeting with a boss you hate.
 

@@ -5,7 +5,7 @@ tags: Statistics, Math, CoinFlip
 
 # Binomial Distribution
 
-"The Coin Flip"—the math of "Yes or No" trials. It counts how many "Successes" you get when you try something a fixed number of times.
+"The Coin Flip" ,the math of "Yes or No" trials. It counts how many "Successes" you get when you try something a fixed number of times.
 
 The **Binomial Distribution** is what you use when life is a series of independent attempts. Every attempt has the same odds, and there are only two possible outcomes: You win, or you lose. No "Maybe," no "Half-points."
 
@@ -18,7 +18,7 @@ Think of it like **Shooting Free Throws**:
 ## The 3 Rules for Binomial
 1.  **Binary Outcome:** It only works for things with two colors (Heads/Tails, Pass/Fail, Dead/Alive).
 2.  **Fixed Number of Tries:** You have to decide beforehand: *"I am going to try 50 times."* (If you try "until you win," that is a different distribution).
-3.  **Independence:** Making the first shot doesn't make you "Hot"—the odds for the second shot must be exactly the same.
+3.  **Independence:** Making the first shot doesn't make you "Hot" ,the odds for the second shot must be exactly the same.
 
 ## FAQs
 

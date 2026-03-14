@@ -5,9 +5,9 @@ tags: CyberAttack, WebSecurity, Vulnerability
 
 # Command Injection
 
-"The Mind-Control Trick"—tricking a computer into obeying a hidden, malicious command by disguising it as an innocent piece of information.
+"The Mind-Control Trick" ,tricking a computer into obeying a hidden, malicious command by disguising it as an innocent piece of information.
 
-**Command Injection** is a technique where an attacker sends a malicious instruction through an input field (like a search bar or a login form). The web server, thinking it’s just processing a password or a name, accidentally executes that instruction on its "brain"—the Operating System.
+**Command Injection** is a technique where an attacker sends a malicious instruction through an input field (like a search bar or a login form). The web server, thinking it’s just processing a password or a name, accidentally executes that instruction on its "brain" ,the Operating System.
 
 Think of it like **An Automated Coffee Shop**:
 *   You type your name into the ordering screen: `"John"`.

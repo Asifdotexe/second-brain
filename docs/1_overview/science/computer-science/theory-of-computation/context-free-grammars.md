@@ -5,9 +5,9 @@ tags: ComputerScience, TheoryOfComputation, FormalLanguages
 
 # Context-Free Grammars
 
-"The Mad Libs for Machines"—a system of rules used to describe the structure (syntax) of a language, where any "Placeholder" can be replaced by its final word regardless of what else is in the sentence.
+"The Mad Libs for Machines" ,a system of rules used to describe the structure (syntax) of a language, where any "Placeholder" can be replaced by its final word regardless of what else is in the sentence.
 
-**Context-Free Grammars (CFGs)** are the blueprint for how a computer understands the "Sentences" of a programming language. In a human language, the meaning of a word often changes based on its **Context** (the words around it). But in a Context-Free language, a rule is a rule. If the rule says `[NOUN]` can be replaced with "Dog," it doesn't matter if the word before it is "The" or "Run"—the dog stays a dog.
+**Context-Free Grammars (CFGs)** are the blueprint for how a computer understands the "Sentences" of a programming language. In a human language, the meaning of a word often changes based on its **Context** (the words around it). But in a Context-Free language, a rule is a rule. If the rule says `[NOUN]` can be replaced with "Dog," it doesn't matter if the word before it is "The" or "Run" ,the dog stays a dog.
 
 Think of it like **Building a Lego Set**:
 *   **The Blueprint (The Grammar):** Tells you that a "Wall" can be replaced by 10 "Bricks."

@@ -5,9 +5,9 @@ tags: Logic, Debate, Philosophy, MentalModels
 
 # Steel-Manning
 
-"Ironing out the Truth"—the gold standard of honest debate. It is the practice of taking your opponent's argument and making it **stronger** and **smarter** before you try to argue against it.
+"Ironing out the Truth" ,the gold standard of honest debate. It is the practice of taking your opponent's argument and making it **stronger** and **smarter** before you try to argue against it.
 
-**Steel-Manning** is the exact opposite of the **[[straw-man|Straw Man Fallacy]]**. Instead of attacking a weak, stupid version of an idea, you try to find the absolute best version of that idea—even if the person you're talking to didn't explain it well. This is the ultimate tool for someone who actually wants to find the truth, rather than just "winning" an argument.
+**Steel-Manning** is the exact opposite of the **[[straw-man|Straw Man Fallacy]]**. Instead of attacking a weak, stupid version of an idea, you try to find the absolute best version of that idea ,even if the person you're talking to didn't explain it well. This is the ultimate tool for someone who actually wants to find the truth, rather than just "winning" an argument.
 
 Think of it like **Training for a Fight**:
 *   **The [[straw-man|Straw Man]]:** You build a scarecrow out of hay. You punch it and it falls down easily. You look like a winner, but you haven't actually learned how to fight. You are still weak.

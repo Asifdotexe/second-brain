@@ -5,7 +5,7 @@ tags: CyberSecurity, Strategy, Governance, CISSP
 
 # CISSP Security Domains
 
-"The Blueprints for a Digital Fortress"—eight massive, interlocking pillars that form the gold standard for global cybersecurity management.
+"The Blueprints for a Digital Fortress" ,eight massive, interlocking pillars that form the gold standard for global cybersecurity management.
 
 To become a **CISSP** (Certified Information Systems Security Professional), you have to master eight "Domains." These aren't just technical tricks; they are the eight different "Languages" a security leader must speak to protect a multi-billion dollar company. It’s often called a "Mile Wide, Inch Deep" certification because it covers almost every topic in security history.
 

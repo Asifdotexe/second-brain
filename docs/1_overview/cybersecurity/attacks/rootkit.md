@@ -5,7 +5,7 @@ tags: Malware, Stealth, Persistence
 
 # Rootkit
 
-"The Invisible Mask"—the most dangerous level of malware. It doesn't just hide; it tricks your computer into believing it is perfectly healthy even while a hacker is standing in the middle of its brain.
+"The Invisible Mask" ,the most dangerous level of malware. It doesn't just hide; it tricks your computer into believing it is perfectly healthy even while a hacker is standing in the middle of its brain.
 
 The name comes from **"Root"** (the highest level of "God Power" on a machine) and **"Kit"** (the tools to get there). Its primary superpower is **Stealth**. Most malware is like a burglar hiding in your closet; a Rootkit is a burglar who has replaced your security cameras with a looped video of an empty, safe hallway. 
 
@@ -17,7 +17,7 @@ Think of it like **"The Master Liar"**:
 
 ## Why is it so hard to kill?
 *   **Kernel-Level Access:** It lives deeper than your apps or your browser. It burrows into the **Operating System Kernel** (the brain) or even the **BIOS** (the code that runs before Windows even starts).
-*   **Antivirus Blocker:** High-end Rootkits are designed to disable your antivirus the second they get on the machine—or simply "lie" to the scanner just like they lie to you.
+*   **Antivirus Blocker:** High-end Rootkits are designed to disable your antivirus the second they get on the machine ,or simply "lie" to the scanner just like they lie to you.
 *   **Permanent Presence:** Because it's invisible, it can stay on a machine for years without being found, surviving even if you change your passwords.
 
 ## FAQs

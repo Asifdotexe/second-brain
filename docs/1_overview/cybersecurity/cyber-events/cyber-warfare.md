@@ -5,7 +5,7 @@ tags: CyberSecurity, War, Geopolitics, NationalSecurity
 
 # Cyber Warfare
 
-"The Silent Frontline"—a modern conflict where nations don't use tanks and missiles to attack an enemy, but instead use lines of code to shut down power grids, crash bank systems, and steal military secrets.
+"The Silent Frontline" ,a modern conflict where nations don't use tanks and missiles to attack an enemy, but instead use lines of code to shut down power grids, crash bank systems, and steal military secrets.
 
 **Cyber Warfare** is the use of digital attacks by one country to disable another’s infrastructure or economy. Unlike traditional war, where you can see an army crossing a border, this is invisible, anonymous, and happens at light speed. A single hacker sitting 5,000 miles away can pull a digital "lever" that plunges a city into darkness.
 
@@ -28,7 +28,7 @@ tags: CyberSecurity, War, Geopolitics, NationalSecurity
 **Not officially.** Nations prefer to keep attacks "unofficial" to avoid starting a physical war. However, many consider the **[[notpetya|NotPetya]]** attack on Ukraine $(2017)$ one of the first times code was used as a primary weapon of war.
 
 *2. How do we defend?*
-**Mutually Assured Destruction.** Countries maintain "Offensive Cyber" teams to strike back if they are hit first. They also focus on "Cyber Resilience"—building systems that can survive an attack without failing.
+**Mutually Assured Destruction.** Countries maintain "Offensive Cyber" teams to strike back if they are hit first. They also focus on "Cyber Resilience" ,building systems that can survive an attack without failing.
 
 ### Further Reading
 

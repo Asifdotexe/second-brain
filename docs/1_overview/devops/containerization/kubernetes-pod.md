@@ -5,7 +5,7 @@ tags: DevOps, Containerization, Kubernetes
 
 # Kubernetes Pod
 
-The "Peapod" of the Cloud—the smallest, most basic unit of life in the Kubernetes universe. You don't deploy an application directly to Kubernetes; you wrap it in a Pod first.
+The "Peapod" of the Cloud ,the smallest, most basic unit of life in the Kubernetes universe. You don't deploy an application directly to Kubernetes; you wrap it in a Pod first.
 
 In Kubernetes, a **Pod** is the smallest thing you can create. Most of the time, a Pod is just a protective wrapper around a single **[[docker-container|container]]**. If your application is a "Pea," the Pod is the "Peapod" that holds it and gives it a home.
 

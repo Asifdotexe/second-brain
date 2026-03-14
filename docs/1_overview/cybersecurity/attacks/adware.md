@@ -5,9 +5,9 @@ tags: Malware, Privacy, Annoyance
 
 # Adware
 
-"The Pushy Salesman"—software that follows you into your house and starts pinning flyers to your living room walls while you're trying to sleep.
+"The Pushy Salesman" ,software that follows you into your house and starts pinning flyers to your living room walls while you're trying to sleep.
 
-**Adware** (Advertising-Supported Software) is software designed to bombard your screen with ads—usually aggressive pop-ups, unclosable banners, or weird new toolbars in your browser. Its primary goal is to make money for the creator by forcing you to see "impressions."
+**Adware** (Advertising-Supported Software) is software designed to bombard your screen with ads ,usually aggressive pop-ups, unclosable banners, or weird new toolbars in your browser. Its primary goal is to make money for the creator by forcing you to see "impressions."
 
 Think of it like **A Digital Parasite**:
 *   It isn't trying to "kill" your computer.
@@ -26,7 +26,7 @@ A free game that shows you a 30-second ad is generally "Fine." Adware crosses th
 **The "Hitchhiker" Method.** When you download a free app and click "Next, Next, Next" without reading the fine print, you are often accidentally giving permission to install "Bonus Software" bundled inside. 
 
 *2. Is it harmful?*
-**To your Privacy and Speed.** Because it's constantly downloading heavy ads in the background, your computer feels sluggish and your battery dies faster. Worse, it’s a privacy nightmare—it’s essentially a "Spy" living in your browser.
+**To your Privacy and Speed.** Because it's constantly downloading heavy ads in the background, your computer feels sluggish and your battery dies faster. Worse, it’s a privacy nightmare ,it’s essentially a "Spy" living in your browser.
 
 ### Further Reading
 

@@ -5,7 +5,7 @@ tags: Philosophy, Freedom, Sartre
 
 # Existentialism
 
-"You are the Author"—the belief that you were born without any pre-set purpose, and it is your absolute duty (and burden) to create your own meaning through the choices you make.
+"You are the Author" ,the belief that you were born without any pre-set purpose, and it is your absolute duty (and burden) to create your own meaning through the choices you make.
 
 **Existentialism** is the opposite of "Destiny." It says that for humans, **Existence precedes Essence**. This simply means you were born first (Existence), and you are a blank slate. There is no "Plan" for your life written in the stars. You decide what your "Essence" (your purpose) is through every action you take.
 
@@ -15,7 +15,7 @@ Think of it like **The Paintbrush and the Canvas**:
 
 ## The "Curse" of Freedom
 Jean-Paul Sartre famously said we are **"Condemned to be free."** 
-If there is no "Grand Plan," then everything you do is 100% your responsibility. You can't blame your job, your parents, or your "Luck." You are the one making the choices. This creates a feeling of "Existential Dread"—that dizzying realization that the world is wide open and you have no map.
+If there is no "Grand Plan," then everything you do is 100% your responsibility. You can't blame your job, your parents, or your "Luck." You are the one making the choices. This creates a feeling of "Existential Dread" ,that dizzying realization that the world is wide open and you have no map.
 
 ## FAQs
 

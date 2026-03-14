@@ -5,7 +5,7 @@ tags: Philosophy, Paradox, Identity
 
 # Ship of Theseus
 
-"The Replacement Puzzle"—an ancient thought experiment that asks: if an object has had every single one of its parts replaced, is it still the same object?
+"The Replacement Puzzle" ,an ancient thought experiment that asks: if an object has had every single one of its parts replaced, is it still the same object?
 
 **The Ship of Theseus** is the ultimate test of **Identity**. It forces us to ask what "You" actually are. Are you the physical "Stuff" (atoms/wood) you are made of, or are you the "Pattern" (the shape/personality) that stays the same even as the stuff changes?
 

@@ -5,9 +5,9 @@ tags: Statistics, Risk, Taleb
 
 # Black Swan
 
-"The Impossible Event"—the statistical rule that the most important events in history are the ones that are rare, high-impact, and completely impossible to predict using past data.
+"The Impossible Event" ,the statistical rule that the most important events in history are the ones that are rare, high-impact, and completely impossible to predict using past data.
 
-**A Black Swan** is an event that breaks all the rules. For centuries, people in Europe believed all swans were white. They had millions of data points (every swan they ever saw) to "Prove" it. Then, they discovered Australia and found a **Black Swan**. That single bird destroyed 2,000 years of "Certainty." In statistics, a Black Swan is an "Outlier" that changes everything—like a global pandemic, a sudden stock market crash, or the invention of the internet.
+**A Black Swan** is an event that breaks all the rules. For centuries, people in Europe believed all swans were white. They had millions of data points (every swan they ever saw) to "Prove" it. Then, they discovered Australia and found a **Black Swan**. That single bird destroyed 2,000 years of "Certainty." In statistics, a Black Swan is an "Outlier" that changes everything ,like a global pandemic, a sudden stock market crash, or the invention of the internet.
 
 Think of it like **The Turkey Problem**:
 *   **The Data:** For 1,000 days, the farmer comes out and feeds the turkey. Every day, the turkey's "Statistics" say: *"The farmer loves me! He is my best friend!"* 

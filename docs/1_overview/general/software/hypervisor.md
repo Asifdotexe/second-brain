@@ -5,7 +5,7 @@ tags: Virtualization, CloudComputing, Infrastructure
 
 # Hypervisor
 
-The "Landlord of the Digital Apartment Building"—a clever layer of software that allows one massive physical computer to pretend to be dozens of smaller, separate computers at the same time.
+The "Landlord of the Digital Apartment Building" ,a clever layer of software that allows one massive physical computer to pretend to be dozens of smaller, separate computers at the same time.
 
 If a physical computer is a **Building**, the **Hypervisor** is the property manager that takes an empty floor and builds separate apartments (**[[virtualization|Virtual Machines]]**) inside it. It ensures that the person in Apt 1 can't see what the person in Apt 2 is doing, even though they share the same electricity and plumbing.
 

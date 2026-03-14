@@ -5,7 +5,7 @@ tags: DevOps, Infrastructure, Cloud, Terraform
 
 # Terraform State
 
-The "Inventory Ledger"—an incredibly detailed map that Terraform uses to remember exactly what it built in the cloud, helping it stay "sane" so it doesn't accidentally build duplicates or delete things it shouldn't.
+The "Inventory Ledger" ,an incredibly detailed map that Terraform uses to remember exactly what it built in the cloud, helping it stay "sane" so it doesn't accidentally build duplicates or delete things it shouldn't.
 
 **Terraform State** is a simple JSON file (usually named `terraform.tfstate`) that acts as the "Memory" of your infrastructure. When you write code and run `terraform apply`, Terraform takes a "snapshot" of the real-world results and saves them in this state file. The next time you run your code, Terraform doesn't guess what to do; it checks its memory (the state file) and compares it to your new code to see what has changed.
 

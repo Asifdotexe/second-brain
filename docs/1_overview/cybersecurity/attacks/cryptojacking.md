@@ -5,7 +5,7 @@ tags: CyberSecurity, InformationSecurity, VulnerabilityManagement
 
 # Cryptojacking
 
-"The Digital Parasite"—software that secretly hijacks your computer's brainpower to print invisible money for a hacker, leaving you with a slow machine and a massive electricity bill.
+"The Digital Parasite" ,software that secretly hijacks your computer's brainpower to print invisible money for a hacker, leaving you with a slow machine and a massive electricity bill.
 
 **Cryptojacking** isn't interested in stealing your photos or your passwords. Instead, they want your **Resources**. They install a hidden script on your device that forces your processor (CPU) to solve the insanely complex math problems required to "mine" cryptocurrency. Every time your computer solves a block, the hacker gets paid, while you are left wondering why your laptop is hot enough to fry an egg.
 

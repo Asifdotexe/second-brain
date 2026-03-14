@@ -5,7 +5,7 @@ tags: CognitiveBias, NeedToActFast, InvestedTime
 
 # IKEA Effect
 
-"The Builder’s Love"—a cognitive bias where we believe a product is significantly more valuable simply because we built or assembled it ourselves.
+"The Builder’s Love" ,a cognitive bias where we believe a product is significantly more valuable simply because we built or assembled it ourselves.
 
 **The IKEA Effect** is named after the Swedish furniture store where you have to build your own bookshelves. It’s an "Ego Bias." When you spend 4 hours sweating, swearing, and holding an Allen wrench to build a table, your brain doesn't just see a "Table." It sees a monument to your own **Competence**. Because you put your own "Labor" into it, you "Endow" the object with extra value that no one else can see.
 

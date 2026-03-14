@@ -5,7 +5,7 @@ tags: Logic, Debate
 
 # Middle Ground Fallacy
 
-"The Truth is in the Middle"—a logical error that assumes the "correct" answer to a problem is always the compromise halfway between two opposing views.
+"The Truth is in the Middle" ,a logical error that assumes the "correct" answer to a problem is always the compromise halfway between two opposing views.
 
 **The Middle Ground Fallacy** (formally *Argumentum ad Temperantiam*) sounds very reasonable. We are taught from a young age that "Compromise is Good." However, logic doesn't care about fairness. Sometimes, one side is 100% correct and the other is 100% wrong. In those cases, the "Middle Ground" is just a watered-down lie.
 

@@ -5,9 +5,9 @@ tags: DevOps, Containerization, Docker
 
 # Docker Overview
 
-The "Universal Shipping Container" of the internet—a revolutionary technology that puts your code into a standardized, indestructible box, ensuring it runs perfectly on any computer in the world, from your laptop to a massive cloud server.
+The "Universal Shipping Container" of the internet ,a revolutionary technology that puts your code into a standardized, indestructible box, ensuring it runs perfectly on any computer in the world, from your laptop to a massive cloud server.
 
-**Docker** is the world’s leading platform for **Containerization**. Before Docker, the biggest headache for a developer was the sentence: *"But it works on my machine!"* This happened because every computer is a little bit different—different settings, different versions of Python, different libraries.
+**Docker** is the world’s leading platform for **Containerization**. Before Docker, the biggest headache for a developer was the sentence: *"But it works on my machine!"* This happened because every computer is a little bit different ,different settings, different versions of Python, different libraries.
 
 Docker solves this by packaging your application and **everything it needs to survive** (the database, the code, the settings) into a single, isolated "Box." When you hand that box to another computer, it doesn't care about that computer's "quirks." It just runs exactly the same way every time.
 
@@ -22,7 +22,7 @@ Imagine the world before **Standardized Shipping Containers**. If you wanted to 
 ## FAQs
 
 *1. Is Docker the same as a "Virtual Machine"?*
-No! A Virtual Machine (VM) is like building a whole new house inside your house—it’s very heavy and slow. Docker is like having many small, isolated bedrooms that all share the same plumbing and electricity (the **[[operating-system|Operating System]]**). Containers start up in seconds, whereas VMs take minutes.
+No! A Virtual Machine (VM) is like building a whole new house inside your house ,it’s very heavy and slow. Docker is like having many small, isolated bedrooms that all share the same plumbing and electricity (the **[[operating-system|Operating System]]**). Containers start up in seconds, whereas VMs take minutes.
 
 *2. Why should I care about Docker for my personal projects?*
 Because it saves you from "Setup Hell." Instead of spending three hours trying to install a database on your computer, you can just run one command: `docker run database`. When you're done, you delete it and your computer stays "clean."

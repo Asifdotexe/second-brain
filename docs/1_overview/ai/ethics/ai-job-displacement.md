@@ -9,7 +9,7 @@ The massive, welding robo-arms came for the blue-collar factory jobs; now, the b
 
 **AI Job Displacement** is the brutal economic and societal disruption that happens when an automated AI system definitively outperforms a human worker at a specific task, leading a company to simply eliminate the human from payroll. 
 
-Past waves of automation (like the cotton gin or auto-assembly arms) physically replaced manual labor. This modern wave of [[llm|Large Language Models]] and autonomous [[agentic-ai|Agentic AI]] directly threatens "knowledge work"—the people sitting in cubicles doing writing, legal analysis, basic coding, and customer service.
+Past waves of automation (like the cotton gin or auto-assembly arms) physically replaced manual labor. This modern wave of [[llm|Large Language Models]] and autonomous [[agentic-ai|Agentic AI]] directly threatens "knowledge work" ,the people sitting in cubicles doing writing, legal analysis, basic coding, and customer service.
 
 ## Two Competing Views of the Future
 

@@ -5,7 +5,7 @@ tags: Refactoring, CleanCode, Techniques
 
 # Dealing with Generalization
 
-"The Family Tree"—techniques for moving code between "Parent" classes and "Child" classes to ensure that everyone has exactly what they need and nothing more.
+"The Family Tree" ,techniques for moving code between "Parent" classes and "Child" classes to ensure that everyone has exactly what they need and nothing more.
 
 In Object-Oriented Programming, we often use **Inheritance** (Parent/Child relationships). But over time, the family tree gets messy. You might have code in the "Children" that should be shared by everyone, or code in the "Parent" that only one child actually uses. We use these techniques to "Clean up the Tree."
 

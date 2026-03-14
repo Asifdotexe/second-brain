@@ -5,7 +5,7 @@ tags: Statistics, HypothesisTesting, NonParametric
 
 # Mann-Whitney U Test
 
-"The Resistance Test"—a tool used to compare two groups when your data is messy, contains huge outliers, or doesn't follow a perfect "Bell Curve."
+"The Resistance Test" ,a tool used to compare two groups when your data is messy, contains huge outliers, or doesn't follow a perfect "Bell Curve."
 
 The **Mann-Whitney U Test** is the "Non-Parametric" sibling of the [[t-test|Independent T-Test]]. While a T-Test uses **Averages**, the Mann-Whitney U test uses **Ranks**. This is a massive advantage because it means one single billionaire walk-in won't ruin your survey of "Average Salaries." 
 

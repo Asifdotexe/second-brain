@@ -5,7 +5,7 @@ tags: Refactoring, CleanCode, SoftwareDesign
 
 # Code Smells
 
-"The Early Warning Signs"—surface indicators that your code is rotting underneath. Like a bad smell in a kitchen, it doesn't mean the house is falling down *yet*, but it tells you that a disaster is coming if you don't start cleaning.
+"The Early Warning Signs" ,surface indicators that your code is rotting underneath. Like a bad smell in a kitchen, it doesn't mean the house is falling down *yet*, but it tells you that a disaster is coming if you don't start cleaning.
 
 **A Code Smell** is like a "Fuzzy Green Spot" on a slice of bread. The bread might still be edible today, but that spot is a sign of mold. If you ignore it and build a "Sandwich" (a new feature) on top of it, the whole system is going to get sick. We use these "Smells" to help us decide **exactly** where we need to [[what-is-refactoring|Refactor]] first.
 
@@ -32,7 +32,7 @@ Things that are just "Clutter" and should be deleted immediately.
 
 ## 5. The Couplers (Stuck Together)
 Classes that are too "Attached" to each other.
-*   **Feature Envy:** When Class A is constantly "snooping" around inside Class B’s data. This makes the code very "Brittle"—if you change Class B, Class A breaks instantly.
+*   **Feature Envy:** When Class A is constantly "snooping" around inside Class B’s data. This makes the code very "Brittle" ,if you change Class B, Class A breaks instantly.
 
 ### Further Reading
 

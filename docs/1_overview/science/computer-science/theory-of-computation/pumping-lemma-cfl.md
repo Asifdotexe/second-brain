@@ -5,7 +5,7 @@ tags: ComputerScience, TheoryOfComputation, FormalLanguages
 
 # Pumping Lemma for CFLs
 
-"The Balloon Animal Stress-Test"—a mathematical rule used to prove that a language is **NOT** context-free. It’s the ultimate "Smell Test" for computer science.
+"The Balloon Animal Stress-Test" ,a mathematical rule used to prove that a language is **NOT** context-free. It’s the ultimate "Smell Test" for computer science.
 
 The **Pumping Lemma** is a "Proof by Contradiction." Imagine a vendor sells you a balloon dog and swears it is made of "Context-Free Rubber." The Pumping Lemma says that if it is truly Context-Free, you should be able to grab two specific sections of its body and "Pump" infinite air into them, and the result should **Always Still Look Like a Dog.** If you pump it up and it suddenly snaps into a shape that is definitely **Not** a dog, you have proven the vendor lied.
 

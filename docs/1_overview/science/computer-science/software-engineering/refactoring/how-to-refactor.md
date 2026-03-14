@@ -5,7 +5,7 @@ tags: Refactoring, CleanCode, SoftwareDesign, Testing
 
 # How to Refactor
 
-"Micro-Steps and Red Lights"—the rigid, step-by-step checklist you must follow to ensure you are cleaning the code without accidentally breaking the whole application.
+"Micro-Steps and Red Lights" ,the rigid, step-by-step checklist you must follow to ensure you are cleaning the code without accidentally breaking the whole application.
 
 Refactoring is dangerous. You are taking apart the "Foundation" of a building while people are still living in it. If you try to do a "Massive Rewrite" over a weekend, you will almost certainly fail and introduce dozens of bugs. To stay safe, you must follow the **Janitor’s Rule**: move one piece of trash at a time and check the floor every 3 seconds.
 

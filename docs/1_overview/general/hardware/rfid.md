@@ -5,7 +5,7 @@ tags: Hardware, Wireless, Tracking
 
 # RFID (Radio Frequency Identification)
 
-The "Invisible Barcode"—a simple, clever technology that allows objects to "announce" who they are to a computer without needing to be scanned by a laser or seen by a human eye.
+The "Invisible Barcode" ,a simple, clever technology that allows objects to "announce" who they are to a computer without needing to be scanned by a laser or seen by a human eye.
 
 **RFID** is the older, tougher cousin of **[[nfc|NFC]]**. While a barcode requires a human to point a red laser at a specific spot, an RFID reader can "see" a tag through a box, a wall, or even from a hundred feet away. It is the backbone of modern shipping, logistics, and security.
 
@@ -21,7 +21,7 @@ Think of it like a **"Who am I?" Shout**:
 ## FAQs
 
 *1. Can I be tracked by RFID?*
-Technically, yes. Some passports, credit cards, and even clothing items have RFID tags inside. This is why "Faraday Wallets" (metal-lined wallets) are popular—the metal acts as a "Shield" that prevents the radio waves from reaching the tag, keeping it "Silent."
+Technically, yes. Some passports, credit cards, and even clothing items have RFID tags inside. This is why "Faraday Wallets" (metal-lined wallets) are popular ,the metal acts as a "Shield" that prevents the radio waves from reaching the tag, keeping it "Silent."
 
 *2. Is it the same as a QR code?*
 No. A QR code is a visual image. If it gets dirty or covered in mud, it breaks. An RFID tag is inside the object; it can be covered in mud, hidden inside a box, or buried in a pallet, and it will still work perfectly.

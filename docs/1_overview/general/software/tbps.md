@@ -5,7 +5,7 @@ tags: Networking, Units, Hardware
 
 # Data Speed Units (Tbps / Gbps)
 
-The "Speedometer of the Internet"—the specialized units we use to measure how much information can zoom through a cable or a satellite link every single second.
+The "Speedometer of the Internet" ,the specialized units we use to measure how much information can zoom through a cable or a satellite link every single second.
 
 When you see terms like **Tbps** or **Mbps**, you are looking at the "Rate of Flow." Just like we measure water flow in "Gallons per Minute," we measure the internet in "Bits per Second."
 

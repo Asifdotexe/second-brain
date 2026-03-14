@@ -5,7 +5,7 @@ tags: Aviation, FutureTech, Transportation
 
 # eVTOL (Electric Vertical Take-Off and Landing)
 
-The "Flying Taxi"—the long-awaited dream of a flying car, built using the same electric motor technology as a Tesla and the smart stability of a hobbyist drone.
+The "Flying Taxi" ,the long-awaited dream of a flying car, built using the same electric motor technology as a Tesla and the smart stability of a hobbyist drone.
 
 An **eVTOL** (pronounced "ee-VEE-tol") is a new type of aircraft that is changing how we think about cities. It takes off vertically like a helicopter (meaning it doesn't need a runway) but flies forward efficiently like a plane. Because it is **Electric**, it is whisper-quiet compared to a gas-guzzling helicopter, meaning it can land on city rooftops without annoying the neighbors.
 

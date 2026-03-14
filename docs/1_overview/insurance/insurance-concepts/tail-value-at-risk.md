@@ -5,9 +5,9 @@ tags: [RiskMetric, FinanicalRisk, DisasterPlanning]
 
 # Tail Value at Risk (TVaR)
 
-"The Deep End"—the terrifying question that asks: *"If our safety systems (VaR) fail and the water floods over the wall, how deep will it actually get?"*
+"The Deep End" ,the terrifying question that asks: *"If our safety systems (VaR) fail and the water floods over the wall, how deep will it actually get?"*
 
-**Tail Value at Risk (TVaR)** (also called "Expected Shortfall") is the average of the absolute worst-case scenarios. While **[[value-at-risk|VaR]]** tells you where the "Danger Zone" begins, TVaR tells you just how bad it is once you are inside that zone. It focuses entirely on the "Tail" of a graph—the rare, catastrophic disasters.
+**Tail Value at Risk (TVaR)** (also called "Expected Shortfall") is the average of the absolute worst-case scenarios. While **[[value-at-risk|VaR]]** tells you where the "Danger Zone" begins, TVaR tells you just how bad it is once you are inside that zone. It focuses entirely on the "Tail" of a graph ,the rare, catastrophic disasters.
 
 Think of it like a **Storm Forecast**:
 *   **VaR (The Threshold):** "We are 99% sure the storm won't cause more than $1 Million in damage."

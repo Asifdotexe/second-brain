@@ -5,7 +5,7 @@ tags: CyberSecurity, SecurityOperations, IncidentResponse
 
 # Security Playbooks
 
-"The Disaster Manual"—step-by-step instructions that tell a security team exactly how to act during a real-world hack. They ensure that even under extreme pressure, no one misses a move.
+"The Disaster Manual" ,step-by-step instructions that tell a security team exactly how to act during a real-world hack. They ensure that even under extreme pressure, no one misses a move.
 
 A **Security Playbook** is the difference between an organized defense and a panicked disaster. During an attack (like a **[[ransomware|Ransomware]]** outbreak), people get stressed and make mistakes. A Playbook is a "Standard Operating Procedure" (SOP) that takes the thinking out of the equation so the team can focus on the **Acting**.
 

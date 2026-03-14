@@ -5,7 +5,7 @@ tags: Space, Satellite, Innovation
 
 # DiskSat
 
-The "Dinner Plate" Satellite—a radical new design that throws away the traditional boxy shape of space tech and replaces it with a flat, circular disk that can be stacked like pancakes for ultra-cheap launches.
+The "Dinner Plate" Satellite ,a radical new design that throws away the traditional boxy shape of space tech and replaces it with a flat, circular disk that can be stacked like pancakes for ultra-cheap launches.
 
 **DiskSat** is a new satellite form factor developed by **NASA**. For decades, small satellites were built like boxes (called **CubeSats**). While CubeSats are great, they waste a lot of space inside a rocket because you can’t pack boxes together perfectly without leaving "pockets" of air.
 

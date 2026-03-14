@@ -5,7 +5,7 @@ tags: CognitiveBias, NeedToActFast, Memory, InvestedTime
 
 # Generation Effect
 
-"Create to Remember"—the psychological rule that you will remember information 10x better if you come up with it yourself, rather than simply reading it or hearing it from someone else.
+"Create to Remember" ,the psychological rule that you will remember information 10x better if you come up with it yourself, rather than simply reading it or hearing it from someone else.
 
 **The Generation Effect** is why you can remember a recipe you invented yourself 5 years ago, but you forget a recipe you read yesterday. When you "Generate" an answer, your brain has to work much harder. It has to pull from your memory, connect new ideas, and build a "Mental Map." This extra work creates deep, permanent "Tunnels" in your brain that make the information much harder to lose.
 

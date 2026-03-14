@@ -5,7 +5,7 @@ tags: Logic, Debate, Philosophy
 
 # Straw Man Fallacy
 
-"Fighting a Scarecrow"—a logical fallacy where you ignore your opponent's actual (strong) argument and instead replace it with a distorted, exaggerated, or stupid version that is much easier to defeat.
+"Fighting a Scarecrow" ,a logical fallacy where you ignore your opponent's actual (strong) argument and instead replace it with a distorted, exaggerated, or stupid version that is much easier to defeat.
 
 **The Straw Man** is a cowardly way to argue. Instead of doing the hard work of answering a difficult point, you "build a man out of straw" (a fake argument) and knock it over. You claim victory, but the audience who was paying attention knows you never actually touched the real argument.
 
@@ -18,7 +18,7 @@ Think of it like **A Knight vs. A Scarecrow**:
 It usually follows this pattern:
 1.  **Person A:** "I think we should spend a little more money on schools."
 2.  **Person B (The Straw Man):** "My opponent wants to bankrupt our country and throw all our tax money into a bottomless pit! That is a terrible idea!"
-3.  **The Result:** Person B isn't arguing against "school funding"; they are arguing against "bankrupting the country"—an argument that Person A never actually made.
+3.  **The Result:** Person B isn't arguing against "school funding"; they are arguing against "bankrupting the country" ,an argument that Person A never actually made.
 
 ## FAQs
 

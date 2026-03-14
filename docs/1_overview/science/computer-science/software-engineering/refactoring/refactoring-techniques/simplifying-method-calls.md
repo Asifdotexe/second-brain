@@ -5,7 +5,7 @@ tags: Refactoring, CleanCode, Techniques
 
 # Simplifying Method Calls
 
-"The Conversation Rule"—techniques for making the "Interactions" between your classes as simple and polite as possible.
+"The Conversation Rule" ,techniques for making the "Interactions" between your classes as simple and polite as possible.
 
 When Class A calls a method in Class B, they are having a "Conversation." If the method has 10 parameters, it’s like a conversation where you have to repeat someone's social security number, mother's maiden name, and favorite color just to say "Hello." We use these techniques to simplify the "Signature" of our methods so they are easy to use.
 

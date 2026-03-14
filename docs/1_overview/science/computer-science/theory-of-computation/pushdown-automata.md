@@ -5,7 +5,7 @@ tags: ComputerScience, TheoryOfComputation, FormalLanguages
 
 # Pushdown Automata
 
-"The Vending Machine with a Stack"—a model of a computer that has a simple internal state (like a vending machine) but is equipped with a specific, infinite memory source: a "Stack" of data.
+"The Vending Machine with a Stack" ,a model of a computer that has a simple internal state (like a vending machine) but is equipped with a specific, infinite memory source: a "Stack" of data.
 
 **A Pushdown Automaton (PDA)** is the mechanical brain that reads a [[context-free-grammars|Context-Free Grammar]]. If a Grammar is the "Rules of the Game," the PDA is the "Player" who follows them. Its superpower is the **Stack** (a pile of memory where you can only see the item on the very top). This stack allows the machine to "Count" and "Match" symbols, which a standard, memory-less machine cannot do.
 

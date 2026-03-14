@@ -5,13 +5,13 @@ tags: Refactoring, CleanCode, Techniques
 
 # Moving Features between Objects
 
-"The Neighbors"—techniques for moving code and data between different classes to ensure that everything is in its "Proper Home."
+"The Neighbors" ,techniques for moving code and data between different classes to ensure that everything is in its "Proper Home."
 
 In bad code, classes are often like neighbors who are constantly "Snooping" in each other’s business. A method in **Class A** might spend more time talking to **Class B** than to its own data. This is called "Feature Envy." We use these techniques to move the logic to the class that actually "Owns" it.
 
 ## 1. Move Method
 **The Problem:** A method in `Account` spends all its time calculating things using data from `AccountType`. 
-**The Solution:** Move the whole method into `AccountType`. If the code depends on `AccountType`'s data, it belongs IN `AccountType`. This is called **"Tell, Don't Ask"**—you should tell an object what to do, not ask it for its data and do the work yourself.
+**The Solution:** Move the whole method into `AccountType`. If the code depends on `AccountType`'s data, it belongs IN `AccountType`. This is called **"Tell, Don't Ask"** ,you should tell an object what to do, not ask it for its data and do the work yourself.
 
 ```java
 // BEFORE: Account is doing AccountType's job

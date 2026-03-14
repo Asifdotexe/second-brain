@@ -5,7 +5,7 @@ tags: CyberSecurity, Ethics, Privacy, Law
 
 # Security Ethics and Privacy
 
-"The Moral Compass"—the invisible line that separates a brilliant cybersecurity expert from a cybercriminal facing 20 years in prison.
+"The Moral Compass" ,the invisible line that separates a brilliant cybersecurity expert from a cybercriminal facing 20 years in prison.
 
 In cybersecurity, knowledge is a weapon. You have the power to read private emails, break into banks, and shut down websites. **Security Ethics** is the code of honor that ensures you use that power to build and protect, rather than to destroy and steal.
 
@@ -23,7 +23,7 @@ In movies, a hacker "hacks back" to destroy the enemy. In the real world, this i
 *   **Reversible:** If you made a mistake and hit the wrong person, you must be able to "Undo" the damage.
 
 ## Key Definitions
-*   **PII (Personally Identifiable Information):** Your "Digital Identity"—your name, phone number, and address.
+*   **PII (Personally Identifiable Information):** Your "Digital Identity" ,your name, phone number, and address.
 *   **SPII (Sensitive PII):** The "Nuclear Info." Things that can destroy your life if stolen, like your Social Security number or medical records.
 
 ### Further Reading

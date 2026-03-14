@@ -5,7 +5,7 @@ tags: CyberSecurity, SocialEngineering, Fraud
 
 # Phishing
 
-"Hacking the Human"—the art of using digital manipulation to trick you into voluntarily handing over the keys to your own house.
+"Hacking the Human" ,the art of using digital manipulation to trick you into voluntarily handing over the keys to your own house.
 
 **Phishing** is a type of attack where a scammer pretends to be someone you trust (your bank, Amazon, or even your boss) to steal your passwords or credit card numbers. Instead of a hacker spending months writing complex code to break through a company's firewall, they simply send a well-crafted email that says: *"Your account is locked! Click here to fix it."* Once you click and type your password, the hacker has won. They didn't "break in"; they were invited in.
 

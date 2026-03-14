@@ -5,7 +5,7 @@ tags: CyberSecurity, Governance, Compliance, Healthcare, US
 
 # HIPAA
 
-"The Sacred Secret"—a US federal law that ensures your most sensitive information—surgeries, prescriptions, and mental health history—stays strictly between you and your doctor.
+"The Sacred Secret" ,a US federal law that ensures your most sensitive information ,surgeries, prescriptions, and mental health history ,stays strictly between you and your doctor.
 
 **HIPAA** (1996) is the legal "firewall" around your medical life. In the US, it is a crime for a hospital, pharmacy, or insurance company to share your **Protected Health Information (PHI)** without permission. It ensures you can be 100% honest with your doctor, knowing your secrets are protected by federal law.
 

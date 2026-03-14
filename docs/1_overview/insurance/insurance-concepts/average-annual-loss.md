@@ -5,7 +5,7 @@ tags: [RiskMetric, Economics, Insurance]
 
 # Average Annual Loss (AAL)
 
-The "Expected Bill"—the average amount of money a company expects to lose every single year to predictable "glitches" and minor accidents, smoothed out over a long timeline.
+The "Expected Bill" ,the average amount of money a company expects to lose every single year to predictable "glitches" and minor accidents, smoothed out over a long timeline.
 
 **Average Annual Loss (AAL)** is the cost of doing business in a risky world. Instead of panicking every time a laptop breaks or a small building leak occurs, companies use AAL to estimate their "normal" yearly disaster budget. It turns the jagged, scary spikes of random accidents into a predictable monthly expense.
 

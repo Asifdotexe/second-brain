@@ -5,7 +5,7 @@ tags: Psychology, Investing, Probability
 
 # Gambler's Fallacy
 
-"The Universe Owes Me"—the mistaken belief that if a random event has happened a lot lately, it is "due" to stop, OR if it hasn't happened in a while, it is "due" to happen next. 
+"The Universe Owes Me" ,the mistaken belief that if a random event has happened a lot lately, it is "due" to stop, OR if it hasn't happened in a while, it is "due" to happen next. 
 
 **The Gambler's Fallacy** is why people lose millions in casinos. Our brains are obsessively looking for "Balance" in the universe. We think that if a coin flips Heads 10 times in a row, the universe must "want" to flip Tails next to make things 50/50. But the universe doesn't have a scoreboard. Each flip is a brand new start.
 

@@ -5,9 +5,9 @@ tags: CyberSecurity, CyberAttack, VulnerabilityManagement
 
 # GlassWorm
 
-"The Invisible Ghost"—a terrifyingly advanced piece of malware that hides in the whitespace of code. It uses invisible characters and the blockchain to avoid being seen by any human or antivirus.
+"The Invisible Ghost" ,a terrifyingly advanced piece of malware that hides in the whitespace of code. It uses invisible characters and the blockchain to avoid being seen by any human or antivirus.
 
-**GlassWorm** (discovered in late 2025) targets software developers—the people who build the apps we use every day. By infecting "tools of the trade" (like VS Code extensions), it hitches a ride on every app that developer ever publishes. 
+**GlassWorm** (discovered in late 2025) targets software developers ,the people who build the apps we use every day. By infecting "tools of the trade" (like VS Code extensions), it hitches a ride on every app that developer ever publishes. 
 
 Think of it as **Malware written in Invisible Ink**:
 *   **The Trick:** It uses "Unicode" characters that are physically invisible to the eye. A programmer can look directly at a line of code and see it is "empty," but the computer reads it as a series of lethal commands to steal passwords.

@@ -5,7 +5,7 @@ tags: Philosophy, Politics, Power
 
 # Machiavellianism
 
-"The Art of the Win"—a pragmatic and cold-blooded philosophy of power that says a leader should do whatever is necessary (lie, cheat, or manipulate) to maintain stability and keep their position.
+"The Art of the Win" ,a pragmatic and cold-blooded philosophy of power that says a leader should do whatever is necessary (lie, cheat, or manipulate) to maintain stability and keep their position.
 
 **Machiavellianism** is named after Niccolò Machiavelli, who wrote the "ultimate guide for bosses" called *The Prince*. It throws away the idea that a leader should be "Saintly" or "Fair." Instead, it argues that in a dangerous world, a nice leader will be overthrown, leading to chaos for everyone. Therefore, it is actually "moral" for a leader to be ruthless if it keeps the peace.
 
@@ -25,7 +25,7 @@ Machiavelli said a great leader must be two animals at once:
 Machiavelli didn't think so. He thought he was being a **Realist**. He argued that "The ends justify the means." If a King has to execute ten rebels to prevent a civil war that would kill 10,000 people, the executions were a "Good" thing for the state.
 
 *2. Is it used today?*
-**Everywhere.** In politics, business, and even sports. It is the philosophy of "Get the job done, no matter what." In psychology, it is one of the **"Dark Triad"** traits—people who are strategic, cold, and highly effective at getting what they want.
+**Everywhere.** In politics, business, and even sports. It is the philosophy of "Get the job done, no matter what." In psychology, it is one of the **"Dark Triad"** traits ,people who are strategic, cold, and highly effective at getting what they want.
 
 ### Further Reading
 

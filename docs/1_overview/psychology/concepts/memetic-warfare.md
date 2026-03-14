@@ -5,12 +5,12 @@ tags: InformationWarfare, Psychology, Propaganda, SocialMedia
 
 # Memetic Warfare
 
-"The Idea Virus"—the coordinated use of internet memes to manipulate what people believe, how they vote, and who they hate. 
+"The Idea Virus" ,the coordinated use of internet memes to manipulate what people believe, how they vote, and who they hate. 
 
 **Memetic Warfare** is modern propaganda. Instead of a government printing old-fashioned posters, they create funny pictures and jokes that people *want* to share. It's an "Intellectual Virus" wrapped in a joke. It makes you laugh so that your mental "Guard" goes down, allowing a hidden political message or a lie to slip into your brain and become "Fact."
 
 Think of it like **A Trojan Horse**:
-*   A meme looks like a harmless gift—a funny cat or a clever joke. 
+*   A meme looks like a harmless gift ,a funny cat or a clever joke. 
 *   You "open" the gift by laughing and sharing it with your friends. 
 *   **The Hidden Soldiers:** Inside that joke is a "Narrative" (e.g., *"This country is weak"* or *"This politician is a monster"*). 
 *   Because you shared it yourself, you don't realize you are acting as a "Soldier" in a digital war, spreading a specific group's agenda for them.

@@ -5,7 +5,7 @@ tags: CognitiveBias, NeedToActFast, InvestedTime, Food
 
 # Unit Bias
 
-"Finish What You Start"—the psychological urge to finish an entire "serving" or "object" simply because it was handed to you as one piece, regardless of how much you actually need.
+"Finish What You Start" ,the psychological urge to finish an entire "serving" or "object" simply because it was handed to you as one piece, regardless of how much you actually need.
 
 **Unit Bias** is the reason you eat the whole bag of chips even if you weren't that hungry. Our brains hate "Unfinished Business." We don't rely on our bodies to tell us when we are full; we rely on **Visual Clues**. When we see a plate, a bag, or a bottle, our brain defines that as "One Unit." If we don't finish it, our brain feels like we "failed" a task.
 

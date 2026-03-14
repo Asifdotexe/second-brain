@@ -5,7 +5,7 @@ tags: Cryptography, Security, AES
 
 # Symmetric Encryption
 
-"The Universal House Key"—the oldest, fastest, and most straightforward way to lock data. The exact same secret key that locks the door is the only one that can unlock it.
+"The Universal House Key" ,the oldest, fastest, and most straightforward way to lock data. The exact same secret key that locks the door is the only one that can unlock it.
 
 **Symmetric Encryption** uses a single "Shared Key" for both scrambling (encryption) and unscrambling (decryption). It is the fundamental building block of digital privacy. If you want to encrypt your own hard drive or a huge database, this is the tool you use because it is incredibly efficient.
 

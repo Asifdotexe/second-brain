@@ -5,7 +5,7 @@ tags: Statistics, HypothesisTesting, NonParametric
 
 # Chi-Square Test
 
-"The Expectations Checker"—a tool used to determine if the "Counts" you see in the real world (like Blue vs. Red shirts sold) match what you mathematically expected to see.
+"The Expectations Checker" ,a tool used to determine if the "Counts" you see in the real world (like Blue vs. Red shirts sold) match what you mathematically expected to see.
 
 The **Chi-Square ($\chi^2$)** test is different from a [[t-test|T-Test]] or an [[anova|ANOVA]] because it doesn't care about "Averages" (like height or score). It only cares about **Categories and Counts**. It asks: *"Is the frequency of these things happening purely random, or is there a pattern?"*
 

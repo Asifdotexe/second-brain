@@ -5,13 +5,13 @@ tags: CyberSecurity, SecurityTools, SIEM, Monitoring
 
 # SIEM
 
-"The Brain of the Giant"—a massive, high-powered intelligence center that collects every "whisper" and "shout" from across a multi-thousand-computer network, finding the one hidden footprint of an attacker.
+"The Brain of the Giant" ,a massive, high-powered intelligence center that collects every "whisper" and "shout" from across a multi-thousand-computer network, finding the one hidden footprint of an attacker.
 
 A **SIEM** (pronounced "Sim") is the most powerful tool in the **[[soc|Security Operations Center]]**. In a big company, millions of events happen every minute: logins, file moves, firewall blocks. A human can't watch it all. A SIEM acts as a **Super-Aggregator**, sucking in all that data, cleaning it up, and looking for patterns.
 
 Think of it like **A CCTV Network for a Huge City**:
 *   Instead of a guard looking at one screen, the SIEM looks at 5,000 cameras at once.
-*   If it sees the same person in a "Red Jacket" appearing at 5 different bank vaults in 5 minutes, it doesn't just watch—it sounds the alarm.
+*   If it sees the same person in a "Red Jacket" appearing at 5 different bank vaults in 5 minutes, it doesn't just watch ,it sounds the alarm.
 *   It links "Boring" events to find "Dangerous" ones.
 
 ## Why Do We Need "The Brain"?

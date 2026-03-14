@@ -5,7 +5,7 @@ tags: Philosophy, AI, Consciousness
 
 # The Chinese Room
 
-"Simulation is Not Understanding"—a famous thought experiment that argues a computer can act perfectly intelligent without actually "Thinking" or "Understanding" a single thing it is doing.
+"Simulation is Not Understanding" ,a famous thought experiment that argues a computer can act perfectly intelligent without actually "Thinking" or "Understanding" a single thing it is doing.
 
 **The Chinese Room** was created by John Searle to challenge the idea of "Strong AI." He wanted to prove that just because a machine (like ChatGPT) can give you a perfect answer, it doesn't mean it has a "Mind" or "Consciousness." To a computer, words are just math symbols; they have no meaning.
 
@@ -26,7 +26,7 @@ In this analogy:
 ## FAQs
 
 *1. Does this mean AI can never be conscious?*
-It suggests that **Digital Computers** (the ones we have today) cannot be conscious just by running more complicated software. To have a "Mind," we might need something more than just code—perhaps a biological brain or a new type of hardware that "feels" the data.
+It suggests that **Digital Computers** (the ones we have today) cannot be conscious just by running more complicated software. To have a "Mind," we might need something more than just code ,perhaps a biological brain or a new type of hardware that "feels" the data.
 
 *2. If the AI acts perfectly smart, does "Understanding" even matter?*
 *   **For Utility:** No. If you just need a translation, the "Room" works great.

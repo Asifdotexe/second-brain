@@ -5,7 +5,7 @@ tags: Logic, Debate, Fear
 
 # Slippery Slope
 
-"The Snowball Effect"—a logical fallacy where you argue that taking one small, relatively harmless step will inevitably lead to a chain reaction of disaster, ending in total catastrophe.
+"The Snowball Effect" ,a logical fallacy where you argue that taking one small, relatively harmless step will inevitably lead to a chain reaction of disaster, ending in total catastrophe.
 
 **The Slippery Slope** is a fear-based argument. Instead of arguing about the actual step being taken (Step A), the person focuses entirely on a terrifying "future" (Step Z) that they imagine will happen next. It assumes that once you start moving, there are no "Brakes" to stop you.
 

@@ -5,7 +5,7 @@ tags: Logic, Debate, Latin
 
 # Tu Quoque
 
-"You Too!"—a logical fallacy where you reject someone’s argument simply because they are a hypocrite who doesn't follow their own advice.
+"You Too!" ,a logical fallacy where you reject someone’s argument simply because they are a hypocrite who doesn't follow their own advice.
 
 **Tu Quoque** (Latin for "You also") is one of the most common ways people deflect criticism. Instead of answering the question, they point a finger back and say: *"How can you lecture me? You do the same thing!"* While they might be right about the hypocrisy, the hypocrisy has **nothing to do** with whether the original advice was correct.
 

@@ -5,7 +5,7 @@ tags: CyberSecurity, CyberAttack, SupplyChainAttack
 
 # Supply Chain Attack
 
-"The Poisoned Well"—instead of trying to kick down the front door of a high-security building, a hacker simply poisons the coffee being delivered to the office. Every employee who drinks it gets sick, and the "front door" becomes irrelevant.
+"The Poisoned Well" ,instead of trying to kick down the front door of a high-security building, a hacker simply poisons the coffee being delivered to the office. Every employee who drinks it gets sick, and the "front door" becomes irrelevant.
 
 A **Supply Chain Attack** targets a company’s **trusted vendors** instead of targeting the company itself. Because large companies (like banks or tech giants) have billion-dollar security teams, they are very hard to hack directly. So, hackers target the smaller, less-secure company that provides them with a service. Once they infect the "supplier," they can hitch a ride into the big company’s network through an official software update or a trusted piece of hardware.
 
@@ -26,7 +26,7 @@ Think of it like **A Home Security System**:
 **Authorized Trust.** In a supply chain attack, the malware is coming from an **official** server. It’s like a border agent letting a smuggler through because the smuggler is driving an official police car.
 
 *2. What is an "SBOM"?*
-Companies now require a **Software Bill of Materials (SBOM)**—essentially a list of "ingredients" for software—so they know exactly where every single line of code came from and who wrote it.
+Companies now require a **Software Bill of Materials (SBOM)** ,essentially a list of "ingredients" for software ,so they know exactly where every single line of code came from and who wrote it.
 
 ### Further Reading
 

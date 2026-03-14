@@ -5,7 +5,7 @@ tags: Psychology, Negotiation, Marketing
 
 # Anchoring Bias
 
-"The Sticky First Number"—a cognitive bias where we rely way too heavily on the **first** piece of information we hear (the "Anchor") when making a decision, even if that information is totally random or wrong.
+"The Sticky First Number" ,a cognitive bias where we rely way too heavily on the **first** piece of information we hear (the "Anchor") when making a decision, even if that information is totally random or wrong.
 
 **Anchoring Bias** is why you think a $50 shirt is a "bargain" if you saw a $150 shirt first. Your brain doesn't look at the $50 shirt in a vacuum. It Compares it to the "Anchor" ($150). Once a number is in your head, it "Sticks" there, and every other number you see is judged based on that first one.
 

@@ -5,7 +5,7 @@ tags: Software, Licensing, Community
 
 # Open Source
 
-The "Public Recipe"—a philosophy of building software where the underlying code is free for everyone to read, change, and share, rather than being locked away as a corporate secret.
+The "Public Recipe" ,a philosophy of building software where the underlying code is free for everyone to read, change, and share, rather than being locked away as a corporate secret.
 
 Most software you use (like Windows, Photoshop, or most iPhone apps) is **Closed Source**. You can use the app, but you can't see how it works. You have to trust that the company isn't spying on you or making mistakes. **Open Source** flips the script: the "Recipe" (the code) is posted on the internet for the whole world to inspect and improve.
 

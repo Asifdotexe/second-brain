@@ -5,12 +5,12 @@ tags: Methodology, Science, Evidence
 
 # Novel Prediction
 
-"The Ultimate flex"—the strongest possible proof for a theory, where you predict a fact that **no one in history has ever seen before**, and then someone goes out and finds it.
+"The Ultimate flex" ,the strongest possible proof for a theory, where you predict a fact that **no one in history has ever seen before**, and then someone goes out and finds it.
 
-Explaining things that already happened is easy—hindsight is 20/20. But predicting the **Unknown** is the "Gold Standard" of science. A **Novel Prediction** proves that your theory isn't just a "Good Story" (like a [[just-so-stories|Just-So Story]]); it shows that you have actually discovered a hidden part of the "Map of Reality."
+Explaining things that already happened is easy ,hindsight is 20/20. But predicting the **Unknown** is the "Gold Standard" of science. A **Novel Prediction** proves that your theory isn't just a "Good Story" (like a [[just-so-stories|Just-So Story]]); it shows that you have actually discovered a hidden part of the "Map of Reality."
 
 Think of it like **The Fortune Teller Test**:
-*   **Scenario A (Weak Evidence):** A fortune teller tells you, *"You had cereal for breakfast today."* You’re not impressed—they could have guessed that based on your appearance or by looking in your trash.
+*   **Scenario A (Weak Evidence):** A fortune teller tells you, *"You had cereal for breakfast today."* You’re not impressed ,they could have guessed that based on your appearance or by looking in your trash.
 *   **Scenario B (Novel Prediction):** The fortune teller says, *"Go to the park tomorrow at exactly 2:05 PM. A man in a purple hat will hand you a $100 bill."* 
 *   **The Result:** You go to the park, and it **actually happens.** 
 *   **The Power:** You now know for a fact that this person has real powers (or a real map). They couldn't have "Cheated" because the event hadn't happened yet.

@@ -5,7 +5,7 @@ tags: Psychology, Memory, Technology
 
 # Google Effect
 
-"Digital Amnesia"—the psychological rule that your brain will immediately forget information if it knows that information is safely stored on the internet or a computer.
+"Digital Amnesia" ,the psychological rule that your brain will immediately forget information if it knows that information is safely stored on the internet or a computer.
 
 **The Google Effect** is your brain being an efficient "File Manager." Your brain is a limited space, and it costs a lot of energy to store new memories. If your brain knows that a piece of information is "Backing up to the Cloud" (Google, Wikipedia, or your Phone), it will "Delete" the local copy to save space. You don't remember the fact; you only remember **where** to go to find the fact again.
 

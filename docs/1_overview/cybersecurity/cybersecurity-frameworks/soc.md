@@ -5,7 +5,7 @@ tags: CyberSecurity, BlueTeam, Operations
 
 # SOC (Security Operations Center)
 
-"Mission Control" for the digital world—a 24/7 high-tech command center where security analysts watch every heartbeat of the network to catch hackers before they make a move.
+"Mission Control" for the digital world ,a 24/7 high-tech command center where security analysts watch every heartbeat of the network to catch hackers before they make a move.
 
 A **SOC** (pronounced "sock") is the nerve center of a company's defense. It is both a physical room (filled with "NASA-style" screens) and a dedicated team tasked with **Situational Awareness**. They are the people who stay awake at 3:00 AM on Christmas Day to ensure the company’s servers aren't being quietly hijacked.
 
@@ -14,7 +14,7 @@ A **SOC** (pronounced "sock") is the nerve center of a company's defense. It is 
     *   **Tier 1:** The triagers who sort through thousands of alarms.
     *   **Tier 2:** The investigators who dive deep into a suspicious event.
     *   **Tier 3:** The "Threat Hunters" who go looking for hackers already hiding in the system.
-2.  **Processes (The Playbooks):** There is no time to panic. A SOC uses **[[playbooks|Security Playbooks]]**—step-by-step recipes that tell the team exactly what to do in every possible disaster.
+2.  **Processes (The Playbooks):** There is no time to panic. A SOC uses **[[playbooks|Security Playbooks]]** ,step-by-step recipes that tell the team exactly what to do in every possible disaster.
 3.  **Technology (The Tools):** They use a "God-view" tool called a **[[siem|SIEM]]** that collects every single log entry from every computer in the company and puts it onto one screen.
 
 ## Key Characteristics

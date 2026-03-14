@@ -5,7 +5,7 @@ tags: Software, Crypto, Resources
 
 # Cryptomining Software
 
-The "Digital Pickaxe"—specialized programs designed to solve incredibly difficult mathematical puzzles to help secure a blockchain and earn new cryptocurrency in return.
+The "Digital Pickaxe" ,specialized programs designed to solve incredibly difficult mathematical puzzles to help secure a blockchain and earn new cryptocurrency in return.
 
 **Cryptomining software** is the engine of the crypto world. It turns your computer's "Processing Power" into a security tool. In exchange for using your electricity to solve these math puzzles, the network (like Bitcoin or Monero) rewards you with a small amount of "Digital Gold."
 

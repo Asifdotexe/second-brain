@@ -5,7 +5,7 @@ tags: Security, Malware, CyberAttack, Awareness
 
 # Cybersecurity Attacks
 
-"The Digital Arsenal"—a collection of tricks and tools used by hackers to damage, disrupt, or steal from your computer systems.
+"The Digital Arsenal" ,a collection of tricks and tools used by hackers to damage, disrupt, or steal from your computer systems.
 
 A **Cybersecurity Attack** is any attempt by a malicious actor (from a teenager in a basement to a professional criminal army) to break into your network. The digital world is essentially a permanent, invisible battlefield. Every day, automated scripts are "knocking" on the doors of your devices, looking for one loose lock or one forgotten window.
 

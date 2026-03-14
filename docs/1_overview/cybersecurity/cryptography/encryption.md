@@ -5,7 +5,7 @@ tags: Security, Cryptography, Privacy
 
 # Encryption
 
-"Secret Writing"—the art of turning your private thoughts and bank details into a pile of digital gibberish that can only be unlocked by someone holding a mathematical key.
+"Secret Writing" ,the art of turning your private thoughts and bank details into a pile of digital gibberish that can only be unlocked by someone holding a mathematical key.
 
 **Encryption** is the process of scrambling readable info ("Plaintext") into a chaotic mess ("Ciphertext") using a complex formula. Its goal is simple: ensure that even if a hacker steals your data, they physically cannot understand a single word of it. Without the key, the data is just useless noise.
 

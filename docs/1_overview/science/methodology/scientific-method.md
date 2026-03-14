@@ -5,7 +5,7 @@ tags: Methodology, Science, Logic
 
 # Scientific Method
 
-"The Universe Debugger"—the logical "Algorithm" we use to test our ideas, minimize our own biases, and move closer to the truth.
+"The Universe Debugger" ,the logical "Algorithm" we use to test our ideas, minimize our own biases, and move closer to the truth.
 
 **The Scientific Method** is more of a "Mindset" than a strict 1-2-3 recipe. It is a way of saying: *"I have an idea, but I know my brain usually tricks me, so I’m going to run a test that gives my idea a chance to fail."* It is the most powerful tool humans have ever invented for cleaning up the "Messy Data" of reality. 
 

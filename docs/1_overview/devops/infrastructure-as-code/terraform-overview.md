@@ -5,7 +5,7 @@ tags: DevOps, Infrastructure, Cloud, Terraform
 
 # Terraform Overview
 
-The "Universal Architect"—a powerful tool that speaks the language of every cloud provider on Earth. You hand it one single plan, and it builds your world for you, whether you’re using Amazon, Google, Microsoft, or all three at once.
+The "Universal Architect" ,a powerful tool that speaks the language of every cloud provider on Earth. You hand it one single plan, and it builds your world for you, whether you’re using Amazon, Google, Microsoft, or all three at once.
 
 **Terraform** is the world’s most popular **[[infrastructure-as-code|Infrastructure as Code (IaC)]]** tool. Before Terraform, if you used Amazon Web Services (AWS) and Google Cloud, you had to learn two completely different languages and click two completely different sets of buttons to build your servers.
 
@@ -27,7 +27,7 @@ Think of Terraform like a **Universal Remote Control**:
 Not even close! Terraform can manage **Anything** that has an API. People have used Terraform to manage their Spotify playlists, order Domino's Pizza, and even manage their home's smart lightbulbs. If it’s on the internet, Terraform can probably control it.
 
 *2. What makes it better than other tools?*
-It is **"Cloud-Agnostic."** Most other tools (like AWS CloudFormation) only work for one company. Terraform is the "Swiss Army Knife"—it works everywhere, from massive giants like Microsoft to small providers like DigitalOcean.
+It is **"Cloud-Agnostic."** Most other tools (like AWS CloudFormation) only work for one company. Terraform is the "Swiss Army Knife" ,it works everywhere, from massive giants like Microsoft to small providers like DigitalOcean.
 
 ### Further Reading
 

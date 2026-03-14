@@ -7,7 +7,7 @@ tags: AIEthics, Military, Policy, Cybersecurity
 
 Giving a drone a sniper rifle and permission to pull the trigger without ever asking a human first.
 
-**Lethal Autonomous Weapons Systems (LAWS)**—which the media and ethicists aggressively refer to as "Slaughterbots"—are military weapons capable of independently searching for, identifying, and engaging human targets using AI, completely devoid of any human intervention. 
+**Lethal Autonomous Weapons Systems (LAWS)** ,which the media and ethicists aggressively refer to as "Slaughterbots" ,are military weapons capable of independently searching for, identifying, and engaging human targets using AI, completely devoid of any human intervention. 
 
 This is a massive, terrifying ethical departure from a traditional "drone strike." In a traditional drone strike, a human pilot sits in a trailer in Nevada, looks at a screen, and physically pushes a button to fire a missile in Yemen. With LAWS, the drone is making the life-or-death decision entirely on its own.
 

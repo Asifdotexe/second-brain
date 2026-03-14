@@ -5,7 +5,7 @@ tags: Philosophy, Society, KarlPopper
 
 # Paradox of Tolerance
 
-"Protecting the Garden"—a social paradox that suggests if a society is 100% tolerant of everything, it will eventually be destroyed by the very people it decided to tolerate.
+"Protecting the Garden" ,a social paradox that suggests if a society is 100% tolerant of everything, it will eventually be destroyed by the very people it decided to tolerate.
 
 **The Paradox of Tolerance** was described by Karl Popper during World War II. It asks a difficult question: *Should a tolerant society tolerate those who want to destroy tolerance?* Popper's answer was essentially "No." He argued that if we allow people who hate freedom to use the rules of freedom to gain power, they will eventually abolish freedom entirely.
 

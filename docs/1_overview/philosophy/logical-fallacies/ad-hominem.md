@@ -5,7 +5,7 @@ tags: Logic, Debate, Latin
 
 # Ad Hominem
 
-"Attacking the Messenger"—a logical fallacy where you ignore someone's argument and instead attack their character, their past, or their personality to make them look wrong.
+"Attacking the Messenger" ,a logical fallacy where you ignore someone's argument and instead attack their character, their past, or their personality to make them look wrong.
 
 **Ad Hominem** (Latin for "To the Person") is a defensive move used by people who cannot win an argument with logic. Instead of proving that a statement is false, they try to prove that the **Person** saying it is "bad," hoping that the audience will assume a bad person can't have a good idea.
 

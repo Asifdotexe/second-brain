@@ -5,7 +5,7 @@ tags: Philosophy, LogicalFallacies, Argumentation
 
 # Genetic Fallacy
 
-"Judging by the Kitchen"—a logical error where an idea is rejected or accepted solely because of where it came from (its origin), rather than its actual truth or merit today.
+"Judging by the Kitchen" ,a logical error where an idea is rejected or accepted solely because of where it came from (its origin), rather than its actual truth or merit today.
 
 **The Genetic Fallacy** claims that if the "Source" of an idea is bad, then the "Idea" itself must also be bad. In reality, the history of an argument is completely separate from whether the argument is true right now. Logic doesn't care who said it first; it only cares if the math adds up.
 

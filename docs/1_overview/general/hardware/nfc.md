@@ -5,7 +5,7 @@ tags: Hardware, Wireless, Payment
 
 # NFC (Near Field Communication)
 
-The "Digital Handshake"—a super-secure, short-range wireless technology that allows two devices to share information only when they are practically touching each other.
+The "Digital Handshake" ,a super-secure, short-range wireless technology that allows two devices to share information only when they are practically touching each other.
 
 **NFC** is the technology that makes "Tap to Pay" possible. It is a specialized version of **[[rfid|RFID]]** technology. The key "secret" of NFC is its range: it only works if devices are within **4 centimeters** (about 1.5 inches) of each other. If you are any further away, the signal vanishes. This tiny range is exactly what makes it so safe for your money.
 

@@ -5,9 +5,9 @@ tags: Security, Career, Defense
 
 # Ethical Hacker (White Hat)
 
-"The Good Guys with a Picklock"—brilliant security experts who use the exact same tools and terrifying techniques as the criminals, but with one life-saving difference: they have **permission**.
+"The Good Guys with a Picklock" ,brilliant security experts who use the exact same tools and terrifying techniques as the criminals, but with one life-saving difference: they have **permission**.
 
-An **Ethical Hacker** (or **White Hat**) breaks into computers for a living—but they do it to help, not to hurt. They are hired by companies to find the "Unlocked Windows" in their digital fortresses before a real criminal (a **Black Hat**) finds them.
+An **Ethical Hacker** (or **White Hat**) breaks into computers for a living ,but they do it to help, not to hurt. They are hired by companies to find the "Unlocked Windows" in their digital fortresses before a real criminal (a **Black Hat**) finds them.
 
 Think of it as **A Professional Safe-Cracker hired by a Bank**:
 *   The bank doesn't want you to steal the money.

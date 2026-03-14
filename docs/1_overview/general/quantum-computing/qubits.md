@@ -5,9 +5,9 @@ tags: EmergingTech, Physics, Unit
 
 # Qubit (Quantum Bit)
 
-The "Schrödinger’s Switch"—the basic unit of quantum information that defies logic by being 0 and 1 at the exact same time.
+The "Schrödinger’s Switch" ,the basic unit of quantum information that defies logic by being 0 and 1 at the exact same time.
 
-A **Qubit** is the quantum version of a regular computer bit. In a normal computer, a bit is like a **Light Switch**: it is either **On (1)** or **Off (0)**. There is no in-between. A Qubit is different. It uses the laws of quantum mechanics to exist in a **Superposition**—a state where it is both On and Off simultaneously.
+A **Qubit** is the quantum version of a regular computer bit. In a normal computer, a bit is like a **Light Switch**: it is either **On (1)** or **Off (0)**. There is no in-between. A Qubit is different. It uses the laws of quantum mechanics to exist in a **Superposition** ,a state where it is both On and Off simultaneously.
 
 Think of it like a **Dimmer Switch vs. a Toggle Switch**:
 *   **Bit (Toggle):** Can only be clicked Up or Down.
@@ -22,7 +22,7 @@ Every time you add a single Qubit to a computer, you **double** its power.
 ## FAQs
 
 *1. How do you actually make a Qubit?*
-It’s incredibly difficult. Scientists use things like a single **Electron** trapped in a magnetic field, or a single **Photon** (particle of light). Because they are so small, the slightest heat or vibration can cause them to lose their quantum state—a disaster called **Decoherence**.
+It’s incredibly difficult. Scientists use things like a single **Electron** trapped in a magnetic field, or a single **Photon** (particle of light). Because they are so small, the slightest heat or vibration can cause them to lose their quantum state ,a disaster called **Decoherence**.
 
 *2. Why are they so "Noisy"?*
 Because of their extreme sensitivity, Qubits often make "mistakes." This is why we are currently in the **[[nisq|NISQ Era]]**. We are learning how to build "Error Correction" so that thousands of "Physical Qubits" can work together to act like one perfect "Logical Qubit."

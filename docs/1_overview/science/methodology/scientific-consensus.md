@@ -5,7 +5,7 @@ tags: Methodology, Science, PeerReview
 
 # Scientific Consensus
 
-"The Jury Verdict"—the collective judgment of thousands of experts. It isn't a "Popularity Contest" based on feelings; it is a "Verification Contest" based on who has the hardest evidence.
+"The Jury Verdict" ,the collective judgment of thousands of experts. It isn't a "Popularity Contest" based on feelings; it is a "Verification Contest" based on who has the hardest evidence.
 
 **Scientific Consensus** is what happens when the smartest people in a field stop arguing about **if** something is true and start studying **how** it works. It represents the best available explanation we have right now. It isn’t "Settled Science" (nothing in science is ever settled forever), but it is the most reliable guide for policy and medicine.
 

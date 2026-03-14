@@ -5,7 +5,7 @@ tags: CyberSecurity, CyberAttack, VulnerabilityManagement
 
 # Remote Code Execution (RCE)
 
-"The Holy Grail"—the golden ticket that allows a hacker to walk into your computer from across the planet and force it to run any program they want, as if they were sitting in your chair.
+"The Holy Grail" ,the golden ticket that allows a hacker to walk into your computer from across the planet and force it to run any program they want, as if they were sitting in your chair.
 
 **RCE** is the most dangerous vulnerability in the digital world. It allows an attacker to "inject" their own malicious code into a website or server and force that server to execute it. In the world of security ratings, a reliable RCE vulnerability is almost always ranked a **10 out of 10** emergency.
 

@@ -5,7 +5,7 @@ tags: Statistics, Math, Jargon
 
 # Central Limit Theorem (CLT)
 
-"The Invisible Magnet"—the mathematical rule that if you take enough random samples of *anything*, the averages of those samples will always form a perfect, predictable **Bell Curve**.
+"The Invisible Magnet" ,the mathematical rule that if you take enough random samples of *anything*, the averages of those samples will always form a perfect, predictable **Bell Curve**.
 
 **The Central Limit Theorem** is why statistics actually works. It doesn't matter how "Messy" or "Weird" the original data is. If you ask 5 people their height, the data will look random. But if you ask 1,000 groups of 5 people, the **Averages** of those groups will line up in a beautiful, symmetrical curve. It’s as if nature has a "Default Shape" that it always returns to.
 

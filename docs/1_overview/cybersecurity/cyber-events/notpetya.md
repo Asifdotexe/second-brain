@@ -5,14 +5,14 @@ tags: CyberSecurity, Malware, Wiper
 
 # NotPetya
 
-"The Scorched Earth"—a terrifying weapon of war disguised as a common criminal ransom, designed to permanently destroy the data of an entire nation.
+"The Scorched Earth" ,a terrifying weapon of war disguised as a common criminal ransom, designed to permanently destroy the data of an entire nation.
 
-**NotPetya** (2017) is widely considered the most destructive cyberattack in history. In hours, it caused over **$10 billion** in damage globally. It looked like **[[ransomware|Ransomware]]** (demanding $300 in Bitcoin), but the "unlocking" code was physically broken. There was no way to get the data back. NotPetya wasn't a robbery; it was a **[[wipers|Wiper]]**—a digital bomb designed to delete everything.
+**NotPetya** (2017) is widely considered the most destructive cyberattack in history. In hours, it caused over **$10 billion** in damage globally. It looked like **[[ransomware|Ransomware]]** (demanding $300 in Bitcoin), but the "unlocking" code was physically broken. There was no way to get the data back. NotPetya wasn't a robbery; it was a **[[wipers|Wiper]]** ,a digital bomb designed to delete everything.
 
 ## The Poisoned Update
 NotPetya was a military operation by the Russian "Sandworm" unit, targeting Ukraine:
 1.  **The Trojan Horse:** Hackers broke into **M.E.Doc**, a small company whose accounting software was required for every business in Ukraine to pay taxes.
-2.  **The Update:** Hackers sent a fake "update" for the app. Companies trusted their vendor and installed it—inviting the assassin into their home.
+2.  **The Update:** Hackers sent a fake "update" for the app. Companies trusted their vendor and installed it ,inviting the assassin into their home.
 3.  **The Wildfire:** Once inside, NotPetya used **[[eternalblue|EternalBlue]]** to jump through networks automatically. It didn't stay in Ukraine; it followed fiber optic cables across the globe, destroying every office it touched.
 
 ## The World Stopped

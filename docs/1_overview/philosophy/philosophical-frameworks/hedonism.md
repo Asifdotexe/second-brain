@@ -5,7 +5,7 @@ tags: Philosophy, Pleasure, Ethics
 
 # Hedonism
 
-"The Pleasure Compass"—the simple belief that Happiness (Pleasure) is the only thing that is truly "Good," and Suffering (Pain) is the only thing that is truly "Bad."
+"The Pleasure Compass" ,the simple belief that Happiness (Pleasure) is the only thing that is truly "Good," and Suffering (Pain) is the only thing that is truly "Bad."
 
 **Hedonism** is often misunderstood as just "partying and excess." But at its core, it is an ethical system. A Hedonist asks one question before every decision: *"Will this action result in the most pleasure and the least pain?"* If yes, then the action is moral.
 

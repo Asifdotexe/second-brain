@@ -5,7 +5,7 @@ tags: CognitiveBias, NeedToActFast, InvestedTime, Memory
 
 # Processing Difficulty Effect
 
-"The Harder You Work, the More You Know"—the surprising psychological fact that if something is slightly difficult to read or understand, your brain will actually remember it much better.
+"The Harder You Work, the More You Know" ,the surprising psychological fact that if something is slightly difficult to read or understand, your brain will actually remember it much better.
 
 **The Processing Difficulty Effect** happens because the brain is "Lazy." If you see something that is perfectly clear and easy to read (like a boring font on a clean screen), your brain enters "Auto-Pilot." It skims the words without actually "Saving" them. But if the information is "Rough" or "Hard," your brain is forced to "Wake Up" and use extra energy to decipher it. That burst of energy builds a stronger memory.
 

@@ -5,7 +5,7 @@ tags: Virtualization, VMware, Storage
 
 # Host-Guest File System (HGFS)
 
-The "Secret Tunnel"—a specialized connection that allows a **[[virtualization|Virtual Machine]]** to reach out and "see" folders on your actual computer as if they were part of its own hard drive.
+The "Secret Tunnel" ,a specialized connection that allows a **[[virtualization|Virtual Machine]]** to reach out and "see" folders on your actual computer as if they were part of its own hard drive.
 
 When you use **[[virtualization|Virtualization]]** software like VMware, the Virtual Machine (The **Guest**) is usually trapped in its own digital bubble. It cannot see your "Documents" folder or your "Photos." **HGFS** is a protocol that "drills a hole" through the wall of that bubble, allowing files to flow back and forth safely and instantly.
 

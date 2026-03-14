@@ -5,9 +5,9 @@ tags: CyberSecurity, Ethics, Professionalism
 
 # Types of Hackers
 
-"The Colors of the Hood"—a way to categorize the people in the hacking world based on their morals, their legality, and whether they are trying to save the world or destroy it.
+"The Colors of the Hood" ,a way to categorize the people in the hacking world based on their morals, their legality, and whether they are trying to save the world or destroy it.
 
-In movies, a "Hacker" is always a guy in a dark hoodie doing something illegal. In the real world, "Hacking" is a neutral skill—it’s just the ability to make a computer do something it wasn't designed to do. We categorize hackers by their **"Hat Color"** to understand their intent.
+In movies, a "Hacker" is always a guy in a dark hoodie doing something illegal. In the real world, "Hacking" is a neutral skill ,it’s just the ability to make a computer do something it wasn't designed to do. We categorize hackers by their **"Hat Color"** to understand their intent.
 
 Think of hacking like **Lockpicking**:
 *   A **Professional Locksmith** uses it to help you get into your own home.
@@ -21,7 +21,7 @@ Think of hacking like **Lockpicking**:
 3.  **The Grey Hat (The Renegade):** These people live in the middle. They might hack a company *without* permission just to prove a point. They usually don't steal data, but what they are doing is still **Illegal**. It’s like breaking into a house just to leave a note saying: *"Your back door was unlocked."*
 
 ## Other Players
-*   **[[hacktivists|Hacktivists]]:** Groups (like **Anonymous**) who hack for a cause—protesting animal cruelty or exposing corrupt politicians.
+*   **[[hacktivists|Hacktivists]]:** Groups (like **Anonymous**) who hack for a cause ,protesting animal cruelty or exposing corrupt politicians.
 *   **[[script-kiddies|Script Kiddies]]:** The "Copy-Paste" hackers. They don't know how to code; they just download tools like **[[metasploit|Metasploit]]** and press "Enter."
 *   **State-Sponsored Actors:** Elite teams working for a government (like an **[[apt|APT]]**). They have unlimited money and focus on spying or taking down another country's power grid.
 

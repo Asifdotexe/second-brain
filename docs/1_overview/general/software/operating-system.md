@@ -5,7 +5,7 @@ tags: Software, Basics, Platform
 
 # Operating System (OS)
 
-The "Conductor of the Digital Orchestra"—the essential software that manages your computer's hardware and creates a playground where your applications can safely run.
+The "Conductor of the Digital Orchestra" ,the essential software that manages your computer's hardware and creates a playground where your applications can safely run.
 
 Without an **Operating System**, your computer is just a cold, expensive pile of metal and silicon. The OS is the "Translator" that tells the **[[cpu|CPU]]**, the **[[hard-drive|Hard Drive]]**, and the **Screen** how to talk to each other so you can actually get work done.
 

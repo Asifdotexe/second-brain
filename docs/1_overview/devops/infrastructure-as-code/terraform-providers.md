@@ -5,7 +5,7 @@ tags: DevOps, Infrastructure, Cloud, Terraform
 
 # Terraform Providers
 
-The "Universal Translators"—the specialized plugins that allow Terraform to speak the language of every different cloud company in the world. Without them, Terraform is just a brain with no hands.
+The "Universal Translators" ,the specialized plugins that allow Terraform to speak the language of every different cloud company in the world. Without them, Terraform is just a brain with no hands.
 
 **Terraform Providers** are the essential bridge between your code and the real world. By itself, **[[terraform-overview|Terraform]]** is actually quite "dumb." It doesn't know how to build a server on AWS, nor does it know how to setup a DNS record on Cloudflare. Its only job is to read your configuration and manage the **[[terraform-state|ledger]]** of what has been built.
 

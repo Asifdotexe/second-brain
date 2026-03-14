@@ -5,7 +5,7 @@ tags: Hardware, Storage, Memory
 
 # Hard Drive (HDD / SSD)
 
-The "Filing Cabinet"—the permanent, long-term memory of your computer where every photo, document, and game lives even when the power is completely turned off.
+The "Filing Cabinet" ,the permanent, long-term memory of your computer where every photo, document, and game lives even when the power is completely turned off.
 
 The **Hard Drive** is the base of your computer's memory system. While **RAM** (Random Access Memory) is for what you are doing *right now*, the Hard Drive is for what you want to keep *forever*. If you don't save a file to the hard drive, it vanishes the moment you restart your computer.
 

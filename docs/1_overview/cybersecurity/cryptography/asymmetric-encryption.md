@@ -5,9 +5,9 @@ tags: Cryptography, Security, Web, TLS
 
 # Asymmetric Encryption
 
-"The Digital Mailbox"—a brilliant system that allows two total strangers to share secret messages without ever having to meet in person to trade a password.
+"The Digital Mailbox" ,a brilliant system that allows two total strangers to share secret messages without ever having to meet in person to trade a password.
 
-**Asymmetric Encryption** (or "Public Key Cryptography") uses two unique, linked keys: a **Public Key** and a **Private Key**. This tech is the only reason you can safely type your credit card into a website today. It solved the "Key Exchange" problem—the ancient dilemma of how to share a secret password without a spy seeing it.
+**Asymmetric Encryption** (or "Public Key Cryptography") uses two unique, linked keys: a **Public Key** and a **Private Key**. This tech is the only reason you can safely type your credit card into a website today. It solved the "Key Exchange" problem ,the ancient dilemma of how to share a secret password without a spy seeing it.
 
 Think of it like **A High-Security Mailbox**:
 *   **The Public Key (The Slot):** Anyone can walk up to your mailbox and drop a letter in the slot. Everyone knows where the mailbox is.
@@ -23,7 +23,7 @@ Think of it like **A High-Security Mailbox**:
 ## FAQs
 
 *1. What happens if I lose my Private Key?*
-**You are locked out forever.** No one—not even the FBI or the smartest hacker—can help you. This is why people who lose the private keys to their Bitcoin wallets lose millions of dollars instantly. There is no "Forgot Password" button for math.
+**You are locked out forever.** No one ,not even the FBI or the smartest hacker ,can help you. This is why people who lose the private keys to their Bitcoin wallets lose millions of dollars instantly. There is no "Forgot Password" button for math.
 
 *2. Is it slow?*
 **Yes.** The math behind this (involving massive prime numbers) is "heavy" on your processor. Because of this, it is usually only used to send a tiny "starter password," which then takes over the rest of the work using faster **[[symmetric-encryption|Symmetric Encryption]]**.

@@ -5,9 +5,9 @@ tags: Psychology, Media, RiskAssessment
 
 # Availability Heuristic
 
-"The Shark Attack Syndrome"—a mental shortcut where our brains judge the probability of an event happening based on how easily we can remember an example of it. 
+"The Shark Attack Syndrome" ,a mental shortcut where our brains judge the probability of an event happening based on how easily we can remember an example of it. 
 
-**The Availability Heuristic** is why people are more afraid of flying than driving, even though car crashes are 1,000x more common. A plane crash is a "Vivid" memory—it’s on the news, it has dramatic videos, and it’s terrifying. A car crash is "Boring" and happens every day. Because the plane crash is "Available" in your memory, your brain tells you it is "More Likely."
+**The Availability Heuristic** is why people are more afraid of flying than driving, even though car crashes are 1,000x more common. A plane crash is a "Vivid" memory ,it’s on the news, it has dramatic videos, and it’s terrifying. A car crash is "Boring" and happens every day. Because the plane crash is "Available" in your memory, your brain tells you it is "More Likely."
 
 Think of it like **A Google Search with Bad Ranking**:
 *   Your brain is a search engine. When you ask, *"Is it safe to go in the ocean?"* your brain clicks the **Top 5 Results**. 

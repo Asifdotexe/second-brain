@@ -5,9 +5,9 @@ tags: OperatingSystem, AccessControl, Privileges
 
 # Root Access
 
-"God Mode"—the highest level of power on a computer, where you can change any rule, read any secret, and even delete the computer's entire "brain" with a single command.
+"God Mode" ,the highest level of power on a computer, where you can change any rule, read any secret, and even delete the computer's entire "brain" with a single command.
 
-In every **[[operating-system|operating system]]** (Windows, Mac, Linux), there is a hierarchy of power. Most of the time, you are a "Normal User"—you can open apps and surf the web, but you aren't allowed to touch the "Guts" of the machine. **Root Access** (also called **Administrator**) is the master key that removes all safety locks.
+In every **[[operating-system|operating system]]** (Windows, Mac, Linux), there is a hierarchy of power. Most of the time, you are a "Normal User" ,you can open apps and surf the web, but you aren't allowed to touch the "Guts" of the machine. **Root Access** (also called **Administrator**) is the master key that removes all safety locks.
 
 Think of your computer like a **Giant Library**:
 *   **Normal User:** Can borrow books, read them, and sit at the tables.
@@ -16,7 +16,7 @@ Think of your computer like a **Giant Library**:
 ## The Core Danger (The "Helmet" Principle)
 Running your computer as "Root" all the time is like driving a motorcycle at 100mph without a helmet. 
 *   **No Safety Net:** Normally, if you try to delete an important system file, your computer says "Access Denied" to save you. As Root, the computer just says "Sure thing!" and immediately destroys itself.
-*   **The Hacker's Goal:** This is why every **[[malware|malware]]** wants your Root password. If a virus gets Root access, it becomes a **[[rootkit|Rootkit]]**—an invisible invader that is almost impossible to remove.
+*   **The Hacker's Goal:** This is why every **[[malware|malware]]** wants your Root password. If a virus gets Root access, it becomes a **[[rootkit|Rootkit]]** ,an invisible invader that is almost impossible to remove.
 
 ## FAQs
 

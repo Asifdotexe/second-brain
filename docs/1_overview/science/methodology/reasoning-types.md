@@ -5,7 +5,7 @@ tags: Methodology, Logic, Thinking
 
 # Reasoning
 
-"The Three Engines of Thought"—the different ways that humans (and AI) move from "What we see" to "What we know."
+"The Three Engines of Thought" ,the different ways that humans (and AI) move from "What we see" to "What we know."
 
 There are three main "Styles" of logic. Think of them as three different types of investigators trying to solve a mystery. 
 

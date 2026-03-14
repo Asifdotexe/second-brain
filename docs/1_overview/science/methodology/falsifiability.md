@@ -5,7 +5,7 @@ tags: Methodology, Science, KarlPopper
 
 # Falsifiability
 
-"The Ability to be Wrong"—the core rule that for a theory to be "Scientific," there must be a way to test it that **could** prove it false.
+"The Ability to be Wrong" ,the core rule that for a theory to be "Scientific," there must be a way to test it that **could** prove it false.
 
 **Falsifiability** is the most important rule in science. It was coined by Karl Popper, who noticed a huge difference between Einstein and Freud. Einstein made a specific, "risky" prediction: that light would bend around the sun. If it didn't bend, Einstein’s whole theory was **wrong**. Freud, on the other hand, could explain any behavior "after the fact." If a patient were angry, Freud had a reason. If they were calm, he had a different reason. 
 

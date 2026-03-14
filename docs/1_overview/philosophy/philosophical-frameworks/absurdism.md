@@ -5,7 +5,7 @@ tags: Philosophy, Meaning, Camus
 
 # Absurdism
 
-"The Joyful Rebellion"—the realization that while the universe is silent and meaningless, we should keep living, dancing, and drinking coffee just to spite the chaos.
+"The Joyful Rebellion" ,the realization that while the universe is silent and meaningless, we should keep living, dancing, and drinking coffee just to spite the chaos.
 
 **Absurdism** is the philosophy of the conflict. On one hand, humans have an innate, desperate drive to find meaning and order. On the other hand, the Universe is a cold, chaotic, and silent place that offers no answers. The "Absurd" is the collision between these two.
 

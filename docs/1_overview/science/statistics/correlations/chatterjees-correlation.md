@@ -5,9 +5,9 @@ tags: Statistics, DataScience, Correlation
 
 # Chatterjee's Correlation (Xi)
 
-"The Chaos Detector"—the most powerful correlation tool, which can find a connection between two variables even if the relationship is a crazy, zig-zagging rollercoaster.
+"The Chaos Detector" ,the most powerful correlation tool, which can find a connection between two variables even if the relationship is a crazy, zig-zagging rollercoaster.
 
-**Chatterjee's Correlation (Xi)** is a "Modern" tool (invented in 2019). Most other correlation tools (like [[pearson-correlation|Pearson]] or [[spearman-correlation|Spearman]]) are like "One-Trick Ponies"—they only work for simple lines or smooth curves. If your data zig-zags (like a heart rate monitor), those old tools will give it a score of **Zero**, even though there is clearly a pattern. 
+**Chatterjee's Correlation (Xi)** is a "Modern" tool (invented in 2019). Most other correlation tools (like [[pearson-correlation|Pearson]] or [[spearman-correlation|Spearman]]) are like "One-Trick Ponies" ,they only work for simple lines or smooth curves. If your data zig-zags (like a heart rate monitor), those old tools will give it a score of **Zero**, even though there is clearly a pattern. 
 
 **Xi** (pronounced "ks-eye") doesn't care about the shape. If one variable depends on the other in **any** mathematical way, Xi will find it.
 

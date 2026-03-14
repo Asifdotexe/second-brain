@@ -5,7 +5,7 @@ tags: CyberSecurity, ThreatActor, ScriptKiddie, Amateur
 
 # Script Kiddies
 
-"The Copy-Paste Armies"—low-skilled attackers who don't actually know how to write code, but have learned how to download powerful tools and press "Enter" to cause chaos.
+"The Copy-Paste Armies" ,low-skilled attackers who don't actually know how to write code, but have learned how to download powerful tools and press "Enter" to cause chaos.
 
 A **Script Kiddie** (or "Skiddie") is the most common threat actor on the internet. They are like someone who buys a professional race car but doesn't know how an engine works. They can still drive that car through your front door and destroy your house, but they couldn't fix the car if it broke down. They rely entirely on tools and scripts created by real hackers.
 
@@ -21,7 +21,7 @@ It is a massive mistake to ignore them just because they aren't "Geniuses."
 **Basic Hygiene.** Script kiddies go after "Easy Targets." If you keep your computer **Updated**, use a strong **Password**, and have a **[[firewalls|Firewall]]** on, they will usually move on to an easier victim who hasn't updated their PC since 2015.
 
 *2. Is it just "Kids"?*
-**No.** The name comes from the level of skill, not age. However, many of today’s top security experts started as script kiddies—playing with tools is often the first step toward a career in **[[ethical-hackers|Ethical Hacking]]**.
+**No.** The name comes from the level of skill, not age. However, many of today’s top security experts started as script kiddies ,playing with tools is often the first step toward a career in **[[ethical-hackers|Ethical Hacking]]**.
 
 ### Further Reading
 

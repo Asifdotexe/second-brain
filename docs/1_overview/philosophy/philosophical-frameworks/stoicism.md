@@ -5,7 +5,7 @@ tags: Philosophy, MarcusAurelius, Resilience
 
 # Stoicism
 
-"The Mental Shield"—a user's manual for the mind that teaches you how to be happy by focusing intensely on what you can control, and completely letting go of what you can't.
+"The Mental Shield" ,a user's manual for the mind that teaches you how to be happy by focusing intensely on what you can control, and completely letting go of what you can't.
 
 **Stoicism** was built by a diverse group: a Greek slave (Epictetus), a Roman statesman (Seneca), and a Roman Emperor (Marcus Aurelius). They all agreed on one thing: Life is full of chaos and pain. You cannot stop the world from being difficult, but you can build a "Fortress" inside your own mind that no one can break.
 

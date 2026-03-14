@@ -20,7 +20,7 @@ We like to think of [[llm|LLMs]] as giant encyclopedias, but they aren't. They a
 ## FAQs
 
 *1. Can we just program them to stop hallucinating?*
-Not totally. We can aggressively reduce how often they lie by bolting external databases onto them (using techniques like [[rag|Retrieval-Augmented Generation (RAG)]]). But because the core LLM engine is probabilistic—meaning it's literally just rolling loaded dice to pick the next word—there is always a tiny, non-zero chance it will roll snake eyes and output nonsense.
+Not totally. We can aggressively reduce how often they lie by bolting external databases onto them (using techniques like [[rag|Retrieval-Augmented Generation (RAG)]]). But because the core LLM engine is probabilistic ,meaning it's literally just rolling loaded dice to pick the next word ,there is always a tiny, non-zero chance it will roll snake eyes and output nonsense.
 
 *2. Why is this actually dangerous?*
 Because the AI is unbelievably **confident**. If you ask an AI "Who is the CEO of Apple?", it says "Tim Cook." If you ask it "Who is the elected King of Mars?", it won't tell you Mars doesn't have a king. It will invent a name, a fake political party, and a rich 200-year fictional history of Martian royalty without ever changing its factual, authoritative tone of voice.

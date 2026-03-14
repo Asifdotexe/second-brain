@@ -5,7 +5,7 @@ tags: Statistics, DataScience, Correlation
 
 # Rank-Biserial Correlation
 
-"The Tournament Tracker"—a tool used when one variable is a "Yes or No" and the other is a "Ranking" (1st place, 2nd place, 3rd place).
+"The Tournament Tracker" ,a tool used when one variable is a "Yes or No" and the other is a "Ranking" (1st place, 2nd place, 3rd place).
 
 **Rank-Biserial Correlation ($r_{rb}$)** is the "Non-Parametric" sibling of the [[point-biserial-correlation|Point-Biserial Correlation]]. It’s used when you don't have exact numbers, only the "Order" of finish. For example: *"Does taking a specialized training course (Yes/No) predict where you finish in the employee sales rankings?"*
 

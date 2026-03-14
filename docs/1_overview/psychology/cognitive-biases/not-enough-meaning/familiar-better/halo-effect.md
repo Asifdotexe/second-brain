@@ -5,7 +5,7 @@ tags: Psychology, Perception, Leadership
 
 # Halo Effect
 
-"The Angel Script"—a cognitive bias where we assume that because a person has one great quality (like being attractive or well-dressed), they must also be great at everything else (like being smart or kind).
+"The Angel Script" ,a cognitive bias where we assume that because a person has one great quality (like being attractive or well-dressed), they must also be great at everything else (like being smart or kind).
 
 **The Halo Effect** is your brain’s "Lazy Autocomplete." Our minds hate complexity. It is much easier to believe that someone is "100% Good" than to realize they are a mix of good and bad traits. So, when we see one positive thing, we put a metaphorical "Halo" around their head and assume they are an angel.
 

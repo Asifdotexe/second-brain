@@ -5,9 +5,9 @@ tags: CyberSecurity, Ransomware, Worm
 
 # WannaCry
 
-"The Digital Pandemic"—a global ransomware crisis that held the world hostage in a single weekend. It proved that code could shut down national hospitals and paralyze global trade.
+"The Digital Pandemic" ,a global ransomware crisis that held the world hostage in a single weekend. It proved that code could shut down national hospitals and paralyze global trade.
 
-**WannaCry** (May 2017) was a world-changing **[[ransomware|Ransomware]]** attack. Within 48 hours, it infected 200,000 computers in 150 countries. It hit the UK's National Health Service, Telefónica, and even FedEx. It wasn't just scary because it locked files, but because it was **"Wormable"**—using a stolen NSA weapon called **[[eternalblue|EternalBlue]]** to jump from computer to computer automatically. If your PC was on the internet and unpatched, you were next.
+**WannaCry** (May 2017) was a world-changing **[[ransomware|Ransomware]]** attack. Within 48 hours, it infected 200,000 computers in 150 countries. It hit the UK's National Health Service, Telefónica, and even FedEx. It wasn't just scary because it locked files, but because it was **"Wormable"** ,using a stolen NSA weapon called **[[eternalblue|EternalBlue]]** to jump from computer to computer automatically. If your PC was on the internet and unpatched, you were next.
 
 ## The Human Impact
 This wasn't just about "broken computers":

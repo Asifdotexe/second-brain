@@ -5,7 +5,7 @@ tags: CyberSecurity, CyberEvent, Malware, ICS, Air-Gap
 
 # Stuxnet
 
-"The Digital Spark that caused a physical fire"—the world's first true "Cyber-Weapon." It proved that a few thousand lines of code could be just as destructive as a squadron of bomber jets.
+"The Digital Spark that caused a physical fire" ,the world's first true "Cyber-Weapon." It proved that a few thousand lines of code could be just as destructive as a squadron of bomber jets.
 
 **Stuxnet** (discovered in 2010) is a legendary piece of malware designed to sabotage Iran’s nuclear program. Most malware steals credit cards or shows ads; Stuxnet was a precision-guided digital missile. Its mission: smuggle itself into a top-secret, high-security facility and physically destroy the uranium-enrichment centrifuges.
 
@@ -18,7 +18,7 @@ Think of it as **A Master Sniper who learned to pick locks**:
 ## Why it changed the world
 *   **The First Physical Kill:** It was the first time a cyberattack caused permanent, massive destruction to real-world machinery.
 *   **Insane Complexity:** It used **four [[zero-day|Zero-Day]]** holes at once. Most hackers only ever find one.
-*   **Pandora's Box:** It proved that any machine connected to a computer—power grids, water pumps, hospital life-support—could be destroyed from a distance.
+*   **Pandora's Box:** It proved that any machine connected to a computer ,power grids, water pumps, hospital life-support ,could be destroyed from a distance.
 
 ### Further Reading
 

@@ -5,7 +5,7 @@ tags: Hardware, Computing, Gaming
 
 # GPU (Graphics Processing Unit)
 
-The "Massive Factory"—a building filled with thousands of simple laborers who aren't very smart, but can all perform basic tasks simultaneously to move mountains of data at lightning speed.
+The "Massive Factory" ,a building filled with thousands of simple laborers who aren't very smart, but can all perform basic tasks simultaneously to move mountains of data at lightning speed.
 
 If the **[[cpu|CPU]]** is a brilliant Professor who solves one complex problem at a time, the **GPU** is a factory with 5,000 workers. Each worker can only do simple math (like 1+1), but they can all do it at the **exact same time**. This makes the GPU the world champion of **Parallel Processing**.
 

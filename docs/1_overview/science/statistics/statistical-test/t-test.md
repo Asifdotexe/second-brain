@@ -5,7 +5,7 @@ tags: Statistics, HypothesisTesting, Parametric
 
 # T-Test
 
-"The Difference Checker"—a tool used to determine if the difference between two groups is "Real" or just due to random chance.
+"The Difference Checker" ,a tool used to determine if the difference between two groups is "Real" or just due to random chance.
 
 A **T-Test** is what you use when you have two groups (like "Coffee Drinkers" and "Tea Drinkers") and you want to know if one group is actually better at something (like a memory test). Because of nature's randomness, the averages of the two groups will almost **never** be exactly the same. The T-Test calculates the probability that the difference you found was just "Dumb Luck."
 

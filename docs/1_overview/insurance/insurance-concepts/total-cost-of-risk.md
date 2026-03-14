@@ -5,7 +5,7 @@ tags: [RiskEconomics, Management, Strategy]
 
 # Total Cost of Risk (TCoR)
 
-"The Full Bill"—the realization that the price of insurance is just the tip of the iceberg, and being truly "Safe" costs much more than just a monthly premium.
+"The Full Bill" ,the realization that the price of insurance is just the tip of the iceberg, and being truly "Safe" costs much more than just a monthly premium.
 
 **Total Cost of Risk (TCoR)** is the sum of every dollar your company spends on "Not Being Destroyed." It proves that buying the "Cheapest" insurance is often a mistake. If you buy cheap insurance but have a massive deductible and a weak security team, your **Total Cost** will eventually be much higher than if you spent more on quality protection.
 

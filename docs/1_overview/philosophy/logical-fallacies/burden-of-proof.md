@@ -5,7 +5,7 @@ tags: Philosophy, Logic, Debate
 
 # The Burden of Proof
 
-"Prove It!"—the logical rule that says if you make a claim, it is **your** job to provide the evidence. It is never the job of the person who doesn't believe you to prove you wrong.
+"Prove It!" ,the logical rule that says if you make a claim, it is **your** job to provide the evidence. It is never the job of the person who doesn't believe you to prove you wrong.
 
 **The Burden of Proof** (formally called *Onus Probandi*) is the foundation of science, law, and fair debate. Without it, anyone could claim anything ("The moon is made of blue cheese!") and then demand that you spend your whole life proving them wrong. In a logical world, the person bringing the "New Idea" must bring the "New Data."
 

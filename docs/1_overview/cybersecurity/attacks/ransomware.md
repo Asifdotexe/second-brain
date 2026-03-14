@@ -5,14 +5,14 @@ tags: CyberAttack, Malware, Crime
 
 # Ransomware
 
-"The Digital Kidnapper"—a type of software that locks up your entire life and demands a "Ransom" in Bitcoin to give it back.
+"The Digital Kidnapper" ,a type of software that locks up your entire life and demands a "Ransom" in Bitcoin to give it back.
 
 **Ransomware** is the most aggressive form of **[[malware|malware]]**. Imagine coming home to find your front door locks changed and a note pinned to the glass: *"Pay $1,000 by midnight, or we burn the whole house down."* That is exactly what ransomware does to your computer. It encrypts (scrambles) your photos, work files, and databases using unbreakable math, then demands payment in untraceable cryptocurrency.
 
 Think of it like **A Master Locksmith Gone Rogue**:
 *   The hacker "wraps" every one of your files in a digital safe.
 *   They are the only person on Earth who has the combination.
-*   They set a countdown timer on your screen—if you don't pay, the combo is deleted forever, and your files become garbage.
+*   They set a countdown timer on your screen ,if you don't pay, the combo is deleted forever, and your files become garbage.
 
 ## How the Kidnapping Happens
 1.  **The Infection:** You download a malicious attachment (usually via **[[phishing|phishing]]**) or visit a "poisoned" website.

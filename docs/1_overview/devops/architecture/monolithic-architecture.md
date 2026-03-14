@@ -5,7 +5,7 @@ tags: DevOps, Architecture, SoftwareDesign
 
 # Monolithic Architecture
 
-"The Great Pyramid"—a traditional way of building software where everything, from the login screen to the database connection, is built as a single, massive, interlocking block of stone.
+"The Great Pyramid" ,a traditional way of building software where everything, from the login screen to the database connection, is built as a single, massive, interlocking block of stone.
 
 **Monolithic Architecture** is the "All-in-One" model. Your entire application is a single project. The front-end, back-end logic, and database connectors all live in the same folder and are deployed as one giant file. For decades, this was the only way to build software. It’s simple, powerful, and for many projects, still the smartest choice.
 

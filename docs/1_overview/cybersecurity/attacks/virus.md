@@ -5,7 +5,7 @@ tags: Malware, History, Replication
 
 # Computer Virus
 
-"The Parasite"—a piece of malicious code that cannot live on its own. It must attach itself to a healthy file to survive, replicate, and spread.
+"The Parasite" ,a piece of malicious code that cannot live on its own. It must attach itself to a healthy file to survive, replicate, and spread.
 
 Most people use the word "Virus" to describe anything bad on a computer, but technically, that’s incorrect. **[[malware|Malware]]** is the big category (it includes everything from ransomware to spyware). A **Virus** is a very specific type of bug that defines itself by **attachment**. If it doesn't "hitch a ride" on a real program, it isn't a virus.
 

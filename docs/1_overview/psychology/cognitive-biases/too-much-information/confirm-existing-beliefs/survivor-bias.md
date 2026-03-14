@@ -5,7 +5,7 @@ tags: Psychology, CognitiveBiases, DataAnalysis, Philosophy
 
 # Survivor Bias
 
-"Looking at the Winners"—a logical error where we only look at the people or things that "Survived" a process, while completely forgetting about the 99% of people who "Died" or "Failed." This makes us draw totally wrong conclusions about how to succeed.
+"Looking at the Winners" ,a logical error where we only look at the people or things that "Survived" a process, while completely forgetting about the 99% of people who "Died" or "Failed." This makes us draw totally wrong conclusions about how to succeed.
 
 **Survivor Bias** happens because failures are often **Invisible**. We study successful billionaires like Bill Gates or Steve Jobs and try to copy their habits, but we don't study the 100,000 other people who had the exact same habits, worked just as hard, and **Failed** because of bad luck. If you only look at the winners, you learn all the wrong lessons.
 
@@ -16,7 +16,7 @@ Think of it like **A Warplane**:
 
 ## The Anthropic Principle (The Ultimate Survival)
 This bias even applies to the universe. People often ask: *"Why are the laws of physics so perfect for human life? It must be a miracle!"*
-**The Survivor Answer:** If the laws of physics *weren't* perfect for life, we wouldn't be here to ask the question. We are the "Winners" of an infinite number of possible universes. Of course our universe looks perfect to us—we couldn't exist in any of the bad ones!
+**The Survivor Answer:** If the laws of physics *weren't* perfect for life, we wouldn't be here to ask the question. We are the "Winners" of an infinite number of possible universes. Of course our universe looks perfect to us ,we couldn't exist in any of the bad ones!
 
 ## FAQs
 

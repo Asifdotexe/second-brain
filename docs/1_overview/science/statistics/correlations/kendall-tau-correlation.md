@@ -5,7 +5,7 @@ tags: Statistics, DataScience, Correlation
 
 # Kendall Tau Correlation Coefficient (τ)
 
-"The Agreement Test"—a measure that compares "Pairs" of data to see if people (or systems) agree on the order of things.
+"The Agreement Test" ,a measure that compares "Pairs" of data to see if people (or systems) agree on the order of things.
 
 **Kendall Tau ($\tau$)** is the "Fairest" of the rank-based correlations. While [[spearman-correlation|Spearman]] uses some math shortcuts with ranks, Kendall Tau gets down into the weeds. it looks at every possible pair of items and asks: *"Did we both agree that A is better than B?"* It is the most robust tool for small datasets or data with lots of "Ties" (e.g., 10 people all winning 1st place).
 

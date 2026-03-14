@@ -5,13 +5,13 @@ tags: Statistics, DataScience, Correlation
 
 # Spearman Rank Correlation Coefficient (ρ)
 
-"The Ranking Rule"—a measure that focuses on the **Order** of things (1st, 2nd, 3rd) rather than the exact distance between them.
+"The Ranking Rule" ,a measure that focuses on the **Order** of things (1st, 2nd, 3rd) rather than the exact distance between them.
 
 **Spearman's Correlation ($\rho$)** is the more "Chill" cousin of [[pearson-correlation|Pearson's Correlation]]. While Pearson demands a perfect straight line, Spearman only cares that when one thing goes up, the other thing **also** goes up (or down). It doesn't care if the line curves. It does this by ignoring the raw numbers and only looking at the **Ranks**.
 
 Think of it like **Judging a Race**:
 *   **Pearson Logic:** Cares that the winner finished in 10 seconds, and the runner-up in 11 seconds. It measures the "Speed" and "Distance."
-*   **Spearman Logic:** Only cares that Runner A was 1st and Runner B was 2nd. If the winner was 1 hour ahead of everyone else, Spearman doesn't care—they are still just "#1."
+*   **Spearman Logic:** Only cares that Runner A was 1st and Runner B was 2nd. If the winner was 1 hour ahead of everyone else, Spearman doesn't care ,they are still just "#1."
 *   **The Advantage:** Because it only looks at ranks, it isn't "Distorted" by one crazy outlier (like a billionaire walk-in during a survey of normal people).
 
 ## The "Checklist" for Spearman

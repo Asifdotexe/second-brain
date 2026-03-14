@@ -5,9 +5,9 @@ tags: DevOps, Architecture, SoftwareDesign, Containerization
 
 # Microservices Architecture
 
-"The Food Truck Festival"—a modern style where instead of building one massive restaurant, you build dozens of independent, specialized trucks that work together to feed the crowd.
+"The Food Truck Festival" ,a modern style where instead of building one massive restaurant, you build dozens of independent, specialized trucks that work together to feed the crowd.
 
-**Microservices Architecture** is the "Divvy and Conquer" approach. Instead of a single giant block of code (the **[[monolithic-architecture|Monolith]]**), you break the app into tiny, independent services. Each service has one job—processing payments, searching products, or managing logins—and they talk to each other over a network.
+**Microservices Architecture** is the "Divvy and Conquer" approach. Instead of a single giant block of code (the **[[monolithic-architecture|Monolith]]**), you break the app into tiny, independent services. Each service has one job ,processing payments, searching products, or managing logins ,and they talk to each other over a network.
 
 Think of **Amazon**:
 *   They don't have one big program. They have thousands of tiny ones.

@@ -5,7 +5,7 @@ tags: Software, Core, Admin
 
 # OS Kernel
 
-The "Grand Interpreter"—the absolute core of the **[[operating-system|Operating System]]** that translates your clicks and taps into the electrical signals the hardware can understand.
+The "Grand Interpreter" ,the absolute core of the **[[operating-system|Operating System]]** that translates your clicks and taps into the electrical signals the hardware can understand.
 
 The **Kernel** is the very first program that loads when you turn on your computer. It never stops running until you turn the power off. It sits between your apps (like a video game) and your hardware (like the **[[cpu|CPU]]**), acting as a security guard to make sure no app "breaks" the physical machine.
 

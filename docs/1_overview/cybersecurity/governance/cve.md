@@ -5,7 +5,7 @@ tags: CyberSecurity, InformationSecurity, VulnerabilityManagement
 
 # CVE (Common Vulnerabilities and Exposures)
 
-"The Social Security Number for Bugs"—a global naming system that gives every known security flaw a unique "ID." This ensures that every expert in the world is talking about the exact same hole.
+"The Social Security Number for Bugs" ,a global naming system that gives every known security flaw a unique "ID." This ensures that every expert in the world is talking about the exact same hole.
 
 In the early days, if a bug was found in Windows, one person would call it "The Login Glitch," while another called it "The Microsoft Hole." This was chaos. **CVE** was created to end that confusion. It is a dictionary of security flaws where every entry is unique, verified, and free for anyone to use.
 
@@ -15,7 +15,7 @@ Every CVE ID follows a simple formula:
 *   **2024:** The year the vulnerability was officially reported.
 *   **28496:** A unique number assigned to that specific bug for that year.
 
-**Example:** `CVE-2017-0144` is the official name for the hole that allowed the **[[wanna-cry|WannaCry]]** virus to destroy 200,000 computers. When a security manager sees that ID, they don't have to guess—they can look it up and find the exact "cure" immediately.
+**Example:** `CVE-2017-0144` is the official name for the hole that allowed the **[[wanna-cry|WannaCry]]** virus to destroy 200,000 computers. When a security manager sees that ID, they don't have to guess ,they can look it up and find the exact "cure" immediately.
 
 ## Why it matters
 Without CVEs, your **[[antivirus|Antivirus]]** would have a hard time talking to your computer's "Update" center. The CVE system is the universal language of the tech world. It allows a hacker in Europe, a defender in USA, and a developer in Japan to look at one number and agree: *"This is a critical hole that needs to be plugged today."*

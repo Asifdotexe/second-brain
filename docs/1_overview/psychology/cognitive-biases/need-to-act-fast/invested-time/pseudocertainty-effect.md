@@ -5,7 +5,7 @@ tags: CognitiveBias, NeedToActFast, InvestedTime, Risk
 
 # Pseudocertainty Effect
 
-"The Small Safety Trap"—a cognitive bias where we overvalue getting "100% Certainty" in one small, specific area, while completely ignoring that we are still in massive danger everywhere else.
+"The Small Safety Trap" ,a cognitive bias where we overvalue getting "100% Certainty" in one small, specific area, while completely ignoring that we are still in massive danger everywhere else.
 
 **The Pseudocertainty Effect** is a trick of the brain. We hate the "feeling" of risk so much that we will overpay to eliminate a tiny risk completely, just so we can feel "Safe." But because we are only looking at one small "Bucket" of risk, we feel smart even though the rest of our buckets are on fire.
 

@@ -5,7 +5,7 @@ tags: specific-attack, Malware, Espionage
 
 # Keylogger
 
-"The Ultimate Voyeur"—a hidden spy that watches over your shoulder and notes down every single letter you type, from your middle-school secrets to your bank passwords.
+"The Ultimate Voyeur" ,a hidden spy that watches over your shoulder and notes down every single letter you type, from your middle-school secrets to your bank passwords.
 
 A **Keylogger** (Keystroke Logger) doesn't care about your files or your photos. It only wants the raw data flowing from your fingers into the computer. It is the most effective way for a hacker to "break" your encrypted accounts without actually having to break the encryption.
 
@@ -17,7 +17,7 @@ Think of it like **A Ghost Stenographer**:
 
 ## The Two Faces of Keylogging
 1.  **Software Keyloggers:** Sneaky programs that hide inside your Operating System. They usually get in via a malicious email attachment or a "cracked" game.
-2.  **Hardware Keyloggers:** A physical device—usually a small USB adapter—that is plugged in between your keyboard and your computer. It is totally invisible to your antivirus software because it’s physically "listening" to the wires.
+2.  **Hardware Keyloggers:** A physical device ,usually a small USB adapter ,that is plugged in between your keyboard and your computer. It is totally invisible to your antivirus software because it’s physically "listening" to the wires.
 
 ## FAQs
 

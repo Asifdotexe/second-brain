@@ -5,7 +5,7 @@ tags: DevOps, Containerization, Kubernetes
 
 # Kubernetes Node
 
-The "Worker Drones"—the actual, physical (or virtual) muscle that does the heavy lifting. A Node is a single machine where your code lives, breathes, and runs.
+The "Worker Drones" ,the actual, physical (or virtual) muscle that does the heavy lifting. A Node is a single machine where your code lives, breathes, and runs.
 
 A **Kubernetes Node** is a "Worker" in the cluster. While the **Kubernetes Control Plane** is the "Master Brain" that makes decisions, the **Node** is the "Hand" that does the work. When you tell Kubernetes to run an app, the Brain looks at all its available Nodes, finds the one that isn't too tired (has enough CPU and RAM), and tells it: "Run this app!"
 

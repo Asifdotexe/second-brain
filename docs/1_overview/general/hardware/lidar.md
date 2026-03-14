@@ -5,9 +5,9 @@ tags: Hardware, Sensors, Robotics
 
 # LiDAR
 
-The "Laser Bat"—a sophisticated sensor that allows machines to "see" the world in 3D by shooting out millions of invisible laser beams every second and measuring the "echo" as they bounce off objects.
+The "Laser Bat" ,a sophisticated sensor that allows machines to "see" the world in 3D by shooting out millions of invisible laser beams every second and measuring the "echo" as they bounce off objects.
 
-**LiDAR** (Light Detection and Ranging) is the 3D vision system for the modern world. While a normal camera takes a 2D picture (flat), LiDAR builds a **Point Cloud**—a digital map that knows exactly how many centimeters away every single leaf, person, and wall is.
+**LiDAR** (Light Detection and Ranging) is the 3D vision system for the modern world. While a normal camera takes a 2D picture (flat), LiDAR builds a **Point Cloud** ,a digital map that knows exactly how many centimeters away every single leaf, person, and wall is.
 
 Think of it like **A Bat using Flashlights instead of Sound**:
 *   **Sonar (Bats/Submarines):** Screams out a sound and waits for the echo. It’s slow and not very detailed.
@@ -25,7 +25,7 @@ Think of it like **A Bat using Flashlights instead of Sound**:
 **No.** Commercial LiDAR (like in your phone or car) uses "Class 1" lasers. They are completely invisible to the human eye and are at such a low power that they are 100% safe, even if you stare directly at the sensor.
 
 *2. Why don't all cars use LiDAR?*
-Because it’s expensive. A high-end LiDAR sensor for a self-driving car can cost $10,000 or more. This is why companies like **Tesla** try to use only cameras (**[[computer-vision|Computer Vision]]**) instead—it’s much cheaper, but much harder to get perfectly right.
+Because it’s expensive. A high-end LiDAR sensor for a self-driving car can cost $10,000 or more. This is why companies like **Tesla** try to use only cameras (**[[computer-vision|Computer Vision]]**) instead ,it’s much cheaper, but much harder to get perfectly right.
 
 ### Further Reading
 

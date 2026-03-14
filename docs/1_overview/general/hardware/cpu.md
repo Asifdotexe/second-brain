@@ -5,9 +5,9 @@ tags: Hardware, Computing, Basics
 
 # CPU (Central Processing Unit)
 
-The "University Professor"—extraordinarily smart, incredibly versatile, and capable of solving complex problems, but who can only work on one or two things at a time with extreme precision.
+The "University Professor" ,extraordinarily smart, incredibly versatile, and capable of solving complex problems, but who can only work on one or two things at a time with extreme precision.
 
-The **CPU** is the primary brain of your computer. Its job is to interpret and execute the general instructions of every piece of software you run—from your operating system to your web browser. It is built for **Latency**, meaning it wants to finish one difficult task as fast as humanly possible.
+The **CPU** is the primary brain of your computer. Its job is to interpret and execute the general instructions of every piece of software you run ,from your operating system to your web browser. It is built for **Latency**, meaning it wants to finish one difficult task as fast as humanly possible.
 
 Think of the CPU like a **Brilliant Professor**:
 *   If you give the Professor a complex math equation, a poem to write, and a schedule to organize, they can do it perfectly.

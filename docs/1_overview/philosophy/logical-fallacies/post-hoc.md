@@ -5,7 +5,7 @@ tags: Logic, Statistics, Latin
 
 # Post Hoc Fallacy
 
-"The Rain Dancer"—a logical error where you assume that because Event B happened after Event A, then Event A must have **caused** Event B.
+"The Rain Dancer" ,a logical error where you assume that because Event B happened after Event A, then Event A must have **caused** Event B.
 
 **Post Hoc** (short for *Post Hoc Ergo Propter Hoc*, Latin for "After this, therefore because of this") is the birth of almost every superstition in history. Our brains are "Pattern-Matching Machines." We are evolved to find causes for everything, but we often mistake a simple **Coincidence** for a powerful **Cause**.
 

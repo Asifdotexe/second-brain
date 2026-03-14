@@ -5,9 +5,9 @@ tags: CyberAttack, CyberSecurity, Malware
 
 # Botnet
 
-"The Zombie Army"—a massive, invisible collection of computers secretly controlled by a single "General" standing miles away, unaware they are being used to attack the internet.
+"The Zombie Army" ,a massive, invisible collection of computers secretly controlled by a single "General" standing miles away, unaware they are being used to attack the internet.
 
-A **Botnet** (Robot + Network) is a collection of thousands—sometimes millions—of devices infected with a secret strain of malware. Once a device (your laptop, your phone, or even your smart lightbulb) is infected, it becomes a **"Bot"** or a **"Zombie."** It works normally for you, but in the background, it’s waiting for a signal from its master.
+A **Botnet** (Robot + Network) is a collection of thousands ,sometimes millions ,of devices infected with a secret strain of malware. Once a device (your laptop, your phone, or even your smart lightbulb) is infected, it becomes a **"Bot"** or a **"Zombie."** It works normally for you, but in the background, it’s waiting for a signal from its master.
 
 Think of it like **A Sleeping Military Force**:
 *   One laptop can't do much damage to a website like Facebook or Amazon.

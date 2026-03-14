@@ -5,14 +5,14 @@ tags: CyberSecurity, SecurityTool, Pentesting, Exploit, Framework
 
 # Metasploit
 
-"The Swiss Army Knife of Hacking"—a massive toolkit containing the "Digital Keys" and "Lockpicking Tools" for almost every known security hole in history.
+"The Swiss Army Knife of Hacking" ,a massive toolkit containing the "Digital Keys" and "Lockpicking Tools" for almost every known security hole in history.
 
 **Metasploit** is the world’s most famous **[[pen-testing|Penetration Testing]]** framework. In the past, if a hacker found a bug, they had to write custom code to use it. Metasploit changed that by turning hacking into "Point and Click." It is a massive library of pre-written "Exploits" used by both the good guys (to test security) and the bad guys (to steal data).
 
 Think of it like **A Professional Locksmith's Kit**:
 *   A locksmith (the good guy) uses it to help you get back into your house when you're locked out.
 *   A thief (the bad guy) uses that exact same kit to break into your house while you're asleep.
-*   Metasploit isn't "Evil"—it’s just a powerful tool.
+*   Metasploit isn't "Evil" ,it’s just a powerful tool.
 
 ## The 3 Parts of an Attack
 1.  **The Exploit (The Door-Opener):** The code that takes advantage of a specific bug/vulnerability to break the lock.

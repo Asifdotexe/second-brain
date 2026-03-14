@@ -5,7 +5,7 @@ tags: [RiskManagement, InsuranceBasics, Strategy]
 
 # Risk Transfer
 
-"Paying for Peace of Mind"—the business equivalent of paying someone else to worry for you so you can sleep at night.
+"Paying for Peace of Mind" ,the business equivalent of paying someone else to worry for you so you can sleep at night.
 
 **Risk Transfer** is a simple deal: you have a potential problem that could cost you $1 Million. You pay an insurance company (or a contractor) $1,000 to "take" that problem from you. If the disaster happens, they pay the $1 Million, and you lose nothing but the $1,000 you already paid.
 

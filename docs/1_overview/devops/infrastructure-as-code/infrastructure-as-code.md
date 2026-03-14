@@ -5,7 +5,7 @@ tags: DevOps, Infrastructure, Cloud
 
 # Infrastructure as Code (IaC)
 
-The "Digital Blueprint"—a revolutionary way of building data centers using text files instead of manual clicks. It turns "Construction" into "Software," allowing you to build an entire corporate network as easily as you write an email.
+The "Digital Blueprint" ,a revolutionary way of building data centers using text files instead of manual clicks. It turns "Construction" into "Software," allowing you to build an entire corporate network as easily as you write an email.
 
 **Infrastructure as Code (IaC)** is the practice of managing your servers, databases, and networks through machine-readable definition files. In the old days (what we now call **"ClickOps"**), if you wanted a new server, a human had to log into a website and click through 50 menus to set it up. It was slow, boring, and easy to mess up.
 

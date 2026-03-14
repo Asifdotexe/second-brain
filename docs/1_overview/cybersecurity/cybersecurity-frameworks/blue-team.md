@@ -5,7 +5,7 @@ tags: Security, Defense, SOC
 
 # Blue Team
 
-"The Castle Guards"—internal security experts who spend every day watching the perimeter, patching the walls, and standing ready to fight off any intruder.
+"The Castle Guards" ,internal security experts who spend every day watching the perimeter, patching the walls, and standing ready to fight off any intruder.
 
 The **Blue Team** is the defensive side of cybersecurity. While hackers (and **[[red-team|Red Teams]]**) focus on the thrill of the break-in, the Blue Team is focused on the much harder, 24/7 reality of protection.
 

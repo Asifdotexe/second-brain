@@ -5,12 +5,12 @@ tags: CyberSecurity, AttackTool, DDoS, Hacktivism, ScriptKiddie
 
 # LOIC (Low Orbit Ion Cannon)
 
-"The Digital Battering Ram"—a primitive but incredibly effective tool designed specifically to smash down a website's "front door" through sheer brute force.
+"The Digital Battering Ram" ,a primitive but incredibly effective tool designed specifically to smash down a website's "front door" through sheer brute force.
 
 **LOIC** is a famous **[[ddos|DDoS]]** tool. It reached legendary status because of its extreme simplicity: it features a giant, tempting "Fire" button that immediately begins flooding a target server with so much junk data that the site crashes. It is the "weapon of choice" for **Script Kiddies** (amateurs using pre-made tools) because it requires zero technical knowledge. You enter a URL, click a button, and the attack begins.
 
 Think of it like **A Group Protest at a Doorway**:
-*   One person with LOIC is like one person shouting at a building—annoying, but harmless.
+*   One person with LOIC is like one person shouting at a building ,annoying, but harmless.
 *   **"Hive Mind" Mode:** LOIC allows a central leader to control thousands of "volunteer" computers at once. When thousands of people hit "Fire" at the exact same second, it creates a digital tidal wave that can knock almost any corporate server offline.
 
 ## The Catch (Why you shouldn't use it)

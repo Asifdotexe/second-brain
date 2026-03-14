@@ -5,7 +5,7 @@ tags: Refactoring, CleanCode, Techniques
 
 # Composing Methods
 
-"The Art of the Function"—a set of techniques for taking massive, "God-like" functions and breaking them down into small, readable, and manageable pieces.
+"The Art of the Function" ,a set of techniques for taking massive, "God-like" functions and breaking them down into small, readable, and manageable pieces.
 
 In most messy codebases, the biggest problem is the **Long Method**. A function that is 500 lines long is an "Evil" function. It conceals the logic, makes it impossible to find bugs, and is terrifying to change. We use these "Composition" techniques to streamline our methods and make the code read like a simple story.
 

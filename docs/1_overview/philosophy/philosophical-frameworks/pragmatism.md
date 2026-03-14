@@ -5,7 +5,7 @@ tags: Philosophy, Logic, Action
 
 # Pragmatism
 
-"The Tool Test"—a philosophy that says an idea is only "True" if it actually works in the real world. It treats beliefs like hammers: they aren't right or wrong, they are just useful or useless.
+"The Tool Test" ,a philosophy that says an idea is only "True" if it actually works in the real world. It treats beliefs like hammers: they aren't right or wrong, they are just useful or useless.
 
 Most philosophers spend thousands of years arguing about whether the world is "Real" or if "God" exists. **Pragmatism** walks into the room and asks: *"If I believe this, does my life get better? If yes, then it’s true for me."* It values results, action, and practicality over abstract logic.
 

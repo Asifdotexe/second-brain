@@ -5,7 +5,7 @@ tags: Security, Collaboration, Strategy
 
 # Purple Team
 
-"The Special Forces Sparring"—a collaborative approach where attackers and defenders stop trying to beat each other and instead combine their skills to build a truly unbreakable organization.
+"The Special Forces Sparring" ,a collaborative approach where attackers and defenders stop trying to beat each other and instead combine their skills to build a truly unbreakable organization.
 
 **Purple Teaming** is not a separate group of people; it is a **strategy**. It brings together the "Red" (Offensive) and "Blue" (Defensive) teams to work in a transparent, open loop. 
 

@@ -5,12 +5,12 @@ tags: DevOps, Containerization, Kubernetes
 
 # Kubernetes Overview
 
-The "Grand Orchestrator"—a brilliant, automated brain that manages a fleet of thousands of digital "containers," ensuring they are healthy, balanced, and always ready to serve millions of users, even if half your servers explode.
+The "Grand Orchestrator" ,a brilliant, automated brain that manages a fleet of thousands of digital "containers," ensuring they are healthy, balanced, and always ready to serve millions of users, even if half your servers explode.
 
 **Kubernetes** (often called **K8s**) is the "Boss" of the container world. While **[[docker-overview|Docker]]** is the tool we use to build a single "box" (a container), Kubernetes is the system we use to manage a whole warehouse full of those boxes. It is the gold standard for companies like Netflix, Spotify, and Google to keep their apps online 24/7/365.
 
 Think of Kubernetes like an **Air Traffic Controller** at a massive airport:
-*   It doesn't build the airplanes or fly them—that's what Docker does.
+*   It doesn't build the airplanes or fly them ,that's what Docker does.
 *   But it decides which runway they use, redirects them if there is a storm, keeps them from crashing into each other, and magically materializes a new airplane if one breaks down mid-flight.
 
 ## The 4 Miracles of K8s
@@ -26,7 +26,7 @@ Think of Kubernetes like an **Air Traffic Controller** at a massive airport:
 It’s an old-school tech joke. There are **8 letters** between the **K** and the **s** in the word "Kubernetes." Programmers are lazy typists, so "K8s" stuck!
 
 *2. Is Kubernetes hard to learn?*
-Yes. It is famously complex because it has to handle "Everything, Everywhere, All at Once." However, once you understand the basic building blocks—like **[[kubernetes-node|Nodes]]** and **[[kubernetes-pod|Pods]]**—the big picture starts to make sense.
+Yes. It is famously complex because it has to handle "Everything, Everywhere, All at Once." However, once you understand the basic building blocks ,like **[[kubernetes-node|Nodes]]** and **[[kubernetes-pod|Pods]]** ,the big picture starts to make sense.
 
 ### Further Reading
 

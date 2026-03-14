@@ -5,7 +5,7 @@ tags: DevOps, Containerization, Comparison
 
 # Docker vs Kubernetes
 
-The "Oven vs. the Bakery"—one of the most common questions in tech, with a simple answer: they aren't enemies, they are partners. One builds the "Product," and the other manages the "Business."
+The "Oven vs. the Bakery" ,one of the most common questions in tech, with a simple answer: they aren't enemies, they are partners. One builds the "Product," and the other manages the "Business."
 
 Asking "Should I use Docker or Kubernetes?" is like asking "Should I use a hammer or a construction site?" You need both to build a house. 
 *   **[[docker-overview|Docker]]** is the tool we use to **Package** an application. It creates the "individual boxes" (containers).
@@ -22,7 +22,7 @@ Imagine you are running a **Pizza Delivery Empire**:
 
 ## When to Use Which?
 
-*   **Use JUST Docker (or Docker Compose):** If you are a single developer working on your laptop, or if you're running a simple website that only needs one server. Kubernetes would be "Overkill"—it’s too much work for a simple job.
+*   **Use JUST Docker (or Docker Compose):** If you are a single developer working on your laptop, or if you're running a simple website that only needs one server. Kubernetes would be "Overkill" ,it’s too much work for a simple job.
 *   **Use BOTH:** If you are part of a team building a massive application (like Spotify or Netflix) that needs to stay online 24/7/365, even if half your servers explode. Kubernetes is the "Brain" that keeps that massive complexity from turning into a nightmare.
 
 ## FAQs

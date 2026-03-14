@@ -9,7 +9,7 @@ When the global financial market completely loses its mind and triggers a massiv
 
 **AI Psychosis** is a very recent, very weird socio-economic phenomenon where the sheer anxiety surrounding the theoretical future of artificial intelligence triggers severe, disproportionate real-world consequences in the present out of pure speculative terror.
 
-Because we are currently living in a massive grey area—where a sci-fi future is clearly arriving but it's completely uneven and unpredictable—the global financial system is intensely, violently jittery. Even loosely substantiated thought experiments from tech bloggers or analysts are enough to trigger massive stock market crashes before the AI actually even exists.
+Because we are currently living in a massive grey area ,where a sci-fi future is clearly arriving but it's completely uneven and unpredictable ,the global financial system is intensely, violently jittery. Even loosely substantiated thought experiments from tech bloggers or analysts are enough to trigger massive stock market crashes before the AI actually even exists.
 
 ## The 2026 Alap Shah Incident
 

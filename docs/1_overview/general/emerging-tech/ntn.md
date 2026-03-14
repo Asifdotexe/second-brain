@@ -5,7 +5,7 @@ tags: Telecom, Space, 5G
 
 # Non-Terrestrial Networks (NTN)
 
-"Cell Towers in the Sky"—a massive upgrade to the world's communication network that uses satellites, drones, and balloons to ensure your phone has a signal even in the middle of a desert, the top of a mountain, or the center of the ocean.
+"Cell Towers in the Sky" ,a massive upgrade to the world's communication network that uses satellites, drones, and balloons to ensure your phone has a signal even in the middle of a desert, the top of a mountain, or the center of the ocean.
 
 **Non-Terrestrial Networks (NTN)** is the technical name for "Space-to-Mobile" connectivity. For decades, if you weren't near a cell tower on the ground, your phone was just an expensive brick. If you wanted a signal in the wild, you had to buy a $1,000 "Satellite Phone" that looked like a walkie-talkie from the 90s.
 

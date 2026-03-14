@@ -5,7 +5,7 @@ tags: Statistics, DataScience, Correlation
 
 # Point-Biserial Correlation
 
-"The Hybrid Measure"—a tool used when one variable is a continuous number (like Height) and the other is a strict "Yes or No" (like owning a car).
+"The Hybrid Measure" ,a tool used when one variable is a continuous number (like Height) and the other is a strict "Yes or No" (like owning a car).
 
 **Point-Biserial Correlation ($r_{pb}$)** is a specialized version of the [[pearson-correlation|Pearson Correlation]]. It's designed for the specific situation where you want to know if a "Category" predicts a "Score." For example: *"Does owning a dog (Yes/No) predict how many hours you spend outside (0 to 24)?"* 
 

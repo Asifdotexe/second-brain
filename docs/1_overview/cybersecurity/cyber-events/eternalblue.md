@@ -5,9 +5,9 @@ tags: CyberSecurity, Exploit, NSA
 
 # EternalBlue
 
-"The Stolen Master Key"—a terrifying software weapon created by the NSA that fell into the hands of criminals, leading to the most destructive cyberattacks in history.
+"The Stolen Master Key" ,a terrifying software weapon created by the NSA that fell into the hands of criminals, leading to the most destructive cyberattacks in history.
 
-**EternalBlue** is a sophisticated digital "exploit" created by the US National Security Agency for espionage. It was kept secret for years until a hacker group called "The Shadow Brokers" stole it and leaked it onto the internet in 2017. Suddenly, every criminal and hostile government had access to a military-grade weapon that could break into almost any Windows PC in the world—no password required.
+**EternalBlue** is a sophisticated digital "exploit" created by the US National Security Agency for espionage. It was kept secret for years until a hacker group called "The Shadow Brokers" stole it and leaked it onto the internet in 2017. Suddenly, every criminal and hostile government had access to a military-grade weapon that could break into almost any Windows PC in the world ,no password required.
 
 ## How the Breaching Works
 EternalBlue targets a flaw in how Windows computers "talk" to each other to share files (a system called **SMB**).

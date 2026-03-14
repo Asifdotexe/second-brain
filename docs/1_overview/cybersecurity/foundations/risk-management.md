@@ -5,7 +5,7 @@ tags: CyberSecurity, Strategy, Governance, Risk
 
 # Risk Management
 
-"The Business of Saying No"—the process of deciding which digital threats are worth fighting, which ones are worth insuring, and which ones you are willing to ignore.
+"The Business of Saying No" ,the process of deciding which digital threats are worth fighting, which ones are worth insuring, and which ones you are willing to ignore.
 
 While hackers are focused on cool tricks, **Risk Management** is the "Adult in the Room." They look at the company as a whole and ask: *"How much money will this hack cost us, and how much will it cost to prevent it?"* They use math to decide how to spend the security budget.
 
@@ -20,11 +20,11 @@ When a security pro finds a weakness, they must choose one of these four paths:
 1.  **Mitigation (The Shield):** You fix the problem. You buy a **[[firewalls|Firewall]]**, install a security patch, or train your staff. Most "Big" risks are handled this way.
 2.  **Transference (The Insurance):** You hire someone else to take the hit. You buy **Cyber Insurance** so if you get hacked, they pay the lawyers and the ransom.
 3.  **Acceptance (The Gamble):** You do nothing. If you have an old server with zero secret data, and it would cost $10,000 to "secure" it, you might just accept that if it gets hacked, it doesn't matter.
-4.  **Avoidance (The Delete Button):** You stop doing the thing that is dangerous. If a specific software tool keeps getting hacked, you don't "fix" it—you delete it from every computer and find a different way to work.
+4.  **Avoidance (The Delete Button):** You stop doing the thing that is dangerous. If a specific software tool keeps getting hacked, you don't "fix" it ,you delete it from every computer and find a different way to work.
 
 ## The Formula
 **Risk = Likelihood (What are the odds?) × Impact (How much will it hurt?)**
-If a hacker steals your lunch menu (**Low Impact**), the risk is zero even if it’s very likely to happen. If a hacker can steal your customer's bank accounts (**High Impact**), the risk is massive—even if it’s very unlikely to happen.
+If a hacker steals your lunch menu (**Low Impact**), the risk is zero even if it’s very likely to happen. If a hacker can steal your customer's bank accounts (**High Impact**), the risk is massive ,even if it’s very unlikely to happen.
 
 ## FAQs
 

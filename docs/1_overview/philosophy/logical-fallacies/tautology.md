@@ -5,7 +5,7 @@ tags: Logic, Rhetoric, Language
 
 # Tautology
 
-"The Useless Truth"—a statement that is true simply by its own definition. While it isn't "wrong," it is logically empty because it doesn't give you any new information about the world.
+"The Useless Truth" ,a statement that is true simply by its own definition. While it isn't "wrong," it is logically empty because it doesn't give you any new information about the world.
 
 **A Tautology** is the ultimate "duh" moment. It is a logic loop where the answer is already hidden in the beginning. In everyday talk, it often sounds like a profound piece of wisdom, but when you look closely, it says absolutely nothing.
 

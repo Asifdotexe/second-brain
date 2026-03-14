@@ -5,7 +5,7 @@ tags: Cybersecurity, SocialChange, Politics
 
 # Hacktivism
 
-"The Digital Protest"—using hacking skills as a tool for social change, political activism, and civil disobedience. It is "activism" without ever leaving your bedroom.
+"The Digital Protest" ,using hacking skills as a tool for social change, political activism, and civil disobedience. It is "activism" without ever leaving your bedroom.
 
 **Hacktivism** is a mix of "Hacking" and "Activism." While a typical hacker wants money, a Hacktivist wants to send a **Message**. They use the internet to hold the powerful accountable, expose corruption, or protest injustice.
 

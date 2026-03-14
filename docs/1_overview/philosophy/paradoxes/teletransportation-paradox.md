@@ -5,13 +5,13 @@ tags: PersonalIdentity, ThoughtExperiments, DerekParfit
 
 # Teletransportation Paradox
 
-"Copy-Paste Identity"—a thought experiment that asks: If a machine breaks you down into data and rebuilds a perfect copy of you on another planet, did you "Travel" or did you just "Die" and let a clone take your place?
+"Copy-Paste Identity" ,a thought experiment that asks: If a machine breaks you down into data and rebuilds a perfect copy of you on another planet, did you "Travel" or did you just "Die" and let a clone take your place?
 
 **The Teletransportation Paradox** (created by Derek Parfit) is the "Ship of Theseus" applied to a human being. It challenges the idea that "Data" and "Identity" are the same thing. It forces us to ask: Is there a "Soul" or a "Stream of Consciousness" that is lost when you are disassembled?
 
 Think of it like **A Digital Photo**:
 *   Imagine you have a unique, one-of-a-kind physical polaroid photo. 
-*   You scan the photo into a computer. The scan is **perfect**—every tiny scratch and color is captured in 8K resolution.
+*   You scan the photo into a computer. The scan is **perfect** ,every tiny scratch and color is captured in 8K resolution.
 *   The machine then **shreds** the original polaroid and prints a perfect copy on the other side of the room.
 *   **The Question:** Is the new photo the "Original"? Or is it just a high-quality ghost?
 

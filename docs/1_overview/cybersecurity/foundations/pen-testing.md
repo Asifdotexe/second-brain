@@ -5,7 +5,7 @@ tags: Security, Auditing, OffensiveSecurity
 
 # Penetration Testing
 
-"The Controlled Burn"—a professional, authorized attempt to break into a company's computer systems to prove where the holes are before a real criminal finds them.
+"The Controlled Burn" ,a professional, authorized attempt to break into a company's computer systems to prove where the holes are before a real criminal finds them.
 
 **Penetration Testing** (or "Pen Testing") is "Moral Hacking." It involves hiring an expert to use the exact same tricks as the "bad guys" to attack your network. It answers the one question every CEO is afraid of: *"If a hacker attacked us right now, would they get in?"*
 
@@ -15,7 +15,7 @@ Think of it like **A Security Audit for a Bank**:
 
 ## The 4 Phases of an "Attack"
 1.  **Reconnaissance (The Stakeout):** Gathering info via LinkedIn, the company website, or public records to find out who works there and what software they use.
-2.  **Scanning (The Door-Jiggle):** Using automated tools to find "unlocked windows"—like open ports or outdated software.
+2.  **Scanning (The Door-Jiggle):** Using automated tools to find "unlocked windows" ,like open ports or outdated software.
 3.  **Exploitation (The Break-In):** This is the actual "Hacking." The tester uses the weaknesses they found to enter the system and prove they have access to private data.
 4.  **Reporting (The Cure):** The most important part. The tester explains exactly how they got in and provides a step-by-step "Patch" to fix the hole.
 

@@ -5,7 +5,7 @@ tags: Philosophy, LogicalFallacies, Epistemology
 
 # Argument from Incredulity
 
-"I Can't Imagine It, So It's False"—a logical fallacy where someone decides a claim must be wrong simply because it sounds unbelievable, confusing, or too complex for them to understand.
+"I Can't Imagine It, So It's False" ,a logical fallacy where someone decides a claim must be wrong simply because it sounds unbelievable, confusing, or too complex for them to understand.
 
 The **Argument from Incredulity** is a failure of imagination. Our human brains are evolved to handle things on a human scale (like hunting deer or building huts). We are naturally terrible at understanding things that are too big (billions of years), too small (**[[quantum-computing|Quantum Physics]]**), or too complex (global economics). When we see something that "doesn't make sense" to our intuition, we often reject it as "impossible."
 

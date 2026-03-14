@@ -5,7 +5,7 @@ tags: CyberSecurity, Career, OffensiveSec, Crowdsourcing
 
 # Bug Bounty
 
-"The Digital Bounty Hunters"—a deal where companies like Google and Apple pay a reward to hackers who find holes in their security, turning potential enemies into a global army of volunteer defenders.
+"The Digital Bounty Hunters" ,a deal where companies like Google and Apple pay a reward to hackers who find holes in their security, turning potential enemies into a global army of volunteer defenders.
 
 A **Bug Bounty Program** is a crowdsourced security initiative. Instead of hiring just one team, a company says: *"If you can hack us and tell us how before the bad guys find out, we will pay you in cold, hard cash."* This gives "Ethical Hackers" a legal, high-paying career and ensures the world's most talented minds work for the good guys.
 

@@ -5,7 +5,7 @@ tags: Physics, Quantum, Emerging Tech, Communication
 
 # Quantum Superdense Coding
 
-"Hacking the Laws of Information"—a bizarre quantum trick that allows you to send two pieces of information by physically sending only one particle, effectively doubling the "Data Speed" of the universe.
+"Hacking the Laws of Information" ,a bizarre quantum trick that allows you to send two pieces of information by physically sending only one particle, effectively doubling the "Data Speed" of the universe.
 
 In the regular world, if you want to send two bits of data (like `0` and `1`), you have to send two electrical signals. There is no shortcut. **Quantum Superdense Coding** shatters this rule. It uses **Quantum Entanglement** to "pack" two classical bits into a single **[[qubits|Qubit]]**.
 

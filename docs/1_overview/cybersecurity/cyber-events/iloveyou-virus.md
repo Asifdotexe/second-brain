@@ -5,14 +5,14 @@ tags: Malware, Worm, SocialEngineering
 
 # ILOVEYOU Virus
 
-"The Love Letter from Hell"—the most successful social engineering attack in history. It used a simple emotional hook to trick millions into helping a digital plague destroy their own lives.
+"The Love Letter from Hell" ,the most successful social engineering attack in history. It used a simple emotional hook to trick millions into helping a digital plague destroy their own lives.
 
 The **ILOVEYOU Virus** (or "LoveBug") was a devastating **[[worms|Computer Worm]]** that exploded in 2000. Originating in the Philippines, it infected 50 million computers (10% of the internet) in just 10 days, causing $10 billion in damage. It wasn't a technical masterpiece; it was a psychological one. It preyed on our desire for affection.
 
 Think of it as **A Poisoned Letter from a Friend**:
 1.  **The Lure:** You get an email from someone you know. The subject is simply: *"ILOVEYOU."*
 2.  **The Attachment:** Inside is a file called `LOVE-LETTER-FOR-YOU.txt.vbs`. Windows hid extensions back then, so users only saw the `.txt` and thought it was a harmless note.
-3.  **The Payload:** Opening it released the bees. The virus immediately began deleting your most precious files—photos, music, work docs—and replaced them with copies of itself.
+3.  **The Payload:** Opening it released the bees. The virus immediately began deleting your most precious files ,photos, music, work docs ,and replaced them with copies of itself.
 4.  **The Spread:** The virus then hi-jacked your email and sent a "Love Letter" to everyone in your address book. Because it came from *you*, they clicked too.
 
 ## Why it mattered
@@ -23,7 +23,7 @@ Think of it as **A Poisoned Letter from a Friend**:
 ## FAQs
 
 *1. Is it still a threat?*
-**No.** This specific bug relied on old security holes patched 20 years ago. However, the *strategy*—tricking you into clicking curiosity-inducing links—is still the #1 way **[[ransomware|Ransomware]]** starts today.
+**No.** This specific bug relied on old security holes patched 20 years ago. However, the *strategy* ,tricking you into clicking curiosity-inducing links ,is still the #1 way **[[ransomware|Ransomware]]** starts today.
 
 *2. Why delete my photos?*
 **To show off.** Unlike modern hackers who stay quiet to steal data, the creators of the LoveBug were "vandal-hackers." They wanted the world to see the scale of the chaos they had built.

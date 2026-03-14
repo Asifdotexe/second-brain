@@ -5,7 +5,7 @@ tags: CognitiveBias, NeedToImpact, SocialPsychology
 
 # Fundamental Attribution Error
 
-"Judging Others vs. Excusing Ourselves"—the psychological tendency to assume that when *other* people mess up, it's because they are bad people, but when *we* mess up, it's because of the situation. 
+"Judging Others vs. Excusing Ourselves" ,the psychological tendency to assume that when *other* people mess up, it's because they are bad people, but when *we* mess up, it's because of the situation. 
 
 **The Fundamental Attribution Error** is the reason we are so quick to judge strangers. When we look at someone else, we only see their **Face and Actions**. We don't see their bad day, their hungry stomach, or their family stress. So, we blame their "Character." But when we look at ourselves, we can feel our own stress, so we blame the **Environment**.
 
@@ -23,7 +23,7 @@ It is mentally "Cheap." It’s much faster to write someone off as a "Bad Person
 **Massively.** If a coworker misses a deadline, a manager often thinks, *"They are lazy and unmotivated."* But if the manager misses a deadline, they think, *"The software was slow and the vendor was late."* This causes deep resentment and unfair performance reviews.
 
 *2. How can I stop?*
-Practice **"Active Empathy."** The next time someone is rude to you, force yourself to invent a story: *"Maybe they just lost their job,"* or *"Maybe they have a toothache."* You don't have to be "right"—the goal is just to remind your brain that **Situations matter more than Character.**
+Practice **"Active Empathy."** The next time someone is rude to you, force yourself to invent a story: *"Maybe they just lost their job,"* or *"Maybe they have a toothache."* You don't have to be "right" ,the goal is just to remind your brain that **Situations matter more than Character.**
 
 ### Further Reading
 

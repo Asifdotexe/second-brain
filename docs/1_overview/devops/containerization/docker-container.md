@@ -5,7 +5,7 @@ tags: DevOps, Containerization, Docker
 
 # Docker Container
 
-The "Digital Laboratory"—a lightweight, standalone "bubble" where your application lives in total isolation, perfectly protected from the quirks and mess of the computer it’s currently sitting on.
+The "Digital Laboratory" ,a lightweight, standalone "bubble" where your application lives in total isolation, perfectly protected from the quirks and mess of the computer it’s currently sitting on.
 
 A **Docker Container** is the "Running" version of a **[[docker-image|Docker Image]]**. While the image is the recipe, the container is the physical cake. It is the core "Unit of Work" in modern DevOps. When we say an app is "running in the cloud," what we usually mean is that a thousand Docker Containers are working together across a fleet of servers.
 
@@ -17,7 +17,7 @@ Think of it like a **Soundproof Glass Office** in the middle of a noisy factory:
 ## The 3 Rules of the Container
 
 1.  **Isolation is Absolute:** A container has its own private "World." It has its own network, its own files, and its own process list. It doesn't even know that other containers exist on the same machine unless you specifically introduce them.
-2.  **They are Ephemeral (Disposable):** In the world of containers, we don't "fix" a broken app. If a container starts acting weird, we don't log in and try to debug it—we simply **Kill it** and spin up a perfect, brand-new copy from the original **[[docker-image|Image]]** in less than a second. 
+2.  **They are Ephemeral (Disposable):** In the world of containers, we don't "fix" a broken app. If a container starts acting weird, we don't log in and try to debug it ,we simply **Kill it** and spin up a perfect, brand-new copy from the original **[[docker-image|Image]]** in less than a second. 
 3.  **Lightweight & Fast:** Unlike a "Virtual Machine" (which is a massive, heavy beast that takes minutes to start), a container is tiny. You can run 100 containers on a single laptop and they will all start up instantly because they share the same "Brain" (the kernel) of the host computer.
 
 ## FAQs

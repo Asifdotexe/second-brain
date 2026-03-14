@@ -5,19 +5,19 @@ tags: CyberSecurity, Malware, PhysicalSecurity, Finance
 
 # ATM Jackpotting
 
-"The Digital Bank Robbery"—the violent collision of hacking and crime, where a criminal tricks an ATM into literally "vomiting" its entire cash reserve onto the floor in seconds.
+"The Digital Bank Robbery" ,the violent collision of hacking and crime, where a criminal tricks an ATM into literally "vomiting" its entire cash reserve onto the floor in seconds.
 
 **ATM Jackpotting** is a "cyber-physical" attack. Instead of trying to hack the bank’s secure network from across the world, the attacker walks right up to the machine in person. They use a drill or a crowbar to reach the machine's hidden USB ports, plug in a rogue laptop, and inject malicious code directly into the ATM's brain.
 
 Think of it like **A "Bypassed" Cashier**:
 *   The hacker doesn't use a stolen card or a PIN.
 *   They talk directly to the hardware that moves the gears.
-*   The code sends a "Manual Override" command, causing the machine to enter "Jackpot Mode"—spitting out every $20 bill it has until it's empty.
+*   The code sends a "Manual Override" command, causing the machine to enter "Jackpot Mode" ,spitting out every $20 bill it has until it's empty.
 
 ## Key Characteristics
 *   **Physical Compromise:** Usually involves drilling into the machine or picking the lock on the top "service" panel to reach the internal cables.
 *   **Network Bypass:** The attack doesn't care about your bank balance because it isn't talking to the bank; it’s talking directly to the gears that move the money.
-*   **Speed:** A coordinated crew can empty a fully loaded ATM—potentially $100,000—in less than five minutes.
+*   **Speed:** A coordinated crew can empty a fully loaded ATM ,potentially $100,000 ,in less than five minutes.
 
 ## FAQs
 

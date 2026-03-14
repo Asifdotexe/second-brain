@@ -5,7 +5,7 @@ tags: CognitiveBias, NeedToActFast, Empathy
 
 # Identifiable Victim Effect
 
-"The Power of One"—the psychological phenomenon where we feel intense empathy for a single person with a name and a story, but feel almost nothing for a massive group of thousands of people facing the same problem.
+"The Power of One" ,the psychological phenomenon where we feel intense empathy for a single person with a name and a story, but feel almost nothing for a massive group of thousands of people facing the same problem.
 
 **The Identifiable Victim Effect** is a strange glitch in human empathy. Our brains evolved in small tribes of 150 people. We are wired to care about faces, names, and personal stories. We are **not** wired to understand "Statistics." When suffering becomes a number, our empathy "fades" and we stop feeling the urge to help.
 

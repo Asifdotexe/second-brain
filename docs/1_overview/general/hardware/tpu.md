@@ -5,7 +5,7 @@ tags: AI, Hardware, Google
 
 # TPU (Tensor Processing Unit)
 
-The "Formula 1 Car" of AI—a custom-built microchip designed to do one thing and one thing only: crunch the specific math of Neural Networks at speeds that make regular computers look like they are standing still.
+The "Formula 1 Car" of AI ,a custom-built microchip designed to do one thing and one thing only: crunch the specific math of Neural Networks at speeds that make regular computers look like they are standing still.
 
 A **TPU** is an **Application-Specific Integrated Circuit (ASIC)** created by Google. While a **[[cpu|CPU]]** is a jack-of-all-trades and a **[[gpu|GPU]]** is a parallel-processing factory, the TPU is a pure-bred specialist. It has been stripped of everything a regular computer needs (it doesn't have a video port, it doesn't have a mouse driver) to make room for billions of tiny calculators that only do **Matrix Multiplication** (the math that makes AI think).
 

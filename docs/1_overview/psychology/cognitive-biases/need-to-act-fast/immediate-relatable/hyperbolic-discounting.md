@@ -5,7 +5,7 @@ tags: CognitiveBias, NeedToActFast, DecisionMaking
 
 # Hyperbolic Discounting
 
-"The Instant Gratification Bug"—the psychological glitch that makes us choose a small reward **Right Now** over a much bigger, better reward in the future.
+"The Instant Gratification Bug" ,the psychological glitch that makes us choose a small reward **Right Now** over a much bigger, better reward in the future.
 
 **Hyperbolic Discounting** is the reason you ate a whole pizza today even though you planned to diet. It’s why you bought a $5 Starbucks instead of putting it in your 401k. Our brains devalue ("Discount") the future so heavily that we treat our "Future Self" like a total stranger. To your brain, a cookie in your hand right now is worth more than a six-pack of abs next month.
 

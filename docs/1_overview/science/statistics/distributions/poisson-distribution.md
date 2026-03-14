@@ -5,7 +5,7 @@ tags: Statistics, Math, Time
 
 # Poisson Distribution
 
-"The Waiting Game"—the math of "Rare Events." It calculates the probability of how many things will happen in a specific window of time or space.
+"The Waiting Game" ,the math of "Rare Events." It calculates the probability of how many things will happen in a specific window of time or space.
 
 While the **[[binomial-distribution|Binomial Distribution]]** counts "Successes in X tries," the **Poisson Distribution** just counts "Events in an Hour." It doesn't care how many times you "Try." It only cares about the average flow. For example: *"If an ambulance station averages 3 calls an hour, what are the odds they get 10 in the next hour?"*
 

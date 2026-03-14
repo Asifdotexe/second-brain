@@ -5,7 +5,7 @@ tags: Statistics, Math, Pareto
 
 # Power Law
 
-"The Winner-Takes-All Shape"—a pattern where a tiny number of people or events account for almost **all** of the results. In this world, the "Average" is a lie.
+"The Winner-Takes-All Shape" ,a pattern where a tiny number of people or events account for almost **all** of the results. In this world, the "Average" is a lie.
 
 A **Power Law** is the opposite of a **[[normal-distribution|Normal Distribution]]**. In a "Normal" world (like height), the tallest person is only a little bit taller than the average. In a "Power Law" world (like wealth or internet fame), the "Tallest" person is **one million times** bigger than the average. If you average J.K. Rowling’s net worth with 10,000 starving artists, the "Average" says everyone is a multi-millionaire. But that average is useless.
 

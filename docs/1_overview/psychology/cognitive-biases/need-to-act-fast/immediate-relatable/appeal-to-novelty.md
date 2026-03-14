@@ -5,7 +5,7 @@ tags: CognitiveBias, NeedToActFast, Fallacy
 
 # Appeal to Novelty
 
-"The Shiny Object Trap"—a cognitive bias where we assume that something is better simply because it is new, modern, or "next-gen," regardless of its actual quality.
+"The Shiny Object Trap" ,a cognitive bias where we assume that something is better simply because it is new, modern, or "next-gen," regardless of its actual quality.
 
 **The Appeal to Novelty** is why we line up for the latest smartphone even when our current one works perfectly. Our brains are hardwired to love "Newness." Historically, new information or a new food source often meant a survival advantage. Today, marketers exploit this biological "Dopamine Hit" to make us believe that "Newer" always equals "Better."
 

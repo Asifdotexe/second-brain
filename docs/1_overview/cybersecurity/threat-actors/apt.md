@@ -5,18 +5,18 @@ tags: CyberSecurity, ThreatActors, Espionage, StateSponsors
 
 # Advanced Persistent Threats (APTs)
 
-"The Ghosts in the Machine"—patient, well-funded, and elite groups of hackers (usually backed by a government). They borrow into a network and stay there for months or years, slowly leaking secrets without ever making a sound.
+"The Ghosts in the Machine" ,patient, well-funded, and elite groups of hackers (usually backed by a government). They borrow into a network and stay there for months or years, slowly leaking secrets without ever making a sound.
 
 An **APT** is the "Special Forces" of the hacking world. While a regular hacker might break in to steal your credit card and leave, an APT doesn't want your money. They want your **Secrets**. They want military blueprints, secret product formulas, or the power to turn off a city's electricity.
 
 Think of an APT like **A Master Spy hired as a Janitor**:
 *   They don't steal the computers; they just listen to every conversation.
 *   They copy every key and watch every meeting for a decade.
-*   They are "Ghosts"—if they are doing their job well, you never know they are there.
+*   They are "Ghosts" ,if they are doing their job well, you never know they are there.
 
 ## The 3 Pillars of an APT
 1.  **Advanced:** They have unlimited money and the world’s best talent. They write their own custom **[[malware|malware]]** and use **[[zero-day|Zero-Day]]** holes that no one else in the world knows about.
-2.  **Persistent:** They are patient. If they find a locked door, they don't break it down—they wait weeks until someone leaves it open. If they get caught, they have five "backdoors" already hidden elsewhere to climb back in the next day.
+2.  **Persistent:** They are patient. If they find a locked door, they don't break it down ,they wait weeks until someone leaves it open. If they get caught, they have five "backdoors" already hidden elsewhere to climb back in the next day.
 3.  **Threat:** They are targeted. They don't attack random people. They pick one specific target (like a government agency) and study every employee until they find a way in.
 
 ## Why do they do it?

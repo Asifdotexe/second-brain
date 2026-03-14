@@ -5,9 +5,9 @@ tags: Cybersecurity, Networking, Attacks
 
 # DDoS
 
-"The Digital Crowd"—the act of hiring a thousand people to stand in the doorway of a coffee shop—not to buy anything, but simply to block real customers from getting inside.
+"The Digital Crowd" ,the act of hiring a thousand people to stand in the doorway of a coffee shop ,not to buy anything, but simply to block real customers from getting inside.
 
-A **DDoS Attack** is purely about **Obstruction**. Unlike a "hack" where someone steals your data, the goal of a DDoS is to crash a website by overwhelming it with a massive flood of fake traffic. It’s the "Distributed" part that makes it lethal—the attack isn't coming from one place; it’s coming from millions of compromised devices (a **[[botnets|Botnet]]**) spread across the entire globe.
+A **DDoS Attack** is purely about **Obstruction**. Unlike a "hack" where someone steals your data, the goal of a DDoS is to crash a website by overwhelming it with a massive flood of fake traffic. It’s the "Distributed" part that makes it lethal ,the attack isn't coming from one place; it’s coming from millions of compromised devices (a **[[botnets|Botnet]]**) spread across the entire globe.
 
 Think of it like **A Traffic Jam on Purpose**:
 *   **Normal Traffic:** You and other customers driving to a store.

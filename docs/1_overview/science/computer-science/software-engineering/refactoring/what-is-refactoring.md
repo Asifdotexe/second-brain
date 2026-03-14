@@ -5,13 +5,13 @@ tags: Refactoring, CleanCode, SoftwareDesign
 
 # What is Refactoring?
 
-"The Workshop Clean-Up"—the systematic process of improving your code’s internal structure without changing what it actually does. 
+"The Workshop Clean-Up" ,the systematic process of improving your code’s internal structure without changing what it actually does. 
 
 **Refactoring** is like tidying up a messy workbench. You aren't building a new car, and you aren't fixing a broken engine; you are simply sweeping the floor and putting the tools back on the pegboard. You do this so that when you *do* decide to build your next feature, you won't trip over a stray hammer and break your ankle (introduce a bug).
 
 Think of it like **Editing a Book**:
 *   **The First Draft:** You write a story. It has the plot, but the sentences are long, there are typos, and some characters are confusing.
-*   **Refactoring:** You sit down and rewrite the sentences to be shorter and clearer. You fix the typos. You don't change the "Ending"—the story is still exactly the same—but it is now 10x easier for someone else to read and understand.
+*   **Refactoring:** You sit down and rewrite the sentences to be shorter and clearer. You fix the typos. You don't change the "Ending" ,the story is still exactly the same ,but it is now 10x easier for someone else to read and understand.
 *   **The Result:** The "Internal Quality" is higher, even though the "External Result" (the story) hasn't changed.
 
 ## What is "Clean Code"?

@@ -5,7 +5,7 @@ tags: DevOps, CICD, Automation, Kubernetes
 
 # Production CI/CD Pipeline
 
-"The Automated Assembly Line"—an invisible, high-speed conveyor belt that takes a developer’s raw code, scans it for bugs, tests it for safety, packages it perfectly, and delivers it to millions of users without a single human ever having to click "Upload."
+"The Automated Assembly Line" ,an invisible, high-speed conveyor belt that takes a developer’s raw code, scans it for bugs, tests it for safety, packages it perfectly, and delivers it to millions of users without a single human ever having to click "Upload."
 
 A **CI/CD Pipeline** is the heart of modern DevOps. In the old days, a developer would finish their code and "toss it over a wall" to a different team who had to manually install it. This was slow, expensive, and prone to catastrophic mistakes. 
 

@@ -5,7 +5,7 @@ tags: Philosophy, Ethics, Kant
 
 # Deontology
 
-"The Rule is the Rule"—an ethical framework that says an action is right or wrong based on a set of rules, regardless of what the final outcome is.
+"The Rule is the Rule" ,an ethical framework that says an action is right or wrong based on a set of rules, regardless of what the final outcome is.
 
 **Deontology** (from the Greek word *deon*, meaning "duty") is the philosophy of moral rules. It says that you have a duty to do certain things (like being honest) and a duty *not* to do others (like stealing). Even if breaking a rule would make everyone happier, a Deontologist says you still shouldn't do it because the **Action** itself is what matters, not the **Result**.
 

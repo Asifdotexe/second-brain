@@ -5,7 +5,7 @@ tags: Psychology, CognitiveBiases, Memory, Analysis
 
 # Hindsight Bias
 
-"I Knew It All Along"—the psychological glitch where we convince ourselves that we accurately predicted an event, but only **after** the event has already happened.
+"I Knew It All Along" ,the psychological glitch where we convince ourselves that we accurately predicted an event, but only **after** the event has already happened.
 
 **Hindsight Bias** is our brain’s way of rewriting history to make us feel smarter. When something surprising happens, our brain immediately scrambles to find an explanation. Once it finds one, it "Sews" that explanation into our past memories. We genuinely forget that 5 minutes ago we were confused, and we start believing: *"I always knew that would happen."*
 

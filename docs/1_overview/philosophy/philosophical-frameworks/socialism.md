@@ -5,7 +5,7 @@ tags: Philosophy, Politics, Economics
 
 # Socialism
 
-"The Shared Factory"—a political and economic idea where the things that create wealth (like factories, farms, and hospitals) are owned by the entire community, rather than by a few rich individuals.
+"The Shared Factory" ,a political and economic idea where the things that create wealth (like factories, farms, and hospitals) are owned by the entire community, rather than by a few rich individuals.
 
 **Socialism** is based on the idea of **Cooperation**. In a purely capitalist world, a business owner takes all the risks and keeps all the profits. In a socialist world, the people who actually do the work are the ones who own the business and decide together how to spend the money.
 

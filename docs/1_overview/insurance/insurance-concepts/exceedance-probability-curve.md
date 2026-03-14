@@ -5,7 +5,7 @@ tags: [RiskModeling, ProbabilityAnalysis, Data]
 
 # Exceedance Probability (EP) Curve
 
-The "Disaster Odds Map"—a simple graph that shows the probability of having a loss that exceeds a specific dollar amount. It answers the ultimate question: *"What are the odds of losing more than $1 Million this year?"*
+The "Disaster Odds Map" ,a simple graph that shows the probability of having a loss that exceeds a specific dollar amount. It answers the ultimate question: *"What are the odds of losing more than $1 Million this year?"*
 
 The **EP Curve** is the most important tool for any risk manager. It allows them to visualize everything from the "Common but Small" losses to the "Rare but Catastrophic" ones. It turns the fuzzy idea of "Risk" into a clear mathematical line.
 
@@ -23,7 +23,7 @@ The EP Curve is just a graph that plots all these points. It shows that as the d
 ## FAQs
 
 *1. Does a "1-in-100 Year" event really only happen once a century?*
-**No.** That is a common misunderstanding. It means there is a **1% chance** of it happening *this year*. You could theoretically have two "100-year events" back-to-back. It’s just very unlikely—like hitting the jackpot twice in a row.
+**No.** That is a common misunderstanding. It means there is a **1% chance** of it happening *this year*. You could theoretically have two "100-year events" back-to-back. It’s just very unlikely ,like hitting the jackpot twice in a row.
 
 *2. How do companies use this curve?*
 They use it to decide how much "Risk" they can stomach. They look at the 1% mark (the "Worst 1%") and see how much money that represents. If that number is $50 Million and they only have $10 Million in the bank, they realize they **must** buy insurance to bridge the gap.
