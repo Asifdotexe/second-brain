@@ -3,9 +3,7 @@
 // Note: 'wikiData' is already loaded from data.js
 // ==========================================
 
-const navTree = document.getElementById("navTree");
 const contentDisplay = document.getElementById("contentDisplay");
-const sidebar = document.getElementById("sidebar");
 const themeToggle = document.getElementById("themeToggle");
 let currentDocId = null;
 let logsViewMode = localStorage.getItem('logsViewMode') || 'calendar';
@@ -68,25 +66,7 @@ function init() {
     return;
   }
 
-  // --- EVENT DELEGATION: SIDEBAR ---
-  // Handle clicks for all .nav-item elements (Sidebar & Search Results)
-  navTree.addEventListener("click", (e) => {
-    const navItem = e.target.closest(".nav-item");
-    if (navItem && navItem.dataset.id) {
-      e.preventDefault();
-      if (stackedMode) {
-        // In stacked mode, clicking sidebar: clear stack and start fresh
-        exitStackedMode();
-        setTimeout(() => {
-          currentDocId = navItem.dataset.id;
-          loadContent(navItem.dataset.id);
-        }, 50);
-      } else {
-        loadContent(navItem.dataset.id);
-      }
-    }
-  });
-
+  // Sidebar is removed, navigation is mostly through homepage and search.
   // --- EVENT DELEGATION: MAIN CONTENT ---
   // Handle clicks for Back Buttons, Shelf Cards, and Internal Links
   contentDisplay.addEventListener("click", (e) => {
@@ -163,7 +143,6 @@ function init() {
     });
   }
 
-  renderSidebar();
   initStackedNotes();
 
   // Only render landing page if NOT loading from a stacked URL
@@ -181,21 +160,15 @@ function init() {
         return;
       }
       renderLandingPage();
-      closeSidebar();
     });
   });
 
   // --- KEYBOARD SHORTCUTS ---
   document.addEventListener('keydown', (e) => {
     // Check for Ctrl+K (Windows/Linux) or Cmd+K (Mac) or '/'
-    if ((e.ctrlKey || e.metaKey) && e.key === 'k' || (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA')) {
-      e.preventDefault(); // Prevent default browser search or typing '/'
-      if (window.innerWidth <= 768) {
-        toggleMobileSearch();
-      } else {
-        const searchInput = document.getElementById('desktopSearchInput');
-        if (searchInput) searchInput.focus();
-      }
+    if (((e.ctrlKey || e.metaKey) && e.key === 'k') || (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA')) {
+      e.preventDefault();
+      toggleSearch();
     }
 
     // Escape: close top note in stacked mode
@@ -740,46 +713,6 @@ window.openSection = function (key) {
     loadContent(section.items[0].id);
   }
 };
-
-// ==========================================
-// 🌲 SIDEBAR NAVIGATION
-// ==========================================
-
-function renderSidebar() {
-  navTree.innerHTML = "";
-
-  Object.keys(wikiData).forEach((sectionKey) => {
-    const section = wikiData[sectionKey];
-
-    // Section Header (e.g., OVERVIEW, LOGS)
-    const sectionTitle = document.createElement("div");
-    sectionTitle.className = "nav-section-title";
-    sectionTitle.innerText = section.title || sectionKey.toUpperCase();
-    navTree.appendChild(sectionTitle);
-
-    // Render Top-Level Items (Topics/Years)
-    if (section.items) {
-      section.items.forEach((item) => {
-        const navItem = document.createElement("div");
-        navItem.className = "nav-item";
-        // Security: Use data attribute instead of onclick
-        navItem.dataset.id = item.id;
-
-        navItem.innerHTML = `
-                    <i class="${item.icon || "fas fa-folder"}"></i>
-                    <span>${item.title}</span>
-                `;
-
-        navTree.appendChild(navItem);
-      });
-    }
-
-    // Spacer between sections
-    const spacer = document.createElement("div");
-    spacer.style.height = "24px";
-    navTree.appendChild(spacer);
-  });
-}
 
 // ==========================================
 // 📖 CONTENT LOADING (The "Router")
@@ -1461,70 +1394,20 @@ function initFuse() {
   fuse = new Fuse(flatData, options);
 }
 
-function filterDocs(query) {
-  const term = query.toLowerCase().trim();
-
-  // 1. Reset if query is empty
-  if (term.length < 2) {
-    renderSidebar(); // Restore original hierarchy
-    return;
-  }
-
-  // 2. Clear Sidebar
-  navTree.innerHTML = "";
-
-  // 3. Execute Fuse Search
-  const fuseResults = fuse.search(term);
-
-  // 4. Render Results Header
-  const header = document.createElement("div");
-  header.className = "nav-section-title";
-  header.innerText = `Search Results (${fuseResults.length})`;
-  navTree.appendChild(header);
-
-  if (fuseResults.length === 0) {
-    navTree.innerHTML = `
-        <div class="empty-state" style="padding: 40px 20px;">
-            <i class="fas fa-ghost empty-state-icon" style="font-size: 2rem;"></i>
-            <div class="empty-state-title" style="font-size: 1rem;">No results found</div>
-            <div class="empty-state-desc" style="font-size: 0.8rem;">Try searching for a different keyword.</div>
-        </div>`;
-    return;
-  }
-
-  // 5. Render Results (Flat List)
-  fuseResults.forEach((result) => {
-    const item = result.item; // Fuse returns { item: {...}, score: ... }
-    const navItem = document.createElement("div");
-    navItem.className = "nav-item";
-    navItem.dataset.id = item.id;
-
-    // Add score for debugging (optional, useful to see how "fuzzy" it is)
-    // const score = Math.round((1 - result.score) * 100); 
-
-    navItem.innerHTML = `
-            <i class="${item.icon || "far fa-file"}"></i>
-            <span>${item.title}</span>
-        `;
-
-    navTree.appendChild(navItem);
-  });
-}
-
-function toggleMobileSearch() {
-  const overlay = document.getElementById("mobileSearchOverlay");
-  overlay.classList.toggle("open");
+function toggleSearch() {
+  const overlay = document.getElementById("searchOverlay");
+  overlay.classList.toggle("active");
   const input = document.getElementById("mobileSearchInput");
   const resultsContainer = document.getElementById("mobileSearchResults");
 
-  if (overlay.classList.contains("open")) {
+  if (overlay.classList.contains("active")) {
     input.focus();
     if (!input.value.trim()) {
       resultsContainer.innerHTML = `
             <div class="empty-state">
                 <i class="fas fa-search empty-state-icon"></i>
                 <div class="empty-state-title">Search Second Brain</div>
-                <div class="empty-state-desc">Find notes, definitions, and concepts instantly. Press '/' anywhere to focus.</div>
+                <div class="empty-state-desc">Find notes, definitions, and concepts instantly. Press 'Ctrl+K' anywhere to focus.</div>
             </div>`;
     }
   } else {
@@ -1574,24 +1457,10 @@ function handleMobileSearch(query) {
         `;
     resultItem.addEventListener("click", () => {
       loadContent(item.id);
-      toggleMobileSearch(); // Close overlay on selection
+      toggleSearch(); // Close overlay on selection
     });
     resultsContainer.appendChild(resultItem);
   });
-}
-
-function toggleSidebar() {
-  const sidebar = document.getElementById("sidebar");
-  const backdrop = document.getElementById("sidebarBackdrop");
-  sidebar.classList.toggle("open");
-  backdrop.classList.toggle("visible");
-}
-
-function closeSidebar() {
-  const sidebar = document.getElementById("sidebar");
-  const backdrop = document.getElementById("sidebarBackdrop");
-  if (sidebar) sidebar.classList.remove("open");
-  if (backdrop) backdrop.classList.remove("visible");
 }
 
 // Start the Engine
