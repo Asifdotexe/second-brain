@@ -119,8 +119,13 @@
         </div>
     </nav>
 
+    <!-- Stack Navigation Bar -->
+    <div class="stack-nav-bar" id="stackNavBar">
+        <!-- Stack items rendered here by JS -->
+    </div>
+
     <!-- Main Content Area -->
-    <main class="main-content">
+    <main class="main-content" id="mainContentArea">
         <div id="breadcrumbs" class="breadcrumbs"></div>
         <div id="graphContainer">
             <button class="graph-close-overlay" onclick="toggleGraphView()">
@@ -128,6 +133,15 @@
             </button>
             <div id="graphLegend" class="graph-legend"></div>
         </div>
+
+        <!-- Stacked Notes Scrolling Container -->
+        <div id="noteColumnsScrolling" class="note-columns-scrolling">
+            <div id="noteColumnsContainer" class="note-columns-container">
+                <!-- Stacked note columns rendered here by JS -->
+            </div>
+        </div>
+
+        <!-- Default content display (shown when not in stacked mode) -->
         <div id="contentDisplay" class="markdown-body">
             <!-- Content rendered here -->
         </div>

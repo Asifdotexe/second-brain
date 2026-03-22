@@ -11,6 +11,17 @@ let currentDocId = null;
 let logsViewMode = localStorage.getItem('logsViewMode') || 'calendar';
 
 // ==========================================
+// 📚 STACKED NOTES (Andy Matuschak Style)
+// ==========================================
+
+const NOTE_WIDTH = 625;
+const NOTE_OFFSET = 40;
+
+let stackedIds = [];
+let stackedMode = false;
+let isRendering = false;
+
+// ==========================================
 // 🚀 INITIALIZATION
 // ==========================================
 
@@ -63,7 +74,16 @@ function init() {
     const navItem = e.target.closest(".nav-item");
     if (navItem && navItem.dataset.id) {
       e.preventDefault();
-      loadContent(navItem.dataset.id);
+      if (stackedMode) {
+        // In stacked mode, clicking sidebar: clear stack and start fresh
+        exitStackedMode();
+        setTimeout(() => {
+          currentDocId = navItem.dataset.id;
+          loadContent(navItem.dataset.id);
+        }, 50);
+      } else {
+        loadContent(navItem.dataset.id);
+      }
     }
   });
 
@@ -112,7 +132,11 @@ function init() {
 
       if (lookup(targetId)) {
         e.preventDefault();
-        loadContent(targetId);
+        if (stackedMode) {
+          addToStack(targetId);
+        } else {
+          loadContent(targetId);
+        }
       }
     }
   });
@@ -144,12 +168,21 @@ function init() {
   }
 
   renderSidebar();
+  initStackedNotes();
+
+  // Only render landing page if NOT loading from a stacked URL
+  if (getStackedIdsFromUrl().length === 0) {
+    renderLandingPage();
+  }
 
   // Handle Brand Clicks (Home)
-  const brands = document.querySelectorAll(".brand, .mobile-brand");
   brands.forEach((el) => {
     el.style.cursor = "pointer";
     el.addEventListener("click", () => {
+      if (stackedMode) {
+        exitStackedMode();
+        return;
+      }
       renderLandingPage();
       if (window.innerWidth <= 768) {
         // specific for mobile brand click if we want to ensure sidebar state?
@@ -165,8 +198,6 @@ function init() {
     });
   });
 
-  renderSidebar();
-
   // --- KEYBOARD SHORTCUTS ---
   document.addEventListener('keydown', (e) => {
     // Check for Ctrl+K (Windows/Linux) or Cmd+K (Mac) or '/'
@@ -179,9 +210,368 @@ function init() {
         if (searchInput) searchInput.focus();
       }
     }
+
+    // Escape: close top note in stacked mode
+    if (e.key === 'Escape' && stackedMode) {
+      e.preventDefault();
+      removeFromStack(stackedIds.length - 1);
+    }
   });
 
   renderLandingPage();
+}
+
+// ==========================================
+// 📚 STACKED NOTES — URL PARAMS
+// ==========================================
+
+function getStackedIdsFromUrl() {
+  const params = new URLSearchParams(window.location.search);
+  return params.getAll('stackedNotes').map(id => decodeURIComponent(id).toLowerCase());
+}
+
+function updateStackedUrl(ids) {
+  const params = new URLSearchParams(window.location.search);
+  params.delete('stackedNotes');
+  ids.forEach(id => params.append('stackedNotes', id));
+  const newUrl = `${window.location.pathname}?${params.toString()}`;
+  window.history.replaceState({}, '', newUrl);
+}
+
+// ==========================================
+// 📚 STACKED NOTES — RENDERING
+// ==========================================
+
+function isSmallScreen() {
+  return window.innerWidth <= 800;
+}
+
+function renderStackedColumns(ids) {
+  if (isRendering) return;
+  isRendering = true;
+
+  const container = document.getElementById('noteColumnsContainer');
+  const scrollContainer = document.getElementById('noteColumnsScrolling');
+
+  if (!container || !scrollContainer) {
+    isRendering = false;
+    return;
+  }
+
+  container.innerHTML = '';
+
+  ids.forEach((id, index) => {
+    const result = lookup(id);
+    if (!result) return;
+
+    const { item, parent, rootKey } = result;
+
+    const col = document.createElement('div');
+    col.className = 'note-column';
+    col.dataset.id = id;
+    col.dataset.index = index;
+    col.style.left = `${index * NOTE_OFFSET}px`;
+
+    const closeBtn = document.createElement('button');
+    closeBtn.className = 'note-column-close';
+    closeBtn.setAttribute('aria-label', `Close ${item.title}`);
+    closeBtn.innerHTML = '<i class="fas fa-times"></i>';
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      removeFromStack(index);
+    });
+
+    const contentDiv = document.createElement('div');
+    contentDiv.className = 'note-column-content';
+
+    const labelDiv = document.createElement('div');
+    labelDiv.className = 'note-obscured-label';
+    labelDiv.textContent = item.title;
+    labelDiv.addEventListener('click', () => {
+      scrollToStackIndex(index);
+    });
+    labelDiv.addEventListener('mouseenter', () => labelDiv.classList.add('hovered'));
+    labelDiv.addEventListener('mouseleave', () => labelDiv.classList.remove('hovered'));
+
+    const inner = document.createElement('div');
+    inner.className = 'markdown-body';
+
+    if (parent) {
+      const backDiv = document.createElement('div');
+      backDiv.className = 'back-link';
+      backDiv.dataset.id = parent.id;
+      backDiv.innerHTML = `<i class="fas fa-arrow-left"></i> Back to ${parent.title}`;
+      inner.appendChild(backDiv);
+    }
+
+    if (item.content) {
+      const wikiLinkRegex = /\[\[([^|\]\n]+)(\|([^\]\n]+))?\]\]/g;
+      const processedContent = item.content.replace(
+        wikiLinkRegex,
+        (match, wid, _, label) => {
+          const linkText = label || wid;
+          return `[${linkText}](${wid.trim()})`;
+        },
+      );
+      inner.innerHTML += renderMarkdown(processedContent);
+    } else if (item.children && item.children.length > 0) {
+      const viewType = item.view || (rootKey === 'overview' ? 'list' : 'shelf');
+      if (viewType === 'list') {
+        inner.innerHTML += renderList(item);
+      } else {
+        inner.innerHTML += renderShelf(item);
+      }
+    }
+
+    if (item.tags && item.tags.length > 0) {
+      let tagsHtml = "<div style='margin-top: 30px; border-top: 1px solid var(--border-color); padding-top: 20px;'>";
+      item.tags.forEach(tag => {
+        tagsHtml += `<span class="tag-pill">#${tag}</span>`;
+      });
+      tagsHtml += '</div>';
+      inner.innerHTML += tagsHtml;
+    }
+
+    contentDiv.appendChild(inner);
+    col.appendChild(closeBtn);
+    col.appendChild(contentDiv);
+    col.appendChild(labelDiv);
+    container.appendChild(col);
+  });
+
+  requestAnimationFrame(() => {
+    updateScrollState();
+    scrollToStackIndex(ids.length - 1);
+    isRendering = false;
+  });
+}
+
+function updateScrollState() {
+  const scrollContainer = document.getElementById('noteColumnsScrolling');
+  const columns = document.querySelectorAll('.note-column');
+  if (!scrollContainer || columns.length === 0) return;
+
+  const scroll = scrollContainer.scrollLeft;
+  const totalColumns = columns.length;
+
+  columns.forEach((col, index) => {
+    const isOverlay = scroll > Math.max(NOTE_WIDTH * (index - 1), 0) ||
+      (index === totalColumns - 1 && scroll < NOTE_WIDTH * (totalColumns - 2) - 400);
+
+    const isTooFarLeft = scroll > NOTE_WIDTH * (index + 1) - 80;
+    const isLast = index === totalColumns - 1;
+    const isTooFarRight = isLast &&
+      (window.innerWidth + scroll - NOTE_WIDTH * (totalColumns - 1) < 150) &&
+      (scroll < NOTE_WIDTH * (totalColumns - 2) - 65);
+
+    col.classList.toggle('overlay', isOverlay);
+    col.classList.toggle('has-label', isTooFarLeft || isTooFarRight);
+  });
+
+  const stackNavBar = document.getElementById('stackNavBar');
+  if (stackNavBar) {
+    const navItems = stackNavBar.querySelectorAll('.stack-nav-item');
+    navItems.forEach((item, i) => {
+      item.classList.toggle('active', i === totalColumns - 1);
+    });
+  }
+}
+
+function scrollToStackIndex(index) {
+  const scrollContainer = document.getElementById('noteColumnsScrolling');
+  if (!scrollContainer) return;
+  scrollContainer.scrollTo({ left: index * NOTE_WIDTH, behavior: 'smooth' });
+}
+
+function removeFromStack(fromIndex) {
+  if (isRendering) return;
+
+  if (fromIndex === 0 && stackedIds.length === 1) {
+    exitStackedMode();
+    return;
+  }
+
+  if (fromIndex === stackedIds.length - 1) {
+    stackedIds = stackedIds.slice(0, -1);
+  } else {
+    stackedIds = stackedIds.filter((_, i) => i !== fromIndex);
+  }
+
+  updateStackedUrl(stackedIds);
+  renderStackedColumns(stackedIds);
+
+  if (stackedIds.length === 0) {
+    exitStackedMode();
+  }
+}
+
+function addToStack(id) {
+  if (isRendering) return;
+
+  const cleanId = id.toLowerCase();
+
+  if (stackedIds.includes(cleanId)) {
+    const index = stackedIds.indexOf(cleanId);
+    scrollToStackIndex(index);
+    return;
+  }
+
+  if (!stackedMode) {
+    if (currentDocId) {
+      stackedIds = [currentDocId];
+    } else {
+      stackedIds = [];
+    }
+    stackedMode = true;
+    document.body.classList.add('stacked-mode');
+  }
+
+  stackedIds.push(cleanId);
+  updateStackedUrl(stackedIds);
+  renderStackedColumns(stackedIds);
+  renderStackNavBar();
+}
+
+function exitStackedMode() {
+  stackedMode = false;
+  stackedIds = [];
+  document.body.classList.remove('stacked-mode');
+  const container = document.getElementById('noteColumnsContainer');
+  if (container) container.innerHTML = '';
+  const scrollContainer = document.getElementById('noteColumnsScrolling');
+  if (scrollContainer) scrollContainer.scrollLeft = 0;
+  updateStackedUrl([]);
+  renderStackNavBar();
+  if (currentDocId) {
+    loadContent(currentDocId);
+  }
+}
+
+function renderStackNavBar() {
+  const bar = document.getElementById('stackNavBar');
+  if (!bar) return;
+
+  if (!stackedMode || stackedIds.length === 0) {
+    bar.innerHTML = '';
+    return;
+  }
+
+  let html = `<div class="stack-nav-item active" data-index="${stackedIds.length - 1}">${stackedIds.length} note${stackedIds.length > 1 ? 's' : ''} open</div>`;
+
+  stackedIds.forEach((id, index) => {
+    const result = lookup(id);
+    const title = result ? result.item.title : id;
+    const isActive = index === stackedIds.length - 1;
+    html += `<span class="stack-nav-separator">/</span>`;
+    html += `<div class="stack-nav-item${isActive ? ' active' : ''}" data-index="${index}">${title}</div>`;
+  });
+
+  html += `<span class="stack-nav-separator">/</span>`;
+  html += `<div class="stack-nav-item" data-action="close-all" style="color: var(--text-accent);">Close All</div>`;
+
+  bar.innerHTML = html;
+}
+
+function initStackedNotes() {
+  const scrollContainer = document.getElementById('noteColumnsScrolling');
+  if (scrollContainer) {
+    scrollContainer.addEventListener('scroll', updateScrollState);
+  }
+
+  window.addEventListener('resize', () => {
+    if (stackedMode) {
+      updateScrollState();
+    }
+  });
+
+  window.addEventListener('popstate', () => {
+    const ids = getStackedIdsFromUrl();
+    if (ids.length > 0) {
+      stackedIds = ids;
+      stackedMode = true;
+      document.body.classList.add('stacked-mode');
+      renderStackedColumns(stackedIds);
+      renderStackNavBar();
+    } else {
+      exitStackedMode();
+    }
+  });
+
+  const ids = getStackedIdsFromUrl();
+  if (ids.length > 0) {
+    stackedIds = ids;
+    stackedMode = true;
+    document.body.classList.add('stacked-mode');
+    renderStackNavBar();
+    renderStackedColumns(stackedIds);
+  }
+
+  const stackNavBar = document.getElementById('stackNavBar');
+  if (stackNavBar) {
+    stackNavBar.addEventListener('click', (e) => {
+      const item = e.target.closest('.stack-nav-item');
+      if (!item) return;
+
+      if (item.dataset.action === 'close-all') {
+        exitStackedMode();
+        return;
+      }
+
+      const index = parseInt(item.dataset.index, 10);
+      if (!isNaN(index)) {
+        if (index === stackedIds.length - 1) {
+          scrollToStackIndex(index);
+        } else {
+          removeFromStack(index);
+        }
+      }
+    });
+  }
+
+  // Event delegation for stacked column content (shelf cards, list items, back-links, internal links)
+  const noteColumnsScrolling = document.getElementById('noteColumnsScrolling');
+  if (noteColumnsScrolling) {
+    noteColumnsScrolling.addEventListener('click', (e) => {
+      // Back-link
+      const backLink = e.target.closest('.back-link');
+      if (backLink && backLink.dataset.id) {
+        e.preventDefault();
+        addToStack(backLink.dataset.id);
+        return;
+      }
+
+      // Shelf card
+      const shelfCard = e.target.closest('.shelf-card');
+      if (shelfCard && shelfCard.dataset.id) {
+        e.preventDefault();
+        addToStack(shelfCard.dataset.id);
+        return;
+      }
+
+      // List item
+      const listItem = e.target.closest('.list-item');
+      if (listItem && listItem.dataset.id) {
+        e.preventDefault();
+        addToStack(listItem.dataset.id);
+        return;
+      }
+
+      // Internal link
+      const link = e.target.closest('a');
+      if (link) {
+        const href = link.getAttribute('href');
+        if (!href || href.match(/^(http|https|mailto:|#)/)) {
+          if (href && href.startsWith('http')) link.target = '_blank';
+          return;
+        }
+        const targetId = decodeURIComponent(href);
+        if (lookup(targetId)) {
+          e.preventDefault();
+          addToStack(targetId);
+        }
+      }
+    });
+  }
 }
 
 function renderLandingPage() {
