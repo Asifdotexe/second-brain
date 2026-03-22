@@ -132,11 +132,7 @@ function init() {
 
       if (lookup(targetId)) {
         e.preventDefault();
-        if (stackedMode) {
-          addToStack(targetId);
-        } else {
-          loadContent(targetId);
-        }
+        addToStack(targetId);
       }
     }
   });
@@ -176,6 +172,7 @@ function init() {
   }
 
   // Handle Brand Clicks (Home)
+  const brands = document.querySelectorAll(".brand, .mobile-brand");
   brands.forEach((el) => {
     el.style.cursor = "pointer";
     el.addEventListener("click", () => {
@@ -184,17 +181,7 @@ function init() {
         return;
       }
       renderLandingPage();
-      if (window.innerWidth <= 768) {
-        // specific for mobile brand click if we want to ensure sidebar state?
-        // Actually sidebar brand is inside sidebar, mobile brand is in header.
-        // If sidebar is open and we click sidebar brand -> close sidebar
-        const sidebar = document.getElementById("sidebar");
-        const backdrop = document.getElementById("sidebarBackdrop");
-        if (sidebar.classList.contains("open")) {
-          sidebar.classList.remove("open");
-          if (backdrop) backdrop.classList.remove("visible");
-        }
-      }
+      closeSidebar();
     });
   });
 
@@ -336,8 +323,14 @@ function renderStackedColumns(ids) {
     col.appendChild(closeBtn);
     col.appendChild(contentDiv);
     col.appendChild(labelDiv);
+    
+    // Explicitly guarantee over-layering using DOM order mapping to z-index
+    col.style.zIndex = index + 5;
+    
     container.appendChild(col);
   });
+
+  updateSpacerWidth();
 
   requestAnimationFrame(() => {
     updateScrollState();
@@ -346,33 +339,67 @@ function renderStackedColumns(ids) {
   });
 }
 
+function updateSpacerWidth() {
+  if (!stackedMode || stackedIds.length === 0) return;
+  const container = document.getElementById('noteColumnsContainer');
+  if (!container) return;
+
+  let spacer = document.getElementById("stackSpacer");
+  const requiredWidth = (stackedIds.length - 1) * (NOTE_WIDTH - NOTE_OFFSET) + window.innerWidth;
+  const currentFlexWidth = stackedIds.length * NOTE_WIDTH;
+  
+  if (requiredWidth > currentFlexWidth) {
+    if (!spacer) {
+      spacer = document.createElement('div');
+      spacer.id = "stackSpacer";
+      spacer.style.flexShrink = '0';
+      container.appendChild(spacer);
+    }
+    spacer.style.width = `${requiredWidth - currentFlexWidth}px`;
+  } else if (spacer) {
+    spacer.style.width = '0px';
+  }
+}
+
 function updateScrollState() {
   const scrollContainer = document.getElementById('noteColumnsScrolling');
   const columns = document.querySelectorAll('.note-column');
   if (!scrollContainer || columns.length === 0) return;
 
-  const scroll = scrollContainer.scrollLeft;
+  const scrollX = scrollContainer.scrollLeft;
+  const SLIDE_DISTANCE = NOTE_WIDTH - NOTE_OFFSET;
   const totalColumns = columns.length;
 
   columns.forEach((col, index) => {
-    const isOverlay = scroll > Math.max(NOTE_WIDTH * (index - 1), 0) ||
-      (index === totalColumns - 1 && scroll < NOTE_WIDTH * (totalColumns - 2) - 400);
+    // Math for sliding deck:
+    // When scrollX increases, the flex-box naturally moves columns left relative to the viewport.
+    // By dynamically increasing a rightward translateX as scrollX increases (up to a limit),
+    // the column stays perfectly still relative to the viewport!
+    // When we stop applying translation, it slides natively. 
+    // This perfectly recreates "the new note slides over the old note".
+    const offset = Math.max(scrollX - index * SLIDE_DISTANCE, 0);
+    col.style.transform = `translateX(${offset}px)`;
 
-    const isTooFarLeft = scroll > NOTE_WIDTH * (index + 1) - 80;
-    const isLast = index === totalColumns - 1;
-    const isTooFarRight = isLast &&
-      (window.innerWidth + scroll - NOTE_WIDTH * (totalColumns - 1) < 150) &&
-      (scroll < NOTE_WIDTH * (totalColumns - 2) - 65);
-
+    const isOverlay = index > 0;
     col.classList.toggle('overlay', isOverlay);
-    col.classList.toggle('has-label', isTooFarLeft || isTooFarRight);
+  });
+
+  const activeIndex = Math.min(
+    Math.max(0, Math.round(scrollX / SLIDE_DISTANCE)),
+    totalColumns - 1
+  );
+
+  columns.forEach((col, index) => {
+    const isSpine = index < activeIndex;
+    col.classList.toggle('has-label', isSpine);
+    col.classList.toggle('focused', index === activeIndex);
   });
 
   const stackNavBar = document.getElementById('stackNavBar');
   if (stackNavBar) {
     const navItems = stackNavBar.querySelectorAll('.stack-nav-item');
     navItems.forEach((item, i) => {
-      item.classList.toggle('active', i === totalColumns - 1);
+      item.classList.toggle('active', i === activeIndex);
     });
   }
 }
@@ -380,11 +407,26 @@ function updateScrollState() {
 function scrollToStackIndex(index) {
   const scrollContainer = document.getElementById('noteColumnsScrolling');
   if (!scrollContainer) return;
-  scrollContainer.scrollTo({ left: index * NOTE_WIDTH, behavior: 'smooth' });
+  
+  const SLIDE_DISTANCE = NOTE_WIDTH - NOTE_OFFSET;
+  const targetScroll = Math.max(0, index * SLIDE_DISTANCE);
+  
+  scrollContainer.scrollTo({ left: targetScroll, behavior: 'smooth' });
+  
+  // Highlight the sidebar item for the focused note
+  if (stackedIds[index]) {
+    const id = stackedIds[index];
+    currentDocId = id; // Sync state so "Exit" returns here
+    document.querySelectorAll(".nav-item").forEach((el) => el.classList.remove("active"));
+    const activeNav = document.querySelector(`.nav-item[data-id="${id}"]`);
+    if (activeNav) {
+      activeNav.classList.add("active");
+      activeNav.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
 }
 
 function removeFromStack(fromIndex) {
-  if (isRendering) return;
 
   if (fromIndex === 0 && stackedIds.length === 1) {
     exitStackedMode();
@@ -406,7 +448,6 @@ function removeFromStack(fromIndex) {
 }
 
 function addToStack(id) {
-  if (isRendering) return;
 
   const cleanId = id.toLowerCase();
 
@@ -430,6 +471,7 @@ function addToStack(id) {
   updateStackedUrl(stackedIds);
   renderStackedColumns(stackedIds);
   renderStackNavBar();
+  closeSidebar();
 }
 
 function exitStackedMode() {
@@ -480,6 +522,7 @@ function initStackedNotes() {
 
   window.addEventListener('resize', () => {
     if (stackedMode) {
+      updateSpacerWidth();
       updateScrollState();
     }
   });
@@ -971,12 +1014,7 @@ function loadContent(id) {
     });
   }
 
-  // Mobile: Close sidebar after selection
-  if (window.innerWidth <= 768) {
-    sidebar.classList.remove("open");
-    const backdrop = document.getElementById("sidebarBackdrop");
-    if (backdrop) backdrop.classList.remove("visible");
-  }
+  closeSidebar();
 
   currentDocId = id;
   window.scrollTo(0, 0);
@@ -1547,6 +1585,13 @@ function toggleSidebar() {
   const backdrop = document.getElementById("sidebarBackdrop");
   sidebar.classList.toggle("open");
   backdrop.classList.toggle("visible");
+}
+
+function closeSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  const backdrop = document.getElementById("sidebarBackdrop");
+  if (sidebar) sidebar.classList.remove("open");
+  if (backdrop) backdrop.classList.remove("visible");
 }
 
 // Start the Engine
