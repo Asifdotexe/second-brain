@@ -12,7 +12,7 @@ let logsViewMode = localStorage.getItem('logsViewMode') || 'calendar';
 // 📚 STACKED NOTES (Andy Matuschak Style)
 // ==========================================
 
-const NOTE_WIDTH = 625;
+const NOTE_WIDTH = 750;
 const NOTE_OFFSET = 40;
 
 let stackedIds = [];
