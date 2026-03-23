@@ -74,6 +74,34 @@ function init() {
     });
   }
 
+  // Setup Mobile Menu Toggle
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const headerActions = document.getElementById("headerActions");
+  const globalHeader = document.querySelector(".global-header");
+
+  if (mobileMenuBtn && headerActions && globalHeader) {
+    mobileMenuBtn.addEventListener("click", () => {
+      globalHeader.classList.toggle("mobile-menu-open");
+      const icon = mobileMenuBtn.querySelector('i');
+      if (globalHeader.classList.contains("mobile-menu-open")) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+    // Close menu when an action is triggered
+    headerActions.addEventListener("click", (e) => {
+      if (e.target.closest('button') || e.target.closest('a')) {
+        globalHeader.classList.remove("mobile-menu-open");
+        const icon = mobileMenuBtn.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+  }
+
   // Sidebar is removed, navigation is mostly through homepage and search.
   // --- EVENT DELEGATION: MAIN CONTENT ---
   // Handle clicks for Back Buttons, Shelf Cards, and Internal Links
@@ -430,7 +458,7 @@ function addToStack(id) {
 
   const isMdFile = item.content && (!item.children || item.children.length === 0) && rootKey !== "logs";
 
-  if (!isMdFile) {
+  if (!isMdFile || isSmallScreen()) {
     if (stackedMode) {
       exitStackedMode();
     }
@@ -858,7 +886,7 @@ function loadContent(id) {
   const { item, parent, rootKey } = result;
 
   const isMdFile = item.content && (!item.children || item.children.length === 0) && rootKey !== "logs";
-  if (isMdFile) {
+  if (isMdFile && !isSmallScreen()) {
     addToStack(id);
     return;
   }
