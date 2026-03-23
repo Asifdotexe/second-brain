@@ -1561,7 +1561,10 @@ body.stacked-mode .main-content {
 
 /* Overlay (shadow) for notes that are visible/stacked */
 .note-column.overlay {
-    box-shadow: -8px 0 24px rgba(0, 0, 0, 0.2);
+    box-shadow: -15px 0 40px rgba(0, 0, 0, 0.08);
+}
+body[data-theme="dark"] .note-column.overlay {
+    box-shadow: -20px 0 50px rgba(0, 0, 0, 0.4);
 }
 
 /* Notes being removed: fade + shrink */
@@ -1637,8 +1640,8 @@ body.stacked-mode .main-content {
 
 /* Note column content wrapper */
 .note-column-content {
-    padding: 32px;
-    padding-top: 48px;
+    padding: 80px;
+    padding-top: 60px;
     min-height: 100%;
 }
 
@@ -1742,4 +1745,98 @@ body.stacked-mode .stack-nav-bar {
     .stack-nav-bar {
         left: 0;
     }
+    /* Restore padding on mobile */
+    .note-column-content {
+        padding: 32px 20px !important;
+    }
+}
+
+/* --- EVERGREEN AESTHETICS OVERRIDE --- */
+/* Target ONLY the reading experience (both single view and stacked) */
+#contentDisplay, .note-column-content {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+#contentDisplay h1, #contentDisplay h2, #contentDisplay h3,
+.note-column-content h1, .note-column-content h2, .note-column-content h3 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+/* --- BACKLINKS CARD --- */
+.backlink-card {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease, border-color 0.2s ease;
+    text-align: left;
+}
+
+.backlink-card:hover {
+    background-color: var(--bg-quote);
+    border-color: var(--text-accent);
+}
+
+.backlink-card:active {
+    transform: scale(0.99);
+}
+
+.backlink-title {
+    font-weight: 600;
+    color: var(--text-accent);
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+}
+
+.backlink-snippet {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.4;
+}
+
+/* --- HOVER LINK POPOVER --- */
+#link-preview-popover {
+    position: fixed;
+    z-index: 10000;
+    width: 340px;
+    background-color: var(--bg-body);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+    pointer-events: none;
+}
+
+#link-preview-popover.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+#link-preview-popover .popover-title {
+    font-weight: 600;
+    color: var(--text-accent);
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+#link-preview-popover .popover-snippet {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    white-space: normal;
 }

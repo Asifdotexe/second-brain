@@ -86,6 +86,14 @@ function init() {
       return;
     }
 
+    // 2.5 Handle Backlink Card
+    const backlinkCard = e.target.closest(".backlink-card");
+    if (backlinkCard && backlinkCard.dataset.id) {
+      e.preventDefault();
+      addToStack(backlinkCard.dataset.id);
+      return;
+    }
+
 
     // 3. Handle List Item
     const listItem = e.target.closest(".list-item");
@@ -291,6 +299,9 @@ function renderStackedColumns(ids) {
       tagsHtml += '</div>';
       inner.innerHTML += tagsHtml;
     }
+
+    // Insert Backlinks section
+    inner.innerHTML += generateBacklinksHTML(item);
 
     contentDiv.appendChild(inner);
     col.appendChild(closeBtn);
@@ -561,6 +572,14 @@ function initStackedNotes() {
       if (shelfCard && shelfCard.dataset.id) {
         e.preventDefault();
         addToStack(shelfCard.dataset.id);
+        return;
+      }
+
+      // Backlink Card
+      const backlinkCard = e.target.closest(".backlink-card");
+      if (backlinkCard && backlinkCard.dataset.id) {
+        e.preventDefault();
+        addToStack(backlinkCard.dataset.id);
         return;
       }
 
@@ -843,6 +862,32 @@ function renderMarkdown(text) {
   return html;
 }
 
+// Helper: Render Backlinks (Linked Mentions) Section
+function generateBacklinksHTML(item) {
+  if (!item.backlinks || item.backlinks.length === 0) return "";
+  
+  let html = `<div class="backlinks-section" style="margin-top: 40px; border-top: 2px solid var(--border-color); padding-top: 20px;">`;
+  html += `<h3 style="font-size: 1.1rem; margin-bottom: 12px; color: var(--text-secondary);">Linked Mentions</h3>`;
+  html += `<div class="backlinks-list" style="display: flex; flex-direction: column; gap: 8px;">`;
+  
+  item.backlinks.forEach(linkId => {
+    const target = lookup(linkId);
+    if (target && target.item) {
+      // Create a small card for the backlink
+      const snippet = (target.item.content || "").replace(/[#*`_\[\]()]/g, '').substring(0, 100);
+      html += `
+        <div class="backlink-card" data-id="${target.item.id}">
+          <div class="backlink-title">${target.item.title}</div>
+          <div class="backlink-snippet">${snippet}...</div>
+        </div>
+      `;
+    }
+  });
+  
+  html += `</div></div>`;
+  return html;
+}
+
 function loadContent(id) {
   const result = lookup(id);
   if (!result) return;
@@ -932,6 +977,9 @@ function loadContent(id) {
     });
     htmlContent += "</div>";
   }
+
+  // C. Backlinks (Linked Mentions)
+  htmlContent += generateBacklinksHTML(item);
 
   // --- 3. RENDER ---
   contentDisplay.innerHTML = htmlContent;
@@ -1462,6 +1510,77 @@ function handleMobileSearch(query) {
     resultsContainer.appendChild(resultItem);
   });
 }
+
+// ==========================================
+// 🎈 HOVER LINK PREVIEWS
+// ==========================================
+const previewPopover = document.createElement('div');
+previewPopover.id = 'link-preview-popover';
+document.body.appendChild(previewPopover);
+
+let previewTimeout = null;
+let currentPreviewLink = null;
+
+document.body.addEventListener('mouseover', (e) => {
+  const link = e.target.closest('a');
+  if (!link) return;
+  
+  const href = link.getAttribute('href');
+  if (!href || href.match(/^(http|https|mailto:|#)/)) return; 
+  
+  const targetId = decodeURIComponent(href);
+  const targetData = lookup(targetId);
+  
+  if (targetData && targetData.item) {
+    clearTimeout(previewTimeout);
+    currentPreviewLink = link;
+    
+    const snippet = (targetData.item.content || "").replace(/[#*`_\[\]()]/g, '').substring(0, 200).trim();
+    
+    previewPopover.innerHTML = `
+      <div class="popover-title">${targetData.item.title}</div>
+      <div class="popover-snippet">${snippet}...</div>
+    `;
+    
+    previewPopover.classList.add('visible');
+    
+    const rect = link.getBoundingClientRect();
+    let popoverTop = rect.top - previewPopover.offsetHeight - 10;
+    
+    // Fallback if it clips the top of the screen
+    if (popoverTop < 10) {
+      popoverTop = rect.bottom + 10;
+    }
+    
+    let popoverLeft = rect.left;
+    // Fallback if it clips the right side of the screen
+    if (popoverLeft + previewPopover.offsetWidth > window.innerWidth - 20) {
+      popoverLeft = window.innerWidth - previewPopover.offsetWidth - 20;
+    }
+    
+    previewPopover.style.top = `${popoverTop}px`;
+    previewPopover.style.left = `${popoverLeft}px`;
+  }
+}, true); // Use capture phase occasionally helps with deeply nested a tags
+
+document.body.addEventListener('mouseout', (e) => {
+  const link = e.target.closest('a');
+  if (link && link === currentPreviewLink) {
+    previewTimeout = setTimeout(() => {
+      previewPopover.classList.remove('visible');
+      currentPreviewLink = null;
+    }, 200);
+  }
+}, true);
+
+previewPopover.addEventListener('mouseover', () => clearTimeout(previewTimeout));
+previewPopover.addEventListener('mouseout', () => {
+  previewTimeout = setTimeout(() => {
+    previewPopover.classList.remove('visible');
+    currentPreviewLink = null;
+  }, 200);
+});
+
 
 // Start the Engine
 init();
