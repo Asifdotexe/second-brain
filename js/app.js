@@ -1563,21 +1563,10 @@ document.body.addEventListener('mouseover', (e) => {
 document.body.addEventListener('mouseout', (e) => {
   const link = e.target.closest('a');
   if (link && link === currentPreviewLink) {
-    previewTimeout = setTimeout(() => {
-      previewPopover.classList.remove('visible');
-      currentPreviewLink = null;
-    }, 200);
-  }
-}, true);
-
-previewPopover.addEventListener('mouseover', () => clearTimeout(previewTimeout));
-previewPopover.addEventListener('mouseout', () => {
-  previewTimeout = setTimeout(() => {
+    clearTimeout(previewTimeout);
     previewPopover.classList.remove('visible');
     currentPreviewLink = null;
-  }, 200);
-});
-
-
+  }
+}, true);
 // Start the Engine
 init();
