@@ -18,7 +18,9 @@ function toggleGraphView() {
 
   mainContent.classList.toggle("graph-mode");
   graphContainer.classList.toggle("active");
-  toggleBtn.classList.toggle("active");
+  if (toggleBtn) {
+    toggleBtn.classList.toggle("active");
+  }
 
   if (graphContainer.classList.contains("active")) {
     renderGraph();
