@@ -66,6 +66,14 @@ function init() {
     return;
   }
 
+  // Setup Home Button (Logo Click)
+  const headerBrand = document.getElementById("headerBrand");
+  if (headerBrand) {
+    headerBrand.addEventListener("click", () => {
+      renderLandingPage();
+    });
+  }
+
   // Sidebar is removed, navigation is mostly through homepage and search.
   // --- EVENT DELEGATION: MAIN CONTENT ---
   // Handle clicks for Back Buttons, Shelf Cards, and Internal Links
@@ -238,7 +246,6 @@ function renderStackedColumns(ids) {
     col.className = 'note-column';
     col.dataset.id = id;
     col.dataset.index = index;
-    col.style.left = `${index * NOTE_OFFSET}px`;
 
     const closeBtn = document.createElement('button');
     closeBtn.className = 'note-column-close';
@@ -307,14 +314,12 @@ function renderStackedColumns(ids) {
     col.appendChild(closeBtn);
     col.appendChild(contentDiv);
     col.appendChild(labelDiv);
-    
+
     // Explicitly guarantee over-layering using DOM order mapping to z-index
     col.style.zIndex = index + 5;
-    
+
     container.appendChild(col);
   });
-
-  updateSpacerWidth();
 
   requestAnimationFrame(() => {
     updateScrollState();
@@ -323,27 +328,7 @@ function renderStackedColumns(ids) {
   });
 }
 
-function updateSpacerWidth() {
-  if (!stackedMode || stackedIds.length === 0) return;
-  const container = document.getElementById('noteColumnsContainer');
-  if (!container) return;
 
-  let spacer = document.getElementById("stackSpacer");
-  const requiredWidth = (stackedIds.length - 1) * (NOTE_WIDTH - NOTE_OFFSET) + window.innerWidth;
-  const currentFlexWidth = stackedIds.length * NOTE_WIDTH;
-  
-  if (requiredWidth > currentFlexWidth) {
-    if (!spacer) {
-      spacer = document.createElement('div');
-      spacer.id = "stackSpacer";
-      spacer.style.flexShrink = '0';
-      container.appendChild(spacer);
-    }
-    spacer.style.width = `${requiredWidth - currentFlexWidth}px`;
-  } else if (spacer) {
-    spacer.style.width = '0px';
-  }
-}
 
 function updateScrollState() {
   const scrollContainer = document.getElementById('noteColumnsScrolling');
@@ -351,52 +336,58 @@ function updateScrollState() {
   if (!scrollContainer || columns.length === 0) return;
 
   const scrollX = scrollContainer.scrollLeft;
-  const SLIDE_DISTANCE = NOTE_WIDTH - NOTE_OFFSET;
-  const totalColumns = columns.length;
 
   columns.forEach((col, index) => {
-    // Math for sliding deck:
-    // When scrollX increases, the flex-box naturally moves columns left relative to the viewport.
-    // By dynamically increasing a rightward translateX as scrollX increases (up to a limit),
-    // the column stays perfectly still relative to the viewport!
-    // When we stop applying translation, it slides natively. 
-    // This perfectly recreates "the new note slides over the old note".
-    const offset = Math.max(scrollX - index * SLIDE_DISTANCE, 0);
+    // Dynamic sliding math for Matuschak overlapping cards:
+    // Notes stay in natural flex positions unless they hit the viewport's left edge
+    const nativeX = index * NOTE_WIDTH;
+    const targetScreenX = scrollX + (index * NOTE_OFFSET);
+    const offset = Math.max(targetScreenX - nativeX, 0);
+
     col.style.transform = `translateX(${offset}px)`;
 
-    const isOverlay = index > 0;
+    const isOverlay = offset > 0;
     col.classList.toggle('overlay', isOverlay);
   });
 
+  // Calculate active index based strictly on visibility (which one takes up the left spine)
+  // Or just highlight the last one clicked? 
+  // Let activeIndex be the right-most fully visible note
   const activeIndex = Math.min(
-    Math.max(0, Math.round(scrollX / SLIDE_DISTANCE)),
-    totalColumns - 1
+    Math.max(0, Math.floor((scrollX + window.innerWidth) / NOTE_WIDTH) - 1),
+    columns.length - 1
   );
 
   columns.forEach((col, index) => {
-    const isSpine = index < activeIndex;
-    col.classList.toggle('has-label', isSpine);
-    col.classList.toggle('focused', index === activeIndex);
-  });
+    const nativeX = index * NOTE_WIDTH;
+    const targetScreenX = scrollX + (index * NOTE_OFFSET);
 
-  const stackNavBar = document.getElementById('stackNavBar');
-  if (stackNavBar) {
-    const navItems = stackNavBar.querySelectorAll('.stack-nav-item');
-    navItems.forEach((item, i) => {
-      item.classList.toggle('active', i === activeIndex);
-    });
-  }
+    // It's a "spine" (obscured) if the next note overlaps it significantly
+    // If the next note's translation brings its left edge over this note
+    let isSpine = false;
+    if (index < columns.length - 1) {
+      const nextNativeX = (index + 1) * NOTE_WIDTH;
+      const nextTargetScreenX = scrollX + ((index + 1) * NOTE_OFFSET);
+      const nextActualX = Math.max(nextTargetScreenX, nextNativeX);
+      const thisActualX = Math.max(targetScreenX, nativeX);
+      if (nextActualX - thisActualX <= NOTE_OFFSET + 10) {
+        isSpine = true;
+      }
+    }
+    col.classList.toggle('has-label', isSpine);
+    col.classList.toggle('focused', index === stackedIds.length - 1); // Set focus strictly to the end or currently targeted
+  });
 }
 
 function scrollToStackIndex(index) {
   const scrollContainer = document.getElementById('noteColumnsScrolling');
   if (!scrollContainer) return;
-  
-  const SLIDE_DISTANCE = NOTE_WIDTH - NOTE_OFFSET;
-  const targetScroll = Math.max(0, index * SLIDE_DISTANCE);
-  
+
+  // Try to anchor the note to the right side of the screen
+  const targetScroll = Math.max(0, (index * NOTE_WIDTH) + NOTE_WIDTH - window.innerWidth + 40);
+
   scrollContainer.scrollTo({ left: targetScroll, behavior: 'smooth' });
-  
+
   // Highlight the sidebar item for the focused note
   if (stackedIds[index]) {
     const id = stackedIds[index];
@@ -432,8 +423,20 @@ function removeFromStack(fromIndex) {
 }
 
 function addToStack(id) {
-
   const cleanId = id.toLowerCase();
+  const result = lookup(cleanId);
+  if (!result) return;
+  const { item, rootKey } = result;
+
+  const isMdFile = item.content && (!item.children || item.children.length === 0) && rootKey !== "logs";
+
+  if (!isMdFile) {
+    if (stackedMode) {
+      exitStackedMode();
+    }
+    loadContent(cleanId);
+    return;
+  }
 
   if (stackedIds.includes(cleanId)) {
     const index = stackedIds.indexOf(cleanId);
@@ -442,11 +445,7 @@ function addToStack(id) {
   }
 
   if (!stackedMode) {
-    if (currentDocId) {
-      stackedIds = [currentDocId];
-    } else {
-      stackedIds = [];
-    }
+    stackedIds = [];
     stackedMode = true;
     document.body.classList.add('stacked-mode');
   }
@@ -454,7 +453,6 @@ function addToStack(id) {
   stackedIds.push(cleanId);
   updateStackedUrl(stackedIds);
   renderStackedColumns(stackedIds);
-  renderStackNavBar();
   closeSidebar();
 }
 
@@ -467,35 +465,21 @@ function exitStackedMode() {
   const scrollContainer = document.getElementById('noteColumnsScrolling');
   if (scrollContainer) scrollContainer.scrollLeft = 0;
   updateStackedUrl([]);
-  renderStackNavBar();
+
   if (currentDocId) {
-    loadContent(currentDocId);
+    const result = lookup(currentDocId);
+    if (!result) { renderLandingPage(); return; }
+    const { item, rootKey } = result;
+    const isMdFile = item.content && (!item.children || item.children.length === 0) && rootKey !== "logs";
+
+    if (!isMdFile) {
+      loadContent(currentDocId);
+    } else {
+      renderLandingPage();
+    }
+  } else {
+    renderLandingPage();
   }
-}
-
-function renderStackNavBar() {
-  const bar = document.getElementById('stackNavBar');
-  if (!bar) return;
-
-  if (!stackedMode || stackedIds.length === 0) {
-    bar.innerHTML = '';
-    return;
-  }
-
-  let html = `<div class="stack-nav-item active" data-index="${stackedIds.length - 1}">${stackedIds.length} note${stackedIds.length > 1 ? 's' : ''} open</div>`;
-
-  stackedIds.forEach((id, index) => {
-    const result = lookup(id);
-    const title = result ? result.item.title : id;
-    const isActive = index === stackedIds.length - 1;
-    html += `<span class="stack-nav-separator">/</span>`;
-    html += `<div class="stack-nav-item${isActive ? ' active' : ''}" data-index="${index}">${title}</div>`;
-  });
-
-  html += `<span class="stack-nav-separator">/</span>`;
-  html += `<div class="stack-nav-item" data-action="close-all" style="color: var(--text-accent);">Close All</div>`;
-
-  bar.innerHTML = html;
 }
 
 function initStackedNotes() {
@@ -506,7 +490,6 @@ function initStackedNotes() {
 
   window.addEventListener('resize', () => {
     if (stackedMode) {
-      updateSpacerWidth();
       updateScrollState();
     }
   });
@@ -518,7 +501,6 @@ function initStackedNotes() {
       stackedMode = true;
       document.body.classList.add('stacked-mode');
       renderStackedColumns(stackedIds);
-      renderStackNavBar();
     } else {
       exitStackedMode();
     }
@@ -529,30 +511,7 @@ function initStackedNotes() {
     stackedIds = ids;
     stackedMode = true;
     document.body.classList.add('stacked-mode');
-    renderStackNavBar();
     renderStackedColumns(stackedIds);
-  }
-
-  const stackNavBar = document.getElementById('stackNavBar');
-  if (stackNavBar) {
-    stackNavBar.addEventListener('click', (e) => {
-      const item = e.target.closest('.stack-nav-item');
-      if (!item) return;
-
-      if (item.dataset.action === 'close-all') {
-        exitStackedMode();
-        return;
-      }
-
-      const index = parseInt(item.dataset.index, 10);
-      if (!isNaN(index)) {
-        if (index === stackedIds.length - 1) {
-          scrollToStackIndex(index);
-        } else {
-          removeFromStack(index);
-        }
-      }
-    });
   }
 
   // Event delegation for stacked column content (shelf cards, list items, back-links, internal links)
@@ -614,6 +573,10 @@ function renderLandingPage() {
     .querySelectorAll(".nav-item")
     .forEach((el) => el.classList.remove("active"));
   currentDocId = null;
+
+  if (stackedMode) {
+    exitStackedMode();
+  }
 
   // Clear Breadcrumbs
   const breadcrumbs = document.getElementById("breadcrumbs");
@@ -865,11 +828,11 @@ function renderMarkdown(text) {
 // Helper: Render Backlinks (Linked Mentions) Section
 function generateBacklinksHTML(item) {
   if (!item.backlinks || item.backlinks.length === 0) return "";
-  
+
   let html = `<div class="backlinks-section" style="margin-top: 40px; border-top: 2px solid var(--border-color); padding-top: 20px;">`;
   html += `<h3 style="font-size: 1.1rem; margin-bottom: 12px; color: var(--text-secondary);">Linked Mentions</h3>`;
   html += `<div class="backlinks-list" style="display: flex; flex-direction: column; gap: 8px;">`;
-  
+
   item.backlinks.forEach(linkId => {
     const target = lookup(linkId);
     if (target && target.item) {
@@ -883,7 +846,7 @@ function generateBacklinksHTML(item) {
       `;
     }
   });
-  
+
   html += `</div></div>`;
   return html;
 }
@@ -893,6 +856,12 @@ function loadContent(id) {
   if (!result) return;
 
   const { item, parent, rootKey } = result;
+
+  const isMdFile = item.content && (!item.children || item.children.length === 0) && rootKey !== "logs";
+  if (isMdFile) {
+    addToStack(id);
+    return;
+  }
 
   // --- 0. BREADCRUMBS ---
   const path = getBreadcrumbPath(id);
@@ -1524,40 +1493,40 @@ let currentPreviewLink = null;
 document.body.addEventListener('mouseover', (e) => {
   const link = e.target.closest('a');
   if (!link) return;
-  
+
   const href = link.getAttribute('href');
-  if (!href || href.match(/^(http|https|mailto:|#)/)) return; 
-  
+  if (!href || href.match(/^(http|https|mailto:|#)/)) return;
+
   const targetId = decodeURIComponent(href);
   const targetData = lookup(targetId);
-  
+
   if (targetData && targetData.item) {
     clearTimeout(previewTimeout);
     currentPreviewLink = link;
-    
+
     const snippet = (targetData.item.content || "").replace(/[#*`_\[\]()]/g, '').substring(0, 200).trim();
-    
+
     previewPopover.innerHTML = `
       <div class="popover-title">${targetData.item.title}</div>
       <div class="popover-snippet">${snippet}...</div>
     `;
-    
+
     previewPopover.classList.add('visible');
-    
+
     const rect = link.getBoundingClientRect();
     let popoverTop = rect.top - previewPopover.offsetHeight - 10;
-    
+
     // Fallback if it clips the top of the screen
     if (popoverTop < 10) {
       popoverTop = rect.bottom + 10;
     }
-    
+
     let popoverLeft = rect.left;
     // Fallback if it clips the right side of the screen
     if (popoverLeft + previewPopover.offsetWidth > window.innerWidth - 20) {
       popoverLeft = window.innerWidth - previewPopover.offsetWidth - 20;
     }
-    
+
     previewPopover.style.top = `${popoverTop}px`;
     previewPopover.style.left = `${popoverLeft}px`;
   }
